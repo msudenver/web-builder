@@ -1,0 +1,19 @@
+{
+  "warning" : "/* >>> IMPORTANT: PLEASE UPDATE THE PACKAGE.JSON FILE AND DELETE THIS WARNING <<< */\n",
+  "clientName": "",
+  "projectName": "",
+  "description": "",
+  "developer" : "",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-bower-task": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-csslint": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-html-validation": "latest",
+    "grunt-text-replace": "latest"
+  }
+}

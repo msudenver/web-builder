@@ -1,0 +1,33 @@
+{
+  "name": "ps-dev-starter-kit",
+  "version": "0.0.1",
+  "authors": "Hugh Law",
+  "dependencies" : {
+    "jquery" : "latest",
+    "bootstrap-sass": "latest",
+    "foundation" : "latest",
+    "lemonade" : "latest"
+  },
+  "exportsOverride" : {
+    "jquery" : {
+      "" : "dist/jquery.min.js"
+    },
+    "bootstrap-sass" : {
+      "scss" : "lib/*.scss",
+      "js" : [
+        "js/*.js",
+        "dist/js/bootstrap.min.js"
+      ],
+      "fonts" : "fonts/*"
+    },
+    "foundation": {
+      "scss": "scss/**/*.scss",
+      "js/foundation" : "js/foundation/*.js",
+      "js/vendor" : "js/vendor/*.js"
+    },
+    "fastclick": {},
+    "jquery-placeholder" : {},
+    "jquery.cookie" : {},
+    "modernizr": {}
+  }
+}
