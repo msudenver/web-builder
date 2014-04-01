@@ -18,7 +18,7 @@ module.exports = function(grunt) {
          options: {
            targetDir: '_/components/lib',
            layout: 'byComponent',
-           cleanup: false
+           cleanup: true
          }//options
       }//install
     },//bower
