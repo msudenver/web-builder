@@ -22,12 +22,12 @@
         </ul>
       </div>
       <div class="bit-75">
-        <a name="intro"></a>
+        <a id="intro"></a>
         <h1>INTRODUCTION</h1>
         <p>This document aims to develop a standardized workflow for developers creating HTML cutups for clients. This is aimed at providing a well-defined and consistent standard of coding across the whole team and should allow for more robust code with fewer bugs.</p>
         <p>There are several tools being used to make a developers life a little easier. These include tools such as SASS, Compass and Grunt amongst others. All of these tools are detailed in this document as well as a guide on how to get up and running with your development environment.</p>
         
-        <a name="tools"></a>
+        <a id="tools"></a>
         <h1>TOOLS WE ARE GOING TO USE</h1>
         <p>This section details the tools involved, what they do and how to install them on your development machine. There are several steps involved, but once up and running development will become far more consistent and you will start to wonder how you ever developed without them…</p>
         <h2>SASS and Compass</h2>
@@ -51,7 +51,7 @@
         <h2>Lemonade</h2>
         <p><a href="http://lemonade.im">Lemonade</a> is a very simple CSS framework that gives you a quick grid that’s responsive. If you don’t need all the bells and whistles of Bootstrap or Foundation, this is a good framework to start with.</p>
         
-        <a name="installation"></a>
+        <a id="installation"></a>
         <h1>INSTALLATION</h1>
         <p>There is some setup involved before we can start coding, but once set up, starting a new project should be quick and simple.</p>
         <h2>Node.js</h2>
@@ -65,7 +65,7 @@
         <p class="code">gem update --system<br />
         gem install compass</p>
         
-        <a name="create"></a>
+        <a id="create"></a>
         <h1>CREATING A NEW PROJECT</h1>
         <p>All the files you require are located within the 'Starter' project in Git.</p>
         <p><a href="http://git.terminalfour.com/PS/html-cutups-starter-kit">http://git.terminalfour.com/PS/html-cutups-starter-kit</a></p>
@@ -109,7 +109,7 @@
         //@import "../../bootstrap/stylesheets/bootstrap.scss";</p>
         <p>To customise each framework's variables and settings, locate them in the framework's folder. For example, to change Foundation’s variables, we would edit the <span class="code">_components/lib/foundation/_variables.scss</span> file.</p>
         <p>There are some starter files to get you up and running with a framework's markup. These can be found in <span class="code">_/components/terminalfour/html/</span>. You should copy one of these files into the <span class="code">html</span> folder at the root of your project and maintain your html files from that directory.</p>
-        <h1 name="grunt">GRUNT TASKS</h1>
+        <h1 id="grunt">GRUNT TASKS</h1>
         <p>So, what’s actually going on here? There are a few tasks that are being run when we use grunt. This is to try and make our code as efficient as possible and to create a standard way that we code using CSS etc.</p>
         <h3>Minifying</h3>
         <p>Whenever you save a CSS or JavaScript file, your SASS files and scripts are analysed and then minified into the style-assets directory.</p>
@@ -120,7 +120,7 @@
         <h2>Tag replacement in CSS files</h2>
         <p>If you have already imported your images into Site Manager using the Media Loader, you can use the <span class="code">replacements.json</span> file that the media loader provides to replace all the references in your CSS files. Simply place the <span class="code">replacements.json</span> file at the root of your project and your style.css will have its image references replaced with t4 tags. You can continue to use the style-local.css file for local development.</p>
         
-        <a name="css"></a>
+        <a id="css"></a>
         <h1>CSS CODING STANDARDS</h1>
         <p>We want to ensure that your CSS code is as clean as possible. This is why there are certain checks made each time you save your code and warnings or errors may be produced if there is something not right.</p>
         <p>The general standards for code are listed here for reference, but there are others also. If you come across an error when your CSS is run through CSSLint then the best place to look for possible reasons will be first of all the stated line number in the console output, but you can also see the reason for the error by using the CSSLint Wiki pages at:</p>
@@ -150,7 +150,7 @@
           <li>unique-headings</li>
         </ul>
         
-        <a name="js"></a>
+        <a id="js"></a>
         <h1>JAVASCRIPT CODING STANDARDS</h1>
         <p>In order to make debugging as pain free as possible, we try to enforce certain standards when developing JavaScript code. In order to do this we use JSHint to check our JavaScript files each time we save something. This also acts as a check to spot simple errors that might cause issues further down the track.</p>
         <p>We use the following options to enforce a coding style and check for certain errors. These can be seen in the .<span class="code">jslintrc</span> file at the root of your project. If you want to add or remove options from this file, please refer to the <a href="http://www.jshint.com/docs/options/">JSHint documentation</a>.</p>
