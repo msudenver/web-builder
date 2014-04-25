@@ -8,6 +8,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-text-replace');
+  grunt.loadNpmTasks('grunt-include-replace');
 
   // Project configuration.
   grunt.initConfig({
@@ -85,6 +86,17 @@ module.exports = function(grunt) {
       },//options
       files: ['*.html']
     },//validation
+    
+    includereplace: {
+      dist: {
+        options: {
+          includesDir: '_/components/terminalfour/html/includes'
+        },
+        files: [
+          {src: '**/*.html', dest: 'html/', expand: true, cwd: '_/components/terminalfour/html/src/'}
+        ]
+      }
+    },//includereplace
 
     watch: {
       options: { livereload: true },
@@ -96,10 +108,14 @@ module.exports = function(grunt) {
         files: ['_/components/terminalfour/js/*.js'],
         tasks: ['jshint','uglify:build']
       },//scripts
+      htmlcompile: {
+        files: ['_/components/terminalfour/html/src/**/*.html'],
+        tasks: ['includereplace']
+      },//htmlcompile
       html: {
         files: ['html/**/*.html'],
         tasks: ['validation']
-      }//html
+      }
     },//watch
     
   });
