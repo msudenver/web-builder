@@ -19,14 +19,12 @@ There are several tools being used to make a developers life a little easier. Th
 
 This section details the tools involved, what they do and how to install them on your development machine. There are several steps involved, but once up and running development will become far more consistent and you will start to wonder how you ever developed without them...
 
----
 ### SASS and Compass
 
 [SASS](http://sass-lang.com) is a pre-processor for CSS. It essentially allows the use of things like variables and nested rules in CSS, but that is not all it does. More info can be found at [http://sass-lang.com/](http://sass-lang.com/) where you can find documentation to get up and running with SASS. As more and more packages come with SASS versions it is fast becoming a standard language used in web development.
 
 [Compass](http://compass-style.org/) is framework for SASS with lots of commonly used design patterns and CSS definitions. Compass is for SASS what Bootstrap and Foundation are for HTML and CSS. More info can be found at [http://compass-style.org/](http://compass-style.org/)
 
----
 ### Grunt
 
 [Grunt](http://gruntjs.com/) is a JavaScript task runner. It allows developers to automate the things they do most often in a reliable and consistent manner. There are lots of plugins already available for Grunt to do things like minify your code, check your syntax and much more. Grunt plugins are installed through NPM (Node Package Manager), which requires that you have Node.js installed. (Don’t worry, we’ll cover all the installation required shortly.)
@@ -38,22 +36,18 @@ We’ll be using the following Grunt plugins for development:
 - Compass – add additional mixins to, and compiles SASS files
 - Watch – Watches for changes in working files
 
----
 ### Bower
 
 [Bower](http://bower.io) is a package manager developed by Twitter and is used to get various projects and additional files that we need in our project. For example, we are using Bower to get us the latest version of foundation and bootstrap when we start a new project.
 
----
 ### Foundation
 
 You have the option to use the [Foundation](http://foundation.zurb.com) framework as the basis for HTML cutups. The reason for this is it gives us common tools that we use across all projects, such as a responsive grid system, as well as several common plugins such as carousels and form validation. However, there is nothing to stop you using different plugins that offer different functionality. Edit and uncomment to appropriate line in _/components/terminalfour/style.scss to include the Foundation framework.
 
----
 ### Bootstrap
 
 [Bootstrap](http://getbootstrap.com) is also included in the starter project and can be used in the same way as Foundation. Edit and uncomment to appropriate line in _/components/terminalfour/style.scss to include the Bootstrap framework.
 
----
 ### Lemonade
 
 [Lemonade](http://lemonade.im) is a very simple CSS framework that gives you a quick grid that’s responsive. If you don’t need all the bells and whistles of Bootstrap or Foundation, this is a good framework to start with.
@@ -63,22 +57,18 @@ You have the option to use the [Foundation](http://foundation.zurb.com) framewor
 
 There is some setup involved before we can start coding, but once set up, starting a new project should be quick and simple.
 
----
 ### Node.js
 
 Before we can start using Grunt, we need NPM, which in turn needs Node.js installed. This is as simple as going to [http://nodejs.org/](http://nodejs.org/), download the installer and install it – this will also install NPM.
 
----
 ### Grunt
 
 Now that we have Node.js and NPM installed we can install Grunt. Simply follow the instructions at [http://gruntjs.com/getting-started](http://gruntjs.com/getting-started) to get the Grunt Command Line Interface (CLI) installed.
 
----
 ### Ruby
 
 If you’re using a Mac, you probably already have Ruby installed. If you’re on Windows, go to [http://rubyinstaller.org](http://rubyinstaller.org) and download the correct installer for your platform. There are also videos on Lynda.com that cover the Ruby installation as part of them ([Ruby Essential Training](http://www.lynda.com/Ruby-tutorials/essential-training/47905-2.html))
 
----
 ### SASS and Compass
 
 Once Ruby is installed we can install SASS. From the command prompt run the following commands. You may need to do this as an administrator user or use the `sudo` command if you’re using a UNIX based system.
@@ -94,7 +84,6 @@ gem install compass
 All the files you require are located within the 'Starter' project in Git.
 [http://git.terminalfour.com/PS/html-cutups-starter-kit](http://git.terminalfour.com/PS/html-cutups-starter-kit)
 
----
 ### Identify and install your project
 
 The first thing you should do once you have your local copy is identify your project. This can be done by simply editing the fields in the `package.json` file at the root of your project to include information about the project, yourself and the client. This information is output as a comment block at the start of JavaScript and CSS files as a way of identifying who wrote the file.
@@ -125,7 +114,6 @@ This will read the `package.json` file and attempt to download all the dependenc
 
 You should now have all the modules you need installed and you’re nearly ready to start coding.
 
----
 ### Getting Bootstrap/Foundation/whatever…
 
 We’re using Bower as a package manager to get the latest versions of the packages we need. The `bower.json` file in the root of your project has a default configuration that will download Foundation, Bootstrap-Sass, jQuery and Lemonade to be used as required. You don’t need to, but you can edit the `bower.json` file to only download what you need, or add additional packages if required. To get started, simply go back to your terminal window, make sure you’re still in the root directory of your project and run the following command
@@ -136,7 +124,6 @@ grunt bower --verbose
 
 You can run this task without the `--verbose` command, but this allows you to see the output of what bower is doing so you can check that packages are being downloaded properly etc.
 
----
 ### Use Grunt to do the grunt work
 
 We have our setup ready to go, but we haven’t automated anything yet. You might have noticed a file called `Gruntfile.js` in the project folder. This file controls how Grunt works and what it does. This file has been written for you already and should do everything we need, so it’s not recommended to edit this file unless you need a separate specific task to be run on your project.
@@ -158,7 +145,6 @@ As long as you have your command prompt open, Grunt will monitor your files and 
 
 Now if you make any changes to your project files, grunt will detect this and start running additional tasks as it needs to. For example, in the next step, you’ll edit your `style.scss` stylesheet and save it. Grunt will detect this, start compiling it, checking all your SASS, then compile a new CSS file under `_/style-assets/css/style.css`
 
----
 ### Choose your framework
 If you open the `style.scss` file within the `_/components/terminalfour/sass/` folder you will see how the CSS is put together.
 
@@ -184,12 +170,10 @@ There are some starter files to get you up and running with a framework's markup
 
 So, what’s actually going on here? There are a few tasks that are being run when we use grunt. This is to try and make our code as efficient as possible and to create a standard way that we code using CSS etc.
 
----
 ### Minifying
 
 Whenever you save a CSS or JavaScript file, your SASS files and scripts are analysed and then minified into the style-assets directory.
 
----
 ### Code checking
 
 Your CSS code is run through CSSLint to check for potential errors and to enforce certain coding standards. Any errors are output to the console, but they are also stores in a text file in the report directory in your project.
@@ -198,7 +182,6 @@ Your JavaScript files are run through JSLint to ensure they are valid also.
 
 Any HTML files are validated against W3C standards. A report of the validation result is created in the report directory of your project.
 
----
 ### Tag replacement in CSS files
 
 If you have already imported your images into Site Manager using the Media Loader, you can use the `replacements.json` file that the media loader provides to replace all the references in your CSS files. Simply place the `replacements.json` file at the root of your project and your style.css will have its image references replaced with t4 tags. You can continue to use the style-local.css file for local development.
@@ -218,23 +201,19 @@ In an ideal world, we would love to write perfectly valid and clean code all the
 
 Edits can be made to the `.csslintrc` file to suppress warnings and errors.
 
----
 ### Older browser support
 
 There are some warnings which have been turned off by default to avoid getting warnings that only apply to older browsers. If you are required to support older browsers, then you should make sure that these warnings are turned back on by editing the `.csslintrc` file to enable them again. While it might seem annoying, these warnings will really help you out in the long run so be sure to enable them.
 
----
 ### IE6 Warnings to enable
 
 - adjoining-classes
 - box-sizing
 
----
 ### IE7 Warnings to enable
 
 - box-sizing
 
----
 ### Disabled warnings
 
 Some warnings have been disabled by default, as they are likely to cause warnings when they are perhaps not relevant. However, it is recommended that you take a look at these disabled warnings and see why they are warnings, as they do enforce good principles when it comes to CSS so it is no harm to be aware of them.
@@ -253,7 +232,6 @@ In order to make debugging as pain free as possible, we try to enforce certain s
 
 We use the following options to enforce a coding style and check for certain errors. These can be seen in the .`jslintrc` file at the root of your project. If you want to add or remove options from this file, please refer to the [JSHint documentation](http://www.jshint.com/docs/options/).
 
----
 ### Camel case variable names
 
 Variable names should be defined using camel case. For example any of the following are valid:
@@ -265,32 +243,26 @@ Variable names should be defined using camel case. For example any of the follow
 
 Variable names such as `my_date` or `image_width` would be considered invalid.
 
----
 ### Non breaking space check
 
 This checks your code for invisible non breaking space characters that can cause bugs. These are notoriously difficult to find or debug so this check specifically identifies them for you.
 
----
 ### Curly brackets
 
 This enforces the use of curly brackets in loops and conditionals. While it is possible to write things like if statements with no curly brackets, it can easily lead to bugs and makes code generally harder to read for other developers. For this reason, curly brakets are required.
 
----
 ### Equal to and not equal to comparisons
 
 This enforces the use of `===` and `!==` in comparison statements as `==` and `!=` can lead to unexpected results.
 
----
 ### Quotation mark usage
 
 In JavaScript files you can use either single or double quotation marks. This rule does not force you to use one or the other; it just checks that you are not mixing the two types in the same file so use one or the other, not both.
 
----
 ### Undefined variables
 
 This rule prevents you using variables that have not yet been defined.
 
----
 ### Unused variables
 
 This will alert you if any variables you have defined are not being used. It’s best to remove any variables that you don’t require.
