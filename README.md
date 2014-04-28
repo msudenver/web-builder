@@ -31,16 +31,16 @@ This section details the tools involved, what they do and how to install them on
 
 We’ll be using the following Grunt plugins for development:
 
-- Bower Task - Allows installation of libraries using Bower
-- JSHint – Checks JavaScript syntax
-- Uglify – Minifies JavaScript files
-- CSSLint - Checks CSS syntax for possible errors and pitfalls
-- SASS - Allows compiling of SASS files to CSS
-- Compass – add additional mixins to SASS
-- HTML Validation - Validates HTML files against W3C
-- Text Replace - Uses a JSON file to replace text site wide
-- Include Replace - allows includes to be used to modulise HTML files
-- Watch – Watches for changes in working files
+- [Bower Task](https://github.com/yatskevich/grunt-bower-task) - Allows installation of libraries using Bower
+- [JSHint](https://github.com/gruntjs/grunt-contrib-jshint) – Checks JavaScript syntax
+- [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) – Minifies JavaScript files
+- [CSSLint](https://github.com/gruntjs/grunt-contrib-csslint) - Checks CSS syntax for possible errors and pitfalls
+- [SASS](https://github.com/gruntjs/grunt-contrib-sass) - Allows compiling of SASS files to CSS
+- [Compass](https://github.com/gruntjs/grunt-contrib-compass) – add additional mixins to SASS
+- [HTML Validation](https://www.npmjs.org/package/grunt-html-validation) - Validates HTML files against W3C
+- [Text Replace](https://github.com/yoniholmes/grunt-text-replace) - Uses a JSON file to replace text site wide
+- [Include Replace](https://github.com/alanshaw/grunt-include-replace) - allows includes to be used to modulise HTML files
+- [Watch](https://github.com/gruntjs/grunt-contrib-watch) – Watches for changes in working files
 
 ### Bower
 
