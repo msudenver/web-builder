@@ -42,6 +42,8 @@ We’ll be using the following Grunt plugins for development:
 - [Include Replace](https://github.com/alanshaw/grunt-include-replace) - allows includes to be used to modulise HTML files
 - [Watch](https://github.com/gruntjs/grunt-contrib-watch) – Watches for changes in working files
 
+Check out the links to each project above for more information and documentation in the case where you need to edit the tasks slightly.
+
 ### Bower
 
 [Bower](http://bower.io) is a package manager developed by Twitter and is used to get various projects and additional files that we need in our project. For example, we are using Bower to get us the latest version of foundation and bootstrap when we start a new project.
