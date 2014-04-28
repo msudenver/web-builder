@@ -1,11 +1,11 @@
 # PSDEV HTML Starter Kit
 
-- [Introduction](#toc_1)
-- [Tools we are going to use](#toc_2)
-- [Installation](#toc_9)
-- [Creating a new project](#toc_14)
-- [CSS coding standards](#toc_24)
-- [JavaScript coding standards](#toc_29)
+- Introduction
+- Tools we are going to use
+- Installation
+- Creating a new project
+- CSS coding standards
+- JavaScript coding standards
 
 ---
 ## Introduction
