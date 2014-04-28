@@ -10,6 +10,7 @@
 ## Introduction
 
 This document aims to develop a standardised workflow for developers creating HTML cutups for clients. This is aimed at providing a well-defined and consistent standard of coding across the whole team and should allow for more robust code with fewer bugs.
+
 There are several tools being used to make a developers life a little easier. These include tools such as SASS, Compass and Grunt amongst others. All of these tools are detailed in this document as well as a guide on how to get up and running with your development environment.
 
 ## Tools we are going to use
@@ -18,12 +19,14 @@ This section details the tools involved, what they do and how to install them on
 
 ### SASS and Compass
 
-[SASS](http://sass-lang.com) is a pre-processor for CSS. It essentially allows the use of things like variables and nested rules in CSS, but that is not all it does. More info can be found at [http://sass-lang.com/](http://sass-lang.com/) where you can find documentation to get up and running with SASS. As more and more packages come with SASS versions it is fast becoming a standard language used in web development. 
+[SASS](http://sass-lang.com) is a pre-processor for CSS. It essentially allows the use of things like variables and nested rules in CSS, but that is not all it does. More info can be found at [http://sass-lang.com/](http://sass-lang.com/) where you can find documentation to get up and running with SASS. As more and more packages come with SASS versions it is fast becoming a standard language used in web development.
+
 [Compass](http://compass-style.org/) is framework for SASS with lots of commonly used design patterns and CSS definitions. Compass is for SASS what Bootstrap and Foundation are for HTML and CSS. More info can be found at [http://compass-style.org/](http://compass-style.org/)
 
 ### Grunt
 
 [Grunt](http://gruntjs.com/) is a JavaScript task runner. It allows developers to automate the things they do most often in a reliable and consistent manner. There are lots of plugins already available for Grunt to do things like minify your code, check your syntax and much more. Grunt plugins are installed through NPM (Node Package Manager), which requires that you have Node.js installed. (Don’t worry, we’ll cover all the installation required shortly.)
+
 We’ll be using the following Grunt plugins for development:
 
 - JSHint – Checks JavaScript syntax
@@ -47,7 +50,7 @@ You have the option to use the [Foundation](http://foundation.zurb.com) framewor
 
 [Lemonade](http://lemonade.im) is a very simple CSS framework that gives you a quick grid that’s responsive. If you don’t need all the bells and whistles of Bootstrap or Foundation, this is a good framework to start with.
 
-## INSTALLATION
+## Installation
 
 There is some setup involved before we can start coding, but once set up, starting a new project should be quick and simple.
 
@@ -68,11 +71,11 @@ If you’re using a Mac, you probably already have Ruby installed. If you’re o
 Once Ruby is installed we can install SASS. From the command prompt run the following commands. You may need to do this as an administrator user or use the `sudo` command if you’re using a UNIX based system.
 
 ```
-gem update --system<br />
+gem update --system
 gem install compass
 ```
 
-## CREATING A NEW PROJECT
+## Creating a new project
 
 All the files you require are located within the 'Starter' project in Git.
 [http://git.terminalfour.com/PS/html-cutups-starter-kit](http://git.terminalfour.com/PS/html-cutups-starter-kit)
@@ -80,6 +83,7 @@ All the files you require are located within the 'Starter' project in Git.
 ### Identify and install your project
 
 The first thing you should do once you have your local copy is identify your project. This can be done by simply editing the fields in the `package.json` file at the root of your project to include information about the project, yourself and the client. This information is output as a comment block at the start of JavaScript and CSS files as a way of identifying who wrote the file.
+
 Once you have a local version stored and you’ve updated the project information, open your command prompt and cd to the root directory of your project
 
 ```
@@ -103,6 +107,7 @@ npm install
 ```
 
 This will read the `package.json` file and attempt to download all the dependencies listed in that file. It will save them in a folder called `node_modules`.
+
 You should now have all the modules you need installed and you’re nearly ready to start coding.
 
 ### Getting Bootstrap/Foundation/whatever…
@@ -118,6 +123,7 @@ You can run this task without the `--verbose` command, but this allows you to se
 ### Use Grunt to do the grunt work
 
 We have our setup ready to go, but we haven’t automated anything yet. You might have noticed a file called `Gruntfile.js` in the project folder. This file controls how Grunt works and what it does. This file has been written for you already and should do everything we need, so it’s not recommended to edit this file unless you need a separate specific task to be run on your project.
+
 To start Grunt, open your command prompt again and make sure you are looking at the project directory’s root folder (the same folder as `.Gruntfile.js`). Simply type the following command and watch grunt start up:
 
 ```
@@ -127,15 +133,17 @@ grunt
 Grunt has been set up to do several things. The most important task, and the default one, is for Grunt to watch you files for changes. You will have noticed that the Grunt CLI says:
 
 ```
-Running "watch" task<br />
+Running "watch" task
 Waiting...
 ```
 
 As long as you have your command prompt open, Grunt will monitor your files and 'watch' for changes in them.
+
 Now if you make any changes to your project files, grunt will detect this and start running additional tasks as it needs to. For example, in the next step, you’ll edit your `style.scss` stylesheet and save it. Grunt will detect this, start compiling it, checking all your SASS, then compile a new CSS file under `_/style-assets/css/style.css`
 
 ### Choose your framework
 If you open the `style.scss` file within the `_/components/terminalfour/sass/` folder you will see how the CSS is put together.
+
 This first line imports the `normalize.scss` file which applies normalize CSS to give a consistent starting point to your CSS across all browsers.
 
 ```
@@ -145,11 +153,12 @@ This first line imports the `normalize.scss` file which applies normalize CSS to
 Next, you have the option to include the framework you require - just uncomment the framework references you want to use. At this stage there is nothing to stop you adding a different framework if required and adding the appropriate `@import` statement here.
 
 ```
-//@import "../../foundation/foundation.scss";<br />
+//@import "../../foundation/foundation.scss";
 //@import "../../bootstrap/stylesheets/bootstrap.scss";
 ```
 
 To customise each framework's variables and settings, locate them in the framework's folder. For example, to change Foundation’s variables, we would edit the `_components/lib/foundation/_variables.scss` file.
+
 There are some starter files to get you up and running with a framework's markup. These can be found in `_/components/terminalfour/html/`. You should copy one of these files into the `html` folder at the root of your project and maintain your html files from that directory.
 
 ## Grunt tasks
@@ -163,20 +172,27 @@ Whenever you save a CSS or JavaScript file, your SASS files and scripts are anal
 ### Code checking
 
 Your CSS code is run through CSSLint to check for potential errors and to enforce certain coding standards. Any errors are output to the console, but they are also stores in a text file in the report directory in your project.
+
 Your JavaScript files are run through JSLint to ensure they are valid also.
+
 Any HTML files are validated against W3C standards. A report of the validation result is created in the report directory of your project.
 
 ### Tag replacement in CSS files
 
 If you have already imported your images into Site Manager using the Media Loader, you can use the `replacements.json` file that the media loader provides to replace all the references in your CSS files. Simply place the `replacements.json` file at the root of your project and your style.css will have its image references replaced with t4 tags. You can continue to use the style-local.css file for local development.
 
-## CSS CODING STANDARDS
+## CSS coding standards
 
 We want to ensure that your CSS code is as clean as possible. This is why there are certain checks made each time you save your code and warnings or errors may be produced if there is something not right.
+
 The general standards for code are listed here for reference, but there are others also. If you come across an error when your CSS is run through CSSLint then the best place to look for possible reasons will be first of all the stated line number in the console output, but you can also see the reason for the error by using the CSSLint Wiki pages at:
+
 [https://github.com/stubbornella/csslint/wiki/Rules](https://github.com/stubbornella/csslint/wiki/Rules)
+
 The console should say which rule is failing or giving you an error, so use that rule to see why.
+
 In an ideal world, we would love to write perfectly valid and clean code all the time, but sometimes that is not possible, especially when we have to integrate our code with a CMS. There are some properties that will throw or warning but you know that you can ignore. These rules can be altered to suppress these warnings if required (it’s recommended you try and fix the error though, instead of just turning off the warning…)
+
 Edits can be made to the `.csslintrc` file to suppress warnings and errors.
 
 ### Older browser support
@@ -203,9 +219,10 @@ Some warnings have been disabled by default, as they are likely to cause warning
 - qualified-headings
 - unique-headings
 
-## JAVASCRIPT CODING STANDARDS
+## JavaScript coding standards
 
 In order to make debugging as pain free as possible, we try to enforce certain standards when developing JavaScript code. In order to do this we use JSHint to check our JavaScript files each time we save something. This also acts as a check to spot simple errors that might cause issues further down the track.
+
 We use the following options to enforce a coding style and check for certain errors. These can be seen in the .`jslintrc` file at the root of your project. If you want to add or remove options from this file, please refer to the [JSHint documentation](http://www.jshint.com/docs/options/).
 
 ### Camel case variable names
