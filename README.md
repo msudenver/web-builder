@@ -81,7 +81,7 @@ If you’re using a Mac, you probably already have Ruby installed. If you’re o
 
 Once Ruby is installed we can install SASS. From the command prompt run the following commands. You may need to do this as an administrator user or use the `sudo` command if you’re using a UNIX based system.
 
-```bash
+```rb
 gem update --system
 gem install compass
 ```
@@ -213,9 +213,9 @@ You can also use variables inside your include files which can be passed as part
 
 You can pass inna variable in your include statement like so (notice there is no need for a semi-colon at the end):
 
-'''html
+```html
 @@include('header.html', {"pageTitle": "Homepage"})
-'''
+```
 
 ### Tag replacement in CSS files
 
