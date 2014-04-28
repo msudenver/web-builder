@@ -81,7 +81,7 @@ If you’re using a Mac, you probably already have Ruby installed. If you’re o
 
 Once Ruby is installed we can install SASS. From the command prompt run the following commands. You may need to do this as an administrator user or use the `sudo` command if you’re using a UNIX based system.
 
-```
+```bash
 gem update --system
 gem install compass
 ```
@@ -93,7 +93,7 @@ All the files you require are located within this GIT project.
 
 Clone the project and you will have a local copy.
 
-```
+```bash
 git clone git@git.terminalfour.com:PS/html-cutups-starter-kit.git
 ```
 
@@ -103,7 +103,7 @@ The first thing you should do once you have your local copy is identify your pro
 
 Once you have a local version stored and you’ve updated the project information, open your command prompt and cd to the root directory of your project
 
-```
+```bash
 cd path/to/my/project/folder
 ```
 
@@ -119,7 +119,7 @@ Doing a quick `ls –la` command should display the following files and folders:
 
 Once in the correct folder and with the files in place run the following:
 
-```
+```bash
 npm install
 ```
 
@@ -131,7 +131,7 @@ You should now have all the modules you need installed and you’re nearly ready
 
 We’re using Bower as a package manager to get the latest versions of the packages we need. The `bower.json` file in the root of your project has a default configuration that will download Foundation, Bootstrap-Sass, jQuery and Lemonade to be used as required. You don’t need to, but you can edit the `bower.json` file to only download what you need, or add additional packages if required. To get started, simply go back to your terminal window, make sure you’re still in the root directory of your project and run the following command
 
-```
+```bash
 grunt bower --verbose
 ```
 
@@ -143,13 +143,13 @@ We have our setup ready to go, but we haven’t automated anything yet. You migh
 
 To start Grunt, open your command prompt again and make sure you are looking at the project directory’s root folder (the same folder as `.Gruntfile.js`). Simply type the following command and watch grunt start up:
 
-```
+```bash
 grunt
 ```
 
 Grunt has been set up to do several things. The most important task, and the default one, is for Grunt to watch your files for changes. You will have noticed that the Grunt CLI says:
 
-```
+```bash
 Running "watch" task
 Waiting...
 ```
@@ -163,13 +163,13 @@ If you open the `style.scss` file within the `_/components/terminalfour/sass/` f
 
 This first line imports the `normalize.scss` file which applies normalize CSS to give a consistent starting point to your CSS across all browsers.
 
-```
+```scss
 @import "normalize";  
 ```
 
 Next, you have the option to include the framework you require - just uncomment the framework references you want to use. At this stage there is nothing to stop you adding a different framework if required and adding the appropriate `@import` statement here.
 
-```
+```scss
 //@import "../../foundation/foundation.scss";
 //@import "../../bootstrap/stylesheets/bootstrap.scss";
 ```
@@ -201,7 +201,7 @@ You can modularise your HTML into separate files if you like. For example you mn
 
 All includes should be placed in the `_/components/terminalfour/html/includes/` directory and to reference them to be included use the @@ syntax. For example, let's say you had your header section saved in a file called `header.html` in your includes directory. You can reference this in other files using the following code:
 
-```
+```html
 @@include('header.html')
 ```
 
