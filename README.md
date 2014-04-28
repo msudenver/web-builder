@@ -23,7 +23,7 @@ This section details the tools involved, what they do and how to install them on
 
 [SASS](http://sass-lang.com) is a pre-processor for CSS. It essentially allows the use of things like variables and nested rules in CSS, but that is not all it does. More info can be found at [http://sass-lang.com/](http://sass-lang.com/) where you can find documentation to get up and running with SASS. As more and more packages come with SASS versions it is fast becoming a standard language used in web development.
 
-[Compass](http://compass-style.org/) is framework for SASS with lots of commonly used design patterns and CSS definitions. Compass is for SASS what Bootstrap and Foundation are for HTML and CSS. More info can be found at [http://compass-style.org/](http://compass-style.org/)
+[Compass](http://compass-style.org/) is framework for SASS with lots of commonly used design patterns and CSS definitions. Compass is for SASS, what Bootstrap and Foundation are for HTML and CSS. More info can be found at [http://compass-style.org/](http://compass-style.org/)
 
 ### Grunt
 
@@ -31,9 +31,15 @@ This section details the tools involved, what they do and how to install them on
 
 We’ll be using the following Grunt plugins for development:
 
+- Bower Task - Allows installation of libraries using Bower
 - JSHint – Checks JavaScript syntax
 - Uglify – Minifies JavaScript files
-- Compass – add additional mixins to, and compiles SASS files
+- CSSLint - Checks CSS syntax for possible errors and pitfalls
+- SASS - Allows compiling of SASS files to CSS
+- Compass – add additional mixins to SASS
+- HTML Validation - Validates HTML files against W3C
+- Text Replace - Uses a JSON file to replace text site wide
+- Include Replace - allows includes to be used to modulise HTML files
 - Watch – Watches for changes in working files
 
 ### Bower
@@ -81,8 +87,13 @@ gem install compass
 ---
 ## Creating a new project
 
-All the files you require are located within the 'Starter' project in Git.
-[http://git.terminalfour.com/PS/html-cutups-starter-kit](http://git.terminalfour.com/PS/html-cutups-starter-kit)
+All the files you require are located within this GIT project.
+
+Clone the project and you will have a local copy.
+
+```
+git clone git@git.terminalfour.com:PS/html-cutups-starter-kit.git
+```
 
 ### Identify and install your project
 
@@ -134,7 +145,7 @@ To start Grunt, open your command prompt again and make sure you are looking at 
 grunt
 ```
 
-Grunt has been set up to do several things. The most important task, and the default one, is for Grunt to watch you files for changes. You will have noticed that the Grunt CLI says:
+Grunt has been set up to do several things. The most important task, and the default one, is for Grunt to watch your files for changes. You will have noticed that the Grunt CLI says:
 
 ```
 Running "watch" task
@@ -151,7 +162,7 @@ If you open the `style.scss` file within the `_/components/terminalfour/sass/` f
 This first line imports the `normalize.scss` file which applies normalize CSS to give a consistent starting point to your CSS across all browsers.
 
 ```
-@import "normalize";
+@import "normalize";  
 ```
 
 Next, you have the option to include the framework you require - just uncomment the framework references you want to use. At this stage there is nothing to stop you adding a different framework if required and adding the appropriate `@import` statement here.
@@ -161,9 +172,9 @@ Next, you have the option to include the framework you require - just uncomment 
 //@import "../../bootstrap/stylesheets/bootstrap.scss";
 ```
 
-To customise each framework's variables and settings, locate them in the framework's folder. For example, to change Foundation’s variables, we would edit the `_components/lib/foundation/_variables.scss` file.
+To customise each framework's variables and settings, locate them in the framework's folder. For example, to change Foundation’s variables, we would edit the `_components/lib/foundation/scss/foundation/_settings.scss` file.
 
-There are some starter files to get you up and running with a framework's markup. These can be found in `_/components/terminalfour/html/`. You should copy one of these files into the `html` folder at the root of your project and maintain your html files from that directory.
+There are some starter files to get you up and running with a framework's markup. These can be found in `_/components/terminalfour/html/`. You should copy one of these files into the `src` folder within `_/components/terminalfour/html/` and maintain your html files from that directory - Grunt has a separate task to compile HTML from this directory.
 
 ---
 ## Grunt tasks
@@ -181,6 +192,28 @@ Your CSS code is run through CSSLint to check for potential errors and to enforc
 Your JavaScript files are run through JSLint to ensure they are valid also.
 
 Any HTML files are validated against W3C standards. A report of the validation result is created in the report directory of your project.
+
+### Includes
+
+You can modularise your HTML into separate files if you like. For example you mnight have a consistent header section within your pages. Instead of having this code at the top of every page, you can separete this out into a seperate file and include it in your cutup files.
+
+All includes should be placed in the `_/components/terminalfour/html/includes/` directory and to reference them to be included use the @@ syntax. For example, let's say you had your header section saved in a file called `header.html` in your includes directory. You can reference this in other files using the following code:
+
+```
+@@include('header.html')
+```
+
+You can also use variables inside your include files which can be passed as part of the include statement. Let's say your header file is `<head>` section of your HTML and you want to be able to change the `<title>` tag for each page, within your include file you might have the following code:
+
+```html
+<title>University name - @@pageTitle</title>
+```
+
+You can pass inna variable in your include statement like so (notice there is no need for a semi-colon at the end):
+
+'''html
+@@include('header.html', {"pageTitle": "Homepage"})
+'''
 
 ### Tag replacement in CSS files
 
