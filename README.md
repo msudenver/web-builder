@@ -50,11 +50,11 @@ Check out the links to each project above for more information and documentation
 
 ### Foundation
 
-You have the option to use the [Foundation](http://foundation.zurb.com) framework as the basis for HTML cutups. The reason for this is it gives us common tools that we use across all projects, such as a responsive grid system, as well as several common plugins such as carousels and form validation. However, there is nothing to stop you using different plugins that offer different functionality. Edit and uncomment to appropriate line in _/components/terminalfour/style.scss to include the Foundation framework.
+You have the option to use the [Foundation](http://foundation.zurb.com) framework as the basis for HTML cutups. The reason for this is it gives us common tools that we use across all projects, such as a responsive grid system, as well as several common plugins such as carousels and form validation. However, there is nothing to stop you using different plugins that offer different functionality. Edit and uncomment to appropriate line in `_/components/terminalfour/style.scss` to include the Foundation framework.
 
 ### Bootstrap
 
-[Bootstrap](http://getbootstrap.com) is also included in the starter project and can be used in the same way as Foundation. Edit and uncomment to appropriate line in _/components/terminalfour/style.scss to include the Bootstrap framework.
+[Bootstrap](http://getbootstrap.com) is also included in the starter project and can be used in the same way as Foundation. Edit and uncomment to appropriate line in `_/components/terminalfour/style.scss` to include the Bootstrap framework.
 
 ### Lemonade
 
@@ -101,7 +101,7 @@ git clone git@git.terminalfour.com:PS/html-cutups-starter-kit.git
 
 The first thing you should do once you have your local copy is identify your project. This can be done by simply editing the fields in the `package.json` file at the root of your project to include information about the project, yourself and the client. This information is output as a comment block at the start of JavaScript and CSS files as a way of identifying who wrote the file.
 
-Once you have a local version stored and you’ve updated the project information, open your command prompt and cd to the root directory of your project
+Once you have a local version stored and you've updated the project information, open your command prompt and cd to the root directory of your project
 
 ```bash
 cd path/to/my/project/folder
