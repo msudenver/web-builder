@@ -1,2 +1,2 @@
 sassDir = '_/components/terminalfour/sass'
-cssDir = 'style-assets/css'
+cssDir = 'www-root/style-assets/css'
