@@ -9,10 +9,24 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-include-replace');
+  grunt.loadNpmTasks('grunt-express');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    
+    express: {
+      all: {
+        options: {
+          port: 9001,
+          hostname: '0.0.0.0',
+          bases: ['www-root'],
+          livereload: true,
+          open: true
+        }
+      }
+    },
     
     bower: {
       install: {
@@ -39,7 +53,7 @@ module.exports = function(grunt) {
       },//options
       build: {
         src: '_/components/terminalfour/js/*.js',
-        dest: 'style-assets/js/t4-custom.min.js'
+        dest: 'www-root/style-assets/js/t4-custom.min.js'
       }//build
     }, //uglify
     
@@ -51,9 +65,9 @@ module.exports = function(grunt) {
           banner : '<%= pkg.warning %>/**\n * Client: <%= pkg.clientName %>\n * Project: <%= pkg.projectName %>\n * Version: <%= pkg.version %>\n * Description: <%= pkg.description %>\n * Copyright <%= grunt.template.today("yyyy") %>\n * Created by <%= pkg.developer %>\n * on behalf of TERMINALFOUR\n * www.terminalfour.com\n */\n'
         },//options
         files: {
-          'style-assets/css/framework.css': '_/components/terminalfour/sass/framework.scss',
-          'style-assets/css/style-local.css': '_/components/terminalfour/sass/style.scss',
-          'style-assets/css/style.css': '_/components/terminalfour/sass/style.scss'
+          'www-root/style-assets/css/framework.css': '_/components/terminalfour/sass/framework.scss',
+          'www-root/style-assets/css/style-local.css': '_/components/terminalfour/sass/style.scss',
+          'www-root/style-assets/css/style.css': '_/components/terminalfour/sass/style.scss'
         }//files
       }//dist
     },//sass
@@ -66,13 +80,13 @@ module.exports = function(grunt) {
             {id: 'text', dest: 'report/csslint.txt'}
           ]
         },
-        src: ['style-assets/css/style.css']
+        src: ['www-root/style-assets/css/style.css']
       }
     },//csslint
     
     replace: {
       css: {
-        src: ['style-assets/css/style.css'],
+        src: ['www-root/style-assets/css/style.css'],
         overwrite: true,
         replacements: []
       }//css
@@ -93,10 +107,18 @@ module.exports = function(grunt) {
           includesDir: '_/components/terminalfour/html/includes'
         },
         files: [
-          {src: '**/*.html', dest: 'html/', expand: true, cwd: '_/components/terminalfour/html/src/'}
+          {src: '**/*.html', dest: 'www-root/', expand: true, cwd: '_/components/terminalfour/html/src/'}
         ]
       }
     },//includereplace
+    
+    copy: {
+      main: {
+        files: [
+          {expand: true, cwd: '_/components/lib/', src: ['./**'], dest: 'www-root/style-assets/lib/', filter: 'isFile'}
+        ]
+      }//main
+    },//copy
 
     watch: {
       options: { livereload: true },
@@ -113,7 +135,7 @@ module.exports = function(grunt) {
         tasks: ['includereplace']
       },//htmlcompile
       html: {
-        files: ['html/**/*.html'],
+        files: ['www-root/**/*.html'],
         tasks: ['validation']
       }
     },//watch
@@ -121,12 +143,19 @@ module.exports = function(grunt) {
   });
 
   // Default task(s).
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['server']);
   
   grunt.registerTask('replace-pre', function() {
     var cssReplacements = grunt.file.readJSON('replacements.json');
     grunt.config('replace.css.replacements', cssReplacements);
     grunt.task.run('replace');
   });
+  
+  grunt.registerTask('server', [
+    'express',
+    'copy',
+    'watch',
+    'express-keepalive'
+  ]);
 
 };
