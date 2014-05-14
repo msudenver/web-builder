@@ -41,6 +41,8 @@ We’ll be using the following Grunt plugins for development:
 - [Text Replace](https://github.com/yoniholmes/grunt-text-replace) - Uses a JSON file to replace text site wide
 - [Include Replace](https://github.com/alanshaw/grunt-include-replace) - allows includes to be used to modulise HTML files
 - [Watch](https://github.com/gruntjs/grunt-contrib-watch) – Watches for changes in working files
+- [Copy](https://github.com/gruntjs/grunt-contrib-copy) - Moves files around and into the correct locations
+- [Express](https://github.com/blai/grunt-express) - Creates an onn the fly web server and launches it
 
 Check out the links to each project above for more information and documentation in the case where you need to edit the tasks slightly.
 
@@ -147,16 +149,23 @@ To start Grunt, open your command prompt again and make sure you are looking at 
 grunt
 ```
 
-Grunt has been set up to do several things. The most important task, and the default one, is for Grunt to watch your files for changes. You will have noticed that the Grunt CLI says:
+Grunt has been set up to do several things. The most important task, and the default one, is for Grunt to spin up a new web server and then start watching your files for changes. You will have noticed that the Grunt CLI says:
 
 ```bash
+Running "express:all" (express) task
+
+Running "express-server:all" (express-server) task
+Web server started on port:9001, hostname: 0.0.0.0 [pid: 2388]
+
+Running "copy:main" (copy) task
+
 Running "watch" task
 Waiting...
 ```
 
-As long as you have your command prompt open, Grunt will monitor your files and 'watch' for changes in them.
+As long as you have your command prompt open, Grunt will monitor your files and 'watch' for changes in them and keep the web server running.
 
-Now if you make any changes to your project files, grunt will detect this and start running additional tasks as it needs to. For example, in the next step, you’ll edit your `style.scss` stylesheet and save it. Grunt will detect this, start compiling it, checking all your SASS, then compile a new CSS file under `_/style-assets/css/style.css`
+Now if you make any changes to your project files, grunt will detect this and start running additional tasks as it needs to. For example, in the next step, you’ll edit your `style.scss` stylesheet and save it. Grunt will detect this, start compiling it, checking all your SASS, then compile a new CSS file under `www-root/style-assets/css/style.css`
 
 ### Choose your framework
 If you open the `style.scss` file within the `_/components/terminalfour/sass/` folder you will see how the CSS is put together.
@@ -172,6 +181,7 @@ Next, you have the option to include the framework you require - just uncomment 
 ```scss
 //@import "../../foundation/foundation.scss";
 //@import "../../bootstrap/stylesheets/bootstrap.scss";
+//@import "/style-assets/lib/lemonade/lemonade.css";
 ```
 
 To customise each framework's variables and settings, locate them in the framework's folder. For example, to change Foundation’s variables, we would edit the `_components/lib/foundation/scss/foundation/_settings.scss` file.
@@ -182,6 +192,16 @@ There are some starter files to get you up and running with a framework's markup
 ## Grunt tasks
 
 So, what’s actually going on here? There are a few tasks that are being run when we use grunt. This is to try and make our code as efficient as possible and to create a standard way that we code using CSS etc.
+
+The first thing to realise is that all your development work should be carried out in the `_` directory and below. With Grunt running, whenever you save something in this directory, the relevant tasks are run and the resultant HTML/CSS/JS files are created in the root of your project folder in a `www-root` directory. This directory is also set as the root of the web server that Grunt spins up for you.
+
+### Express
+
+The Express grunt task is being used to create an on-the-fly web serevr for your project. This ensures that the site you are previewing should behave the same as it would on an actual server.
+
+### Copy
+The Copy task is simply used to move files around, in this case, taking all the bootstrap/foundation etc JavaScript files and placing them under the `style-assets` directory.
+
 
 ### Minifying
 
@@ -197,7 +217,7 @@ Any HTML files are validated against W3C standards. A report of the validation r
 
 ### Includes
 
-You can modularise your HTML into separate files if you like. For example you mnight have a consistent header section within your pages. Instead of having this code at the top of every page, you can separete this out into a seperate file and include it in your cutup files.
+You can modularise your HTML into separate files if you like. For example you might have a consistent header section within your pages. Instead of having this code at the top of every page, you can separete this out into a seperate file and include it in your cutup files.
 
 All includes should be placed in the `_/components/terminalfour/html/includes/` directory and to reference them to be included use the @@ syntax. For example, let's say you had your header section saved in a file called `header.html` in your includes directory. You can reference this in other files using the following code:
 
@@ -211,11 +231,13 @@ You can also use variables inside your include files which can be passed as part
 <title>University name - @@pageTitle</title>
 ```
 
-You can pass inna variable in your include statement like so (notice there is no need for a semi-colon at the end):
+You can pass in a variable in your include statement like so (notice there is no need for a semi-colon at the end):
 
 ```html
 @@include('header.html', {"pageTitle": "Homepage"})
 ```
+
+Another usefull example of this could be to have several HTML files in your includes folder, each one representing a content type. Within these files, you could place variables for each of the elements, then call  these from another file, passing in the variables as arguments. This allows a central place where you can manage how a content type is coded up and you can build up various page layout examples by simply referencing these includes.
 
 ### Tag replacement in CSS files
 
