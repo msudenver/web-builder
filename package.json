@@ -16,6 +16,7 @@
     "grunt-html-validation": "latest",
     "grunt-text-replace": "latest",
     "grunt-include-replace": "latest",
-    "grunt-express": "latest"
+    "grunt-express": "latest",
+    "grunt-contrib-copy": "latest"
   }
 }
