@@ -162,9 +162,9 @@ Next, you have the option to include the framework you require - just uncomment 
 
 To customise each framework's variables and settings, refer to the framework's own documentation.
 
-There are some starter files to get you up and running with a framework's markup. These can be found in `_/components/terminalfour/html/`. You can copy one of these files into the `src` folder within `_/components/terminalfour/html/` and rename it to `index.html`. *You should maintain your html files from the `src` directory* - Grunt has a separate task to compile HTML from this directory. Once you've moved the file you want into place, we can start up grunt.
+There are some starter files to get you up and running with a framework's markup. These can be found in `_/components/terminalfour/html/`. You can copy one of these files into the `src` folder within `_/components/terminalfour/html/` and rename it to `index.html`. **You should maintain your html files from the `src` directory** - Grunt has a separate task to compile HTML from this directory. Once you've moved the file you want into place, we can start up grunt.
 
-*Note - You don't have to use a framework and can instead just create a new index.html file in `_/components/terminalfour/html/src/`*
+**Note - You don't have to use a framework and can instead just create a new index.html file in `_/components/terminalfour/html/src/`**
 
 You can also create a directory structure under the `src` directory to mimic what Site Manager will publish. The structure will be replicated when the files are compiled.
 
