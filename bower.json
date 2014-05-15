@@ -1,5 +1,5 @@
 {
-  "name": "ps-dev-starter-kit",
+  "name": "HTML Cutups Starter Kit",
   "version": "0.0.1",
   "authors": "Hugh Law",
   "dependencies" : {
@@ -21,8 +21,8 @@
       "fonts" : "fonts/*"
     },
     "foundation": {
-      "scss/foundation": "scss/foundation/_settings.scss",
-      "scss/foundation/components/": ["scss/foundation/components/*.scss","scss/foundation/_functions.scss"],
+      "scss/foundation": "scss/foundation/*.scss",
+      "scss/foundation/components/": "scss/foundation/components/*.scss",
       "scss": "scss/*.scss",
       "js/foundation" : "js/foundation/*.js",
       "js/vendor" : "js/vendor/*.js"
