@@ -143,6 +143,31 @@ You can run this task without the `--verbose` command, but this allows you to se
 
 We have our setup ready to go, but we haven’t automated anything yet. You might have noticed a file called `Gruntfile.js` in the project folder. This file controls how Grunt works and what it does. This file has been written for you already and should do everything we need, so it’s not recommended to edit this file unless you need a separate specific task to be run on your project.
 
+### Choose your framework
+If you open the `style.scss` file within the `_/components/terminalfour/sass/` folder you will see how the CSS is put together.
+
+This first line imports the `normalize.scss` file which applies normalize CSS to give a consistent starting point to your CSS across all browsers.
+
+```scss
+@import "normalize";  
+```
+
+Next, you have the option to include the framework you require - just uncomment the framework references you want to use. At this stage there is nothing to stop you adding a different framework if required and adding the appropriate `@import` statement here.
+
+```scss
+//@import "../../foundation/foundation.scss";
+//@import "../../bootstrap/stylesheets/bootstrap.scss";
+//@import "/style-assets/lib/lemonade/lemonade.css";
+```
+
+To customise each framework's variables and settings, refer to the framework's own documentation.
+
+There are some starter files to get you up and running with a framework's markup. These can be found in `_/components/terminalfour/html/`. You can copy one of these files into the `src` folder within `_/components/terminalfour/html/` and rename it to `index.html`. *You should maintain your html files from the `src` directory* - Grunt has a separate task to compile HTML from this directory. Once you've moved the file you want into place, we can start up grunt.
+
+*Note - You don't have to use a framework and can instead just create a new index.html file in `_/components/terminalfour/html/src/`*
+
+You can also create a directory structure under the `src` directory to mimic what Site Manager will publish. The structure will be replicated when the files are compiled.
+
 To start Grunt, open your command prompt again and make sure you are looking at the project directory’s root folder (the same folder as `.Gruntfile.js`). Simply type the following command and watch grunt start up:
 
 ```bash
@@ -166,27 +191,6 @@ Waiting...
 As long as you have your command prompt open, Grunt will monitor your files and 'watch' for changes in them and keep the web server running.
 
 Now if you make any changes to your project files, grunt will detect this and start running additional tasks as it needs to. For example, in the next step, you’ll edit your `style.scss` stylesheet and save it. Grunt will detect this, start compiling it, checking all your SASS, then compile a new CSS file under `www-root/style-assets/css/style.css`
-
-### Choose your framework
-If you open the `style.scss` file within the `_/components/terminalfour/sass/` folder you will see how the CSS is put together.
-
-This first line imports the `normalize.scss` file which applies normalize CSS to give a consistent starting point to your CSS across all browsers.
-
-```scss
-@import "normalize";  
-```
-
-Next, you have the option to include the framework you require - just uncomment the framework references you want to use. At this stage there is nothing to stop you adding a different framework if required and adding the appropriate `@import` statement here.
-
-```scss
-//@import "../../foundation/foundation.scss";
-//@import "../../bootstrap/stylesheets/bootstrap.scss";
-//@import "/style-assets/lib/lemonade/lemonade.css";
-```
-
-To customise each framework's variables and settings, refer to the framework's own documentation.
-
-There are some starter files to get you up and running with a framework's markup. These can be found in `_/components/terminalfour/html/`. You should copy one of these files into the `src` folder within `_/components/terminalfour/html/` and maintain your html files from that directory - Grunt has a separate task to compile HTML from this directory.
 
 ---
 ## Grunt tasks
