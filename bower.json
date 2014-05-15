@@ -21,7 +21,7 @@
       "fonts" : "fonts/*"
     },
     "foundation": {
-      "scss/foundation": "scss/foundation/*.scss",
+      "scss/foundation": "scss/foundation/_functions.scss",
       "scss/foundation/components/": "scss/foundation/components/*.scss",
       "scss": "scss/*.scss",
       "js/foundation" : "js/foundation/*.js",

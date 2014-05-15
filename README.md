@@ -184,7 +184,7 @@ Next, you have the option to include the framework you require - just uncomment 
 //@import "/style-assets/lib/lemonade/lemonade.css";
 ```
 
-To customise each framework's variables and settings, locate them in the framework's folder. For example, to change Foundation’s variables, we would edit the `_components/lib/foundation/scss/foundation/_settings.scss` file.
+To customise each framework's variables and settings, refer to the framework's own documentation.
 
 There are some starter files to get you up and running with a framework's markup. These can be found in `_/components/terminalfour/html/`. You should copy one of these files into the `src` folder within `_/components/terminalfour/html/` and maintain your html files from that directory - Grunt has a separate task to compile HTML from this directory.
 
