@@ -570,11 +570,13 @@ hr {
 .carousel-control.right {
 background:none!important;
 width: 45px;
+text-align:left;
 }
 
 .carousel-control.left{
 background:none!important;
-width: 0px;
+width: 15px;
+text-align:right;
 }
 
 .item{
@@ -584,15 +586,21 @@ width: 0px;
 .carousel-control .fa-angle-left, .carousel-control .fa-angle-right, .carousel-control .fa-chevron-circle-right, .carousel-control .fa-chevron-circle-left, .carousel-control .icon-next, .carousel-control .icon-prev {
     position: absolute;
     top: 20%;
-    z-index: 5;
+    z-index: 10;
     display: inline-block;
     font-size:35px;
     /*background: rgba(255, 255, 255, 0.7);*/
-    padding-top: 50px;
-    padding-bottom: 50px;
+/*    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 5px;
-    padding-right: 5px;
-
+    padding-right: 5px;*/
+    background: #00AAFF;
+    border-radius: 50px;
+    color:white;
+    opacity:0.6;
+    height: 0.8em;
+    width: 0.8em;
+    line-height: 0.8;
 }
 
 .carousel-caption {
@@ -644,12 +652,12 @@ width: 0px;
     margin-top: 20px;
     padding: 15px;*/
     background: rgba(235, 237, 237, 1) !important;
-    color: gray !important;
+    color: #003879 !important;
     text-shadow: none;
 
 }
 .caption-reverse > h2 {
-     color: gray !important;
+     color: #003879 !important;
      font-size:40px;
      background: none;
      border: none;
@@ -658,7 +666,7 @@ width: 0px;
 }
 
 .caption-reverse > h3 {
-     color: gray !important;
+     color: #000 !important;
      font-size:24px;
      text-align: left;
      text-shadow: none;
@@ -666,7 +674,7 @@ width: 0px;
 
 
 .caption-reverse > hr {
-     color: gray !important;
+     color: #000 !important;
      width: 50px;
      text-shadow: none;
 }
@@ -685,12 +693,12 @@ width: 0px;
 
 .readmore-reverse {
     font-size:18px;
-    color: gray;
+    color: #000;
     text-align: right;
     text-shadow: none;
 }
 .readmore-reverse > a {
-     color: gray !important;
+     color: #000 !important;
      text-shadow: none;
 }
 
