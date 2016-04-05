@@ -142,6 +142,11 @@ Homepage Spring 2016
   color: #333!important
 }
 
+.navbar-brand {
+  height:59px;
+  /*padding-top: 5px;*/
+}
+
 .mainBlueNavigation {
  // background: #003663;
   background: url(http://msudenver.edu/media/assets/homepagespring2016/homne_headerbg.jpg) no-repeat;
@@ -614,6 +619,19 @@ text-align:right;
     color: #fff !important;
 
 }
+
+.carousel-caption-bug {
+    position: relative;
+    right: 100%;
+    left: 0%;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0px;
+    /*background: rgba(0, 68, 124, 1);*/
+    /*color: #fff !important;*/
+
+}
+
 .carousel-caption > h2 {
      color: #fff !important;
      font-size:40px;
@@ -651,13 +669,13 @@ text-align:right;
     width: 100%;
     margin-top: 20px;
     padding: 15px;*/
-    background: rgba(235, 237, 237, 1) !important;
+    background: rgba(255, 255, 255, 0.8) !important;
     color: #003879 !important;
     text-shadow: none;
 
 }
 .caption-reverse > h2 {
-     color: #003879 !important;
+     color: #00447C !important;
      font-size:40px;
      background: none;
      border: none;
@@ -736,6 +754,16 @@ text-align:right;
     width: 50%;
     padding: 30px 50px 30px 50px;
     background: rgba(0, 68, 124, 0.9);
+    /*color: #fff !important; */
+}
+
+.carousel-caption-bug {
+    position: absolute;
+    right: 100%;
+    left: 0%;
+    width: 50%;
+    padding: 30px 50px 30px 50px;
+    /*background: rgba(0, 68, 124, 0.9);*/
     /*color: #fff !important; */
 }
 
