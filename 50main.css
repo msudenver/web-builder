@@ -141,6 +141,16 @@ Homepage Spring 2016
   color: #333!important
 }
 
+.navbar-brand{
+  height: 57px;
+}
+
+@media  screen (max-width: 320px) {
+ .navbar-brand {
+   height: 53px;
+ }
+}
+
 .mainBlueNavigation {
  // background: #003663;
   background: url(http://msudenver.edu/media/assets/homepagespring2016/homne_headerbg.jpg) no-repeat;
