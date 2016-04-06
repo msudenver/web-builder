@@ -100,8 +100,7 @@ Homepage Spring 2016
 .toolbar {
   z-index: 9999;
   background-color: #fff;
-  border-bottom-color: #A0925E;
-  border-width: 0 0 2px;
+  border-width: 0;
 }
 .toolbar .quicktools {
   font-size: 16px;
