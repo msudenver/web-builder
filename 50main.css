@@ -152,9 +152,7 @@ Homepage Spring 2016
 }
 
 .mainBlueNavigation {
- // background: #003663;
-  background: url(http://msudenver.edu/media/assets/homepagespring2016/homne_headerbg.jpg) no-repeat;
-  background-size: cover;
+  background: rgba(0, 68, 124, 1);
 }
 
 .mainBlueNavigation ul li a {
@@ -184,6 +182,12 @@ Homepage Spring 2016
 
 
 @media only screen and (min-width: 768px)  {
+
+.mainBlueNavigation {
+    background: url(<t4 type='media' id='106586' formatter='image/path'/>) no-repeat;
+    background-size: cover;
+  }
+
 .mainBlueNavigation ul li a {
   color: #fff !important;
   font-size:1.5em;
