@@ -775,7 +775,7 @@ padding-left: 0px;
 
 .calls-to-action {
 	padding: 25px;
-	background: url(/media/assets/homepagespring2016/calltoactbg.png) no-repeat;
+  background: url(<t4 type='media' id='104546' formatter='image/path'/>) no-repeat;
 	background-size: cover;
 	background-color: rgba(52, 152, 219, 0.72);
 	margin-bottom: 20px;
