@@ -762,11 +762,23 @@ text-align:right;
     /*color: #fff !important; */
 }
 
-.50yearsbug {
+
+[class*="carousel-caption-bug"] { 
+    width: 100%;
+    position: absolute;
+    right: 100%;
+    left: 0%;
+    /*width: 50%;*/
+    padding: 30px 50px 30px 50px;
+    background: rgba(0, 68, 124, 0.9);
+    color: #fff !important;
+}
+
+/*.50yearsbug {
   padding: 0px;
   max-height: 100px;
   float: right;  
-}
+}*/
 
 }
 
