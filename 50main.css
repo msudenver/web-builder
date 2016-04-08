@@ -715,6 +715,7 @@ text-align:right;
 }
 .caption-readmore > a {
      color: #fff !important;
+     font-style: italic;
 }
 
 
