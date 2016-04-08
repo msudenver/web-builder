@@ -865,6 +865,11 @@ p.news-home-headline {
     padding-top:2px;
     margin-bottom: 0px;
 }
+p.event-home-date {
+    color: gray;
+    font-size: 1.2em;
+    font-weight: bold;
+}
 
 p.news-home-intro {
     color: gray;
