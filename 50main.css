@@ -1,8 +1,8 @@
 /* !!!
 
 Homepage Spring 2016
- CSS MIN Baked on :
- Saturday 30, May, 2015
+ CSS Baked on :
+ Wednesday 06, April, 2016
 
 
 !!! */
@@ -126,6 +126,7 @@ Homepage Spring 2016
   border: none;
   color: #d11242;
   font-size:25px;
+  margin-right: 5px;
 }
 .toolbar button.navbar-toggle span.icon-bar {
   color: #fff
@@ -208,6 +209,7 @@ Homepage Spring 2016
   padding-top: 70px !important;
 }
 
+
   ul.dropdown-menu > li a {
     padding-top: 0;
 }
@@ -253,7 +255,7 @@ ul.dropdown-menu > li a {
   top: 100px
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .header {
     text-align: left
   }
@@ -346,6 +348,7 @@ ul.dropdown-menu > li a {
   color: #fff;
   font-size:15px;
   font-weight:200;
+  text-align: right;
 }
 
 
@@ -545,15 +548,19 @@ h6 {
 }
 
 @media (min-width: 767px){
-.navbar .navbar-nav > .quicktools {
-    display: inline-block;
-    float: none;
-    margin-bottom: -2px;
-}
+  .navbar .navbar-nav > .quicktools {
+      display: inline-block;
+      float: none;
+      margin-bottom: -2px;
+  }
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
+  .carousel {
+      margin-top: -1px;
+      margin-bottom: 15px;
+  }
 
-.navbar .navbar-collapse {
-    text-align: center;
-}
 }
 
 hr {
@@ -577,10 +584,6 @@ hr {
 
 }
 
-.carousel {
-    margin-top: -1px;
-    margin-bottom: 15px;
-}
 
 .carousel-control {
     width: 5%;
@@ -669,13 +672,7 @@ text-align:right;
 
 
 .caption-reverse {
-    /*position: relative;*/
-/*    right: 100%;
-    left: 0%;
-    width: 100%;
-    margin-top: 20px;
-    padding: 15px;*/
-    background: rgba(235, 237, 237, 1) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
     color: #003879 !important;
     text-shadow: none;
 
@@ -690,7 +687,7 @@ text-align:right;
 }
 
 .caption-reverse > h3 {
-     color: #000 !important;
+     color: #003879 !important;
      font-size:24px;
      text-align: left;
      text-shadow: none;
@@ -698,12 +695,14 @@ text-align:right;
 
 
 .caption-reverse > hr {
-     color: #000 !important;
+     color: #003879 !important;
      width: 50px;
      text-shadow: none;
 }
 
-
+.caption-reverse > a {
+     color: #003879 !important;
+}
 
 .caption-readmore {
     font-size:18px;
@@ -761,7 +760,7 @@ text-align:right;
     right: 0%;
     left: inherit;
 }
-  
+
 .carousel-caption {
     position: absolute;
     right: 100%;
