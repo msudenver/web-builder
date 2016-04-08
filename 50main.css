@@ -761,7 +761,7 @@ text-align:right;
     right: 100%;
     left: 0%;
     width: 50%;
-    padding: 30px 50px 30px 50px;
+    padding: 15px 30px;
     background: rgba(0, 68, 124, 0.9);
     /*color: #fff !important; */
 }
@@ -769,7 +769,7 @@ text-align:right;
 .50yearsbug {
   padding: 0px;
   max-height: 100px;
-  float: right;  
+  float: right;
 }
 
 }
