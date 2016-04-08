@@ -51,50 +51,17 @@ Wednesday 06, April, 2016
 .clickable.col-lg-12.col-lg-6, .clickable.col-xs-6.col-sm-6.col-md-6.col-lg-3 {
     padding: .25em
 }
-/*.lead {
-    font-size: 16.1px;
-    font-weight: 200;
-    line-height: 1.4;
-    padding: 5%
-}*/
-/*.homepage-caption {
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0;
-    overflow: hidden;
-    max-height: 600px;
-    font-size: 4em
-}
-.homepage-caption h1 {
-    color: #fff
-}
-.homepage-caption h4, .homepage-caption p {
-    color: #fff;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #333;
-    background: rgba(0, 0, 0, .55);
-    margin: 0;
-    font-size: 16.1px;
-    font-weight: 200;
-    line-height: 1.4;
-    padding: 5%
-}*/
 .campus-info {
     border: 0px;
     border-bottom: 1px solid white;
     margin-bottom: 15px;
 }
-
+.navbar-static-top {
+    border-width: 0px;
+}
 .toolbar {
     z-index: 9999;
     background: #fff;
-    /*border-bottom-color: #fff;
-    border-width: 0 0 2px;*/
 }
 .toolbar .quicktools {
     font-size: 16px;
@@ -133,7 +100,6 @@ Wednesday 06, April, 2016
     background: #ecf0f1!important;
     color: #333!important
 }
-
 .mainBlueNavigation {
     background: rgba(0, 68, 124, 1);
 }
@@ -188,94 +154,6 @@ Wednesday 06, April, 2016
     padding-left: 200px;
     left: 0;
     top: 100px
-}
-@media screen (max-width: 320px) {
-    .navbar-brand {
-        height: 53px;
-    }
-}
-.navbar-brand {
-    height: 59px;
-}
-@media only screen and (min-width: 768px) {
-  .navbar .navbar-nav {
-      display: inline-block;
-      float: none;
-  }
-  .navbar .navbar-collapse {
-      text-align: center;
-  }
-  .campus-info {
-      border: 0px;
-      border-right: 1px solid white;
-      border-bottom: 0;
-      margin-bottom: 0;
-  }
-    .mainBlueNavigation {
-        background: url(<t4 type='media' id='106586' formatter='image/path'/>) no-repeat;
-        background-size: cover;
-    }
-    .mainBlueNavigation ul li a {
-        color: #fff !important;
-        font-size: 1.5em;
-        font-weight: 100;
-        font-family: 'Fjalla One', sans-serif;
-        padding-top: 70px !important;
-    }
-    ul.dropdown-menu > li a {
-        padding-top: 0;
-    }
-    ul.dropdown-menu > li a {
-        font-family: sans-serif;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .header {
-        text-align: left
-    }
-    #layout {
-        position: relative;
-        padding-left: 0
-    }
-    #layout.active {
-        position: relative;
-        left: 150px
-    }
-    #layout.active #menu {
-        left: 150px;
-        width: 70%
-    }
-    #menu {
-        left: 0
-    }
-    .menu-link {
-        position: fixed;
-        left: 0;
-        display: block;
-        background: #1b557a;
-        background: rgba(27, 85, 122, .5)
-    }
-    #layout.active .menu-link {
-        left: 70%
-    }
-}
-@media (min-width: 767px) {
-    #layout {
-        padding: 0;
-        margin: 0 auto;
-        left: 0
-    }
-    #menu {
-        position: relative;
-        left: 0;
-        padding: 0;
-        margin: 0 auto;
-        width: 100%
-    }
-    .header {
-        text-align: left
-    }
 }
 .custombtn {
     border-radius: 0;
@@ -449,17 +327,9 @@ h6 {
 .modal-dialog {
     padding-top: 12%
 }
-/*#top3>h5 {
-    margin-bottom: 0px;
-}*/
-.nav-social {
-    border-bottom: 48px solid #d11242;
-    border-left: 35px solid transparent;
-    border-right: 0px solid transparent;
-    height: 0;
-}
+
 .nav-social>a>i.fa {
-    color: white;
+    color: #fff;
     font-size: 18px;
     padding: 15px 10px;
 }
@@ -490,20 +360,6 @@ h6 {
     border-left: solid 1px #ccc;
     background: none;
     color: #d11242;
-}
-@media (min-width: 767px) {
-    .navbar .navbar-nav > .quicktools {
-        display: inline-block;
-        float: none;
-        margin-bottom: -2px;
-    }
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
-    .carousel {
-        margin-top: -1px;
-        margin-bottom: 15px;
-    }
 }
 hr {
     border-top: 1px solid #e6e1e1;
@@ -545,11 +401,6 @@ hr {
     z-index: 10;
     display: inline-block;
     font-size: 35px;
-    /*background: rgba(255, 255, 255, 0.7);*/
-    /*    padding-top: 5px;
-padding-bottom: 5px;
-padding-left: 5px;
-padding-right: 5px;*/
     background: #003879;
     border-radius: 50px;
     color: white;
@@ -568,16 +419,6 @@ padding-right: 5px;*/
     background: rgba(0, 68, 124, 1);
     color: #fff !important;
 }
-.carousel-caption-bug {
-    position: relative;
-    right: 100%;
-    left: 0%;
-    width: 100%;
-    /*margin-top: 20px;*/
-    padding: 0px;
-    /*background: rgba(0, 68, 124, 1);*/
-    /*color: #fff !important;*/
-}
 .carousel-caption > h2 {
     color: #fff !important;
     font-size: 25px;
@@ -592,47 +433,35 @@ padding-right: 5px;*/
     font-size: 15px;
     text-align: left;
     text-shadow: none;
+    margin-top: 10px;
 }
 .carousel-caption > hr {
     color: #fff !important;
     width: 50px;
 }
-.caption-reverseA {
-    color: rgba(235, 237, 237, 100) !important;
-    font-size: 40px;
-    background: #fff;
-    border: none;
-    text-align: left;
-}
 .caption-reverse {
     background: rgba(255, 255, 255, 0.9) !important;
-    /*position: relative;*/
-    /*    right: 100%;
-left: 0%;
-width: 100%;
-margin-top: 20px;
-padding: 15px;*/
     color: #003879 !important;
     text-shadow: none;
 }
 .caption-reverse > h2 {
     color: #003879 !important;
-    font-size: 40px;
-    background: none;
-    border: none;
-    text-align: left;
-    text-shadow: none;
+    /*font-size: 40px;*/
+    /*background: none;*/
+    /*border: none;*/
+    /*text-align: left;*/
+    /*text-shadow: none;*/
 }
 .caption-reverse > h3 {
     color: #003879 !important;
-    font-size: 24px;
-    text-align: left;
-    text-shadow: none;
+    /*font-size: 24px;*/
+    /*text-align: left;*/
+    /*text-shadow: none;*/
 }
 .caption-reverse > hr {
     color: #003879 !important;
     width: 50px;
-    text-shadow: none;
+    /*text-shadow: none;*/
 }
 .caption-reverse > a {
     color: #003879 !important;
@@ -646,62 +475,18 @@ padding: 15px;*/
     color: #fff !important;
     font-style: italic;
 }
-.readmore-reverse {
+.caption-reverse {
     font-size: 18px;
     color: #003879;
     text-align: right;
     text-shadow: none;
 }
-.readmore-reverse > a {
+.caption-reverse > .caption-readmore > a {
     color: #003879 !important;
     text-shadow: none;
 }
 .firstheight img {
     display: none;
-}
-@media screen and (min-width: 768px) {
-    .carousel-indicators {
-        bottom: 10px;
-        width: 200px;
-        right: 0%;
-        left: inherit;
-    }
-    .carousel-control .fa-angle-left, .carousel-control .fa-angle-right, .carousel-control .fa-chevron-circle-right, .carousel-control .fa-chevron-circle-left, .carousel-control .icon-next, .carousel-control .icon-prev {
-        position: absolute;
-        top: 30%;
-    }
-    .carousel-caption > h2 {
-        font-size: 40px;
-    }
-    .carousel-caption > h3 {
-        font-size: 24px;
-    }
-}
-@media screen and (min-width: 992px) {
-    .carousel-indicators {
-        bottom: 10px;
-        width: 200px;
-        right: 0%;
-        left: inherit;
-    }
-    .carousel-caption {
-        position: absolute;
-        right: 100%;
-        left: 0%;
-        width: 50%;
-        padding: 15px 30px;
-        background: rgba(0, 68, 124, 0.9);
-    }
-}
-@media (min-width:1200px) {
-    /*.toolbar {
-        margin-bottom: -1px;
-        background-color: rgba(255, 255, 255, 0.85);
-    }*/
-    .navbar-collapse {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
 }
 .calls-to-action {
     padding: 25px;
@@ -791,8 +576,128 @@ p.event-home-date {
     font-size: 1.2em;
     font-weight: bold;
 }
+.navbar-brand {
+    height: 53px;
+}
+
+
+@media screen (min-width: 320px) {
+    .navbar-brand {
+        height: 59px;
+    }
+}
+
+@media screen (max-width: 767px){
+  .nav-social {
+      background: #d11242;
+  }
+}
+@media only screen and (min-width: 768px) {
+    #layout {
+        padding: 0;
+        margin: 0 auto;
+        left: 0
+    }
+    #menu {
+        position: relative;
+        left: 0;
+        padding: 0;
+        margin: 0 auto;
+        width: 100%
+    }
+    .header {
+        text-align: left
+    }
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    .nav-social {
+        border-bottom: 48px solid #d11242;
+        border-left: 35px solid transparent;
+        border-right: 0px solid transparent;
+        height: 0;
+    }
+    .campus-info {
+        border: 0px;
+        border-right: 1px solid white;
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+    .mainBlueNavigation {
+        background: url(<t4 type='media' id='106586' formatter='image/path'/>) no-repeat;
+        background-size: cover;
+    }
+    .mainBlueNavigation ul li a {
+        color: #fff !important;
+        font-size: 1.5em;
+        font-weight: 100;
+        font-family: 'Fjalla One', sans-serif;
+        padding-top: 70px !important;
+    }
+    ul.dropdown-menu > li a {
+        padding-top: 0;
+    }
+    ul.dropdown-menu > li a {
+        font-family: sans-serif;
+    }
+    .header {
+        text-align: left
+    }
+    .navbar .navbar-nav > .quicktools {
+        display: inline-block;
+        float: none;
+        margin-bottom: -2px;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    .carousel {
+        margin-top: -1px;
+        margin-bottom: 15px;
+    }
+    .carousel-indicators {
+        bottom: 10px;
+        width: 200px;
+        right: 0%;
+        left: inherit;
+    }
+    .carousel-control .fa-angle-left, .carousel-control .fa-angle-right, .carousel-control .fa-chevron-circle-right, .carousel-control .fa-chevron-circle-left, .carousel-control .icon-next, .carousel-control .icon-prev {
+        position: absolute;
+        top: 30%;
+    }
+    .carousel-caption > h2 {
+        font-size: 40px;
+    }
+    .carousel-caption > h3 {
+        font-size: 24px;
+    }
+}
 @media screen and (min-width: 992px) {
     .calls-to-action>h3 >a {
         font-size: 1.5em;
+    }
+    .carousel-indicators {
+        bottom: 10px;
+        width: 200px;
+        right: 0%;
+        left: inherit;
+    }
+    .carousel-caption {
+        position: absolute;
+        right: 100%;
+        left: 0%;
+        width: 50%;
+        padding: 15px 30px;
+        background: rgba(0, 68, 124, 0.9);
+    }
+}
+@media (min-width:1200px) {
+    .navbar-collapse {
+        padding-right: 0px;
+        padding-left: 0px;
     }
 }
