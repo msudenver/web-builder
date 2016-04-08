@@ -175,22 +175,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </ol>-->
 
   <div class="carousel-inner" role="listbox">
-  <div class="item active">      
+   <div class="item active">      
     <img class="img-responsive" src="http://msudenver.edu/media/assets/homepagespring2016/braxton_tyrone1920x720.jpg" alt="SP2016 Braxton Tyrone Home" style="   " />
+      <table cellpadding="0" cellspacing="0" style="background-color: #00447c">
+         <tbody style="display: block;">
+            <tr>
+               <td class="secondheight">
+                <div class="carousel-caption">
+                       <img class="img-responsive 50yearsbug" src="50years85kalumni_bug.png" alt="50years85kalumni_bug" style="float:right;max-height:100px;" />
+                  <h2>Title of Image One</h2>
+                  <h3>Title of Image Two</h3>
+                   <div class="caption-readmore">
+                      <hr> 
+                      <a href="">Read More <i class="fa fa-angle-right"></i></a>
+                   </div>      
+                </div>
 
-
-
-    <div class="carousel-caption">
-          <img class="img-responsive 50yearsbug" src="50years85kalumni_bug.png" alt="50years85kalumni_bug" style="max-height:100px;float:right;" />
-     <h2>Title of Image One</h2>
-     <h3>Title of Image Two</h3>
-		<div class="caption-readmore">
-       	<hr> 
-      	<a href="">Read More <i class="fa fa-angle-right"></i></a>
-		</div>      
-	</div>
-
-</div>
+               </td>
+               <td class="">
+                  <div class="carousel-caption-bug firstheight">
+                     <img class="img-responsive 50yearsbug" src="50years85kalumni_bug.png" alt="50years85kalumni_bug" style="float:right;" />
+                  </div>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
 <div class="item ">      
       <img class="img-responsive" src="http://msudenver.edu/media/assets/homepagespring2016/rita_cuddihy1920x720.jpg" alt="Rita Cuddihy" style="   " />
       <div class="carousel-caption caption-reverse">
@@ -451,9 +461,6 @@ Saturday April 2, 2016 - Sloan's Lake</span></p>
 <!-- main.min.js -->
 <script type="text/javascript" src="http://www.msudenver.edu/media/prod/js/main.min.js"></script>
 <!-- FooterCode -->
-
-    
-    
     <script>
     $(function(){
     $(".dropdown").hover(            
@@ -468,29 +475,35 @@ Saturday April 2, 2016 - Sloan's Lake</span></p>
                 $('b', this).toggleClass("caret caret-up");                
             });
     });
-
-
-</script> 
+    </script> 
       
         <!-- matchHeight -->
-        <script type="text/javascript">
-            (function() {
+      <script type="text/javascript">
+          (function() {
 
-                $(function() {
-                    // apply your matchHeight on DOM ready (they will be automatically re-applied on load or resize)
+              $(function() {
+                  // apply your matchHeight on DOM ready (they will be automatically re-applied on load or resize)
 
-                    // get test settings
-                    var byRow = $('body').hasClass('.container-fluid');
+                  // get test settings
+                  var byRow = $('body').hasClass('.container-fluid');
 
-                    // apply matchHeight to each item container's items
-                    $('.items-container').each(function() {
-                        $(this).find('.item').matchHeight({
-                            byRow: byRow
-                        });
-                    });
-                });
-            })();
-        </script>
+                  // apply matchHeight to each item container's items
+                  $('.items-container').each(function() {
+                      $(this).find('.item').matchHeight({
+                          byRow: byRow
+                      });
+                  });
+              });
+          })();
+      </script>
+      <script type="text/javascript">
+
+         $("table tr").each(function() {
+             $(this).find(".firstheight img").css("max-height", 
+                 $(this).find(".secondheight").height()).show();
+         });
+      </script>
+
             
 </body>
 
