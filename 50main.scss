@@ -1,0 +1,236 @@
+.clickable {
+  &.col-lg-12.col-lg-6, &.col-xs-6.col-sm-6.col-md-6.col-lg-3 {
+    padding: 0.25em;
+  cursor: pointer;
+  }
+}
+
+.campus-info {
+  border: 0px;
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+}
+
+#layout, #menu, .menu-link {
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -ms-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#layout {
+  z-index: 9998;
+  padding-left: 200px;
+  left: 0;
+  top: 100px;
+}
+
+.ie8 {
+  .img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+  }
+  .navbar-inverse .navbar-brand {
+    color: inherit;
+  }
+  img {
+    display: block;
+    height: auto !important;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+  }
+}
+
+.footer {
+  display: block;
+  min-height: 20px;
+  padding: 20px;
+  margin-top: 5px;
+  background: #003663;
+  margin-left: 0px;
+  margin-right: 0px;
+  a, p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: right;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.accordion-group {
+  padding: 1em 1em .5em;
+  border: 1px solid #e8e8e8;
+}
+
+.gsc-search-button.gsc-search-button-v2 {
+  width: inherit;
+  height: inherit;
+}
+
+#slider > a {
+  &.left.carousel-control, &.right.carousel-control {
+    color: #fff;
+  }
+}
+
+.promo_date {
+  text-align: right;
+  font-size: small;
+  + h3 {
+    width: 80%;
+  }
+}
+
+.custombtn {
+  border-radius: 0;
+  margin-bottom: 15px;
+  width: 100%;
+  font-weight: 100 !important;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175);
+  span {
+    color: #FFF;
+  }
+}
+
+.msudenver_logo img {
+  width: 165px;
+  margin: 10px 25px;
+}
+
+.readmore {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.image_caption {
+  font-size: 12px;
+  line-height: 19px;
+  color: #73787e;
+}
+
+.well {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin-bottom: 20px;
+  padding: 1.2575em;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.img-thumbnail, .thumbnail {
+  padding: .5em;
+  margin: 1em;
+}
+
+.btn-primary a {
+  color: #fff;
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.modal-dialog {
+  padding-top: 12%;
+}
+
+/*#top3>h5 {
+    margin-bottom: 0px;
+}*/
+
+.nav-social {
+  border-bottom: 48px solid #d11242;
+  border-left: 35px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0;
+  > a > i.fa {
+    color: white;
+    font-size: 18px;
+    padding: 15px 10px;
+  }
+}
+
+.custom-search-input {
+  margin-top: 5px;
+  height: 40px;
+  padding: 3px;
+  border: solid 1px #E4E4E4;
+  border-radius: 6px;
+  background-color: #fff;
+  input {
+    border: 0;
+    box-shadow: none;
+  }
+  button {
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #003663;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+    &:hover {
+      border: 0;
+      box-shadow: none;
+      border-left: solid 1px #ccc;
+      background: none;
+      color: #d11242;
+    }
+  }
+}
+
+.panel {
+  border: 0px;
+  border-radius: 0px;
+}
+
+.panel-heading {
+  border-radius: 0px;
+}
+
+.calls-to-action {
+  padding: 25px;
+  background: url(/media/assets/homepagespring2016/calltoactbg.png) no-repeat;
+  background-size: cover;
+  background-color: rgba(52, 152, 219, 0.72);
+  margin-bottom: 20px;
+  > {
+    hr {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    h3 > a {
+      color: #F1F0F0;
+      font-weight: 100;
+      font-size: 1em;
+      text-transform: uppercase;
+      font-family: 'Fjalla One', sans-serif;
+    }
+  }
+}
+
+.news-events {
+  background: white;
+  padding: 0px 25px 15px;
+}
+
+
+

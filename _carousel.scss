@@ -1,0 +1,150 @@
+.carousel-control {
+  width: 5%;
+  font-size: 20px;
+  color: #0D2C56;
+  opacity: 1;
+  &.right {
+    background: none !important;
+    width: 45px;
+    text-align: left;
+  }
+  &.left {
+    background: none !important;
+    width: 15px;
+    text-align: right;
+  }
+}
+
+.item {
+  overflow: hidden;
+}
+
+.carousel-control {
+  .fa-angle-left, .fa-angle-right, .fa-chevron-circle-right, .fa-chevron-circle-left, .icon-next, .icon-prev {
+    position: absolute;
+    top: 20%;
+    z-index: 10;
+    display: inline-block;
+    font-size: 35px;
+    background: #003879;
+    border-radius: 50px;
+    color: white;
+    opacity: 0.6;
+    height: 0.8em;
+    width: 0.8em;
+    line-height: 0.8;
+  }
+}
+
+.carousel-caption {
+  position: relative;
+  right: 100%;
+  left: 0%;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(0, 68, 124, 1);
+  color: #fff !important;
+}
+
+.carousel-caption-bug {
+  position: relative;
+  right: 100%;
+  left: 0%;
+  width: 100%;
+  /*margin-top: 20px;*/
+  padding: 0px;
+  /*background: rgba(0, 68, 124, 1);*/
+  /*color: #fff !important;*/
+}
+
+.carousel-caption > {
+  h2 {
+    color: #fff !important;
+    font-size: 25px;
+    background: none;
+    border: none;
+    text-align: left;
+    text-shadow: none;
+    font-weight: bold;
+  }
+  h3 {
+    color: #fff !important;
+    font-size: 15px;
+    text-align: left;
+    text-shadow: none;
+  }
+  hr {
+    color: #fff !important;
+    width: 50px;
+  }
+}
+
+.caption-reverseA {
+  color: rgba(235, 237, 237, 100) !important;
+  font-size: 40px;
+  background: #fff;
+  border: none;
+  text-align: left;
+}
+
+.caption-reverse {
+  background: rgba(255, 255, 255, 0.9) !important;
+  /*position: relative;*/
+    /*    right: 100%;
+left: 0%;
+width: 100%;
+margin-top: 20px;
+padding: 15px;*/
+  color: #003879 !important;
+  text-shadow: none;
+  > {
+    h2 {
+      color: #003879 !important;
+      font-size: 40px;
+      background: none;
+      border: none;
+      text-align: left;
+      text-shadow: none;
+    }
+    h3 {
+      color: #003879 !important;
+      font-size: 24px;
+      text-align: left;
+      text-shadow: none;
+    }
+    hr {
+      color: #003879 !important;
+      width: 50px;
+      text-shadow: none;
+    }
+    a {
+      color: #003879 !important;
+    }
+  }
+}
+
+.caption-readmore {
+  font-size: 18px;
+  color: #fff;
+  text-align: right;
+  > a {
+    color: #fff !important;
+    font-style: italic;
+  }
+}
+
+.readmore-reverse {
+  font-size: 18px;
+  color: #003879;
+  text-align: right;
+  text-shadow: none;
+  > a {
+    color: #003879 !important;
+    text-shadow: none;
+  }
+}
+
+.firstheight img {
+  display: none;
+}

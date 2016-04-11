@@ -1,0 +1,45 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: Open Sans, helvetica, arial, sans-serif;
+}
+
+h1.hidden {
+  display: none;
+}
+
+h2 {
+  font-weight: 200;
+  text-align: right;
+  text-transform: uppercase;
+  color: #00529c;
+  font-size: 23pt;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 5px;
+  line-height: 1.3;
+  border-style: none;
+  border-bottom: 1px solid #949fa8;
+}
+
+h3 {
+  color: #4C4C4D;
+  font-size: 1.8em;
+}
+
+h4 {
+  color: #3498db;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+h5 {
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h6 {
+  color: #e74c3c;
+  font-size: 13px;
+  font-weight: 500;
+}

@@ -1,0 +1,158 @@
+.mainBlueNavigation {
+  background: rgba(0, 68, 124, 1);
+  ul li a {
+    color: #fff !important;
+  }
+}
+
+.dropdown-menu {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mainBlueNavigation {
+  .dropdown-menu li {
+    a {
+      color: #003663 !important;
+      font-size: 16px;
+      margin-left: 0;
+      text-align: left;
+      padding-top: 10px !important;
+    }
+    &:hover {
+      background: #003663;
+      color: #fff !important;
+      a {
+        background: #003663;
+        color: #fff !important;
+      }
+    }
+  }
+  .nav {
+    .open > a {
+      background-color: transparent;
+    }
+    > li > a {
+      &:focus, &:hover, &:active {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.navbar {
+  border-radius: 0 !important;
+  margin-bottom: 0;
+}
+
+.navbar-collapse {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.caret-up {
+  width: 0;
+  height: 0;
+  border-left: 4px solid rgba(0, 0, 0, 0);
+  border-right: 4px solid rgba(0, 0, 0, 0);
+  border-bottom: 4px solid;
+  display: inline-block;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+.nav-tabs > li {
+  &.active > a {
+    color: #003663;
+    cursor: default;
+    background-color: #fff;
+    border: 0px;
+    border-bottom: 3px solid #003663;
+    &:focus, &:hover {
+      color: #003663;
+      cursor: default;
+      background-color: #fff;
+      border: 0px;
+      border-bottom: 3px solid #003663;
+    }
+  }
+  > a {
+    border: 1px solid transparent;
+    border-radius: 0px;
+    font-size: 2em;
+    color: gray;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 10px;
+  }
+}
+
+.tab-pane {
+  padding-top: 15px;
+  > h4 {
+    text-align: right;
+    text-transform: uppercase;
+  }
+}
+
+.row.news-home-item {
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.navbar-default {
+  border: none;
+}
+
+.navbar-brand {
+  height: 59px;
+}
+
+.navbar-inner {
+  text-align: center;
+}
+
+.panel-default {
+  border: 1px solid #1b557a;
+  > .panel-heading {
+    background: #1b557a;
+    color: #fff;
+    font-size: 1.5em;
+    border-color: #1b557a;
+  }
+}
+
+.panel-title {
+  color: #fff;
+}
+
+.panel {
+  border: 0px;
+  border-radius: 0px;
+}
+
+.panel-heading {
+  border-radius: 0px;
+}
+
+.calls-to-action {
+  padding: 25px;
+  background: url(/media/assets/homepagespring2016/calltoactbg.png) no-repeat;
+  background-size: cover;
+  background-color: rgba(52, 152, 219, 0.72);
+  margin-bottom: 20px;
+  > {
+    hr {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    h3 > a {
+      color: #F1F0F0;
+      font-weight: 100;
+      font-size: 1em;
+      text-transform: uppercase;
+      font-family: 'Fjalla One', sans-serif;
+    }
+  }
+}

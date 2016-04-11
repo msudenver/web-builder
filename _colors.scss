@@ -1,0 +1,48 @@
+.darkgray {
+  background: #333;
+}
+
+.lightgray {
+  background: #bcbaba;
+}
+
+.white {
+  background: #fff;
+  color: #000;
+}
+
+.black {
+  background: #000;
+  color: #fff;
+}
+
+.contentlink {
+  background: #1b557a;
+}
+
+.rowdyblue {
+  background: #00447c;
+  color: #fff !important;
+  &:hover {
+    background: #003663;
+    color: #fff !important;
+  }
+}
+
+.rowdyred {
+  background: #c50f3c;
+  color: #fff !important;
+  &:hover {
+    background: #ad0d35;
+    color: #fff !important;
+  }
+}
+
+.rowdygray {
+  background: #717073;
+  color: #fff !important;
+  &:hover {
+    background: #646366;
+    color: #fff !important;
+  }
+}

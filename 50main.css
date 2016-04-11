@@ -7,6 +7,14 @@ Homepage Spring 2016
 
 !!! */
 
+@import "carousel";
+@import "colors";
+@import "elements";
+@import "headings";
+@import "navigation";
+@import "toolbar";
+
+
 .darkgray {
   background: #333
 }
@@ -638,7 +646,7 @@ text-align:right;
      background: none;
      border: none;
      text-align: left;
-     font-weight: bold;
+     font-weight: 500;
 }
 
 .carousel-caption > h3 {
@@ -682,6 +690,7 @@ text-align:right;
      border: none;
      text-align: left;
      text-shadow: none;
+     font-weight: 500;
 }
 
 .caption-reverse > h3 {
