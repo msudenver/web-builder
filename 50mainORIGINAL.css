@@ -7,13 +7,6 @@ Homepage Spring 2016
 
 !!! */
 
-@import "carousel";
-@import "colors";
-@import "elements";
-@import "headings";
-@import "navigation";
-@import "toolbar";
-
 
 .darkgray {
   background: #333

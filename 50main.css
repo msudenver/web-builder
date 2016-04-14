@@ -158,6 +158,11 @@ padding: 15px;*/
   display: none;
 }
 
+.secondheight {
+  width: 700px;
+  position: inherit;
+}
+
 .darkgray {
   background: #333;
 }
@@ -766,3 +771,5 @@ img {
   background: white;
   padding: 0px 25px 15px;
 }
+
+/* @import "media"; */

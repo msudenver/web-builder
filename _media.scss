@@ -1,0 +1,156 @@
+@media (min-width: 768px) {
+        .navbar .navbar-nav {
+            display: inline-block;
+            float: none;
+        }
+
+        .navbar .navbar-collapse {
+            text-align: center;
+        }
+    }
+
+@media screen (max-width: 320px) {
+    .navbar-brand {
+        height: 53px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  #layout {
+      padding: 0;
+      margin: 0 auto;
+      left: 0
+  }
+  #menu {
+      position: relative;
+      left: 0;
+      padding: 0;
+      margin: 0 auto;
+      width: 100%
+  }
+  .header {
+      text-align: left
+  }
+  .navbar .navbar-nav {
+      display: inline-block;
+      float: none;
+  }
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
+  .campus-info {
+      border: 0px;
+      border-right: 1px solid white;
+      border-bottom: 0;
+      margin-bottom: 0;
+  }
+    .mainBlueNavigation {
+        background: url(/media/assets/homepagespring2016/homne_headerbg.jpg) no-repeat;
+        background-size: cover;
+    }
+    .mainBlueNavigation ul li a {
+        color: #fff !important;
+        font-size: 1.5em;
+        font-weight: 100;
+        font-family: 'Fjalla One', sans-serif;
+        padding-top: 70px !important;
+    }
+    ul.dropdown-menu > li a {
+        padding-top: 0;
+    }
+    ul.dropdown-menu > li a {
+        font-family: sans-serif;
+    }
+    .header {
+        text-align: left
+    }
+
+    .navbar .navbar-nav > .quicktools {
+        display: inline-block;
+        float: none;
+        margin-bottom: -2px;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    .carousel {
+        margin-top: -1px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-indicators {
+        bottom: 10px;
+        width: 200px;
+        right: 0%;
+        left: inherit;
+    }
+    .carousel-control .fa-angle-left, .carousel-control .fa-angle-right, .carousel-control .fa-chevron-circle-right, .carousel-control .fa-chevron-circle-left, .carousel-control .icon-next, .carousel-control .icon-prev {
+        position: absolute;
+        top: 30%;
+    }
+    .carousel-caption > h2 {
+        font-size: 40px;
+    }
+    .carousel-caption > h3 {
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .carousel-indicators {
+        bottom: 10px;
+        width: 200px;
+        right: 0%;
+        left: inherit;
+    }
+    .carousel-caption {
+        position: absolute;
+        right: 100%;
+        left: 0%;
+        width: 50%;
+        padding: 15px 30px;
+        background: rgba(0, 68, 124, 0.9);
+    }
+}
+@media (min-width:1200px) {
+    /*.toolbar {
+        margin-bottom: -1px;
+        background-color: rgba(255, 255, 255, 0.85);
+    }*/
+    .navbar-collapse {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .calls-to-action>h3 >a {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 767px) {
+  #layout {
+    padding: 0;
+    margin: 0 auto;
+    left: 0
+  }
+  #menu {
+    position: relative;
+    left: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%
+  }
+  .header {
+    text-align: left
+  }
+}
+
+@media (min-width: 767px){
+.navbar .navbar-nav > .quicktools {
+    display: inline-block;
+    float: none;
+    margin-bottom: -2px;
+}
