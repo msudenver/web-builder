@@ -1,0 +1,124 @@
+.toolbar {
+    z-index: 9999;
+    background: #fff;
+}
+.toolbar .quicktools {
+    font-size: 16px;
+    padding-top: 5px;
+}
+.toolbar a.navbar-brand:hover {
+    color: #003663
+}
+.toolbar button.navbar-toggle {
+    border: none;
+    color: #d11242;
+    font-size: 25px;
+    margin-right: 5px;
+}
+.toolbar button.navbar-toggle span.icon-bar {
+    color: #fff
+}
+.toolbar .navbar-collapse .navbar-nav li a {
+    padding: 10px
+}
+.toolbar ul li a {
+    color: #003663;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out
+}
+.toolbar ul li a:hover {
+    background: #ecf0f1;
+    color: #333
+}
+.toolbar .navbar-collapse .navbar-collapse.collapse .nav.navbar-nav.navbar-right {
+    margin: 0
+}
+.toolbar li.active a {
+    background: #ecf0f1!important;
+    color: #333!important
+}
+
+.navbar {
+    border-radius: 0!important;
+    margin-bottom: 0;
+}
+.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-static-top {
+    border-width: 0;
+}
+
+.navbar-brand {
+    height: 53px;
+}
+
+.dropdown-menu {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mainBlueNavigation {
+    background: rgba(0, 68, 124, 1);
+}
+.mainBlueNavigation ul li a {
+    color: #fff !important;
+}
+.mainBlueNavigation .dropdown-menu li a {
+    color: #003663 !important;
+    font-size: 16px;
+    margin-left: 0;
+    text-align: left;
+    padding-top: 10px !important;
+}
+.mainBlueNavigation .dropdown-menu li:hover,
+.mainBlueNavigation .dropdown-menu li:hover a {
+    background: #003663;
+    color: #fff !important;
+}
+.mainBlueNavigation .nav .open > a,
+.mainBlueNavigation .nav > li > a:active,
+.mainBlueNavigation .nav > li > a:focus,
+.mainBlueNavigation .nav > li > a:hover {
+    background-color: transparent;
+}
+
+.caret-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-bottom: 4px solid;
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+@media only screen and (min-width: 320px) {
+  .navbar-brand {
+      height: 59px;
+  }
+}
+@media only screen and (max-width: 767px) {
+    .nav-social {
+        background: #d11242;
+    }
+}
+@media only screen and (min-width: 768px) {
+  .navbar .navbar-nav {
+      display: inline-block;
+      float: none;
+  }
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
+  .nav-social {
+      border-bottom: 48px solid #d11242;
+      border-left: 35px solid transparent;
+      border-right: 0 solid transparent;
+      height: 0;
+  }
+}
