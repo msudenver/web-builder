@@ -490,7 +490,7 @@ hr {
 }
 .calls-to-action {
     padding: 25px;
-    background: url(<t4 type='media' id='104546' formatter='image/path'/>) no-repeat;
+    background: url(/media/assets/homepagespring2016/calltoactbg.png) no-repeat;
     background-size: cover;
     background-color: rgba(52, 152, 219, 0.72);
     margin-bottom: 20px;
@@ -579,16 +579,17 @@ p.event-home-date {
 .navbar-brand {
     height: 53px;
 }
-@media screen (max-width: 767px){
-  .nav-social {
-      background: #d11242;
-  }
-}
 
-@media screen (min-width: 320px) {
+
+@media only screen and (min-width: 320px) {
     .navbar-brand {
         height: 59px;
     }
+}
+@media only screen and (max-width: 767px) {
+  .nav-social {
+      background: #d11242;
+  }
 }
 @media only screen and (min-width: 768px) {
     #layout {
@@ -626,7 +627,7 @@ p.event-home-date {
         margin-bottom: 0;
     }
     .mainBlueNavigation {
-        background: url(<t4 type='media' id='106586' formatter='image/path'/>) no-repeat;
+        background: url(/media/assets/homepagespring2016/homne_headerbg.jpg) no-repeat;
         background-size: cover;
     }
     .mainBlueNavigation ul li a {
