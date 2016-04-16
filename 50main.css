@@ -579,18 +579,16 @@ p.event-home-date {
 .navbar-brand {
     height: 53px;
 }
-
+@media screen (max-width: 767px){
+  .nav-social {
+      background: #d11242;
+  }
+}
 
 @media screen (min-width: 320px) {
     .navbar-brand {
         height: 59px;
     }
-}
-
-@media screen (max-width: 767px){
-  .nav-social {
-      background: #d11242;
-  }
 }
 @media only screen and (min-width: 768px) {
     #layout {
