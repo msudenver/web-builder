@@ -44,6 +44,10 @@
     border-radius: 0!important;
     margin-bottom: 0;
 }
+.navbar-default {
+    border: none;
+}
+
 .navbar-collapse {
     padding-right: 0;
     padding-left: 0;
@@ -108,10 +112,11 @@
     }
 }
 @media only screen and (min-width: 768px) {
-  .navbar .navbar-nav {
+     .navbar .navbar-nav {
       display: inline-block;
       float: none;
   }
+
   .navbar .navbar-collapse {
       text-align: center;
   }
@@ -121,4 +126,50 @@
       border-right: 0 solid transparent;
       height: 0;
   }
+  .navbar .navbar-nav > .quicktools {
+      display: inline-block;
+      float: none;
+      margin-bottom: -2px;
+  }
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
+  .mainBlueNavigation {
+      background: url("/media/assets/homepagespring2016/homne_headerbg.jpg") no-repeat;
+      background-size: cover;
+      .navbar .navbar-nav {
+       display: inline-block;
+       float: none;
+   }
+  }
+  .mainBlueNavigation ul li a {
+      color: #fff !important;
+      font-size: 1.2em;
+      font-weight: 100;
+      font-family: 'Fjalla One', sans-serif;
+      padding-top: 70px !important;
+  }
+  ul.dropdown-menu > li a {
+      padding-top: 0;
+  }
+  ul.dropdown-menu > li a {
+      font-family: sans-serif;
+  }
+}
+
+@media screen and (min-width: 992px) {
+    .msudenver_logo img {
+        width: 165px;
+        margin: 10px 25px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .mainBlueNavigation ul li a {
+        font-size: 1.5em;
+    }
+    .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
