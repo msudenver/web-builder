@@ -50,6 +50,8 @@ Wednesday 06, April, 2016
 
 .navbar { border-radius: 0 !important; margin-bottom: 0; }
 
+.navbar-default { border: none; }
+
 .navbar-collapse { padding-right: 0; padding-left: 0; }
 
 .navbar-static-top { border-width: 0; }
@@ -76,25 +78,99 @@ Wednesday 06, April, 2016
 
 @media only screen and (min-width: 768px) { .navbar .navbar-nav { display: inline-block; float: none; }
   .navbar .navbar-collapse { text-align: center; }
-  .nav-social { border-bottom: 48px solid #d11242; border-left: 35px solid transparent; border-right: 0 solid transparent; height: 0; } }
+  .nav-social { border-bottom: 48px solid #d11242; border-left: 35px solid transparent; border-right: 0 solid transparent; height: 0; }
+  .navbar .navbar-nav > .quicktools { display: inline-block; float: none; margin-bottom: -2px; }
+  .navbar .navbar-collapse { text-align: center; }
+  .mainBlueNavigation { background: url("/media/assets/homepagespring2016/homne_headerbg.jpg") no-repeat; background-size: cover; }
+  .mainBlueNavigation .navbar .navbar-nav { display: inline-block; float: none; }
+  .mainBlueNavigation ul li a { color: #fff !important; font-size: 1.2em; font-weight: 100; font-family: 'Fjalla One', sans-serif; padding-top: 70px !important; }
+  ul.dropdown-menu > li a { padding-top: 0; }
+  ul.dropdown-menu > li a { font-family: sans-serif; } }
 
-.clickable.col-lg-12.col-lg-6, .clickable.col-xs-6.col-sm-6.col-md-6.col-lg-3 { padding: 0.25em; }
+@media screen and (min-width: 992px) { .msudenver_logo img { width: 165px; margin: 10px 25px; } }
+
+@media only screen and (min-width: 1200px) { .mainBlueNavigation ul li a { font-size: 1.5em; }
+  .navbar-collapse { padding-right: 0; padding-left: 0; } }
+
+#slider > a.left.carousel-control, #slider > a.right.carousel-control { color: #fff; }
+
+.carousel-control { width: 5%; font-size: 20px; color: #0D2C56; opacity: 1; }
+
+.carousel-control.right { background: none !important; width: 45px; text-align: left; }
+
+.carousel-control.left { background: none !important; width: 15px; text-align: right; }
+
+.item { overflow: hidden; }
+
+.carousel-control .fa-angle-left, .carousel-control .fa-angle-right, .carousel-control .fa-chevron-circle-left, .carousel-control .fa-chevron-circle-right, .carousel-control .icon-next, .carousel-control .icon-prev { position: absolute; top: 20%; z-index: 10; display: inline-block; font-size: 35px; background: #003879; border-radius: 50px; color: white; opacity: 0.6; height: 0.8em; width: 0.8em; line-height: 0.8; }
+
+.carousel-caption { position: relative; right: 100%; left: 0; width: 100%; margin-top: 20px; padding: 15px; background: #00447c; color: #fff !important; }
+
+.carousel-caption > h2 { color: #fff !important; font-size: 25px; background: none; border: none; text-align: left; text-shadow: none; font-weight: bold; }
+
+.carousel-caption > h3 { color: #fff !important; font-size: 15px; text-align: left; text-shadow: none; margin-top: 10px; }
+
+.carousel-caption > hr { color: #fff !important; width: 50px; }
+
+.caption-reverse { background: rgba(255, 255, 255, 0.9) !important; color: #003879 !important; text-shadow: none; }
+
+.caption-reverse > h2 { color: #003879 !important; /*font-size: 40px;*/ /*background: none;*/ /*border: none;*/ /*text-align: left;*/ /*text-shadow: none;*/ }
+
+.caption-reverse > h3 { color: #003879 !important; /*font-size: 24px;*/ /*text-align: left;*/ /*text-shadow: none;*/ }
+
+.caption-reverse > hr { color: #003879 !important; width: 50px; /*text-shadow: none;*/ }
+
+.caption-reverse > a { color: #003879 !important; }
+
+.caption-readmore { font-size: 18px; color: #fff; text-align: right; }
+
+.caption-readmore > a { color: #fff !important; font-style: italic; }
+
+.caption-reverse { font-size: 18px; color: #003879; text-align: right; text-shadow: none; }
+
+.caption-reverse > .caption-readmore > a { color: #003879 !important; text-shadow: none; }
+
+.firstheight img { display: none; }
+
+@media only screen and (min-width: 768px) { .carousel { margin-top: -1px; margin-bottom: 15px; }
+  .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
+  .carousel-control .fa-angle-left, .carousel-control .fa-angle-right, .carousel-control .fa-chevron-circle-left, .carousel-control .fa-chevron-circle-right, .carousel-control .icon-next, .carousel-control .icon-prev { position: absolute; top: 30%; }
+  .carousel-caption > h2 { font-size: 40px; }
+  .carousel-caption > h3 { font-size: 24px; } }
+
+@media screen and (min-width: 992px) { .msudenver_logo img { width: 165px; margin: 10px 25px; }
+  .calls-to-action > h3 > a { font-size: 1.5em; }
+  .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
+  .carousel-caption { position: absolute; right: 100%; left: 0; width: 50%; padding: 15px 30px; background: rgba(0, 68, 124, 0.9); } }
+
+.footer { display: block; min-height: 20px; padding: 20px; margin-top: 5px; background: #003663; margin-left: 0; margin-right: 0; }
+
+.footer a, .footer p { color: #fff; font-size: 15px; font-weight: 200; text-align: right; }
 
 .campus-info { border: 0; border-bottom: 1px solid white; margin-bottom: 15px; }
 
-.dropdown-menu { padding-left: 10px; padding-right: 10px; }
+@media only screen and (min-width: 768px) { .campus-info { border: 0; border-right: 1px solid white; border-bottom: 0; margin-bottom: 0; } }
 
-.mainBlueNavigation .dropdown-menu li a { color: #003663 !important; font-size: 16px; margin-left: 0; text-align: left; padding-top: 10px !important; }
+.calls-to-action { padding: 25px; background: url("/media/assets/homepagespring2016/calltoactbg.png") no-repeat; background-size: cover; background-color: rgba(52, 152, 219, 0.72); margin-bottom: 20px; }
 
-.mainBlueNavigation .dropdown-menu li:hover, .mainBlueNavigation .dropdown-menu li:hover a { background: #003663; color: #fff !important; }
+.calls-to-action > hr { border-top: 1px solid rgba(255, 255, 255, 0.2); margin-top: 15px; margin-bottom: 15px; }
 
-.mainBlueNavigation .nav .open > a, .mainBlueNavigation .nav > li > a:active, .mainBlueNavigation .nav > li > a:focus, .mainBlueNavigation .nav > li > a:hover { background-color: transparent; }
+.calls-to-action > h3 > a { color: #F1F0F0; font-weight: 100; font-size: 1em; text-transform: uppercase; font-family: 'Fjalla One', sans-serif; }
 
-.navbar { border-radius: 0 !important; margin-bottom: 0; }
+@media screen and (min-width: 992px) { .msudenver_logo img { width: 165px; margin: 10px 25px; }
+  .calls-to-action > h3 > a { font-size: 1.5em; } }
 
-.navbar-collapse { padding-right: 0; padding-left: 0; }
+.panel { border: 0; border-radius: 0; }
 
-.caret-up { width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-bottom: 4px solid; display: inline-block; margin-left: 2px; vertical-align: middle; }
+.panel-heading { border-radius: 0; }
+
+.panel-default { border: 1px solid #1b557a; }
+
+.panel-default > .panel-heading { background: #1b557a; color: #fff; font-size: 1.5em; border-color: #1b557a; }
+
+.panel-title { color: #fff; }
+
+.clickable.col-lg-12.col-lg-6, .clickable.col-xs-6.col-sm-6.col-md-6.col-lg-3 { padding: 0.25em; }
 
 #layout, #menu, .menu-link { -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; }
 
@@ -110,25 +186,11 @@ Wednesday 06, April, 2016
 
 .ie8 img { display: block; height: auto !important; max-width: 100%; vertical-align: middle; border: 0; -ms-interpolation-mode: bicubic; }
 
-.footer { display: block; min-height: 20px; padding: 20px; margin-top: 5px; background: #003663; margin-left: 0; margin-right: 0; }
-
-.footer a, .footer p { color: #fff; font-size: 15px; font-weight: 200; text-align: right; }
-
-.panel-default { border: 1px solid #1b557a; }
-
-.panel-default > .panel-heading { background: #1b557a; color: #fff; font-size: 1.5em; border-color: #1b557a; }
-
-.panel-title { color: #fff; }
-
 img { max-width: 100%; height: auto; }
 
 .accordion-group { padding: 1em 1em 0.5em; border: 1px solid #e8e8e8; }
 
 .gsc-search-button.gsc-search-button-v2 { width: inherit; height: inherit; }
-
-.navbar-default { border: none; }
-
-#slider > a.left.carousel-control, #slider > a.right.carousel-control { color: #fff; }
 
 .promo_date { text-align: right; font-size: small; }
 
@@ -188,50 +250,6 @@ hr { border-top: 1px solid #e6e1e1; margin-top: 15px; margin-bottom: 15px; }
 
 .panel-heading { border-radius: 0; }
 
-.carousel-control { width: 5%; font-size: 20px; color: #0D2C56; opacity: 1; }
-
-.carousel-control.right { background: none !important; width: 45px; text-align: left; }
-
-.carousel-control.left { background: none !important; width: 15px; text-align: right; }
-
-.item { overflow: hidden; }
-
-.carousel-control .fa-angle-left, .carousel-control .fa-angle-right, .carousel-control .fa-chevron-circle-left, .carousel-control .fa-chevron-circle-right, .carousel-control .icon-next, .carousel-control .icon-prev { position: absolute; top: 20%; z-index: 10; display: inline-block; font-size: 35px; background: #003879; border-radius: 50px; color: white; opacity: 0.6; height: 0.8em; width: 0.8em; line-height: 0.8; }
-
-.carousel-caption { position: relative; right: 100%; left: 0; width: 100%; margin-top: 20px; padding: 15px; background: #00447c; color: #fff !important; }
-
-.carousel-caption > h2 { color: #fff !important; font-size: 25px; background: none; border: none; text-align: left; text-shadow: none; font-weight: bold; }
-
-.carousel-caption > h3 { color: #fff !important; font-size: 15px; text-align: left; text-shadow: none; margin-top: 10px; }
-
-.carousel-caption > hr { color: #fff !important; width: 50px; }
-
-.caption-reverse { background: rgba(255, 255, 255, 0.9) !important; color: #003879 !important; text-shadow: none; }
-
-.caption-reverse > h2 { color: #003879 !important; /*font-size: 40px;*/ /*background: none;*/ /*border: none;*/ /*text-align: left;*/ /*text-shadow: none;*/ }
-
-.caption-reverse > h3 { color: #003879 !important; /*font-size: 24px;*/ /*text-align: left;*/ /*text-shadow: none;*/ }
-
-.caption-reverse > hr { color: #003879 !important; width: 50px; /*text-shadow: none;*/ }
-
-.caption-reverse > a { color: #003879 !important; }
-
-.caption-readmore { font-size: 18px; color: #fff; text-align: right; }
-
-.caption-readmore > a { color: #fff !important; font-style: italic; }
-
-.caption-reverse { font-size: 18px; color: #003879; text-align: right; text-shadow: none; }
-
-.caption-reverse > .caption-readmore > a { color: #003879 !important; text-shadow: none; }
-
-.firstheight img { display: none; }
-
-.calls-to-action { padding: 25px; background: url("/media/assets/homepagespring2016/calltoactbg.png") no-repeat; background-size: cover; background-color: rgba(52, 152, 219, 0.72); margin-bottom: 20px; }
-
-.calls-to-action > hr { border-top: 1px solid rgba(255, 255, 255, 0.2); margin-top: 15px; margin-bottom: 15px; }
-
-.calls-to-action > h3 > a { color: #F1F0F0; font-weight: 100; font-size: 1em; text-transform: uppercase; font-family: 'Fjalla One', sans-serif; }
-
 .news-events { background: white; padding: 0 25px 15px; }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { color: #003663; cursor: default; background-color: #fff; border: 0; border-bottom: 3px solid #003663; }
@@ -262,25 +280,6 @@ p.event-home-date { color: gray; font-size: 1.2em; font-weight: bold; }
 
 @media only screen and (min-width: 768px) { #layout { padding: 0; margin: 0 auto; left: 0; }
   #menu { position: relative; left: 0; padding: 0; margin: 0 auto; width: 100%; }
-  .header { text-align: left; }
-  .campus-info { border: 0; border-right: 1px solid white; border-bottom: 0; margin-bottom: 0; }
-  .mainBlueNavigation { background: url("/media/assets/homepagespring2016/homne_headerbg.jpg") no-repeat; background-size: cover; }
-  .mainBlueNavigation ul li a { color: #fff !important; font-size: 1.2em; font-weight: 100; font-family: 'Fjalla One', sans-serif; padding-top: 70px !important; }
-  ul.dropdown-menu > li a { padding-top: 0; }
-  ul.dropdown-menu > li a { font-family: sans-serif; }
-  .header { text-align: left; }
-  .navbar .navbar-nav > .quicktools { display: inline-block; float: none; margin-bottom: -2px; }
-  .navbar .navbar-collapse { text-align: center; }
-  .carousel { margin-top: -1px; margin-bottom: 15px; }
-  .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
-  .carousel-control .fa-angle-left, .carousel-control .fa-angle-right, .carousel-control .fa-chevron-circle-left, .carousel-control .fa-chevron-circle-right, .carousel-control .icon-next, .carousel-control .icon-prev { position: absolute; top: 30%; }
-  .carousel-caption > h2 { font-size: 40px; }
-  .carousel-caption > h3 { font-size: 24px; } }
+  .header { text-align: left; } }
 
-@media screen and (min-width: 992px) { .msudenver_logo img { width: 165px; margin: 10px 25px; }
-  .calls-to-action > h3 > a { font-size: 1.5em; }
-  .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
-  .carousel-caption { position: absolute; right: 100%; left: 0; width: 50%; padding: 15px 30px; background: rgba(0, 68, 124, 0.9); } }
-
-@media (min-width: 1200px) { .mainBlueNavigation ul li a { font-size: 1.5em; }
-  .navbar-collapse { padding-right: 0; padding-left: 0; } }
+@media screen and (min-width: 992px) { .msudenver_logo img { width: 165px; margin: 10px 25px; } }
