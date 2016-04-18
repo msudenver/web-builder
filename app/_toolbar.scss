@@ -7,7 +7,7 @@
     padding-top: 5px;
 }
 .toolbar a.navbar-brand:hover {
-    color: #003663
+    color: #003663;
 }
 .toolbar button.navbar-toggle {
     border: none;
@@ -16,38 +16,39 @@
     margin-right: 5px;
 }
 .toolbar button.navbar-toggle span.icon-bar {
-    color: #fff
+    color: #fff;
 }
 .toolbar .navbar-collapse .navbar-nav li a {
-    padding: 10px
+    padding: 10px;
 }
 .toolbar ul li a {
     color: #003663;
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    -o-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 .toolbar ul li a:hover {
     background: #ecf0f1;
-    color: #333
+    color: #333;
 }
 .toolbar .navbar-collapse .navbar-collapse.collapse .nav.navbar-nav.navbar-right {
-    margin: 0
+    margin: 0;
 }
 .toolbar li.active a {
     background: #ecf0f1!important;
-    color: #333!important
+    color: #333!important;
 }
-
 .navbar {
     border-radius: 0!important;
     margin-bottom: 0;
 }
+.navbar-nav {
+    margin: 0;
+}
 .navbar-default {
     border: none;
 }
-
 .navbar-collapse {
     padding-right: 0;
     padding-left: 0;
@@ -55,16 +56,13 @@
 .navbar-static-top {
     border-width: 0;
 }
-
 .navbar-brand {
     height: 53px;
 }
-
 .dropdown-menu {
     padding-left: 10px;
     padding-right: 10px;
 }
-
 .mainBlueNavigation {
     background: rgba(0, 68, 124, 1);
 }
@@ -89,7 +87,6 @@
 .mainBlueNavigation .nav > li > a:hover {
     background-color: transparent;
 }
-
 .caret-up {
     width: 0;
     height: 0;
@@ -100,11 +97,10 @@
     margin-left: 2px;
     vertical-align: middle;
 }
-
 @media only screen and (min-width: 320px) {
-  .navbar-brand {
-      height: 59px;
-  }
+    .navbar-brand {
+        height: 59px;
+    }
 }
 @media only screen and (max-width: 767px) {
     .nav-social {
@@ -112,58 +108,63 @@
     }
 }
 @media only screen and (min-width: 768px) {
-     .navbar .navbar-nav {
-      display: inline-block;
-      float: none;
-  }
-
-  .navbar .navbar-collapse {
-      text-align: center;
-  }
-  .nav-social {
-      border-bottom: 48px solid #d11242;
-      border-left: 35px solid transparent;
-      border-right: 0 solid transparent;
-      height: 0;
-  }
-  .navbar .navbar-nav > .quicktools {
-      display: inline-block;
-      float: none;
-      margin-bottom: -2px;
-  }
-  .navbar .navbar-collapse {
-      text-align: center;
-  }
-  .mainBlueNavigation {
-      background: url("/media/assets/homepagespring2016/homne_headerbg.jpg") no-repeat;
-      background-size: cover;
-      .navbar .navbar-nav {
-       display: inline-block;
-       float: none;
-   }
-  }
-  .mainBlueNavigation ul li a {
-      color: #fff !important;
-      font-size: 1.2em;
-      font-weight: 100;
-      font-family: 'Fjalla One', sans-serif;
-      padding-top: 70px !important;
-  }
-  ul.dropdown-menu > li a {
-      padding-top: 0;
-  }
-  ul.dropdown-menu > li a {
-      font-family: sans-serif;
-  }
+    // .navbar .navbar-nav {
+    //     display: inline-block;
+    //     float: none;
+    // }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    .nav-social {
+        border-bottom: 48px solid #d11242;
+        border-left: 35px solid transparent;
+        border-right: 0 solid transparent;
+        height: 0;
+    }
+    .navbar .navbar-nav > .quicktools {
+        display: inline-block;
+        float: none;
+        margin-bottom: -2px;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    .mainBlueNavigation {
+        background: url("/media/assets/homepagespring2016/homne_headerbg.jpg") no-repeat;
+        background-size: cover;
+        // .navbar .navbar-nav {
+        //     display: inline-block;
+        //     float: none;
+        // }
+    }
+    .mainBlueNavigation ul li a {
+        color: #fff !important;
+        font-size: 1.2em;
+        font-weight: 100;
+        font-family: 'Fjalla One', sans-serif;
+        padding-top: 70px !important;
+    }
+    ul.dropdown-menu > li a {
+        padding-top: 0;
+    }
+    ul.dropdown-menu > li a {
+        font-family: sans-serif;
+    }
+    ul.nav.navbar-nav.navbar-center {
+        list-style: none !important;
+        margin: 0 auto !important;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        float: none;
+    }
 }
-
 @media screen and (min-width: 992px) {
     .msudenver_logo img {
         width: 165px;
         margin: 10px 25px;
     }
 }
-
 @media only screen and (min-width:1200px) {
     .mainBlueNavigation ul li a {
         font-size: 1.5em;
