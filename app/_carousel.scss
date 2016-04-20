@@ -1,3 +1,6 @@
+
+/* Carousel Styles */
+
 #slider > a.left.carousel-control,
 #slider > a.right.carousel-control {
     color: #fff;
@@ -148,10 +151,11 @@
         top: 30%;
     }
     .carousel-caption > h2 {
-        font-size: 40px;
+        font-size: 32px;
     }
     .carousel-caption > h3 {
-        font-size: 24px;
+        font-size: 23px;
+        line-height: 30px;
     }
 }
 
