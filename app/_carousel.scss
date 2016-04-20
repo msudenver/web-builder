@@ -19,9 +19,15 @@
     width: 15px;
     text-align: right;
 }
+
+.carousel-inner>.item>img {
+    margin: auto;
+}
+
 .item {
     overflow: hidden;
 }
+
 .carousel-control .fa-angle-left,
 .carousel-control .fa-angle-right,
 .carousel-control .fa-chevron-circle-left,
