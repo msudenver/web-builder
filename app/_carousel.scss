@@ -1,3 +1,6 @@
+
+/* Carousel Styles */
+
 #slider > a.left.carousel-control,
 #slider > a.right.carousel-control {
     color: #fff;
@@ -19,9 +22,15 @@
     width: 15px;
     text-align: right;
 }
+
+.carousel-inner>.item>img {
+    margin: auto;
+}
+
 .item {
     overflow: hidden;
 }
+
 .carousel-control .fa-angle-left,
 .carousel-control .fa-angle-right,
 .carousel-control .fa-chevron-circle-left,
@@ -113,7 +122,7 @@
     text-align: right;
     text-shadow: none;
 }
-.caption-reverse > .caption-readmore > a {
+.caption-reverse > .caption-readmore {
     color: #003879 !important;
     text-shadow: none;
 }
@@ -124,7 +133,6 @@
 
 @media only screen and (min-width: 768px) {
     .carousel {
-        margin-top: -1px;
         margin-bottom: 15px;
     }
     .carousel-indicators {
@@ -143,18 +151,15 @@
         top: 30%;
     }
     .carousel-caption > h2 {
-        font-size: 40px;
+        font-size: 32px;
     }
     .carousel-caption > h3 {
-        font-size: 24px;
+        font-size: 23px;
+        line-height: 30px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    .msudenver_logo img {
-        width: 165px;
-        margin: 10px 25px;
-    }
     .calls-to-action > h3 > a {
         font-size: 1.5em;
     }

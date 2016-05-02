@@ -1,3 +1,6 @@
+
+/* Calls to action */
+
 .calls-to-action {
     padding: 25px;
     background: url("/media/assets/homepagespring2016/calltoactbg.png") no-repeat;
@@ -17,12 +20,24 @@
     text-transform: uppercase;
     font-family: 'Fjalla One', sans-serif;
 }
+// @media screen and (max-width: 320px) {
+//   .calls-to-action {
+//       height: 460px !important;
+//   }
+// }
+
+@media screen and (max-width: 480px) {
+  .calls-to-action {
+      height: 460px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .calls-to-action {
+      height: 446px !important;
+  }
+}
 
 @media screen and (min-width: 992px) {
-    .msudenver_logo img {
-        width: 165px;
-        margin: 10px 25px;
-    }
     .calls-to-action > h3 > a {
         font-size: 1.5em;
     }
