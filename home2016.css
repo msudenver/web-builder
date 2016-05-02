@@ -28,6 +28,7 @@ Wednesday 06, April, 2016
 
 .rowdygray:hover { background: #646366; color: #fff !important; }
 
+/* Toolbar Styles */
 .toolbar { z-index: 9999; background: #fff; }
 
 .toolbar .quicktools { font-size: 16px; padding-top: 5px; }
@@ -38,9 +39,9 @@ Wednesday 06, April, 2016
 
 .toolbar button.navbar-toggle span.icon-bar { color: #fff; }
 
-.toolbar .navbar-collapse .navbar-nav li a { padding: 10px; }
+.toolbar .navbar-collapse .navbar-nav li a { padding-top: 15px; padding-bottom: 10px; }
 
-.toolbar ul li a { color: #003663; -webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out; -o-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out; }
+.toolbar ul li a { color: #003663; padding-left: 7px; padding-right: 6px; -webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out; -o-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out; }
 
 .toolbar ul li a:hover { background: #ecf0f1; color: #333; }
 
@@ -58,7 +59,7 @@ Wednesday 06, April, 2016
 
 .navbar-static-top { border-width: 0; }
 
-.navbar-brand { height: 53px; }
+.navbar-brand { height: 57px; }
 
 .dropdown-menu { padding-left: 10px; padding-right: 10px; }
 
@@ -74,7 +75,9 @@ Wednesday 06, April, 2016
 
 .caret-up { width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-bottom: 4px solid; display: inline-block; margin-left: 2px; vertical-align: middle; }
 
-@media only screen and (min-width: 320px) { .navbar-brand { height: 59px; } }
+.msudenver_logo img { width: 115px; margin: 10px; }
+
+@media only screen and (max-width: 320px) { .navbar-brand { height: 53px; } }
 
 @media only screen and (max-width: 767px) { .nav-social { background: #d11242; } }
 
@@ -82,17 +85,19 @@ Wednesday 06, April, 2016
   .nav-social { border-bottom: 48px solid #d11242; border-left: 35px solid transparent; border-right: 0 solid transparent; height: 0; }
   .navbar .navbar-nav > .quicktools { display: inline-block; float: none; margin-bottom: -2px; }
   .navbar .navbar-collapse { text-align: center; }
-  .mainBlueNavigation { background: url("/media/assets/homepagespring2016/homne_headerbg.jpg") no-repeat; background-size: cover; }
-  .mainBlueNavigation ul li a { color: #fff !important; font-size: 1.2em; font-weight: 100; font-family: 'Fjalla One', sans-serif; padding-top: 70px !important; }
+  .mainBlueNavigation { background: url("/media/assets/homepagespring2016/home_headerbg.jpg") no-repeat; background-size: cover; }
+  .mainBlueNavigation ul li a { color: #fff !important; font-size: 1.2em; font-weight: 100; font-family: 'Fjalla One', sans-serif; padding-top: 20px !important; padding-bottom: 15px !important; }
   ul.dropdown-menu > li a { padding-top: 0; }
   ul.dropdown-menu > li a { font-family: sans-serif; }
-  ul.nav.navbar-nav.navbar-center { list-style: none !important; margin: 0 auto !important; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; float: none; } }
+  ul.nav.navbar-nav.navbar-center { list-style: none !important; margin: auto !important; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; float: none; display: inline-block; } }
 
-@media screen and (min-width: 992px) { .msudenver_logo img { width: 165px; margin: 10px 25px; } }
+@media screen and (min-width: 992px) { .msudenver_logo img { width: 165px; margin: 15px 25px; }
+  .mainBlueNavigation ul li a { padding-top: 70px !important; } }
 
 @media only screen and (min-width: 1200px) { .mainBlueNavigation ul li a { font-size: 1.5em; }
   .navbar-collapse { padding-right: 0; padding-left: 0; } }
 
+/* Carousel Styles */
 #slider > a.left.carousel-control, #slider > a.right.carousel-control { color: #fff; }
 
 .carousel-control { width: 5%; font-size: 20px; color: #0D2C56; opacity: 1; }
@@ -100,6 +105,8 @@ Wednesday 06, April, 2016
 .carousel-control.right { background: none !important; width: 45px; text-align: left; }
 
 .carousel-control.left { background: none !important; width: 15px; text-align: right; }
+
+.carousel-inner > .item > img { margin: auto; }
 
 .item { overflow: hidden; }
 
@@ -129,18 +136,17 @@ Wednesday 06, April, 2016
 
 .caption-reverse { font-size: 18px; color: #003879; text-align: right; text-shadow: none; }
 
-.caption-reverse > .caption-readmore > a { color: #003879 !important; text-shadow: none; }
+.caption-reverse > .caption-readmore { color: #003879 !important; text-shadow: none; }
 
 .firstheight img { display: none; }
 
-@media only screen and (min-width: 768px) { .carousel { margin-top: -1px; margin-bottom: 15px; }
+@media only screen and (min-width: 768px) { .carousel { margin-bottom: 15px; }
   .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
   .carousel-control .fa-angle-left, .carousel-control .fa-angle-right, .carousel-control .fa-chevron-circle-left, .carousel-control .fa-chevron-circle-right, .carousel-control .icon-next, .carousel-control .icon-prev { position: absolute; top: 30%; }
-  .carousel-caption > h2 { font-size: 40px; }
-  .carousel-caption > h3 { font-size: 24px; } }
+  .carousel-caption > h2 { font-size: 32px; }
+  .carousel-caption > h3 { font-size: 23px; line-height: 30px; } }
 
-@media screen and (min-width: 992px) { .msudenver_logo img { width: 165px; margin: 10px 25px; }
-  .calls-to-action > h3 > a { font-size: 1.5em; }
+@media screen and (min-width: 992px) { .calls-to-action > h3 > a { font-size: 1.5em; }
   .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
   .carousel-caption { position: absolute; right: 100%; left: 0; width: 50%; padding: 15px 30px; background: rgba(0, 68, 124, 0.9); } }
 
@@ -152,15 +158,20 @@ Wednesday 06, April, 2016
 
 @media only screen and (min-width: 768px) { .campus-info { border: 0; border-right: 1px solid white; border-bottom: 0; margin-bottom: 0; } }
 
+/* Calls to action */
 .calls-to-action { padding: 25px; background: url("/media/assets/homepagespring2016/calltoactbg.png") no-repeat; background-size: cover; background-color: rgba(52, 152, 219, 0.72); margin-bottom: 20px; }
 
 .calls-to-action > hr { border-top: 1px solid rgba(255, 255, 255, 0.2); margin-top: 15px; margin-bottom: 15px; }
 
 .calls-to-action > h3 > a { color: #F1F0F0; font-weight: 100; font-size: 1em; text-transform: uppercase; font-family: 'Fjalla One', sans-serif; }
 
-@media screen and (min-width: 992px) { .msudenver_logo img { width: 165px; margin: 10px 25px; }
-  .calls-to-action > h3 > a { font-size: 1.5em; } }
+@media screen and (max-width: 480px) { .calls-to-action { height: 460px !important; } }
 
+@media screen and (max-width: 767px) { .calls-to-action { height: 446px !important; } }
+
+@media screen and (min-width: 992px) { .calls-to-action > h3 > a { font-size: 1.5em; } }
+
+/* Panel Styles */
 .panel { border: 0; border-radius: 0; }
 
 .panel-heading { border-radius: 0; }
@@ -215,8 +226,6 @@ h5 { color: #2c3e50; font-size: 16px; font-weight: 500; }
 
 h6 { color: #e74c3c; font-size: 13px; font-weight: 500; }
 
-.msudenver_logo img { width: 115px; margin: 10px; }
-
 .readmore { text-align: right; margin-top: 10px; }
 
 .image_caption { font-size: 12px; line-height: 19px; color: #73787e; }
@@ -246,10 +255,6 @@ h6 { color: #e74c3c; font-size: 13px; font-weight: 500; }
 hr { border-top: 1px solid #e6e1e1; margin-top: 15px; margin-bottom: 15px; }
 
 .navbar-inner { text-align: center; }
-
-.panel { border: 0; border-radius: 0; }
-
-.panel-heading { border-radius: 0; }
 
 .news-events { background: white; padding: 0 25px 15px; }
 
@@ -282,5 +287,3 @@ p.event-home-date { color: gray; font-size: 1.2em; font-weight: bold; }
 @media only screen and (min-width: 768px) { #layout { padding: 0; margin: 0 auto; left: 0; }
   #menu { position: relative; left: 0; padding: 0; margin: 0 auto; width: 100%; }
   .header { text-align: left; } }
-
-@media screen and (min-width: 992px) { .msudenver_logo img { width: 165px; margin: 10px 25px; } }
