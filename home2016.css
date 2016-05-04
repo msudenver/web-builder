@@ -140,17 +140,17 @@ Wednesday 06, April, 2016
 
 .firstheight img { display: none; }
 
-@media only screen and (min-width: 768px) { .carousel { margin-bottom: 15px; }
-  .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
+@media only screen and (min-width: 768px) { .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
   .carousel-control .fa-angle-left, .carousel-control .fa-angle-right, .carousel-control .fa-chevron-circle-left, .carousel-control .fa-chevron-circle-right, .carousel-control .icon-next, .carousel-control .icon-prev { position: absolute; top: 30%; }
   .carousel-caption > h2 { font-size: 32px; }
   .carousel-caption > h3 { font-size: 23px; line-height: 30px; } }
 
-@media screen and (min-width: 992px) { .calls-to-action > h3 > a { font-size: 1.5em; }
+@media screen and (min-width: 992px) { .carousel { margin-bottom: 15px; }
+  .calls-to-action > h3 > a { font-size: 1.5em; }
   .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
   .carousel-caption { position: absolute; right: 100%; left: 0; width: 50%; padding: 15px 30px; background: rgba(0, 68, 124, 0.9); } }
 
-.footer { display: block; min-height: 20px; padding: 20px; margin-top: 5px; background: #003663; margin-left: 0; margin-right: 0; }
+.footer { display: block; min-height: 20px; padding: 20px; background: #003663; margin-left: 0; margin-right: 0; }
 
 .footer a, .footer p { color: #fff; font-size: 15px; font-weight: 200; text-align: right; }
 
@@ -256,7 +256,7 @@ hr { border-top: 1px solid #e6e1e1; margin-top: 15px; margin-bottom: 15px; }
 
 .navbar-inner { text-align: center; }
 
-.news-events { background: white; padding: 0 25px 15px; }
+.news-events { background: white; padding: 0 25px 15px; margin-bottom: 15px; }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { color: #003663; cursor: default; background-color: #fff; border: 0; border-bottom: 3px solid #003663; }
 
