@@ -126,8 +126,6 @@ Wednesday 06, April, 2016
 
 .caption-reverse > h3 { color: #003879 !important; /*font-size: 24px;*/ /*text-align: left;*/ /*text-shadow: none;*/ }
 
-.caption-reverse > hr { color: #003879 !important; width: 50px; /*text-shadow: none;*/ }
-
 .caption-reverse > a { color: #003879 !important; }
 
 .caption-readmore { font-size: 18px; color: #fff; text-align: right; }
@@ -137,6 +135,8 @@ Wednesday 06, April, 2016
 .caption-reverse { font-size: 18px; color: #003879; text-align: right; text-shadow: none; }
 
 .caption-reverse > .caption-readmore { color: #003879 !important; text-shadow: none; }
+
+.caption-reverse > .caption-readmore hr { border-top: 1px solid #003879 !important; }
 
 .firstheight img { display: none; }
 
