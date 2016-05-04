@@ -31,7 +31,7 @@ Wednesday 06, April, 2016
 /* Toolbar Styles */
 .toolbar { z-index: 9999; background: #fff; }
 
-.toolbar .quicktools { font-size: 16px; padding-top: 5px; }
+.toolbar .quicktools { font-size: 16px; }
 
 .toolbar a.navbar-brand:hover { color: #003663; }
 
