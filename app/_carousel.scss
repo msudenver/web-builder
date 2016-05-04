@@ -14,7 +14,7 @@
 }
 .carousel-control.right {
     background: none!important;
-    width: 45px;
+    width: 58px;
     text-align: left;
 }
 .carousel-control.left {
@@ -41,7 +41,7 @@
     top: 20%;
     z-index: 10;
     display: inline-block;
-    font-size: 35px;
+    font-size: 50px;
     background: #003879;
     border-radius: 50px;
     color: white;
@@ -99,11 +99,7 @@
     /*text-align: left;*/
     /*text-shadow: none;*/
 }
-.caption-reverse > hr {
-    color: #003879 !important;
-    width: 50px;
-    /*text-shadow: none;*/
-}
+
 .caption-reverse > a {
     color: #003879 !important;
 }
@@ -125,16 +121,17 @@
 .caption-reverse > .caption-readmore {
     color: #003879 !important;
     text-shadow: none;
+    hr {
+        border-top: 1px solid #003879 !important;}
 }
+
 .firstheight img {
     display: none;
 }
 
 
 @media only screen and (min-width: 768px) {
-    .carousel {
-        margin-bottom: 15px;
-    }
+
     .carousel-indicators {
         bottom: 10px;
         width: 200px;
@@ -160,6 +157,9 @@
 }
 
 @media screen and (min-width: 992px) {
+    .carousel {
+        margin-bottom: 15px;
+    }
     .calls-to-action > h3 > a {
         font-size: 1.5em;
     }
