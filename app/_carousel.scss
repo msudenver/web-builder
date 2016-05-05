@@ -6,21 +6,26 @@
     color: #fff;
 }
 
-.carousel-control {
-    width: 5%;
-    font-size: 20px;
-    color: #0D2C56;
-    opacity: 1;
-}
+
 .carousel-control.right {
     background: none!important;
-    width: 58px;
+    width: 78px;
     text-align: left;
+    text-shadow: none !important;
 }
 .carousel-control.left {
     background: none!important;
-    width: 15px;
+    width: 80px;
     text-align: right;
+    text-shadow: none !important;
+}
+
+.fa-inverse {
+    color: #003879 !important;
+}
+
+.fa-lg {
+    font-size: 1.8em;
 }
 
 .carousel-inner>.item>img {
@@ -31,25 +36,6 @@
     overflow: hidden;
 }
 
-.carousel-control .fa-angle-left,
-.carousel-control .fa-angle-right,
-.carousel-control .fa-chevron-circle-left,
-.carousel-control .fa-chevron-circle-right,
-.carousel-control .icon-next,
-.carousel-control .icon-prev {
-    position: absolute;
-    top: 20%;
-    z-index: 10;
-    display: inline-block;
-    font-size: 50px;
-    background: #003879;
-    border-radius: 50px;
-    color: white;
-    opacity: 0.6;
-    height: 0.8em;
-    width: 0.8em;
-    line-height: 0.8;
-}
 .carousel-caption {
     position: relative;
     right: 100%;
@@ -87,17 +73,10 @@
 }
 .caption-reverse > h2 {
     color: #003879 !important;
-    /*font-size: 40px;*/
-    /*background: none;*/
-    /*border: none;*/
-    /*text-align: left;*/
-    /*text-shadow: none;*/
+
 }
 .caption-reverse > h3 {
     color: #003879 !important;
-    /*font-size: 24px;*/
-    /*text-align: left;*/
-    /*text-shadow: none;*/
 }
 
 .caption-reverse > a {
@@ -138,12 +117,7 @@
         right: 0;
         left: inherit;
     }
-    .carousel-control .fa-angle-left,
-    .carousel-control .fa-angle-right,
-    .carousel-control .fa-chevron-circle-left,
-    .carousel-control .fa-chevron-circle-right,
-    .carousel-control .icon-next,
-    .carousel-control .icon-prev {
+    .carousel-control {
         position: absolute;
         top: 30%;
     }
