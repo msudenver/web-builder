@@ -104,6 +104,10 @@ Wednesday 06, April, 2016
 
 .carousel-control.left { background: none !important; width: 80px; text-align: right; text-shadow: none !important; }
 
+.carousel-control { opacity: 0.0; }
+
+.carousel-control:hover { opacity: 0.5; }
+
 .fa-inverse { color: #003879 !important; }
 
 .fa-lg { font-size: 1.8em; }

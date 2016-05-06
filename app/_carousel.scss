@@ -20,6 +20,14 @@
     text-shadow: none !important;
 }
 
+.carousel-control {
+    opacity: 0.0;
+}
+
+.carousel-control:hover {
+    opacity: 0.5;
+}
+
 .fa-inverse {
     color: #003879 !important;
 }
