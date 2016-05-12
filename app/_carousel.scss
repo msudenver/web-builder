@@ -6,6 +6,10 @@
     color: #fff;
 }
 
+// .carousel-control {
+//         position: absolute;
+//         top: 15%;
+// }
 
 .carousel-control.right {
     background: none!important;
@@ -45,7 +49,7 @@
 }
 
 #carousel-homepage:hover > .carousel-control {
-    opacity: 0.9;
+    opacity: 0.8;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
@@ -128,6 +132,12 @@
     display: none;
 }
 
+@media screen and (max-width: 768px) {
+    .carousel-control {
+        position: absolute;
+        top: 15%;
+    }    
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -139,7 +149,7 @@
     }
     .carousel-control {
         position: absolute;
-        top: 44%;
+        top: 24%;
     }
     .carousel-caption > h2 {
         font-size: 32px;
@@ -154,6 +164,10 @@
     .carousel {
         margin-bottom: 15px;
     }
+    .carousel-control {
+        position: absolute;
+        top: 44%;
+    }   
     .calls-to-action > h3 > a {
         font-size: 1.5em;
     }
@@ -170,5 +184,12 @@
         width: 50%;
         padding: 15px 30px;
         background: rgba(0, 68, 124, 0.9);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .carousel-control {
+        position: absolute;
+        top: 44%;
     }
 }

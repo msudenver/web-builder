@@ -114,7 +114,7 @@ Wednesday 06, April, 2016
 
 #carousel-homepage > .carousel-control { opacity: 0.0; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
 
-#carousel-homepage:hover > .carousel-control { opacity: 0.9; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
+#carousel-homepage:hover > .carousel-control { opacity: 0.8; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
 
 .item { overflow: hidden; }
 
@@ -146,15 +146,20 @@ Wednesday 06, April, 2016
 
 .firstheight img { display: none; }
 
+@media screen and (max-width: 768px) { .carousel-control { position: absolute; top: 15%; } }
+
 @media only screen and (min-width: 768px) { .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
-  .carousel-control { position: absolute; top: 44%; }
+  .carousel-control { position: absolute; top: 24%; }
   .carousel-caption > h2 { font-size: 32px; }
   .carousel-caption > h3 { font-size: 23px; line-height: 30px; } }
 
 @media screen and (min-width: 992px) { .carousel { margin-bottom: 15px; }
+  .carousel-control { position: absolute; top: 44%; }
   .calls-to-action > h3 > a { font-size: 1.5em; }
   .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
   .carousel-caption { position: absolute; right: 100%; left: 0; width: 50%; padding: 15px 30px; background: rgba(0, 68, 124, 0.9); } }
+
+@media screen and (min-width: 1200px) { .carousel-control { position: absolute; top: 44%; } }
 
 .footer { display: block; min-height: 20px; padding: 20px; background: #003663; margin-left: 0; margin-right: 0; }
 
