@@ -100,17 +100,23 @@ Wednesday 06, April, 2016
 /* Carousel Styles */
 #slider > a.left.carousel-control, #slider > a.right.carousel-control { color: #fff; }
 
-.carousel-control { width: 5%; font-size: 20px; color: #0D2C56; opacity: 1; }
+.carousel-control.right { background: none !important; width: 78px; text-align: left; text-shadow: none !important; }
 
-.carousel-control.right { background: none !important; width: 58px; text-align: left; }
+.carousel-control.left { background: none !important; width: 80px; text-align: right; text-shadow: none !important; }
 
-.carousel-control.left { background: none !important; width: 15px; text-align: right; }
+.carousel-control { opacity: 0.0; }
+
+.fa-inverse { color: #003879 !important; }
+
+.fa-lg { font-size: 1.8em; }
 
 .carousel-inner > .item > img { margin: auto; }
 
-.item { overflow: hidden; }
+#carousel-homepage > .carousel-control { opacity: 0.0; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
 
-.carousel-control .fa-angle-left, .carousel-control .fa-angle-right, .carousel-control .fa-chevron-circle-left, .carousel-control .fa-chevron-circle-right, .carousel-control .icon-next, .carousel-control .icon-prev { position: absolute; top: 20%; z-index: 10; display: inline-block; font-size: 50px; background: #003879; border-radius: 50px; color: white; opacity: 0.6; height: 0.8em; width: 0.8em; line-height: 0.8; }
+#carousel-homepage:hover > .carousel-control { opacity: 0.5; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
+
+.item { overflow: hidden; }
 
 .carousel-caption { position: relative; right: 100%; left: 0; width: 100%; margin-top: 20px; padding: 15px; background: #00447c; color: #fff !important; }
 
@@ -122,9 +128,9 @@ Wednesday 06, April, 2016
 
 .caption-reverse { background: rgba(255, 255, 255, 0.9) !important; color: #003879 !important; text-shadow: none; }
 
-.caption-reverse > h2 { color: #003879 !important; /*font-size: 40px;*/ /*background: none;*/ /*border: none;*/ /*text-align: left;*/ /*text-shadow: none;*/ }
+.caption-reverse > h2 { color: #003879 !important; }
 
-.caption-reverse > h3 { color: #003879 !important; /*font-size: 24px;*/ /*text-align: left;*/ /*text-shadow: none;*/ }
+.caption-reverse > h3 { color: #003879 !important; }
 
 .caption-reverse > a { color: #003879 !important; }
 
@@ -141,7 +147,7 @@ Wednesday 06, April, 2016
 .firstheight img { display: none; }
 
 @media only screen and (min-width: 768px) { .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
-  .carousel-control .fa-angle-left, .carousel-control .fa-angle-right, .carousel-control .fa-chevron-circle-left, .carousel-control .fa-chevron-circle-right, .carousel-control .icon-next, .carousel-control .icon-prev { position: absolute; top: 30%; }
+  .carousel-control { position: absolute; top: 30%; }
   .carousel-caption > h2 { font-size: 32px; }
   .carousel-caption > h3 { font-size: 23px; line-height: 30px; } }
 
