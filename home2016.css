@@ -112,7 +112,7 @@ Wednesday 06, April, 2016
 
 .carousel-inner > .item > img { margin: auto; }
 
-#carousel-homepage:hover > .carousel-control { opacity: 0.5; }
+#carousel-homepage:hover > .carousel-control { opacity: 0.5; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
 
 .item { overflow: hidden; }
 
