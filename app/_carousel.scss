@@ -6,11 +6,6 @@
     color: #fff;
 }
 
-// .carousel-control {
-//         position: absolute;
-//         top: 15%;
-// }
-
 .carousel-control.right {
     background: none!important;
     width: 78px;
@@ -24,10 +19,6 @@
     text-shadow: none !important;
 }
 
-.carousel-control {
-    opacity: 0.0;
-}
-
 .fa-inverse {
     color: #003879 !important;
 }
@@ -38,22 +29,6 @@
 
 .carousel-inner>.item>img {
     margin: auto;
-}
-
-#carousel-homepage > .carousel-control {
-    opacity: 0.0;
-    -webkit-transition: 0.9s ease-out;
-    -moz-transition: 0.9s ease-out;
-    -o-transition: 0.9s ease-out;
-    transition: 0.9s ease-out;
-}
-
-#carousel-homepage:hover > .carousel-control {
-    opacity: 0.8;
-    -webkit-transition: 0.9s ease-out;
-    -moz-transition: 0.9s ease-out;
-    -o-transition: 0.9s ease-out;
-    transition: 0.9s ease-out;
 }
 
 .item {
@@ -128,14 +103,11 @@
         border-top: 1px solid #003879 !important;}
 }
 
-.firstheight img {
-    display: none;
-}
-
 @media screen and (max-width: 768px) {
     .carousel-control {
         position: absolute;
         top: 15%;
+        opacity: 0.8;
     }    
 }
 
@@ -150,6 +122,7 @@
     .carousel-control {
         position: absolute;
         top: 24%;
+        opacity: 0.8;
     }
     .carousel-caption > h2 {
         font-size: 32px;
@@ -167,6 +140,7 @@
     .carousel-control {
         position: absolute;
         top: 44%;
+        opacity: 0.0;        
     }   
     .calls-to-action > h3 > a {
         font-size: 1.5em;
@@ -185,11 +159,26 @@
         padding: 15px 30px;
         background: rgba(0, 68, 124, 0.9);
     }
+    #carousel-homepage:hover > .carousel-control {
+        opacity: 0.8;
+        -webkit-transition: 0.9s ease-out;
+        -moz-transition: 0.9s ease-out;
+        -o-transition: 0.9s ease-out;
+        transition: 0.9s ease-out;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .carousel-control {
         position: absolute;
         top: 44%;
+        opacity: 0.0; 
+    }
+    #carousel-homepage:hover > .carousel-control {
+        opacity: 0.8;
+        -webkit-transition: 0.9s ease-out;
+        -moz-transition: 0.9s ease-out;
+        -o-transition: 0.9s ease-out;
+        transition: 0.9s ease-out;
     }
 }
