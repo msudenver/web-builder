@@ -24,7 +24,7 @@
 }
 
 .fa-lg {
-    font-size: 1.8em;
+    font-size: 1.3em;
 }
 
 .carousel-inner>.item>img {
@@ -119,6 +119,10 @@
         right: 0;
         left: inherit;
     }
+    .fa-lg {
+        font-size: 1.8em;
+    }
+
     .carousel-control {
         position: absolute;
         top: 24%;
