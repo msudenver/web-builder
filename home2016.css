@@ -142,7 +142,7 @@ Wednesday 06, April, 2016
 
 @media only screen and (min-width: 768px) { .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
   .fa-lg { font-size: 1.8em; }
-  .carousel-control { position: absolute; top: 24%; opacity: 0.8; }
+  .carousel-control { position: absolute; margin-top: 24%; opacity: 0.8; }
   .carousel-caption > h2 { font-size: 32px; }
   .carousel-caption > h3 { font-size: 23px; line-height: 30px; } }
 
