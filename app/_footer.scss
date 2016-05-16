@@ -1,0 +1,30 @@
+.footer {
+    display: block;
+    min-height: 20px;
+    padding: 20px;
+    background: #003663;
+    margin-left: 0;
+    margin-right: 0;
+}
+.footer a,
+.footer p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: right;
+}
+
+.campus-info {
+    border: 0;
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) {
+    .campus-info {
+        border: 0;
+        border-right: 1px solid white;
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+
+}

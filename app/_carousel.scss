@@ -1,0 +1,188 @@
+
+/* Carousel Styles */
+
+#slider > a.left.carousel-control,
+#slider > a.right.carousel-control {
+    color: #fff;
+}
+
+.carousel-control.right {
+    background: none!important;
+    width: 78px;
+    text-align: left;
+    text-shadow: none !important;
+}
+.carousel-control.left {
+    background: none!important;
+    width: 80px;
+    text-align: right;
+    text-shadow: none !important;
+}
+
+.fa-inverse {
+    color: #003879 !important;
+}
+
+.fa-lg {
+    font-size: 1.3em;
+}
+
+.carousel-inner>.item>img {
+    margin: auto;
+}
+
+.item {
+    overflow: hidden;
+}
+
+.carousel-caption {
+    position: relative;
+    right: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0, 68, 124, 1);
+    color: #fff !important;
+}
+.carousel-caption > h2 {
+    color: #fff !important;
+    font-size: 25px;
+    background: none;
+    border: none;
+    text-align: left;
+    text-shadow: none;
+    font-weight: bold;
+}
+.carousel-caption > h3 {
+    color: #fff !important;
+    font-size: 15px;
+    text-align: left;
+    text-shadow: none;
+    margin-top: 10px;
+}
+.carousel-caption > hr {
+    color: #fff !important;
+    width: 50px;
+}
+.caption-reverse {
+    background: rgba(255, 255, 255, 0.9) !important;
+    color: #003879 !important;
+    text-shadow: none;
+}
+.caption-reverse > h2 {
+    color: #003879 !important;
+
+}
+.caption-reverse > h3 {
+    color: #003879 !important;
+}
+
+.caption-reverse > a {
+    color: #003879 !important;
+}
+.caption-readmore {
+    font-size: 18px;
+    color: #fff;
+    text-align: right;
+}
+.caption-readmore > a {
+    color: #fff !important;
+    font-style: italic;
+}
+.caption-reverse {
+    font-size: 18px;
+    color: #003879;
+    text-align: right;
+    text-shadow: none;
+}
+.caption-reverse > .caption-readmore {
+    color: #003879 !important;
+    text-shadow: none;
+    hr {
+        border-top: 1px solid #003879 !important;}
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-control {
+        position: absolute;
+        margin-top: 13%;
+        opacity: 0.8;
+    }    
+}
+
+@media only screen and (min-width: 768px) {
+
+    .carousel-indicators {
+        bottom: 10px;
+        width: 200px;
+        right: 0;
+        left: inherit;
+    }
+    .fa-lg {
+        font-size: 1.8em;
+    }
+
+    .carousel-control {
+        position: absolute;
+        margin-top: 24%;
+        opacity: 0.8;
+    }
+    .carousel-caption > h2 {
+        font-size: 32px;
+    }
+    .carousel-caption > h3 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .carousel {
+        margin-bottom: 15px;
+    }
+    .carousel-control {
+        position: absolute;
+        top: 44%;
+        opacity: 0.0;        
+    }   
+    .calls-to-action > h3 > a {
+        font-size: 1.5em;
+    }
+    .carousel-indicators {
+        bottom: 10px;
+        width: 200px;
+        right: 0;
+        left: inherit;
+    }
+    .carousel-caption {
+        position: absolute;
+        right: 100%;
+        left: 0;
+        width: 50%;
+        padding: 15px 30px;
+        background: rgba(0, 68, 124, 0.9);
+    }
+    #carousel-homepage:hover > .carousel-control {
+        opacity: 0.8;
+        -webkit-transition: 0.9s ease-out;
+        -moz-transition: 0.9s ease-out;
+        -o-transition: 0.9s ease-out;
+        transition: 0.9s ease-out;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .carousel-control {
+        position: absolute;
+        top: 44%;
+        opacity: 0.0; 
+    }
+    #carousel-homepage:hover > .carousel-control {
+        opacity: 0.8;
+        -webkit-transition: 0.9s ease-out;
+        -moz-transition: 0.9s ease-out;
+        -o-transition: 0.9s ease-out;
+        transition: 0.9s ease-out;
+    }
+}
