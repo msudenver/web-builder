@@ -455,10 +455,40 @@
 }
 
 .header h2 {
-  font-weight: 300;
-  color: #ccc;
+  /*font-weight: 300;*/
+  /*color: #ccc;*/
+  font-weight: 600;  
+  font-size: 2.2em;
+  color: #00529C;
   padding: 0;
   margin-top: 0;
+
+}
+
+.header h3 {
+  font-weight: 400;  
+  font-size: 2.0em;
+  color: #4C4C4D;  
+}
+
+.header h4 {
+  font-weight: 400;  
+  font-size: 1.4em;
+  color: #015FAE;  
+}
+
+.header h5 {
+  font-weight: 600;  
+  font-size: 1.2em;
+  color: #971200;  
+}
+
+.byline {
+  font-weight: normal;  
+}
+
+.header-date {
+  font-weight: 1.4em;
 }
 
 #menu {
