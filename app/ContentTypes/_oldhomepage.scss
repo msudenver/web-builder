@@ -1,0 +1,151 @@
+.clickable.col-lg-12.col-lg-6, .clickable.col-xs-6.col-sm-6.col-md-6.col-lg-3 {
+  padding: .25em
+}
+.lead {
+  font-size: 16.1px;
+  font-weight: 200;
+  line-height: 1.4;
+  padding: 5%
+}
+.homepage-caption {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  overflow: hidden;
+  max-height: 600px;
+  font-size: 4em
+}
+.homepage-caption h1 {
+  color: #fff
+}
+.homepage-caption h4, .homepage-caption p {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  background: rgba(0, 0, 0, .55);
+  margin: 0;
+  font-size: 16.1px;
+  font-weight: 200;
+  line-height: 1.4;
+  padding: 5%
+}
+.homepage-caption img {
+  width: 100%
+}
+.homepage-caption .clickable {
+  padding: 0!important;
+  margin: 0 auto
+}
+.firstLead, .secondLead {
+  font-weight: 200;
+  line-height: 1.4;
+  padding: 5%;
+  font-size: large!important
+}
+.homepage-caption p:nth-child(2) {
+  font-size: 16.1px;
+  font-weight: 200;
+  line-height: 1.4;
+  padding: 5%
+}
+
+.testimonial img {
+  width: 100%;
+  max-width: 100%
+}
+.navbar {
+  border-radius: 0!important
+}
+.nav-header button a.navbar-brand {
+  color: #fff
+}
+.navbar-inverse {
+  //padding-left: .55em;
+  //padding-right: .55em
+  border-color: #003663;
+}
+.btn.btn-default.dropdown-toggle {
+  border-color: #003663;
+  color: #fff
+}
+.navbar-inverse .brand, .navbar-inverse .nav>li>a {
+  color: #bcbaba
+}
+.actionHeader.applynow, .actionHeader.give {
+  text-transform: uppercase;
+    font-stretch: condensed;
+    color: #fff;
+    height: 150px;
+    margin-bottom: 0;
+    word-spacing: normal;
+    line-height: 1.25em;
+    padding: 10%;
+    text-align: center;
+    font-weight: 100;
+}
+.actionHeader.applynow {
+  font-size: 3em;
+  font-weight: 100;
+  letter-spacing: .15px;
+  background-color: #1abc9c
+}
+.actionHeader.give {
+  font-size: 2.1em;
+  font-weight: lighter;
+  letter-spacing: .45px;
+  background-color: #2980b9
+}
+.ie8 .actionHeader.give {
+  font-size: 2.2em
+}
+.actionHeader.events {
+  background-color: #d11242
+}
+.actionHeader.news {
+  background-color: #3498db
+}
+#homepage_events, #top3 {
+  height: 392px;
+  overflow: hidden
+}
+@media only screen and (min-width: 1224px) {
+  //#homepage_events {
+    //height: 392px
+  //}
+}
+@media only screen and (min-width: 1224px) {
+  //#top3 {
+    //height: 392px
+  //}
+}
+.actionHeader {
+  //vertical-align: top;
+  //box-sizing: border-box;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: #fff;
+  text-align: center;
+  font-weight: 100;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: .25em
+}
+
+p.actionHeader {
+  //padding: 10%;
+  //line-height: 1.25em;
+  //color: #fff;
+  //text-align: center;
+  //font-size: 1.755em;
+  //text-transform: uppercase
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  p.actionHeader {
+    padding: 8%
+  }
+}

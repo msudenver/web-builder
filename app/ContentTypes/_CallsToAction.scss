@@ -1,0 +1,29 @@
+#callstoaction {
+ 	background-color: #005fae;
+	width: 100%;
+	margin-bottom: 15px;
+ 	padding-left:25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+#callstoaction > a {
+    color: #F1F0F0;
+    font-size: 1.2em;
+	font-weight:100;
+    line-height: 3;
+    text-transform: uppercase;
+}
+
+#callstoaction > hr {
+  	border-style: none;
+    border-bottom: 1px solid #949fa8;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+#callstoaction > hr:last-child {
+    display: none
+}
