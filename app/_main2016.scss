@@ -17,6 +17,7 @@
 @import"ContentTypes/HighlightBox";
 @import"ContentTypes/CallsToAction";
 @import"ContentTypes/hero";
+@import"ContentTypes/newsroom";
 @import "toolbar";
 @import "footer";
 .collapse {
@@ -54,15 +55,7 @@
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, .175)
 }
-.story_preview {
-  padding: 15px
-}
-.story_preview:nth-child(odd) {
-  background-color: #f0f0f0
-}
-.story_preview:nth-child(even) {
-  background-color: #fff
-}
+
 .bannerImage {
   max-width: 100%;
   padding: 5px;
