@@ -1,0 +1,25 @@
+.hero {
+  position: relative;
+  }
+.hero-caption p {
+ 	color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  	width: 30%;
+    background: rgba(0, 0, 0, .5);
+    margin: 0;
+    font-size: 16.1px;
+    font-weight: 100;
+    padding: 2%;
+  }
+.hero-caption h2 {
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    margin: 0;
+    font-weight: 100;
+    padding: 2%;
+}
