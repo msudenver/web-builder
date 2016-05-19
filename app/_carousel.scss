@@ -6,6 +6,7 @@
     color: #fff;
 }
 
+
 .carousel-control.right {
     background: none!important;
     width: 78px;
@@ -19,16 +20,36 @@
     text-shadow: none !important;
 }
 
+.carousel-control {
+    opacity: 0.0;
+}
+
 .fa-inverse {
     color: #003879 !important;
 }
 
 .fa-lg {
-    font-size: 1.3em;
+    font-size: 1.8em;
 }
 
 .carousel-inner>.item>img {
     margin: auto;
+}
+
+#carousel-homepage > .carousel-control {
+    opacity: 0.0;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+#carousel-homepage:hover > .carousel-control {
+    opacity: 0.5;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .item {
@@ -103,13 +124,10 @@
         border-top: 1px solid #003879 !important;}
 }
 
-@media screen and (max-width: 768px) {
-    .carousel-control {
-        position: absolute;
-        margin-top: 13%;
-        opacity: 0.8;
-    }    
+.firstheight img {
+    display: none;
 }
+
 
 @media only screen and (min-width: 768px) {
 
@@ -119,14 +137,9 @@
         right: 0;
         left: inherit;
     }
-    .fa-lg {
-        font-size: 1.8em;
-    }
-
     .carousel-control {
         position: absolute;
-        margin-top: 24%;
-        opacity: 0.8;
+        top: 30%;
     }
     .carousel-caption > h2 {
         font-size: 32px;
@@ -141,11 +154,6 @@
     .carousel {
         margin-bottom: 15px;
     }
-    .carousel-control {
-        position: absolute;
-        top: 44%;
-        opacity: 0.0;        
-    }   
     .calls-to-action > h3 > a {
         font-size: 1.5em;
     }
@@ -162,27 +170,5 @@
         width: 50%;
         padding: 15px 30px;
         background: rgba(0, 68, 124, 0.9);
-    }
-    #carousel-homepage:hover > .carousel-control {
-        opacity: 0.8;
-        -webkit-transition: 0.9s ease-out;
-        -moz-transition: 0.9s ease-out;
-        -o-transition: 0.9s ease-out;
-        transition: 0.9s ease-out;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .carousel-control {
-        position: absolute;
-        top: 44%;
-        opacity: 0.0; 
-    }
-    #carousel-homepage:hover > .carousel-control {
-        opacity: 0.8;
-        -webkit-transition: 0.9s ease-out;
-        -moz-transition: 0.9s ease-out;
-        -o-transition: 0.9s ease-out;
-        transition: 0.9s ease-out;
     }
 }
