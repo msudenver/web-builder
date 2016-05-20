@@ -71,8 +71,8 @@
 }
 .menu-link {
   display: none;
-  top: 260px;
-  left: 50px;
+  top: 88px;
+  left: 15px;
   background: #002856;
   background: rgba(27, 85, 122, .5);
   width: 4.5em;
@@ -153,10 +153,7 @@ ul.multilevel-linkul-0 {
   }
   .menu-link {
     position: fixed;
-    left: 0;
     display: block;
-    background: #002856;
-    background: rgba(27, 85, 122, .5)
   }
   #layout.active .menu-link {
     left: 70%
@@ -182,7 +179,6 @@ ul.multilevel-linkul-0 {
 .sidebar-nav {
   margin-bottom: 2em;
   background: #002856;
-  color: red
 }
 .sidebar-nav ul li {
   list-style-type: none
