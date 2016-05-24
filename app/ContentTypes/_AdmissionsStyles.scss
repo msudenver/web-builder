@@ -1,0 +1,308 @@
+
+.baserectbtn {
+  width: 100%;
+  color: #fff;
+  padding: 1.5em;
+  height: 166px;
+  font-size: 2em;
+  z-index: 100;
+  line-height: 1.5em;
+  text-align: center;
+  margin-bottom: .5em
+}
+.admissions-feature-caption {
+  position: absolute;
+  padding: 1.1em;
+  top: 80%;
+  color: #fff;
+  font-size: 1.6em;
+  margin: 0 15px;
+  left: 0!important;
+  right: 0!important;
+  text-align: left;
+  background-color: rgba(27, 85, 122, .7);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .admissions-feature-caption {
+    top: 0;
+    line-height: 1.5em;
+    word-break: normal;
+    background-color: rgba(27, 85, 122, .85);
+    margin: 0 15px;
+    height: 100%
+  }
+}
+@media only screen and (min-width: 491px) and (max-width: 767px) {
+  .admissions-feature-caption {
+    top: 75%;
+    line-height: 1.3em
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .admissions-feature-caption {
+    top: 80%
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1224px) {
+  .admissions-feature-caption {
+    top: 100%
+  }
+}
+@media only screen and (min-width: 1224px) and (max-width: 1380px) {
+  .admissions-feature-caption {
+    top: 85%
+  }
+}
+.ThreeCornerBox {
+  position: relative;
+  border-top-right-radius: 30px;
+  min-height: 100px;
+  transition: .5s;
+  margin-bottom: 1em;
+  height: 100px;
+  z-index: 101
+}
+.ThreeCornerBox:hover {
+  -webkit-border-radius: 0 0 833px;
+  -moz-border-radius: 0 0 833px;
+  border-radius: 0 30px 833px 0
+}
+.ThreeCornerBox i {
+  position: absolute;
+  top: 70%;
+  left: 86%;
+  z-index: 100;
+  font-size: 1.5em;
+  color: inherit
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .ThreeCornerBox i {
+    font-size: 1em
+  }
+}
+.ThreeCornerBox span {
+  color: #fff
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .ThreeCornerBox span {
+    font-size: 1em
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1224px) {
+  .ThreeCornerBox span {
+    font-size: 1em
+  }
+}
+.ThreeCornerBox p {
+  display: block;
+  position: relative;
+  padding: 1.75em;
+  margin-bottom: 1em;
+  top: 0;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em
+}
+.action-one, .action-three, .action-two {
+  width: 100%;
+  color: #fff;
+  padding: 1.5em;
+  height: 166px;
+  font-size: 2em;
+  z-index: 100;
+  line-height: 1.5em;
+  text-align: center;
+  margin-bottom: .5em
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .action-one i, .action-three i, .action-two i {
+    font-size: 1em;
+    left: 86%
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1224px) {
+  .action-one i, .action-three i, .action-two i {
+    font-size: 1em;
+    left: 86%
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .action-one span, .action-three span, .action-two span {
+    font-size: .75em
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1224px) {
+  .action-one span, .action-three span, .action-two span {
+    font-size: .75em
+  }
+}
+.action-one {
+  background-color: #1abc9c
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .action-one {
+    margin-top: .5em
+  }
+}
+.action-two {
+  padding: .8em 1.8em;
+  background-color: #e67e22
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .action-two {
+    padding: 1.25em;
+    font-size: 1.75em
+  }
+}
+.action-three {
+  background-color: #8e44ad
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .action-three {
+    padding: 1.25em;
+    font-size: 1.75em
+  }
+}
+.action-one i {
+  color: #1abc9c
+}
+.action-two i {
+  color: #e67e22
+}
+.action-three i {
+  color: #8e44ad
+}
+.tool-four, .tool-one, .tool-three, .tool-two {
+  position: relative;
+  margin: 0 auto;
+  padding: 1.8em 0 1.5em;
+  height: 80px;
+  font-size: 1.2em;
+  background-color: #fff;
+  color: #00447c;
+  text-align: left;
+  border-bottom: 1px solid #00447c;
+  transition: .5s
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .tool-four, .tool-one, .tool-three, .tool-two {
+    padding: 1em 0 .5em;
+    font-size: 1.5em
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .tool-four p, .tool-one p, .tool-three p, .tool-two p {
+    padding: 0 .5em;
+    font-size: .75em
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1224px) {
+  .tool-four p, .tool-one p, .tool-three p, .tool-two p {
+    padding: 0 .5em;
+    font-size: .75em
+  }
+}
+.tool-four:hover, .tool-one:hover, .tool-three:hover, .tool-two:hover {
+  background-color: #16a085;
+  color: #fff
+}
+.tool-one {
+  border-top: 1px solid #00447c
+}
+.tool-four {
+  margin-bottom: .5em
+}
+.info-section .container {
+  padding: 0
+}
+.info-five, .info-four, .info-one, .info-six, .info-three, .info-two {
+  width: 100%;
+  color: #fff;
+  padding: 1.5em;
+  z-index: 100;
+  line-height: 1.5em;
+  text-align: center;
+  margin-bottom: .5em;
+  height: 100px;
+  font-size: 150%
+}
+.info-five:hover, .info-four:hover, .info-one:hover, .info-six:hover, .info-three:hover, .info-two:hover {
+  color: #00447c;
+  border: 1px solid #00447c;
+  background-color: #ecf0f1
+}
+.info-four, .info-one {
+  background-color: #2472a4
+}
+.info-five, .info-two {
+  background-color: #20638f
+}
+.info-six, .info-three {
+  background-color: #00447c
+}
+.info-three {
+  padding-top: .25em
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .info-three {
+    padding-top: .25em
+  }
+}
+.info-five, .info-six {
+  padding-top: 1em
+}
+.admissions-deadlines-container {
+  padding: 5px 8px 30px;
+  line-height: 1.428571429;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out
+}
+.admissions-deadlines {
+  font-size: 1.65em;
+  margin-bottom: 15px;
+  display: block;
+  padding: .5em 5px;
+  text-align: center;
+  line-height: 1em;
+  color: #fff
+}
+.marginsForIE8Colums {
+  margin-left: 30px;
+  margin-right: 30px
+}
+.ie8 .ThreeCornerBox {
+  width: 300px
+}
+.ie8 .ThreeCornerBox i {
+  display: none
+}
+.ie8 .action-one, .ie8 .action-three, .ie8 .action-two {
+  width: 400px;
+  margin-left: 30px;
+  margin-right: 30px
+}
+.ie8 .tool-four, .ie8 .tool-one, .ie8 .tool-three, .ie8 .tool-two {
+  width: 200px;
+  margin-left: 30px;
+  margin-right: 30px
+}
+.ie8 .info-five, .ie8 .info-four, .ie8 .info-one, .ie8 .info-six, .ie8 .info-three, .ie8 .info-two {
+  width: 300px;
+  margin-left: 30px;
+  margin-right: 30px
+}
+.ie8 .col-lg-4 .container #admissions-calendar {
+  width: 400px;
+  margin-left: 30px;
+  margin-right: 30px
+}
+.ie8 .admissions-feature-caption {
+  background: #00447c
+}

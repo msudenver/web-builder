@@ -28,6 +28,110 @@ Wednesday 06, April, 2016
 
 .rowdygray:hover { background: #646366; color: #fff !important; }
 
+.turquoise-f { color: red !important; }
+
+.turquoise { background: #1ABC9C; }
+
+.turquoise:hover { background: #17a689; }
+
+.greensea { background: #16A085; color: #fff !important; }
+
+.greensea:hover { background: #138a72; color: #fff !important; }
+
+.emerald { background: #2ECC71; color: #fff !important; }
+
+.emerald:hover { background: #29b765; color: #fff !important; }
+
+.nephritis { background: #27AE60; color: #fff !important; }
+
+.nephritis:hover { background: #295; color: #fff !important; }
+
+.peterriver { background: #3498DB; color: #fff !important; }
+
+.peterriver:hover { background: #258cd1; color: #fff !important; }
+
+.belizehole { background: #2980B9; color: #fff !important; }
+
+.belizehole:hover { background: #2472a4; color: #fff !important; }
+
+.amethyst { background: #9B59B6; color: #fff !important; }
+
+.amethyst:hover { background: #8f4bab; color: #fff !important; }
+
+.wisteria { background: #8E44AD; color: #fff !important; }
+
+.wisteria:hover { background: #7f3d9b; color: #fff !important; }
+
+.wetasphalt { background: #34495E; color: #fff !important; }
+
+.wetasphalt:hover { background: #34495e; color: #fff !important; }
+
+.midnightblue { background: #2C3E50; color: #fff !important; }
+
+.midnightblue:hover { background: #4f6f8f; color: #fff !important; }
+
+.sunflower { background: #F1C40F; color: #fff !important; }
+
+.sunflower:hover { background: #dfb50d; color: #fff !important; }
+
+.orange { background: #F39C12; color: #fff !important; }
+
+.orange:hover { background: #e6910c; color: #fff !important; }
+
+.carrot { background: #E67E22; color: #fff !important; }
+
+.carrot:hover { background: #dc7419; color: #fff !important; }
+
+.pumpkin { background: #D35400; color: #fff !important; }
+
+.pumpkin:hover { background: #fa6400; color: #fff !important; }
+
+.alizarin { background: #E74C3C; color: #fff !important; }
+
+.alizarin:hover { background: #e02e1c; color: #fff !important; }
+
+.pomegranate { background: #C0392B; color: #fff !important; }
+
+.pomegranate:hover { background: #c0392b; color: #fff !important; }
+
+.clouds { background: #ECF0F1; color: #000 !important; }
+
+.clouds:hover { background: #67848b; color: #000 !important; }
+
+.silver { background: #BDC3C7; color: #000 !important; }
+
+.silver:hover { background: #6a757d; color: #000 !important; }
+
+.asbestos { background: #7F8C8D; color: #000 !important; }
+
+.asbestos:hover { background: #6c7879; color: #000 !important; }
+
+.concrete { background: #95A5A6; color: #000 !important; }
+
+.concrete:hover { background: #637576; color: #000 !important; }
+
+.darkgray { background: #333; }
+
+.lightgray { background: #bcbaba; }
+
+.white { background: #fff; color: #000; }
+
+.black { background: #000; color: #fff; }
+
+.contentlink { background: #1b557a; }
+
+.rowdyblue { background: #00447c; color: #fff !important; }
+
+.rowdyblue:hover { background: #003663; color: #fff !important; }
+
+.rowdyred { background: #c50f3c; color: #fff !important; }
+
+.rowdyred:hover { background: #ad0d35; color: #fff !important; }
+
+.rowdygray { background: #717073; color: #fff !important; }
+
+.rowdygray:hover { background: #646366; color: #fff !important; }
+
 /* Toolbar Styles */
 .toolbar { z-index: 9999; background: #fff; }
 
@@ -48,6 +152,10 @@ Wednesday 06, April, 2016
 .toolbar .navbar-collapse .navbar-collapse.collapse .nav.navbar-nav.navbar-right { margin: 0; }
 
 .toolbar li.active a { background: #ecf0f1 !important; color: #333 !important; }
+
+.nav-social { border-bottom: 48px solid #d11242; border-left: 35px solid transparent; border-right: 0px solid transparent; height: 0; float: right; }
+
+.nav-social > a > i.fa { color: white; font-size: 18px; padding: 15px 10px; }
 
 .navbar { border-radius: 0 !important; margin-bottom: 0; }
 
@@ -75,8 +183,6 @@ Wednesday 06, April, 2016
 
 .caret-up { width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-bottom: 4px solid; display: inline-block; margin-left: 2px; vertical-align: middle; }
 
-.msudenver_logo img { width: 115px; margin: 10px; }
-
 @media only screen and (max-width: 320px) { .navbar-brand { height: 53px; } }
 
 @media only screen and (max-width: 767px) { .nav-social { background: #d11242; } }
@@ -91,8 +197,7 @@ Wednesday 06, April, 2016
   ul.dropdown-menu > li a { font-family: sans-serif; }
   ul.nav.navbar-nav.navbar-center { list-style: none !important; margin: auto !important; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; float: none; display: inline-block; } }
 
-@media screen and (min-width: 992px) { .msudenver_logo img { width: 165px; margin: 15px 25px; }
-  .mainBlueNavigation ul li a { padding-top: 70px !important; } }
+@media screen and (min-width: 992px) { .mainBlueNavigation ul li a { padding-top: 70px !important; } }
 
 @media only screen and (min-width: 1200px) { .mainBlueNavigation ul li a { font-size: 1.5em; }
   .navbar-collapse { padding-right: 0; padding-left: 0; } }
@@ -161,6 +266,8 @@ Wednesday 06, April, 2016
 .footer a, .footer p { color: #fff; font-size: 15px; font-weight: 200; text-align: right; }
 
 .campus-info { border: 0; border-bottom: 1px solid white; margin-bottom: 15px; }
+
+.college-portrait { float: right; }
 
 @media only screen and (min-width: 768px) { .campus-info { border: 0; border-right: 1px solid white; border-bottom: 0; margin-bottom: 0; } }
 
