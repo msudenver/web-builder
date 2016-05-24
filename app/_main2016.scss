@@ -8,16 +8,16 @@
 
 !!! */
 
-@import"variables";
+@import "variables";
 // @import"ContentTypes/oldhomepage";
-@import"ContentTypes/content";
-@import"ContentTypes/navmenu";
-@import"ContentTypes/TableStyles";
-@import"ContentTypes/AdmissionsStyles";
-@import"ContentTypes/HighlightBox";
-@import"ContentTypes/CallsToAction";
-@import"ContentTypes/hero";
-@import"ContentTypes/newsroom";
+@import "ContentTypes/content";
+@import "ContentTypes/navmenu";
+@import "ContentTypes/TableStyles";
+@import "ContentTypes/AdmissionsStyles";
+@import "ContentTypes/HighlightBox";
+@import "ContentTypes/CallsToAction";
+@import "ContentTypes/hero";
+@import "ContentTypes/newsroom";
 @import "toolbar";
 @import "footer";
 .collapse {
@@ -216,7 +216,7 @@ h6 {
   font-weight: 500
 }
 .siteheader {
-  margin-top: 65px;
+  margin-top: 55px;
   margin-bottom: 20px;
   background-color: #fff;
   padding:5px;
@@ -235,14 +235,11 @@ h6 {
     text-align: right;
     padding-right: 10px;
   }
-  .msudenver_logo {
-    text-align:center;
-  }
 }
 
 .msudenver_logo img {
-  width: 195px;
   padding-bottom: 15px;
+  padding-top: 25px;
 }
 
 .breadcrumb {
