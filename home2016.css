@@ -191,7 +191,7 @@ Wednesday 06, April, 2016
   .nav-social { border-bottom: 48px solid #d11242; border-left: 35px solid transparent; border-right: 0 solid transparent; height: 0; }
   .navbar .navbar-nav > .quicktools { display: inline-block; float: none; margin-bottom: -2px; }
   .navbar .navbar-collapse { text-align: center; }
-  .mainBlueNavigation { background: url("<t4 type='media' id='106586' formatter='image/path'/>") no-repeat; background-size: cover; }
+  .mainBlueNavigation { background: url("media/assets/homepagespring2016/home_headerbg.jpg") no-repeat; background-size: cover; }
   .mainBlueNavigation ul li a { color: #fff !important; font-size: 1.2em; font-weight: 100; font-family: 'Fjalla One', sans-serif; padding-top: 20px !important; padding-bottom: 15px !important; }
   ul.dropdown-menu > li a { padding-top: 0; }
   ul.dropdown-menu > li a { font-family: sans-serif; }
@@ -272,7 +272,7 @@ Wednesday 06, April, 2016
 @media only screen and (min-width: 768px) { .campus-info { border: 0; border-right: 1px solid white; border-bottom: 0; margin-bottom: 0; } }
 
 /* Calls to action */
-.calls-to-action { padding: 25px; background: url("<t4 type='media' id='104546' formatter='image/path'/>") no-repeat; background-size: cover; background-color: rgba(52, 152, 219, 0.72); margin-bottom: 15px; }
+.calls-to-action { padding: 25px; background: url("media/assets/homepagespring2016/calltoactbg.png") no-repeat; background-size: cover; background-color: rgba(52, 152, 219, 0.72); margin-bottom: 15px; }
 
 .calls-to-action > hr { border-top: 1px solid rgba(255, 255, 255, 0.2); margin-top: 15px; margin-bottom: 15px; }
 
