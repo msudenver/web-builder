@@ -116,10 +116,6 @@
     vertical-align: middle;
 }
 
-.msudenver_logo img {
-    width: 115px;
-    margin: 10px;
-}
 @media only screen and (max-width: 320px) {
     .navbar-brand {
         height: 53px;
@@ -179,10 +175,6 @@
 }
 
 @media screen and (min-width: 992px) {
-    .msudenver_logo img {
-        width: 165px;
-        margin: 15px 25px;
-    }
     .mainBlueNavigation ul li a {
         padding-top: 70px !important;
     }
