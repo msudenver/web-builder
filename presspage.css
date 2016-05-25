@@ -2155,23 +2155,6 @@ hr {
   border-top: 2px solid #e6e1e1;
 }
 
-.content p a,
-.content ul a {
-  color: #248dc1 !important;
-  text-decoration: none !important;
-  padding-bottom: 0px !important;
-  border-bottom: 0px solid #248dc1 !important;
-  transition: all 250ms ease-in-out;
-}
-
-.content p a:hover,
-.content ul a:hover {
-  text-decoration: none !important;
-  padding-bottom: 3px !important;
-  border-bottom: 2px solid #248dc1 !important;
-  transition: all 250ms ease-in-out;
-}
-
 .btn {
   border-radius: 0;
   margin-bottom: 15px;

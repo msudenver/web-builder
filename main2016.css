@@ -728,10 +728,6 @@ ul.breadcrumb a { color: #00447c; }
 
 hr { border-top: 2px solid #e6e1e1; }
 
-.content p a, .content ul a { color: #248dc1 !important; text-decoration: none !important; padding-bottom: 0px !important; border-bottom: 0px solid #248dc1 !important; transition: all 250ms ease-in-out; }
-
-.content p a:hover, .content ul a:hover { text-decoration: none !important; padding-bottom: 3px !important; border-bottom: 2px solid #248dc1 !important; transition: all 250ms ease-in-out; }
-
 .btn { border-radius: 0; margin-bottom: 15px; font-weight: 100 !important; opacity: .80; transition: opacity 250ms ease-in-out; box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175); }
 
 .btn:hover { opacity: 1; transition: opacity 250ms ease-in-out; }
