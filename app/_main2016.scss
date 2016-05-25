@@ -18,6 +18,7 @@
 @import "ContentTypes/CallsToAction";
 @import "ContentTypes/hero";
 @import "ContentTypes/newsroom";
+@import "ContentTypes/panel";
 @import "toolbar";
 @import "footer";
 .collapse {
@@ -62,10 +63,7 @@
   overflow: hidden;
   margin-bottom: 1.5em
 }
-.panel-group {
-  margin-bottom: 20px;
-  border-radius: 0
-}
+
 .expert {
   padding: 1.5em;
   margin-bottom: 20px;
@@ -123,18 +121,6 @@
   -ms-interpolation-mode: bicubic
 }
 
-.panel-default {
-  border: 1px solid #1b557a
-}
-.panel-default>.panel-heading {
-  background: #1b557a;
-  color: #fff;
-  font-size: 1.5em;
-  border-color: #1b557a
-}
-.panel-title {
-  color: #fff
-}
 img {
   max-width: 100%;
   height: auto
@@ -408,7 +394,6 @@ hr {
 }
 
 
-
 .content p a,
 .content ul a {
 color: #248dc1 !important;
@@ -437,12 +422,4 @@ transition: all 250ms ease-in-out;
 .btn:hover {
 opacity: 1;
 transition: opacity 250ms ease-in-out;
-}
-
-.panel {
-    border-radius: 0px;
-}
-.panel-heading {
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
 }
