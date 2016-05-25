@@ -520,7 +520,7 @@ table.caption { margin: 20px; padding: 10px; max-width: 100%; background-color: 
 
 .nav-social > a > i.fa { color: white; font-size: 18px; padding: 15px 10px; }
 
-.navbar { border-radius: 0 !important; margin-bottom: 0; }
+.navbar { min-height: 48px; border-radius: 0 !important; margin-bottom: 0; }
 
 .navbar-nav { margin: 0; }
 
