@@ -151,6 +151,10 @@
 
 .content-subhead { margin: 50px 0 20px; font-weight: 300; color: #888; }
 
+.content p a, .content ul a { color: #248dc1 !important; text-decoration: none !important; padding-bottom: 0px !important; border-bottom: 0px solid #248dc1 !important; transition: all 250ms ease-in-out; }
+
+.content p a:hover, .content ul a:hover { text-decoration: none !important; padding-bottom: 3px !important; border-bottom: 2px solid #248dc1 !important; transition: all 250ms ease-in-out; }
+
 #layout, #menu, .menu-link { -webkit-transition: all .2s ease-out; -moz-transition: all .2s ease-out; -ms-transition: all .2s ease-out; -o-transition: all .2s ease-out; transition: all .2s ease-out; }
 
 #layout { z-index: 9998; padding-left: 200px; left: 0; top: 100px; }
