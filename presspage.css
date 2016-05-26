@@ -496,6 +496,12 @@ h3 { padding-bottom: 15px; }
 
 .share-story-icons .fa { color: #3289BE; padding-left: 10px; padding-right: 10px; }
 
+.btn-small { float: right !important; }
+
+.input-oneline { overflow: hidden; padding-right: .5em; }
+
+.input-small { width: 100% !important; }
+
 /* Panel Styles */
 .panel { border: 0; border-radius: 0; }
 

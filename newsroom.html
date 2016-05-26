@@ -54,7 +54,9 @@
                   <img class="navbar-brand hidden-md hidden-lg img-responsive" src="https://msudenver.edu//media/assets/homepagespring2016/msudenver_logo_transparent_mobile.png" alt="MSU Denver Formal Logo">
               </div>
 
-            <div class="container">
+
+              <div class="container-fluid">
+<!--             <div class="container-fluid"> -->
               <div class="navbar-collapse collapse">
 
                 <div class="col-xs-12 col-md-6 col-lg-6">
@@ -64,10 +66,8 @@
                     <li class="quicktools"><a href="http://library.auraria.edu">Library</a></li>
                     <li class="quicktools"><a href="/giving">Support Us</a></li>
                     <li class="quicktools"><a href="/maps">Maps</a></li>
-
                   </ul>
                 </div>
-
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                       <form class="custom-search-input" role="search" action="https://www.msudenver.edu/a_to_z/search">
                         <div class="input-group">
@@ -251,13 +251,25 @@
 </span>
 </a><div class="well col-xs-12">
 <h4>Newsroom Search</h4>
-  <form action="//www.msudenver.edu/newsroom/search/" class="form-search">
+  <form action="//www.msudenver.edu/newsroom/search/">
+  <input type="submit" name="search" value="Search" class="btn btn-default btn-small"/>
+  <div class="input-oneline">
 	<input type="hidden" name="cx" value="004867254463714202705:7eewc-qjr3g" />
 	<input type="hidden" name="cof" value="FORID:11" />
 	<input type="hidden" name="ie" value="UTF-8" />
     <input type="text" name="q" class="input-small"/>
-    <button type="submit" class="btn btn-default btn-small">Search</button>
+  </div>
 </form>
+
+<!--   <form action="//www.msudenver.edu/newsroom/search/" class="form-search">
+  <input type="hidden" name="cx" value="004867254463714202705:7eewc-qjr3g" />
+  <input type="hidden" name="cof" value="FORID:11" />
+  <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="input-small"/>
+    <button type="submit" class="btn btn-default btn-small">Search</button> 
+</form> -->
+
+
 </div><div class="row">
 <div class="col-xs-12">
 <div class="panel panel-default clickable" data-href="">
