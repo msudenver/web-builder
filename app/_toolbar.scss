@@ -58,8 +58,9 @@
     padding: 15px 10px;
 }
 
+
 .navbar {
-    min-height: 48px;
+    min-height: 46px;
     border-radius: 0!important;
     margin-bottom: 0;
 }
@@ -118,10 +119,24 @@
     vertical-align: middle;
 }
 
-.right-filler {
-    background: #d11242; 
-    height: 48px; 
-    position: inherit;
+.toolbar-background {
+    background: #d11242;
+    overflow: hidden;
+    position: relative;
+}
+
+.toolbar-background .background {
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+.toolbar-background .container {
+    background: white;
+    padding-left:0px;
+    padding-right:0px;
 }
 
 @media only screen and (max-width: 320px) {
@@ -187,6 +202,15 @@
         padding-top: 70px !important;
     }
 }
+
+
+@media only screen and (max-width:1200px){
+
+  .toolbar-background > .container {
+      width: 100%;
+  }
+
+}
 @media only screen and (min-width:1200px) {
     .mainBlueNavigation ul li a {
         font-size: 1.5em;
@@ -195,4 +219,5 @@
         padding-right: 0;
         padding-left: 0;
     }
+
 }
