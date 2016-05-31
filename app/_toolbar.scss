@@ -6,6 +6,7 @@
 }
 .toolbar .quicktools {
     font-size: 16px;
+    text-align: left;
 }
 .toolbar a.navbar-brand:hover {
     color: #003663;
@@ -49,7 +50,6 @@
     border-left: 35px solid transparent;
     border-right: 0px solid transparent;
     height: 0;
-    float: right;
 }
 
   .nav-social>a>i.fa {
@@ -143,29 +143,33 @@
     .navbar-brand {
         height: 53px;
     }
+
 }
 @media only screen and (max-width: 767px) {
     .nav-social {
         background: #d11242;
     }
+
 }
+
 @media only screen and (min-width: 768px) {
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
+
     .nav-social {
         border-bottom: 48px solid #d11242;
         border-left: 35px solid transparent;
         border-right: 0 solid transparent;
         height: 0;
     }
-    .navbar .navbar-nav > .quicktools {
+
+    .navbar .navbar-nav {
         display: inline-block;
         float: none;
         margin-bottom: -2px;
     }
-    .navbar .navbar-collapse {
-        text-align: center;
+    .navbar .navbar-nav > .quicktools {
+        display: inline-block;
+        float: none;
+        margin-bottom: -2px;
     }
     .mainBlueNavigation {
         // background: url("media/assets/homepagespring2016/home_headerbg.jpg") no-repeat;
@@ -203,11 +207,13 @@
     }
 }
 
-
 @media only screen and (max-width:1200px){
 
   .toolbar-background > .container {
       width: 100%;
+  }
+  .navbar .navbar-collapse {
+      text-align: center;
   }
 
 }
@@ -218,6 +224,11 @@
     .navbar-collapse {
         padding-right: 0;
         padding-left: 0;
+    }
+
+    .nav-social {
+        text-align: right !important;
+        padding-right: 0px;
     }
 
 }

@@ -135,7 +135,7 @@ Wednesday 06, April, 2016
 /* Toolbar Styles */
 .toolbar { z-index: 9999; background: #fff; }
 
-.toolbar .quicktools { font-size: 16px; }
+.toolbar .quicktools { font-size: 16px; text-align: left; }
 
 .toolbar a.navbar-brand:hover { color: #003663; }
 
@@ -153,11 +153,11 @@ Wednesday 06, April, 2016
 
 .toolbar li.active a { background: #ecf0f1 !important; color: #333 !important; }
 
-.nav-social { border-bottom: 48px solid #d11242; border-left: 35px solid transparent; border-right: 0px solid transparent; height: 0; float: right; }
+.nav-social { border-bottom: 48px solid #d11242; border-left: 35px solid transparent; border-right: 0px solid transparent; height: 0; }
 
 .nav-social > a > i.fa { color: white; font-size: 18px; padding: 15px 10px; }
 
-.navbar { min-height: 48px; border-radius: 0 !important; margin-bottom: 0; }
+.navbar { min-height: 46px; border-radius: 0 !important; margin-bottom: 0; }
 
 .navbar-nav { margin: 0; }
 
@@ -183,14 +183,19 @@ Wednesday 06, April, 2016
 
 .caret-up { width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-bottom: 4px solid; display: inline-block; margin-left: 2px; vertical-align: middle; }
 
+.toolbar-background { background: #d11242; overflow: hidden; position: relative; }
+
+.toolbar-background .background { display: block; position: absolute; left: 0px; width: 50%; height: 100%; background-color: white; }
+
+.toolbar-background .container { background: white; padding-left: 0px; padding-right: 0px; }
+
 @media only screen and (max-width: 320px) { .navbar-brand { height: 53px; } }
 
 @media only screen and (max-width: 767px) { .nav-social { background: #d11242; } }
 
-@media only screen and (min-width: 768px) { .navbar .navbar-collapse { text-align: center; }
-  .nav-social { border-bottom: 48px solid #d11242; border-left: 35px solid transparent; border-right: 0 solid transparent; height: 0; }
+@media only screen and (min-width: 768px) { .nav-social { border-bottom: 48px solid #d11242; border-left: 35px solid transparent; border-right: 0 solid transparent; height: 0; }
+  .navbar .navbar-nav { display: inline-block; float: none; margin-bottom: -2px; }
   .navbar .navbar-nav > .quicktools { display: inline-block; float: none; margin-bottom: -2px; }
-  .navbar .navbar-collapse { text-align: center; }
   .mainBlueNavigation { background: url("<t4 type='media' id='106586' formatter='image/path'/>") no-repeat; background-size: cover; }
   .mainBlueNavigation ul li a { color: #fff !important; font-size: 1.2em; font-weight: 100; font-family: 'Fjalla One', sans-serif; padding-top: 20px !important; padding-bottom: 15px !important; }
   ul.dropdown-menu > li a { padding-top: 0; }
@@ -199,8 +204,12 @@ Wednesday 06, April, 2016
 
 @media screen and (min-width: 992px) { .mainBlueNavigation ul li a { padding-top: 70px !important; } }
 
+@media only screen and (max-width: 1200px) { .toolbar-background > .container { width: 100%; }
+  .navbar .navbar-collapse { text-align: center; } }
+
 @media only screen and (min-width: 1200px) { .mainBlueNavigation ul li a { font-size: 1.5em; }
-  .navbar-collapse { padding-right: 0; padding-left: 0; } }
+  .navbar-collapse { padding-right: 0; padding-left: 0; }
+  .nav-social { text-align: right !important; padding-right: 0px; } }
 
 /* Carousel Styles */
 #slider > a.left.carousel-control, #slider > a.right.carousel-control { color: #fff; }
@@ -283,17 +292,6 @@ Wednesday 06, April, 2016
 @media screen and (max-width: 767px) { .calls-to-action { height: 446px !important; } }
 
 @media screen and (min-width: 992px) { .calls-to-action > h3 > a { font-size: 1.5em; } }
-
-/* Panel Styles */
-.panel { border: 0; border-radius: 0; }
-
-.panel-heading { border-radius: 0; }
-
-.panel-default { border: 1px solid #1b557a; }
-
-.panel-default > .panel-heading { background: #1b557a; color: #fff; font-size: 1.5em; border-color: #1b557a; }
-
-.panel-title { color: #fff; }
 
 .clickable.col-lg-12.col-lg-6, .clickable.col-xs-6.col-sm-6.col-md-6.col-lg-3 { padding: 0.25em; }
 
