@@ -474,9 +474,9 @@ table.caption { margin: 20px; padding: 10px; max-width: 100%; background-color: 
 
 h3 { padding-bottom: 15px; }
 
-.byline { color: #1E1E1E; font-size: 1.4em; text-transform: uppercase; }
+.byline, .location { color: #1E1E1E; font-size: 1.4em; text-transform: uppercase; }
 
-.byline a { color: #1E1E1E !important; font-weight: 400; }
+.byline a, .location a { color: #1E1E1E !important; font-weight: 400; }
 
 .byline-date { font-weight: bold; }
 
