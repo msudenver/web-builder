@@ -277,18 +277,13 @@ Wednesday 06, April, 2016
 
 @media only screen and (min-width: 768px) { .campus-info { border: 0; border-right: 1px solid white; border-bottom: 0; margin-bottom: 0; } }
 
-/* Calls to action */
-.calls-to-action { padding: 25px; background: url("<t4 type='media' id='104546' formatter='image/path'/>") no-repeat; background-size: cover; background-color: rgba(52, 152, 219, 0.72); margin-bottom: 15px; }
+#callstoaction { background-color: #005fae; width: 100%; margin-bottom: 15px; padding-left: 25px; padding-top: 15px; padding-bottom: 15px; }
 
-.calls-to-action > hr { border-top: 1px solid rgba(255, 255, 255, 0.2); margin-top: 15px; margin-bottom: 15px; }
+#callstoaction > a { color: #F1F0F0; font-size: 1.2em; font-weight: 100; line-height: 3; text-transform: uppercase; }
 
-.calls-to-action > h3 > a { color: #F1F0F0; font-weight: 100; font-size: 1em; text-transform: uppercase; font-family: 'Fjalla One', sans-serif; }
+#callstoaction > hr { border-style: none; border-bottom: 1px solid #949fa8; margin-right: 25px; margin-bottom: 5px; margin-top: 5px; }
 
-@media screen and (max-width: 480px) { .calls-to-action { height: 460px !important; } }
-
-@media screen and (max-width: 767px) { .calls-to-action { height: 446px !important; } }
-
-@media screen and (min-width: 992px) { .calls-to-action > h3 > a { font-size: 1.5em; } }
+#callstoaction > hr:last-child { display: none; }
 
 .clickable.col-lg-12.col-lg-6, .clickable.col-xs-6.col-sm-6.col-md-6.col-lg-3 { padding: 0.25em; }
 

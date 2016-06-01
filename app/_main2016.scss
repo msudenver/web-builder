@@ -8,7 +8,7 @@
 
 !!! */
 
-@import "variables";
+@import "ContentTypes/variables";
 // @import"ContentTypes/oldhomepage";
 @import "ContentTypes/content";
 @import "ContentTypes/navmenu";
@@ -19,6 +19,6 @@
 @import "ContentTypes/hero";
 @import "ContentTypes/newsroom";
 @import "ContentTypes/panel";
-@import "toolbar";
-@import "footer";
+@import "ContentTypes/toolbar";
+@import "ContentTypes/footer";
 @import "ContentTypes/stylestoimport";
