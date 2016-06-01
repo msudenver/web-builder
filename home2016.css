@@ -221,7 +221,7 @@ Wednesday 06, April, 2016
 
 .fa-lg { font-size: 1.8em; }
 
-.carousel-inner > .item > img { margin: auto; }
+.carousel-inner > .item > a > img, .carousel-inner > .item > img { line-height: 1; margin: auto; width: 100%; }
 
 #carousel-homepage > .carousel-control { opacity: 0.0; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
 

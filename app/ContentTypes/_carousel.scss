@@ -6,7 +6,6 @@
     color: #fff;
 }
 
-
 .carousel-control.right {
     background: none!important;
     width: 78px;
@@ -32,8 +31,10 @@
     font-size: 1.8em;
 }
 
-.carousel-inner>.item>img {
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    line-height: 1;
     margin: auto;
+    width: 100%;
 }
 
 #carousel-homepage > .carousel-control {
