@@ -59,7 +59,7 @@
 }
 .ThreeCornerBox {
   position: relative;
-  border-top-right-radius: 30px;
+  border-radius: 15px;
   min-height: 100px;
   transition: .5s;
   margin-bottom: 1em;
@@ -67,9 +67,9 @@
   z-index: 101
 }
 .ThreeCornerBox:hover {
-  -webkit-border-radius: 0 0 833px;
-  -moz-border-radius: 0 0 833px;
-  border-radius: 0 30px 833px 0
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px
 }
 .ThreeCornerBox i {
   position: absolute;
@@ -104,7 +104,6 @@
   margin-bottom: 1em;
   top: 0;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5em
 }
 .action-one, .action-three, .action-two {

@@ -353,9 +353,9 @@ table.caption { margin: 20px; padding: 10px; max-width: 100%; background-color: 
 
 @media only screen and (min-width: 1224px) and (max-width: 1380px) { .admissions-feature-caption { top: 85%; } }
 
-.ThreeCornerBox { position: relative; border-top-right-radius: 30px; min-height: 100px; transition: .5s; margin-bottom: 1em; height: 100px; z-index: 101; }
+.ThreeCornerBox { position: relative; border-radius: 15px; min-height: 100px; transition: .5s; margin-bottom: 1em; height: 100px; z-index: 101; }
 
-.ThreeCornerBox:hover { -webkit-border-radius: 0 0 833px; -moz-border-radius: 0 0 833px; border-radius: 0 30px 833px 0; }
+.ThreeCornerBox:hover { -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; }
 
 .ThreeCornerBox i { position: absolute; top: 70%; left: 86%; z-index: 100; font-size: 1.5em; color: inherit; }
 
@@ -367,7 +367,7 @@ table.caption { margin: 20px; padding: 10px; max-width: 100%; background-color: 
 
 @media only screen and (min-width: 1025px) and (max-width: 1224px) { .ThreeCornerBox span { font-size: 1em; } }
 
-.ThreeCornerBox p { display: block; position: relative; padding: 1.75em; margin-bottom: 1em; top: 0; color: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 1.5em; }
+.ThreeCornerBox p { display: block; position: relative; padding: 1.75em; margin-bottom: 1em; top: 0; color: #fff; font-size: 1.5em; }
 
 .action-one, .action-three, .action-two { width: 100%; color: #fff; padding: 1.5em; height: 166px; font-size: 2em; z-index: 100; line-height: 1.5em; text-align: center; margin-bottom: .5em; }
 
