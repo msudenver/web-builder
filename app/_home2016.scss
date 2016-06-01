@@ -13,11 +13,6 @@ Wednesday 06, April, 2016
 @import "ContentTypes/footer.scss";
 @import "ContentTypes/callstoaction.scss";
 
-.clickable.col-lg-12.col-lg-6,
-.clickable.col-xs-6.col-sm-6.col-md-6.col-lg-3 {
-    padding: 0.25em;
-}
-
 #layout,
 #menu,
 .menu-link {
@@ -42,6 +37,12 @@ Wednesday 06, April, 2016
 }
 .custombtn span {
     color: #FFF;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    line-height: 1;
+    margin: auto;
+    width: 100%;
 }
 .ie8 .img-responsive {
     display: block;
@@ -140,6 +141,12 @@ h6 {
     font-size: 13px;
     font-weight: 500;
 }
+
+.msudenver_logo {
+    max-width: 216px;
+    padding: 15px;
+}
+
 
 .readmore {
     text-align: right;
@@ -314,6 +321,9 @@ p.event-home-date {
     }
     .header {
         text-align: left;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
     }
 
 }
