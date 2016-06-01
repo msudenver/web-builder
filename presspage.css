@@ -498,7 +498,7 @@ h3 { padding-bottom: 15px; }
 
 .btn-small { float: right !important; }
 
-.input-oneline { overflow: hidden; padding-right: .5em; }
+.input-oneline { overflow: hidden; padding-right: 0.5em; }
 
 .input-small { width: 100% !important; }
 
