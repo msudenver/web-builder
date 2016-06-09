@@ -2,7 +2,6 @@ module.exports = function(grunt) {
   // Load the various tasks required
   grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-html-validation');
@@ -68,7 +67,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options: {
-          style: 'compressed',
+          style: 'expanded',
           //Uncomment the line below to add Compass into the project
           //compass: true,
         },//options
