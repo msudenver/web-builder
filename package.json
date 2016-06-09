@@ -9,7 +9,6 @@
     "grunt": "latest",
     "grunt-bower-task": "latest",
     "grunt-contrib-jshint": "latest",
-    "grunt-contrib-csslint": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-sass": "latest",
     "grunt-contrib-watch": "latest",
@@ -17,6 +16,11 @@
     "grunt-text-replace": "latest",
     "grunt-include-replace": "latest",
     "grunt-express": "latest",
+
+    //Uncomment the line below to add JSHint to the project
+    //"grunt-contrib-csslint": "latest",
+
+
     "grunt-contrib-copy": "latest"
   }
 }

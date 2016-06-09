@@ -1,7 +1,6 @@
 module.exports = function(grunt) {
   // Load the various tasks required
   grunt.loadNpmTasks('grunt-bower-task');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-sass');
@@ -11,6 +10,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-include-replace');
   grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-contrib-copy');
+
+
+  //Uncommment the line below to add JSHint into the project (Ctrl+f to find all regions needed to be uncommented in order to add in JSHint)
+  //grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Project configuration.
   grunt.initConfig({
@@ -38,13 +41,15 @@ module.exports = function(grunt) {
       }//install
     },//bower
     
-    jshint: {
+    //Uncomment this region to add in JSHint to the project.
+    /*jshint: {
       options: {
         jshintrc : '.jshintrc'
       },//options
       all : ['_/components/terminalfour/js/*.js']
     },//jshint
-    
+    */
+
     uglify: {
       options: {
         banner: '<%= pkg.warning %>/**\n * Client: <%= pkg.clientName %>\n * Project: <%= pkg.projectName %>\n * Version: <%= pkg.version %>\n * Description: <%= pkg.description %>\n * Copyright <%= grunt.template.today("yyyy") %>\n * Created by <%= pkg.developer %>\n * on behalf of TERMINALFOUR\n * www.terminalfour.com\n */\n',
@@ -128,7 +133,9 @@ module.exports = function(grunt) {
       },//sass
       scripts: {
         files: ['_/components/terminalfour/js/*.js'],
-        tasks: ['jshint','uglify:build']
+        //Uncomment the line below and delete the other "tasks:['uglify:build'] to add JSHint into the project"
+        //tasks: ['jshint','uglify:build']
+        tasks: ['uglify:build']
       },//scripts
       htmlcompile: {
         files: ['_/components/terminalfour/html/src/**/*.html'],
