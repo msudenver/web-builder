@@ -4,10 +4,13 @@
   "authors": "Hugh Law",
   "dependencies" : {
     "jquery" : "latest",
+    
     //Uncomment the line below to add Bootstrap into the project
     //"bootstrap-sass": "latest",
-    "foundation" : "latest",
-    "lemonade" : "latest"
+    "foundation" : "latest"
+
+    //Uncomment the Line below and add a comma at the end of the line above to add lemonade into the project
+    //"lemonade" : "latest"
   },
   "exportsOverride" : {
     "jquery" : {
