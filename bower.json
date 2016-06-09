@@ -1,9 +1,11 @@
 {
   "name": "HTML Cutups Starter Kit",
-  "version": "0.0.1",
-  "authors": "Hugh Law",
+  "version": "0.0.2",
+  "authors": "Hugh Law, Paul Reid",
   "dependencies" : {
-    "jquery" : "latest",
+    
+    //Uncomment the line below to add JQuery to the project
+    //"jquery" : "latest",
     
     //Uncomment the line below to add Bootstrap into the project
     //"bootstrap-sass": "latest",
@@ -15,9 +17,15 @@
     //"lemonade" : "latest"
   },
   "exportsOverride" : {
+    //Uncomment this block to add JQuery to the project
+    /*
     "jquery" : {
       "" : "dist/jquery.min.js"
+
+      */
+    
     },
+    
     //Uncomment out the region below to add Bootstrap into the project
     /*
     "bootstrap-sass" : {
@@ -42,8 +50,14 @@
     */
 
     "fastclick": {},
+    
+    //Uncomment this block in order to add JQuery to the Project
+    /*
     "jquery-placeholder" : {},
     "jquery.cookie" : {},
+    */
+
     "modernizr": {}
   }
-}
+
+  //If this file crashes grunt, check there is the correct amount of {} and every element is close properly
