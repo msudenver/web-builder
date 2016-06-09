@@ -185,7 +185,7 @@ Wednesday 06, April, 2016
 
 @media only screen and (max-width: 320px) { .navbar-brand { height: 53px; } .desktoptel { display: none !important;} .mobiletel { display: inline !important;} }
 
-@media only screen and (max-width: 767px) { #add_line_break br { line-height: 16px;} .nav-social { background: #d11242; } .desktoptel { display: none !important;} .mobiletel { display: inline !important;} }
+@media only screen and (max-width: 767px) { .carousel-caption { height: 200px; } .nav-social { background: #d11242; } .desktoptel { display: none !important;} .mobiletel { display: inline !important;} }
 
 @media only screen and (min-width: 768px) { .nav-social { border-bottom: 48px solid #d11242; border-left: 35px solid transparent; border-right: 0 solid transparent; height: 0; }
   .navbar .navbar-nav { display: inline-block; float: none; margin-bottom: -2px; }
@@ -361,8 +361,6 @@ h6 { color: #e74c3c; font-size: 13px; font-weight: 500; }
 .custom-search-input button:hover { border: 0; box-shadow: none; border-left: solid 1px #ccc; background: none; color: #d11242; }
 
 hr { border-top: 1px solid #e6e1e1; margin-top: 15px; margin-bottom: 15px; }
-
-#add_line_break { line-height: 0px; }
 
 .desktoptel { text-decoration: none !important; }
 
