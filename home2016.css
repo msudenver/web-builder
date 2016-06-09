@@ -183,7 +183,7 @@ Wednesday 06, April, 2016
 
 .caret-up { width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-bottom: 4px solid; display: inline-block; margin-left: 2px; vertical-align: middle; }
 
-.chat-icon { height: 20px; padding-right: 5px;  }
+.chat-icon { padding-right: 7px;  }
 
 @media only screen and (max-width: 320px) { .navbar-brand { height: 53px; } .desktoptel { display: none !important;} .mobiletel { display: inline !important;} }
 
