@@ -13,19 +13,6 @@
     "grunt-contrib-watch": "latest",
     "grunt-include-replace": "latest",
     "grunt-express": "latest",
-
-    //Uncomment the line below to add JSHint to the project
-    //"grunt-contrib-jshint": "latest",
-    
-    //Uncomment the line below to add JSHint to the project
-    //"grunt-contrib-csslint": "latest",
-
-    //Uncomment the line below to add HTML Validation to the project
-    //"grunt-html-validation": "latest",
-
-    //Uncomment the line below to add text replace to the project
-    //"grunt-text-replace": "latest",
-
     "grunt-contrib-copy": "latest"
   }
 }
