@@ -104,6 +104,8 @@ module.exports = function(grunt) {
       }//css
     },//replace
     
+    //Uncomment the region below to add HTML Validation into the project
+    /*
     validation: {
       options: {
         reset: true,
@@ -112,7 +114,8 @@ module.exports = function(grunt) {
       },//options
       files: ['*.html']
     },//validation
-    
+    */
+
     includereplace: {
       dist: {
         options: {
@@ -150,11 +153,14 @@ module.exports = function(grunt) {
       htmlcompile: {
         files: ['_/components/terminalfour/html/src/**/*.html'],
         tasks: ['includereplace']
-      },//htmlcompile
-      html: {
-        files: ['www-root/**/*.html'],
-        tasks: ['validation']
-      }
+      }//htmlcompile
+      
+      //Uncomment the region below to add HTML Validation into the project (Dont forget to add a comment on the line above after the HTML compile curly braces right before the comment)
+      // html: {
+      //   files: ['www-root/**/*.html'],
+      //   tasks: ['validation']
+      // }
+
     },//watch
     
   });
