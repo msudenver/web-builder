@@ -71,7 +71,6 @@ module.exports = function(grunt) {
           style: 'compressed',
           //Uncomment the line below to add Compass into the project
           //compass: true,
-          banner : '<%= pkg.warning %>/**\n * Client: <%= pkg.clientName %>\n * Project: <%= pkg.projectName %>\n * Version: <%= pkg.version %>\n * Description: <%= pkg.description %>\n * Copyright <%= grunt.template.today("yyyy") %>\n * Created by <%= pkg.developer %>\n * on behalf of TERMINALFOUR\n * www.terminalfour.com\n */\n'
         },//options
         files: {
           'www-root/style-assets/css/framework.css': '_/components/terminalfour/sass/framework.scss',
