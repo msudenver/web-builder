@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   // Load the various tasks required
   grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-csslint');
+  
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-html-validation');
@@ -14,6 +14,9 @@ module.exports = function(grunt) {
 
   //Uncommment the line below to add JSHint into the project (Ctrl+f to find all regions needed to be uncommented in order to add in JSHint)
   //grunt.loadNpmTasks('grunt-contrib-jshint');
+
+  //Uncomment the line below to add csslint to the project (Ctrl+f to find all regions needed to be uncommented in order to add in csslint)
+  //grunt.loadNpmTasks('grunt-contrib-csslint');
 
   // Project configuration.
   grunt.initConfig({
@@ -77,6 +80,8 @@ module.exports = function(grunt) {
       }//dist
     },//sass
     
+    //Uncomment this region to add csslint to the project
+    /*
     csslint: {
       strict: {
         options: {
@@ -88,7 +93,8 @@ module.exports = function(grunt) {
         src: ['www-root/style-assets/css/style.css']
       }
     },//csslint
-    
+    */
+
     replace: {
       css: {
         src: ['www-root/style-assets/css/style.css'],
@@ -129,7 +135,10 @@ module.exports = function(grunt) {
       options: { livereload: true },
       sass: {
         files: ['_/components/**/*.scss'],
-        tasks: ['sass:dist','csslint:strict','replace-pre']
+        
+        //Uncomment the line below and delete the other tasks line to add csslint into the project
+        //tasks: ['sass:dist','csslint:strict','replace-pre']
+        tasks: ['sass:dist','replace-pre']
       },//sass
       scripts: {
         files: ['_/components/terminalfour/js/*.js'],

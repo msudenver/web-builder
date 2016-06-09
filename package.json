@@ -18,8 +18,10 @@
     "grunt-express": "latest",
 
     //Uncomment the line below to add JSHint to the project
+    //"grunt-contrib-jshint": "latest",
+    
+    //Uncomment the line below to add JSHint to the project
     //"grunt-contrib-csslint": "latest",
-
 
     "grunt-contrib-copy": "latest"
   }
