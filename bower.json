@@ -7,9 +7,11 @@
     
     //Uncomment the line below to add Bootstrap into the project
     //"bootstrap-sass": "latest",
-    "foundation" : "latest"
+    
+    //Uncomment the line below to add foundation to the project
+    //"foundation" : "latest"
 
-    //Uncomment the Line below and add a comma at the end of the line above to add lemonade into the project
+    //Uncomment the Line below to add lemonade to the project
     //"lemonade" : "latest"
   },
   "exportsOverride" : {
@@ -27,6 +29,9 @@
       "fonts" : "fonts/*"
     },
     */
+
+    //Uncomment the region below to add foundation into the project
+    /*
     "foundation": {
       "scss/foundation": "scss/foundation/_functions.scss",
       "scss/foundation/components/": "scss/foundation/components/*.scss",
@@ -34,6 +39,8 @@
       "js/foundation" : "js/foundation/*.js",
       "js/vendor" : "js/vendor/*.js"
     },
+    */
+
     "fastclick": {},
     "jquery-placeholder" : {},
     "jquery.cookie" : {},
