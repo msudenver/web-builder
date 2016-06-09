@@ -4,11 +4,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-html-validation');
-  grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-include-replace');
   grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-parallel');
+
+  //Uncomment the line below to add HTML Validation to the project
+  //  grunt.loadNpmTasks('grunt-html-validation');
 
 
   //Uncommment the line below to add JSHint into the project (Ctrl+f to find all regions needed to be uncommented in order to add in JSHint)
@@ -17,6 +19,9 @@ module.exports = function(grunt) {
   //Uncomment the line below to add csslint to the project (Ctrl+f to find all regions needed to be uncommented in order to add in csslint)
   //grunt.loadNpmTasks('grunt-contrib-csslint');
 
+  //Uncomment the line below to add text replace to the project
+  //grunt.loadNpmTasks('grunt-text-replace');
+  
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -36,7 +41,7 @@ module.exports = function(grunt) {
     bower: {
       install: {
          options: {
-           targetDir: '_/components/lib',
+           targetDir: 'development/lib',
            layout: 'byComponent',
            cleanup: true
          }//options
@@ -48,7 +53,7 @@ module.exports = function(grunt) {
       options: {
         jshintrc : '.jshintrc'
       },//options
-      all : ['_/components/terminalfour/js/*.js']
+      all : ['development/terminalfour/js/*.js']
     },//jshint
     */
 
@@ -59,7 +64,7 @@ module.exports = function(grunt) {
         mangle : true
       },//options
       build: {
-        src: '_/components/terminalfour/js/*.js',
+        src: 'development/terminalfour/js/*.js',
         dest: 'www-root/style-assets/js/t4-custom.min.js'
       }//build
     }, //uglify
@@ -72,9 +77,9 @@ module.exports = function(grunt) {
           //compass: true,
         },//options
         files: {
-          'www-root/style-assets/css/framework.css': '_/components/terminalfour/sass/framework.scss',
-          'www-root/style-assets/css/style-local.css': '_/components/terminalfour/sass/style.scss',
-          'www-root/style-assets/css/style.css': '_/components/terminalfour/sass/style.scss'
+          'www-root/style-assets/css/framework.css': 'development/terminalfour/sass/framework.scss',
+          'www-root/style-assets/css/style-local.css': 'development/terminalfour/sass/style.scss',
+          'www-root/style-assets/css/style.css': 'development/terminalfour/sass/style.scss'
         }//files
       }//dist
     },//sass
@@ -93,7 +98,9 @@ module.exports = function(grunt) {
       }
     },//csslint
     */
-
+    
+    //Uncomment the block below to add text replace to the project
+    /*
     replace: {
       css: {
         src: ['www-root/style-assets/css/style.css'],
@@ -102,6 +109,8 @@ module.exports = function(grunt) {
       }//css
     },//replace
     
+    */
+
     //Uncomment the region below to add HTML Validation into the project
     /*
     validation: {
@@ -117,10 +126,10 @@ module.exports = function(grunt) {
     includereplace: {
       dist: {
         options: {
-          includesDir: '_/components/terminalfour/html/includes'
+          includesDir: 'development/terminalfour/html/includes'
         },
         files: [
-          {src: '**/*.html', dest: 'www-root/', expand: true, cwd: '_/components/terminalfour/html/src/'}
+          {src: '**/*.html', dest: 'www-root/', expand: true, cwd: 'development/terminalfour/html/src/'}
         ]
       }
     },//includereplace
@@ -128,7 +137,7 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
-          {expand: true, cwd: '_/components/lib/', src: ['./**'], dest: 'www-root/style-assets/lib/', filter: 'isFile'}
+          {expand: true, cwd: 'development/lib/', src: ['./**'], dest: 'www-root/style-assets/lib/', filter: 'isFile'}
         ]
       }//main
     },//copy
@@ -136,20 +145,27 @@ module.exports = function(grunt) {
     watch: {
       options: { livereload: true },
       sass: {
-        files: ['_/components/**/*.scss'],
+        files: ['development/**/**/*.scss'],
         
         //Uncomment the line below and delete the other tasks line to add csslint into the project
-        //tasks: ['sass:dist','csslint:strict','replace-pre']
-        tasks: ['sass:dist','replace-pre']
+        //tasks: ['sass:dist','csslint:strict']
+        
+        //Uncomment the line below to add in text replace
+        //tasks: ['sass:dist','replace-pre']
+
+        tasks: ['sass:dist']
+
       },//sass
+
       scripts: {
-        files: ['_/components/terminalfour/js/*.js'],
+        files: ['development/terminalfour/js/*.js'],
         //Uncomment the line below and delete the other "tasks:['uglify:build'] to add JSHint into the project"
         //tasks: ['jshint','uglify:build']
         tasks: ['uglify:build']
       },//scripts
+
       htmlcompile: {
-        files: ['_/components/terminalfour/html/src/**/*.html'],
+        files: ['development/terminalfour/html/src/**/*.html'],
         tasks: ['includereplace']
       }//htmlcompile
       
@@ -159,19 +175,19 @@ module.exports = function(grunt) {
       //   tasks: ['validation']
       // }
 
-    },//watch
+    }//watch
     
   });
 
   // Default task(s).
   grunt.registerTask('default', ['server']);
   
-  grunt.registerTask('replace-pre', function() {
+  /*grunt.registerTask('replace-pre', function() {
     var cssReplacements = grunt.file.readJSON('replacements.json');
     grunt.config('replace.css.replacements', cssReplacements);
     grunt.task.run('replace');
   });
-  
+  */
   grunt.registerTask('server', [
     'express',
     'copy',
