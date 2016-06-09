@@ -4,7 +4,8 @@
   "authors": "Hugh Law",
   "dependencies" : {
     "jquery" : "latest",
-    "bootstrap-sass": "latest",
+    //Uncomment the line below to add Bootstrap into the project
+    //"bootstrap-sass": "latest",
     "foundation" : "latest",
     "lemonade" : "latest"
   },
@@ -12,6 +13,8 @@
     "jquery" : {
       "" : "dist/jquery.min.js"
     },
+    //Uncomment out the region below to add Bootstrap into the project
+    /*
     "bootstrap-sass" : {
       "scss" : "lib/*.scss",
       "js" : [
@@ -20,6 +23,7 @@
       ],
       "fonts" : "fonts/*"
     },
+    */
     "foundation": {
       "scss/foundation": "scss/foundation/_functions.scss",
       "scss/foundation/components/": "scss/foundation/components/*.scss",
