@@ -8,7 +8,6 @@
   "devDependencies": {
     "grunt": "latest",
     "grunt-bower-task": "latest",
-    "grunt-contrib-jshint": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-sass": "latest",
     "grunt-contrib-watch": "latest",

@@ -69,7 +69,8 @@ module.exports = function(grunt) {
       dist: {
         options: {
           style: 'compressed',
-          compass: true,
+          //Uncomment the line below to add Compass into the project
+          //compass: true,
           banner : '<%= pkg.warning %>/**\n * Client: <%= pkg.clientName %>\n * Project: <%= pkg.projectName %>\n * Version: <%= pkg.version %>\n * Description: <%= pkg.description %>\n * Copyright <%= grunt.template.today("yyyy") %>\n * Created by <%= pkg.developer %>\n * on behalf of TERMINALFOUR\n * www.terminalfour.com\n */\n'
         },//options
         files: {
