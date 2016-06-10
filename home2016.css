@@ -266,6 +266,8 @@ Wednesday 06, April, 2016
   .carousel-caption > h2 { font-size: 32px; }
   .carousel-caption > h3 { font-size: 23px; line-height: 30px; } }
 
+@media only screen and (max-width: 992px) { .carousel-control.left { width: 80px !important; } .carousel-control.right { width: 78px !important; } .carousel-control { position: absolute; top: 20%; } }
+
 @media screen and (min-width: 992px) { .carousel { margin-bottom: 15px; }
   .calls-to-action > h3 > a { font-size: 1.5em; }
   .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
