@@ -5,11 +5,11 @@
   "dependencies" : {
     
   },
+
   "exportsOverride" : {
     
     },
-    
-    
+
     "fastclick": {},
     "modernizr": {}
 }
