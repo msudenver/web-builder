@@ -223,6 +223,8 @@ Wednesday 06, April, 2016
 
 .fa-angle-left, .fa-angle-right { font-weight: bold !important; font-size: 1.5em; }
 
+.fa-facebook-square, .fa-twitter-square, .fa-linkedin-square, .fa-instagram, .fa-flickr, .fa-youtube-square { padding: 0px 5px; font-size: 2.0em; }
+
 .fa-lg { font-size: 1.8em; }
 
 .carousel-inner > .item > a > img, .carousel-inner > .item > img { line-height: 1; margin: auto; width: 100%; }
