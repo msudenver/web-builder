@@ -7,23 +7,21 @@
 - CSS coding standards
 - JavaScript coding standards
 
----
+-----
 ## Introduction
 
 This document aims to develop a standardised workflow for developers creating HTML cutups for clients. This is aimed at providing a well-defined and consistent standard of coding across the whole team and should allow for more robust code with fewer bugs.
 
-There are several tools being used to make a developers life a little easier. These include tools such as SASS, Compass and Grunt amongst others. All of these tools are detailed in this document as well as a guide on how to get up and running with your development environment.
+There are several tools being used to make a developers life a little easier. These include tools such as SASS and Grunt amongst others. All of these tools are detailed in this document as well as a guide on how to get up and running with your development environment.
 
 ---
 ## Tools we are going to use
 
 This section details the tools involved, what they do and how to install them on your development machine. There are several steps involved, but once up and running development will become far more consistent and you will start to wonder how you ever developed without them...
 
-### SASS and Compass
+### SASS
 
 [SASS](http://sass-lang.com) is a pre-processor for CSS. It essentially allows the use of things like variables and nested rules in CSS, but that is not all it does. More info can be found at [http://sass-lang.com/](http://sass-lang.com/) where you can find documentation to get up and running with SASS. As more and more packages come with SASS versions it is fast becoming a standard language used in web development.
-
-[Compass](http://compass-style.org/) is framework for SASS with lots of commonly used design patterns and CSS definitions. Compass is for SASS, what Bootstrap and Foundation are for HTML and CSS. More info can be found at [http://compass-style.org/](http://compass-style.org/)
 
 ### Grunt
 
@@ -32,12 +30,8 @@ This section details the tools involved, what they do and how to install them on
 We’ll be using the following Grunt plugins for development:
 
 - [Bower Task](https://github.com/yatskevich/grunt-bower-task) - Allows installation of libraries using Bower
-- [JSHint](https://github.com/gruntjs/grunt-contrib-jshint) – Checks JavaScript syntax
 - [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) – Minifies JavaScript files
-- [CSSLint](https://github.com/gruntjs/grunt-contrib-csslint) - Checks CSS syntax for possible errors and pitfalls
 - [SASS](https://github.com/gruntjs/grunt-contrib-sass) - Allows compiling of SASS files to CSS
-- [Compass](https://github.com/gruntjs/grunt-contrib-compass) – add additional mixins to SASS
-- [HTML Validation](https://www.npmjs.org/package/grunt-html-validation) - Validates HTML files against W3C
 - [Text Replace](https://github.com/yoniholmes/grunt-text-replace) - Uses a JSON file to replace text site wide
 - [Include Replace](https://github.com/alanshaw/grunt-include-replace) - allows includes to be used to modulise HTML files
 - [Watch](https://github.com/gruntjs/grunt-contrib-watch) – Watches for changes in working files
@@ -48,19 +42,7 @@ Check out the links to each project above for more information and documentation
 
 ### Bower
 
-[Bower](http://bower.io) is a package manager developed by Twitter and is used to get various projects and additional files that we need in our project. For example, we are using Bower to get us the latest version of foundation and bootstrap when we start a new project.
-
-### Foundation
-
-You have the option to use the [Foundation](http://foundation.zurb.com) framework as the basis for HTML cutups. The reason for this is it gives us common tools that we use across all projects, such as a responsive grid system, as well as several common plugins such as carousels and form validation. However, there is nothing to stop you using different plugins that offer different functionality. Edit and uncomment to appropriate line in `_/components/terminalfour/style.scss` to include the Foundation framework.
-
-### Bootstrap
-
-[Bootstrap](http://getbootstrap.com) is also included in the starter project and can be used in the same way as Foundation. Edit and uncomment to appropriate line in `_/components/terminalfour/style.scss` to include the Bootstrap framework.
-
-### Lemonade
-
-[Lemonade](http://lemonade.im) is a very simple CSS framework that gives you a quick grid that’s responsive. If you don’t need all the bells and whistles of Bootstrap or Foundation, this is a good framework to start with.
+[Bower](http://bower.io) is a package manager developed by Twitter and is used to get various projects and additional files that we need in our project.
 
 ---
 ## Installation
@@ -73,7 +55,11 @@ Before we can start using Grunt, we need NPM, which in turn needs Node.js instal
 
 ### Grunt
 
-Now that we have Node.js and NPM installed we can install Grunt. Simply follow the instructions at [http://gruntjs.com/getting-started](http://gruntjs.com/getting-started) to get the Grunt Command Line Interface (CLI) installed.
+Now that we have Node.js and NPM installed we can install Grunt. 
+
+To begin, right click in the home directory of this project ()
+
+Simply follow the instructions at [http://gruntjs.com/getting-started](http://gruntjs.com/getting-started) to get the Grunt Command Line Interface (CLI) installed.
 
 ### Ruby
 
