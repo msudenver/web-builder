@@ -64,7 +64,7 @@ module.exports = function(grunt) {
         mangle : true
       },//options
       build: {
-        src: 'development/terminalfour/js/*.js',
+        src: 'development/terminalfour/src/js/*.js',
         dest: 'www-root/style-assets/js/t4-custom.min.js'
       }//build
     }, //uglify
@@ -77,9 +77,9 @@ module.exports = function(grunt) {
           //compass: true,
         },//options
         files: {
-          'www-root/style-assets/css/framework.css': 'development/terminalfour/sass/framework.scss',
-          'www-root/style-assets/css/style-local.css': 'development/terminalfour/sass/style.scss',
-          'www-root/style-assets/css/style.css': 'development/terminalfour/sass/style.scss'
+          'www-root/style-assets/css/framework.css': 'development/terminalfour/src/sass/framework.scss',
+          'www-root/style-assets/css/style-local.css': 'development/terminalfour/src/sass/style.scss',
+          'www-root/style-assets/css/style.css': 'development/terminalfour/sass/src/style.scss'
         }//files
       }//dist
     },//sass
@@ -126,10 +126,10 @@ module.exports = function(grunt) {
     includereplace: {
       dist: {
         options: {
-          includesDir: 'development/terminalfour/html/includes'
+          includesDir: 'development/terminalfour/src/html/includes'
         },
         files: [
-          {src: '**/*.html', dest: 'www-root/', expand: true, cwd: 'development/terminalfour/html/src/'}
+          {src: '**/*.html', dest: 'www-root/', expand: true, cwd: 'development/terminalfour/src/html/'}
         ]
       }
     },//includereplace
@@ -145,7 +145,7 @@ module.exports = function(grunt) {
     watch: {
       options: { livereload: true },
       sass: {
-        files: ['development/**/**/*.scss'],
+        files: ['development/**/**/**/*.scss'],
         
         //Uncomment the line below and delete the other tasks line to add csslint into the project
         //tasks: ['sass:dist','csslint:strict']
@@ -158,14 +158,14 @@ module.exports = function(grunt) {
       },//sass
 
       scripts: {
-        files: ['development/terminalfour/js/*.js'],
+        files: ['development/terminalfour/src/js/*.js'],
         //Uncomment the line below and delete the other "tasks:['uglify:build'] to add JSHint into the project"
         //tasks: ['jshint','uglify:build']
         tasks: ['uglify:build']
       },//scripts
 
       htmlcompile: {
-        files: ['development/terminalfour/html/src/**/*.html'],
+        files: ['development/terminalfour/src/html/**/*.html'],
         tasks: ['includereplace']
       }//htmlcompile
       
