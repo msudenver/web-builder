@@ -32,7 +32,6 @@ We’ll be using the following Grunt plugins for development:
 - [Bower Task](https://github.com/yatskevich/grunt-bower-task) - Allows installation of libraries using Bower
 - [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) – Minifies JavaScript files
 - [SASS](https://github.com/gruntjs/grunt-contrib-sass) - Allows compiling of SASS files to CSS
-- [Text Replace](https://github.com/yoniholmes/grunt-text-replace) - Uses a JSON file to replace text site wide
 - [Include Replace](https://github.com/alanshaw/grunt-include-replace) - allows includes to be used to modulise HTML files
 - [Watch](https://github.com/gruntjs/grunt-contrib-watch) – Watches for changes in working files
 - [Copy](https://github.com/gruntjs/grunt-contrib-copy) - Moves files around and into the correct locations
@@ -40,38 +39,46 @@ We’ll be using the following Grunt plugins for development:
 
 Check out the links to each project above for more information and documentation in the case where you need to edit the tasks slightly.
 
-### Bower
-
-[Bower](http://bower.io) is a package manager developed by Twitter and is used to get various projects and additional files that we need in our project.
-
----
-## Installation
+## Setup
 
 There is some setup involved before we can start coding, but once set up, starting a new project should be quick and simple.
 
 ### Node.js
 
-Before we can start using Grunt, we need NPM, which in turn needs Node.js installed. This is as simple as going to [http://nodejs.org/](http://nodejs.org/), download the installer and install it – this will also install NPM.
+Before we can start using Grunt, we need Node Package Manager (NPM), which in turn needs Node.js installed. This is as simple as going to [http://nodejs.org/](http://nodejs.org/), download the installer and install it – this will *also* install NPM.
 
 ### Grunt
 
 Now that we have Node.js and NPM installed we can install Grunt. 
 
-To begin, right click in the home directory of this project ()
+To begin, hold shift and right click in the home directory of this project. Select "Open Command window here" Alternatively you can press the `Windows key + R` and type in cmd and navigate to the directory using the command line
 
-Simply follow the instructions at [http://gruntjs.com/getting-started](http://gruntjs.com/getting-started) to get the Grunt Command Line Interface (CLI) installed.
+Once you are in the directory using the command prompt, type in
+```
+npm install -g grunt-cli
+```
+
+Once this has finished downloading you will need to run the command 
+```
+npm install grunt --save-dev
+```
+
+These two steps are all you need to do to fully set up grunt. For more information please go to
+
+[http://gruntjs.com/getting-started](http://gruntjs.com/getting-started)
+
 
 ### Ruby
 
 If you’re using a Mac, you probably already have Ruby installed. If you’re on Windows, go to [http://rubyinstaller.org](http://rubyinstaller.org) and download the correct installer for your platform. There are also videos on Lynda.com that cover the Ruby installation as part of them ([Ruby Essential Training](http://www.lynda.com/Ruby-tutorials/essential-training/47905-2.html))
 
-### SASS and Compass
+### SASS
 
 Once Ruby is installed we can install SASS. From the command prompt run the following commands. You may need to do this as an administrator user or use the `sudo` command if you’re using a UNIX based system.
 
 ```rb
 gem update --system
-gem install compass
+gem install sass
 ```
 
 ---
@@ -95,7 +102,7 @@ Once you have a local version stored and you've updated the project information,
 cd path/to/my/project/folder
 ```
 
-Doing a quick `ls –la` command should display the following files and folders:
+Doing a quick `ls –la` command or `dir` command should display the following files and folders:
 
 - _
 - .gitignore
@@ -105,7 +112,33 @@ Doing a quick `ls –la` command should display the following files and folders:
 - index.html
 - package.json
 
-Once in the correct folder and with the files in place run the following:
+
+
+##Installation
+
+###Before you install
+
+If you want to add any of the additional packages you will have to edit ```package.js```, ```bower.json``` and ```Gruntfile.js``` and uncomment the relevant lines of code for your module **before** you run the installation
+
+- [JSHint](https://github.com/gruntjs/grunt-contrib-jshint) – Checks JavaScript syntax
+- [CSSLint](https://github.com/gruntjs/grunt-contrib-csslint) - Checks CSS syntax for possible errors and pitfalls
+- [Compass](https://github.com/gruntjs/grunt-contrib-compass) – add additional mixins to SASS
+- [Bourbon](http://bourbon.io/)
+- [HTML Validation](https://www.npmjs.org/package/grunt-html-validation) - Validates HTML files against W3C
+
+also included but commented out are
+
+- [Bootstrap](http://getbootstrap.com)
+- [Foundation](http://foundation.zurb.com)
+- [JQuery](https://jquery.com/)
+
+Installation intructions for all these additonal features are listed in the `index.html` file of the project
+
+---
+
+##Beginning the installation
+
+Once in the correct folder and with the files edited if needs be and in place run the following command in the commandline:
 
 ```bash
 npm install
@@ -115,46 +148,34 @@ This will read the `package.json` file and attempt to download all the dependenc
 
 You should now have all the modules you need installed and you’re nearly ready to start coding.
 
-### Getting Bootstrap/Foundation/whatever…
-
-We’re using Bower as a package manager to get the latest versions of the packages we need. The `bower.json` file in the root of your project has a default configuration that will download Foundation, Bootstrap-Sass, jQuery and Lemonade to be used as required. You don’t need to, but you can edit the `bower.json` file to only download what you need, or add additional packages if required. To get started, simply go back to your terminal window, make sure you’re still in the root directory of your project and run the following command
-
-```bash
-grunt bower --verbose
-```
-
-You can run this task without the `--verbose` command, but this allows you to see the output of what bower is doing so you can check that packages are being downloaded properly etc.
-
-### Use Grunt to do the grunt work
+---
+## Using Grunt to do the grunt work
 
 We have our setup ready to go, but we haven’t automated anything yet. You might have noticed a file called `Gruntfile.js` in the project folder. This file controls how Grunt works and what it does. This file has been written for you already and should do everything we need, so it’s not recommended to edit this file unless you need a separate specific task to be run on your project.
 
-### Choose your framework
-If you open the `style.scss` file within the `_/components/terminalfour/sass/` folder you will see how the CSS is put together.
+###File Layout
 
-This first line imports the `normalize.scss` file which applies normalize CSS to give a consistent starting point to your CSS across all browsers.
+This template is set up to work with two main folders, 'development' and 'www-root'
 
-```scss
-@import "normalize";  
-```
+The 'development' folder is where all the files you will actually be coding will be kept. 
 
-Next, you have the option to include the framework you require - just uncomment the framework references you want to use. At this stage there is nothing to stop you adding a different framework if required and adding the appropriate `@import` statement here.
+- HTML files should go in 'development/terminalfour/html/src'
+- Javascript files should go in 'development/terminalfour/js/'
+- SCSS/CSS files should go in 'development/terminalfour/sass/'
 
-```scss
-//@import "../../foundation/foundation.scss";
-//@import "../../bootstrap/stylesheets/bootstrap.scss";
-//@import "/style-assets/lib/lemonade/lemonade.css";
-```
+When Grunt is running, the `watch` task will watch this directory and when a change is made it will refresh your browser automatically to show the change as well as replicate the files in this folder as well as the filetree and add them into the `www-root` folder.
 
-To customise each framework's variables and settings, refer to the framework's own documentation.
+This means when you want to reference a stylesheet from your HTML file, you must reference it as if the file was in the `www-root` folder not the development folder
 
-There are some starter files to get you up and running with a framework's markup. These can be found in `_/components/terminalfour/html/`. You can copy one of these files into the `src` folder within `_/components/terminalfour/html/` and rename it to `index.html`. **You should maintain your html files from the `src` directory** - Grunt has a separate task to compile HTML from this directory. Once you've moved the file you want into place, we can start up grunt.
+The `www-root` folder is where all the files will be served from when Grunt is run (Don't forget, Grunt runs a temporary web server that will serve files)
 
-**Note - You don't have to use a framework and can instead just create a new index.html file in `_/components/terminalfour/html/src/`**
+
+#Getting Started
+There is an index.html file in `development/terminalfour/html/src` that you can begin to edit and change to start creating your project
 
 You can also create a directory structure under the `src` directory to mimic what Site Manager will publish. The structure will be replicated when the files are compiled.
 
-To start Grunt, open your command prompt again and make sure you are looking at the project directory’s root folder (the same folder as `.Gruntfile.js`). Simply type the following command and watch grunt start up:
+To start Grunt, open your command prompt again and make sure you are looking at the project directory’s root folder (the same folder as `Gruntfile.js`). Simply type the following command and watch grunt start up:
 
 ```bash
 grunt
@@ -232,84 +253,3 @@ Another usefull example of this could be to have several HTML files in your incl
 ### Tag replacement in CSS files
 
 If you have already imported your images into Site Manager using the Media Loader, you can use the `replacements.json` file that the media loader provides to replace all the references in your CSS files. Simply place the `replacements.json` file at the root of your project and your style.css will have its image references replaced with t4 tags. You can continue to use the style-local.css file for local development.
-
----
-## CSS coding standards
-
-We want to ensure that your CSS code is as clean as possible. This is why there are certain checks made each time you save your code and warnings or errors may be produced if there is something not right.
-
-The general standards for code are listed here for reference, but there are others also. If you come across an error when your CSS is run through CSSLint then the best place to look for possible reasons will be first of all the stated line number in the console output, but you can also see the reason for the error by using the CSSLint Wiki pages at:
-
-[https://github.com/stubbornella/csslint/wiki/Rules](https://github.com/stubbornella/csslint/wiki/Rules)
-
-The console should say which rule is failing or giving you an error, so use that rule to see why.
-
-In an ideal world, we would love to write perfectly valid and clean code all the time, but sometimes that is not possible, especially when we have to integrate our code with a CMS. There are some properties that will throw or warning but you know that you can ignore. These rules can be altered to suppress these warnings if required (it’s recommended you try and fix the error though, instead of just turning off the warning…)
-
-Edits can be made to the `.csslintrc` file to suppress warnings and errors.
-
-### Older browser support
-
-There are some warnings which have been turned off by default to avoid getting warnings that only apply to older browsers. If you are required to support older browsers, then you should make sure that these warnings are turned back on by editing the `.csslintrc` file to enable them again. While it might seem annoying, these warnings will really help you out in the long run so be sure to enable them.
-
-### IE6 Warnings to enable
-
-- adjoining-classes
-- box-sizing
-
-### IE7 Warnings to enable
-
-- box-sizing
-
-### Disabled warnings
-
-Some warnings have been disabled by default, as they are likely to cause warnings when they are perhaps not relevant. However, it is recommended that you take a look at these disabled warnings and see why they are warnings, as they do enforce good principles when it comes to CSS so it is no harm to be aware of them.
-
-- adjoining-classes
-- box-model
-- floats
-- ids
-- qualified-headings
-- unique-headings
-
----
-## JavaScript coding standards
-
-In order to make debugging as pain free as possible, we try to enforce certain standards when developing JavaScript code. In order to do this we use JSHint to check our JavaScript files each time we save something. This also acts as a check to spot simple errors that might cause issues further down the track.
-
-We use the following options to enforce a coding style and check for certain errors. These can be seen in the .`jslintrc` file at the root of your project. If you want to add or remove options from this file, please refer to the [JSHint documentation](http://www.jshint.com/docs/options/).
-
-### Camel case variable names
-
-Variable names should be defined using camel case. For example any of the following are valid:
-
-- myDate
-- image
-- imageWidth
-- imagewidth (valid but previous example is recommended for clarity)
-
-Variable names such as `my_date` or `image_width` would be considered invalid.
-
-### Non breaking space check
-
-This checks your code for invisible non breaking space characters that can cause bugs. These are notoriously difficult to find or debug so this check specifically identifies them for you.
-
-### Curly brackets
-
-This enforces the use of curly brackets in loops and conditionals. While it is possible to write things like if statements with no curly brackets, it can easily lead to bugs and makes code generally harder to read for other developers. For this reason, curly brakets are required.
-
-### Equal to and not equal to comparisons
-
-This enforces the use of `===` and `!==` in comparison statements as `==` and `!=` can lead to unexpected results.
-
-### Quotation mark usage
-
-In JavaScript files you can use either single or double quotation marks. This rule does not force you to use one or the other; it just checks that you are not mixing the two types in the same file so use one or the other, not both.
-
-### Undefined variables
-
-This rule prevents you using variables that have not yet been defined.
-
-### Unused variables
-
-This will alert you if any variables you have defined are not being used. It’s best to remove any variables that you don’t require.
