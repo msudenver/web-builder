@@ -67,16 +67,27 @@
 .depsocial {
   margin-bottom: 1.5em
 }
+
 .custombtn {
-  border-radius: 0;
-  margin-bottom: 15px;
   width: 100%;
-  font-weight: 100!important;
-  box-shadow: 1px 5px 5px rgba(0,0,0,0.175);
 }
 .custombtn span {
   color: #FFF
 }
+
+.btn {
+    margin-bottom: 15px;
+    font-weight: 100!important;
+    opacity: .80;
+    transition: opacity 250ms ease-in-out;
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.175);
+}
+
+.btn:hover {
+opacity: 1;
+transition: opacity 250ms ease-in-out;
+}
+
 
 .ie8 .img-responsive {
   display: block;
@@ -356,17 +367,4 @@ ul.breadcrumb a {
 
 hr {
     border-top: 2px solid #e6e1e1;
-}
-.btn {
-    border-radius: 0;
-    margin-bottom: 15px;
-    font-weight: 100!important;
-    opacity: .80;
-    transition: opacity 250ms ease-in-out;
-    box-shadow: 1px 5px 5px rgba(0,0,0,0.175);
-}
-
-.btn:hover {
-opacity: 1;
-transition: opacity 250ms ease-in-out;
 }
