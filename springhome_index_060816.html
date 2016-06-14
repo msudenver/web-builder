@@ -69,6 +69,14 @@
 }
   </style>
 
+
+<!-- http://tympanus.net/codrops/2013/06/26/expanding-search-bar-deconstructed/ -->
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+
+
+
 </head>
 
 <body>
@@ -110,7 +118,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   </div>
 
                   <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                        <form class="custom-search-input" role="search" action="https://www.msudenver.edu/search">
+                        <!-- <form class="custom-search-input" role="search" action="https://www.msudenver.edu/search">
                           <div class="input-group">
                             <input type="hidden" name="cx" value="004867254463714202705:1ammfpknuzw" class="form-control" placeholder="Search">
 							<input type="hidden" name="cof" value="FORID:11" class="form-control" placeholder="Search">
@@ -121,7 +129,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                               <button type="submit" class="btn btn-default" id="qButton"><i class="fa fa-search"></i></button>
                             </span>
                            </div>
-						</form>
+						</form> -->
+
+<!-- http://tympanus.net/codrops/2013/06/26/expanding-search-bar-deconstructed/ -->
+            <div id="sb-search" class="sb-search">
+  						<form class="custom-search-input" role="search" action="https://www.msudenver.edu/search">
+                <input type="hidden" name="cx" value="004867254463714202705:1ammfpknuzw" class="form-control" placeholder="Search">
+                <input type="hidden" name="cof" value="FORID:11" class="form-control" placeholder="Search">
+                <input type="hidden" name="ie" value="UTF-8" class="form-control" placeholder="Search">
+    							<input class="sb-search-input" placeholder="&#x26B2; |  Search MSU Denver site" type="text" value="" name="search" id="search">
+    							<input class="sb-search-submit" type="submit" value="">
+    							<span class="sb-icon-search"></span>
+  						</form>
+  					</div>
+            <script src="js/classie.js"></script>
+        		<script src="js/uisearch.js"></script>
+        		<script>
+        			new UISearch( document.getElementById( 'sb-search' ) );
+        		</script>
+
+
                      </div>
 
                         <section class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nav navbar-nav nav-social text-center">
