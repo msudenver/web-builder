@@ -356,7 +356,7 @@
 
 .content p a,
 .content ul a {
-  color: #248dc1 !important;
+  color: #248dc1;
   text-decoration: none !important;
   padding-bottom: 0px !important;
   border-bottom: 0px solid #248dc1 !important;
@@ -369,6 +369,10 @@
   padding-bottom: 3px !important;
   border-bottom: 2px solid #248dc1 !important;
   transition: all 250ms ease-in-out;
+}
+
+.thumbnail .img-responsive {
+  padding: 0px;
 }
 
 #layout, #menu, .menu-link {
