@@ -9,6 +9,7 @@ Wednesday 06, April, 2016
 // @import "Content/Types/panel.scss";
 @import "ContentTypes/variables.scss";
 @import "ContentTypes/toolbar.scss";
+@import "ContentTypes/mainBlueNavigation.scss";
 @import "ContentTypes/carousel.scss";
 @import "ContentTypes/footer.scss";
 @import "ContentTypes/callstoaction.scss";
@@ -227,6 +228,9 @@ hr {
     padding: 0 25px 15px;
     margin-bottom: 15px;
 }
+
+
+
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover {

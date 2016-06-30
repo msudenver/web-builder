@@ -85,30 +85,6 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-.mainBlueNavigation {
-    background: rgba(0, 68, 124, 1);
-}
-.mainBlueNavigation ul li a {
-    color: #fff !important;
-}
-.mainBlueNavigation .dropdown-menu li a {
-    color: #003663 !important;
-    font-size: 16px;
-    margin-left: 0;
-    text-align: left;
-    padding-top: 10px !important;
-}
-.mainBlueNavigation .dropdown-menu li:hover,
-.mainBlueNavigation .dropdown-menu li:hover a {
-    background: #003663;
-    color: #fff !important;
-}
-.mainBlueNavigation .nav .open > a,
-.mainBlueNavigation .nav > li > a:active,
-.mainBlueNavigation .nav > li > a:focus,
-.mainBlueNavigation .nav > li > a:hover {
-    background-color: transparent;
-}
 .caret-up {
     width: 0;
     height: 0;
@@ -155,19 +131,6 @@
         float: none;
         margin-bottom: -2px;
     }
-    .mainBlueNavigation {
-        background: url("media/assets/homepagespring2016/home_headerbg.jpg") no-repeat;
-        // background: url("<t4 type='media' id='106586' formatter='image/path'/>") no-repeat;
-        background-size: cover;
-    }
-    .mainBlueNavigation ul li a {
-        color: #fff !important;
-        font-size: 1.2em;
-        font-weight: 100;
-        font-family: 'Fjalla One', sans-serif;
-        padding-top: 20px !important;
-        padding-bottom: 15px !important;
-    }
     ul.dropdown-menu > li a {
         padding-top: 0;
     }
@@ -205,11 +168,6 @@
       padding-left:0px;
       padding-right:0px;
   }
-
-
-    .mainBlueNavigation ul li a {
-        padding-top: 70px !important;
-    }
 }
 
 @media only screen and (max-width:1200px){
@@ -223,11 +181,6 @@
 
 }
 @media only screen and (min-width:1200px) {
-
-
-    .mainBlueNavigation ul li a {
-        font-size: 1.5em;
-    }
     .navbar-collapse {
         padding-right: 0;
         padding-left: 0;
