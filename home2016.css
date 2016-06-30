@@ -177,19 +177,6 @@ Wednesday 06, April, 2016
 
 @media screen and (min-width: 992px) { .calls-to-action > h3 > a { font-size: 1.5em; } }
 
-/* Panel Styles */
-.panel { border: 0; border-radius: 0; }
-
-.panel-heading { border-radius: 0; }
-
-.panel-default { border: 1px solid #1b557a; }
-
-.panel-default > .panel-heading { background: #1b557a; color: #fff; font-size: 1.5em; border-color: #1b557a; }
-
-.panel-title { color: #fff; }
-
-.clickable.col-lg-12.col-lg-6, .clickable.col-xs-6.col-sm-6.col-md-6.col-lg-3 { padding: 0.25em; }
-
 #layout, #menu, .menu-link { -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; }
 
 #layout { z-index: 9998; padding-left: 200px; left: 0; top: 100px; }
