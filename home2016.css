@@ -388,3 +388,4 @@ p.event-home-date { color: gray; font-size: 1.2em; font-weight: bold; }
 @media only screen and (min-width: 768px) { #layout { padding: 0; margin: 0 auto; left: 0; }
   #menu { position: relative; left: 0; padding: 0; margin: 0 auto; width: 100%; }
   .header { text-align: left; } }
+@media only screen and (max-width: 1200px) { .msudenver_logo { max-width: 216px; } }
