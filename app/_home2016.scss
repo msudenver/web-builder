@@ -139,10 +139,8 @@ h6 {
 }
 
 .msudenver_logo {
-    max-width: 216px;
     padding: 15px;
 }
-
 
 .readmore {
     text-align: right;
@@ -304,6 +302,7 @@ p.event-home-date {
 }
 @media only screen and (max-width: 767px) {
 
+
 }
 @media only screen and (min-width: 768px) {
     #layout {
@@ -325,4 +324,10 @@ p.event-home-date {
         text-align: center;
     }
 
+}
+
+@media only screen and (max-width:1200px){
+  .msudenver_logo {
+      max-width: 216px;
+  }
 }
