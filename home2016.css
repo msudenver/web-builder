@@ -183,11 +183,9 @@ Wednesday 06, April, 2016
 
 .caret-up { width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-bottom: 4px solid; display: inline-block; margin-left: 2px; vertical-align: middle; }
 
-.chat-icon { padding-right: 7px;  }
+@media only screen and (max-width: 320px) { .navbar-brand { height: 53px; } }
 
-@media only screen and (max-width: 320px) { .navbar-brand { height: 53px; } .desktoptel { display: none !important;} .mobiletel { display: inline !important;} }
-
-@media only screen and (max-width: 767px) { .carousel-caption { height: 200px; } .nav-social { background: #d11242; } .desktoptel { display: none !important;} .mobiletel { display: inline !important;} .carousel-control.left { width: 80px !important; } .carousel-control.right { width: 78px !important; } .carousel-control { position: absolute; top: 20%; } }
+@media only screen and (max-width: 767px) { .nav-social { background: #d11242; } }
 
 @media only screen and (min-width: 768px) { .nav-social { border-bottom: 48px solid #d11242; border-left: 35px solid transparent; border-right: 0 solid transparent; height: 0; }
   .navbar .navbar-nav { display: inline-block; float: none; margin-bottom: -2px; }
@@ -213,17 +211,13 @@ Wednesday 06, April, 2016
 /* Carousel Styles */
 #slider > a.left.carousel-control, #slider > a.right.carousel-control { color: #fff; }
 
-.carousel-control.right { background: none !important; width: 7%; text-align: left; text-shadow: none !important; }
+.carousel-control.right { background: none !important; width: 78px; text-align: left; text-shadow: none !important; }
 
-.carousel-control.left { background: none !important; width: 93%; text-align: right; text-shadow: none !important; }
+.carousel-control.left { background: none !important; width: 80px; text-align: right; text-shadow: none !important; }
 
 .carousel-control { opacity: 0.0; }
 
-.fa-inverse { color: #fff !important; }
-
-.fa-angle-left, .fa-angle-right { font-weight: bold !important; font-size: 1.5em; }
-
-.fa-facebook-square, .fa-twitter-square, .fa-linkedin-square, .fa-instagram, .fa-flickr, .fa-youtube-square { padding: 0px 5px; font-size: 2.0em; }
+.fa-inverse { color: #003879 !important; }
 
 .fa-lg { font-size: 1.8em; }
 
@@ -264,11 +258,9 @@ Wednesday 06, April, 2016
 .firstheight img { display: none; }
 
 @media only screen and (min-width: 768px) { .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
-  .carousel-control { position: absolute; top: 80%; }
+  .carousel-control { position: absolute; top: 30%; }
   .carousel-caption > h2 { font-size: 32px; }
   .carousel-caption > h3 { font-size: 23px; line-height: 30px; } }
-
-@media only screen and (max-width: 992px) { .carousel-control.left { width: 80px !important; } .carousel-control.right { width: 78px !important; } .carousel-control { position: absolute; top: 20%; } }
 
 @media screen and (min-width: 992px) { .carousel { margin-bottom: 15px; }
   .calls-to-action > h3 > a { font-size: 1.5em; }
@@ -278,6 +270,8 @@ Wednesday 06, April, 2016
 .footer { display: block; min-height: 20px; padding: 20px; background: #003663; margin-left: 0; margin-right: 0; }
 
 .footer a, .footer p { color: #fff; font-size: 15px; font-weight: 200; text-align: right; }
+
+.footer .fa { font-size: 2em; padding: 0px 5px; }
 
 .campus-info { border: 0; border-bottom: 1px solid white; margin-bottom: 15px; }
 
@@ -369,10 +363,6 @@ h6 { color: #e74c3c; font-size: 13px; font-weight: 500; }
 .custom-search-input button:hover { border: 0; box-shadow: none; border-left: solid 1px #ccc; background: none; color: #d11242; }
 
 hr { border-top: 1px solid #e6e1e1; margin-top: 15px; margin-bottom: 15px; }
-
-.desktoptel { text-decoration: none !important; }
-
-.mobiletel { display: none; }
 
 .navbar-inner { text-align: center; }
 
