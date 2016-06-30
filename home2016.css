@@ -193,11 +193,9 @@ Wednesday 06, April, 2016
   ul.dropdown-menu > li a { font-family: sans-serif; }
   ul.nav.navbar-nav.navbar-center { list-style: none !important; margin: auto !important; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; float: none; display: inline-block; } }
 
-@media screen and (min-width: 992px) { .msudenver_logo img { width: 165px; margin: 15px 25px; }
-  .mainBlueNavigation ul li a { padding-top: 70px !important; } }
+@media screen and (min-width: 992px) { .mainBlueNavigation ul li a { padding-top: 70px !important; margin: 0 15px 0 10px; } }
 
-@media only screen and (min-width: 1200px) { .mainBlueNavigation ul li a { font-size: 1.5em; }
-  .navbar-collapse { padding-right: 0; padding-left: 0; } }
+@media only screen and (min-width: 1200px) { .mainBlueNavigation ul li a { font-size: 1.5em; } }
 
 /* Carousel Styles */
 #slider > a.left.carousel-control, #slider > a.right.carousel-control { color: #fff; }
