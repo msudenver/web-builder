@@ -45,6 +45,15 @@ Check out the links to each project above for more information and documentation
 
 There is some setup involved before we can start coding, but once set up, starting a new project should be quick and simple.
 
+All the files you require are located within this GIT project.
+
+Clone the project and you will have a local copy.
+
+```bash
+git clone git@git.terminalfour.com:PS/html-cutups-starter-kit.git
+```
+
+
 ### Node.js
 
 Before we can start using Grunt, we need Node Package Manager (NPM), which in turn needs Node.js installed. This is as simple as going to [http://nodejs.org/](http://nodejs.org/), download the installer and install it – this will *also* install NPM.
@@ -53,7 +62,7 @@ Before we can start using Grunt, we need Node Package Manager (NPM), which in tu
 
 Now that we have Node.js and NPM installed we can install Grunt. 
 
-To begin, hold shift and right click in the home directory of this project. Select "Open Command window here" Alternatively you can press the `Windows key + R` and type in cmd and navigate to the directory using the command line
+To begin, hold shift and right click in the home directory of this project. Select "*Open Command window here*" Alternatively you can press the `Windows key + R` and type in cmd and navigate to the directory using the command line
 
 Once you are in the directory using the command prompt, type in
 ```
@@ -65,7 +74,7 @@ Once this has finished downloading you will need to run the command
 npm install grunt --save-dev
 ```
 
-These two steps are all you need to do to fully set up grunt. For more information please go to
+These two steps are all you need to do to fully set up Grunt. For more information please go to
 
 [http://gruntjs.com/getting-started](http://gruntjs.com/getting-started)
 
@@ -86,13 +95,6 @@ gem install sass
 ---
 ## Creating a new project
 
-All the files you require are located within this GIT project.
-
-Clone the project and you will have a local copy.
-
-```bash
-git clone git@git.terminalfour.com:PS/html-cutups-starter-kit.git
-```
 
 ### Identify and install your project
 
