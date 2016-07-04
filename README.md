@@ -4,8 +4,6 @@
 - Tools we are going to use
 - Installation
 - Creating a new project
-- CSS coding standards
-- JavaScript coding standards
 
 -----
 ## Introduction
