@@ -51,6 +51,28 @@ Clone the project and you will have a local copy.
 git clone git@git.terminalfour.com:PS/html-cutups-starter-kit.git
 ```
 
+### Identify and install your project
+
+The first thing you should do once you have your local copy is identify your project. This can be done by simply editing the fields in the `package.json` file at the root of your project to include information about the project, yourself and the client. This information is output as a comment block at the start of JavaScript and CSS files as a way of identifying who wrote the file.
+
+Once you have a local version stored and you've updated the project information, open your command prompt and cd to the root directory of your project
+
+```bash
+cd path/to/my/project/folder
+```
+
+Doing a quick `ls –la` command or `dir` command should display the following files and folders:
+
+- _
+- .gitignore
+- bower.json
+- config.rb
+- .Gruntfile.js
+- index.html
+- package.json
+
+
+
 
 ### Node.js
 
@@ -91,29 +113,6 @@ gem install sass
 ```
 
 ---
-## Creating a new project
-
-
-### Identify and install your project
-
-The first thing you should do once you have your local copy is identify your project. This can be done by simply editing the fields in the `package.json` file at the root of your project to include information about the project, yourself and the client. This information is output as a comment block at the start of JavaScript and CSS files as a way of identifying who wrote the file.
-
-Once you have a local version stored and you've updated the project information, open your command prompt and cd to the root directory of your project
-
-```bash
-cd path/to/my/project/folder
-```
-
-Doing a quick `ls –la` command or `dir` command should display the following files and folders:
-
-- _
-- .gitignore
-- bower.json
-- config.rb
-- .Gruntfile.js
-- index.html
-- package.json
-
 
 
 ##Installation

@@ -78,8 +78,7 @@ module.exports = function(grunt) {
         },//options
         files: {
           'www-root/style-assets/css/framework.css': 'development/terminalfour/src/sass/framework.scss',
-          'www-root/style-assets/css/style-local.css': 'development/terminalfour/src/sass/style.scss',
-          'www-root/style-assets/css/style.css': 'development/terminalfour/sass/src/style.scss'
+          'www-root/style-assets/css/style-local.css': 'development/terminalfour/src/sass/style.scss'
         }//files
       }//dist
     },//sass
