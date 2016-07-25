@@ -280,6 +280,8 @@ Wednesday 06, April, 2016
 
 .footer a, .footer p { color: #fff; font-size: 15px; font-weight: 200; text-align: right; }
 
+.footer hr { opacity: 0.25; }
+
 .campus-info { border: 0; border-bottom: 1px solid white; margin-bottom: 15px; }
 
 .college-portrait { float: right; }

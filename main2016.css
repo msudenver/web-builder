@@ -1754,6 +1754,10 @@ h3 {
   text-align: right;
 }
 
+.footer hr {
+  opacity: 0.25;
+}
+
 .campus-info {
   border: 0;
   border-bottom: 1px solid white;
