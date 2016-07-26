@@ -11,12 +11,27 @@
     color: #fff;
     font-size: 15px;
     font-weight: 200;
-    text-align: right;
+    // text-align: right;
 }
 
+.social i {
+  word-spacing: 5px;
+}
 
 .footer hr {
   opacity: 0.25;
+}
+
+.footer-logo {
+  text-align: center;
+  // right:50%;
+  // bottom: 50%;
+  transform: translate(0%,10%);
+  // position: inherit;
+}
+
+.footer-menu {
+  line-height: 0.8;
 }
 
 .campus-info {
@@ -41,4 +56,10 @@
         margin-bottom: 0;
     }
 
+}
+
+@media only screen and (max-width: 360px) {
+  .footer-menu {
+    text-align: center;
+  }
 }
