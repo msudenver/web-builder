@@ -1788,6 +1788,23 @@ h3 {
   padding: 0px 5px;
 }
 
+@media only screen and (max-width: 360px) {
+  .social i {
+    word-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .campus-info {
+    border: 0;
+    border-bottom: none;
+    margin-bottom: 15px;
+  }
+  .footer-menu {
+    text-align: center;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .campus-info {
     border: 0;
@@ -1795,11 +1812,23 @@ h3 {
     border-bottom: 0;
     margin-bottom: 0;
   }
+  .hide-hr {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 360px) {
-  .footer-menu {
+@media only screen and (max-width: 1199px) {
+  .social-non-mobile i {
+    display: none;
+  }
+  .social-mobile i {
     text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .social-mobile i {
+    display: none;
   }
 }
 
