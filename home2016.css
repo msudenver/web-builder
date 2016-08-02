@@ -305,14 +305,16 @@ Wednesday 06, April, 2016
 @media only screen and (min-width: 768px) { .hide-hr { display: none; }
   .mobile-msuinfo-show { display: none; }
   .social-mobile i { display: none; }
-  .campus-info { padding-top: 25px; } }
+  .campus-info { padding-top: 25px; }
+  .footer-logo { transform: translate(0%, 1%); } }
 
 @media only screen and (max-width: 1199px) { .campus-info { border: 0; border-bottom: none; margin-bottom: 15px; }
   .social-mobile i { text-align: center; }
   .footer-logo { padding-top: 10px; } }
 
 @media only screen and (min-width: 1200px) { .campus-info { border: 0; border-right: 0px solid white; border-bottom: 0; margin-bottom: 0; }
-  .campus-info { padding-top: 0px; } }
+  .campus-info { padding-top: 0px; }
+  .footer-menu { padding-left: 3%; } }
 
 /* Calls to action */
 .calls-to-action { padding: 25px; background: url("media/assets/homepagespring2016/calltoactbg.png") no-repeat; background-size: cover; background-color: rgba(52, 152, 219, 0.72); margin-bottom: 15px; }

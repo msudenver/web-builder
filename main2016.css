@@ -1819,6 +1819,9 @@ h3 {
   .campus-info {
     padding-top: 25px;
   }
+  .footer-logo {
+    transform: translate(0%, 1%);
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -1844,6 +1847,9 @@ h3 {
   }
   .campus-info {
     padding-top: 0px;
+  }
+  .footer-menu {
+    padding-left: 3%;
   }
 }
 
