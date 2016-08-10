@@ -1804,6 +1804,9 @@ h3 {
   .social-non-mobile i {
     display: none;
   }
+  .footer-logo {
+    padding-bottom: 20px;
+  }
 }
 
 @media only screen and (min-width: 768px) {

@@ -300,7 +300,8 @@ Wednesday 06, April, 2016
 
 @media only screen and (max-width: 767px) { .footer-menu { text-align: center; }
   .desktop-msuinfo-show { display: none; }
-  .social-non-mobile i { display: none; } }
+  .social-non-mobile i { display: none; }
+  .footer-logo { padding-bottom: 20px; } }
 
 @media only screen and (min-width: 768px) { .hide-hr { display: none; }
   .mobile-msuinfo-show { display: none; }
