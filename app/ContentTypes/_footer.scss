@@ -49,6 +49,9 @@
     padding: 0px 5px;
 }
 
+// Code to remove spacing on LiveChat
+div#lhnContainerDone {display: none;}
+
 @media only screen and (max-width: 360px) {
   .social i {
     word-spacing: 1px;

@@ -1788,6 +1788,10 @@ h3 {
   padding: 0px 5px;
 }
 
+div#lhnContainerDone {
+  display: none;
+}
+
 @media only screen and (max-width: 360px) {
   .social i {
     word-spacing: 1px;
