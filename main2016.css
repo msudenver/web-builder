@@ -1751,7 +1751,23 @@ h3 {
   color: #fff;
   font-size: 15px;
   font-weight: 200;
-  text-align: right;
+}
+
+.social i {
+  word-spacing: 5px;
+}
+
+.footer hr {
+  opacity: 0.25;
+}
+
+.footer-logo {
+  text-align: center;
+  transform: translate(0%, 10%);
+}
+
+.footer-menu {
+  line-height: 0.8;
 }
 
 .campus-info {
@@ -1772,12 +1788,71 @@ h3 {
   padding: 0px 5px;
 }
 
+@media only screen and (max-width: 360px) {
+  .social i {
+    word-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-menu {
+    text-align: center;
+  }
+  .desktop-msuinfo-show {
+    display: none;
+  }
+  .social-non-mobile i {
+    display: none;
+  }
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
+  .hide-hr {
+    display: none;
+  }
+  .mobile-msuinfo-show {
+    display: none;
+  }
+  .social-mobile i {
+    display: none;
+  }
+  .campus-info {
+    padding-top: 25px;
+  }
+  .footer-logo {
+    transform: translate(0%, 1%);
+  }
+}
+
+@media only screen and (max-width: 1199px) {
   .campus-info {
     border: 0;
-    border-right: 1px solid white;
+    border-bottom: none;
+    margin-bottom: 15px;
+  }
+  .social-mobile i {
+    text-align: center;
+  }
+  .footer-logo {
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .campus-info {
+    border: 0;
+    border-right: 0px solid white;
     border-bottom: 0;
     margin-bottom: 0;
+  }
+  .campus-info {
+    padding-top: 0px;
+  }
+  .footer-menu {
+    padding-left: 3%;
   }
 }
 
@@ -1827,15 +1902,6 @@ h3 {
 
 .linkcolumn a {
   word-break: break-word;
-}
-
-.card {
-  background: #fff;
-  padding: 1em;
-  border: 1px solid #d4d4d4;
-  position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
 
 .bannerImage {
@@ -2207,4 +2273,13 @@ hr {
 .btn:hover {
   opacity: 1;
   transition: opacity 250ms ease-in-out;
+}
+
+.card {
+  background: #fff;
+  padding: 1em;
+  border: 1px solid #d4d4d4;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }

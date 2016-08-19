@@ -11,7 +11,27 @@
     color: #fff;
     font-size: 15px;
     font-weight: 200;
-    text-align: right;
+    // text-align: right;
+}
+
+.social i {
+  word-spacing: 5px;
+}
+
+.footer hr {
+  opacity: 0.25;
+}
+
+.footer-logo {
+  text-align: center;
+  // right:50%;
+  // bottom: 50%;
+  transform: translate(0%,10%);
+  // position: inherit;
+}
+
+.footer-menu {
+  line-height: 0.8;
 }
 
 .campus-info {
@@ -28,12 +48,72 @@
 .footer .fa {
     padding: 0px 5px;
 }
-@media only screen and (min-width: 768px) {
-    .campus-info {
-        border: 0;
-        border-right: 1px solid white;
-        border-bottom: 0;
-        margin-bottom: 0;
-    }
 
+@media only screen and (max-width: 360px) {
+  .social i {
+    word-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-menu {
+    text-align: center;
+  }
+  .desktop-msuinfo-show {
+    display: none;
+  }
+  .social-non-mobile i {
+    display: none;
+  }
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    .hide-hr {
+      display: none;
+    }
+    .mobile-msuinfo-show {
+      display: none;
+    }
+    .social-mobile i {
+      display: none;
+    }
+    .campus-info {
+      padding-top: 25px;
+    }
+    .footer-logo {
+      transform: translate(0%,1%);
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+  .campus-info {
+      border: 0;
+      border-bottom: none;
+      margin-bottom: 15px;
+  }
+  .social-mobile i {
+    text-align:center;
+  }
+  .footer-logo {
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .campus-info {
+      border: 0;
+      // border-right: 1px solid white;
+      border-right: 0px solid white;
+      border-bottom: 0;
+      margin-bottom: 0;
+  }
+  .campus-info {
+    padding-top: 0px;
+  }
+  .footer-menu {
+    padding-left: 3%;
+  }
 }
