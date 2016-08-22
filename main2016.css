@@ -1776,6 +1776,14 @@ h3 {
   margin-bottom: 15px;
 }
 
+.campus-info span.fa.fa-map-marker.fa-lg {
+  margin-right: 9px;
+}
+
+.campus-info p > a > span.fa.fa-phone.fa-lg {
+  margin-right: 5px;
+}
+
 .college-portrait {
   float: right;
 }
@@ -2262,7 +2270,9 @@ ul.breadcrumb a {
 }
 
 hr {
-  border-top: 2px solid #e6e1e1;
+  border-top: 1px solid #e6e1e1;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .btn {
