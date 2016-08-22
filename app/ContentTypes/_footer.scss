@@ -38,6 +38,13 @@
     border: 0;
     border-bottom: 1px solid white;
     margin-bottom: 15px;
+    span.fa.fa-map-marker.fa-lg {
+        margin-right: 9px;
+    }
+
+    p>a>span.fa.fa-phone.fa-lg {
+        margin-right: 5px;
+    }
 }
 .college-portrait {
     float: right;
@@ -48,6 +55,9 @@
 .footer .fa {
     padding: 0px 5px;
 }
+
+
+
 
 // Code to remove spacing on LiveChat
 div#lhnContainerDone {display: none;}

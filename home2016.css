@@ -266,7 +266,8 @@ Wednesday 06, April, 2016
 
 .firstheight img { display: none; }
 
-@media screen and (max-width: 768px) { .carousel-control { position: absolute; margin-top: 13%; opacity: 0.8; } }
+@media screen and (max-width: 768px) { .carousel-control { position: absolute; margin-top: 13%; opacity: 0.8; }
+  .carousel-caption { height: 180px; } }
 
 @media only screen and (min-width: 768px) { .carousel-indicators { bottom: 10px; width: 200px; right: 0; left: inherit; }
   .carousel-control { position: absolute; top: 30%; }
@@ -291,6 +292,10 @@ Wednesday 06, April, 2016
 .footer-menu { line-height: 0.8; }
 
 .campus-info { border: 0; border-bottom: 1px solid white; margin-bottom: 15px; }
+
+.campus-info span.fa.fa-map-marker.fa-lg { margin-right: 9px; }
+
+.campus-info p > a > span.fa.fa-phone.fa-lg { margin-right: 5px; }
 
 .college-portrait { float: right; }
 
