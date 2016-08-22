@@ -2270,7 +2270,9 @@ ul.breadcrumb a {
 }
 
 hr {
-  border-top: 2px solid #e6e1e1;
+  border-top: 1px solid #e6e1e1;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .btn {
