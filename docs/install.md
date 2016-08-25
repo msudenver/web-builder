@@ -1,6 +1,6 @@
 # Install
 
-**tl;dr**: [Download WSK](https://github.com/google/web-starter-kit/releases/latest) and run `$ npm install --global gulp && npm install` in that directory to get started.
+**tl;dr**: [Download WSK](https://github.com/google/web-starter-kit/releases/latest) and run `$ sudo npm install --global gulp && npm install` in that directory to get started.
 
 
 ## Prerequisites
