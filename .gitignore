@@ -1,6 +1,4 @@
-
-50main.css
-
-newsroom.html
-
-presspage.css
+node_modules
+dist/
+.tmp
+app.yaml
