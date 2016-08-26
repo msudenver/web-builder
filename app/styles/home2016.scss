@@ -6,79 +6,12 @@ Wednesday 06, April, 2016
 
 !!! */
 @import "ContentTypes/variables.scss";
-@import "ContentTypes/toolbar.scss";
-@import "ContentTypes/mainBlueNavigation.scss";
+@import "ContentTypes/MainHeaderNavigation.scss";
 @import "ContentTypes/carousel.scss";
 @import "ContentTypes/footer.scss";
 @import "ContentTypes/callstoaction.scss";
 
-#layout,
-#menu,
-.menu-link {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-#layout {
-    z-index: 9998;
-    padding-left: 200px;
-    left: 0;
-    top: 100px;
-}
 
-.nav-social {
-    text-align: center !important;
-    padding-right: 0px;
-}
-
-.carousel-inner>.item>a>img, .carousel-inner>.item>img {
-    line-height: 1;
-    margin: auto;
-    width: 100%;
-}
-.ie8 .img-responsive {
-    display: block;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    border: 0;
-    -ms-interpolation-mode: bicubic;
-}
-.ie8 .navbar-inverse .navbar-brand {
-    color: inherit;
-}
-.ie8 img {
-    display: block;
-    height: auto!important;
-    max-width: 100%;
-    vertical-align: middle;
-    border: 0;
-    -ms-interpolation-mode: bicubic;
-}
-
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-.accordion-group {
-    padding: 1em 1em 0.5em;
-    border: 1px solid #e8e8e8;
-}
-.gsc-search-button.gsc-search-button-v2 {
-    width: inherit;
-    height: inherit;
-}
-
-.promo_date {
-    text-align: right;
-    font-size: small;
-}
-.promo_date+h3 {
-    width: 80%;
-}
 body {
     background: #E9EDF1;
     background-attachment: fixed;
@@ -136,8 +69,63 @@ h6 {
     font-weight: 500;
 }
 
-.msudenver_logo {
-    padding: 15px;
+#layout,
+#menu,
+.menu-link {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+#layout {
+    z-index: 9998;
+    padding-left: 200px;
+    left: 0;
+    top: 100px;
+}
+
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    line-height: 1;
+    margin: auto;
+    width: 100%;
+}
+.ie8 .img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+.ie8 .navbar-inverse .navbar-brand {
+    color: inherit;
+}
+.ie8 img {
+    display: block;
+    height: auto!important;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+.accordion-group {
+    padding: 1em 1em 0.5em;
+    border: 1px solid #e8e8e8;
+}
+.gsc-search-button.gsc-search-button-v2 {
+    width: inherit;
+    height: inherit;
+}
+
+.promo_date {
+    text-align: right;
+    font-size: small;
+}
+.promo_date+h3 {
+    width: 80%;
 }
 
 .readmore {
@@ -173,51 +161,15 @@ h6 {
 .btn-primary a a:hover {
     text-decoration: none;
 }
-.modal-dialog {
-    padding-top: 12%;
-}
 .nav-social > a > i.fa {
     color: #fff;
     font-size: 18px;
     padding: 15px 10px;
 }
-.custom-search-input {
-    margin-top: 5px;
-    height: 40px;
-    padding: 3px;
-    border: solid 1px #E4E4E4;
-    border-radius: 6px;
-    background-color: #fff;
-}
-.custom-search-input input {
-    border: 0;
-    box-shadow: none;
-}
-.custom-search-input button {
-    margin: 2px 0 0;
-    background: none;
-    box-shadow: none;
-    border: 0;
-    color: #003663;
-    padding: 0 8px 0 10px;
-    border-left: solid 1px #ccc;
-}
-.custom-search-input button:hover {
-    border: 0;
-    box-shadow: none;
-    border-left: solid 1px #ccc;
-    background: none;
-    color: #d11242;
-}
-hr {
-    border-top: 1px solid #e6e1e1;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
+
 .navbar-inner {
     text-align: center;
 }
-
 
 .news-events {
     background: white;
@@ -291,39 +243,4 @@ p.event-home-date {
     color: gray;
     font-size: 1.2em;
     font-weight: bold;
-}
-
-@media only screen and (min-width: 320px) {
-
-}
-@media only screen and (max-width: 767px) {
-
-
-}
-@media only screen and (min-width: 768px) {
-    #layout {
-        padding: 0;
-        margin: 0 auto;
-        left: 0;
-    }
-    #menu {
-        position: relative;
-        left: 0;
-        padding: 0;
-        margin: 0 auto;
-        width: 100%;
-    }
-    .header {
-        text-align: left;
-    }
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
-
-}
-
-@media only screen and (max-width:1200px){
-  .msudenver_logo {
-      max-width: 216px;
-  }
 }
