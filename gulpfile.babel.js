@@ -37,6 +37,30 @@ import pkg from './package.json';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
+
+var inject = require('gulp-inject');
+
+gulp.task('index', function () {
+  var target = gulp.src('app/index.html');
+  // It's not necessary to read the files (will speed up things), we're only after their paths:
+  var sources = gulp.src(['./src/**/*.js', './src/**/*.css'], );
+
+gulp.src('app/index.html')
+    .pipe(inject(gulp.src(['app/htmlcomponents/*.html']), {
+      starttag: '<!-- inject:head:{{ext}} -->',
+      transform: function (filePath, file) {
+        // return file contents as string
+        return file.contents.toString('utf8')
+      }
+    }))
+  return target.pipe(inject(sources))
+    .pipe(gulp.dest('./.tmp'));
+
+
+});
+
+
+
 // Lint JavaScript
 gulp.task('lint', () =>
   gulp.src('app/scripts/**/*.js')
