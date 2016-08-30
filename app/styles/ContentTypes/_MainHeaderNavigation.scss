@@ -38,7 +38,7 @@
   padding-bottom: 10px;
 }
 .toolbar ul li a {
-    color: #003663;
+    color: #00447c;
     padding-left: 7px;
     padding-right: 6px;
     -webkit-transition: all 0.25s ease-in-out;
@@ -84,6 +84,33 @@
     padding-right: 10px;
 }
 
+li.dropdown {
+  font-size: 20px;
+  color: #00447c;
+  margin-top: 15px;
+  padding: 5px 40px 5px 40px;
+  border-right: 2px solid #c3e6fb;
+  font-weight: 900;
+}
+
+li.dropdown.last {
+  border-right: none;
+}
+
+.nav > li > a {
+  display: inline;
+  line-height: 30px;
+}
+
+.apply-button {
+  background: #d11242;
+  color: white;
+  font-size:25px;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  padding: 20px 15px 25px 15px;
+  width: 13%;
+}
 
 .msudenver_logo {
     padding: 15px;
