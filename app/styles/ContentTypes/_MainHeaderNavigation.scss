@@ -150,14 +150,14 @@ li.dropdown.last {
     position: relative;
     left: -1px;
     background-color: #ebd0f5;
-    color: #9c5fb5;
+//    color: #9c5fb5;
     cursor: pointer;
 }
 #content-nav #wrapper ul li.active-nav {
     position: relative;
     left: -1px;
     background-color: #f7f2f9;
-    color: #9c5fb5;
+//    color: #9c5fb5;
 }
 #content-nav #wrapper ul li a {
     display: block;
@@ -175,15 +175,16 @@ li.dropdown.last {
 }
 #content-nav #nav-search-close {
     position: relative;
-    top: -45px;
-    left: 815px;
+    top: -40px;
+    left: 655px;
     color: #027EC3;
     cursor: pointer;
+    font-size: 25px;
 }
 #content-nav #search-input {
     display: none;
-    position: relative;
-    bottom: 46px;
+    position: absolute; // was relative
+    bottom: 50px;
 }
 #content-nav #search-input div {
     padding-right: 0 !important;
@@ -191,25 +192,26 @@ li.dropdown.last {
 }
 #content-nav #search-input input[type=text] {
     display: inline-block;
-    height: 45px;
-    width: 1500px; /* was 900px */
+    height: 55px;
+    width: 1370px; /* was 900px */
     border: none;
     color: grey;
     border: 2px solid #fff;
-    border-radius: 2px;
+    border-radius: 0px 5px 5px 0px;
     background-color: #E9EDF1;
 }
 #content-nav #search-input .button {
     display: inline-block;
-    padding-left: 6px;
-    top: -45px;
-    left: 808px; /*was 808px */
+    padding-left: 3px;
+    top: -46px;
+    left: 642px; /*was 808px */
     position: relative;
-    height: 30px;
+    height: 35px;
     width: 90px;
-    background-color: #fff;
-    color: #9c5fb5;
-    border-radius: 0;
+    background-color: #ccc;
+//    color: #9c5fb5;
+    border-radius: 2;
+
 }
 #content-nav #search-input .button:hover {
     color: #cdadd9;
@@ -233,7 +235,7 @@ li.dropdown.last {
     line-height: 35px;
     display: block;
     border-radius: 4px;
-    background-color: #9c5fb5;
+//    background-color: #9c5fb5;
     text-transform: uppercase;
     text-align: center;
     font-family: 'Open Sans';
@@ -255,6 +257,17 @@ li.dropdown.last {
     color: #027EC3 !important;
     padding-top: 20px;
     font-size: 30px;
+}
+
+.glyphicon-opened {
+    color: #717171 !important;
+    padding-top: 10px;
+    font-size: 30px;
+    padding-right: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    top: 50px;
+    background-color: #E9EDF1;
 }
 
 //end expanding search css
