@@ -108,6 +108,13 @@ li.dropdown.last {
     font-size: 30px;
 }
 
+#content-nav #nav-search-close {
+    position: relative;
+    top: -32px;
+    left: 815px;
+    color: #fff;
+    cursor: pointer;
+}
 #content-nav #search-input {
     display: none;
     position: relative;
