@@ -137,6 +137,203 @@
             <li id="nav-search"><div><span class="glyphicon glyphicon-search"></span></div></li>
 
 
+        <!-- Hidden Search Bar-->
+            <div id="search-input">
+                <input     id="search-text"
+                        name="zz"
+                        type="text"
+                        class="home-input"
+                        placeholder="What would you like to search for?"
+                        onkeyup="MODGLOBALS.HEADER.searchOnKeyUp(this, event)"
+                        onclick="return MODGLOBALS.HEADER.searchInputOnClick()"
+                        onblur="javascript:internalLabelBlur(this);"
+                        onfocus="javascript:internalLabelFocus(this);">
+
+                <!-- AUTO SUGGEST -->
+                <!-- Code auto suggest server by DEV, PROD, etc. -->
+                <style type="text/css">
+                    #search-input #search-text {
+                        height: 14px;
+                        border-style: none;
+                        border-color: inherit;
+                        border-width: 0;
+                        width: 207px;
+                        margin-top:6px;
+                        font-family: verdana;
+                        font-size:8pt;
+                        color:#999;
+                    }
+
+                    #search-input #autoSuggestResults {
+                        display: none;
+                        position: absolute;
+                        z-index: 2;
+                        width: 794px;
+                        margin-left: 15px;
+                        margin-top: 36px;
+                        background-color: white;
+                        border: 1px solid #999;
+                        box-shadow: 3px 3px 3px #AAA;
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                        font-family: Verdana;
+                        font-size: 8pt;
+                        color: #999;
+                        border-bottom-right-radius:2px;
+                        border-bottom-left-radius:2px;
+                    }
+
+                    #autoSuggestResults .autoSuggestResult {
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                        padding-left: 11px;
+                        padding-right: 19px;
+                        cursor: default;
+                    }
+
+                    #autoSuggestResults .autoSuggestResultMouseOver {
+                        background-color: #EEE
+                    }
+
+                    .gobutton #searchGoLink.disableGoButton {
+                        color: #00529c !important;
+                        cursor: default !important;
+                    }
+                </style>
+
+                <div id="autoSuggestResults"></div>
+
+                <script type="text/javascript">
+                    MODGLOBALS.HEADER.enableGoButton = false;
+
+                    MODGLOBALS.HEADER.searchInputOnClick = function() {
+                        $("#search-input #autoSuggestResults").hide();
+                        return false;
+                    };
+
+                    MODGLOBALS.HEADER.searchAutoSuggestOnClick = function(elem) {
+                        var elemHtml = $(elem).html();
+                        $("#search-input #search-text").val(elemHtml);
+                        $("#search-input #autoSuggestResults").hide();
+                        $(".gobutton #searchGoLink").click();
+                    };
+
+                    MODGLOBALS.HEADER.searchAutoSuggestOnMouseOver = function(elem) {
+                        $(elem).addClass("autoSuggestResultMouseOver")
+                    };
+
+                    MODGLOBALS.HEADER.searchAutoSuggestOnMouseOut = function(elem) {
+                        $(elem).removeClass("autoSuggestResultMouseOver")
+                    };
+
+                    MODGLOBALS.HEADER.searchGoLinkOnClick = function() {
+                        if(MODGLOBALS.HEADER.enableGoButton) MODGLOBALS.submitSearchCriteria();
+                    };
+
+                    MODGLOBALS.HEADER.searchOnKeyUp = function(sender, e) {
+                        var searchInputField = $("#search-input #search-text");
+                        var searchInputFieldDom = searchInputField.get(0);
+
+                        // Test that search text is not empty
+                        var searchText = searchInputField.val();
+                        var searchTextNotEmpty = $.trim(searchText).length > 0;
+
+                        // Test that search text is not default
+                        var defaultSearchText = searchInputFieldDom.getAttribute('value');
+                        var searchTextNotDefault = searchText !== defaultSearchText;
+
+                        MODGLOBALS.HEADER.enableGoButton = searchTextNotEmpty && searchTextNotDefault;
+
+                        if( MODGLOBALS.HEADER.enableGoButton ) {
+                            $(".gobutton #searchGoLink").removeClass("disableGoButton");
+
+                            var charCode;
+                            if (e && e.which) { charCode = e.which; }
+                            else if (window.event) { e = window.event; charCode = e.keyCode; }
+
+                            if (charCode === 13) { // Enter pressed
+                                $(".gobutton #searchGoLink").click();
+                                return false;
+                            }
+                        } else {
+                            $(".gobutton #searchGoLink").addClass("disableGoButton");
+                        }
+
+                        // Call auto-suggest module
+                        var searchBarValue = $("#search-input #search-text").val();
+
+                        //
+    function(urlParam,injectIntoElem,moduleName,successCallback,fadeOutDuration,fadeInDuration,dataParam,nullContentCallback,preProcessCallback,errorCallback)
+                        MODGLOBALS.injectHTML(    MODGLOBALS.autoCompleteServer + "?q=" + searchBarValue,
+                                                "#search-input #autoSuggestResults",
+                                                "HEADER > searchOnKeyUp",
+                                                MODGLOBALS.HEADER.searchAutoSuggestSuccessCallback,
+                                                undefined,undefined,undefined,
+                                                MODGLOBALS.HEADER.searchAutoSuggestNullContentCallback    );
+                    }; // MODGLOBALS.HEADER.searchOnKeyUp()
+
+                    MODGLOBALS.HEADER.searchAutoSuggestSuccessCallback = function() {
+                        $("#search-input #autoSuggestResults").show();
+                    };
+
+                    MODGLOBALS.HEADER.searchAutoSuggestNullContentCallback = function() {
+                        $("#search-input #autoSuggestResults").hide();
+                    };
+
+                    function getVideoId(vid,vidlocation)
+                    {
+                        $.get(
+                            "https://www.googleapis.com/youtube/v3/videos",
+                            {
+                                part: 'snippet',
+                                id: vid,
+                                key: 'AIzaSyCDfS9ySngtqbe3iC04kRcHzRHZEFAaV0g'
+                            },
+
+                            function(data)
+                            {
+                                $.each(data.items,
+                                    function(i, item)
+                                    {
+                                        videoTitle = item.snippet.title;
+                                        vidThumbUrl = item.snippet.thumbnails.medium.url; // video thumbnail url
+                                        var channelTitle = item.snippet.channelTitle; // channel of uploaded video
+
+                                        // check if video uploaded belongs to March of Dimes
+                                        if(channelTitle === "March of Dimes")
+                                        {
+                                            $('#image'+vidlocation).replaceWith('<img src="' + vidThumbUrl + '" alt="' + videoTitle + '"/>');
+                                            $('#title'+vidlocation).append(videoTitle);
+
+                                        }
+                                        else
+                                        {
+
+    $('#input-errorMsg').css("color","red").text('Error! Please enter a video ID that is exclusive to March of Dimes.');
+                                        }
+                                    }
+                                );
+
+                                // check if video thumbnail is empty (in other words, no thumbnail generated from GET response)
+                                if($('.video-thumbnail').length <= 0)
+                                {
+
+    // $('#input-errorMsg').css("color","red").text('Request Error: Could not get video ID! Please enter a valid video ID that is exclusive to March of Dimes.');
+                                }
+                            }
+                        );
+                    }
+
+                </script>
+                <!-- END AUTO SUGGEST -->
+                <div class="gobutton english-MOD">
+                    <a id="searchGoLink" class="button disableGoButton" onclick="MODGLOBALS.HEADER.searchGoLinkOnClick();" href="javascript:void(0)">Search</a>
+                    <span id="nav-search-close" class="glyphicon glyphicon-remove"></span>
+                </div>
+            </div> <!-- search-input -->
+
+
+
         </ul>
             <div class="">
                 <form class="custom-search-input" role="search" action="https://www.msudenver.edu/search">
