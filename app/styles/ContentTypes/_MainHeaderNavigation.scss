@@ -102,12 +102,84 @@ li.dropdown.last {
   line-height: 30px;
 }
 
-.glyphicon-search {
-    color: #027EC3 !important;
-    padding-top: 20px;
-    font-size: 30px;
+//begin expanding search css
+
+#content-nav {
+    margin-top: 0;
+    height: 40px;
+//    background-color: #00447c;
+}
+#content-nav #wrapper {
+    height: 40px;
 }
 
+#search-input {
+  padding-top: 4px;
+}
+
+#content-nav #wrapper #nav-search div {
+    border: none;
+}
+#content-nav #wrapper ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    width: 985px;
+}
+#content-nav #wrapper ul li {
+    float:left;
+    padding: 0 0;
+    height: 40px;
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#content-nav #wrapper ul li:hover {
+    position: relative;
+    left: -1px;
+    background-color: #E9EDF1;
+    color: #00447c;
+    cursor: pointer;
+}
+#content-nav #wrapper ul li.active-section {
+    position: relative;
+    left: -1px;
+    background-color: #ebd0f5;
+    color: #9c5fb5;
+    cursor: pointer;
+}
+#content-nav #wrapper ul li.active-nav {
+    position: relative;
+    left: -1px;
+    background-color: #f7f2f9;
+    color: #9c5fb5;
+}
+#content-nav #wrapper ul li a {
+    display: block;
+    padding: 0 20px;
+    color: #FFF;
+    text-decoration: none;
+}
+#content-nav #wrapper ul li div {
+    padding: 0 14px;
+    border-right: 1px solid #e6d6ed;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    top: 10px;
+}
+#content-nav #nav-search-close {
+    position: relative;
+    top: -45px;
+    left: 815px;
+    color: #027EC3;
+    cursor: pointer;
+}
 #content-nav #search-input {
     display: none;
     position: relative;
@@ -119,8 +191,8 @@ li.dropdown.last {
 }
 #content-nav #search-input input[type=text] {
     display: inline-block;
-    height: 32px;
-    width: 900px; /* was 900px */
+    height: 45px;
+    width: 1500px; /* was 900px */
     border: none;
     color: grey;
     border: 2px solid #fff;
@@ -130,7 +202,7 @@ li.dropdown.last {
 #content-nav #search-input .button {
     display: inline-block;
     padding-left: 6px;
-    top: -32px;
+    top: -45px;
     left: 808px; /*was 808px */
     position: relative;
     height: 30px;
@@ -142,6 +214,50 @@ li.dropdown.last {
 #content-nav #search-input .button:hover {
     color: #cdadd9;
 }
+::-webkit-input-placeholder {
+   color: gray;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: gray;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: gray;
+}
+:-ms-input-placeholder {
+   color: gray;
+}
+.button {border: 0px;}
+.container {width: 985px;}
+.button {
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    border-radius: 4px;
+    background-color: #9c5fb5;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    color: #FFF;
+}
+.button:hover {
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+    font-family: 'Open Sans';
+}
+.button:focus {
+    text-decoration: none;
+    color: #FFF;
+}
+.glyphicon-search {
+    color: #027EC3 !important;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+//end expanding search css
 
 .apply-button {
   background: #d11242;
