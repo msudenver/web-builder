@@ -184,7 +184,6 @@ li.dropdown.last {
 #content-nav #search-input {
     display: none;
     position: absolute; // was relative
-    bottom: 50px;
 }
 #content-nav #search-input div {
     padding-right: 0 !important;
@@ -257,6 +256,7 @@ li.dropdown.last {
     color: #027EC3 !important;
     padding-top: 20px;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .glyphicon-opened {
@@ -265,9 +265,11 @@ li.dropdown.last {
     font-size: 30px;
     padding-right: 30px;
     padding-left: 20px;
-    padding-bottom: 10px;
-    top: 50px;
+    padding-bottom: 12px;
+    top: 6px;
     background-color: #E9EDF1;
+    border-radius: 5px 0px 0px 5px;
+    cursor: unset;
 }
 
 //end expanding search css
