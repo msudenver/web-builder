@@ -176,8 +176,8 @@ li.dropdown.last {
 }
 #content-nav #nav-search-close {
     position: relative;
-    top: -40px;
-    left: 655px;
+    top: -50px;
+    left: 615px;
     color: #027EC3;
     cursor: pointer;
     font-size: 25px;
@@ -197,14 +197,14 @@ li.dropdown.last {
     border: none;
     color: #919191;
     border: 2px solid #fff;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 5px 5px 5px 5px;
     background-color: #E9EDF1;
 }
 #content-nav #search-input .button {
     display: inline-block;
     padding-left: 3px;
-    top: -46px;
-    left: 642px; /*was 808px */
+    top: -56px;
+    left: 620px; /*was 808px */
     position: relative;
     height: 35px;
     width: 90px;
@@ -267,11 +267,34 @@ li.dropdown.last {
     padding-right: 30px;
     padding-left: 20px;
     padding-bottom: 12px;
-    top: 6px;
-    background-color: #E9EDF1;
+    top: 7px;
+    // background-color: #E9EDF1;
     border-radius: 5px 0px 0px 5px;
     cursor: unset;
 }
+
+
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  10px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  70px; }
+.right-addon input { padding-right: 30px; }
+
+
 
 //end expanding search css
 
