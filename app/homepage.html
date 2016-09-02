@@ -98,36 +98,36 @@
         	</ul>
 
          <ul class="nav navbar-nav navbar-center hidden-xs" >
-           <li class="dropdown">
+           <li class="dropdown" id="nav-admissions">
            <a href="/admissions" >ADMISSIONS </a>
              <ul class="dropdown-menu"><li><a href="/admissions/apply/first-timeundergraduate/">First-Time Undergraduate</a></li><li><a href="/admissions/apply/transfer/">Transfer Students</a></li><li><a href="/admissions/apply/internationalstudents/">International Students</a></li><li><a href="/admissions/apply/wichewue/">Wiche Wue</a></li><li><a href="/admissions/apply/masters/">Master&rsquo;s Programs</a></li><li><a href="/admissions/apply/militaryveteran/">Military Veterans</a></li><li><a href="/admissions/apply/adultstudents/">Adult Students</a></li><li><a href="/admissions/apply/re-admit/">Re-Admit</a></li><li><a href="/admissions/apply/non-degree/">Non-Degree</a></li><li><a href="/admissions/apply/concurrentlyenrolled/">Concurrently Enrolled</a></li><li><a href="/admissions/apply/metromeritus/">Metro Meritus</a></li></ul>
            </li>
 
-           <li class="dropdown">
-             <a href="/academics">ACADEMICS </a>
+           <li class="dropdown" id="nav-academics">
+             <a href="/academics" >ACADEMICS </a>
                <ul class="dropdown-menu"><li><a href="/academics/academicresources/">Academic Resources</a></li><li><a href="/fys/">First Year Success</a></li><li><a href="/commencement/">Graduation / Commencement</a></li><li><a href="/a-to-z/majors.shtml">Majors &amp; Minors</a></li><li><a href="/academics/schedulescalendarscatalogs/">Schedules, Calendars &amp; Catalogs</a></li><li><a href="/academics/specialprograms/">Special Programs</a></li><li><a href="/las/">College of Letters, Arts and Sciences</a></li><li><a href="/business/">College of Business</a></li><li><a href="/cps/">College of Professional Studies</a></li><li><a href="/education/">School of Education</a></li></ul>
            </li>
 
-           <li class="dropdown">
-             <a href="/campuslife">CAMPUS LIFE </a>
+           <li class="dropdown" id="nav-campus">
+             <a href="/campuslife" >CAMPUS LIFE </a>
              <ul class="dropdown-menu"><li><a href="/asa/">Academic and Student Affairs</a></li><li><a href="/campuslife/academicsupport/">Academic Support</a></li><li><a href="/events/">Events &amp; Calendars</a></li><li><a href="/admissions/cost/">Cost</a></li><li><a href="/campuslife/wellnessrecreation/">Health &amp; Counseling</a></li><li><a href="/campuslife/helpfulresources/">Helpful Resources</a></li><li><a href="/campuslife/involvementrecreation/">Involvement &amp; Recreation</a></li><li><a href="/studentactivities/">Student Activities</a></li><li><a href="/studentengagementandwellness/">Student Engagement and Wellness</a></li><li><a href="/campuslife/studentpublications/">Student Media</a></li></ul>
            </li>
 
-           <li class="dropdown">
-             <a href="http://gometrostate.com/">ATHLETICS </a>
+           <li class="dropdown" id="nav-athletics">
+             <a href="http://gometrostate.com/" >ATHLETICS </a>
            </li>
 
-           <li class="dropdown">
-             <a href="http://msudenver.edu/studenthub">STUDENT HUB </a>
+           <li class="dropdown" id="nav-hub">
+             <a href="http://msudenver.edu/studenthub" >STUDENT HUB </a>
            </li>
 
-           <li class="dropdown">
-             <a href="/alumni">ALUMNI &#38; FRIENDS </a>
+           <li class="dropdown" id="nav-alumni">
+             <a href="/alumni" >ALUMNI &#38; FRIENDS </a>
              <ul class="dropdown-menu"><li><a href="/alumni/contactus/">Contact Us</a></li><li><a href="/alumni/careerservices/">Career Services</a></li><li><a href="/alumni/events/">Events</a></li><li><a href="/alumni/continuingeducation/">Continuing Education</a></li><li><a href="/alumni/studentalumniassociation/">Student Alumni Association</a></li><li><a href="/alumni/give/">Give</a></li><li><a href="/alumni/alumnibenefits/">Alumni Benefits</a></li></ul>
            </li>
 
 
-            <li class="dropdown last">
+            <li class="dropdown last" id="nav-faculty">
                 <a href="/about">FACULTY &#38; STAFF </a>
                 <ul class="dropdown-menu"><li><a href="/factsheet/">MSU Denver at a glance</a></li><li><a href="/about/strategicplan2020/">Strategic Plan 2020</a></li><li><a href="/trustees/">Board of Trustees</a></li><li><a href="/working/">Employment</a></li><li><a href="http://www.msudenver.edu/events">Events Calendar</a></li><li><a href="/giving/">The Foundation - Giving to MSU Denver</a></li><li><a href="/commencement/">Graduation / Commencement</a></li><li><a href="/newsroom/">Newsroom</a></li><li><a href="/president/">President</a></li><li><a href="/50/">Our Past</a></li><li><a href="/contact/">Questions / Comments</a></li><li><a href="/visit/">Visit MSU Denver</a></li></ul>
             </li>
@@ -665,7 +665,7 @@ lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=294
     });
 
 
-</script>
+    </script>
 
         <!-- matchHeight -->
         <script type="text/javascript">
@@ -696,7 +696,7 @@ lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=294
 console.log('Script loaded - 9232015.3');
 function hideAllSubNav(){
 	$('#cause, #health, #stories, #research, #involved, #content-sub-nav, #content-sub-lower-wrapper, #content-sub-nav-lower-health, #content-sub-nav-lower-cause, #content-sub-nav-lower-stories, #content-sub-nav-lower-research, #content-sub-nav-lower-involved').hide();
-	$('#nav-cause, #nav-health, #nav-stories, #nav-research, #nav-involved, #nav-search').parent().removeClass('active-nav');
+	$('#nav-cause, #nav-health, #nav-stories, #nav-research, #nav-involved, #nav-admissions, #nav-academics, #nav-campus, #nav-athletics, #nav-hub, #nav-alumni, #nav-faculty, #nav-search').parent().removeClass('active-nav');
 	$('#hero').css('margin-top','0');
 }
 
@@ -706,7 +706,7 @@ hideAllSubNav();
 $('#nav-search').click(function(){
 	hideAllSubNav();
 	$('#content-sub-nav').hide();
-	$('#nav-cause, #nav-health, #nav-stories, #nav-research, #nav-involved, #nav-search').fadeTo('fast', 0);
+	$('#nav-cause, #nav-health, #nav-stories, #nav-research, #nav-involved, #nav-admissions, #nav-academics, #nav-campus, #nav-athletics, #nav-hub, #nav-alumni, #nav-faculty, #nav-search').fadeTo('fast', 0);
 	setTimeout(function(){
 		$('#search-input').fadeTo('fast', 1);
 		$('#search-text').focus();
@@ -714,8 +714,8 @@ $('#nav-search').click(function(){
 });
 
 $('#nav-search-close').click(function(){
-	$('#search-input').fadeTo('fast', 0);
-	$('#nav-cause, #nav-health, #nav-stories, #nav-research, #nav-involved, #nav-search').fadeTo('fast', 1);
+	$('#search-input').hide();
+	$('#nav-cause, #nav-health, #nav-stories, #nav-research, #nav-involved, #nav-admissions, #nav-academics, #nav-campus, #nav-athletics, #nav-hub, #nav-alumni, #nav-faculty, #nav-search').fadeTo('slow', 1);
 });
 </script>
 
