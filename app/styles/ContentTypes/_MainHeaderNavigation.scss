@@ -176,9 +176,9 @@ li.dropdown.last {
 }
 #content-nav #nav-search-close {
     position: relative;
-    top: -50px;
-    left: 615px;
-    color: #027EC3;
+    top: -46px;
+    left: 630px;
+    color: #007dc3;
     cursor: pointer;
     font-size: 25px;
 }
@@ -195,7 +195,7 @@ li.dropdown.last {
     height: 55px;
     width: 1500px; /* was 900px */
     border: none;
-    color: #919191;
+    color: #919195;
     border: 2px solid #fff;
     border-radius: 5px 5px 5px 5px;
     background-color: #fff;
@@ -203,14 +203,17 @@ li.dropdown.last {
 #content-nav #search-input .button {
     display: inline-block;
     padding-left: 3px;
-    top: -56px;
+    top: -54px;
     left: 620px; /*was 808px */
     position: relative;
     height: 35px;
-    width: 90px;
-    background-color: #ccc;
+    width: 140px;
+    background-color: #d8d9da;
 //    color: #9c5fb5;
     border-radius: 2;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
 
 }
 #content-nav #search-input .button:hover {
@@ -254,7 +257,7 @@ li.dropdown.last {
     color: #FFF;
 }
 .glyphicon-search {
-    color: #027EC3 !important;
+    color: #007dc3 !important;
     padding-top: 20px;
     font-size: 30px;
     cursor: pointer;
@@ -313,7 +316,7 @@ li.dropdown.last {
 }
 
 .msudenver_logo {
-    padding: 15px;
+    padding: 30px 15px 35px 0px;
 }
 
 .custom-search-input {
