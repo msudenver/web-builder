@@ -294,7 +294,8 @@ li.dropdown.last {
 .left-addon input  { padding-left:  70px; }
 .right-addon input { padding-right: 30px; }
 
-
+/* add back pointer functionality for x-out button  */
+.glyphicon-remove { pointer-events: all !important; }
 
 //end expanding search css
 
