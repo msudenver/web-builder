@@ -310,7 +310,7 @@ li.dropdown.last {
   font-size:26px;
   border-radius: 0px 0px 10px 10px;
   text-align: center;
-  padding: 20px 15px 25px 15px;
+  padding: 20px 15px 20px 15px;
   width: 13%;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -385,4 +385,40 @@ li.dropdown.last {
 
 }
 @media only screen and (max-width:1200px){
+}
+
+
+@media only screen and (max-width:1600px) {
+  li.dropdown {
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
+  }
+  .apply-button {
+    font-size:24px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 18px 13px 18px 13px;
+    width: 10%;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .msudenver_logo {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width:1358px) {
+  li.dropdown {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width:1100px) {
+  li.dropdown {
+    padding: 5px 3px 5px 3px;
+    font-size: 14px;
+  }
+  .apply-button {
+    font-size:22px;
+    font-weight: 600;
+  }
 }
