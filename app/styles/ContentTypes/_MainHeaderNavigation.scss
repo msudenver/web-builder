@@ -350,6 +350,56 @@ li.dropdown.last {
     color: #d11242;
 }
 
+#search-input #search-text {
+    height: 14px;
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    width: 207px;
+    margin-top:3px;
+    font-family: 'Raleway', sans-serif;
+    font-size:14pt;
+    color:#bcbcbc;
+    letter-spacing: 2px;
+}
+
+#search-input #autoSuggestResults {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 794px;
+    margin-left: 15px;
+    margin-top: 36px;
+    background-color: white;
+    border: 1px solid #999;
+    box-shadow: 3px 3px 3px #AAA;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: Verdana;
+    font-size: 8pt;
+    color: #999;
+    border-bottom-right-radius:2px;
+    border-bottom-left-radius:2px;
+}
+
+#autoSuggestResults .autoSuggestResult {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 11px;
+    padding-right: 19px;
+    cursor: default;
+}
+
+#autoSuggestResults .autoSuggestResultMouseOver {
+    background-color: #EEE
+}
+
+.gobutton #searchGoLink.disableGoButton {
+    color: #919195 !important;
+    /*cursor: default !important;*/
+}
+
+
 @media only screen and (max-width: 320px) {
 
 }
@@ -415,6 +465,29 @@ li.dropdown.last {
   }
   #content-nav #search-input input[type=text] {
       width: 685px;
+  }
+  #search-input #search-text {
+    font-size: 14px;
+  }
+  .left-addon .glyphicon {
+    font-size: 23px;
+    top: 14px;
+  }
+  #content-nav #nav-search-close {
+    font-size: 20px;
+  }
+  .glyphicon-search {
+    font-size: 23px;
+    top: 5px
+  }
+  #content-nav #search-input .button {
+    top: -50px;
+    height: 30px;
+    width: 130px;
+  }
+  .button {
+    font-size: 14px;
+    line-height: 31px;
   }
 }
 
