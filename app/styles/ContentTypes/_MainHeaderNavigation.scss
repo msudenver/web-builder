@@ -195,7 +195,7 @@ li.dropdown.last {
 #content-nav #search-input input[type=text] {
     display: inline-block;
     height: 55px;
-    width: 1500px; /* was 900px */
+    width: 1640px; /* was 900px */
     border: none;
     color: #919195;
     border: 2px solid #fff;
@@ -404,11 +404,17 @@ li.dropdown.last {
   .msudenver_logo {
     width: 60%;
   }
+  #content-nav #search-input input[type=text] {
+      width: 880px;
+  }
 }
 
 @media only screen and (max-width:1358px) {
   li.dropdown {
     font-size: 16px;
+  }
+  #content-nav #search-input input[type=text] {
+      width: 685px;
   }
 }
 
@@ -420,5 +426,8 @@ li.dropdown.last {
   .apply-button {
     font-size:22px;
     font-weight: 600;
+  }
+  #content-nav #search-input input[type=text] {
+      width: 445px;
   }
 }
