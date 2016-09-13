@@ -431,6 +431,12 @@ li.dropdown.last {
     }
 }
 
+@media screen and (max-width: 992px) {
+  .msudenver_logo, .apply-button {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 992px) {
 
 }
