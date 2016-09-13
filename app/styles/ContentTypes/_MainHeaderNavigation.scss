@@ -434,12 +434,6 @@ li.dropdown.last {
     }
 }
 
-@media screen and (max-width: 992px) {
-  .msudenver_logo, .apply-button {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 992px) {
 
 }
@@ -511,5 +505,24 @@ li.dropdown.last {
   }
   #content-nav #search-input input[type=text] {
       width: 445px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .msudenver_logo, .apply-button {
+    display: none;
+  }
+  li.dropdown {
+    padding: 5px 0px 5px 0px;
+    font-size: 11px;
+  }
+  #content-nav #search-input input[type=text] {
+      width: 490px;
+  }
+  #content-nav #search-input .button {
+    left: 420px;
+  }
+  #content-nav #nav-search-close {
+    left: 420px;
   }
 }
