@@ -112,7 +112,7 @@ li.dropdown.last {
 #content-nav #wrapper li {
     padding-left: 0px;
     border-bottom: 2px solid #c3e6fb;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0px -5px 0px;
     font-weight: bold;
 }
 
@@ -137,7 +137,7 @@ li.dropdown.last {
     list-style: none;
     position: relative;
     display: inline-table;
-    width: 985px;
+    // width: 985px;
 }
 #content-nav #wrapper ul li {
     float:left;
@@ -173,8 +173,9 @@ li.dropdown.last {
 #content-nav #wrapper ul li a {
     display: block;
     padding: 0 20px;
-    color: #FFF;
+    // color: #FFF;
     text-decoration: none;
+    border-bottom: 0px solid #c3e6fb;
 }
 #content-nav #wrapper ul li div {
     padding: 0 14px;
@@ -415,7 +416,7 @@ li.dropdown.last {
 
 .glyphicon-search-mobile {
   color: #fff !important;
-  padding: 0px 25px 0px 0px;
+  padding: 0px 28px 0px 0px;
   font-size: 25px !important;
 }
 
@@ -569,5 +570,11 @@ li.dropdown.last {
   .mobile-logo {
     height: 50px;
   }
-
+  .fa-bars {
+      padding: 20px 25px 13px 14px;
+      margin: -16px -43px -16px -22px;
+  }
+  .navbar-collapse {
+    border-top: 5px solid #005fae;
+  }
 }
