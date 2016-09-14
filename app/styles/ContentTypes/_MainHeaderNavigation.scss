@@ -76,9 +76,6 @@
 .navbar-static-top {
     border-width: 0;
 }
-.navbar-brand {
-    height: 57px;
-}
 .dropdown-menu {
     padding-left: 10px;
     padding-right: 10px;
@@ -408,7 +405,6 @@ li.dropdown.last {
 
 }
 
-
 @media only screen and (min-width: 768px) {
     .navbar .navbar-nav {
         display: inline-block;
@@ -434,6 +430,9 @@ li.dropdown.last {
         display: inline-block;
     }
     .navbar-collapse #wrapper {
+      display: none;
+    }
+    .glyphicon-search-mobile {
       display: none;
     }
 }
@@ -513,7 +512,7 @@ li.dropdown.last {
 }
 
 @media screen and (max-width: 992px) {
-  .msudenver_logo, .apply-button {
+  .msudenver_logo {
     display: none;
   }
   li.dropdown {
@@ -529,4 +528,28 @@ li.dropdown.last {
   #content-nav #nav-search-close {
     left: 420px;
   }
+  .mobile-logo {
+    height: 60px;
+    padding: 8px;
+  }
+  .apply-button {
+    width: 14%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .apply-button {
+    display: none;
+  }
+  .navbar-header, .col-xs-9 {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .mobile-logo {
+    height: 50px;
+  }
+
 }
