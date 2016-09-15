@@ -47,6 +47,9 @@
 
 <!-- HeaderCode -->
 
+<!-- collapsible jquery code -->
+
+
 </head>
 
 <body>
@@ -90,7 +93,7 @@
         <div class="container-dropdown">
           <ul class="nav navbar-nav navbar-center">
             <!-- <ul class="nav navbar-nav hidden-sm hidden-md hidden-lg"> -->
-              <li class="quicktools dropdown"><a href="/admissions">ADMISSIONS</a><i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+              <li class="quicktools dropdown-mobile"><a href="/admissions">ADMISSIONS</a><i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
 
                  <ul class="dropdown-menu">
                    <li><a href="/admissions/apply/first-timeundergraduate/">First-Time Undergraduate</a></li>
@@ -635,6 +638,19 @@ lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=294
             });
     });
 
+    $(function(){
+    $(".dropdown-mobile").click(
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");
+            },
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");
+            });
+    });
 
     </script>
 
