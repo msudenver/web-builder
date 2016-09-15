@@ -454,6 +454,9 @@ li.dropdown.last {
     .glyphicon-search-mobile {
       display: none;
     }
+    .container-dropdown {
+      display: none;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -563,6 +566,9 @@ li.dropdown.last {
   }
   .navbar-header, .col-xs-9 {
     padding-left: 0px;
+  }
+  li.dropdown {
+    border-right: none;
   }
 }
 
