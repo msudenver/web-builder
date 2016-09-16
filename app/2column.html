@@ -392,6 +392,43 @@
     </div>
 </div>
     <!-- ENDS FOOTER -->
+<!-- This code must be installed within the body tags -->
+<script type="text/javascript">
+    var lhnAccountN = "29468-1";
+    var lhnButtonN = 0;
+    var lhnChatPosition = 'default';
+    var lhnDepartmentN = 0;
+    var lhnWindowN = 33133;
+</script>
+<script src="//www.livehelpnow.net/lhn/widgets/chatbutton/lhnchatbutton-current.min.js" type="text/javascript" id="lhnscript"></script>
+
+                  <SCRIPT>
+function CustomOpenLHNChat(){
+if (typeof lhnWin !== 'undefined' && lhnWin){
+
+if (!lhnWin.closed){
+
+lhnWin.blur();
+
+setTimeout(lhnWin.focus(), 10);
+
+return false;
+
+}
+
+}
+
+
+var wleft = (screen.width - 580-32) / 2;
+var wtop = (screen.height - 420 - 96) / 2;
+lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=29468', 'lhnchat', 'left=' + wleft + ',top=' + wtop +',width=580,height=435,toolbar=no,location=no,directories=no,status=yes,menubar=no,scrollbars=no,copyhistory=no,resizable=yes');
+}
+</SCRIPT>
+
+
+
+                  <style>div#lhnContainerDone {display: none;} </style>
+
 
 <!-- sidemenu.js  -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
