@@ -107,11 +107,11 @@
            </li>
 
            <li class="dropdown" id="nav-athletics">
-             <a href="http://gometrostate.com/" >ATHLETICS </a><i class="fa fa-chevron-down pull-right chevron-pulldown" aria-hidden="true"></i>
+             <a href="http://gometrostate.com/" >ATHLETICS </a>
            </li>
 
            <li class="dropdown" id="nav-hub">
-             <a href="http://msudenver.edu/studenthub" >STUDENT HUB </a><i class="fa fa-chevron-down pull-right chevron-pulldown" aria-hidden="true"></i>
+             <a href="http://msudenver.edu/studenthub" >STUDENT HUB </a>
            </li>
 
            <li class="dropdown" id="nav-alumni">
@@ -595,17 +595,32 @@ lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=294
 
     <script>
     $(function(){
-    $(".dropdown").hover(
-            function() {
-                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
-                $(this).toggleClass('open');
-                $('b', this).toggleClass("caret caret-up");
-            },
-            function() {
-                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
-                $(this).toggleClass('open');
-                $('b', this).toggleClass("caret caret-up");
-            });
+        if ($(window).width() > 767) {
+          $(".dropdown").hover(
+                  function() {
+                      $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                      $(this).toggleClass('open');
+                      $('b', this).toggleClass("caret caret-up");
+                  },
+                  function() {
+                      $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                      $(this).toggleClass('open');
+                      $('b', this).toggleClass("caret caret-up");
+                  });
+        }
+        else {
+          $(".dropdown").click(
+                  function() {
+                      $('.dropdown-menu', this).stop( true, true );
+                      $(this).toggleClass('open');
+                      $('b', this).toggleClass("caret caret-up");
+                  },
+                  function() {
+                      $('.dropdown-menu', this).stop( true, true );
+                      $(this).toggleClass('open');
+                      $('b', this).toggleClass("caret caret-up");
+                  });
+        }
     });
 
     </script>
