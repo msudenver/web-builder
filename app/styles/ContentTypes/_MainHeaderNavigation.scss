@@ -427,6 +427,13 @@ li.dropdown.last {
 .chevron-pulldown {
   cursor: pointer;
 }
+.mobile-header {
+  cursor: pointer;
+}
+
+#nav-admissions, #nav-academics, #nav-campus, #nav-alumni, #nav-faculty {
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 320px) {
 
@@ -551,7 +558,7 @@ li.dropdown.last {
   }
   li.dropdown {
     padding: 5px 0px 5px 0px;
-    font-size: 11px;
+    font-size: 15px;
   }
   #content-nav #search-input input[type=text] {
       width: 490px;
@@ -597,7 +604,7 @@ li.dropdown.last {
     transition: none;
   }
   .dropdown-menu {
-    font-size: 12px;
+    font-size: 15px;
   }
   .search-desktop {
     display: none;
