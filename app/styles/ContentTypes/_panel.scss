@@ -23,3 +23,15 @@
   margin-bottom: 20px;
   border-radius: 0
 }
+
+.panel-danger>.panel-heading {
+    background: #d63647;
+    color: white;
+    font-size: 1.75em;
+    font-weight: 100;
+    border-color: #df1300;
+}
+
+.panel-danger {
+    border: 1px solid #d63647;
+}
