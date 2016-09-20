@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 node_modules
 dist/
 .tmp
 app.yaml
+=======
+
+50main.css
+
+newsroom.html
+
+presspage.css
+
+.tmp
+node_modules
+>>>>>>> homepage-post50th
