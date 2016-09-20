@@ -31,6 +31,11 @@
 <link rel="stylesheet" type="text/css" media="screen" href="styles/home2016.css" />
 
 
+<!-- BEGINS MUlTIPLE COL SPECIFIC DEPENDENCIES  -->
+<script type="text/javascript" src="https://msudenver.edu/media/prod/bowercomponents/jquery/jquery.min.js"></script>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+
 
 <!-- HTML5 shim & respond.js, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -71,264 +76,7 @@
 <!-- *********************************  -->
 <!-- Global Header STARTS HERE -->
 <!-- *********************************  -->
-<div class="container-fluid">
-<!-- QUICKLINKS TOOLBAR -->
-  <div class="navbar navbar-static-top toolbar">
-    <div class="navbar-header col-sm-12">
-        <button type="button " class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle quick links navigation</span>
-          <span class="glyphicon glyphicon-search glyphicon-search-mobile"></span>
-          <span class="fa fa-bars"></span>
-        </button>
-        <div class="col-xs-9">
-          <img class="hidden-md hidden-lg mobile-logo" src="http://sitemanager.msudenver.edu/media/assets/img/MSUdenver-logo.png" alt="MSU Denver Formal Logo">
-          <img class="msudenver_logo" src="http://sitemanager.msudenver.edu/media/assets/img/MSUdenver-logo.png" alt="MSU Denver Logo">
-        </div>
-        <div class="col-xs-2 apply-button">APPLY</div>
-        <div class="col-xs-1">
-        </div>
-    </div>
-
-    <div class="navbar-collapse collapse" id="content-nav">
-        <div class="container-dropdown">
-          <ul class="nav navbar-nav navbar-center">
-            <!-- <ul class="nav navbar-nav hidden-sm hidden-md hidden-lg"> -->
-              <li class="quicktools " data-toggle="collapse" data-target=".mobbar-collapse"><a href="/admissions">ADMISSIONS</a><i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-
-                 <ul class="mobbar-collapse">
-                   <li><a href="/admissions/apply/first-timeundergraduate/">First-Time Undergraduate</a></li>
-                   <li><a href="/admissions/apply/transfer/">Transfer Students</a></li>
-                   <li><a href="/admissions/apply/internationalstudents/">International Students</a></li>
-                   <li><a href="/admissions/apply/wichewue/">Wiche Wue</a></li>
-                   <li><a href="/admissions/apply/masters/">Master&rsquo;s Programs</a></li>
-                   <li><a href="/admissions/apply/militaryveteran/">Military Veterans</a></li>
-                   <li><a href="/admissions/apply/adultstudents/">Adult Students</a></li>
-                   <li><a href="/admissions/apply/re-admit/">Re-Admit</a></li>
-                   <li><a href="/admissions/apply/non-degree/">Non-Degree</a></li>
-                   <li><a href="/admissions/apply/concurrentlyenrolled/">Concurrently Enrolled</a></li>
-                   <li><a href="/admissions/apply/metromeritus/">Metro Meritus</a></li>
-                 </ul>
-
-              </li>
-              <li class="quicktools"><a href="/academics">ACADEMICS</a><i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></li>
-              <li class="quicktools"><a href="/campuslife">CAMPUS LIFE </a><i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></li>
-              <li class="quicktools"><a href="http://gometrostate.com/">ATHLETICS</a></li>
-              <li class="quicktools"><a href="/studenthub">STUDENT HUB</a></li>
-              <li class="quicktools"><a href="/alumni">ALUMNI &#38; FRIENDS</a><i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></li>
-              <li class="quicktools"><a href="/facstaff">FACULTY &#38; STAFF</a><i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></li>
-            <!-- </ul> -->
-        	</ul>
-        </div>
-
-         <ul class="nav navbar-nav navbar-center hidden-xs" >
-           <li class="dropdown" id="nav-admissions">
-           <a href="/admissions" >ADMISSIONS </a>
-             <ul class="dropdown-menu"><li><a href="/admissions/apply/first-timeundergraduate/">First-Time Undergraduate</a></li><li><a href="/admissions/apply/transfer/">Transfer Students</a></li><li><a href="/admissions/apply/internationalstudents/">International Students</a></li><li><a href="/admissions/apply/wichewue/">Wiche Wue</a></li><li><a href="/admissions/apply/masters/">Master&rsquo;s Programs</a></li><li><a href="/admissions/apply/militaryveteran/">Military Veterans</a></li><li><a href="/admissions/apply/adultstudents/">Adult Students</a></li><li><a href="/admissions/apply/re-admit/">Re-Admit</a></li><li><a href="/admissions/apply/non-degree/">Non-Degree</a></li><li><a href="/admissions/apply/concurrentlyenrolled/">Concurrently Enrolled</a></li><li><a href="/admissions/apply/metromeritus/">Metro Meritus</a></li></ul>
-           </li>
-
-           <li class="dropdown" id="nav-academics">
-             <a href="/academics" >ACADEMICS </a>
-               <ul class="dropdown-menu"><li><a href="/academics/academicresources/">Academic Resources</a></li><li><a href="/fys/">First Year Success</a></li><li><a href="/commencement/">Graduation / Commencement</a></li><li><a href="/a-to-z/majors.shtml">Majors &amp; Minors</a></li><li><a href="/academics/schedulescalendarscatalogs/">Schedules, Calendars &amp; Catalogs</a></li><li><a href="/academics/specialprograms/">Special Programs</a></li><li><a href="/las/">College of Letters, Arts and Sciences</a></li><li><a href="/business/">College of Business</a></li><li><a href="/cps/">College of Professional Studies</a></li><li><a href="/education/">School of Education</a></li></ul>
-           </li>
-
-           <li class="dropdown" id="nav-campus">
-             <a href="/campuslife" >CAMPUS LIFE </a>
-             <ul class="dropdown-menu"><li><a href="/asa/">Academic and Student Affairs</a></li><li><a href="/campuslife/academicsupport/">Academic Support</a></li><li><a href="/events/">Events &amp; Calendars</a></li><li><a href="/admissions/cost/">Cost</a></li><li><a href="/campuslife/wellnessrecreation/">Health &amp; Counseling</a></li><li><a href="/campuslife/helpfulresources/">Helpful Resources</a></li><li><a href="/campuslife/involvementrecreation/">Involvement &amp; Recreation</a></li><li><a href="/studentactivities/">Student Activities</a></li><li><a href="/studentengagementandwellness/">Student Engagement and Wellness</a></li><li><a href="/campuslife/studentpublications/">Student Media</a></li></ul>
-           </li>
-
-           <li class="dropdown" id="nav-athletics">
-             <a href="http://gometrostate.com/" >ATHLETICS </a>
-           </li>
-
-           <li class="dropdown" id="nav-hub">
-             <a href="http://msudenver.edu/studenthub" >STUDENT HUB </a>
-           </li>
-
-           <li class="dropdown" id="nav-alumni">
-             <a href="/alumni" >ALUMNI &#38; FRIENDS </a>
-             <ul class="dropdown-menu"><li><a href="/alumni/contactus/">Contact Us</a></li><li><a href="/alumni/careerservices/">Career Services</a></li><li><a href="/alumni/events/">Events</a></li><li><a href="/alumni/continuingeducation/">Continuing Education</a></li><li><a href="/alumni/studentalumniassociation/">Student Alumni Association</a></li><li><a href="/alumni/give/">Give</a></li><li><a href="/alumni/alumnibenefits/">Alumni Benefits</a></li></ul>
-           </li>
-
-
-            <li class="dropdown last" id="nav-faculty">
-                <a href="/about">FACULTY &#38; STAFF </a>
-                <ul class="dropdown-menu"><li><a href="/factsheet/">MSU Denver at a glance</a></li><li><a href="/about/strategicplan2020/">Strategic Plan 2020</a></li><li><a href="/trustees/">Board of Trustees</a></li><li><a href="/working/">Employment</a></li><li><a href="http://www.msudenver.edu/events">Events Calendar</a></li><li><a href="/giving/">The Foundation - Giving to MSU Denver</a></li><li><a href="/commencement/">Graduation / Commencement</a></li><li><a href="/newsroom/">Newsroom</a></li><li><a href="/president/">President</a></li><li><a href="/50/">Our Past</a></li><li><a href="/contact/">Questions / Comments</a></li><li><a href="/visit/">Visit MSU Denver</a></li></ul>
-            </li>
-
-            <li id="nav-search"><div><span class="glyphicon glyphicon-search"></span></div></li>
-
-
-        <!-- Hidden Search Bar-->
-            <div id="search-input" class="inner-addon left-addon">
-                <span class="glyphicon glyphicon-search glyphicon-opened"></span>
-                      <input  id="search-text"
-                        name="zz"
-                        type="text"
-                        class="home-input"
-                        placeholder="SEARCH MSU DENVER"
-                        onkeyup="MODGLOBALS.HEADER.searchOnKeyUp(this, event)"
-                        onclick="return MODGLOBALS.HEADER.searchInputOnClick()"
-                        onblur="javascript:internalLabelBlur(this);"
-                        onfocus="javascript:internalLabelFocus(this);"
-                        tabindex="2";
-                        style="margin-left: -3px; outline: none;";
-                       >
-                <!-- AUTO SUGGEST -->
-                <!-- Code auto suggest server by DEV, PROD, etc. -->
-
-                <div id="autoSuggestResults"></div>
-
-                <script type="text/javascript">
-                    MODGLOBALS.HEADER.enableGoButton = false;
-
-                    MODGLOBALS.HEADER.searchInputOnClick = function() {
-                        $("#search-input #autoSuggestResults").hide();
-                        return false;
-                    };
-
-                    MODGLOBALS.HEADER.searchAutoSuggestOnClick = function(elem) {
-                        var elemHtml = $(elem).html();
-                        $("#search-input #search-text").val(elemHtml);
-                        $("#search-input #autoSuggestResults").hide();
-                        $(".gobutton #searchGoLink").click();
-                    };
-
-                    MODGLOBALS.HEADER.searchAutoSuggestOnMouseOver = function(elem) {
-                        $(elem).addClass("autoSuggestResultMouseOver")
-                    };
-
-                    MODGLOBALS.HEADER.searchAutoSuggestOnMouseOut = function(elem) {
-                        $(elem).removeClass("autoSuggestResultMouseOver")
-                    };
-
-                    MODGLOBALS.HEADER.searchGoLinkOnClick = function() {
-                        if(MODGLOBALS.HEADER.enableGoButton) MODGLOBALS.submitSearchCriteria();
-                    };
-
-                    MODGLOBALS.HEADER.searchOnKeyUp = function(sender, e) {
-                        var searchInputField = $("#search-input #search-text");
-                        var searchInputFieldDom = searchInputField.get(0);
-
-                        // Test that search text is not empty
-                        var searchText = searchInputField.val();
-                        var searchTextNotEmpty = $.trim(searchText).length > 0;
-
-                        // Test that search text is not default
-                        var defaultSearchText = searchInputFieldDom.getAttribute('value');
-                        var searchTextNotDefault = searchText !== defaultSearchText;
-
-                        MODGLOBALS.HEADER.enableGoButton = searchTextNotEmpty && searchTextNotDefault;
-
-                        if( MODGLOBALS.HEADER.enableGoButton ) {
-                            $(".gobutton #searchGoLink").removeClass("disableGoButton");
-
-                            var charCode;
-                            if (e && e.which) { charCode = e.which; }
-                            else if (window.event) { e = window.event; charCode = e.keyCode; }
-
-                            if (charCode === 13) { // Enter pressed
-                                $(".gobutton #searchGoLink").click();
-                                return false;
-                            }
-                        } else {
-                            $(".gobutton #searchGoLink").addClass("disableGoButton");
-                        }
-
-                        // Call auto-suggest module
-                        var searchBarValue = $("#search-input #search-text").val();
-
-                        //
-    function(urlParam,injectIntoElem,moduleName,successCallback,fadeOutDuration,fadeInDuration,dataParam,nullContentCallback,preProcessCallback,errorCallback)
-                        MODGLOBALS.injectHTML(    MODGLOBALS.autoCompleteServer + "?q=" + searchBarValue,
-                                                "#search-input #autoSuggestResults",
-                                                "HEADER > searchOnKeyUp",
-                                                MODGLOBALS.HEADER.searchAutoSuggestSuccessCallback,
-                                                undefined,undefined,undefined,
-                                                MODGLOBALS.HEADER.searchAutoSuggestNullContentCallback    );
-                    }; // MODGLOBALS.HEADER.searchOnKeyUp()
-
-                    MODGLOBALS.HEADER.searchAutoSuggestSuccessCallback = function() {
-                        $("#search-input #autoSuggestResults").show();
-                    };
-
-                    MODGLOBALS.HEADER.searchAutoSuggestNullContentCallback = function() {
-                        $("#search-input #autoSuggestResults").hide();
-                    };
-
-                    function getVideoId(vid,vidlocation)
-                    {
-                        $.get(
-                            "https://www.googleapis.com/youtube/v3/videos",
-                            {
-                                part: 'snippet',
-                                id: vid,
-                                key: 'AIzaSyCDfS9ySngtqbe3iC04kRcHzRHZEFAaV0g'
-                            },
-
-                            function(data)
-                            {
-                                $.each(data.items,
-                                    function(i, item)
-                                    {
-                                        videoTitle = item.snippet.title;
-                                        vidThumbUrl = item.snippet.thumbnails.medium.url; // video thumbnail url
-                                        var channelTitle = item.snippet.channelTitle; // channel of uploaded video
-
-                                        // check if video uploaded belongs to March of Dimes
-                                        if(channelTitle === "March of Dimes")
-                                        {
-                                            $('#image'+vidlocation).replaceWith('<img src="' + vidThumbUrl + '" alt="' + videoTitle + '"/>');
-                                            $('#title'+vidlocation).append(videoTitle);
-
-                                        }
-                                        else
-                                        {
-
-    $('#input-errorMsg').css("color","red").text('Error! Please enter a video ID that is exclusive to March of Dimes.');
-                                        }
-                                    }
-                                );
-
-                                // check if video thumbnail is empty (in other words, no thumbnail generated from GET response)
-                                if($('.video-thumbnail').length <= 0)
-                                {
-
-    // $('#input-errorMsg').css("color","red").text('Request Error: Could not get video ID! Please enter a valid video ID that is exclusive to March of Dimes.');
-                                }
-                            }
-                        );
-                    }
-
-                </script>
-                <!-- END AUTO SUGGEST -->
-                <div class="gobutton english-MOD">
-                    <a id="searchGoLink" class="button disableGoButton" onclick="MODGLOBALS.HEADER.searchGoLinkOnClick();" href="javascript:void(0)">Search</a>
-                    <span id="nav-search-close" class="glyphicon glyphicon-remove"></span>
-                </div>
-            </div> <!-- search-input -->
-
-
-
-        </ul>
-            <!-- <div class="">
-                <form class="custom-search-input" role="search" action="https://www.msudenver.edu/search">
-                    <div class="input-group">
-                      <input type="hidden" name="cx" value="004867254463714202705:1ammfpknuzw" class="form-control" placeholder="Search">
-                      <input type="hidden" name="cof" value="FORID:11" class="form-control" placeholder="Search">
-                      <input type="hidden" name="ie" value="UTF-8" class="form-control" placeholder="Search">
-                      <label for="q" class="sr-only">Search MSU Denver site</label>
-                      <input type="text" id="q" class="form-control"  name="q"  placeholder="Search MSU Denver" size="30">
-                      <span class="input-group-btn">
-                        <button type="submit" class="btn btn-default" id="qButton"><i class="fa fa-search"></i></button>
-                      </span>
-                    </div>
-                </form>
-            </div> -->
-    </div>
-  </div>
-      <!--/.nav-collapse -->
-</div>
-</div>
+<div w3-include-html="htmlcomponents/header.html"></div>
 
 <!-- *********************************  -->
 <!-- Global Header ENDS HERE -->
@@ -475,93 +223,7 @@ Celebration of MSU Denver's <br>
 
 <!-- Footer NAV ID -->
 <!-- BEGINS  FOOTER -->
-<div class="container-fluid">
-    <div class="row footer">
-      <div>
-
-        <div class="col-sm-6 col-md-6 col-lg-4 social campus-info mobile-msuinfo-show">
-              <p>
-                <a href="/"><strong>Metropolitan State University of Denver</strong></a><br><br>
-                <a href="/maps" id="Footer-Map"><span class="fa fa-map-marker fa-lg"></span> Denver, Colorado</a><br><br>
-                <a href="tel:303-556-5740" id="Footer-Phone"><span class="fa fa-phone fa-lg"></span> 303-556-5740</a><br><br>
-                <a onclick="javascript:OpenLHNChat();return false;" href="#" id="Footer-Chat"><span class="fa fa-comments chat-icon fa-lg"></span> Chat with Us (8 a.m.&ndash;5 p.m. MT, Weekdays)</a><br><br>
-              </p>
-              <i class="social-non-mobile">
-               <a href="https://www.facebook.com/msudenver" target="_blank" id="Footer-Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
-               <a href="http://twitter.com/msudenver" target="_blank" id="Footer-Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
-               <a href="https://www.linkedin.com/company/metropolitan-state-university-of-denver" target="_blank" id="Footer-Linkedin"><i class="fa fa-linkedin-square fa-2x"></i></a>
-               <a href="https://instagram.com/msu_denver" target="_blank" id="Footer-Instagram"><i class="fa fa-instagram fa-2x"></i></a>
-               <a href="http://www.flickr.com/photos/msudenver/sets/" target="_blank" id="Footer-Flickr"><i class="fa fa-flickr fa-2x"></i></a>
-               <a href="http://www.youtube.com/user/msudenver" target="_blank" id="Footer-Youtube"><i class="fa fa-youtube-square fa-2x"></i></a><br>
-             </i>
-        </div>
-
-        <div class="col-sm-12 col-md-12 col-lg-6 footer-menu">
-            <div class="col-sm-6 col-md-6 col-lg-6">
-              <p>
-                <a href="https://msudenver.edu/about" id="Footer-About">About</a><br>
-                <hr />
-                <a href="https://msudenver.edu/programs" id="Footer-DegreePrograms">Degree Programs</a><br>
-                <hr/>
-                <a href="https://msudenver.edu/admissions/cost/" id="Footer-Cost">Cost</a><br>
-                <hr/>
-                <a href="https://msudenver.edu/financialaid/"id="Footer-FinancialAid">Financial Aid</a><br>
-                <hr/>
-                <a href="http://www.tivolistation.com/"id="Footer-Bookstore" target="_blank">Bookstore</a>
-                <hr class="hide-hr"/>
-              </p>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6">
-              <p>
-                <a href="https://msudenver.edu/admissions/takeatour/" id="Footer-Tours">Tours</a><br>
-                <hr/>
-                <a href="https://msudenver.edu/visit/quickdirections/" id="Footer-Directions">Directions</a><br>
-                <hr/>
-                <a href="https://myatlascms.com/map/?id=225#!ct/2317?mc/39.74257855991715,-105.0048565864563?z/16" id="Footer-Parking">Parking</a><br>
-                <hr/>
-                <a href="https://www.msudenverjobs.com/postings/search" id="Footer-Careers" target="_blank">Careers</a><br>
-                <hr/>
-                <a href="https://msudenver.edu/campussafetyandcrime/">Safety</a>
-              </p>
-            </div>
-            <br/><br/>
-            <i class="social-mobile">
-             <a href="https://www.facebook.com/msudenver" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
-             <a href="http://twitter.com/msudenver" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-             <a href="https://www.linkedin.com/company/metropolitan-state-university-of-denver" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-             <a href="https://instagram.com/msu_denver" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-             <a href="http://www.flickr.com/photos/msudenver/sets/" target="_blank"><i class="fa fa-flickr fa-2x"></i></a>
-             <a href="http://www.youtube.com/user/msudenver" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a><br>
-            </i>
-            <br/><br/>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-3 social campus-info desktop-msuinfo-show">
-              <p>
-                <a href="https://msudenver.edu"><strong>Metropolitan State University of Denver</strong></a><br><br>
-                <a href="https://msudenver.edu/maps"><span class="fa fa-map-marker fa-lg"></span> Denver, Colorado</a><br><br>
-                <a href="tel:303-556-5740"><span class="fa fa-phone fa-lg"></span> 303-556-5740</a><br><br>
-                <a onclick="javascript:OpenLHNChat();return false;" href="#"><span class="fa fa-comments chat-icon fa-lg"></span> Chat with Us (8 a.m.&ndash;5 p.m. MT, Weekdays)</a><br><br>
-              </p>
-              <i class="social-non-mobile">
-               <a href="https://www.facebook.com/msudenver" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
-               <a href="http://twitter.com/msudenver" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-               <a href="https://www.linkedin.com/company/metropolitan-state-university-of-denver" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-               <a href="https://instagram.com/msu_denver" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-               <a href="http://www.flickr.com/photos/msudenver/sets/" target="_blank"><i class="fa fa-flickr fa-2x"></i></a>
-               <a href="http://www.youtube.com/user/msudenver" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a><br>
-             </i>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 footer-logo">
-          <a href="https://msudenver.edu"> <img src="http://sitemanager.msudenver.edu/media/assets/homepagespring2016/msudenver-informal_logo.png"></a><br><br>
-          <small>&copy;</small></a><a><small> MSU Denver -</small></a>
-          <a href="/privacy"><small>Privacy Statement</small></a> <br>
-          <a href="http://www.collegeportraits.org/CO/MSU_Denver" target="_blank"><small>College Portrait</small></a>
-          <br>
-        </div>
-      </div>
-    </div>
-</div>
+<div w3-include-html="htmlcomponents/footer.html"></div>
     <!-- ENDS FOOTER -->
 <!-- This code must be installed within the body tags -->
 <script type="text/javascript">
@@ -625,31 +287,32 @@ lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=294
 
     <script>
     $(function(){
-    $(".dropdown").hover(
-            function() {
-                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
-                $(this).toggleClass('open');
-                $('b', this).toggleClass("caret caret-up");
-            },
-            function() {
-                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
-                $(this).toggleClass('open');
-                $('b', this).toggleClass("caret caret-up");
-            });
-    });
-
-    $(function(){
-    $(".dropdown-mobile").click(
-            function() {
-                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
-                $(this).toggleClass('open');
-                $('b', this).toggleClass("caret caret-up");
-            },
-            function() {
-                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
-                $(this).toggleClass('open');
-                $('b', this).toggleClass("caret caret-up");
-            });
+        if ($(window).width() > 767) {
+          $(".dropdown").hover(
+                  function() {
+                      $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                      $(this).toggleClass('open');
+                      $('b', this).toggleClass("caret caret-up");
+                  },
+                  function() {
+                      $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                      $(this).toggleClass('open');
+                      $('b', this).toggleClass("caret caret-up");
+                  });
+        }
+        else {
+          $(".dropdown").click(
+                  function() {
+                      $('.dropdown-menu', this).stop( true, true );
+                      $(this).toggleClass('open');
+                      $('b', this).toggleClass("caret caret-up");
+                  },
+                  function() {
+                      $('.dropdown-menu', this).stop( true, true );
+                      $(this).toggleClass('open');
+                      $('b', this).toggleClass("caret caret-up");
+                  });
+        }
     });
 
     </script>
@@ -707,7 +370,9 @@ $('#nav-search-close').click(function(){
 </script>
 
 
-
+<script>
+w3IncludeHTML();
+</script>
 
 </body>
 
