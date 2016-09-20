@@ -372,7 +372,7 @@ li.dropdown.last {
 .msudenver_logo {
   padding: 15px 15px;
   max-width:90%;
-  min-width:210px;
+  min-width:70px;
 }
 
 .custom-search-input {
@@ -503,21 +503,16 @@ li.dropdown {
   font-size: 12px;
 }
 
-// .search-desktop {
-//   display: none;
-// }
-
-.apply-button {
+.search-desktop {
   display: none;
 }
-
 @media only screen and (max-width: 320px) {
 
 }
 @media screen and (max-width: 410px) {
-  // .msudenve_logo {
-  //   height: 45px;
-  // }
+  .msudenve_logo {
+    height: 45px;
+  }
 
   .navbar-collapse {
     border-top: 5px solid #005fae;
@@ -534,6 +529,9 @@ li.dropdown {
   }
 }
 @media screen and (max-width: 767px) {
+  .apply-button {
+    display: none;
+  }
   li.dropdown {
     border-right: none;
     border-bottom: 2px solid #c3e6fb;
@@ -613,8 +611,8 @@ li.dropdown {
 
 
     li.dropdown {
-      padding: 5px 0px;
-      font-size: 1em;
+      padding: 5px 0;
+      font-size: 10px;
     }
 
     #content-nav #search-input input[type=text] {
@@ -636,8 +634,8 @@ li.dropdown {
   }
   @media only screen and (max-width:1100px) {
     li.dropdown {
-      padding: 5px 0px;
-      font-size: 1em;
+      padding: 5px 3px;
+      font-size: 14px;
     }
 
     .apply-button {
@@ -691,8 +689,8 @@ li.dropdown {
   }
   @media only screen and (min-width:1600px) {
     li.dropdown {
-      padding: 3px;
-      font-size: 1.2em;
+      padding: 5px;
+      font-size: 18px;
     }
 
     .apply-button {
