@@ -1,7 +1,7 @@
 /* MainHeaderNavigation Styles */
 
-body { padding-top: 235px; }
-
+.navbar-header {
+  background: rgba(0, 68, 124, 1);
 .blue-header {
   background: #00447c;
 }
@@ -83,10 +83,10 @@ body { padding-top: 235px; }
 }
 
 li.dropdown {
-  font-size: 15px;
+  font-size: 20px;
   color: #00447c;
   margin-top: 15px;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 25px 5px 25px;
   border-right: 2px solid #c3e6fb;
   font-weight: 600;
   font-family: 'Raleway', sans-serif;
@@ -244,7 +244,7 @@ li.dropdown.last {
    color: gray;
 }
 .button {border: 0px;}
-
+// .container {width: 985px;}
 .button {
     height: 35px;
     line-height: 35px;
@@ -325,7 +325,6 @@ li.dropdown.last {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   letter-spacing: 2px;
-  float: right;
 }
 
 .msudenver_logo {
