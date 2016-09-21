@@ -95,12 +95,13 @@ body {
 .dropdown-menu {
   padding-left: 10px;
   padding-right: 10px;
+  font-size: 12px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 li.dropdown {
   color: #00447c;
-  margin-top: 15px;
-  padding: 5px 0px;
   font-weight: 600;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
@@ -304,7 +305,7 @@ li.dropdown.last {
 
 .glyphicon-search {
   color: #007dc3 !important;
-  padding-top: 25px;
+  padding-top: 1.6em;
   font-size: 1.2em;
   cursor: pointer;
 }
@@ -486,12 +487,12 @@ li.dropdown.last {
   transition: none;
 }
 
-.dropdown-menu {
-  font-size: 12px;
-}
-
 .search-desktop {
   display: none;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: none;
 }
 
 @media screen and (max-width: 410px) {
@@ -518,6 +519,8 @@ li.dropdown.last {
   li.dropdown {
     border-right: 2px solid #c3e6fb;
     font-size: 0.75em;
+    margin-top: 15px;
+    padding: 5px 0px;
   }
 
   li.dropdown.last {
@@ -556,6 +559,10 @@ li.dropdown.last {
   body {
     padding-top: 215px;
   }
+  .dropdown-menu {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 @media screen and (min-width: 992px) {
   li.dropdown {
@@ -564,15 +571,7 @@ li.dropdown.last {
   }
 
   #content-nav #search-input input[type=text] {
-
-  }
-
-  #content-nav #search-input .button {
-    left: 420px;
-  }
-
-  #content-nav #nav-search-close {
-    left: 420px;
+    width: 65em;
   }
 
   // .apply-button {
@@ -580,15 +579,7 @@ li.dropdown.last {
   //   margin-bottom: 20px;
   // }
 }
-@media only screen and (max-width:1100px) {
-  // .apply-button {
-  //   font-size: 22px;
-  //   font-weight: 600;
-  // }
-  #content-nav #search-input input[type=text] {
 
-  }
-}
 @media only screen and (min-width:1200px) {
   li.dropdown {
   padding: 5px 0px;
@@ -598,15 +589,12 @@ li.dropdown.last {
   padding-top: 26px;
   font-size: 1.2em;
   }
+  #content-nav #search-input input[type=text] {
+    width: 89em;
+  }
 }
 
-
 @media only screen and (min-width:1358px) {
-
-  #content-nav #search-input input[type=text] {
-
-  }
-
   #search-input #search-text {
     font-size: 14px;
   }
@@ -631,24 +619,14 @@ li.dropdown.last {
     top: -50px;
     height: 30px;
     width: 130px;
+    left: 34em;
   }
 
   .button {
     font-size: 14px;
     line-height: 31px;
   }
-}
-@media only screen and (min-width:1600px) {
-  // .apply-button {
-  //   font-size: 24px;
-  //   border-radius: 0 0 10px 10px;
-  //   padding: 18px 13px;
-  //   width: 10%;
-  //   font-weight: 700;
-  //   letter-spacing: 2px;
-  // }
-
   #content-nav #search-input input[type=text] {
-
+    width: 80.5em;
   }
 }
