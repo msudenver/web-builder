@@ -208,10 +208,10 @@ li.dropdown.last {
 #content-nav #nav-search-close {
   position: relative;
   top: -46px;
-  left: 630px;
+  left: 23.5em;
   color: #007dc3;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 1.3em;
 }
 
 #content-nav #search-input {
@@ -227,7 +227,7 @@ li.dropdown.last {
 #content-nav #search-input input[type=text] {
   display: inline-block;
   height: 55px;
-  width: 1640px;
+  width: 32em;
   /* was 900px */
   border: none;
   color: #6E6E6E;
@@ -239,12 +239,12 @@ li.dropdown.last {
 #content-nav #search-input .button {
   display: inline-block;
   padding-left: 3px;
-  top: -54px;
-  left: 620px;
+  top: -4.2em;
+  left: 36em;
   /*was 808px */
   position: relative;
-  height: 35px;
-  width: 140px;
+  height: 2.8em;
+  width: 8.0em;
   background-color: #d8d9da; //    color: #9c5fb5;
   border-radius: 2;
   letter-spacing: 5px;
@@ -274,9 +274,6 @@ li.dropdown.last {
   color: gray;
 }
 
-.button {
-  border: 0;
-}
 // .container {width: 985px;}
 
 .button {
@@ -287,9 +284,10 @@ li.dropdown.last {
   text-transform: uppercase;
   text-align: center;
   font-family: 'Open Sans';
-  font-size: 16px;
+  font-size: 12px;
   letter-spacing: 1.2px;
   color: #FFF;
+  border: 0;
 }
 
 .button:hover {
@@ -314,11 +312,11 @@ li.dropdown.last {
 .glyphicon-opened {
   color: #717171 !important;
   padding-top: 10px;
-  font-size: 30px;
+  font-size: 1.2em;
   padding-right: 30px;
   padding-left: 20px;
   padding-bottom: 12px;
-  top: 7px;
+  top: 1.0em;
   // background-color: #E9EDF1;
   border-radius: 5px 0 0 5px;
   cursor: unset;
@@ -415,7 +413,7 @@ li.dropdown.last {
   width: 207px;
   margin-top: 3px;
   font-family: 'Raleway', sans-serif;
-  font-size: 14pt;
+  font-size: 1.0em;
   color: #bcbcbc;
   letter-spacing: 2px;
 }
@@ -566,7 +564,7 @@ li.dropdown.last {
   }
 
   #content-nav #search-input input[type=text] {
-    width: 490px;
+
   }
 
   #content-nav #search-input .button {
@@ -588,7 +586,7 @@ li.dropdown.last {
   //   font-weight: 600;
   // }
   #content-nav #search-input input[type=text] {
-    width: 445px;
+
   }
 }
 @media only screen and (min-width:1200px) {
@@ -606,7 +604,7 @@ li.dropdown.last {
 @media only screen and (min-width:1358px) {
 
   #content-nav #search-input input[type=text] {
-    width: 685px;
+
   }
 
   #search-input #search-text {
@@ -651,6 +649,6 @@ li.dropdown.last {
   // }
 
   #content-nav #search-input input[type=text] {
-    width: 880px;
+
   }
 }
