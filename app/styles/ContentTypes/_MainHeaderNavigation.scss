@@ -1,6 +1,6 @@
 /* MainHeaderNavigation Styles */
 body {
-  padding-top: 70px;
+  padding-top: 65px;
 }
 
 .blue-header {
@@ -17,50 +17,38 @@ body {
 
 .toolbar {
   z-index: 9999;
-  background: #fff;
-}
+    .navbar-collapse {
+    background: #fff;
+  }
+  button.navbar-toggle {
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  button.navbar-toggle span.icon-bar {
+    color: #fff;
+  }
+  ul li a {
+    color: #00447c;
+    padding-left: 7px;
+    padding-right: 6px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+  ul li a:hover {
+    color: #333;
+  }
+  navbar-collapse .navbar-collapse.collapse .nav.navbar-nav.navbar-right {
+    margin: 0;
+  }
+  li.active a {
+    background: #ecf0f1!important;
+    color: #333!important;
+  }
 
-.toolbar .quicktools {
-  font-size: 16px;
-  text-align: left;
-}
-
-.toolbar a.navbar-brand:hover {
-  color: #003663;
-}
-
-.toolbar button.navbar-toggle {
-  border: none;
-  color: #fff;
-  font-size: 25px;
-  margin-right: 5px;
-}
-
-.toolbar button.navbar-toggle span.icon-bar {
-  color: #fff;
-}
-
-.toolbar ul li a {
-  color: #00447c;
-  padding-left: 7px;
-  padding-right: 6px;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-
-.toolbar ul li a:hover {
-  color: #333;
-}
-
-.toolbar .navbar-collapse .navbar-collapse.collapse .nav.navbar-nav.navbar-right {
-  margin: 0;
-}
-
-.toolbar li.active a {
-  background: #ecf0f1!important;
-  color: #333!important;
 }
 
 .navbar {
