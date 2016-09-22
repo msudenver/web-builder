@@ -369,9 +369,9 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 }
 
 .msudenver_logo {
-  padding: 15px 15px;
-  max-width:90%;
-  min-width:70px;
+  padding: 15px 0px;
+  // max-width:90%;
+  max-height:65px;
 }
 
 .custom-search-input {
@@ -510,6 +510,9 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 }
 
 @media only screen and (min-width: 768px) {
+  .msudenver_logo {
+    max-height:100px;
+  }
   .navbar .navbar-nav {
     display: inline-block;
     float: none;
@@ -590,6 +593,9 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 }
 
 @media only screen and (min-width:1200px) {
+  .msudenver_logo {
+    max-height:150px;
+  }
   li.dropdown {
   padding: 5px 0px;
   font-size: 1.33em;
