@@ -40,11 +40,6 @@ body {
   color: #fff;
 }
 
-.toolbar .navbar-collapse .navbar-nav li a {
-  padding-top: 15px;
-  padding-bottom: 10px;
-}
-
 .toolbar ul li a {
   color: #00447c;
   padding-left: 7px;
@@ -56,7 +51,6 @@ body {
 }
 
 .toolbar ul li a:hover {
-  background: #ecf0f1;
   color: #333;
 }
 
@@ -95,18 +89,23 @@ body {
 .dropdown-menu {
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 12px;
+  font-size: 0.8em;
   padding-top: 0px;
   padding-bottom: 0px;
+  text-transform: uppercase;
 }
 
 li.dropdown {
   color: #00447c;
-  font-weight: 600;
+  font-weight: 800;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
   text-align: left;
   cursor: pointer;
+  border-bottom: 2px solid #4cb4f2;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding: 5px 0px 5px 0px;
 }
 
 li.dropdown.last {
@@ -126,7 +125,7 @@ li.dropdown.last {
 
 #content-nav #wrapper li {
   padding-left: 0;
-  border-bottom: 2px solid #c3e6fb;
+  border-bottom: 2px solid #4cb4f2;
   margin: 5px 0 -5px;
   font-weight: bold;
 }
@@ -136,8 +135,8 @@ li.dropdown.last {
 }
 
 .fa-chevron-down {
-  color: #005fae;
-  padding: 7px 0 0;
+  color: #007dc3;
+  padding: 2px 0 0;
 }
 
 #search-input {
@@ -195,14 +194,14 @@ li.dropdown.last {
   padding: 0 20px;
   // color: #FFF;
   text-decoration: none;
-  border-bottom: 0 solid #c3e6fb;
+  border-bottom: 0 solid #4cb4f2;
 }
 
 #content-nav #wrapper ul li div {
   padding: 0 14px;
   border-right: 1px solid #e6d6ed;
   height: 20px;
-  line-height: 20px;
+  line-height: 1.3em;
   position: relative;
   top: 10px;
 }
@@ -467,7 +466,7 @@ li.dropdown.last {
 }
 
 .quicktools {
-  border-bottom: 2px solid #c3e6fb;
+  border-bottom: 2px solid #4cb4f2;
 }
 
 .chevron-pulldown {
@@ -477,11 +476,6 @@ li.dropdown.last {
 .col-xs-9,
 .navbar-header {
   padding-left: 0;
-}
-
-.toolbar .navbar-collapse .navbar-nav li a {
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .toolbar ul li a {
@@ -494,6 +488,19 @@ li.dropdown.last {
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
     max-height: none;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: transparent;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.dropdown-menu>li>a {
+    font-weight: 700;
 }
 
 @media screen and (max-width: 410px) {
@@ -518,10 +525,11 @@ li.dropdown.last {
     display: block;
   }
   li.dropdown {
-    border-right: 2px solid #c3e6fb;
+    border-right: 2px solid #4cb4f2;
     font-size: 0.75em;
     margin-top: 15px;
     padding: 5px 0px;
+    border-bottom: none;
   }
 
   li.dropdown.last {
