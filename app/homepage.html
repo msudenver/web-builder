@@ -385,6 +385,7 @@ lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=294
 <script type="text/javascript" src="https://msudenver.edu/media/prod/js/main.min.js"></script>
 <!-- match.min.js -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+<script type="text/javascript" src="jquery/HeaderHover.js"></script>
 
 
 <!-- FooterCode -->
@@ -395,37 +396,6 @@ lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=294
 <!-- JS Files -->
 
 
-    <script>
-    $(function(){
-        if ($(window).width() > 767) {
-          $(".dropdown").hover(
-                  function() {
-                      $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
-                      $(this).toggleClass('open');
-                      $('b', this).toggleClass("caret caret-up");
-                  },
-                  function() {
-                      $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
-                      $(this).toggleClass('open');
-                      $('b', this).toggleClass("caret caret-up");
-                  });
-        }
-        else {
-          $(".dropdown").click(
-                  function() {
-                      $('.dropdown-menu', this).stop( true, true );
-                      $(this).toggleClass('open');
-                      $('b', this).toggleClass("caret caret-up");
-                  },
-                  function() {
-                      $('.dropdown-menu', this).stop( true, true );
-                      $(this).toggleClass('open');
-                      $('b', this).toggleClass("caret caret-up");
-                  });
-        }
-    });
-
-    </script>
 
         <!-- matchHeight -->
         <script type="text/javascript">
