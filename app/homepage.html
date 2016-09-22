@@ -32,8 +32,8 @@
 
 
 <!-- BEGINS MUlTIPLE COL SPECIFIC DEPENDENCIES  -->
-<script type="text/javascript" src="https://msudenver.edu/media/prod/bowercomponents/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="jquery/headerQuery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://www.w3schools.com/lib/w3data.js"></script>
 
 
@@ -198,8 +198,8 @@
     <!-- *********************************  -->
 
 <!-- navigation object : 2016 - Homepage Slideshow -->
+<div w3-include-html="htmlcomponents/HomeSlideshow.html"></div>
 
-<!-- REMOVED TEMPORARILY WHILE CODING HEADER -->
 
                           <!-- BEGINS NEWS AND CALENDAR SECTION-->
 <div class="container-fluid items-container">
@@ -371,7 +371,6 @@ lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=294
 
 
 
-                  <style>div#lhnContainerDone {display: none;} </style>
 
 <!-- BEGINS SECOND DEPENDENCY INCLUDE -->
 <!-- sidemenu.js  -->
@@ -380,73 +379,20 @@ lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=294
 <script type="text/javascript" src="https://msudenver.edu/media/prod/bowercomponents/modernizr/modernizr.custom.38346.js"></script>
 <!-- bootstrap.js -->
 <script type="text/javascript" src="https://msudenver.edu/media/prod/bowercomponents/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!-- console.polyfill -->
 <script type="text/javascript" src="https://msudenver.edu/media/prod/bowercomponents/console-polyfill/index.js"></script>
 <!-- main.min.js -->
 <script type="text/javascript" src="https://msudenver.edu/media/prod/js/main.min.js"></script>
 <!-- match.min.js -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
-
+<script type="text/javascript" src="jquery/HeaderHover.js"></script>
+<script type="text/javascript" src="jquery/matchheightcustom.js"></script>
 
 <!-- FooterCode -->
 <!-- CDN JS Files -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
-<!-- JS Files -->
 
 
-    <script>
-    $(function(){
-        if ($(window).width() > 767) {
-          $(".dropdown").hover(
-                  function() {
-                      $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
-                      $(this).toggleClass('open');
-                      $('b', this).toggleClass("caret caret-up");
-                  },
-                  function() {
-                      $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
-                      $(this).toggleClass('open');
-                      $('b', this).toggleClass("caret caret-up");
-                  });
-        }
-        else {
-          $(".dropdown").click(
-                  function() {
-                      $('.dropdown-menu', this).stop( true, true );
-                      $(this).toggleClass('open');
-                      $('b', this).toggleClass("caret caret-up");
-                  },
-                  function() {
-                      $('.dropdown-menu', this).stop( true, true );
-                      $(this).toggleClass('open');
-                      $('b', this).toggleClass("caret caret-up");
-                  });
-        }
-    });
-
-    </script>
-
-        <!-- matchHeight -->
-        <script type="text/javascript">
-            (function() {
-
-                $(function() {
-                    // apply your matchHeight on DOM ready (they will be automatically re-applied on load or resize)
-
-                    // get test settings
-                    var byRow = $('body').hasClass('.container-fluid');
-
-                    // apply matchHeight to each item container's items
-                    $('.items-container').each(function() {
-                        $(this).find('.item').matchHeight({
-                            byRow: byRow
-                        });
-                    });
-                });
-            })();
-        </script>
               <script  type="text/javascript">
   				$('.carousel').carousel({
    					interval: 6500
@@ -480,9 +426,6 @@ $('#nav-search-close').click(function(){
 });
 </script>
 
-<script>
-w3IncludeHTML();
-</script>
 
 <script>
 w3IncludeHTML();
