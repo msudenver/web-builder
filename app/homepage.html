@@ -386,32 +386,12 @@ lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=294
 <!-- match.min.js -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
 <script type="text/javascript" src="jquery/HeaderHover.js"></script>
-
+<script type="text/javascript" src="jquery/matchheightcustom.js"></script>
 
 <!-- FooterCode -->
 <!-- CDN JS Files -->
 
 
-
-        <!-- matchHeight -->
-        <script type="text/javascript">
-            (function() {
-
-                $(function() {
-                    // apply your matchHeight on DOM ready (they will be automatically re-applied on load or resize)
-
-                    // get test settings
-                    var byRow = $('body').hasClass('.container-fluid');
-
-                    // apply matchHeight to each item container's items
-                    $('.items-container').each(function() {
-                        $(this).find('.item').matchHeight({
-                            byRow: byRow
-                        });
-                    });
-                });
-            })();
-        </script>
               <script  type="text/javascript">
   				$('.carousel').carousel({
    					interval: 6500
