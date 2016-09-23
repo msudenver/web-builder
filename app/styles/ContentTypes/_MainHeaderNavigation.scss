@@ -498,6 +498,9 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    padding-top: 170px;
+  }
   .msudenver_logo {
     max-height:100px;
   }
@@ -556,9 +559,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
     display: none;
   }
 
-  body {
-    padding-top: 215px;
-  }
+
   .dropdown-menu {
     padding-top: 5px;
     padding-bottom: 5px;
