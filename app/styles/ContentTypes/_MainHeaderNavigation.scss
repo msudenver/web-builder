@@ -199,7 +199,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   font-size: 1.3em;
 }
 
-#content-nav #search-input {
+#content-nav .search-input-desktop {
   display: none;
   position: absolute; // was relative
 }
@@ -318,7 +318,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 }
 /* align glyph */
 .left-addon .glyphicon {
-  left: 10px;
+  left: 1em;
 }
 
 .right-addon .glyphicon {
@@ -497,6 +497,15 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   .navbar-collapse {
     border-top: 5px solid #005fae;
   }
+  .navbar .navbar-collapse .search-input-mobile {
+    text-align: left;
+  }
+  #content-nav #search-input input[type="text"] {
+    width: 100%;
+  }
+  #content-nav #nav-search-close {
+    left: 70%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -613,6 +622,10 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 
   #content-nav #search-input input[type=text] {
     width: 65em;
+  }
+
+  .search-input-mobile {
+    display: none;
   }
 
   // .apply-button {
