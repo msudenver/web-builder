@@ -489,15 +489,17 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 }
 
 @media screen and (max-width: 991px) {
+  .container{
+   width: 100%
+  }
+
   .navbar-collapse {
     border-top: 5px solid #005fae;
   }
 }
 
 @media only screen and (min-width: 768px) {
-.container{
- width: 100%
-}
+
 }
 @media (max-width: 992px) {
     .navbar-header {
