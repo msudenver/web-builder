@@ -193,7 +193,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 #content-nav #nav-search-close {
   position: relative;
   top: -46px;
-  left: 23.5em;
+  left: 23.4em;
   color: #007dc3;
   cursor: pointer;
   font-size: 1.3em;
@@ -230,7 +230,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   position: relative;
   height: 2.8em;
   width: 8.0em;
-  background-color: #d8d9da; //    color: #9c5fb5;
+  background-color: #007dc3; //    color: #9c5fb5;
   border-radius: 2;
   letter-spacing: 5px;
   font-weight: 500;
@@ -271,7 +271,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   font-family: 'Open Sans';
   font-size: 12px;
   letter-spacing: 1.2px;
-  color: #202020;
+  color: #fff;
   border: 0;
 }
 
@@ -432,9 +432,10 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 }
 
 .gobutton #searchGoLink.disableGoButton {
-  color: #cbcbcb !important;
-  background-color: #efefef !important;
-  cursor: inherit;
+  // color: #cbcbcb !important;
+  // background-color: #efefef !important;
+  // cursor: inherit;
+  visibility: hidden;
 }
 
 .fa-bars {
