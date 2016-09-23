@@ -243,27 +243,27 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 
 #content-nav #search-input .button:hover {
   color: #cdadd9;
+  ::-webkit-input-placeholder {
+    color: gray;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: gray;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: gray;
+  }
+
+  :-ms-input-placeholder {
+    color: gray;
+  }
+
 }
 
-::-webkit-input-placeholder {
-  color: gray;
-}
 
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: gray;
-}
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: gray;
-}
-
-:-ms-input-placeholder {
-  color: gray;
-}
-
-// .container {width: 985px;}
 
 .button {
   height: 35px;
