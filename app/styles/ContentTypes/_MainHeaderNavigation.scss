@@ -256,10 +256,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   :-ms-input-placeholder {
     color: gray;
   }
-
 }
-
-
 
 .button {
   height: 35px;
@@ -489,6 +486,10 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
     font-weight: 700;
 }
 
+.search-input-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   .container{
    width: 100%
@@ -622,10 +623,6 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 
   #content-nav #search-input input[type=text] {
     width: 65em;
-  }
-
-  .search-input-mobile {
-    display: none;
   }
 
   // .apply-button {
