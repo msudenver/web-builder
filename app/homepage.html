@@ -137,7 +137,7 @@
 
 
         <!-- Hidden Search Bar-->
-            <div id="search-input" class="inner-addon left-addon">
+            <div id="search-input" class="inner-addon left-addon search-input-desktop">
                 <span class="glyphicon glyphicon-search glyphicon-opened"></span>
                       <input  id="search-text"
                         name="zz"
@@ -164,6 +164,34 @@
                 </div>
             </div> <!-- search-input -->
 
+<!-- mobile search-input -->
+            <div id="search-input" class="inner-addon left-addon search-input-mobile">
+                <span class="glyphicon glyphicon-search glyphicon-opened"></span>
+                      <input  id="search-text-mobile"
+                        name="zz"
+                        type="text"
+                        class="home-input"
+                        placeholder="SEARCH MSU-DENVER"
+                        onkeyup="MODGLOBALS.HEADER.searchOnKeyUp(this, event)"
+                        onclick="return MODGLOBALS.HEADER.searchInputOnClick()"
+                        onblur="javascript:internalLabelBlur(this);"
+                        onfocus="javascript:internalLabelFocus(this);"
+                        tabindex="2";
+                        style="margin-left: -3px; outline: none;";
+                       >
+                <!-- AUTO SUGGEST -->
+                <!-- Code auto suggest server by DEV, PROD, etc. -->
+
+                <div id="autoSuggestResults"></div>
+
+
+                <!-- END AUTO SUGGEST -->
+                <div class="gobutton english-MOD">
+                    <a id="searchGoLink" class="button disableGoButton" onclick="MODGLOBALS.HEADER.searchGoLinkOnClick();" href="javascript:void(0)">Search</a>
+                    <span id="nav-search-close" class="glyphicon glyphicon-remove"></span>
+                </div>
+            </div>
+<!-- end mobile search-input -->
 
 
         </ul>
