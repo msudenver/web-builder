@@ -187,6 +187,15 @@
 </div>
 </div>
 
+<script type="text/javascript">
+$('#search-text').keyup(function () {
+    if ($.trim($('#search-text').val()).length) {
+        $('#searchGoLink').removeClass('disableGoButton');
+    } else {
+        $('#searchGoLink').addClass('disableGoButton');
+    }
+});
+</script>
 
 <!-- *********************************  -->
 <!-- Global Header ENDS HERE -->
