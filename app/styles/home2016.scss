@@ -69,21 +69,21 @@ h6 {
     font-weight: 500;
 }
 
-#layout,
-#menu,
-.menu-link {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-#layout {
-    z-index: 9998;
-    padding-left: 200px;
-    left: 0;
-    top: 100px;
-}
+// #layout,
+// #menu,
+// .menu-link {
+//     -webkit-transition: all 0.2s ease-out;
+//     -moz-transition: all 0.2s ease-out;
+//     -ms-transition: all 0.2s ease-out;
+//     -o-transition: all 0.2s ease-out;
+//     transition: all 0.2s ease-out;
+// }
+// #layout {
+//     z-index: 9998;
+//     padding-left: 200px;
+//     left: 0;
+//     top: 100px;
+// }
 
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
@@ -91,34 +91,34 @@ h6 {
     margin: auto;
     width: 100%;
 }
-.ie8 .img-responsive {
-    display: block;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    border: 0;
-    -ms-interpolation-mode: bicubic;
-}
-.ie8 .navbar-inverse .navbar-brand {
-    color: inherit;
-}
-.ie8 img {
-    display: block;
-    height: auto!important;
-    max-width: 100%;
-    vertical-align: middle;
-    border: 0;
-    -ms-interpolation-mode: bicubic;
-}
+// .ie8 .img-responsive {
+//     display: block;
+//     height: auto;
+//     max-width: 100%;
+//     vertical-align: middle;
+//     border: 0;
+//     -ms-interpolation-mode: bicubic;
+// }
+// .ie8 .navbar-inverse .navbar-brand {
+//     color: inherit;
+// }
+// .ie8 img {
+//     display: block;
+//     height: auto!important;
+//     max-width: 100%;
+//     vertical-align: middle;
+//     border: 0;
+//     -ms-interpolation-mode: bicubic;
+// }
 
-.accordion-group {
-    padding: 1em 1em 0.5em;
-    border: 1px solid #e8e8e8;
-}
-.gsc-search-button.gsc-search-button-v2 {
-    width: inherit;
-    height: inherit;
-}
+// .accordion-group {
+//     padding: 1em 1em 0.5em;
+//     border: 1px solid #e8e8e8;
+// }
+// .gsc-search-button.gsc-search-button-v2 {
+//     width: inherit;
+//     height: inherit;
+// }
 
 .promo_date {
     text-align: right;
@@ -173,7 +173,7 @@ h6 {
 
 .news-events {
     background: white;
-    padding: 0 25px 15px;
+    padding: 25px;
     margin-bottom: 15px;
 }
 
