@@ -24,7 +24,6 @@ body {
     border: none;
     color: #fff;
     font-size: 25px;
-    margin-right: 5px;
   }
   button.navbar-toggle span.icon-bar {
     color: #fff;
@@ -443,9 +442,10 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 
 .glyphicon-search-mobile {
   color: #fff !important;
-  padding: 0;
   font-size: 20px !important;
-  margin-top: 19px;
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
 }
 
 .quicktools {
