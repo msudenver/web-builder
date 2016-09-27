@@ -181,35 +181,37 @@
     </div>
   </div>
       <!--/.nav-collapse -->
+      <!-- mobile search-input -->
+                <div id="content-nav-mobile">
+                  <div id="search-input" class="inner-addon left-addon search-input-mobile">
+                      <span class="glyphicon glyphicon-search glyphicon-opened-mobile"></span>
+                            <input  id="search-text-mobile"
+                              name="zz"
+                              type="text"
+                              class="home-input"
+                              placeholder="SEARCH MSU-DENVER"
+                              onkeyup="MODGLOBALS.HEADER.searchOnKeyUp(this, event)"
+                              onclick="return MODGLOBALS.HEADER.searchInputOnClick()"
+                              onblur="javascript:internalLabelBlur(this);"
+                              onfocus="javascript:internalLabelFocus(this);"
+                              tabindex="2";
+                              style="margin-left: -3px; outline: none;";
+                             >
+                      <!-- AUTO SUGGEST -->
+                      <!-- Code auto suggest server by DEV, PROD, etc. -->
+
+                      <div id="autoSuggestResults"></div>
+
+
+                      <!-- END AUTO SUGGEST -->
+                  </div>
+                </div>
+      <!-- end mobile search-input -->
+
 </div>
 </div>
 
-<!-- mobile search-input -->
-          <div id="content-nav-mobile">
-            <div id="search-input" class="inner-addon left-addon search-input-mobile">
-                <span class="glyphicon glyphicon-search glyphicon-opened-mobile"></span>
-                      <input  id="search-text-mobile"
-                        name="zz"
-                        type="text"
-                        class="home-input"
-                        placeholder="SEARCH MSU-DENVER"
-                        onkeyup="MODGLOBALS.HEADER.searchOnKeyUp(this, event)"
-                        onclick="return MODGLOBALS.HEADER.searchInputOnClick()"
-                        onblur="javascript:internalLabelBlur(this);"
-                        onfocus="javascript:internalLabelFocus(this);"
-                        tabindex="2";
-                        style="margin-left: -3px; outline: none;";
-                       >
-                <!-- AUTO SUGGEST -->
-                <!-- Code auto suggest server by DEV, PROD, etc. -->
 
-                <div id="autoSuggestResults"></div>
-
-
-                <!-- END AUTO SUGGEST -->
-            </div>
-          </div>
-<!-- end mobile search-input -->
 
 
 
@@ -225,7 +227,8 @@ $('#search-text').keyup(function () {
 
 <script type="text/javascript">
   $('.glyphicon-search-mobile').click(function(){
-     $('.search-input-mobile').toggle();
+     $('.search-input-mobile').slideToggle();
+    //  $('.fa-bars').data-toggle();
   });
 </script>
 
