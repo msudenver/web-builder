@@ -512,14 +512,6 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   border: none;
 }
 
-.glyphicon-remove-mobile {
-  left: 90% !important;
-}
-
-.gobutton-mobile {
-  display: none;
-}
-
 .glyphicon-opened-mobile {
   color: #717171 !important;
   padding-top: 10px;
@@ -528,7 +520,6 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   padding-left: 20px;
   padding-bottom: 12px;
   top: 0.0em;
-  // background-color: #E9EDF1;
   border-radius: 5px 0 0 5px;
   cursor: unset;
 }
@@ -557,7 +548,6 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
     padding-top: 10px;
     padding-bottom: 8px;
   }
-
 }
 
 @media only screen and (min-width: 768px) {
