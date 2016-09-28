@@ -12,6 +12,9 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:400,600,700,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" media="screen" href="styles/studenthubsecondary.css" />
 
+  <script type="text/javascript" src="https://msudenver.edu/media/prod/bowercomponents/jquery/jquery.min.js"></script>
+  <script src="http://www.w3schools.com/lib/w3data.js"></script>
+  
 </head>
 
 <body>
@@ -101,30 +104,7 @@
   <!-- ENDS BODY-->
 
   <!-- Footer start -->
-  <footer class="footer bg-dark">
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-sm-6 col-md-6 col-md-push-2">
-          <p class="copyright font-alt"><a href="https://msudenver.edu" style="color:white;">© 2016 Metropolitan State University of Denver</a></p>
-          <p> <a href="http://www.collegeportraits.org/CO/MSU_Denver" class="nav-links" target="_blank">College Portrait</a> |
-            <a href="/privacy" class="nav-links" target="_blank">Privacy Statement</a> |
-            <a href="https://www.colorado.gov/apps/oit/transparency/index.html" target="_blank" class="nav-links">Colorado TOPS</a> </p>
-
-        </div>
-
-        <div class="col-sm-4 col-md-push-2">
-          <p class="footer">
-            <a href="https://msudenver.edu/contact/" class="nav-links" target="_blank">CONTACT US</a> | 303-556-5740
-            <br>Auraria Campus Police: 303-556-5000
-            <br>Inclement Weather Line: 1-877-556-3637</p>
-        </div>
-      </div>
-      <!-- .row -->
-
-    </div>
-  </footer>
+    <div w3-include-html="htmlcomponents/footer.html"></div>
   <!-- Footer end -->
 
 
@@ -174,7 +154,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </script>
   <script type="text/javascript" src="/media/studenthub/js/bootstrap.min.js"></script>
   <!--bootstrap.min.js"-->
-
+  <script>
+  w3IncludeHTML();
+  </script>
 </body>
 
 </html>
