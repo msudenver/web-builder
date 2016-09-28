@@ -573,6 +573,27 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   .navbar-toggle {
     margin-bottom: 6px;
   }
+  .open > .dropdown-menu {
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  .dropdown-menu {
+    -moz-transform-origin: top;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -moz-transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    display: block;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    border: none;
+    background-color: transparent;
+  }
 }
 
 @media only screen and (min-width: 768px) {
