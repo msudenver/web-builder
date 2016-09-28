@@ -21,7 +21,7 @@ body {
     background: #fff;
   }
   button.navbar-toggle {
-    border: none;
+    // border: none;
     color: #fff;
     font-size: 25px;
   }
@@ -569,6 +569,9 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   }
   .blue-header {
     border-bottom: 5px solid #005fae;
+  }
+  .navbar-toggle {
+    margin-bottom: 6px;
   }
 }
 
