@@ -526,9 +526,26 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   cursor: unset;
 }
 
+@media screen and (max-width: 450px) {
+  .navbar-toggle{
+   padding: 9px 5px;
+  }
+  .glyphicon-search-mobile {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .msudenver_logo {
+    max-height: 56px;
+  }
+  .fa-bars {
+    padding-left: 10px;
+    margin: -16px -30px -16px -10px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .container{
-   width: 100%
+   width: 100%;
   }
 
   .navbar-collapse {
