@@ -21,10 +21,9 @@ body {
     background: #fff;
   }
   button.navbar-toggle {
-    border: none;
+    // border: none;
     color: #fff;
     font-size: 25px;
-    margin-right: 5px;
   }
   button.navbar-toggle span.icon-bar {
     color: #fff;
@@ -193,13 +192,13 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 #content-nav #nav-search-close {
   position: relative;
   top: -46px;
-  left: 23.5em;
+  left: 23.4em;
   color: #007dc3;
   cursor: pointer;
   font-size: 1.3em;
 }
 
-#content-nav #search-input {
+#content-nav .search-input-desktop {
   display: none;
   position: absolute; // was relative
 }
@@ -230,7 +229,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   position: relative;
   height: 2.8em;
   width: 8.0em;
-  background-color: #d8d9da; //    color: #9c5fb5;
+  background-color: #007dc3; //    color: #9c5fb5;
   border-radius: 2;
   letter-spacing: 5px;
   font-weight: 500;
@@ -256,10 +255,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   :-ms-input-placeholder {
     color: gray;
   }
-
 }
-
-
 
 .button {
   height: 35px;
@@ -271,7 +267,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   font-family: 'Open Sans';
   font-size: 12px;
   letter-spacing: 1.2px;
-  color: #202020;
+  color: #fff;
   border: 0;
 }
 
@@ -318,7 +314,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 }
 /* align glyph */
 .left-addon .glyphicon {
-  left: 10px;
+  left: 1em;
 }
 
 .right-addon .glyphicon {
@@ -432,22 +428,26 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 }
 
 .gobutton #searchGoLink.disableGoButton {
-  color: #cbcbcb !important;
-  background-color: #efefef !important;
-  cursor: inherit;
+  // color: #cbcbcb !important;
+  // background-color: #efefef !important;
+  // cursor: inherit;
+  visibility: hidden;
 }
 
 .fa-bars {
   background-color: #005fae;
   padding: 20px;
-  margin: -16px -30px -16px -16px;
+  margin: -17px -30px -16px -16px;
 }
 
 .glyphicon-search-mobile {
   color: #fff !important;
-  padding: 0;
   font-size: 20px !important;
-  margin-top: 19px;
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .quicktools {
@@ -488,13 +488,90 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
     font-weight: 700;
 }
 
+.search-input-mobile {
+  display: none;
+}
+
+#content-nav-mobile {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
+  font-weight: 500;
+  padding-left: 3px;
+  color: #6E6E6E;
+  border: none;
+  width: 100%;
+  display: none;
+}
+
+#content-nav-mobile #nav-search-close {
+  color: #007dc3;
+  cursor: pointer;
+  font-size: 1.3em
+}
+
+#search-text-mobile {
+  width: 100%;
+  border: none;
+}
+
+.glyphicon-opened-mobile {
+  color: #717171 !important;
+  padding-top: 10px;
+  font-size: 1.2em;
+  padding-right: 30px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  top: 0.0em;
+  border-radius: 5px 0 0 5px;
+  cursor: unset;
+}
+
+@media screen and (max-width: 450px) {
+  .navbar-toggle{
+   padding: 9px 5px;
+  }
+  .glyphicon-search-mobile {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .msudenver_logo {
+    max-height: 56px;
+  }
+  .fa-bars {
+    padding-left: 10px;
+    margin: -16px -30px -16px -10px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .container{
-   width: 100%
+   width: 100%;
   }
 
   .navbar-collapse {
     border-top: 5px solid #005fae;
+  }
+  .navbar .navbar-collapse .search-input-mobile {
+    text-align: left;
+  }
+  #content-nav #search-input input[type="text"] {
+    width: 100%;
+  }
+  #content-nav #nav-search-close {
+    left: 70%;
+  }
+  #content-nav-mobile {
+    display: block;
+  }
+  .left-addon input {
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+  .blue-header {
+    border-bottom: 5px solid #005fae;
+  }
+  .navbar-toggle {
+    margin-bottom: 6px;
   }
 }
 
@@ -539,7 +616,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 }
 @media screen and (min-width: 992px) {
   body {
-    padding-top: 170px;
+    padding-top: 165px;
   }
   .msudenver_logo {
     max-height:100px;

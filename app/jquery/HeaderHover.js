@@ -1,5 +1,5 @@
 $(function(){
-    if ($(window).width() > 767) {
+    if ($(window).width() > 992) {
       $(".dropdown").hover(
               function() {
                   $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
