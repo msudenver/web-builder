@@ -210,6 +210,13 @@ $('#search-text').keyup(function () {
         $('#searchGoLink').addClass('disableGoButton');
     }
 });
+
+$('#search-text-mobile').focusin(function () {
+        $('#search-text-mobile').css('opacity', '1.0');
+});
+$('#search-text-mobile').focusout(function () {
+        $('#search-text-mobile').css('opacity', '0.8');
+});
 </script>
 
 <script type="text/javascript">
