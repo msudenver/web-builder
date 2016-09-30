@@ -609,26 +609,44 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
       display:block !important;
   }
 
-  .open > .dropdown-menu {
-    -moz-transform: scale(1, 1);
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+  .dropdown .dropdown-menu {
+      -webkit-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+      -moz-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+      -ms-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+      -o-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+      transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+
+      max-height: 0;
+      display: block;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
   }
-  .dropdown-menu {
-    -moz-transform-origin: top;
-    -webkit-transform-origin: top;
-    transform-origin: top;
-    -moz-animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -moz-transform: scale(1, 0);
-    -webkit-transform: scale(1, 0);
-    display: block;
-    transition: all 0.2s ease-out;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    border: none;
+
+  .dropdown.open .dropdown-menu {
+      -webkit-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+      -moz-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+      -ms-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+      -o-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+      transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+
+      max-height: 500px;
+      opacity: 1;
+      visibility: visible;
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
     background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .navbar-nav .dropdown-menu>li>a {
+    padding: 5px 15px 5px 25px;
   }
 }
 
