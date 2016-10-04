@@ -1,20 +1,16 @@
 /* Panel Styles */
 
 .panel {
-    border: 0;
     border-radius: 0;
 }
 .panel-heading {
     border-radius: 0;
 }
-.panel-default {
-    border: 1px solid #1b557a;
-}
 .panel-default > .panel-heading {
-    background: #1b557a;
+    background: #00447C;
     color: #fff;
     font-size: 1.5em;
-    border-color: #1b557a;
+    border-color: #00447C;
 }
 .panel-title {
     color: #fff;
