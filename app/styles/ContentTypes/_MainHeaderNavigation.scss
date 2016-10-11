@@ -285,7 +285,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 
 .glyphicon-search {
   color: #007dc3 !important;
-  padding-top: 1.3em;
+  padding-top: 1.2em;
   font-size: 1.2em;
   cursor: pointer;
 }
@@ -447,7 +447,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   float: right;
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 }
 
 .quicktools {
@@ -512,10 +512,12 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 #search-text-mobile {
   width: 100%;
   border: none;
+  opacity: 0.8;
+  color: #919195;
 }
 
 .glyphicon-opened-mobile {
-  color: #717171 !important;
+  color: #007dc3 !important;
   padding-top: 10px;
   font-size: 1.2em;
   padding-right: 30px;
@@ -524,6 +526,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   top: 0.0em;
   border-radius: 5px 0 0 5px;
   cursor: unset;
+  z-index: 1;
 }
 
 @media screen and (max-width: 450px) {
@@ -562,6 +565,8 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   }
   #content-nav-mobile {
     display: block;
+    padding-left: 0px;
+    width: 101%;
   }
   .left-addon input {
     padding-top: 10px;
