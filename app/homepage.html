@@ -155,14 +155,8 @@
                          >
                   <!-- AUTO SUGGEST -->
                   <!-- Code auto suggest server by DEV, PROD, etc. -->
-
                   <div id="autoSuggestResults"></div>
                   <!-- END AUTO SUGGEST -->
-                  <!-- <div class="gobutton english-MOD">
-                      <a id="searchGoLink" class="button disableGoButton" onclick="MODGLOBALS.HEADER.searchGoLinkOnClick();" href="javascript:void(0)">Search</a>
-                      <span id="nav-search-close" class="glyphicon glyphicon-remove"></span>
-                  </div> -->
-
                   <div class="gobutton">
                     <a id="searchGoLink" class="disableGoButton">
                       <button type="submit" class="button" id="qButton">SEARRCH</button>
@@ -183,13 +177,16 @@
   </div>
       <!--/.nav-collapse -->
       <!-- mobile search-input -->
+      <form action="https://www.msudenver.edu/search">
+        <div id="" class="" role="search" action="https://www.msudenver.edu/search">
+
                 <div id="content-nav-mobile">
                   <div id="search-input" class="inner-addon left-addon search-input-mobile">
                       <span class="glyphicon glyphicon-search glyphicon-opened-mobile"></span>
-                            <input  id="search-text-mobile"
-                              name="zz"
+                            <input  id="q"
+                              name="q"
                               type="text"
-                              class="home-input"
+                              class="home-input search-text-mobile"
                               placeholder="SEARCH MSU DENVER"
                               onkeyup="MODGLOBALS.HEADER.searchOnKeyUp(this, event)"
                               onclick="return MODGLOBALS.HEADER.searchInputOnClick()"
@@ -207,6 +204,10 @@
                       <!-- END AUTO SUGGEST -->
                   </div>
                 </div>
+
+        </div>
+      </form>
+
       <!-- end mobile search-input -->
 
 </div>
