@@ -237,9 +237,11 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 }
 
 #content-nav #search-input .button:hover {
-  color: #d11242;
+  color: #fff;
+  background-color: #00447c;
   ::-webkit-input-placeholder {
-    color: #d11242;
+    color: #fff;
+    background-color: #00447c;
   }
 
   :-moz-placeholder {
