@@ -338,16 +338,21 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 .apply-button {
   background: #d11242;
   color: white;
-  font-size: 26px;
+  font-size: 1.6em;
   border-radius: 0 0 10px 10px;
   text-align: center;
-  padding: 20px 15px;
-  width: 13%;
+  padding: 0.5em 0.5em;
+  width: 10%;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   letter-spacing: 2px;
   float: right;
-  display: none;
+  margin-left: 0.1em;
+  // display: none;
+}
+
+.give-visit-buttons {
+  background: gray;
 }
 
 .msudenver_logo {
@@ -652,6 +657,9 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   .navbar-nav .dropdown-menu>li>a {
     padding: 5px 15px 5px 25px;
   }
+  .apply-button {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -682,10 +690,12 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
     margin-bottom:7px;
     padding: 5px 0px;
     border-bottom: none;
+    margin-right: 0.8em;
   }
 
   li.dropdown.last {
     border-right: none;
+    margin-right: none;
   }
   ul.dropdown-menu > li a {
     padding-top: 0;
