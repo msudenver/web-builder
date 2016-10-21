@@ -113,19 +113,22 @@ li.dropdown.last {
 
 .nav > li > a {
   display: inline;
-  line-height: 30px;
+  line-height: 50px;
+  font-weight: 800;
+  font-size: 1.4em;
 }
 //begin expanding search css
 #content-nav {
   margin-top: 0;
   // height: 40px;
-  margin-bottom: 10px; //    background-color: #00447c;
-  max-height: 40px;
+  // margin-bottom: 10px;
+  background-color: #fff;
+  max-height: 55px;
   transition: max-height 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 
 #content-nav:hover {
-  max-height: 400px;
+  max-height: 600px;
 }
 
 #content-nav #wrapper li {
@@ -685,7 +688,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 
 @media screen and (min-width: 992px) {
   body {
-    padding-top: 165px;
+    padding-top: 123px;
   }
   .msudenver_logo {
     max-height:100px;
@@ -827,7 +830,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   #content-nav #nav-search-close {
     font-size: 20px;
     top: -74px;
-    left: 26.8em;
+    left:52.0em;
   }
 
   .glyphicon-search {
@@ -841,7 +844,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
     top: -39px;
     height: 30px;
     width: 130px;
-    left: 32em;
+    left: 65em;
   }
 
   .button {
