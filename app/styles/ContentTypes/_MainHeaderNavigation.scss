@@ -11,8 +11,13 @@ body {
   text-align: center;
 }
 
-.navbar-inner {
+.navbar-lower {
   text-align: center;
+  color: #fff;
+  background-color: gray;
+  line-height: 50px;
+  font-weight: 800;
+  font-size: 1.4em;
 }
 
 .toolbar {
@@ -556,6 +561,10 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   cursor: unset;
   z-index: 1;
 }
+
+.container {
+    position: sticky;
+  }
 
 @media screen and (max-width: 450px) {
   .navbar-toggle{
