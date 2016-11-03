@@ -103,7 +103,7 @@
   <div class="container">
     <ul class="nav navbar-nav navbar-center dropdown" id="nav-middle">
       <li id="nav-faculty">
-        <a class="mobile-header">About<span class="fa fa-chevron-down pull-right chevron-pulldown" aria-hidden="true"></span></a>
+        <a class="mobile-header">About</a>
         <ul class="pushdown-menu">
           <li><a href="/about">About</a></li>
           <li><a href="/about/strategicplan2020/">Strategic Plan 2020</a></li>
@@ -115,7 +115,7 @@
          </ul>
        </li>
        <li id="nav-admissions">
-         <a class="mobile-header">Admissions <span class="fa fa-chevron-down pull-right chevron-pulldown" aria-hidden="true"></span></a>
+         <a class="mobile-header">Admissions</a>
          <ul class="pushdown-menu">
            <li><a href="/admissions/">Admissions</a></li>
            <li><a href="/admissions/apply/first-timeundergraduate/">First-Time Undergraduate</a></li>
@@ -132,7 +132,7 @@
          </ul>
        </li>
        <li id="nav-academics">
-         <a class="mobile-header">Academics<span class="fa fa-chevron-down pull-right chevron-pulldown" aria-hidden="true"></span></a>
+         <a class="mobile-header">Academics</a>
          <ul class="pushdown-menu">
            <li><a href="/programs/">Academic Programs</a></li>
            <li><a href="/las/">College of Letters, Arts and Sciences</a></li>
@@ -148,7 +148,7 @@
          </ul>
        </li>
        <li id="nav-campus">
-         <a class="mobile-header">Campus<span class="fa fa-chevron-down pull-right chevron-pulldown" aria-hidden="true"></span></a>
+         <a class="mobile-header">Campus</a>
          <ul class="pushdown-menu">
            <li><a href="/campuslife/">Campus Life</a></li>
            <li><a href="/studentactivities/">Student Activities</a></li>
@@ -160,7 +160,7 @@
          </ul>
        </li>
        <li id="nav-alumni">
-         <a class="mobile-header menu-last">Alumni &#38; Donors<span class="fa fa-chevron-down pull-right chevron-pulldown" aria-hidden="true"></span></a>
+         <a class="mobile-header menu-last">Alumni &#38; Donors</a>
          <ul class="pushdown-menu">
            <li><a href="/alumni/">Alumni</a></li>
            <li><a href="">Donors</a></li>
@@ -265,11 +265,14 @@ $('.search-text-mobile').focusout(function () {
      $('.fa-bars').css('background-color', '#005fae');
      $('.glyphicon-search-mobile').css('background-color', 'transparent');
   });
+  $('.mobile-header').click(function(){
+     $('.pushdown-menu').slideToggle();
+  });
 </script>
 
 <script type="text/javascript">
   $('.search-desktop').click(function(){
-     $('#content-nav').css('max-height', '50px');
+     $('#content-nav').css('max-height', '55px');
   });
   $('.glyphicon-remove').click(function(){
      $('#content-nav').css('max-height', '');
