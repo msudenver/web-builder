@@ -32,7 +32,6 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="jquery/headerQuery.js"></script>
 <script src="http://www.w3schools.com/lib/w3data.js"></script>
 
 
@@ -233,52 +232,6 @@
 </div>
 </div>
 
-
-
-<script type="text/javascript">
-$('#q').keyup(function () {
-    if ($.trim($('#q').val()).length) {
-        $('#searchGoLink').removeClass('disableGoButton');
-    }
-    else {
-        $('#searchGoLink').addClass('disableGoButton');
-    }
-});
-
-$('.search-text-mobile').focusin(function () {
-        $('.search-text-mobile').css('opacity', '1.0');
-});
-$('.search-text-mobile').focusout(function () {
-        $('.search-text-mobile').css('opacity', '0.8');
-});
-</script>
-
-<script type="text/javascript">
-  $('.glyphicon-search-mobile').click(function(){
-     $('.search-input-mobile').slideToggle();
-     $('#content-nav').removeClass('in');
-     $('.fa-bars').css('background-color', 'transparent');
-     $('.glyphicon-search-mobile').css('background-color', '#005fae');
-  });
-  $('.navbar-toggle').click(function(){
-     $('.search-input-mobile').hide();
-     $('.fa-bars').css('background-color', '#005fae');
-     $('.glyphicon-search-mobile').css('background-color', 'transparent');
-  });
-  $('.mobile-header').click(function(){
-     $('.pushdown-menu').slideToggle();
-  });
-</script>
-
-<script type="text/javascript">
-  $('.search-desktop').click(function(){
-     $('#content-nav').css('max-height', '55px');
-  });
-  $('.glyphicon-remove').click(function(){
-     $('#content-nav').css('max-height', '');
-  });
-</script>
-
 <!-- *********************************  -->
 <!-- Global Header ENDS HERE -->
 <!-- *********************************  -->
@@ -370,6 +323,8 @@ var wtop = (screen.height - 420 - 96) / 2;
 lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=29468', 'lhnchat', 'left=' + wleft + ',top=' + wtop +',width=580,height=435,toolbar=no,location=no,directories=no,status=yes,menubar=no,scrollbars=no,copyhistory=no,resizable=yes');
 }
 </SCRIPT>
+
+<script type="text/javascript" src="jquery/headerQuery.js"></script>
 
 </body>
 
