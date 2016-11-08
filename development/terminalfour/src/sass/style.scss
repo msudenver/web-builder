@@ -1,21 +1,18 @@
 // Add your custom style declaration in this file
 
 * {
-	box-sizing: border-box;
+	box-sizing: border-box; 
 }
 
 html,
 body {
 	height: 100%;
 	background-color: #f9f9f9;
-  	font-family: 'Open Sans', Helvetica, sans-serif;
+  	font-family: 'Karla', Helvetica, sans-serif;
   	font-size: 12px;
 	color: #333;
 }
 
-p {
-	max-width: 50em;
-}
 
 ul {
   
@@ -79,9 +76,35 @@ code {
 }
 
 
+
+/* Typography */
+h1, h2 { font-family: 'Raleway', Helvetica, sans-serif; }
+h1 { text-transform: uppercase;}
+
+.feature-heading { 
+    margin-top: 0; 
+}
+
+/* Components */
+header, section, footer { 
+    padding: 1.667rem 0; 
+}
+header { background-color: #505050; text-align: center; color: #fff; }
+
+/* Overrides @787px */
 @media (min-width: 50em) {
   html,
   body {
     font-size: 16px;
+  }
+    
+  h1 { 
+      font-size: 2.500rem;    /* 40px */
+  }
+  .feature-subtext { 
+    font-size:  1.875rem;    /* 30px */
+  }
+  header, section, footer { 
+      padding: 4.125rem 0; /* 66px */  
   }
 }

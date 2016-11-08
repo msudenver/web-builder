@@ -7,10 +7,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-include-replace');
   grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-parallel');
+  //grunt.loadNpmTasks('grunt-parallel');
 
-  //Uncomment the line below to add HTML Validation to the project
-  //  grunt.loadNpmTasks('grunt-html-validation');
+  
+  grunt.loadNpmTasks('grunt-html-validation');
 
 
   //Uncommment the line below to add JSHint into the project (Ctrl+f to find all regions needed to be uncommented in order to add in JSHint)
@@ -78,7 +78,7 @@ module.exports = function(grunt) {
         },//options
         files: {
           'www-root/style-assets/css/framework.css': 'development/terminalfour/src/sass/framework.scss',
-          'www-root/style-assets/css/style-local.css': 'development/terminalfour/src/sass/style.scss'
+          'www-root/style-assets/css/style.css': 'development/terminalfour/src/sass/style.scss'
         }//files
       }//dist
     },//sass
@@ -111,16 +111,16 @@ module.exports = function(grunt) {
     */
 
     //Uncomment the region below to add HTML Validation into the project
-    /*
+    
     validation: {
       options: {
         reset: true,
         path: 'report/validation-status.json',
         reportpath: 'report/validation-report.json'
       },//options
-      files: ['*.html']
+      files: ['www-root/**/*.html']
     },//validation
-    */
+    
 
     includereplace: {
       dist: {
