@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1">
+
+	<title>Development Enviroment</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Mono:300" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="style-assets/css/style.css">
+
+</head>
+<body>
+
+<section class="container">
+	<header id="congrat-message">
+		<h1>Congratulations!</h1>
+		<h4> If you are seeing this page you have set everything up correctly!</h4>
+	</header>
+<hr>
+	<p>This package does not come with any framework pre-installed</p>
+	<p>This page will serve as a guide on how to add more packages or frameworks to the project</p>
+	<p>If you do not need any additonal frameworks or packages, replace this index.html with a blank one and start coding away</p>
+	<hr>
+	<h2>How to install frameworks</h2>
+	
+	<section class="example-box">
+		<h3>How to run a bower installation</h3>
+		<p>To use the bower file to run an installation simply run the following command in the command line of the home directory of the project</p>
+		<pre class="code-example"><code>
+grunt bower --verbose
+		</code></pre>
+		<p>You can run this task without the <strong class="code-text">--verbose</strong> command, but this allows you to see the output of what bower is doing so you can check that packages are being downloaded properly etc.</p>
+		<p><strong>Note: This requires grunt to be installed</strong></p>
+		<a href="http://gruntjs.com/getting-started">gruntjs.com/getting-started</a>
+	</section>
+
+	<section class="example-box">
+		<h3>Bootstrap</h3>
+		
+		<p>To install Bootstrap into the Project you need to modify <strong class="code-text">bower.json</strong></p>
+		<p>To modify <strong class="code-text">bower.json</strong> just open it with any text editor</p>
+		<br>
+		<p>In <strong class="code-text">dependencies</strong> add the following line of code</p>
+		<pre class="code-example"><code>
+"bootstrap-sass" : "latest"
+		</code></pre>
+		
+		<p>After the ending curly brace of <strong class="code-text">"exportsOverride" : {}</strong> add in </p>
+		<pre class="code-example"><code>
+"bootstrap-sass" : {
+      "scss" : "lib/*.scss",
+      "js" : [
+        "js/*.js",
+        "dist/js/bootstrap.min.js"
+      ],
+      "fonts" : "fonts/*"
+    },
+    </code></pre>
+		<p>Now in the command line run the installation using the following command</p>
+		<pre class="code-example"><code>
+grunt bower --verbose
+    </code></pre>
+	</section>
+	
+	<section class="example-box">
+		<h3>Foundation</h3>
+		
+		<p>To install Foundation into the Project you need to modify <strong class="code-text">bower.json</strong></p>
+		<p>To modify <strong class="code-text">bower.json</strong> just open it with any text editor</p>
+		<br>
+		<p>In <strong class="code-text">dependencies</strong> add the following line of code</p>
+		<pre class="code-example"><code>
+"foundation" : "latest"
+		</code></pre>
+		
+		<p>After the ending curly brace of <strong class="code-text">"exportsOverride" : {}</strong> add in </p>
+		<pre class="code-example"><code>
+"foundation": {
+      "scss/foundation": "scss/foundation/_functions.scss",
+      "scss/foundation/components/": "scss/foundation/components/*.scss",
+      "scss": "scss/*.scss",
+      "js/foundation" : "js/foundation/*.js",
+      "js/vendor" : "js/vendor/*.js"
+    },
+    </code></pre>
+		<p>Now in the command line run the installation using the following command</p>
+		<pre class="code-example"><code>
+grunt bower --verbose
+    </code></pre>
+	</section>
+	
+	<section class="example-box">
+		<h3>JQuery</h3>
+		
+		<p>To install JQuery into the Project you need to modify <strong class="code-text">bower.json</strong></p>
+		<p>To modify <strong class="code-text">bower.json</strong> just open it with any text editor</p>
+		<br>
+		<p>In <strong class="code-text">dependencies</strong> add the following line of code</p>
+		<pre class="code-example"><code>
+"jquery" : "latest"
+ 		</code></pre>
+		
+		<p>In <strong class="code-text">"exportsOverride"</strong> add</p>
+		<pre class="code-example"><code>
+"jquery" : {
+      "" : "dist/jquery.min.js"
+    </code></pre>
+
+		<p>and finally after <strong class="code-text">"fastclick" : {}</strong> add in </p>
+		<pre class="code-example"><code>
+"foundation": {
+      "scss/foundation": "scss/foundation/_functions.scss",
+      "scss/foundation/components/": "scss/foundation/components/*.scss",
+      "scss": "scss/*.scss",
+      "js/foundation" : "js/foundation/*.js",
+      "js/vendor" : "js/vendor/*.js"
+    },
+    </code></pre>
+		<p>Now in the command line run the installation using the following command</p>
+		<pre class="code-example"><code>
+grunt bower --verbose
+    </code></pre>
+	</section>
+	
+	<hr>
+	<h2>How to install Mixin Libraries</h2>
+	
+	<section class="example-box">
+		<h3>Compass</h3>
+		
+		<p>To install Compass you need to open the command line in the directory of your project you wish to install it and run the following command</p>
+		<pre class="code-example"><code>
+gem install compass
+ 		</code></pre>
+ 		<p><strong>Note: This requires Ruby to be installed</strong></p>
+ 		<a href="http://rubyinstaller.org/">rubyinstaller.org</a>
+	</section>
+
+	<section class="example-box">
+		<h3>Bourbon</h3>
+		<a href="http://bourbon.io/">Bourbon.io</a>
+		<br>
+		<br>
+		<p>To install Bourbon you need to open the command line in the directory of your project you wish to install it and run the following command</p>
+		<pre class="code-example"><code>
+$ gem install bourbon
+ 		</code></pre>
+		
+		<p>Next you need to run the installer to install Bourbon into the directory you are in</p>
+		<pre class="code-example"><code>
+bourbon install
+ 		</code></pre>
+ 		<p>This will install the Bourbon library</p>
+			
+ 		<p><strong>Note: This requires Ruby to be installed</strong></p>
+ 		<a href="http://rubyinstaller.org/">rubyinstaller.org</a>
+	</section>
+
+<hr>
+<h2>How to install Plugins</h2>
+
+	<section class="example-box">
+		<h3>HTML Validation</h3>
+		
+		<p>To install HTML Validation into the Project you need to modify <strong class="code-text">Gruntfile.js</strong> and <strong class="code-text">package.json</strong></p>
+		<p>To modify these files just open them with any text editor</p>
+		<br>
+		<h4>Gruntfile.js</h4>
+		<p>In <strong class="code-text">Gruntfile.js</strong> you will need to use the command <strong class="code-text">Ctrl + F</strong> and look for any piece of code commented out containing <strong class="code-text">"validation"</strong>  or <strong class="code-text">"valid"</strong></p>
+		<br>
+		<h4>package.json</h4>
+		<p>In <strong class="code-text">package.json</strong> you will need to add in the following line of code inside of <strong class="code-text">"devDependencies:"</strong></p>
+		
+		<pre class="code-example"><code>
+"grunt-html-validation": "latest"
+    </code></pre>
+		
+		<p><strong>Note: If it is in the list of all the packages, don't forget to add a comma at the end</strong></p>
+		<br>
+		<p>Finally, you need to create a file called <strong class="code-text">jshintrc.jshintrc</strong> in the home directory of the project (Same folder <strong class="code-text">Gruntfile.js</strong> is in and add the following code into it</p>
+		<pre class="code-example"><code>
+{
+  "browser" : true,
+  "devel" : true,
+  "camelcase" : true,
+  "nonbsp" : true,
+  "curly" : true,
+  "eqeqeq" : true,
+  "quotmark" : true,
+  "undef" : true,
+  "unused" : true
+}
+    </code></pre>
+		<br>
+		<p>Now in the command line run the installation using the following command</p>
+		<pre class="code-example"><code>
+npm install
+    </code></pre>
+	</section>
+
+	<section class="example-box">
+		<h3>JSHint</h3>
+		
+		<p>To install JSHint into the Project you need to modify <strong class="code-text">Gruntfile.js</strong> and <strong class="code-text">package.json</strong></p>
+		<p>To modify these files just open them with any text editor</p>
+		<br>
+		<h4>Gruntfile.js</h4>
+		<p>In <strong class="code-text">Gruntfile.js</strong> you will need to use the command <strong class="code-text">Ctrl + F</strong> and look for any piece of code commented out containing <strong class="code-text">"jshint"</strong></p>
+		<br>
+		<h4>package.json</h4>
+		<p>In <strong class="code-text">package.json</strong> you will need to add in the following line of code inside of <strong class="code-text">"devDependencies:"</strong></p>
+		
+		<pre class="code-example"><code>
+"grunt-contrib-jshint": "latest"
+    </code></pre>
+		
+		<p><strong>Note: If it is in the list of all the packages, don't forget to add a comma at the end</strong></p>
+		<br>
+		<p>Finally, you need to create a file called <strong class="code-text">jshintrc.jshintrc</strong> in the home directory of the project (Same folder <strong class="code-text">Gruntfile.js</strong> is in and add the following code into it</p>
+		<pre class="code-example"><code>
+{
+  "browser" : true,
+  "devel" : true,
+  "camelcase" : true,
+  "nonbsp" : true,
+  "curly" : true,
+  "eqeqeq" : true,
+  "quotmark" : true,
+  "undef" : true,
+  "unused" : true
+}
+    </code></pre>
+		<br>
+		<p>Now in the command line run the installation using the following command</p>
+		<pre class="code-example"><code>
+npm install
+    </code></pre>
+	</section>
+
+	<section class="example-box">
+		<h3>CSSlint</h3>
+		
+		<p>To install CSSlint into the Project you need to modify <strong class="code-text">Gruntfile.js</strong> and <strong class="code-text">package.json</strong></p>
+		<p>To modify these files just open them with any text editor</p>
+		<br>
+		<h4>Gruntfile.js</h4>
+		<p>In <strong class="code-text">Gruntfile.js</strong> you will need to use the command <strong class="code-text">Ctrl + F</strong> and look for any piece of code commented out containing <strong class="code-text">"csslint"</strong></p>
+		<br>
+		<h4>package.json</h4>
+		<p>In <strong class="code-text">package.json</strong> you will need to add in the following line of code inside of <strong class="code-text">"devDependencies:"</strong></p>
+		
+		<pre class="code-example"><code>
+"grunt-contrib-csslint": "latest"
+		</code></pre>
+		
+		<p><strong>Note: If it is in the list of all the packages, don't forget to add a comma at the end</strong></p>
+		<br>
+		<p>Finally, you need to create a file called <strong class="code-text">csslintrc.csslintrc</strong> in the home directory of the project (Same folder <strong class="code-text">Gruntfile.js</strong> is in and add the following code into it</p>
+		<pre class="code-example"><code>
+{
+  "important" : true,
+  "adjoining-classes" : false,
+  "known-properties" : 2,
+  "box-sizing" : true,
+  "box-model" : false,
+  "overqualified-elements" : true,
+  "display-property-grouping" : true,
+  "bulletproof-font-face" : true,
+  "compatible-vendor-prefixes" : true,
+  "regex-selectors" : true,
+  "errors" : true,
+  "duplicate-background-images" : true,
+  "duplicate-properties" : true,
+  "empty-rules" : 2,
+  "selector-max-approaching" : true,
+  "gradients" : true,
+  "fallback-colors" : true,
+  "font-sizes" : true,
+  "font-faces" : true,
+  "floats" : false,
+  "star-property-hack" : true,
+  "outline-none" : true,
+  "import" : true,
+  "ids" : false,
+  "underscore-property-hack" : true,
+  "rules-count" : true,
+  "qualified-headings" : false,
+  "selector-max" : true,
+  "shorthand" : true,
+  "text-indent" : true,
+  "unique-headings" : false,
+  "universal-selector" : true,
+  "unqualified-attributes" : true,
+  "vendor-prefix" : true,
+  "zero-units" : true
+}
+    </code></pre>
+		<br>
+		
+		<p>Now in the command line run the installation using the following command</p>
+		<pre class="code-example"><code>
+npm install
+    </code></pre>
+	</section>
+
+
+</section>
+</body>
+</html>

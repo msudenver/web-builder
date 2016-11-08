@@ -1,9 +1,3 @@
-
-50main.css
-
-newsroom.html
-
-presspage.css
-
-.tmp
-node_modules
+#MSU Denver homepage project
+/node_modules
+/.sass-cache
