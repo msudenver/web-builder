@@ -244,9 +244,6 @@ ul.breadcrumb a {
   padding-top: 12%
 }
 
-#top3>h5 {
-  margin-bottom: 0px;
-}
 
 /* User Profile */
 .contact-info > h4 {
@@ -262,17 +259,11 @@ ul.breadcrumb a {
   font-size:12pt !important;
   }
 
-  .contact-card > * > .img-circle {
-  max-height:145px;
-
-  }
-
  .contact-card > * >img.img-responsive {
-    height: 170px;
-  	width: 170px;
-    float: right;
-    position: relative;
-    bottom: 10px;
+   width: 155px;
+   border-radius: 50%;
+   padding: 5px;
+   display: inline;
 }
 
   .contact-info >hr {
