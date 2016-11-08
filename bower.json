@@ -1,0 +1,15 @@
+{
+  "name": "HTML Cutups Starter Kit",
+  "version": "0.0.2",
+  "authors": "Hugh Law, Paul Reid",
+  "dependencies" : {
+    
+  },
+
+  "exportsOverride" : {
+    
+    },
+
+    "fastclick": {},
+    "modernizr": {}
+}
