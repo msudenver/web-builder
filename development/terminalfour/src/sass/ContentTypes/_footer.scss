@@ -47,9 +47,6 @@
     }
 }
 
-.college-portrait {
-    float: right;
-}
 .footer .fa-2x {
     font-size: 1.75em;
 }
@@ -69,9 +66,6 @@ div#lhnContainerDone {display: none;}
 @media only screen and (max-width: 767px) {
   .footer-menu {
     text-align: center;
-  }
-  .desktop-msuinfo-show {
-    display: none;
   }
   .social-non-mobile i {
     display: none;
@@ -123,8 +117,5 @@ div#lhnContainerDone {display: none;}
   }
   .campus-info {
     padding-top: 0px;
-  }
-  .footer-menu {
-    padding-left: 3%;
   }
 }

@@ -44,8 +44,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
 
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" media="screen" href="styles/main2016.css" />
-<link rel="stylesheet" type="text/css" media="print" href="https://msudenver.edu/media/assets/css/print.css" />
+<link rel="stylesheet" href="style-assets/css/main2016.css">
 <!-- T4 CSS -->
 <t4 type="media" id="109887"/>
 <t4 type="media" id="61332"/>
@@ -71,13 +70,7 @@
 
 <body>
   <a href="#content" class="sr-only">Skip to main content</a>
-  <!-- *********************************  -->
-  <!-- Global Header STARTS HERE -->
-  <!-- *********************************  -->
-  <div w3-include-html="htmlcomponents/header.html"></div>
-  <!-- *********************************  -->
-  <!-- Global Header ENDS HERE -->
-  <!-- *********************************  -->
+  @@include('header.html')
 
 <!-- BEGINS BREADCRUMBS + SITEHEADER -->
 <div class="container">
@@ -202,7 +195,7 @@
 
 
 
-<div w3-include-html="htmlcomponents/footer.html"></div>
+  @@include('footer.html')
 
     <!-- ENDS FOOTER -->
 <!-- This code must be installed within the body tags -->
