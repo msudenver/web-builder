@@ -347,7 +347,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 /* style glyph */
 .inner-addon .glyphicon {
   position: absolute;
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
   pointer-events: none;
 }
 /* align glyph */
@@ -638,7 +638,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
     width: 101%;
   }
   .left-addon input {
-    padding-top: 10px;
+    padding-top: 20px !important;
     padding-bottom: 8px;
   }
   .blue-header {
