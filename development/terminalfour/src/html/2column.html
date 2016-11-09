@@ -70,13 +70,7 @@
 
 <body>
   <a href="#content" class="sr-only">Skip to main content</a>
-  <!-- *********************************  -->
-  <!-- Global Header STARTS HERE -->
-  <!-- *********************************  -->
-  <div w3-include-html="htmlcomponents/header.html"></div>
-  <!-- *********************************  -->
-  <!-- Global Header ENDS HERE -->
-  <!-- *********************************  -->
+  @@include('header.html')
 
 <!-- BEGINS BREADCRUMBS + SITEHEADER -->
 <div class="container">
@@ -201,7 +195,7 @@
 
 
 
-<div w3-include-html="htmlcomponents/footer.html"></div>
+  @@include('footer.html')
 
     <!-- ENDS FOOTER -->
 <!-- This code must be installed within the body tags -->
