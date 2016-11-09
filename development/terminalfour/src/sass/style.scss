@@ -1,7 +1,10 @@
 // Add your custom style declaration in this file
+@import "ContentTypes/variables";
+@import "ContentTypes/MainHeaderNavigation";
+@import "ContentTypes/footer";
 
 * {
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
 html,
@@ -13,17 +16,19 @@ body {
 	color: #333;
 }
 
-
 ul {
-  
+
   li{
     padding-left: 0;
   }
 }
+h1.hidden {
+    display: none;
+}
 
 hr {
-  width: 50%;
-  margin: 3em auto;
+  // width: 50%;
+  // margin: 3em auto;
   border: none;
   border-top: 1px solid #999;
 }
@@ -42,9 +47,14 @@ code {
 	max-width: 75em;
 	margin-left: auto;
 	margin-right: auto;
-	
+
 }
 
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
 .code-example {
   border-radius: .25em;
   padding-left: 2em;
@@ -81,13 +91,13 @@ code {
 h1, h2 { font-family: 'Raleway', Helvetica, sans-serif; }
 h1 { text-transform: uppercase;}
 
-.feature-heading { 
-    margin-top: 0; 
+.feature-heading {
+    margin-top: 0;
 }
 
 /* Components */
-header, section, footer { 
-    padding: 1.667rem 0; 
+header, section, footer {
+    padding: 1.667rem 0;
 }
 header { background-color: #505050; text-align: center; color: #fff; }
 
@@ -97,14 +107,14 @@ header { background-color: #505050; text-align: center; color: #fff; }
   body {
     font-size: 16px;
   }
-    
-  h1 { 
+
+  h1 {
       font-size: 2.500rem;    /* 40px */
   }
-  .feature-subtext { 
+  .feature-subtext {
     font-size:  1.875rem;    /* 30px */
   }
-  header, section, footer { 
-      padding: 4.125rem 0; /* 66px */  
+  header, section, footer {
+      padding: 4.125rem 0; /* 66px */
   }
 }
