@@ -1,10 +1,3 @@
-<<<<<<< HEAD
 #MSU Denver homepage project
 /node_modules
 /.sass-cache
-=======
-node_modules
-dist/
-.tmp
-app.yaml
->>>>>>> t4devtools
