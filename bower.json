@@ -2,6 +2,7 @@
   "name": "HTML Cutups Starter Kit",
   "version": "0.0.2",
   "authors": "Hugh Law, Paul Reid",
+<<<<<<< HEAD
   "dependencies" : {
     
   },
@@ -13,3 +14,15 @@
     "fastclick": {},
     "modernizr": {}
 }
+=======
+  "dependencies": {
+    "bootstrap-sass": "boostrap-sass#^3.3.7"
+  },
+  "exportsOverride": {},
+  "fastclick": {},
+  "modernizr": {},
+  "resolutions": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
+>>>>>>> 9bdf5ba69ada496fbac46dc39429f48df262d12c

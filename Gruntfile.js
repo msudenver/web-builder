@@ -189,7 +189,10 @@ module.exports = function(grunt) {
   */
   grunt.registerTask('server', [
     'express',
+<<<<<<< HEAD
     'copy',
+=======
+>>>>>>> 9bdf5ba69ada496fbac46dc39429f48df262d12c
     'watch',
     'express-keepalive'
   ]);
