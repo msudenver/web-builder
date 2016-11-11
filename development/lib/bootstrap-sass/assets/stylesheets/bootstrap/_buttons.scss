@@ -88,6 +88,13 @@ a.btn {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
 
+// Homepage button
+.btn-homepage {
+    @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 
 // Link buttons
 // -------------------------
