@@ -77,7 +77,6 @@ module.exports = function(grunt) {
           //compass: true,
         },//options
         files: {
-          'www-root/style-assets/css/framework.css': 'development/terminalfour/src/sass/framework.scss',
           'www-root/style-assets/css/style.css': 'development/terminalfour/src/sass/style.scss'
         }//files
       }//dist
@@ -138,7 +137,12 @@ module.exports = function(grunt) {
         files: [
           {expand: true, cwd: 'development/lib/', src: ['./**'], dest: 'www-root/style-assets/lib/', filter: 'isFile'}
         ]
-      }//main
+      },//main
+      media: {
+          files: [{
+              expand: true, flatten: true, src: ['development/terminalfour/src/media/*'], dest: 'www-root/style-assets/media/', filter: 'isFile'
+          }]
+      }
     },//copy
 
     watch: {
@@ -166,7 +170,12 @@ module.exports = function(grunt) {
       htmlcompile: {
         files: ['development/terminalfour/src/html/**/*.html'],
         tasks: ['includereplace']
-      }//htmlcompile
+      },//htmlcompile
+    
+      copymedia: {
+          files: ['development/terminalfour/src/html/**/*.html', 'development/**/**/**/*.scss'],
+          tasks: ['copy:media']
+      }
       
       //Uncomment the region below to add HTML Validation into the project (Dont forget to add a comment on the line above after the HTML compile curly braces right before the comment)
       // html: {

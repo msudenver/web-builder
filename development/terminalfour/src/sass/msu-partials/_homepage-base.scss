@@ -1,0 +1,31 @@
+/* Homepage base styles */
+.homepage-main {
+    @include container-fixed();
+}
+.homepage-feature { 
+    background-color: $gray-base;
+    @include make-row();
+    h1, h2, p { color: #fff; }
+    img {
+        @include img-responsive;
+    }
+    
+}
+.homepage-feature-block { 
+    @include make-sm-column(12);
+}
+.feature-heading { 
+    margin: 0 0 35px;
+    font-size: 3.438rem;
+    line-height: 4.500rem;
+}
+.feature-heading-large {
+    font-family: $font-family-sans-serif;
+    font-size: 60px;
+    line-height: 72px;
+    text-transform: uppercase;
+}
+.feature-subheading {
+    font-size: 40px;
+    line-height: 60px;
+}
