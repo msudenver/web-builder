@@ -4,9 +4,9 @@
 }
 .homepage-feature-caption-text {
     @include make-sm-column(12);
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #000;
+    padding-top: torem(50);
+    padding-bottom: torem(50);
+    background-color: $gray-base;
     text-align: right;
 }
 .homepage-feature-caption-link {
@@ -18,3 +18,17 @@
     color: #fff;
 } 
 /* End homepage-feature-caption partial */
+
+@media (min-width: 767px) {
+    .homepage-feature-caption-text {
+        position: absolute;
+        top: 400px;
+        background-color: rgba(0,0,0,0.7);
+        min-height: 320px;
+    }
+    .homepage-feature-caption-link {
+        
+        font-size: torem(25);
+        line-height: torem(30);
+    }
+}
