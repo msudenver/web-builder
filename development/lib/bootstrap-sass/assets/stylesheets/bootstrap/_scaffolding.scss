@@ -162,9 +162,9 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-    html { font-size: $font-size-base; }
+    html { font-size: $font-size-base; //16px }
     body {
-      font-size: $font-size-base;
+      font-size: $font-size-base; //16px 
       line-height: $line-height-small;
     }
 } 
