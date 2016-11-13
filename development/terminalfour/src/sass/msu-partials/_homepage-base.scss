@@ -24,9 +24,12 @@
     font-size: torem(60, $small-unit);
     text-transform: uppercase;
 }
-.feature-subheading {
+.feature-heading-sub {
     font-size: torem(40, $small-unit);
     line-height: torem(60, $small-unit);
+}
+.feature-text {
+    
 }
 .homepage-btn {
     font-family: $font-family-sans-serif;

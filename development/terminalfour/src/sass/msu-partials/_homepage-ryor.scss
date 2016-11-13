@@ -1,0 +1,21 @@
+//Run your own road feature
+#homepage-ryor {
+    
+    position: relative;
+}
+.ryor-student-image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.ryor-student {
+    @include make-xs-column(12);
+    z-index: 2;
+    padding-top: torem(50, 14);
+}
+.ryor-image {
+    @include make-sm-column(12);   
+    z-index: 2;
+}
