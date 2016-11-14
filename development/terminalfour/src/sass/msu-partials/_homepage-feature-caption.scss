@@ -4,6 +4,8 @@
 }
 .homepage-feature-caption-text {
     @include make-sm-column(12);
+    padding-top: toem(50);
+    padding-bottom: toem(50);
     padding-top: torem(50);
     padding-bottom: torem(50);
     background-color: $gray-base;
@@ -27,8 +29,8 @@
         min-height: 320px;
     }
     .homepage-feature-caption-link {
-        
+        font-size: toem(25);
         font-size: torem(25);
-        line-height: torem(30);
+        line-height: 30px;
     }
 }
