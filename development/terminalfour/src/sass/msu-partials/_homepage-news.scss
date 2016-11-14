@@ -1,0 +1,93 @@
+/* Homepage news items */
+#homepage-news {
+    padding-top: 50px;
+    padding-top: torem(50, $small-unit);
+    background: url(../media/newsbg_mobile.jpg) no-repeat;
+    background-size: cover;
+    .homepage-btn {
+        margin: 25px 0;
+        margin: torem(25) 0;
+    }
+}
+.home-news-features {
+    @include make-xs-column(12);
+ 
+    img { 
+        @include img-responsive;
+        width: 100%; 
+    }
+}
+.news-features {
+    @include make-row(0);
+ 
+}
+.news-feature, .news-feature-item {
+    padding-top: 20px;
+    padding-top: torem(20);
+    background: $gray-base;
+}
+.news-feature {
+    @include make-xs-column(12, 40px);
+    p { 
+        font-size: 28px;
+        font-size: torem(28);
+    }
+}
+
+.news-feature-items-wrap {
+    @include make-row();
+}
+.news-feature-items {
+    @include make-xs-column(12);
+    padding-top: 20px;
+}
+.news-feature-item {
+    @include make-xs-column(12);
+    margin-bottom: 20px;
+    margin-bottom: torem(20);
+}
+.news-feature-item:last-child {
+    margin-bottom: 0;
+}
+.news-item-heading {    
+    font-size: 26px;
+    font-size: torem(26);
+    margin: 25px 0;
+    margin: torem(25) 0;
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .news-feature {
+        @include make-xs-column(7);
+        .feature-heading {
+            font-size: 48px;
+            font-size: torem(48);
+        }
+        p { 
+            font-size: 28px;
+            font-size: torem(28);
+        }
+    }
+    .news-feature-items {
+        @include make-xs-column(5);
+        padding-top: 0
+    }
+    
+}
+
+@media (min-width: $screen-lg-min) {
+    #homepage-news {
+        padding-top: 50px;
+        padding-top: torem(50, $small-unit);
+        background: url(../media/newsbg.jpg) no-repeat;
+        background-size: cover;
+        .homepage-btn {
+            margin: 25px 0;
+            margin: torem(25) 0;
+        }
+    }
+    .news-item-heading {
+        margin: 20px 0 20px;
+        margin: torem(20) 0 torem(20);
+    }
+}

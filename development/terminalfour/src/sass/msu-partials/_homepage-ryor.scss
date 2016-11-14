@@ -2,8 +2,8 @@
 #homepage-ryor {
     margin-top: toem(10);
     margin-top: torem(10);
-    margin-top: toem(10);
-    margin-top: torem(10);
+    margin-bottom: toem(10);
+    margin-bottom: torem(10);
     position: relative;
     .feature-heading { 
         margin: 0 0 toem(10, $small-unit);
@@ -27,44 +27,54 @@
     .feature-heading, .feature-heading-sub, .feature-text {
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.77);
     }
+    .homepage-btn {
+        position: relative;
+        bottom: calc(20px);
+        right: calc(15px);
+        z-index: 3;
+    }
 }
 
-.ryor-student-image-wrap {
-    position: relative;
-}
 .ryor-student-image {
-    width: 100%;
+    @include img-responsive ;
     position: relative;
     top: 0;
     left: 0; 
     z-index: 0;
 }
 /* IMage gradient overlay */
-.ryor-student-image-wrap::before {
+.ryor-student::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     z-index: 1;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+80,1+100 */
     background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,1) 100%); 
     background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,1) 100%); 
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,1) 100%); 
-    
 }
 .ryor-student {
-    position: relative;
-    @include make-xs-column(12);
-    z-index: 2;
-//    padding-top: toem(50, 14);
-//    padding-top: torem(50, 14);
-    top: calc(-200px);
+    padding-top: toem(50, 14);
+    padding-top: torem(50, 14);
 }
 .ryor-image {
-    @include make-sm-column(12);   
+    color: $white;
+    overflow: visible;
+    svg { 
+        min-height: 300px;
+        min-width: 300px;
+    }
+}
+.ryor-student, .ryor-image {
+    @include make-xs-column(12);   
+
     z-index: 2;
 }
-@media (min-width: $screen-sm-min) {
+
+@media (min-width: $screen-lg-min) {    
     #homepage-ryor {
         .feature-heading-sub {
             font-size: toem(36, $small-unit);
@@ -75,6 +85,13 @@
         }
         .homepage-btn {
             float: left;
+            left: calc(15px);
         }
+    }
+    .ryor-image {
+        @include make-lg-column(5);
+    }
+    .ryor-student {
+        @include make-lg-column(7);
     }
 }

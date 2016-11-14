@@ -7441,13 +7441,8 @@ header {
 .homepage-feature h1, .homepage-feature h2, .homepage-feature p {
   color: #fff;
 }
-.homepage-feature h1 {
-  line-height: 48px;
-}
-.homepage-feature img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.homepage-feature svg {
+  fill: currentColor;
 }
 
 .homepage-feature-block {
@@ -7464,31 +7459,34 @@ header {
 }
 
 .feature-heading {
-  margin: 0 0 2.5em;
-  margin: 0 0 2.5rem;
-  font-size: 2.85714em;
+  font-size: 40px;
   font-size: 2.85714rem;
+  line-height: 1.5;
+  margin: 0 0 35px;
+  margin: 0 0 2.5rem;
 }
 
 .feature-heading-large {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2.85714em;
+  font-size: 40px;
   font-size: 2.85714rem;
-  line-height: 60;
+  line-height: 1.5;
+  margin: 0 0 25px;
+  margin: 0 0 1.78571rem;
   text-transform: uppercase;
 }
 
 .feature-heading-sub {
-  font-size: 3.42857em;
-  font-size: 3.42857rem;
+  font-size: 40px;
+  font-size: 2.85714rem;
   line-height: 60px;
 }
 
 .feature-text {
-  font-size: 2.57143em;
-  font-size: 2.57143rem;
+  font-size: 30px;
+  font-size: 2.14286rem;
   font-weight: 400;
-  margin: 0 0 2.5em;
+  margin: 0 0 35px;
   margin: 0 0 2.5rem;
 }
 
@@ -7497,7 +7495,7 @@ header {
   font-weight: 900;
   font-size: 1.78571em;
   font-size: 1.78571rem;
-  padding: 0.625em 1.875em;
+  padding: 10px 30px;
   padding: 0.625rem 1.875rem;
   color: #003a6e;
   background-color: #fff;
@@ -7506,26 +7504,33 @@ header {
   float: right;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .homepage-feature h1 {
     line-height: 48px;
   }
 
   .feature-heading {
-    font-size: 2.75em;
+    font-size: 44px;
     font-size: 2.75rem;
     margin-bottom: 1.875em;
     margin-bottom: 1.875rem;
   }
 
+  .feature-heading-large {
+    font-size: 40px;
+    font-size: 2.85714rem;
+    line-height: 60;
+    margin: 0 0 25px;
+    margin: 0 0 1.78571rem;
+  }
+
   .homepage-btn {
     font-family: "Karla", "Georgia", "Times New Roman", Times, serif;
     font-weight: 700;
-    font-size: 1.5625em;
-    font-size: 1.5625rem;
+    font-size: 30px;
+    font-size: 1.875rem;
     padding-left: 0;
     padding-right: 0;
-    background-color: trasparent;
     color: #fff;
     background-color: transparent;
     float: right;
@@ -7537,6 +7542,13 @@ header {
   }
 }
 /* Homepage-feature-caption partial */
+.homepage-feature-caption-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
 .homepage-feature-caption-text {
   position: relative;
   min-height: 1px;
@@ -7557,6 +7569,9 @@ header {
 }
 
 .homepage-feature-caption-link {
+  font-size: 1.5625em;
+  font-size: 1.5625rem;
+  line-height: 30px;
   display: block;
   text-transform: uppercase;
   color: #fff;
@@ -7567,12 +7582,13 @@ header {
 }
 
 /* End homepage-feature-caption partial */
-@media (min-width: 767px) {
+@media (min-width: 992px) {
   .homepage-feature-caption-text {
+    width: 75%;
     position: absolute;
-    top: 400px;
+    top: calc(28%);
+    right: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    min-height: 320px;
   }
 
   .homepage-feature-caption-link {
@@ -7581,11 +7597,33 @@ header {
     line-height: 30px;
   }
 }
+@media (min-width: 1200px) {
+  .homepage-feature-caption-text {
+    top: calc(40%);
+  }
+}
+@media (min-width: 1300px) {
+  .homepage-feature-caption-text {
+    width: 58.33333%;
+    padding-right: 8.33333%;
+    top: calc(45%);
+  }
+}
+@media (min-width: 1500px) {
+  .homepage-feature-caption-text {
+    top: calc(50%);
+  }
+}
+@media (min-width: 1600px) {
+  .homepage-feature-caption-text {
+    top: calc(70%);
+  }
+}
 #homepage-ryor {
   margin-top: 0.625em;
   margin-top: 0.625rem;
-  margin-top: 0.625em;
-  margin-top: 0.625rem;
+  margin-bottom: 0.625em;
+  margin-bottom: 0.625rem;
   position: relative;
 }
 #homepage-ryor .feature-heading {
@@ -7609,13 +7647,17 @@ header {
 #homepage-ryor .feature-heading, #homepage-ryor .feature-heading-sub, #homepage-ryor .feature-text {
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.77);
 }
-
-.ryor-student-image-wrap {
+#homepage-ryor .homepage-btn {
   position: relative;
+  bottom: calc(20px);
+  right: calc(15px);
+  z-index: 3;
 }
 
 .ryor-student-image {
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
   position: relative;
   top: 0;
   left: 0;
@@ -7623,11 +7665,13 @@ header {
 }
 
 /* IMage gradient overlay */
-.ryor-student-image-wrap::before {
+.ryor-student::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
   z-index: 1;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+80,1+100 */
   background: -moz-linear-gradient(top, transparent 0%, transparent 80%, black 100%);
@@ -7636,7 +7680,20 @@ header {
 }
 
 .ryor-student {
-  position: relative;
+  padding-top: 3.57143em;
+  padding-top: 3.57143rem;
+}
+
+.ryor-image {
+  color: #fff;
+  overflow: visible;
+}
+.ryor-image svg {
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.ryor-student, .ryor-image {
   position: relative;
   float: left;
   width: 100%;
@@ -7644,24 +7701,9 @@ header {
   padding-left: 15px;
   padding-right: 15px;
   z-index: 2;
-  top: calc(-200px);
 }
 
-.ryor-image {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  z-index: 2;
-}
-@media (min-width: 768px) {
-  .ryor-image {
-    float: left;
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   #homepage-ryor .feature-heading-sub {
     font-size: 2.57143em;
     font-size: 2.57143em;
@@ -7671,6 +7713,183 @@ header {
   }
   #homepage-ryor .homepage-btn {
     float: left;
+    left: calc(15px);
+  }
+
+  .ryor-image {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .ryor-image {
+    float: left;
+    width: 41.66667%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ryor-student {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .ryor-student {
+    float: left;
+    width: 58.33333%;
+  }
+}
+
+/* Homepage news items */
+#homepage-news {
+  padding-top: 50px;
+  padding-top: 3.57143rem;
+  background: url(../media/newsbg_mobile.jpg) no-repeat;
+  background-size: cover;
+}
+#homepage-news .homepage-btn {
+  margin: 25px 0;
+  margin: 1.5625rem 0;
+}
+
+.home-news-features {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.home-news-features img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.news-features {
+  margin-left: 0;
+  margin-right: 0;
+}
+.news-features:before, .news-features:after {
+  content: " ";
+  display: table;
+}
+.news-features:after {
+  clear: both;
+}
+
+.news-feature, .news-feature-item {
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  background: #000;
+}
+
+.news-feature {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.news-feature p {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+
+.news-feature-items-wrap {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.news-feature-items-wrap:before, .news-feature-items-wrap:after {
+  content: " ";
+  display: table;
+}
+.news-feature-items-wrap:after {
+  clear: both;
+}
+
+.news-feature-items {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+}
+
+.news-feature-item {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+}
+
+.news-feature-item:last-child {
+  margin-bottom: 0;
+}
+
+.news-item-heading {
+  font-size: 26px;
+  font-size: 1.625rem;
+  margin: 25px 0;
+  margin: 1.5625rem 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .news-feature {
+    position: relative;
+    float: left;
+    width: 58.33333%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .news-feature .feature-heading {
+    font-size: 48px;
+    font-size: 3rem;
+  }
+  .news-feature p {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+
+  .news-feature-items {
+    position: relative;
+    float: left;
+    width: 41.66667%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  #homepage-news {
+    padding-top: 50px;
+    padding-top: 3.57143rem;
+    background: url(../media/newsbg.jpg) no-repeat;
+    background-size: cover;
+  }
+  #homepage-news .homepage-btn {
+    margin: 25px 0;
+    margin: 1.5625rem 0;
+  }
+
+  .news-item-heading {
+    margin: 20px 0 20px;
+    margin: 1.25rem 0 1.25rem;
   }
 }
 

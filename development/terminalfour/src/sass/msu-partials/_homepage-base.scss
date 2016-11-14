@@ -5,40 +5,38 @@
 .homepage-feature { 
     background-color: $gray-base;
     @include make-row();
-    h1, h2, p { color: #fff; }
-    h1 { line-height: 48px; }
-    img {
-        @include img-responsive;
-    }
-    
+    h1, h2, p { color: #fff;  }
+    svg { fill: currentColor; } 
 }
 .homepage-feature-block { 
     @include make-sm-column(12);
 }
 .feature-heading { 
-    margin: 0 0 toem(35, $small-unit);
-    margin: 0 0 torem(35, $small-unit);
-    font-size: toem(40, $small-unit); //55px @ 12px
+    font-size: 40px; //55px @ 12px
     font-size: torem(40, $small-unit); //55px @ 12px
+    line-height: 1.5;
+    margin: 0 0 35px;
+    margin: 0 0 torem(35, $small-unit);
 }
 .feature-heading-large {
     font-family: $font-family-sans-serif;
-    font-size: toem(40, $small-unit);
+    font-size: 40px;
     font-size: torem(40, $small-unit);
-    line-height: 60;
+    line-height: 1.5;
+    margin: 0 0 25px;
+    margin: 0 0 torem(25, $small-unit);
     text-transform: uppercase;
 }
 .feature-heading-sub {
-    font-size: toem(48, $small-unit);
-    font-size: torem(48, $small-unit);
-    
+    font-size: 40px;
+    font-size: torem(40, $small-unit);
     line-height: 60px;
 }
 .feature-text { 
-    font-size: toem(36, $small-unit); //55px @ 12px
-    font-size: torem(36, $small-unit); //55px @ 12px
+    font-size: 30px; //55px @ 12px
+    font-size: torem(30, $small-unit); //55px @ 12px
     font-weight: 400;
-    margin: 0 0 toem(35, $small-unit);
+    margin: 0 0 35px;
     margin: 0 0 torem(35, $small-unit);
 
 }
@@ -47,7 +45,7 @@
     font-weight: 900;
     font-size: toem(25, $small-unit); //33px @ 14px
     font-size: torem(25, $small-unit); //33px @ 14px
-    padding: toem(10) toem(30);
+    padding: 10px 30px;
     padding: torem(10) torem(30);
     color: $msu-blue;
     background-color: $white;
@@ -56,24 +54,31 @@
     float: right;
 }
 
-@media (min-width: $screen-sm-min) {
+@media (min-width: $screen-lg-min) {
     .homepage-feature {
         h1 { line-height: 48px;  }
     }
     .feature-heading {
-        font-size: toem(44, $base-unit);
+        font-size: 44px;
         font-size: torem(44, $base-unit);
         margin-bottom: toem(30, $base-unit);
         margin-bottom: torem(30, $base-unit);
     }
+    .feature-heading-large {
+        font-size: 40px;
+        font-size: torem(40, $small-unit);
+        line-height: 60;
+        margin: 0 0 25px;
+        margin: 0 0 torem(25, $small-unit);
+        
+    }
     .homepage-btn {
         font-family: $font-family-serif;
         font-weight: 700;
-        font-size: toem(25, $base-unit); //33px @ 14px
-        font-size: torem(25, $base-unit); //33px @ 14px
+        font-size: 30px; //33px @ 14px
+        font-size: torem(30, $base-unit); //33px @ 14px
         padding-left: 0;
         padding-right: 0;
-        background-color: trasparent;
         color: $white;
         background-color: transparent;
 

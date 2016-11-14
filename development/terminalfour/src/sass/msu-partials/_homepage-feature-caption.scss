@@ -2,6 +2,10 @@
 .homepage-feature-caption-item {
     
 }
+.homepage-feature-caption-img {
+    @include img-responsive ;
+    width: 100%;
+}
 .homepage-feature-caption-text {
     @include make-sm-column(12);
     padding-top: toem(50);
@@ -12,6 +16,9 @@
     text-align: right;
 }
 .homepage-feature-caption-link {
+    font-size: toem(25);
+    font-size: torem(25);
+    line-height: 30px;
     display: block;
     text-transform: uppercase;
     color: #fff;  
@@ -21,16 +28,45 @@
 } 
 /* End homepage-feature-caption partial */
 
-@media (min-width: 767px) {
+@media (min-width: $screen-md-min) {
     .homepage-feature-caption-text {
+        width: percentage((9 / $grid-columns));
         position: absolute;
-        top: 400px;
+        top: calc(28%);
+        right: 0;
         background-color: rgba(0,0,0,0.7);
-        min-height: 320px;
+        //min-height: 320px;
     }
     .homepage-feature-caption-link {
         font-size: toem(25);
         font-size: torem(25);
         line-height: 30px;
+    }
+}
+@media (min-width: $screen-lg-min) {
+    .homepage-feature-caption-text {
+        
+        
+        top: calc(40%);
+    }
+}
+@media (min-width: 1300px) {
+    .homepage-feature-caption-text {
+        width: percentage((7 / $grid-columns));
+        padding-right: percentage((1 / $grid-columns));
+        top: calc(45%);
+        
+    }
+}
+@media (min-width: 1500px) {
+    .homepage-feature-caption-text {
+        top: calc(50%);
+
+    }
+}
+@media (min-width: 1600px) {
+    .homepage-feature-caption-text {
+        top: calc(70%);
+
     }
 }
