@@ -1,0 +1,10 @@
+[
+    {
+        "from": "original/path/goes/here",
+        "to": "t4tag goes here"
+    },
+    {
+        "from": "original/path/goes/here",
+        "to": "t4tag goes here"
+    }
+]
