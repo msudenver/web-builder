@@ -495,12 +495,14 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   margin-right: 0em; }
 
 .nav > li > a {
+
   padding-left: 0px;
   padding-top: 3px; }
 
 .mobile-header {
   cursor: pointer;
   border-right: 1px solid #337ab7; }
+
 
 @media screen and (max-width: 450px) {
   .navbar-toggle {
