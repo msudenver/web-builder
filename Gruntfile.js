@@ -7,6 +7,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-include-replace');
   grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-svg-sprite');
   //grunt.loadNpmTasks('grunt-parallel');
 
 
@@ -77,9 +78,7 @@ module.exports = function(grunt) {
           //compass: true,
         },//options
         files: {
-          'www-root/style-assets/css/framework.css': 'development/terminalfour/src/sass/framework.scss',
-          'www-root/style-assets/css/style.css': 'development/terminalfour/src/sass/style.scss',
-          'www-root/style-assets/css/main2016.css': 'development/terminalfour/src/sass/main2016.scss'
+          'www-root/style-assets/css/style.css': 'development/terminalfour/src/sass/style.scss'
         }//files
       }//dist
     },//sass
@@ -139,7 +138,12 @@ module.exports = function(grunt) {
         files: [
           {expand: true, cwd: 'development/lib/', src: ['./**'], dest: 'www-root/style-assets/lib/', filter: 'isFile'}
         ]
-      }//main
+      },//main
+      media: {
+          files: [{
+              expand: true, flatten: true, src: ['development/terminalfour/src/media/*'], dest: 'www-root/style-assets/media/', filter: 'isFile'
+          }]
+      }
     },//copy
 
     watch: {
@@ -167,7 +171,12 @@ module.exports = function(grunt) {
       htmlcompile: {
         files: ['development/terminalfour/src/html/**/*.html'],
         tasks: ['includereplace']
-      }//htmlcompile
+      },//htmlcompile
+
+      copymedia: {
+          files: ['development/terminalfour/src/html/**/*.html', 'development/**/**/**/*.scss'],
+          tasks: ['copy:media']
+      }
 
       //Uncomment the region below to add HTML Validation into the project (Dont forget to add a comment on the line above after the HTML compile curly braces right before the comment)
       // html: {
@@ -175,8 +184,26 @@ module.exports = function(grunt) {
       //   tasks: ['validation']
       // }
 
-    }//watch
+    },//watch
 
+    /*  Grunt SVG sprite
+        https://www.npmjs.com/package/grunt-svg-sprite
+        For more options see https://github.com/jkphl/svg-sprite/blob/master/docs/configuration.md
+    */
+    svg_sprite: {
+
+        svg_files: {
+            expand: true,
+            cwd: 'development/terminalfour/src/media',
+            src			: ['**/*.svg'],
+            dest		: 'www-root/style-assets/media/',
+            options: {
+                mode: {
+                    defs: true
+                }
+            }
+        }
+    }
   });
 
   // Default task(s).
