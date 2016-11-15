@@ -1,0 +1,41 @@
+
+/* Calls to action */
+
+.calls-to-action {
+    padding: 25px;
+    background: url("/images/homepagespring2016/calltoactbg.png") no-repeat;
+    // background: url("<t4 type='media' id='104546' formatter='image/path'/>") no-repeat;
+    background-size: cover;
+    background-color: rgba(52, 152, 219, 0.72);
+    margin-bottom: 15px;
+}
+.calls-to-action > hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.calls-to-action > h3 > a {
+    color: #F1F0F0;
+    font-weight: 100;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+  .calls-to-action {
+      height: 460px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .calls-to-action {
+      height: 446px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+    .calls-to-action > h3 > a {
+        font-size: 1.5em;
+    }
+
+}
