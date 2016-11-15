@@ -1,0 +1,104 @@
+/* Hompeage at a glance */
+#homepage-at-a-glance {
+    @include make-row(); 
+    background-color: $white;
+    .feature-heading-large, .feature-text {
+        color: $gray-base;    
+        margin-bottom: 0;
+    }
+    svg {
+        width: 70%;
+        height: 20px;
+        fill: #9A9A9A;
+    }
+}
+
+/* At a glance grid */
+.at-a-glance {
+    @include make-xs-column(12);
+}
+.at-a-glance-items {
+    @include make-row();
+    padding-top: 32px;
+    padding-top: torem(32);
+}
+.at-a-glance-item {
+    text-align: center;
+    @include make-xs-column(12);
+    margin-bottom: 24px;
+    margin-bottom: torem(24);
+}
+/* At a glance items */
+.at-a-glance-img, .at-a-glance-text-wrap {
+    padding: 0 15px;
+    padding: 0 torem(15);
+ 
+}
+.at-a-glance-img {
+    img { 
+        @include img-responsive; 
+        margin: 0 auto;
+        max-width: 75%;
+    }
+}
+
+.at-a-glance-stat {
+    font-size: 32px;
+    font-size: torem(32);
+    font-weight: 700; 
+    color: $msu-red; 
+}
+.at-a-glance-text {
+    font-size: 24px;
+    font-size: torem(24);
+    line-height: 1.3;
+    font-weight: 700;
+    color: $gray-base; 
+}
+.at-a-glance-line {
+    
+}
+/*@media (max-width: $screen-xs-max) {
+    .at-a-glance-img, .at-a-glance-text-wrap {
+        position: relative;
+        top: 50%;
+        transform:         translateY(50%);
+        -webkit-transform: translateY(50%);
+        -moz-transform:    translateY(50%);
+    }    
+}*/
+@media (min-width: 531px) and (max-width: $screen-xs-max) {
+    .at-a-glance-img, .at-a-glance-text-wrap {
+        padding: 0 15px;
+        padding: 0 torem(15);
+        width: 50%;
+        float: left;
+    }
+}
+@media (min-width: $screen-sm-min) {
+    .at-a-glance-item {
+        @include make-sm-column(4);   
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    #homepage-at-a-glance {
+        padding: 50px percentage(1/$grid-columns);
+        padding: torem(50, $small-unit) percentage(1/$grid-columns);
+    }
+    /* At a glance items */
+    .at-a-glance-img {
+        img {  }
+    }
+    .at-a-glance-stat {
+        font-size: 54px;
+        font-size: torem(54);
+    }
+    .at-a-glance-text {
+        font-size: 30px;
+        font-size: torem(30);
+    }
+    .at-a-glance-line {
+
+    }
+}

@@ -20,14 +20,14 @@
 // Body reset
 
 html {
-  font-size: 10px;
+  font-size: $font-size-small;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
   font-family: $font-family-base;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
+  font-size: $font-size-small;
+  line-height: $line-height-small;
   color: $text-color;
   background-color: $body-bg;
 }
@@ -74,6 +74,7 @@ figure {
 // Images
 
 img {
+    
   vertical-align: middle;
 }
 
@@ -159,3 +160,12 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
+
+@media screen and (min-width: 768px) {
+    html { font-size: $font-size-base; }//16px
+    body {
+      font-size: $font-size-base; //16px 
+      line-height: $line-height-small;
+    }
+} 
+

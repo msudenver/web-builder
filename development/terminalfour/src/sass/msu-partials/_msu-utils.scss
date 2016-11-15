@@ -1,0 +1,8 @@
+//Converts pixles to rems
+@function torem($pixels, $context: 16) {
+  @return #{$pixels/$context}rem;
+}
+//Converts pixles to ems
+@function toem($pixels, $context: 16) {
+  @return #{$pixels/$context}em;
+}
