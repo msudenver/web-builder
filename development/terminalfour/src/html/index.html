@@ -3,13 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1">
-
 	<title>MSU Denver - Homepage</title>
-    
     <link href="//fonts.googleapis.com/css?family=Karla:400,700|Open+Sans:400,400i,700|Raleway:400,700,900" rel="stylesheet">
-	<link rel="stylesheet" href="style-assets/css/framework.css">
 	<link rel="stylesheet" href="style-assets/css/style.css">
-
 </head> 
     <body>  
         @@include('header.html') 
@@ -17,18 +13,10 @@
             @@include('homepage-feature-caption.html')   
             @@include('homepage-ryor.html')  
             @@include('homepage-news.html') 
-            <section class="homepage-feature" id="homepage-at-a-glance"> 
-                <h1 class="feature-heading">MSHU Denver at a glance</h1>
-                <p class="feature-subtext">Diverse. Transformative. Game-changing.</p>
-            </section>
-            <section class="homepage-feature" id="homepage-quote">
-                <h1 class="feature-heading">LOCATED IN THE HEART OF THE CITY, MSU DENVER OFFERS AN URBAN EXPERIENCE THAT IS VIBRANT, DIVERSE, EXCITING AND UNIQUE.</h1> 
-                <p><a href="javascript:void(0)" class="btn homepage-btn">Read More</a></p>
-            </section>
-            <section class="homepage-feature" id="homepage-events">
-                <h1 class="feature-heading">What's happening right now at MSU Denver</h1>
-                 <p><a href="javascript:void(0)" class="btn homepage-btn">See all upcoming events</a></p>
-            </section>
+            @@include('homepage-at-a-glance.html') 
+            @@include('homepage-community.html') 
+            @@include('homepage-events.html') 
+            
         </main>
         @@include('footer.html') 
     </body>

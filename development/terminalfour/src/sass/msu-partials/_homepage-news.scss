@@ -1,13 +1,20 @@
 /* Homepage news items */
 #homepage-news {
-    padding-top: 50px;
-    padding-top: torem(50, $small-unit);
+    padding-top: 36px;
+    padding-top: torem(36, $small-unit);
+    padding-bottom: 36px;
+    padding-bottom: torem(36, $small-unit);
     background: url(../media/newsbg_mobile.jpg) no-repeat;
     background-size: cover;
-    .homepage-btn {
-        margin: 25px 0;
-        margin: torem(25) 0;
+    .feature-text {
+        margin-bottom: 0;
     }
+    p { color: #fff; }
+    .homepage-btn {
+        margin: 32px 0 0;
+        margin: torem(32) 0 0;
+    }
+    
 }
 .home-news-features {
     @include make-xs-column(12);
@@ -19,74 +26,102 @@
 }
 .news-features {
     @include make-row(0);
- 
+    margin-top: 36px;
+    margin-top: torem(36, $small-unit);
 }
-.news-feature, .news-feature-item {
-    padding-top: 20px;
-    padding-top: torem(20);
-    background: $gray-base;
+.news-feature, .news-feature__large { 
+    @include make-xs-column(12, 0);    
+    padding-top: 15px;
+    padding-top: torem(15); 
 }
-.news-feature_large {
-    @include make-xs-column(12, 40px);
+.news-features__small {
+    @include make-xs-column(12);
+    
+}
+.news-feature__large {
+    padding-top: 0;
     p { 
-        font-size: 28px;
-        font-size: torem(28);
+        font-size: 22px;
+        font-size: torem(22);
     }
+    background: $gray-base;
+
 }
 
 .news-features__small-row {
     @include make-row();
 }
-.news-feature-items {
-    @include make-xs-column(12);
-    padding-top: 20px;
+.news-feature-image, .news-feature-text {
+    padding: 15px;
+     padding: torem(15);
+    background: $gray-base;
 }
-.news-features__small {
-    @include make-xs-column(12);
-    margin-bottom: 20px;
-    margin-bottom: torem(20);
+.news-feature-text {
+    padding-top: 0;
 }
-.news-feature-item:last-child {
-    margin-bottom: 0;
-}
-.news-item-heading {    
+
+.news-feature-heading {    
     font-size: 26px;
     font-size: torem(26);
     margin: 25px 0;
-    margin: torem(25) 0;
+    margin: 0 0 0;
 }
 
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    .news-feature_large {
-        @include make-xs-column(12);
-        .feature-heading {
-            font-size: 48px;
-            font-size: torem(48);
+@media (min-width: $screen-sm-min) {
+    .news-feature__large {
+        
+         margin-bottom: 1.771479185119575%;
+        .news-feature-image, .news-feature-text { float: left;}
+        .news-feature-image { 
+            width: percentage((7 / $grid-columns));
         }
-        p { 
-            font-size: 28px;
-            font-size: torem(28);
+        .news-feature-text {
+            width: percentage((5 / $grid-columns));
         }
     }
-    .news-feature-items {
-        @include make-xs-column(12);
-        padding-top: 0
+    .news-features__small {
+        padding-top: 0;
+        .news-feature {
+            padding: 0;
+            width: 49.01055408970976%; /* 758px - 15px gutter / 2 */
+                
+            &:first-child {
+                margin-right: 0.98944591029024%; /* (15px gutter / 2) / 758px */
+               
+            }
+            &:last-child {
+                 margin-left: 0.98944591029024%; /* (15px gutter / 2) / 758px */
+            }
+        }
     }
-    .news-feature-item {
-        @include make-xs-column(6);
-    }
-    
 }
 
 @media (min-width: $screen-lg-min) {
     #homepage-news {
-        padding-top: 50px;
-        padding-top: torem(50, $small-unit);
+        padding: 50px percentage(1/$grid-columns);
+        padding: torem(50, $small-unit) percentage(1/$grid-columns);
         background: url(../media/newsbg.jpg) no-repeat;
         background-size: cover;
+
         .homepage-btn {
             margin: 25px 0;
             margin: torem(25) 0;
+        }
+    }
+    .news-feature__large {
+        @include make-lg-column(7); 
+         @include make-lg-column-push(5);
+        .news-feature-image, .news-feature-text { float: none; width: 100%;}
+    }
+    .news-features__small {
+        @include make-lg-column(5); 
+        @include make-lg-column-pull(7); 
+        .news-feature {
+            width: 100%;
+            margin: 0;
+            &:last-child {
+                margin: 0;
+            }
         }
     }
     .news-item-heading {

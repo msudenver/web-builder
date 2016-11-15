@@ -8,17 +8,14 @@
 }
 .homepage-feature-caption-text {
     @include make-sm-column(12);
-    padding-top: toem(50);
-    padding-bottom: toem(50);
-    padding-top: torem(50);
-    padding-bottom: torem(50);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-top: torem(16);
+    padding-bottom: torem(16);
     background-color: $gray-base;
     text-align: right;
 }
 .homepage-feature-caption-link {
-    font-size: toem(25);
-    font-size: torem(25);
-    line-height: 30px;
     display: block;
     text-transform: uppercase;
     color: #fff;  
@@ -37,16 +34,12 @@
         background-color: rgba(0,0,0,0.7);
         //min-height: 320px;
     }
-    .homepage-feature-caption-link {
-        font-size: toem(25);
-        font-size: torem(25);
-        line-height: 30px;
-    }
 }
 @media (min-width: $screen-lg-min) {
     .homepage-feature-caption-text {
         
-        
+        padding: 50px 15px ;
+        padding: torem(50) torem(15) ;
         top: calc(40%);
     }
 }
@@ -66,7 +59,7 @@
 }
 @media (min-width: 1600px) {
     .homepage-feature-caption-text {
-        top: calc(70%);
+        top: calc(55%);
 
     }
 }
