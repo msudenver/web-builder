@@ -1,0 +1,13 @@
+/* Homepage community compontent */
+#homepage-community {
+    background-color: $msu-blue;
+}
+.hompage-community {
+    @include make-xs-column(12);
+}
+@media (min-width: $screen-md-min) {
+    #homepage-community {
+        padding: 50px percentage(1/$grid-columns);
+        padding: torem(50, $small-unit) percentage(1/$grid-columns);
+    }
+}
