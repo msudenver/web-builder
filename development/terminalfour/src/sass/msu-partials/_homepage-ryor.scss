@@ -4,6 +4,7 @@
     margin-top: torem(8);
     margin-bottom: toem(8);
     margin-bottom: torem(8);
+    padding: 0;
     position: relative;
     .feature-heading { 
         
@@ -38,6 +39,7 @@
 
 .ryor-student-image {
     @include img-responsive ;
+   
     position: relative;
     top: 0;
     left: 0; 
@@ -60,8 +62,13 @@
 .ryor-student {
     padding-top: 32px;
     padding-top: torem(32);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .ryor-image {
+     background: url('../media/RYOR_bg.jpg') no-repeat ;
     color: $white;
     overflow: visible;
     svg { 
@@ -103,6 +110,7 @@
     }
     .ryor-image {
         @include make-md-column(5);
+        text-align: right;
     }
     .ryor-student {
         @include make-md-column(7);

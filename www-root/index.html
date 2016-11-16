@@ -5,7 +5,8 @@
 	<meta name="viewport" content="initial-scale=1">
 	<title>MSU Denver - Homepage</title>
     <link href="//fonts.googleapis.com/css?family=Karla:400,700|Open+Sans:400,400i,700|Raleway:400,700,900" rel="stylesheet">
-	<link rel="stylesheet" href="style-assets/css/style.css">
+    <link href="style-assets/media/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+	<link rel="stylesheet" href="style-assets/css/style.css" /> 
 	
 	<script src="style-assets/lib/jquery/jquery.min.js"></script> 
 </head> 
@@ -21,7 +22,7 @@
         <img class="homepage-feature-caption-img" src="style-assets/media/aes_building.jpg" alt="A photograph of the AES building" />    
         <div class="homepage-feature-caption-text">
             <h1 class="feature-heading">Our Aerospace and Engineering Sciences Building is almost ready for take off.</h1>
-            <a href="javascript:void(0)" class="homepage-feature-caption-link feature-heading-sub fa fa-angle-right">Read how we're powering careers and a 21st century economy</a>
+            <a href="javascript:void(0)" class="homepage-feature-caption-link feature-heading-sub ">Read how we're powering careers and a 21st century economy<i class="fa fa-angle-right"></i></a>
         </div>
     </div> 
 </section>    
@@ -29,10 +30,10 @@
  <section class="homepage-feature" id="homepage-ryor">
     <div class="ryor-image"> 
         <svg xmlns="http://www.w3.org/2000/svg" stroke="white" xmlns:xlink="http://www.w3.org/1999/xlink">    
-           <use xlink:href="/style-assets/media/defs/svg/sprite.defs.svg#runyourownroad" />
+           <use xlink:href="style-assets/media/defs/svg/sprite.defs.svg#runyourownroad" />
         </svg>
     </div>
-    <div class="ryor-student" style="background: url(style-assets/media/RYOR_solano.jpg) no-repeat 100% 0">
+    <div class="ryor-student" style="background: url(style-assets/media/RYOR_solano.jpg) no-repeat 0 0">
             <h1 class="feature-heading">Cristian Solano-Cordova</h1>
             <h2 class="feature-heading-sub">MSU Denver ’17.</h2> 
             <p class="feature-text">White House Advisor. Dreamer. Roadrunner.</p>
@@ -174,7 +175,7 @@
         </script>
     </div><!-- / .at-a-glance (col) -->
 </section>
-<!-- ** // Hompeage at a glance ** -->  
+<!-- ** // Hompeage at a glance ** -->   
             <section class="homepage-feature" id="homepage-community"> 
     <div class="hompage-community">
         <h1 class="feature-heading-large">Located in the heart of the city, MSU offers an experience that is vibrant, diverse exciting and unique.</h1> 
@@ -302,6 +303,15 @@
           </div><!-- // .footer-promos-row (row) -->
           <hr class="footer-row-hr" /> 
           <div class="footer-menu-row">
+             <div class="footer-campus-info visible-xs">
+                    
+                    <p><a href="javascript:void(0)"><strong>Metropolitan State University of Denver</strong></a></p>
+                    <p><a href="javascript:void(0)"><span class="fa fa-map-marker fa-lg"></span> Denver, Colorado</a></p>
+                    <p><a href="javascript:void(0)"><span class="fa fa-phone fa-lg"></span> 303-556-5740</a></p>
+                    <p><a onclick="javascript:void(0)" href="javascript:void(0)"><span class="fa fa-comments chat-icon fa-lg"></span> Chat with Us (8 a.m.&ndash;5 p.m. MT, Weekdays)</a></p>
+                    
+                  
+              </div><!-- .campus-info  -->
               <div class="footer-links">
                   <div class="footer-links-row">
                       <div class="footer-links-col "> 
@@ -313,7 +323,7 @@
                             <li><a href="javascript:void(0)" id="Footer-Bookstore" target="_blank">Bookstore</a></li>
                         </ul>  
                       </div>
-                      <div class="footer-links-col">
+                      <div class="footer-links-col"> 
                         <ul class="footer-nav list-unstyled">
                             <li><a href="javascript:void(0)" id="Footer-Tours">Tours</a></li>
                             <li><a href="javascript:void(0)" id="Footer-Directions">Directions</a></li>
@@ -323,7 +333,7 @@
                         </ul>
                       </div>
                       <div class="social-mobile footer-links"> 
-                          <ul class="list-unstyled">
+                          <ul class="list-unstyled footer-social hidden-md hidden-lg">   
                             <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
                             <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
                             <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
@@ -336,13 +346,13 @@
                   
               </div><!-- // .footer-links (col) -->
 
-              <div class="footer-campus-info">
+              <div class="footer-campus-info hidden-xs">
                     
                     <p><a href="javascript:void(0)"><strong>Metropolitan State University of Denver</strong></a></p>
                     <p><a href="javascript:void(0)"><span class="fa fa-map-marker fa-lg"></span> Denver, Colorado</a></p>
                     <p><a href="javascript:void(0)"><span class="fa fa-phone fa-lg"></span> 303-556-5740</a></p>
                     <p><a onclick="javascript:void(0)" href="javascript:void(0)"><span class="fa fa-comments chat-icon fa-lg"></span> Chat with Us (8 a.m.&ndash;5 p.m. MT, Weekdays)</a></p>
-                    <ul class="list-unstyled desktop-social hidden-xs">
+                    <ul class="list-unstyled footer-social">
                             <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
                             <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
                             <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
@@ -355,7 +365,7 @@
 
               <div class="footer-logo">
                   <p><a href="javascript:void(0)"> <img src="style-assets/media/msudenver-informal_logo.png"></a></p>
-                  <p><a href="javascript:void(0)"><small>&copy; MSU Denver</small></a> - <a href="javascript:void(0)"><small>Privacy Statement</small></a></p>
+                  <p class="privacy-statement"><a href="javascript:void(0)"><small>&copy; MSU Denver</small></a> - <a href="javascript:void(0)"><small>Privacy Statement</small></a></p>
 
               </div><!-- .footer-logo -->
           </div><!-- .row -->

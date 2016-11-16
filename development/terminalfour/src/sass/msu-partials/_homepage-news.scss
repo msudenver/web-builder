@@ -44,8 +44,6 @@
         font-size: 22px;
         font-size: torem(22);
     }
-    
-
 }
 .news-features__small-row {
     @include make-row();
@@ -116,8 +114,9 @@
          @include make-lg-column-push(5);
         .news-feature-image, .news-feature-text { float: none; width: 100%; padding: 0;}
         .news-feature-heading {
-            font-size: 40px;
-            line-height: 1.1;
+            font-size: 48px;
+            font-size: torem(48);
+            line-height: 1.2;
             margin: 18px 0 16px;
             margin: torem(18) 0 torem(16);
         }

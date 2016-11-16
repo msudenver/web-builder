@@ -11,6 +11,7 @@
     padding-bottom: torem(36, $small-unit);
     background-color: $gray-base;
     svg { fill: currentColor; } 
+    .fa { padding-left: 10px; }
 }
 .homepage-feature-block { 
     @include make-sm-column(12);
@@ -63,8 +64,11 @@
     &:hover, &:active, &:focus {
         color:  $msu-red;    
     } 
+    
 }
-
+@media (max-width: $screen-sm-max) {
+    .homepage-btn .fa { display: none;}
+}
 @media (min-width: $screen-md-min) {
     .homepage-feature {
         h1 { line-height: 1.6;  }
