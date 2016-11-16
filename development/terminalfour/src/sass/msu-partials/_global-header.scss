@@ -589,6 +589,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 
 .menu-last {
   margin-right: 0em;
+  border-right: none !important;
 }
 
 .nav > li > a {
@@ -914,8 +915,8 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   }
 
   .mobile-header {
-    margin-right: 0em;
-    padding-right: 0em !important;
+    margin-right: 2.2em;
+    padding-right: 2.2em !important;
   }
 
 }
