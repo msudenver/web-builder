@@ -602,6 +602,12 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   border-right: 1px solid #337ab7;
 }
 
+.faculty-staff, .faculty-staff a {
+  text-align: right;
+  margin-top: -1.0em;
+  color: #fff;
+}
+
 @media screen and (max-width: 450px) {
   .navbar-toggle{
    padding: 9px 5px;
