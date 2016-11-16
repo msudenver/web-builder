@@ -60,6 +60,9 @@
     text-transform: uppercase;
     border-radius: 11px;
     float: right;
+    &:hover, &:active, &:focus {
+        color:  $msu-red;    
+    } 
 }
 
 @media (min-width: $screen-md-min) {
@@ -80,7 +83,7 @@
         margin: 0 0 torem(25, $small-unit);
         
     }
-    .homepage-btn {
+    .homepage-btn:not(.footer-btn) {
         font-family: $font-family-serif;
         font-weight: 700;
         font-size: 30px; //33px @ 14px
@@ -89,8 +92,10 @@
         padding-right: 0;
         color: $white;
         background-color: transparent;
-
         float: right;
+        &:hover, &:active, &:focus {
+            color:  $white;    
+        } 
     }
     .homepage-btn:active, .homepage-btn:focus, .homepage-btn:hover {
         color: $white;

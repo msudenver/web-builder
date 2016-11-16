@@ -7508,6 +7508,9 @@ header {
   border-radius: 11px;
   float: right;
 }
+.homepage-btn:hover, .homepage-btn:active, .homepage-btn:focus {
+  color: #d11242;
+}
 
 @media (min-width: 992px) {
   .homepage-feature h1 {
@@ -7529,7 +7532,7 @@ header {
     margin: 0 0 1.78571rem;
   }
 
-  .homepage-btn {
+  .homepage-btn:not(.footer-btn) {
     font-family: "Karla", "Georgia", "Times New Roman", Times, serif;
     font-weight: 700;
     font-size: 30px;
@@ -7539,6 +7542,9 @@ header {
     color: #fff;
     background-color: transparent;
     float: right;
+  }
+  .homepage-btn:not(.footer-btn):hover, .homepage-btn:not(.footer-btn):active, .homepage-btn:not(.footer-btn):focus {
+    color: #fff;
   }
 
   .homepage-btn:active, .homepage-btn:focus, .homepage-btn:hover {
@@ -8268,6 +8274,398 @@ header {
   .home-event-venue {
     font-size: 24px;
     font-size: 1.5rem;
+  }
+}
+/** 
+    Site-wide footer 
+**/
+footer {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+}
+
+.footer-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #003a6e;
+}
+.footer-container:before, .footer-container:after {
+  content: " ";
+  display: table;
+}
+.footer-container:after {
+  clear: both;
+}
+.footer-container *:not(.btn) {
+  color: #fff;
+}
+
+/* Used inbetween html rows in the footer */
+.footer-row-hr {
+  border-top-width: 4px;
+  margin: 0;
+}
+
+/* Footer promos */
+.footer-promos-row, .footer-menu-row {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+.footer-promos-row:before, .footer-promos-row:after, .footer-menu-row:before, .footer-menu-row:after {
+  content: " ";
+  display: table;
+}
+.footer-promos-row:after, .footer-menu-row:after {
+  clear: both;
+}
+
+.footer-promos-row {
+  padding-bottom: 14px;
+  padding-bottom: 0.875rem;
+}
+
+.footer-promo {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+
+.footer-promo-bg {
+  padding: 15px;
+  padding: 0.9375rem;
+  background-color: #000;
+}
+.footer-promo-bg:before, .footer-promo-bg:after {
+  content: " ";
+  display: table;
+}
+.footer-promo-bg:after {
+  clear: both;
+}
+
+.footer-promo-heading {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.footer-promo-text {
+  line-height: 1.3;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/** Footer links and contacts row **/
+.footer-links, .footer-campus-info, .footer-logo {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer-links-row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.footer-links-row:before, .footer-links-row:after {
+  content: " ";
+  display: table;
+}
+.footer-links-row:after {
+  clear: both;
+}
+
+.footer-links-col, .social-mobile {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Footer links type elements */
+.footer-nav {
+  margin-bottom: 0;
+  padding: 0 20%;
+}
+
+.footer-nav li {
+  text-align: center;
+  font-weight: 700;
+  padding: 12px 0;
+  padding: 0.75rem 0;
+}
+
+/* Does the border after each link */
+.footer-nav li:after {
+  content: " ";
+  display: block;
+  height: 1px;
+  background: #fff;
+  width: 100%;
+  position: relative;
+  opacity: 0.2;
+  bottom: -12px;
+  z-index: 10;
+}
+
+.footer-links-col:nth-child(2) li:last-child:after {
+  display: none;
+}
+
+/** Footer media queries **/
+@media (min-width: 768px) {
+  .footer-promo {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .footer-promo {
+    float: left;
+    width: 33.33333%;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-promo-heading {
+    font-size: 25px;
+    font-size: 1.5625rem;
+    line-height: 1.4;
+  }
+
+  .footer-promo-text {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+  }
+
+  .footer-links-col {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .footer-links-col {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .footer-links-col li:last-child:after {
+    display: none;
+  }
+
+  .footer-nav {
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  .footer-btn:hover, .footer-btn:focus, .footer-btn:active {
+    color: #d11242;
+    text-decoration: none;
+  }
+
+  .footer-campus-info, .footer-logo {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .footer-campus-info, .footer-logo {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    padding-left: 8.33333%;
+    padding-right: 8.33333%;
+  }
+
+  .footer-links {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .footer-links {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-links li {
+    text-align: left;
+  }
+  .footer-links li:first-child {
+    padding-top: 0;
+  }
+
+  .footer-campus-info {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .footer-campus-info {
+    float: left;
+    width: 33.33333%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-logo {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .footer-logo {
+    float: left;
+    width: 16.66667%;
+  }
+}
+
+/*** MSU ***/
+.social i {
+  word-spacing: 5px;
+}
+
+.footer hr {
+  opacity: 0.25;
+}
+
+.footer-logo {
+  text-align: center;
+  transform: translate(0%, 10%);
+}
+
+.footer-menu {
+  line-height: 0.8;
+}
+
+.campus-info {
+  border: 0;
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+}
+.campus-info span.fa.fa-map-marker.fa-lg {
+  margin-right: 9px;
+}
+.campus-info span.fa.fa-phone.fa-lg {
+  margin-right: 5px;
+}
+
+.footer .fa-2x {
+  font-size: 1.75em;
+}
+
+.footer .fa {
+  padding: 0px 5px;
+}
+
+div#lhnContainerDone {
+  display: none;
+}
+
+@media only screen and (max-width: 360px) {
+  .social i {
+    word-spacing: 1px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer-menu {
+    text-align: center;
+  }
+
+  .social-non-mobile i {
+    display: none;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hide-hr {
+    display: none;
+  }
+
+  .mobile-msuinfo-show {
+    display: none;
+  }
+
+  .social-mobile i {
+    display: none;
+  }
+
+  .campus-info {
+    padding-top: 25px;
+  }
+
+  .footer-logo {
+    transform: translate(0%, 1%);
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .campus-info {
+    border: 0;
+    border-bottom: none;
+    margin-bottom: 15px;
+  }
+
+  .social-mobile i {
+    text-align: center;
+  }
+
+  .footer-logo {
+    padding-top: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .campus-info {
+    border: 0;
+    border-right: 0px solid white;
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .campus-info {
+    padding-top: 0px;
   }
 }
 
