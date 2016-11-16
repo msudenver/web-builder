@@ -6,6 +6,8 @@
 	<title>MSU Denver - Homepage</title>
     <link href="//fonts.googleapis.com/css?family=Karla:400,700|Open+Sans:400,400i,700|Raleway:400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="style-assets/css/style.css">
+	
+	<script src="style-assets/lib/jquery/jquery.min.js"></script> 
 </head> 
     <body>  
         @@include('header.html') 
@@ -19,5 +21,15 @@
             
         </main>
         @@include('footer.html') 
+        <script src="style-assets/lib/jquery/jquery.min.js"></script> 
+        <script src="style-assets/lib/jquery-match-height/jquery.matchHeight.js"></script> 
+        <script>
+            $(function() {
+//                $('.at-a-glance-img').matchHeight({
+//                    byRow: false;
+//                });
+                
+            });
+        </script>
     </body>
 </html>

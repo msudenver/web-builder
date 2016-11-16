@@ -6,6 +6,8 @@
 	<title>MSU Denver - Homepage</title>
     <link href="//fonts.googleapis.com/css?family=Karla:400,700|Open+Sans:400,400i,700|Raleway:400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="style-assets/css/style.css">
+	
+	<script src="style-assets/lib/jquery/jquery.min.js"></script> 
 </head> 
     <body>  
         <header>
@@ -47,33 +49,39 @@
         <p class="feature-text">For more than 50 years, MSU Denver has transformed lives. Our students, educators and alumni are making a difference in our community and across the globe.</p>
         <div class="news-features">
              <!-- featured featured news item -->
-            <div class="news-feature news-feature__large"> 
-                <div class="news-feature-image">
-                    <img class="img-responsive" src="style-assets/media/placeholder_3to2ratio.png" alt="Great news story headline" />    
-                </div>
-                <div class="news-feature-text">
-                    <h1 class="feature-heading news-feature-heading">Helping girls find their path to follow their dreams.</h1>
-                    <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor dolor lorem, eget ultricies sapien hendrerit id. Suspendisse fringilla diam congue placerat consectetur.</p>
+            <div class="news-feature news-feature__large" data-mh="home-news"> 
+                <div class="news-feature-bg">
+                    <div class="news-feature-image">
+                        <img class="img-responsive" src="style-assets/media/placeholder_3to2ratio.png" alt="Great news story headline" />    
+                    </div>
+                    <div class="news-feature-text">
+                        <h1 class="feature-heading news-feature-heading">Helping girls find their path to follow their dreams.</h1>
+                        <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor dolor lorem, eget ultricies sapien hendrerit id. Suspendisse fringilla diam congue placerat consectetur.</p>
+                    </div>
                 </div>
             </div><!-- ./ .news-feature-item.featured -->
             <!-- regular featured news items -->
-            <div class="news-features__small">
+            <div class="news-features__small" data-mh="home-news"> 
                 <div class="news-features__small-row">
                      <div class="news-feature">
-                         <div class="news-feature-image">
-                             <img class="img-responsive" src="style-assets/media/placeholder_3to2ratio.png" alt="Great news story headline" />    
+                         <div class="news-feature-bg">
+                             <div class="news-feature-image">
+                                 <img class="img-responsive" src="style-assets/media/placeholder_3to2ratio.png" alt="Great news story headline" />    
+                             </div>
+                             <div class="news-feature-text">
+                                 <h1 class="feature-heading news-feature-heading">Helping girls find their path to follow their dreams.</h1>
+                             </div>        
                          </div>
-                         <div class="news-feature-text">
-                             <h1 class="feature-heading news-feature-heading">Helping girls find their path to follow their dreams.</h1>
-                         </div>        
                      </div>   
                      <div class="news-feature">
-                         <div class="news-feature-image">
-                             <img class="img-responsive" src="style-assets/media/placeholder_3to2ratio.png" alt="Great news story headline" />
+                         <div class="news-feature-bg">
+                             <div class="news-feature-image">
+                                 <img class="img-responsive" src="style-assets/media/placeholder_3to2ratio.png" alt="Great news story headline" />
+                             </div>
+                             <div class="news-feature-text">
+                                 <h1 class="feature-heading news-feature-heading">Helping girls find their path to follow their dreams.</h1>
+                             </div>        
                          </div>
-                         <div class="news-feature-text">
-                             <h1 class="feature-heading news-feature-heading">Helping girls find their path to follow their dreams.</h1>
-                         </div>        
                      </div><!-- ./ .news-feature-item -->
                 </div><!-- ./ .news-feature-items-wrap -->    
             </div><!-- ./ .news-feature-item --> 
@@ -90,7 +98,7 @@
         <p class="feature-text">Diverse. Transformative. Game-changing.</p>
         <div class="at-a-glance-items">
             <div class="at-a-glance-item">
-                <div class="at-a-glance-img">
+                <div class="at-a-glance-img" data-mh="at-a-glance-img">
                     <img src="style-assets/media/city_denver.png" alt="1 out of 5 Colorado graduates choose MSU Denver"  />    
                 </div>
                 <div class="at-a-glance-text-wrap">
@@ -104,7 +112,7 @@
                 </div>    
             </div><!-- / .ata-glance-item (col) -->
             <div class="at-a-glance-item">
-                <div class="at-a-glance-img">
+                <div class="at-a-glance-img" data-mh="at-a-glance-img">
                     <img src="style-assets/media/degrees.png" alt="31.6% first-generation college students"  />    
                 </div>
                 <div class="at-a-glance-text-wrap">
@@ -118,7 +126,7 @@
                 </div>
             </div><!-- / .at-a-glance-item (col) -->
             <div class="at-a-glance-item">
-                <div class="at-a-glance-img"> 
+                <div class="at-a-glance-img" data-mh="at-a-glance-img"> 
                     <img src="style-assets/media/firstgen.png" alt="67 bachelor degree choices"  /> 
                 </div>
                 <div class="at-a-glance-text-wrap">
@@ -179,7 +187,7 @@
         <h1 class="feature-heading-large">What's happening right now at MSU Denver</h1>
         <div class="home-events-row">
             <!-- ** Event ** -->
-            <div class="home-event">
+            <div class="home-event" data-mh="home-event">
                 <div class="event-bg">
                     <img class="home-event-image" src="style-assets/media/event-image.jpg" alt="New Student Convocation show" />
                     <h2 class="home-event-title">New Student Convocation</h2>
@@ -190,7 +198,7 @@
             </div><!-- // .home-event (col) -->
             <!-- ** // Event ** -->
             <!-- ** Event ** -->
-            <div class="home-event">
+            <div class="home-event" data-mh="home-event">
                 <div class="event-bg">
                     <img class="home-event-image" src="style-assets/media/event-image.jpg" alt="New Student Convocation show" />
                     <h2 class="home-event-title">New Student Convocation</h2>
@@ -201,7 +209,7 @@
             </div><!-- // .home-event (col) -->
             <!-- ** // Event ** -->
             <!-- ** Event ** -->
-            <div class="home-event">
+            <div class="home-event" data-mh="home-event">
                 <div class="event-bg">
                     <img class="home-event-image" src="style-assets/media/event-image.jpg" alt="New Student Convocation show" />
                     <h2 class="home-event-title">New Student Convocation</h2>
@@ -212,7 +220,7 @@
             </div><!-- // .home-event (col) -->
             <!-- ** // Event ** -->
             <!-- ** Event ** -->
-            <div class="home-event">
+            <div class="home-event" data-mh="home-event">
                 <div class="event-bg">
                     <img class="home-event-image" src="style-assets/media/event-image.jpg" alt="New Student Convocation show" />
                     <h2 class="home-event-title">New Student Convocation</h2>
@@ -223,7 +231,7 @@
             </div><!-- // .home-event (col) -->
             <!-- ** // Event ** -->
             <!-- ** Event ** -->
-            <div class="home-event">
+            <div class="home-event" data-mh="home-event">
                 <div class="event-bg">
                     <img class="home-event-image" src="style-assets/media/event-image.jpg" alt="New Student Convocation show" />
                     <h2 class="home-event-title">New Student Convocation</h2>
@@ -234,7 +242,7 @@
             </div><!-- // .home-event (col) -->
             <!-- ** // Event ** -->
             <!-- ** Event ** -->
-            <div class="home-event">
+            <div class="home-event" data-mh="home-event">
                 <div class="event-bg">
                     <img class="home-event-image" src="style-assets/media/event-image.jpg" alt="New Student Convocation show" />
                     <h2 class="home-event-title">New Student Convocation</h2>
@@ -244,6 +252,7 @@
                 </div><!-- / .event-bg -->
             </div><!-- // .home-event (col) -->
             <!-- ** // Event ** -->
+            
         </div><!-- // .home-events-row -->
         <a href="javascript:void(0)" class="btn homepage-btn">See all upcoming events</a>
     </div><!-- // .home-events (col) -->
@@ -258,5 +267,15 @@
         <footer>
     <h1>Page footer</h1>
 </footer> 
+        <script src="style-assets/lib/jquery/jquery.min.js"></script> 
+        <script src="style-assets/lib/jquery-match-height/jquery.matchHeight.js"></script> 
+        <script>
+            $(function() {
+//                $('.at-a-glance-img').matchHeight({
+//                    byRow: false;
+//                });
+                
+            });
+        </script>
     </body>
 </html>

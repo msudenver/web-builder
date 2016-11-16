@@ -1,6 +1,6 @@
 /* Homepage-feature-caption partial */
-.homepage-feature-caption-item {
-    
+#homepage-feature-caption {
+    position: relative;
 }
 .homepage-feature-caption-img {
     @include img-responsive ;

@@ -136,7 +136,7 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
-          {expand: true, cwd: 'development/lib/', src: ['./**'], dest: 'www-root/style-assets/lib/', filter: 'isFile'}
+          {expand: true, cwd: 'development/lib/', src: ['./*.js'], dest: 'www-root/style-assets/lib/', filter: 'isFile'}
         ]
       },//main
       media: {

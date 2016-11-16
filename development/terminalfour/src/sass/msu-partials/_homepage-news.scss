@@ -44,17 +44,17 @@
         font-size: 22px;
         font-size: torem(22);
     }
-    background: $gray-base;
+    
 
 }
-
 .news-features__small-row {
     @include make-row();
 }
-.news-feature-image, .news-feature-text {
+.news-feature-bg {
     padding: 15px;
-     padding: torem(15);
+    padding: torem(15);
     background: $gray-base;
+    @include clearfix ;
 }
 .news-feature-text {
     padding-top: 0;
@@ -63,8 +63,8 @@
 .news-feature-heading {    
     font-size: 26px;
     font-size: torem(26);
-    margin: 25px 0;
-    margin: 0 0 0;
+    margin: 12px 0;
+    margin: torem(12) 0;
 }
 
 @media (min-width: $screen-sm-min) {
@@ -74,10 +74,13 @@
         .news-feature-image, .news-feature-text { float: left;}
         .news-feature-image { 
             width: percentage((7 / $grid-columns));
+            padding-right: 7.5px;
         }
         .news-feature-text {
             width: percentage((5 / $grid-columns));
+            padding-left: 7.5px;
         }
+        
     }
     .news-features__small {
         padding-top: 0;
@@ -109,12 +112,18 @@
         }
     }
     .news-feature__large {
-        @include make-lg-column(7); 
+         @include make-lg-column(7, 25px); 
          @include make-lg-column-push(5);
-        .news-feature-image, .news-feature-text { float: none; width: 100%;}
+        .news-feature-image, .news-feature-text { float: none; width: 100%; padding: 0;}
+        .news-feature-heading {
+            font-size: 40px;
+            line-height: 1.1;
+            margin: 18px 0 16px;
+            margin: torem(18) 0 torem(16);
+        }
     }
     .news-features__small {
-        @include make-lg-column(5); 
+        @include make-lg-column(5, 50px); 
         @include make-lg-column-pull(7); 
         .news-feature {
             width: 100%;
@@ -122,6 +131,7 @@
             &:last-child {
                 margin: 0;
             }
+            margin-bottom: 25px;
         }
     }
     .news-item-heading {
