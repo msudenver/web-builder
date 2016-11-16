@@ -7548,6 +7548,7 @@ header {
 }
 /* Homepage-feature-caption partial */
 #homepage-feature-caption {
+  padding: 0;
   position: relative;
 }
 
@@ -7949,6 +7950,10 @@ header {
     line-height: 1.1;
     margin: 18px 0 16px;
     margin: 1.125rem 0 1rem;
+  }
+  .news-feature__large p {
+    font-size: 36px;
+    font-size: 2.25rem;
   }
 
   .news-features__small {

@@ -121,6 +121,11 @@
             margin: 18px 0 16px;
             margin: torem(18) 0 torem(16);
         }
+        p { 
+            font-size: 36px;
+            font-size: torem(36);
+        }
+            
     }
     .news-features__small {
         @include make-lg-column(5, 50px); 
