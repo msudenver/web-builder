@@ -247,7 +247,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 
 #content-nav #search-input input[type=text] {
   display: inline-block;
-  height: 55px;
+  height: 50px;
   width: 32em;
   /* was 900px */
   border: none;
@@ -602,6 +602,23 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   border-right: 1px solid #337ab7;
 }
 
+.faculty-staff, .faculty-staff a {
+  text-align: right;
+  margin-top: -1.0em;
+  color: #fff;
+}
+
+.navbar-nav > li > a {
+  line-height: 0.1em !important;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+.container .pushdown-menu {
+  padding-left: 0em !important;
+  border-right: 1px solid #4cb4f2;
+}
+
 @media screen and (max-width: 450px) {
   .navbar-toggle{
    padding: 9px 5px;
@@ -784,17 +801,17 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
     display: inline-block;
   }
 
-.pushdown-menu li:before {
-    content: "• ";
-    color: #337ab7;
-  }
+// .pushdown-menu li:before {
+//     content: "• ";
+//     color: #337ab7;
+//   }
 
   .navbar-collapse #wrapper {
     display: none;
   }
 
   .glyphicon-search-mobile {
-    display: none;
+    display: none !important;
   }
 
   .container-dropdown {
@@ -836,11 +853,12 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   }
 
   .mobile-header {
-    margin-right: 1.7em;
+    margin-right: 1.3em;
+    padding-right: 1.3em !important;
   }
 
   .blue-header {
-    height: 9em;
+    height: 10em;
   }
   // .apply-button {
   //   width: 14%;
@@ -872,7 +890,8 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   }
 
   .mobile-header {
-    margin-right: 5.2em;
+    margin-right: 2.2em;
+    padding-right: 2.2em !important;
   }
 }
 
@@ -883,13 +902,13 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
 
   .left-addon .glyphicon {
     font-size: 23px;
-    top: 0.4em;
+    top: -0.2em;
   }
 
   #content-nav #nav-search-close {
     font-size: 20px;
-    top: -4em;
-    left: 54.5em;
+    top: -4.2em;
+    left: 25em;
   }
 
   .glyphicon-search {
@@ -899,11 +918,14 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
     padding-top: 0.9em;
   }
 
+  .search-desktop {
+    top: 0.3em !important;
+  }
   #content-nav #search-input .button {
-    top: -3.2em;
+    top: -2.8em;
     height: 30px;
     width: 130px;
-    left: 68em;
+    left: 28em;
   }
 
   .button {

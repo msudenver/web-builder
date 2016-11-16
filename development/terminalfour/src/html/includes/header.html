@@ -15,7 +15,15 @@
           <a href="http://msudenver.edu/alumni/give/"><div class="col-xs-1 apply-button give-visit-buttons">GIVE</div></a>
           <a href="https://msudenver.edu/visit/"><div class="col-xs-1 apply-button give-visit-buttons">VISIT</div></a>
           <span class="glyphicon glyphicon-search glyphicon-search-mobile"></span>
-
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 faculty-staff">
+              <a href="">Faculty &amp; Staff</a>
+            </div>
+          </div>
+          <div class="row">
+          </div>
         </div>
       </div>
 
@@ -142,3 +150,88 @@
     <!-- end mobile search-input -->
   <!-- ****** END PUSHDOWN MENU AND SEARCH BAR ****** -->
 </header>
+
+
+
+<!--CDN-->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' media='screen'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,700,600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+// make search button appear when text entered in search field
+$('#q').keyup(function () {
+    if ($.trim($('#q').val()).length) {
+        $('#searchGoLink').removeClass('disableGoButton');
+    }
+    else {
+        $('#searchGoLink').addClass('disableGoButton');
+    }
+});
+
+// make mobile search field 100% opaque when receives focus
+$('.search-text-mobile').focusin(function () {
+        $('.search-text-mobile').css('opacity', '1.0');
+});
+$('.search-text-mobile').focusout(function () {
+        $('.search-text-mobile').css('opacity', '0.8');
+});
+
+// when desktop search icon clicked: open/close nav bar, change mobile search glyph and hamburger background colors
+$('.glyphicon-search-mobile').click(function(){
+   $('.search-input-mobile').slideToggle();
+   $('#content-nav').removeClass('in');
+   $('.fa-bars').css('background-color', 'transparent');
+   $('.glyphicon-search-mobile').css('background-color', '#005fae');
+});
+
+// when hamburger clicked, hide search bar and change hamburger/search glyph background colors ***NEEDS FIXING SINCE ORIGINAL MOBILE DESIGN WAS MODIFIED***
+$('.navbar-toggle').click(function(){
+   $('.search-input-mobile').hide();
+   $('.fa-bars').css('background-color', '#005fae');
+   $('.glyphicon-search-mobile').css('background-color', 'transparent');
+});
+
+// when menu item clicked, open/close pushdown menu
+$('.mobile-header').click(function(){
+   $('.pushdown-menu').slideToggle();
+});
+
+// open/close content-nav bar when search/close glyphs clicked
+$('.search-desktop').click(function(){
+   $('#content-nav').css('max-height', '55px');
+});
+$('.glyphicon-remove').click(function(){
+   $('#content-nav').css('max-height', '');
+});
+</script>
+
+<script type="text/javascript">
+
+console.log('Script loaded - 9232015.3');
+function hideAllSubNav(){
+	$('#cause, #health, #stories, #research, #involved, #content-sub-nav, #content-sub-lower-wrapper, #content-sub-nav-lower-health, #content-sub-nav-lower-cause, #content-sub-nav-lower-stories, #content-sub-nav-lower-research, #content-sub-nav-lower-involved').hide();
+	$('#nav-cause, #nav-health, #nav-stories, #nav-research, #nav-involved, #nav-admissions, #nav-academics, #nav-campus, #nav-athletics, #nav-hub, #nav-alumni, #nav-faculty, #nav-search').parent().removeClass('active-nav');
+	$('#hero').css('margin-top','0');
+}
+
+hideAllSubNav();
+
+/* Search Click Event */
+$('#nav-search').click(function(){
+	hideAllSubNav();
+	$('#content-sub-nav').hide();
+	$('#nav-cause, #nav-health, #nav-stories, #nav-research, #nav-involved, #nav-admissions, #nav-academics, #nav-campus, #nav-athletics, #nav-hub, #nav-alumni, #nav-faculty, #nav-search').fadeTo('fast', 0);
+	setTimeout(function(){
+		$('#search-input').fadeTo('fast', 1);
+		$('#search-text').focus();
+	}, 100);
+});
+
+$('#nav-search-close').click(function(){
+	$('#search-input').hide();
+	$('#nav-cause, #nav-health, #nav-stories, #nav-research, #nav-involved, #nav-admissions, #nav-academics, #nav-campus, #nav-athletics, #nav-hub, #nav-alumni, #nav-faculty, #nav-search').fadeTo('slow', 1);
+});
+</script>
