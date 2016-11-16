@@ -878,7 +878,8 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   }
 
   .mobile-header {
-    margin-right: 5.2em;
+    margin-right: 2.2em;
+    padding-right: 2.2em !important;
   }
 }
 
@@ -919,10 +920,4 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   #content-nav #search-input input[type=text] {
     width: 80.5em;
   }
-
-  .mobile-header {
-    margin-right: 2.2em;
-    padding-right: 2.2em !important;
-  }
-
 }
