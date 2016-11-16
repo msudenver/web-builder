@@ -135,7 +135,7 @@ li.dropdown.last {
 }
 //begin expanding search css
 #content-nav {
-  margin-top: 0;
+  margin-top: 1.02em;
   // height: 40px;
   // margin-bottom: 10px;
   background-color: #fff;
@@ -642,7 +642,7 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   }
   .left-addon input {
     padding-top: 20px !important;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
   }
   .blue-header {
     border-bottom: 5px solid #005fae;
@@ -914,7 +914,8 @@ i.fa.fa-chevron-down.pull-right.chevron-pulldown {
   }
 
   .mobile-header {
-    margin-right: 5em;
+    margin-right: 0em;
+    padding-right: 0em !important;
   }
 
 }
