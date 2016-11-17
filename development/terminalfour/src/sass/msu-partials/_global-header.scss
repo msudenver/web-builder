@@ -94,19 +94,39 @@ body {
 }
 
 .pushdown-menu {
-  padding-left: 10px;
-  padding-right: 10px;
   font-size: 0.8em;
-  padding-top: 0px;
+  padding-top: 10px;
   padding-bottom: 0px;
   // text-transform: capitalize;
   text-decoration: none;
   text-align: left;
   list-style-type: inherit;
-  max-width: 15em;
+  // max-width: 15em;
   padding-left: 0.5em;
   text-indent:-0.6em;
   display: none;
+  border-right: 1px solid black;
+  border-spacing: 10px;
+  margin-top: 1.8em;
+}
+
+#nav-faculty {
+  width: 16em;
+}
+#nav-admissions {
+  width: 17em;
+}
+#nav-academics {
+  width: 17em;
+}
+#nav-campus {
+  width: 15em;
+}
+#nav-alumni {
+  width: 15em;
+}
+#nav-search {
+  width: 1em;
 }
 
 li.dropdown {
@@ -135,12 +155,9 @@ li.dropdown.last {
 }
 //begin expanding search css
 #content-nav {
-  // margin-top: 1.02em;
-  // height: 40px;
-  // margin-bottom: 10px;
-  background-color: #fff;
   max-height: 600px;
   transition: max-height 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  background: linear-gradient(to bottom, #fff 0px,#fff 50px, #ddd 50px);
 }
 
 // #content-nav:hover {
@@ -383,7 +400,7 @@ li.dropdown.last {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   letter-spacing: 2px;
-  float: right;
+  float: right !important;
   margin-left: 0.1em;
   // display: none;
 }
@@ -852,10 +869,10 @@ li.dropdown.last {
       left: 66em;
   }
 
-  .mobile-header {
-    margin-right: 1.3em;
-    padding-right: 1.3em !important;
-  }
+  // .mobile-header {
+  //   margin-right: 1.3em;
+  //   padding-right: 1.3em !important;
+  // }
 
   .blue-header {
     height: 10em;
@@ -889,10 +906,10 @@ li.dropdown.last {
       left: 82em;
   }
 
-  .mobile-header {
-    margin-right: 2.2em;
-    padding-right: 2.2em !important;
-  }
+  // .mobile-header {
+  //   margin-right: 2.2em;
+  //   padding-right: 2.2em !important;
+  // }
 }
 
 @media only screen and (min-width:1358px) {
@@ -936,9 +953,9 @@ li.dropdown.last {
     width: 80.5em;
   }
 
-  .mobile-header {
-    margin-right: 2.2em;
-    padding-right: 2.2em !important;
-  }
+  // .mobile-header {
+  //   margin-right: 2.2em;
+  //   padding-right: 2.2em !important;
+  // }
 
 }
