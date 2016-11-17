@@ -135,12 +135,9 @@ li.dropdown.last {
 }
 //begin expanding search css
 #content-nav {
-  // margin-top: 1.02em;
-  // height: 40px;
-  // margin-bottom: 10px;
-  background-color: #fff;
   max-height: 600px;
   transition: max-height 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  background: linear-gradient(to bottom, #fff 0px,#fff 50px, #ddd 50px);
 }
 
 // #content-nav:hover {
