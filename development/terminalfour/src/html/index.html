@@ -5,7 +5,10 @@
 	<meta name="viewport" content="initial-scale=1">
 	<title>MSU Denver - Homepage</title>
     <link href="//fonts.googleapis.com/css?family=Karla:400,700|Open+Sans:400,400i,700|Raleway:400,700,900" rel="stylesheet">
-	<link rel="stylesheet" href="style-assets/css/style.css">
+    <link href="style-assets/media/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+	<link rel="stylesheet" href="style-assets/css/style.css" />
+
+	<script src="style-assets/lib/jquery/jquery.min.js"></script>
 </head>
     <body>
         @@include('header.html')
@@ -19,6 +22,15 @@
 
         </main>
         @@include('footer.html')
-				@@include('javascript-includes.html')
+        <script src="style-assets/lib/jquery/jquery.min.js"></script>
+        <script src="style-assets/lib/jquery-match-height/jquery.matchHeight.js"></script>
+        <script>
+            $(function() {
+//                $('.at-a-glance-img').matchHeight({
+//                    byRow: false;
+//                });
+
+            });
+        </script>
     </body>
 </html>

@@ -58,15 +58,7 @@
 .at-a-glance-line {
     
 }
-/*@media (max-width: $screen-xs-max) {
-    .at-a-glance-img, .at-a-glance-text-wrap {
-        position: relative;
-        top: 50%;
-        transform:         translateY(50%);
-        -webkit-transform: translateY(50%);
-        -moz-transform:    translateY(50%);
-    }    
-}*/
+
 @media (min-width: 531px) and (max-width: $screen-xs-max) {
     .at-a-glance-img, .at-a-glance-text-wrap {
         padding: 0 15px;
