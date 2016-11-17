@@ -5,7 +5,10 @@
 	<meta name="viewport" content="initial-scale=1">
 	<title>MSU Denver - Homepage</title>
     <link href="//fonts.googleapis.com/css?family=Karla:400,700|Open+Sans:400,400i,700|Raleway:400,700,900" rel="stylesheet">
-	<link rel="stylesheet" href="style-assets/css/style.css">
+    <link href="style-assets/media/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+	<link rel="stylesheet" href="style-assets/css/style.css" /> 
+	
+	<script src="style-assets/lib/jquery/jquery.min.js"></script> 
 </head> 
     <body>  
         <header>
@@ -19,7 +22,7 @@
         <img class="homepage-feature-caption-img" src="style-assets/media/aes_building.jpg" alt="A photograph of the AES building" />    
         <div class="homepage-feature-caption-text">
             <h1 class="feature-heading">Our Aerospace and Engineering Sciences Building is almost ready for take off.</h1>
-            <a href="javascript:void(0)" class="homepage-feature-caption-link feature-heading-sub fa fa-angle-right">Read how we're powering careers and a 21st century economy</a>
+            <a href="javascript:void(0)" class="homepage-feature-caption-link feature-heading-sub ">Read how we're powering careers and a 21st century economy<i class="fa fa-angle-right"></i></a>
         </div>
     </div> 
 </section>    
@@ -27,10 +30,10 @@
  <section class="homepage-feature" id="homepage-ryor">
     <div class="ryor-image"> 
         <svg xmlns="http://www.w3.org/2000/svg" stroke="white" xmlns:xlink="http://www.w3.org/1999/xlink">    
-           <use xlink:href="/style-assets/media/defs/svg/sprite.defs.svg#runyourownroad" />
+           <use xlink:href="style-assets/media/defs/svg/sprite.defs.svg#runyourownroad" />
         </svg>
     </div>
-    <div class="ryor-student" style="background: url(style-assets/media/RYOR_solano.jpg) no-repeat 100% 0">
+    <div class="ryor-student" style="background: url(style-assets/media/RYOR_solano.jpg) no-repeat 0 0">
             <h1 class="feature-heading">Cristian Solano-Cordova</h1>
             <h2 class="feature-heading-sub">MSU Denver ’17.</h2> 
             <p class="feature-text">White House Advisor. Dreamer. Roadrunner.</p>
@@ -47,33 +50,39 @@
         <p class="feature-text">For more than 50 years, MSU Denver has transformed lives. Our students, educators and alumni are making a difference in our community and across the globe.</p>
         <div class="news-features">
              <!-- featured featured news item -->
-            <div class="news-feature news-feature__large"> 
-                <div class="news-feature-image">
-                    <img class="img-responsive" src="style-assets/media/placeholder_3to2ratio.png" alt="Great news story headline" />    
-                </div>
-                <div class="news-feature-text">
-                    <h1 class="feature-heading news-feature-heading">Helping girls find their path to follow their dreams.</h1>
-                    <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor dolor lorem, eget ultricies sapien hendrerit id. Suspendisse fringilla diam congue placerat consectetur.</p>
+            <div class="news-feature news-feature__large" data-mh="home-news"> 
+                <div class="news-feature-bg" data-mh="home-news">
+                    <div class="news-feature-image">
+                        <img class="img-responsive" src="style-assets/media/placeholder_3to2ratio.png" alt="Great news story headline" />    
+                    </div>
+                    <div class="news-feature-text">
+                        <h1 class="feature-heading news-feature-heading">Helping girls find their path to follow their dreams.</h1>
+                        <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor dolor lorem, eget ultricies sapien hendrerit id. Suspendisse fringilla diam congue placerat consectetur.</p>
+                    </div>
                 </div>
             </div><!-- ./ .news-feature-item.featured -->
             <!-- regular featured news items -->
-            <div class="news-features__small">
+            <div class="news-features__small" data-mh="home-news"> 
                 <div class="news-features__small-row">
                      <div class="news-feature">
-                         <div class="news-feature-image">
-                             <img class="img-responsive" src="style-assets/media/placeholder_3to2ratio.png" alt="Great news story headline" />    
+                         <div class="news-feature-bg">
+                             <div class="news-feature-image">
+                                 <img class="img-responsive" src="style-assets/media/placeholder_3to2ratio.png" alt="Great news story headline" />    
+                             </div>
+                             <div class="news-feature-text">
+                                 <h1 class="feature-heading news-feature-heading">Helping girls find their path to follow their dreams.</h1>
+                             </div>        
                          </div>
-                         <div class="news-feature-text">
-                             <h1 class="feature-heading news-feature-heading">Helping girls find their path to follow their dreams.</h1>
-                         </div>        
                      </div>   
                      <div class="news-feature">
-                         <div class="news-feature-image">
-                             <img class="img-responsive" src="style-assets/media/placeholder_3to2ratio.png" alt="Great news story headline" />
+                         <div class="news-feature-bg">
+                             <div class="news-feature-image">
+                                 <img class="img-responsive" src="style-assets/media/placeholder_3to2ratio.png" alt="Great news story headline" />
+                             </div>
+                             <div class="news-feature-text">
+                                 <h1 class="feature-heading news-feature-heading">Helping girls find their path to follow their dreams.</h1>
+                             </div>        
                          </div>
-                         <div class="news-feature-text">
-                             <h1 class="feature-heading news-feature-heading">Helping girls find their path to follow their dreams.</h1>
-                         </div>        
                      </div><!-- ./ .news-feature-item -->
                 </div><!-- ./ .news-feature-items-wrap -->    
             </div><!-- ./ .news-feature-item --> 
@@ -90,7 +99,7 @@
         <p class="feature-text">Diverse. Transformative. Game-changing.</p>
         <div class="at-a-glance-items">
             <div class="at-a-glance-item">
-                <div class="at-a-glance-img">
+                <div class="at-a-glance-img" data-mh="at-a-glance-img">
                     <img src="style-assets/media/city_denver.png" alt="1 out of 5 Colorado graduates choose MSU Denver"  />    
                 </div>
                 <div class="at-a-glance-text-wrap">
@@ -104,7 +113,7 @@
                 </div>    
             </div><!-- / .ata-glance-item (col) -->
             <div class="at-a-glance-item">
-                <div class="at-a-glance-img">
+                <div class="at-a-glance-img" data-mh="at-a-glance-img">
                     <img src="style-assets/media/degrees.png" alt="31.6% first-generation college students"  />    
                 </div>
                 <div class="at-a-glance-text-wrap">
@@ -118,7 +127,7 @@
                 </div>
             </div><!-- / .at-a-glance-item (col) -->
             <div class="at-a-glance-item">
-                <div class="at-a-glance-img"> 
+                <div class="at-a-glance-img" data-mh="at-a-glance-img"> 
                     <img src="style-assets/media/firstgen.png" alt="67 bachelor degree choices"  /> 
                 </div>
                 <div class="at-a-glance-text-wrap">
@@ -166,7 +175,7 @@
         </script>
     </div><!-- / .at-a-glance (col) -->
 </section>
-<!-- ** // Hompeage at a glance ** -->  
+<!-- ** // Hompeage at a glance ** -->   
             <section class="homepage-feature" id="homepage-community"> 
     <div class="hompage-community">
         <h1 class="feature-heading-large">Located in the heart of the city, MSU offers an experience that is vibrant, diverse exciting and unique.</h1> 
@@ -179,7 +188,7 @@
         <h1 class="feature-heading-large">What's happening right now at MSU Denver</h1>
         <div class="home-events-row">
             <!-- ** Event ** -->
-            <div class="home-event">
+            <div class="home-event" data-mh="home-event">
                 <div class="event-bg">
                     <img class="home-event-image" src="style-assets/media/event-image.jpg" alt="New Student Convocation show" />
                     <h2 class="home-event-title">New Student Convocation</h2>
@@ -190,7 +199,7 @@
             </div><!-- // .home-event (col) -->
             <!-- ** // Event ** -->
             <!-- ** Event ** -->
-            <div class="home-event">
+            <div class="home-event" data-mh="home-event">
                 <div class="event-bg">
                     <img class="home-event-image" src="style-assets/media/event-image.jpg" alt="New Student Convocation show" />
                     <h2 class="home-event-title">New Student Convocation</h2>
@@ -201,7 +210,7 @@
             </div><!-- // .home-event (col) -->
             <!-- ** // Event ** -->
             <!-- ** Event ** -->
-            <div class="home-event">
+            <div class="home-event" data-mh="home-event">
                 <div class="event-bg">
                     <img class="home-event-image" src="style-assets/media/event-image.jpg" alt="New Student Convocation show" />
                     <h2 class="home-event-title">New Student Convocation</h2>
@@ -212,7 +221,7 @@
             </div><!-- // .home-event (col) -->
             <!-- ** // Event ** -->
             <!-- ** Event ** -->
-            <div class="home-event">
+            <div class="home-event" data-mh="home-event">
                 <div class="event-bg">
                     <img class="home-event-image" src="style-assets/media/event-image.jpg" alt="New Student Convocation show" />
                     <h2 class="home-event-title">New Student Convocation</h2>
@@ -223,7 +232,7 @@
             </div><!-- // .home-event (col) -->
             <!-- ** // Event ** -->
             <!-- ** Event ** -->
-            <div class="home-event">
+            <div class="home-event" data-mh="home-event">
                 <div class="event-bg">
                     <img class="home-event-image" src="style-assets/media/event-image.jpg" alt="New Student Convocation show" />
                     <h2 class="home-event-title">New Student Convocation</h2>
@@ -234,7 +243,7 @@
             </div><!-- // .home-event (col) -->
             <!-- ** // Event ** -->
             <!-- ** Event ** -->
-            <div class="home-event">
+            <div class="home-event" data-mh="home-event">
                 <div class="event-bg">
                     <img class="home-event-image" src="style-assets/media/event-image.jpg" alt="New Student Convocation show" />
                     <h2 class="home-event-title">New Student Convocation</h2>
@@ -244,6 +253,7 @@
                 </div><!-- / .event-bg -->
             </div><!-- // .home-event (col) -->
             <!-- ** // Event ** -->
+            
         </div><!-- // .home-events-row -->
         <a href="javascript:void(0)" class="btn homepage-btn">See all upcoming events</a>
     </div><!-- // .home-events (col) -->
@@ -255,8 +265,123 @@
  
             
         </main>
-        <footer>
-    <h1>Page footer</h1>
-</footer> 
+        <!-- ** Site wide footer ** -->
+ <footer>
+      <section class="footer-container">
+          <div class="footer-promos-row">
+              <!-- Footer promo -->
+              <div class="footer-promo"> 
+                  <div class="footer-promo-bg">
+                      <h2 class="footer-promo-heading">MSU Denver's Next President</h2>
+                      <hr />
+                      <p class="footer-promo-text">The University is currently conducting a nationwide search for its next president. </p>
+                      <a class="btn homepage-btn footer-btn">Learn more</a>
+                  </div>
+              </div>
+              <!-- // Footer promo -->
+              <!-- Footer promo -->
+              <div class="footer-promo"> 
+                  <div class="footer-promo-bg">
+                      <h2 class="footer-promo-heading">MSU Denver's Next President</h2>
+                      <hr />
+                      <p class="footer-promo-text">The University is currently conducting a nationwide search for its next president. </p>
+                      <a class="btn homepage-btn footer-btn">Learn more</a>
+                  </div>
+              </div>
+              <!-- // Footer promo --><!-- Footer promo -->
+              <div class="footer-promo"> 
+                  <div class="footer-promo-bg">
+                      <h2 class="footer-promo-heading">MSU Denver's Next President</h2>
+                      <hr />
+                      <p class="footer-promo-text">The University is currently conducting a nationwide search for its next president. </p>
+                      <a class="btn homepage-btn footer-btn">Learn more</a> 
+                  </div>
+                  
+              </div>
+              <!-- // Footer promo -->
+              
+          </div><!-- // .footer-promos-row (row) -->
+          <hr class="footer-row-hr" /> 
+          <div class="footer-menu-row">
+             <div class="footer-campus-info visible-xs">
+                    
+                    <p><a href="javascript:void(0)"><strong>Metropolitan State University of Denver</strong></a></p>
+                    <p><a href="javascript:void(0)"><span class="fa fa-map-marker fa-lg"></span> Denver, Colorado</a></p>
+                    <p><a href="javascript:void(0)"><span class="fa fa-phone fa-lg"></span> 303-556-5740</a></p>
+                    <p><a onclick="javascript:void(0)" href="javascript:void(0)"><span class="fa fa-comments chat-icon fa-lg"></span> Chat with Us (8 a.m.&ndash;5 p.m. MT, Weekdays)</a></p>
+                    
+                  
+              </div><!-- .campus-info  -->
+              <div class="footer-links">
+                  <div class="footer-links-row">
+                      <div class="footer-links-col "> 
+                        <ul class="footer-nav list-unstyled">
+                            <li><a href="javascript:void(0)" id="Footer-About">About</a></li>
+                            <li><a href="javascript:void(0)" id="Footer-DegreePrograms">Degree Programs</a></li>
+                            <li><a href="javascript:void(0)" id="Footer-Cost">Cost</a></li>
+                            <li><a href="javascript:void(0)" id="Footer-FinancialAid">Financial Aid</a></li>
+                            <li><a href="javascript:void(0)" id="Footer-Bookstore" target="_blank">Bookstore</a></li>
+                        </ul>  
+                      </div>
+                      <div class="footer-links-col"> 
+                        <ul class="footer-nav list-unstyled">
+                            <li><a href="javascript:void(0)" id="Footer-Tours">Tours</a></li>
+                            <li><a href="javascript:void(0)" id="Footer-Directions">Directions</a></li>
+                            <li><a href="javascript:void(0)" id="Footer-Parking">Parking</a></li>
+                            <li><a href="javascript:void(0)" id="Footer-Careers" target="_blank">Careers</a></li>
+                            <li><a href="javascript:void(0)">Safety</a></li> 
+                        </ul>
+                      </div>
+                      <div class="social-mobile footer-links"> 
+                          <ul class="list-unstyled footer-social hidden-md hidden-lg">   
+                            <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                            <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                            <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+                            <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+                            <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-flickr fa-2x"></i></a></li>
+                            <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a></li>
+                          </ul>
+                      </div>    
+                  </div><!-- // .footer-links-row -->
+                  
+              </div><!-- // .footer-links (col) -->
+
+              <div class="footer-campus-info hidden-xs">
+                    
+                    <p><a href="javascript:void(0)"><strong>Metropolitan State University of Denver</strong></a></p>
+                    <p><a href="javascript:void(0)"><span class="fa fa-map-marker fa-lg"></span> Denver, Colorado</a></p>
+                    <p><a href="javascript:void(0)"><span class="fa fa-phone fa-lg"></span> 303-556-5740</a></p>
+                    <p><a onclick="javascript:void(0)" href="javascript:void(0)"><span class="fa fa-comments chat-icon fa-lg"></span> Chat with Us (8 a.m.&ndash;5 p.m. MT, Weekdays)</a></p>
+                    <ul class="list-unstyled footer-social">
+                            <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                            <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                            <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+                            <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+                            <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-flickr fa-2x"></i></a></li>
+                            <li><a href="javascript:void(0)" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a></li>
+                    </ul>
+                  
+              </div><!-- .campus-info  -->
+
+              <div class="footer-logo">
+                  <p><a href="javascript:void(0)"> <img src="style-assets/media/msudenver-informal_logo.png"></a></p>
+                  <p class="privacy-statement"><a href="javascript:void(0)"><small>&copy; MSU Denver</small></a> - <a href="javascript:void(0)"><small>Privacy Statement</small></a></p>
+
+              </div><!-- .footer-logo -->
+          </div><!-- .row -->
+          
+
+      </section><!-- footer .container -->
+</footer>  
+        <script src="style-assets/lib/jquery/jquery.min.js"></script> 
+        <script src="style-assets/lib/jquery-match-height/jquery.matchHeight.js"></script> 
+        <script>
+            $(function() {
+//                $('.at-a-glance-img').matchHeight({
+//                    byRow: false;
+//                });
+                
+            });
+        </script>
     </body>
 </html>

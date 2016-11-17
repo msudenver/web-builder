@@ -2,19 +2,21 @@
 #homepage-events {
     background: url('../media/eventsbg_mobile.jpg') ;
 }
+/* Events grid */
 .home-events {
     @include make-xs-column(12);
 }
 .home-events-row {
     @include make-row(0) ;
+    margin-bottom: 25px;
+    margin-bottom: torem(25);
 }
 .home-event {
     @include make-xs-column(12, 0);
     margin-bottom: 15px;
     margin-bottom: torem(15);
 }
-
-/* Background on each event */
+/* Event components */
 .event-bg {
     padding: 15px;
     padding: torem(15);
@@ -43,7 +45,7 @@
          //@include make-sm-column(6, 15px);
         padding: 0;
         width: 49.01055408970976%; /* 758px - 15px gutter / 2 */
-        margin-bottom:15px;        
+        margin-bottom: 2.316602316602%; /* >= ~15px */  
             &:nth-child(odd) {
                 margin-right: 0.98944591029024%; /* (15px gutter / 2) / 758px */
                
@@ -55,13 +57,29 @@
 }
 @media (min-width: $screen-lg-min) {
     #homepage-events {
-        padding: 50px percentage(1/$grid-columns);
-        padding: torem(50, $small-unit) percentage(1/$grid-columns);
+        padding: 50px percentage(1/$grid-columns) 30px;
+        padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(30);
+        .homepage-btn { padding-bottom: 0; }
     }
+    .home-events-row {
+        margin: auto -15px;
+        margin: auto torem(-15);
+     }
     .home-event{
-         @include make-sm-column(4, 15px); 
+        width: 31.686429512516%; /* >= 320.6666px  */
+        &:nth-child(odd), &:nth-child(even) { 
+            margin: 0 2.470355731225% 25px 0; /* 25px (>= 25px) 25px 0 */
+        }
+        &:nth-child(3n+3) {
+            margin-right: 0;
+        }
+        margin-bottom: 2.768549280177%; /* >= ~25px */
     }
     .home-event-date {
+        font-size: 20px;
+        font-size: torem(20);
+    }
+    .home-event-venue {
         font-size: 24px;
         font-size: torem(24);
     }
