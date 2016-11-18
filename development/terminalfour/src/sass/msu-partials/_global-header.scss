@@ -65,7 +65,7 @@
   display: inline;
   line-height: 50px;
   font-weight: 800;
-  font-size: 1.4em;
+  font-size: 1.0em;
   padding-bottom: 8px;
 }
 //begin expanding search css
@@ -308,7 +308,7 @@
 
 .pushdown-menu>li>a {
     font-weight: 600;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 .search-input-mobile {
   display: none;
@@ -380,6 +380,25 @@
   margin-top: 0em !important;
   padding: 14px 10px !important;
   display: block;
+}
+
+#nav-faculty {
+  width: 11em;
+}
+#nav-admissions {
+  width: 12em;
+}
+#nav-academics {
+  width: 12em;
+}
+#nav-campus {
+  width: 10em;
+}
+#nav-alumni {
+  width: 10em;
+}
+#nav-search {
+  width: 1em;
 }
 
 @media screen and (max-width: 450px) {
@@ -477,7 +496,7 @@
   }
 
   .search-desktop {
-    display: block;
+    display: block !important;
   }
   li.dropdown {
     border-right: 2px solid #4cb4f2;
@@ -555,24 +574,6 @@
   .faculty-staff, .faculty-staff a {
     display: block;
   }
-  #nav-faculty {
-    width: 16em;
-  }
-  #nav-admissions {
-    width: 17em;
-  }
-  #nav-academics {
-    width: 17em;
-  }
-  #nav-campus {
-    width: 15em;
-  }
-  #nav-alumni {
-    width: 15em;
-  }
-  #nav-search {
-    width: 1em;
-  }
 }
 
 @media only screen and (min-width:1200px) {
@@ -596,6 +597,31 @@
   #content-nav #search-input .button {
       top: -3.3em;
       left: 82em;
+  }
+  #nav-faculty {
+    width: 16em;
+  }
+  #nav-admissions {
+    width: 17em;
+  }
+  #nav-academics {
+    width: 17em;
+  }
+  #nav-campus {
+    width: 15em;
+  }
+  #nav-alumni {
+    width: 15em;
+  }
+  #nav-search {
+    width: 1em;
+  }
+  .nav > li > a {
+    font-size: 1.4em;
+  }
+  .pushdown-menu>li>a {
+      font-weight: 600;
+      font-size: 1.3em;
   }
 }
 
