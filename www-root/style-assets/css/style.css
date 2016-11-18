@@ -7503,9 +7503,9 @@ header {
 }
 
 #content-nav {
-  max-height: 600px;
+  background-color: #fff;
+  max-height: none;
   transition: max-height 500ms cubic-bezier(0.42, 0, 0.58, 1);
-  background: linear-gradient(to bottom, #fff 0px, #fff 50px, #ddd 50px);
 }
 
 #content-nav #nav-search-close {
@@ -7851,6 +7851,7 @@ header {
     display: block;
     padding-left: 0px;
     width: 101%;
+    padding-top: 5em;
   }
 
   .left-addon input {
@@ -7988,6 +7989,10 @@ header {
 
   .blue-header {
     height: 10em;
+  }
+
+  #content-nav {
+    background: linear-gradient(to bottom, #fff 0px, #fff 50px, #ddd 50px);
   }
 }
 @media only screen and (min-width: 1200px) {
