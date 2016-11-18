@@ -1,0 +1,22 @@
+/* !!!
+
+Homepage Spring 2016
+CSS Baked on :
+Wednesday 06, April, 2016
+
+!!! */
+@import "ContentTypes/variables";
+@import "ContentTypes/MainHeaderNavigation";
+// @import "ContentTypes/carousel.scss";
+@import "ContentTypes/footer";
+// @import "ContentTypes/callstoaction.scss";
+
+
+h1.hidden {
+    display: none;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}

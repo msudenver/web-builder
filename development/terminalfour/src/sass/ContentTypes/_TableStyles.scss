@@ -1,0 +1,241 @@
+
+table.atoz {
+  color: #333;
+  border-width: 1px;
+  border-color: #bdc3c7
+}
+table.atoz th {
+  background-color: #2980b9;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  font-weight: 700;
+  font-size: 20px
+}
+table.atoz th.department {
+  width: 40%
+}
+table.atoz th.phone {
+  width: 30%
+}
+table.atoz td {
+  padding: 10px;
+  border-bottom: .1em;
+  border-color: #95a5a6
+}
+table.atoz td.letter {
+  width: 100%;
+  border-bottom: none
+}
+table.datatable {
+  color: #333;
+  border-width: 1px;
+  border-color: #95a5a6;
+  border-collapse: collapse;
+  margin-bottom: 20px
+}
+table.datatable th {
+  border-width: 1px;
+  padding: 10px;
+  border-style: solid;
+  border-color: #95a5a6;
+  background-color: #bdc3c7
+}
+table.datatable td {
+  border-width: 1px;
+  padding: 10px;
+  border-style: solid;
+  border-color: #95a5a6;
+  background-color: #fff
+}
+table.backgroundtable {
+  color: #333;
+  padding: 10px;
+  border-width: 1px;
+  border-color: #bdc3c7;
+  border-collapse: collapse;
+  margin-bottom: 20px
+}
+table.backgroundtable th {
+  background-color: #ecf0f1;
+  border-width: 1px;
+  padding: 10px;
+  border-style: solid;
+  border-color: #bdc3c7
+}
+table.backgroundtable tr {
+  background-color: #ecf0f1
+}
+table.backgroundtable td {
+  border-width: 1px;
+  padding: 10px;
+  border-style: solid;
+  border-color: #ecf0f1
+}
+table.meetingstable {
+  color: #333;
+  border-width: 1px;
+  border-color: #95a5a6
+}
+table.meetingstable th {
+  background-color: #2980b9;
+  color: #fff;
+  border-width: 1px;
+  padding: 10px;
+  border-style: solid;
+  border-color: #95a5a6
+}
+table.meetingstable tr {
+  padding: 10px
+}
+table.meetingstable td {
+  padding: 10px;
+  border-bottom: .1em solid #ecf0f1
+}
+table.staffdirectory {
+  padding: 10px;
+  color: #333;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999;
+  border-collapse: collapse;
+  margin-bottom: 10px
+}
+table.staffdirectory th {
+  background-color: #0C1F3F;
+  color: #fff;
+  text-align: left;
+  padding: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999;
+  border-collapse: collapse
+}
+table.staffdirectory td, table.staffdirectory tr {
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #bdc3c7;
+  border-collapse: collapse
+}
+table.cvatable {
+  color: #FFF;
+  background-color: #008DA9;
+  border: 5px solid #fff;
+  margin-bottom: 10px
+}
+table.cvatable th {
+  color: #FFF;
+  font-size: 26px;
+  background-color: #008DA9;
+  padding: 20px
+}
+table.caption {
+  margin: 20px;
+  padding: 10px;
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0
+}
+.importedTableCSS .table {
+  width: 100%;
+  margin-bottom: 20px
+}
+.importedTableCSS .table tbody>tr>td, .importedTableCSS .table tbody>tr>th, .importedTableCSS .table tfoot>tr>td, .importedTableCSS .table tfoot>tr>th, .importedTableCSS .table thead>tr>td, .importedTableCSS .table thead>tr>th {
+  padding: 8px;
+  line-height: 1.428571429;
+  vertical-align: top;
+  border-top: 1px solid #ddd
+}
+.importedTableCSS .table thead>tr>th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd
+}
+.importedTableCSS .table caption+thead tr:first-child td, .importedTableCSS .table caption+thead tr:first-child th, .importedTableCSS .table colgroup+thead tr:first-child td, .importedTableCSS .table colgroup+thead tr:first-child th, .importedTableCSS .table thead:first-child tr:first-child td, .importedTableCSS .table thead:first-child tr:first-child th {
+  border-top: 0
+}
+.importedTableCSS .table tbody+tbody {
+  border-top: 2px solid #ddd
+}
+.importedTableCSS .table .table {
+  background-color: #fff
+}
+.importedTableCSS .table-condensed tbody>tr>td, .importedTableCSS .table-condensed tbody>tr>th, .importedTableCSS .table-condensed tfoot>tr>td, .importedTableCSS .table-condensed tfoot>tr>th, .importedTableCSS .table-condensed thead>tr>td, .importedTableCSS .table-condensed thead>tr>th {
+  padding: 5px
+}
+.importedTableCSS .table-bordered, .importedTableCSS .table-bordered>tbody>tr>td, .importedTableCSS .table-bordered>tbody>tr>th, .importedTableCSS .table-bordered>tfoot>tr>td, .importedTableCSS .table-bordered>tfoot>tr>th, .importedTableCSS .table-bordered>thead>tr>td, .importedTableCSS .table-bordered>thead>tr>th {
+  border: 1px solid #ddd
+}
+.importedTableCSS .table-bordered>thead>tr>td, .importedTableCSS .table-bordered>thead>tr>th {
+  border-bottom-width: 2px
+}
+.importedTableCSS .table-striped>tbody>tr:nth-child(odd)>td, .importedTableCSS .table-striped>tbody>tr:nth-child(odd)>th {
+  background-color: #f9f9f9
+}
+.importedTableCSS .table-hover>tbody>tr:hover>td, .importedTableCSS .table-hover>tbody>tr:hover>th {
+  background-color: #f5f5f5
+}
+.importedTableCSS table col[class*=col-] {
+  float: none;
+  display: table-column
+}
+.importedTableCSS table td[class*=col-], .importedTableCSS table th[class*=col-] {
+  float: none;
+  display: table-cell
+}
+.importedTableCSS .table>tbody>tr.active>td, .importedTableCSS .table>tbody>tr.active>th, .importedTableCSS .table>tbody>tr>td.active, .importedTableCSS .table>tbody>tr>th.active, .importedTableCSS .table>tfoot>tr.active>td, .importedTableCSS .table>tfoot>tr.active>th, .importedTableCSS .table>tfoot>tr>td.active, .importedTableCSS .table>tfoot>tr>th.active, .importedTableCSS .table>thead>tr.active>td, .importedTableCSS .table>thead>tr.active>th, .importedTableCSS .table>thead>tr>td.active, .importedTableCSS .table>thead>tr>th.active {
+  background-color: #f5f5f5
+}
+.importedTableCSS .table>tbody>tr.success>td, .importedTableCSS .table>tbody>tr.success>th, .importedTableCSS .table>tbody>tr>td.success, .importedTableCSS .table>tbody>tr>th.success, .importedTableCSS .table>tfoot>tr.success>td, .importedTableCSS .table>tfoot>tr.success>th, .importedTableCSS .table>tfoot>tr>td.success, .importedTableCSS .table>tfoot>tr>th.success, .importedTableCSS .table>thead>tr.success>td, .importedTableCSS .table>thead>tr.success>th, .importedTableCSS .table>thead>tr>td.success, .importedTableCSS .table>thead>tr>th.success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6
+}
+.importedTableCSS .table-hover>tbody>tr.success:hover>td, .importedTableCSS .table-hover>tbody>tr>td.success:hover, .importedTableCSS .table-hover>tbody>tr>th.success:hover {
+  background-color: #d0e9c6;
+  border-color: #c9e2b3
+}
+.importedTableCSS .table>tbody>tr.danger>td, .importedTableCSS .table>tbody>tr.danger>th, .importedTableCSS .table>tbody>tr>td.danger, .importedTableCSS .table>tbody>tr>th.danger, .importedTableCSS .table>tfoot>tr.danger>td, .importedTableCSS .table>tfoot>tr.danger>th, .importedTableCSS .table>tfoot>tr>td.danger, .importedTableCSS .table>tfoot>tr>th.danger, .importedTableCSS .table>thead>tr.danger>td, .importedTableCSS .table>thead>tr.danger>th, .importedTableCSS .table>thead>tr>td.danger, .importedTableCSS .table>thead>tr>th.danger {
+  background-color: #f2dede;
+  border-color: #eed3d7
+}
+.importedTableCSS .table-hover>tbody>tr.danger:hover>td, .importedTableCSS .table-hover>tbody>tr>td.danger:hover, .importedTableCSS .table-hover>tbody>tr>th.danger:hover {
+  background-color: #ebcccc;
+  border-color: #e6c1c7
+}
+.importedTableCSS .table>tbody>tr.warning>td, .importedTableCSS .table>tbody>tr.warning>th, .importedTableCSS .table>tbody>tr>td.warning, .importedTableCSS .table>tbody>tr>th.warning, .importedTableCSS .table>tfoot>tr.warning>td, .importedTableCSS .table>tfoot>tr.warning>th, .importedTableCSS .table>tfoot>tr>td.warning, .importedTableCSS .table>tfoot>tr>th.warning, .importedTableCSS .table>thead>tr.warning>td, .importedTableCSS .table>thead>tr.warning>th, .importedTableCSS .table>thead>tr>td.warning, .importedTableCSS .table>thead>tr>th.warning {
+  background-color: #fcf8e3;
+  border-color: #fbeed5
+}
+.importedTableCSS .table-hover>tbody>tr.warning:hover>td, .importedTableCSS .table-hover>tbody>tr>td.warning:hover, .importedTableCSS .table-hover>tbody>tr>th.warning:hover {
+  background-color: #faf2cc;
+  border-color: #f8e5be
+}
+@media (max-width: 768px) {
+  .importedTableCSS .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    border: 1px solid #ddd
+  }
+  .importedTableCSS .table-responsive>.table {
+    margin-bottom: 0;
+    background-color: #fff
+  }
+  .importedTableCSS .table-responsive>.table>tbody>tr>td, .importedTableCSS .table-responsive>.table>tbody>tr>th, .importedTableCSS .table-responsive>.table>tfoot>tr>td, .importedTableCSS .table-responsive>.table>tfoot>tr>th, .importedTableCSS .table-responsive>.table>thead>tr>td, .importedTableCSS .table-responsive>.table>thead>tr>th {
+    white-space: nowrap
+  }
+  .importedTableCSS .table-responsive>.table-bordered {
+    border: 0
+  }
+  .importedTableCSS .table-responsive>.table-bordered>tbody>tr>td:first-child, .importedTableCSS .table-responsive>.table-bordered>tbody>tr>th:first-child, .importedTableCSS .table-responsive>.table-bordered>tfoot>tr>td:first-child, .importedTableCSS .table-responsive>.table-bordered>tfoot>tr>th:first-child, .importedTableCSS .table-responsive>.table-bordered>thead>tr>td:first-child, .importedTableCSS .table-responsive>.table-bordered>thead>tr>th:first-child {
+    border-left: 0
+  }
+  .importedTableCSS .table-responsive>.table-bordered>tbody>tr>td:last-child, .importedTableCSS .table-responsive>.table-bordered>tbody>tr>th:last-child, .importedTableCSS .table-responsive>.table-bordered>tfoot>tr>td:last-child, .importedTableCSS .table-responsive>.table-bordered>tfoot>tr>th:last-child, .importedTableCSS .table-responsive>.table-bordered>thead>tr>td:last-child, .importedTableCSS .table-responsive>.table-bordered>thead>tr>th:last-child {
+    border-right: 0
+  }
+  .importedTableCSS .table-responsive>.table-bordered>tbody>tr:last-child>td, .importedTableCSS .table-responsive>.table-bordered>tbody>tr:last-child>th, .importedTableCSS .table-responsive>.table-bordered>tfoot>tr:last-child>td, .importedTableCSS .table-responsive>.table-bordered>tfoot>tr:last-child>th, .importedTableCSS .table-responsive>.table-bordered>thead>tr:last-child>td, .importedTableCSS .table-responsive>.table-bordered>thead>tr:last-child>th {
+    border-bottom: 0
+  }
+}
