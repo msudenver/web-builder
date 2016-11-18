@@ -7592,9 +7592,7 @@ header {
 /* Homepage-feature-caption partial */
 #homepage-feature-caption {
   padding: 0;
-  position: relative;
   text-align: right;
-  height: 100%;
 }
 
 .homepage-feature-caption-img {
@@ -7617,10 +7615,6 @@ header {
   text-align: right;
   position: relative;
   float: right;
-  top: calc(0px);
-  z-index: 500;
-  width: 500px;
-  -webkit-backface-visibility: hidden;
 }
 @media (min-width: 768px) {
   .homepage-feature-caption-text {
@@ -7647,15 +7641,25 @@ header {
   color: #fff;
 }
 
+.carousel-control {
+  display: none;
+}
+
+.t4-slide .carousel-control {
+  display: block;
+  top: 80%;
+}
+
 /* End homepage-feature-caption partial */
 @media (min-width: 992px) {
   .homepage-feature-caption-text {
     width: 75%;
     float: right;
-    top: calc(0px);
-    z-index: 500;
-    width: 500px;
+    position: absolute;
+    top: 30%;
     right: 0;
+    left: auto;
+    bottom: auto;
     background-color: rgba(0, 0, 0, 0.7);
   }
   .homepage-feature-caption-text .feature-heading {
@@ -7674,7 +7678,7 @@ header {
   .homepage-feature-caption-text {
     padding: 50px 15px;
     padding: 3.125rem 0.9375rem;
-    top: calc(40%);
+    top: 40%;
   }
 }
 @media (min-width: 1300px) {
@@ -7695,7 +7699,7 @@ header {
   }
 }
 #homepage-ryor {
-  background: url("../media/RYOR_bg.jpg");
+  background: url("../media/RYOR_bg_extended.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
