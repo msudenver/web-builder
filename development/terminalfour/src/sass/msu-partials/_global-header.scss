@@ -308,7 +308,7 @@
 }
 
 .search-desktop {
-  display: none;
+  display: none !important;
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
@@ -372,7 +372,6 @@
 
 .mobile-header {
   cursor: pointer;
-  border-right: 1px solid #337ab7;
 }
 
 .faculty-staff, .faculty-staff a {
@@ -389,7 +388,7 @@
 
 .container .pushdown-menu {
   padding-left: 0em !important;
-  border-right: 1px solid #4cb4f2;
+  border-right: none;
 }
 
 @media screen and (max-width: 450px) {
@@ -417,8 +416,9 @@
   .navbar-collapse {
     border-top: 5px solid #005fae;
   }
-  .navbar .navbar-collapse .search-input-mobile {
+  .navbar .navbar-collapse .search-input-mobile, .navbar .navbar-collapse {
     text-align: left;
+    border-right: none;
   }
   #content-nav #search-input input[type="text"] {
     width: 100%;
@@ -559,6 +559,12 @@
   }
   #content-nav {
     background: linear-gradient(to bottom, #fff 0px,#fff 50px, #ddd 50px);
+  }
+  .mobile-header {
+    border-right: 1px solid #337ab7;
+  }
+  .container .pushdown-menu {
+    border-right: 1px solid #4cb4f2;
   }
 }
 
