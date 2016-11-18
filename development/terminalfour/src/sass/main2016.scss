@@ -1,27 +1,46 @@
-/* !!!
+/**
+    ===========================================
+            Start Bootstrap  v 3.3.7
+    ===========================================
+**/
+@import "../../../lib/bootstrap-sass/assets/stylesheets/bootstrap";
+/** -------  End Bootstrap  v 3.3.7 -------- **/
+/**
+    =================================================
+        MSU Denver 2016 custom style declarations
+    =================================================
+**/
 
- RowdyTheRoadRunner
- CSS MIN Baked on :
- Thursday 7, January, 2016
+/** SVG fallback for IE 8 **/
+header {
+    background-color: #505050;
+    text-align: center;
+    color: #fff;
+}
+#denver-city-svg { background: blue; color: #fff; }
+#denver-city-svg svg { color: #fff;}
 
- build :: 0.3.4
 
-!!! */
+/**  Components michael.mason@terminalfour.com **/
+@import "msu-partials/global-header";
+@import "msu-partials/msu-utils";
+@import "msu-partials/footer";
 
-@import "ContentTypes/MainHeaderNavigation";
-@import "ContentTypes/variables";
-@import "ContentTypes/content";
-@import "ContentTypes/navmenu";
-@import "ContentTypes/TableStyles";
-@import "ContentTypes/AdmissionsStyles";
-@import "ContentTypes/PresidentMessages";
-@import "ContentTypes/HighlightBox";
-@import "ContentTypes/CallsToAction";
-@import "ContentTypes/ExpertProfiles";
-@import "ContentTypes/hero";
-@import "ContentTypes/newsroom";
-@import "ContentTypes/panel";
-@import "ContentTypes/footer";
-@import "ContentTypes/SiteHeader";
-@import "ContentTypes/stylestoimport";
-@import "ContentTypes/card";
+
+// @import "ContentTypes/MainHeaderNavigation";
+// @import "ContentTypes/variables";
+// @import "ContentTypes/content";
+// @import "ContentTypes/navmenu";
+// @import "ContentTypes/TableStyles";
+// @import "ContentTypes/AdmissionsStyles";
+// @import "ContentTypes/PresidentMessages";
+// @import "ContentTypes/HighlightBox";
+// @import "ContentTypes/CallsToAction";
+// @import "ContentTypes/ExpertProfiles";
+// @import "ContentTypes/hero";
+// @import "ContentTypes/newsroom";
+// @import "ContentTypes/panel";
+// @import "ContentTypes/footer";
+// @import "ContentTypes/SiteHeader";
+// @import "ContentTypes/stylestoimport";
+// @import "ContentTypes/card";
