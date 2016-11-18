@@ -60,7 +60,12 @@ footer {
     margin-bottom: 16px;
     margin-bottom: torem(16);
 }
-
+.footer-campus-info {
+    .fa { 
+        width: 5%;
+        text-align: center;
+    }
+}
 .footer-links-row {
     @include make-row();
 }

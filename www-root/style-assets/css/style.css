@@ -8387,6 +8387,11 @@ footer {
   margin-bottom: 1rem;
 }
 
+.footer-campus-info .fa {
+  width: 5%;
+  text-align: center;
+}
+
 .footer-links-row {
   margin-left: -15px;
   margin-right: -15px;
