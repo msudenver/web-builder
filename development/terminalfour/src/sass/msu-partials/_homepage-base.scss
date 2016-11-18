@@ -62,11 +62,26 @@
     float: right;
     &:hover, &:active, &:focus {
         color:  $msu-red;    
-    } 
-    
+    }  
 }
+.main-button {
+    margin-bottom: 0;
+}
+/* Small button */
+@media (max-width: $screen-xs-max) {
+    .homepage-btn.homepage-btn__small {
+        font-size: 16px;
+        font-size: torem(16);
+        padding: 10px 20px;
+        padding: torem(10) torem(20);
+    }
+}
+
 @media (max-width: $screen-sm-max) {
-    .homepage-btn .fa { display: none;}
+    .main-button .fa { 
+        display: none;
+    }
+    
 }
 @media (min-width: $screen-md-min) {
     .homepage-feature {
@@ -86,22 +101,36 @@
         margin: 0 0 torem(25, $small-unit);
         
     }
-    .homepage-btn:not(.footer-btn) {
-        font-family: $font-family-serif;
-        font-weight: 700;
+    .homepage-btn {
+        float: none;
+        &:not(.footer-btn) {
+            font-family: $font-family-serif;
+            font-weight: 700;
+            font-size: 30px; //33px @ 14px
+            font-size: torem(30, $base-unit); //33px @ 14px
+            padding-left: 0;
+            padding-right: 0;
+            color: $white;
+            background-color: transparent;
+            &:hover, &:active, &:focus {
+                color:  $white;    
+                text-decoration: underline;
+            } 
+        }
+    }
+    /* Wraps buttons in the main body area */
+    .main-button {
+        @include clearfix;
+        padding: 10px 0px;
+        padding: torem(10) torem(0);
+        color: $white;
+        text-align: right;   
         font-size: 30px; //33px @ 14px
         font-size: torem(30, $base-unit); //33px @ 14px
-        padding-left: 0;
-        padding-right: 0;
-        color: $white;
-        background-color: transparent;
-        float: right;
-        &:hover, &:active, &:focus {
-            color:  $white;    
-        } 
+        .homepage-btn {
+            padding: 0;
+            line-height: 1;
+        }
     }
-    .homepage-btn:active, .homepage-btn:focus, .homepage-btn:hover {
-        color: $white;
-        text-decoration: underline;
-    }
+    
 }

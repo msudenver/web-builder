@@ -7512,8 +7512,21 @@ header {
   color: #d11242;
 }
 
+.main-button {
+  margin-bottom: 0;
+}
+
+/* Small button */
+@media (max-width: 767px) {
+  .homepage-btn.homepage-btn__small {
+    font-size: 16px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
+  }
+}
 @media (max-width: 991px) {
-  .homepage-btn .fa {
+  .main-button .fa {
     display: none;
   }
 }
@@ -7537,6 +7550,9 @@ header {
     margin: 0 0 1.78571rem;
   }
 
+  .homepage-btn {
+    float: none;
+  }
   .homepage-btn:not(.footer-btn) {
     font-family: "Karla", "Georgia", "Times New Roman", Times, serif;
     font-weight: 700;
@@ -7546,15 +7562,31 @@ header {
     padding-right: 0;
     color: #fff;
     background-color: transparent;
-    float: right;
   }
   .homepage-btn:not(.footer-btn):hover, .homepage-btn:not(.footer-btn):active, .homepage-btn:not(.footer-btn):focus {
     color: #fff;
+    text-decoration: underline;
   }
 
-  .homepage-btn:active, .homepage-btn:focus, .homepage-btn:hover {
+  /* Wraps buttons in the main body area */
+  .main-button {
+    padding: 10px 0px;
+    padding: 0.625rem 0rem;
     color: #fff;
-    text-decoration: underline;
+    text-align: right;
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+  .main-button:before, .main-button:after {
+    content: " ";
+    display: table;
+  }
+  .main-button:after {
+    clear: both;
+  }
+  .main-button .homepage-btn {
+    padding: 0;
+    line-height: 1;
   }
 }
 /* Homepage-feature-caption partial */
@@ -7562,6 +7594,7 @@ header {
   padding: 0;
   position: relative;
   text-align: right;
+  height: 100%;
 }
 
 .homepage-feature-caption-img {
@@ -7582,6 +7615,12 @@ header {
   padding-bottom: 1rem;
   background-color: #000;
   text-align: right;
+  position: relative;
+  float: right;
+  top: calc(0px);
+  z-index: 500;
+  width: 500px;
+  -webkit-backface-visibility: hidden;
 }
 @media (min-width: 768px) {
   .homepage-feature-caption-text {
@@ -7589,11 +7628,19 @@ header {
     width: 100%;
   }
 }
+.homepage-feature-caption-text .fa {
+  display: inline-block;
+  color: #fff;
+  float: right;
+}
 
 .homepage-feature-caption-link {
-  display: block;
+  display: inline-block;
+  font-size: 20.8px;
+  font-size: 1.3rem;
   text-transform: uppercase;
   color: #fff;
+  float: right;
 }
 
 .homepage-feature-caption-link:hover, .homepage-feature-caption-link:focus, .homepage-feature-caption-link:active {
@@ -7604,10 +7651,23 @@ header {
 @media (min-width: 992px) {
   .homepage-feature-caption-text {
     width: 75%;
-    position: absolute;
-    top: calc(28%);
+    float: right;
+    top: calc(0px);
+    z-index: 500;
+    width: 500px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.7);
+  }
+  .homepage-feature-caption-text .feature-heading {
+    line-height: 1.3;
+  }
+  .homepage-feature-caption-text .main-button {
+    padding: 0;
+  }
+
+  .homepage-feature-caption-link {
+    font-size: 25px;
+    font-size: 1.5625rem;
   }
 }
 @media (min-width: 1200px) {
@@ -7635,6 +7695,11 @@ header {
   }
 }
 #homepage-ryor {
+  background: url("../media/RYOR_bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin-top: 8px;
   margin-top: 0.5rem;
   margin-bottom: 0.5em;
@@ -7662,8 +7727,10 @@ header {
 }
 #homepage-ryor .feature-heading, #homepage-ryor .feature-heading-sub, #homepage-ryor .feature-text {
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.77);
+  position: relative;
+  z-index: 5;
 }
-#homepage-ryor .homepage-btn {
+#homepage-ryor .homepage-btn:not(.ryor-md-button) {
   position: relative;
   bottom: calc(20px);
   right: calc(15px);
@@ -7674,14 +7741,15 @@ header {
   display: block;
   max-width: 100%;
   height: auto;
-  position: relative;
+  overflow: hidden;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
 }
 
 /* IMage gradient overlay */
-.ryor-student::before {
+.ryor-student-image::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -7698,23 +7766,10 @@ header {
 .ryor-student {
   padding-top: 32px;
   padding-top: 2rem;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  overflow: hidden;
 }
 
-.ryor-image {
-  background: url("../media/RYOR_bg.jpg") no-repeat;
-  color: #fff;
-  overflow: visible;
-}
-.ryor-image svg {
-  min-height: 300px;
-  min-width: 300px;
-}
-
-.ryor-student, .ryor-image {
+.ryor-student, .ryor-image, .ryor-image-mobile {
   position: relative;
   float: left;
   width: 100%;
@@ -7722,6 +7777,28 @@ header {
   padding-left: 15px;
   padding-right: 15px;
   z-index: 2;
+}
+
+.ryor-image-mobile {
+  color: #fff;
+  overflow: visible;
+  min-height: 150px;
+}
+.ryor-image-mobile svg {
+  fill: #fff;
+  min-height: 200px;
+  min-width: 300px;
+  position: absolute;
+  top: calc(-20px);
+}
+
+.ryor-image {
+  color: #fff;
+  overflow: visible;
+}
+.ryor-image svg {
+  min-height: 200px;
+  min-width: 300px;
 }
 
 @media (min-width: 992px) {
@@ -7745,34 +7822,29 @@ header {
     margin-bottom: 1.875rem;
     line-height: 1.2;
   }
-  #homepage-ryor .homepage-btn {
-    float: left;
-    left: calc(15px);
+  #homepage-ryor .main-button {
+    text-align: left;
+    padding: 0 25px;
   }
 
   .ryor-image {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: right;
+    height: 200px;
+    width: 100%;
+    padding: 0;
+    margin: 20px auto;
+    width: 41.6666%;
+    text-align: center;
   }
-}
-@media (min-width: 992px) and (min-width: 992px) {
-  .ryor-image {
-    float: left;
-    width: 41.66667%;
+  .ryor-image svg {
+    width: 100%;
   }
-}
 
-@media (min-width: 992px) {
   .ryor-student {
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 48px;
-    padding-top: 3rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 2rem;
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
@@ -7782,6 +7854,11 @@ header {
   }
 }
 
+@media (min-width: 992px) {
+  .ryor-student-image::before {
+    display: none;
+  }
+}
 /* Homepage news items */
 #homepage-news {
   padding-top: 36px;
@@ -7797,11 +7874,15 @@ header {
 #homepage-news p {
   color: #fff;
 }
-#homepage-news .homepage-btn {
-  margin: 32px 0 0;
-  margin: 2rem 0 0;
-}
 
+@media (max-width: 767px) {
+  .homepage-btn.homepage-btn__small {
+    font-size: 16px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
+  }
+}
 .home-news-features {
   position: relative;
   float: left;
@@ -7822,6 +7903,7 @@ header {
   margin-right: 0;
   margin-top: 36px;
   margin-top: 2.57143rem;
+  margin-bottom: 15px;
 }
 .news-features:before, .news-features:after {
   content: " ";
@@ -7930,14 +8012,15 @@ header {
 }
 @media (min-width: 1200px) {
   #homepage-news {
-    padding: 50px 8.33333%;
-    padding: 3.57143rem 8.33333%;
+    padding: 50px 8.33333% 30px;
+    padding: 3.57143rem 8.33333% 1.875rem;
     background: url(../media/newsbg.jpg) no-repeat;
     background-size: cover;
   }
-  #homepage-news .homepage-btn {
-    margin: 25px 0;
-    margin: 1.5625rem 0;
+
+  .news-features {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .news-feature__large {
@@ -7945,6 +8028,7 @@ header {
     min-height: 1px;
     padding-left: 12.5px;
     padding-right: 12.5px;
+    left: 42.5% !important;
   }
 }
 @media (min-width: 1200px) and (min-width: 1200px) {
@@ -7976,11 +8060,16 @@ header {
     font-size: 2.25rem;
   }
 
+  .news-features__small-row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
   .news-features__small {
     position: relative;
     min-height: 1px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media (min-width: 1200px) and (min-width: 1200px) {
@@ -7997,7 +8086,8 @@ header {
 @media (min-width: 1200px) {
   .news-features__small .news-feature {
     width: 100%;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 25px;
   }
   .news-features__small .news-feature:last-child {
@@ -8252,11 +8342,6 @@ header {
     padding-bottom: 0;
   }
 
-  .home-events-row {
-    margin: auto -15px;
-    margin: auto -0.9375rem;
-  }
-
   .home-event {
     width: 31.686429512516%;
     /* >= 320.6666px  */
@@ -8287,14 +8372,35 @@ header {
 footer {
   margin-top: 8px;
   margin-top: 0.5rem;
+  background: url(../media/downtowndenver_msudenver.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center bottom;
 }
 
+/* For the background color gradient in mobile */
+@media (max-width: 1199px) {
+  .footer-bg-mob {
+    /* http://colorzilla.com/gradient-editor/#003a6e+0,7db9e8+100&1+0,0+100 */
+    background: -webkit-linear-gradient(#003a6e 0%, #538ebf 90%, rgba(125, 185, 232, 0) 100%);
+    background: -o-linear-gradient(#003a6e 0%, #538ebf 90%, rgba(125, 185, 232, 0) 100%);
+    background: linear-gradient(#003a6e 0%, #538ebf 90%, rgba(125, 185, 232, 0) 100%);
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003a6e', endColorstr='#007db9e8',GradientType=0 );
+    /* IE6-9 */
+    background-color: #003a6e;
+  }
+}
 .footer-container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  background: #003a6e;
+  padding-bottom: 260px;
 }
 .footer-container:before, .footer-container:after {
   content: " ";
@@ -8465,6 +8571,8 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 0 12.5%;
+  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 .footer-social li {
   display: inline-flex;
@@ -8473,6 +8581,13 @@ footer {
 .footer-social .fa {
   font-size: 2.2em;
   font-size: 2.2rem;
+  -webkit-transition: color  0.1s     ease-in;
+  -moz-transition: color  0.1s     ease-in;
+  -o-transition: color  0.1s     ease-in;
+  transition: color  0.1s     ease-in;
+}
+.footer-social .fa:hover {
+  color: #d11242;
 }
 
 /** Footer media queries **/
@@ -8513,17 +8628,23 @@ footer {
     padding-right: 15px;
   }
 }
-@media (min-width: 768px) and (min-width: 992px) {
+@media (min-width: 768px) and (min-width: 768px) {
   .footer-links-col {
     float: left;
     width: 50%;
   }
 }
+@media (min-width: 768px) {
+  .footer-links-col li:last-child:after {
+    display: none;
+  }
 
-@media (min-width: 992px) {
-  .footer-btn:hover, .footer-btn:focus, .footer-btn:active {
-    color: #d11242;
-    text-decoration: none;
+  .footer-nav {
+    padding: 0;
+  }
+
+  .footer-social {
+    padding: 0 4%;
   }
 
   .footer-campus-info, .footer-logo {
@@ -8531,15 +8652,31 @@ footer {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 18px;
+    margin-top: 1.125rem;
   }
 }
-@media (min-width: 992px) and (min-width: 992px) {
+@media (min-width: 768px) and (min-width: 768px) {
   .footer-campus-info, .footer-logo {
     float: left;
     width: 50%;
   }
 }
 
+@media (min-width: 992px) {
+  .footer-container {
+    padding-bottom: 900px;
+  }
+
+  .footer-btn:hover, .footer-btn:focus, .footer-btn:active {
+    color: #d11242;
+    text-decoration: none;
+  }
+
+  .footer-campus-info, .footer-logo {
+    margin-top: 0;
+  }
+}
 @media (min-width: 1200px) {
   .footer-container {
     padding-left: 8.33333%;
