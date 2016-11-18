@@ -61,25 +61,6 @@
   margin-top: 1.8em;
 }
 
-#nav-faculty {
-  width: 16em;
-}
-#nav-admissions {
-  width: 17em;
-}
-#nav-academics {
-  width: 17em;
-}
-#nav-campus {
-  width: 15em;
-}
-#nav-alumni {
-  width: 15em;
-}
-#nav-search {
-  width: 1em;
-}
-
 .nav > li > a {
   display: inline;
   line-height: 50px;
@@ -393,10 +374,15 @@
   border-right: none;
 }
 
+.navbar-toggle {
+  margin-bottom: 0em !important;
+  margin-right: 0em !important;
+  margin-top: 0em !important;
+  padding: 14px 10px !important;
+  display: block;
+}
+
 @media screen and (max-width: 450px) {
-  .navbar-toggle{
-   padding: 9px 5px;
-  }
   .glyphicon-search-mobile {
     padding-right: 10px;
     padding-left: 10px;
@@ -410,7 +396,7 @@
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .container{
    width: 100%;
   }
@@ -441,13 +427,6 @@
   .blue-header {
     border-bottom: 5px solid #005fae;
   }
-  .navbar-toggle {
-    margin-bottom: 6px;
-  }
-
-  .navbar-toggle {
-      display: block;
-  }
   .navbar-collapse {
       border-top: 1px solid transparent;
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
@@ -477,9 +456,14 @@
   .apply-button {
     display: none;
   }
+  .pushdown-menu {
+    margin-top: 0em;
+    padding-top: 0em;
+    margin-left: 2em;
+  }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   body {
     padding-top: 123px;
   }
@@ -570,6 +554,24 @@
   }
   .faculty-staff, .faculty-staff a {
     display: block;
+  }
+  #nav-faculty {
+    width: 16em;
+  }
+  #nav-admissions {
+    width: 17em;
+  }
+  #nav-academics {
+    width: 17em;
+  }
+  #nav-campus {
+    width: 15em;
+  }
+  #nav-alumni {
+    width: 15em;
+  }
+  #nav-search {
+    width: 1em;
   }
 }
 
