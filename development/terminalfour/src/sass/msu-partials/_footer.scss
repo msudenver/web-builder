@@ -4,6 +4,7 @@
 footer {
     margin-top: 8px;
     margin-top: torem(8);
+
 }
 .footer-container {
     @include container-fixed();
@@ -66,6 +67,11 @@ footer {
 .footer-links-col, .social-mobile {
     @include make-xs-column(12);
 }
+.social-mobile {
+    margin-top: 18px;
+    margin-top: torem(18);
+    &.footer-social { padding: 0 10%; }
+}
 
 /* Footer links type elements */
 .footer-nav {
@@ -115,6 +121,10 @@ footer {
         display: inline-flex;
          
         float: left;
+    }
+    .fa {
+        font-size: 2.2em;
+        font-size: 2.2rem;
     }
 }
 

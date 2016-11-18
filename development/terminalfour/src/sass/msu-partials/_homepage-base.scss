@@ -3,7 +3,6 @@
     @include container-fixed();
 }
 .homepage-feature { 
-    
     @include make-row();
     padding-top: 36px;
     padding-top: torem(36, $small-unit);
@@ -11,7 +10,7 @@
     padding-bottom: torem(36, $small-unit);
     background-color: $gray-base;
     svg { fill: currentColor; } 
-    .fa { padding-left: 10px; }
+    
 }
 .homepage-feature-block { 
     @include make-sm-column(12);

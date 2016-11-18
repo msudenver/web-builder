@@ -7445,9 +7445,6 @@ header {
 .homepage-feature svg {
   fill: currentColor;
 }
-.homepage-feature .fa {
-  padding-left: 10px;
-}
 
 .homepage-feature-block {
   position: relative;
@@ -8411,6 +8408,14 @@ footer {
   padding-right: 15px;
 }
 
+.social-mobile {
+  margin-top: 18px;
+  margin-top: 1.125rem;
+}
+.social-mobile.footer-social {
+  padding: 0 10%;
+}
+
 /* Footer links type elements */
 .footer-nav {
   margin-bottom: 0;
@@ -8459,6 +8464,10 @@ footer {
 .footer-social li {
   display: inline-flex;
   float: left;
+}
+.footer-social .fa {
+  font-size: 2.2em;
+  font-size: 2.2rem;
 }
 
 /** Footer media queries **/
