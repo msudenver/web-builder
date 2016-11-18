@@ -1,23 +1,23 @@
-/**
+/** 
     ===========================================
-            Start Bootstrap  v 3.3.7
+            Start Bootstrap  v 3.3.7  
     ===========================================
 **/
-@import "../../../lib/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../lib/bootstrap-sass/assets/stylesheets/bootstrap"; 
 /** -------  End Bootstrap  v 3.3.7 -------- **/
 
 
-/**
+/** 
     =================================================
-        MSU Denver 2016 custom style declarations
+        MSU Denver 2016 custom style declarations 
     =================================================
 **/
 
 /** SVG fallback for IE 8 **/
-header {
-    background-color: #505050;
-    text-align: center;
-    color: #fff;
+header { 
+    background-color: #505050; 
+    text-align: center; 
+    color: #fff; 
 }
 #denver-city-svg { background: blue; color: #fff; }
 #denver-city-svg svg { color: #fff;}
@@ -32,3 +32,5 @@ header {
 @import "msu-partials/homepage-community";
 @import "msu-partials/homepage-events";
 @import "msu-partials/footer";
+
+

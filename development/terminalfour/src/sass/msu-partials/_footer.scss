@@ -1,5 +1,5 @@
-/**
-    Site-wide footer
+/** 
+    Site-wide footer 
 **/
 footer {
     margin-top: 8px;
@@ -10,13 +10,13 @@ footer {
     -o-background-size:       cover;
     background-size:          cover;
     background-position:         center bottom;
-
+    
 }
 
 /* For the background color gradient in mobile */
 @media (max-width: $screen-md-max) {
     .footer-bg-mob {
-
+        
         /* http://colorzilla.com/gradient-editor/#003a6e+0,7db9e8+100&1+0,0+100 */
         background: -webkit-linear-gradient(rgba(0,58,110,1) 0%, rgba(83,142,191,1) 90%, rgba(125,185,232,0) 100%);
         background: -o-linear-gradient(rgba(0,58,110,1) 0%, rgba(83,142,191,1)      90%, rgba(125,185,232,0) 100%);
@@ -24,13 +24,13 @@ footer {
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003a6e', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
     background-color: $msu-blue;
 
-    }
+    }        
 }
 
 .footer-container {
     @include container-fixed();
     padding-bottom: 260px;
-
+   
     *:not(.btn) { color: $white; }
 }
 /* Used inbetween html rows in the footer */
@@ -67,13 +67,13 @@ footer {
     font-size: 24px;
     font-size: torem(24);
     line-height: 1.3;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     margin-top: 0;
 }
 .footer-promo-text {
     line-height: 1.3;
     margin-bottom: 8px;
-    margin-bottom: torem(8);
+    margin-bottom: torem(8); 
 }
 
 /** Footer links and contacts row **/
@@ -83,7 +83,7 @@ footer {
     margin-bottom: torem(16);
 }
 .footer-campus-info {
-    .fa {
+    .fa { 
         width: 5%;
         text-align: center;
     }
@@ -148,7 +148,7 @@ footer {
     margin-top: torem(20);
     li {
         display: inline-flex;
-
+         
         float: left;
     }
     .fa {
@@ -171,8 +171,8 @@ footer {
     }
     .footer-promo-heading {
         font-size: 25px;
-        font-size: torem(25);
-        line-height: 1.4;
+        font-size: torem(25); 
+        line-height: 1.4;   
     }
     .footer-promo-text {
         font-size: 20px;
@@ -188,7 +188,7 @@ footer {
         }
     }
     .footer-nav {
-         padding: 0;
+         padding: 0;   
     }
     .footer-social {
         padding: 0 4%;
@@ -199,9 +199,9 @@ footer {
         margin-top: torem(18);
     }
 
-
-
-
+ 
+    
+    
 }
 @media (min-width: $screen-md-min) {
     .footer-container {
@@ -242,5 +242,10 @@ footer {
             display: none;
         }
     }
-
+        
 }
+
+
+
+
+

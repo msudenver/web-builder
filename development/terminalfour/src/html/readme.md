@@ -1,3 +1,4 @@
-# HTML Source Files
-Place your working HTML files in this directory. Grunt will pick them up and create a 'html' folder at the root of your project containing the compiled HTML files
-You can create a structure if you need to and it will be replicated in the 'html' folder.
+# HTML Includes
+
+Add snippets of HTML that you want to use throughout all your pages - similar to how SSI includes work.
+If they are included in this folder you can reference them using the `@@include` shortcut, for example `@@include('header.html')`
