@@ -4,10 +4,33 @@
 footer {
     margin-top: 8px;
     margin-top: torem(8);
+    background: url(../media/downtowndenver_msudenver.jpg) no-repeat center center;
+    -webkit-background-size:  cover;
+    -moz-background-size:     cover;
+    -o-background-size:       cover;
+    background-size:          cover;
+    background-position:         center bottom;
+
 }
+
+/* For the background color gradient in mobile */
+@media (max-width: $screen-md-max) {
+    .footer-bg-mob {
+
+        /* http://colorzilla.com/gradient-editor/#003a6e+0,7db9e8+100&1+0,0+100 */
+        background: -webkit-linear-gradient(rgba(0,58,110,1) 0%, rgba(83,142,191,1) 90%, rgba(125,185,232,0) 100%);
+        background: -o-linear-gradient(rgba(0,58,110,1) 0%, rgba(83,142,191,1)      90%, rgba(125,185,232,0) 100%);
+        background: linear-gradient(rgba(0,58,110,1) 0%, rgba(83,142,191,1)         90%, rgba(125,185,232,0) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003a6e', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+    background-color: $msu-blue;
+
+    }
+}
+
 .footer-container {
     @include container-fixed();
-    background: $msu-blue;
+    padding-bottom: 260px;
+
     *:not(.btn) { color: $white; }
 }
 /* Used inbetween html rows in the footer */
@@ -59,12 +82,22 @@ footer {
     margin-bottom: 16px;
     margin-bottom: torem(16);
 }
-
+.footer-campus-info {
+    .fa {
+        width: 5%;
+        text-align: center;
+    }
+}
 .footer-links-row {
     @include make-row();
 }
 .footer-links-col, .social-mobile {
     @include make-xs-column(12);
+}
+.social-mobile {
+    margin-top: 18px;
+    margin-top: torem(18);
+    &.footer-social { padding: 0 10%; }
 }
 
 /* Footer links type elements */
@@ -111,10 +144,23 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 0 12.5%;
+    margin-top: 20px;
+    margin-top: torem(20);
     li {
         display: inline-flex;
 
         float: left;
+    }
+    .fa {
+        font-size: 2.2em;
+        font-size: 2.2rem;
+        -webkit-transition:  color  0.1s     ease-in;
+        -moz-transition:     color  0.1s     ease-in;
+        -o-transition:       color  0.1s     ease-in;
+        transition:          color  0.1s     ease-in;
+        &:hover {
+            color: $msu-red;
+        }
     }
 }
 
@@ -136,20 +182,37 @@ footer {
         margin-bottom: torem(16);
     }
     .footer-links-col {
-        @include make-md-column(6);
-
+        @include make-sm-column(6);
+        li:last-child:after {
+            display: none;
+        }
     }
+    .footer-nav {
+         padding: 0;
+    }
+    .footer-social {
+        padding: 0 4%;
+    }
+    .footer-campus-info, .footer-logo {
+        @include make-sm-column(6);
+        margin-top: 18px;
+        margin-top: torem(18);
+    }
+
 
 
 
 }
 @media (min-width: $screen-md-min) {
+    .footer-container {
+        padding-bottom: 900px;
+    }
     .footer-btn:hover, .footer-btn:focus, .footer-btn:active {
         color: $msu-red;
         text-decoration: none;
     }
     .footer-campus-info, .footer-logo {
-        @include make-md-column(6);
+         margin-top: 0;
     }
 }
 @media (min-width: $screen-lg-min) {

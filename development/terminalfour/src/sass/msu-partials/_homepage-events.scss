@@ -53,7 +53,7 @@
             &:nth-child(even) {
                  margin-left: 0.98944591029024%; /* (15px gutter / 2) / 758px */
             }
-    }
+        }
 }
 @media (min-width: $screen-lg-min) {
     #homepage-events {
@@ -61,10 +61,6 @@
         padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(30);
         .homepage-btn { padding-bottom: 0; }
     }
-    .home-events-row {
-        margin: auto -15px;
-        margin: auto torem(-15);
-     }
     .home-event{
         width: 31.686429512516%; /* >= 320.6666px  */
         &:nth-child(odd), &:nth-child(even) { 

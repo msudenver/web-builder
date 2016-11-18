@@ -10,15 +10,18 @@
         margin-bottom: 0;
     }
     p { color: #fff; }
-    .homepage-btn {
-        margin: 32px 0 0;
-        margin: torem(32) 0 0;
+
+}
+@media (max-width: $screen-xs-max) {
+    .homepage-btn.homepage-btn__small {
+        font-size: 16px;
+        font-size: torem(16);
+        padding: 10px 20px;
+        padding: torem(10) torem(20);
     }
-    
 }
 .home-news-features {
     @include make-xs-column(12);
- 
     img { 
         @include img-responsive;
         width: 100%; 
@@ -28,6 +31,7 @@
     @include make-row(0);
     margin-top: 36px;
     margin-top: torem(36, $small-unit);
+    margin-bottom: 15px;
 }
 .news-feature, .news-feature__large { 
     @include make-xs-column(12, 0);    
@@ -66,8 +70,8 @@
 }
 
 @media (min-width: $screen-sm-min) {
+
     .news-feature__large {
-        
          margin-bottom: 1.771479185119575%;
         .news-feature-image, .news-feature-text { float: left;}
         .news-feature-image { 
@@ -99,19 +103,19 @@
 
 @media (min-width: $screen-lg-min) {
     #homepage-news {
-        padding: 50px percentage(1/$grid-columns);
-        padding: torem(50, $small-unit) percentage(1/$grid-columns);
+        padding: 50px percentage(1/$grid-columns) 30px;
+        padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(30);
         background: url(../media/newsbg.jpg) no-repeat;
         background-size: cover;
 
-        .homepage-btn {
-            margin: 25px 0;
-            margin: torem(25) 0;
-        }
     }
+    .news-features { margin-left: 0px; margin-right: 0px;  }
     .news-feature__large {
          @include make-lg-column(7, 25px); 
          @include make-lg-column-push(5);
+         
+         
+         left: 42.5% !important;
         .news-feature-image, .news-feature-text { float: none; width: 100%; padding: 0;}
         .news-feature-heading {
             font-size: 48px;
@@ -126,12 +130,17 @@
         }
             
     }
+    .news-features__small-row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
     .news-features__small {
-        @include make-lg-column(5, 50px); 
+        @include make-lg-column(5, 30px); 
         @include make-lg-column-pull(7); 
         .news-feature {
             width: 100%;
-            margin: 0;
+               margin-left: 0;
+            margin-right: 0;
             &:last-child {
                 margin: 0;
             }
