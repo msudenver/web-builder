@@ -1,6 +1,11 @@
 /* Homepage events */
 #homepage-events {
     background: url('../media/eventsbg_mobile.jpg') ;
+    a {
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+        } 
+    }
 }
 /* Events grid */
 .home-events {
@@ -22,6 +27,10 @@
     padding: torem(15);
     background-color: $gray-base;
     background-color: rgba(0,0,0,0.6);
+    
+    &:hover, &:active, &focus {
+        background: rgba(0, 0, 0, 1);
+    }
 }
 .home-event-image {
     @include img-responsive;
