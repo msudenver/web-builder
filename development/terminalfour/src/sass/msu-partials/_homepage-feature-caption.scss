@@ -3,6 +3,7 @@
     padding: 0;
     position: relative;
     text-align: right;
+    height: 100%;
 }
 .homepage-feature-caption-img {
     @include img-responsive ;
@@ -16,11 +17,26 @@
     padding-bottom: torem(16);
     background-color: $gray-base;
     text-align: right;
+    
+    position: relative;
+    float: right;
+    top: calc(0px);
+    z-index: 500;
+    width: 500px;
+    -webkit-backface-visibility: hidden;
+    .fa { 
+        display: inline-block;
+        color: $white;
+        float: right;
+    }
 }
 .homepage-feature-caption-link {
-    display: block;
+    display: inline-block;
+    font-size: 20.8px;
+    font-size: torem(20.8);
     text-transform: uppercase;
     color: #fff;  
+    float: right;
 }
 .homepage-feature-caption-link:hover, .homepage-feature-caption-link:focus, .homepage-feature-caption-link:active {
     color: #fff;
@@ -28,13 +44,22 @@
 /* End homepage-feature-caption partial */
 
 @media (min-width: $screen-md-min) {
+    
     .homepage-feature-caption-text {
         width: percentage((9 / $grid-columns));
-        position: absolute;
-        top: calc(28%);
+        
+        float: right;
+        top: calc(0px);
+        z-index: 500;
+        width: 500px;
         right: 0;
         background-color: rgba(0,0,0,0.7);
-        //min-height: 320px;
+        .feature-heading { line-height: 1.3 }
+        .main-button {padding: 0}
+    }
+    .homepage-feature-caption-link {
+        font-size: 25px;
+        font-size: torem(25);
     }
 }
 @media (min-width: $screen-lg-min) {
