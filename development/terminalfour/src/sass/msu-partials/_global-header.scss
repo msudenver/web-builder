@@ -213,7 +213,7 @@
 /* style glyph */
 .inner-addon .glyphicon {
   position: absolute;
-  padding: 20px 10px 10px 10px;
+  padding: 7px 10px 10px 10px;
   pointer-events: none;
 }
 /* align glyph */
@@ -224,6 +224,7 @@
 /* add padding  */
 .left-addon input {
   padding-left: 70px;
+  width: 101%;
 }
 
 /* add back pointer functionality for x-out button  */
@@ -378,6 +379,7 @@
   text-align: right;
   margin-top: -1.0em;
   color: #fff;
+  display: none;
 }
 
 .navbar-nav > li > a {
@@ -430,11 +432,11 @@
     display: block;
     padding-left: 0px;
     width: 101%;
-    padding-top: 5em;
+    text-align: left;
   }
   .left-addon input {
-    padding-top: 20px !important;
-    padding-bottom: 6px;
+    padding-top: 5px !important;
+    padding-bottom: 2px;
   }
   .blue-header {
     border-bottom: 5px solid #005fae;
@@ -565,6 +567,9 @@
   }
   .container .pushdown-menu {
     border-right: 1px solid #4cb4f2;
+  }
+  .faculty-staff, .faculty-staff a {
+    display: block;
   }
 }
 
