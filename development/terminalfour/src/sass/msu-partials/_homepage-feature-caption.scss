@@ -1,6 +1,8 @@
 /* Homepage-feature-caption partial */
-.homepage-feature-caption-item {
-    
+#homepage-feature-caption {
+    padding: 0;
+    position: relative;
+    text-align: right;
 }
 .homepage-feature-caption-img {
     @include img-responsive ;

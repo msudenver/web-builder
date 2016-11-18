@@ -11,6 +11,7 @@
     padding-bottom: torem(36, $small-unit);
     background-color: $gray-base;
     svg { fill: currentColor; } 
+    .fa { padding-left: 10px; }
 }
 .homepage-feature-block { 
     @include make-sm-column(12);
@@ -60,11 +61,17 @@
     text-transform: uppercase;
     border-radius: 11px;
     float: right;
+    &:hover, &:active, &:focus {
+        color:  $msu-red;    
+    } 
+    
 }
-
+@media (max-width: $screen-sm-max) {
+    .homepage-btn .fa { display: none;}
+}
 @media (min-width: $screen-md-min) {
     .homepage-feature {
-        h1 { line-height: 48px;  }
+        h1 { line-height: 1.6;  }
     }
     .feature-heading {
         font-size: 40px;
@@ -80,7 +87,7 @@
         margin: 0 0 torem(25, $small-unit);
         
     }
-    .homepage-btn {
+    .homepage-btn:not(.footer-btn) {
         font-family: $font-family-serif;
         font-weight: 700;
         font-size: 30px; //33px @ 14px
@@ -89,8 +96,10 @@
         padding-right: 0;
         color: $white;
         background-color: transparent;
-
         float: right;
+        &:hover, &:active, &:focus {
+            color:  $white;    
+        } 
     }
     .homepage-btn:active, .homepage-btn:focus, .homepage-btn:hover {
         color: $white;
