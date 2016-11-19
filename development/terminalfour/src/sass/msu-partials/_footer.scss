@@ -14,28 +14,21 @@ footer {
 }
 
 /* For the background color gradient in mobile */
-@media (max-width: $screen-md-max) {
+@media (max-width: $screen-sm-max) {
     .footer-bg-mob {
-        
-        /* http://colorzilla.com/gradient-editor/#003a6e+0,7db9e8+100&1+0,0+100 */
-        background: -webkit-linear-gradient(rgba(0,58,110,1) 0%, rgba(83,142,191,1) 90%, rgba(125,185,232,0) 100%);
-        background: -o-linear-gradient(rgba(0,58,110,1) 0%, rgba(83,142,191,1)      90%, rgba(125,185,232,0) 100%);
-        background: linear-gradient(rgba(0,58,110,1) 0%, rgba(83,142,191,1)         90%, rgba(125,185,232,0) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003a6e', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
-    background-color: $msu-blue;
-
+        background-color: $msu-blue;
     }        
 }
 
-.footer-container {
+.footer-container { 
     @include container-fixed();
-    padding-bottom: 260px;
+    padding-bottom: 48px;
    
     *:not(.btn) { color: $white; }
 }
 /* Used inbetween html rows in the footer */
 .footer-row-hr {
-    border-top-width: 4px;
+    border-top-width: 2px;
     margin: 0;
 }
 /* Footer promos */
@@ -138,6 +131,11 @@ footer {
 
 .footer-logo {
     text-align: center;
+    
+}
+.footer-logo-img {
+    margin: 0 auto;
+    max-width: 250px;
 }
 
 .footer-social {
@@ -167,7 +165,10 @@ footer {
 /** Footer media queries **/
 @media (min-width: $screen-sm-min) {
     .footer-promo {
-        @include make-lg-column(4);
+        @include make-sm-column(4);
+    }
+    .footer-logo-img {
+        max-width: 180px; 
     }
     .footer-promo-heading {
         font-size: 25px;
@@ -216,6 +217,9 @@ footer {
     }
 }
 @media (min-width: $screen-lg-min) {
+    footer {
+        .homepage-btn { float: right; }
+    }
     .footer-container {
         padding-left: percentage(1/$grid-columns) ;
         padding-right: percentage(1/$grid-columns) ;
@@ -242,7 +246,6 @@ footer {
             display: none;
         }
     }
-        
 }
 
 
