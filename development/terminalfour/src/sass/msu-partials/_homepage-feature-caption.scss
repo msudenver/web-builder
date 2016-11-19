@@ -1,9 +1,9 @@
 /* Homepage-feature-caption partial */
 #homepage-feature-caption {
     padding: 0;
-    position: relative;
+    
     text-align: right;
-    height: 100%;
+    
 }
 .homepage-feature-caption-img {
     @include img-responsive ;
@@ -20,10 +20,10 @@
     
     position: relative;
     float: right;
-    top: calc(0px);
-    z-index: 500;
-    width: 500px;
-    -webkit-backface-visibility: hidden;
+    
+    
+    
+    
     .fa { 
         display: inline-block;
         color: $white;
@@ -41,18 +41,27 @@
 .homepage-feature-caption-link:hover, .homepage-feature-caption-link:focus, .homepage-feature-caption-link:active {
     color: #fff;
 } 
+.carousel-control {
+    display: none;
+}
+.t4-slide .carousel-control {
+    display: block;
+    
+    top: 80%;
+}
 /* End homepage-feature-caption partial */
 
 @media (min-width: $screen-md-min) {
     
     .homepage-feature-caption-text {
         width: percentage((9 / $grid-columns));
-        
         float: right;
-        top: calc(0px);
-        z-index: 500;
-        width: 500px;
+        position: absolute;
+        top: 30%;
         right: 0;
+        left: auto;
+        bottom: auto;
+        
         background-color: rgba(0,0,0,0.7);
         .feature-heading { line-height: 1.3 }
         .main-button {padding: 0}
@@ -67,7 +76,7 @@
         
         padding: 50px 15px ;
         padding: torem(50) torem(15) ;
-        top: calc(40%);
+        top:40%;
     }
 }
 @media (min-width: 1300px) {

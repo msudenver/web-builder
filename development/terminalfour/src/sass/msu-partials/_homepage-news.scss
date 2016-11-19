@@ -10,6 +10,11 @@
         margin-bottom: 0;
     }
     p { color: #fff; }
+    a {
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+        } 
+    }
 
 }
 @media (max-width: $screen-xs-max) {
@@ -55,7 +60,10 @@
 .news-feature-bg {
     padding: 15px;
     padding: torem(15);
-    background: $gray-base;
+    background: rgba(0, 0, 0, 0.5);
+    &:hover, &:active, &focus {
+        background: rgba(0, 0, 0, 1);
+    }
     @include clearfix ;
 }
 .news-feature-text {
@@ -92,7 +100,6 @@
                 
             &:first-child {
                 margin-right: 0.98944591029024%; /* (15px gutter / 2) / 758px */
-               
             }
             &:last-child {
                  margin-left: 0.98944591029024%; /* (15px gutter / 2) / 758px */
