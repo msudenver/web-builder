@@ -108,8 +108,8 @@
 #content-nav #search-input .button {
   display: inline-block;
   padding-left: 3px;
-  top: -4.2em;
-  left: 66em;
+  top: -3.5em;
+  left: 15em;
   position: relative;
   height: 2.8em;
   width: 8.0em;
@@ -194,7 +194,7 @@
 /* style glyph */
 .inner-addon .glyphicon {
   position: absolute;
-  padding: 7px 10px 10px 10px;
+  padding: 17px 10px 10px 10px;
   pointer-events: none;
 }
 /* align glyph */
@@ -550,13 +550,8 @@
   }
 
   #content-nav #nav-search-close {
-    top: -78px;
-    left: 49em;
-  }
-
-  #content-nav #search-input .button {
-      top: -3.5em;
-      left: 66em;
+    top: -84px;
+    left: 14em;
   }
 
   .blue-header {
@@ -591,12 +586,12 @@
     width: 89em;
   }
   #content-nav #nav-search-close {
-      top: -77px;
-      left: 60.2em;
+      top: -84px;
+      left: 25.2em;
   }
   #content-nav #search-input .button {
-      top: -3.3em;
-      left: 82em;
+      top: -3.5em;
+      left: 32em;
   }
   #nav-faculty {
     width: 16em;
@@ -634,8 +629,8 @@
 
   #content-nav #nav-search-close {
     font-size: 20px;
-    top: -4.2em;
-    left: 25em;
+    top: -4.0em;
+    left: 28em;
   }
 
   .glyphicon-search {
