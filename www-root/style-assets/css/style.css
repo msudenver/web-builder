@@ -7592,9 +7592,7 @@ header {
 /* Homepage-feature-caption partial */
 #homepage-feature-caption {
   padding: 0;
-  position: relative;
   text-align: right;
-  height: 100%;
 }
 
 .homepage-feature-caption-img {
@@ -7617,10 +7615,6 @@ header {
   text-align: right;
   position: relative;
   float: right;
-  top: calc(0px);
-  z-index: 500;
-  width: 500px;
-  -webkit-backface-visibility: hidden;
 }
 @media (min-width: 768px) {
   .homepage-feature-caption-text {
@@ -7647,15 +7641,25 @@ header {
   color: #fff;
 }
 
+.carousel-control {
+  display: none;
+}
+
+.t4-slide .carousel-control {
+  display: block;
+  top: 80%;
+}
+
 /* End homepage-feature-caption partial */
 @media (min-width: 992px) {
   .homepage-feature-caption-text {
     width: 75%;
     float: right;
-    top: calc(0px);
-    z-index: 500;
-    width: 500px;
+    position: absolute;
+    top: 30%;
     right: 0;
+    left: auto;
+    bottom: auto;
     background-color: rgba(0, 0, 0, 0.7);
   }
   .homepage-feature-caption-text .feature-heading {
@@ -7674,7 +7678,7 @@ header {
   .homepage-feature-caption-text {
     padding: 50px 15px;
     padding: 3.125rem 0.9375rem;
-    top: calc(40%);
+    top: 40%;
   }
 }
 @media (min-width: 1300px) {
@@ -7695,7 +7699,7 @@ header {
   }
 }
 #homepage-ryor {
-  background: url("../media/RYOR_bg.jpg");
+  background: url("../media/RYOR_bg_extended.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7874,6 +7878,9 @@ header {
 #homepage-news p {
   color: #fff;
 }
+#homepage-news a:hover, #homepage-news a:active, #homepage-news a:focus {
+  text-decoration: none;
+}
 
 @media (max-width: 767px) {
   .homepage-btn.homepage-btn__small {
@@ -7956,7 +7963,10 @@ header {
 .news-feature-bg {
   padding: 15px;
   padding: 0.9375rem;
-  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+}
+.news-feature-bg:hover, .news-feature-bg:active, .news-feature-bgfocus {
+  background: black;
 }
 .news-feature-bg:before, .news-feature-bg:after {
   content: " ";
@@ -8251,6 +8261,9 @@ header {
 #homepage-events {
   background: url("../media/eventsbg_mobile.jpg");
 }
+#homepage-events a:hover, #homepage-events a:active, #homepage-events a:focus {
+  text-decoration: none;
+}
 
 /* Events grid */
 .home-events {
@@ -8293,6 +8306,9 @@ header {
   padding: 0.9375rem;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.6);
+}
+.event-bg:hover, .event-bg:active, .event-bgfocus {
+  background: black;
 }
 
 .home-event-image {
@@ -8381,17 +8397,8 @@ footer {
 }
 
 /* For the background color gradient in mobile */
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   .footer-bg-mob {
-    /* http://colorzilla.com/gradient-editor/#003a6e+0,7db9e8+100&1+0,0+100 */
-    background: -webkit-linear-gradient(#003a6e 0%, #538ebf 90%, rgba(125, 185, 232, 0) 100%);
-    background: -o-linear-gradient(#003a6e 0%, #538ebf 90%, rgba(125, 185, 232, 0) 100%);
-    background: linear-gradient(#003a6e 0%, #538ebf 90%, rgba(125, 185, 232, 0) 100%);
-    /* FF3.6-15 */
-    /* Chrome10-25,Safari5.1-6 */
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003a6e', endColorstr='#007db9e8',GradientType=0 );
-    /* IE6-9 */
     background-color: #003a6e;
   }
 }
@@ -8400,7 +8407,7 @@ footer {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 260px;
+  padding-bottom: 48px;
 }
 .footer-container:before, .footer-container:after {
   content: " ";
@@ -8415,7 +8422,7 @@ footer {
 
 /* Used inbetween html rows in the footer */
 .footer-row-hr {
-  border-top-width: 4px;
+  border-top-width: 2px;
   margin: 0;
 }
 
@@ -8567,6 +8574,11 @@ footer {
   text-align: center;
 }
 
+.footer-logo-img {
+  margin: 0 auto;
+  max-width: 250px;
+}
+
 .footer-social {
   display: flex;
   justify-content: space-between;
@@ -8599,7 +8611,7 @@ footer {
     padding-right: 15px;
   }
 }
-@media (min-width: 768px) and (min-width: 1200px) {
+@media (min-width: 768px) and (min-width: 768px) {
   .footer-promo {
     float: left;
     width: 33.33333%;
@@ -8607,6 +8619,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .footer-logo-img {
+    max-width: 180px;
+  }
+
   .footer-promo-heading {
     font-size: 25px;
     font-size: 1.5625rem;
@@ -8678,6 +8694,10 @@ footer {
   }
 }
 @media (min-width: 1200px) {
+  footer .homepage-btn {
+    float: right;
+  }
+
   .footer-container {
     padding-left: 8.33333%;
     padding-right: 8.33333%;
