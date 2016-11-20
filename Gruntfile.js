@@ -78,7 +78,8 @@ module.exports = function(grunt) {
           //compass: true,
         },//options
         files: {
-          'www-root/style-assets/css/style.css': 'development/terminalfour/src/sass/style.scss'
+          'www-root/style-assets/css/style.css': 'development/terminalfour/src/sass/style.scss',
+          'www-root/style-assets/css/inner-style.css': 'development/terminalfour/src/sass/inner-style.scss'
         }//files
       }//dist
     },//sass

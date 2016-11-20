@@ -22,6 +22,7 @@ header {
 #denver-city-svg { background: blue; color: #fff; }
 #denver-city-svg svg { color: #fff;}
 /**  Homepage Feature Components michael.mason@terminalfour.com **/
+@import "msu-partials/global-header";
 @import "msu-partials/msu-utils";
 @import "msu-partials/homepage-base";
 @import "msu-partials/homepage-feature-caption";

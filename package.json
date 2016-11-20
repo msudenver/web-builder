@@ -5,7 +5,7 @@
   "developer": "Michael Mason",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "latest",
+    "grunt": "^1.0.1",
     "grunt-bower-task": "latest",
     "grunt-contrib-copy": "latest",
     "grunt-contrib-sass": "latest",
