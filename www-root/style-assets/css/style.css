@@ -8399,7 +8399,7 @@ footer {
 /* For the background color gradient in mobile */
 @media (max-width: 991px) {
   .footer-bg-mob {
-    background-color: #003a6e;
+    background-color: #d11242;
   }
 }
 .footer-container {

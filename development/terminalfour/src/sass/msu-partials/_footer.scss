@@ -8,7 +8,7 @@ footer {
     -webkit-background-size:  cover;
     -moz-background-size:     cover;
     -o-background-size:       cover;
-    background-size:          cover;
+    background-size:          cover; 
     background-position:         center bottom;
     
 }
@@ -16,7 +16,7 @@ footer {
 /* For the background color gradient in mobile */
 @media (max-width: $screen-sm-max) {
     .footer-bg-mob {
-        background-color: $msu-blue;
+        background-color: $msu-red; 
     }        
 }
 
