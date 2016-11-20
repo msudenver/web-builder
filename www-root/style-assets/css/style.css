@@ -7449,14 +7449,6 @@ header {
   margin-bottom: 0;
 }
 
-.navbar-nav {
-  margin: 0;
-}
-
-.navbar-default {
-  border: none;
-}
-
 .navbar-collapse {
   padding-right: 0;
   padding-left: 0;
@@ -7474,7 +7466,7 @@ header {
   display: none;
   border-right: 1px solid black;
   border-spacing: 10px;
-  margin-top: 1.8em;
+  margin-top: 1em;
 }
 
 #nav-faculty {
@@ -7663,7 +7655,7 @@ li.dropdown.last {
   color: gray;
 }
 
-.button {
+.search-button {
   height: 35px;
   line-height: 35px;
   display: block;
@@ -7677,14 +7669,14 @@ li.dropdown.last {
   border: 0;
 }
 
-.button:hover {
+.search-button:hover {
   text-decoration: none;
   color: #FFF;
   cursor: pointer;
   font-family: 'Open Sans';
 }
 
-.button:focus {
+.search-button:focus {
   text-decoration: none;
   color: #FFF;
 }
@@ -7940,10 +7932,6 @@ li.dropdown.last {
   z-index: 1;
 }
 
-.container {
-  position: relative;
-}
-
 .header-menu {
   line-height: 50px;
   font-weight: 800;
@@ -8004,10 +7992,6 @@ li.dropdown.last {
   }
 }
 @media screen and (max-width: 991px) {
-  .container {
-    width: 100%;
-  }
-
   .navbar-collapse {
     border-top: 5px solid #005fae;
   }
@@ -8130,7 +8114,7 @@ li.dropdown.last {
     display: none;
   }
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   body {
     padding-top: 123px;
   }
@@ -8186,6 +8170,7 @@ li.dropdown.last {
     width: fit-content;
     float: none;
     display: inline-block;
+    padding-top: 15px;
   }
 
   .navbar-collapse #wrapper {
@@ -8198,11 +8183,6 @@ li.dropdown.last {
 
   .container-dropdown {
     display: none;
-  }
-
-  .pushdown-menu {
-    padding-top: 5px;
-    padding-bottom: 5px;
   }
 
   li.dropdown {
@@ -8228,7 +8208,27 @@ li.dropdown.last {
     height: 10em;
   }
 }
-@media only screen and (min-width: 1200px) {
+.header-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+}
+.header-container:before, .header-container:after {
+  content: " ";
+  display: table;
+}
+.header-container:after {
+  clear: both;
+}
+
+@media (min-width: 1200px) {
+  .header-container {
+    padding-left: 8.33333%;
+    padding-right: 8.33333%;
+  }
+
   .msudenver_logo {
     max-height: 150px;
   }
@@ -8255,8 +8255,7 @@ li.dropdown.last {
     top: -3.3em;
     left: 82em;
   }
-}
-@media only screen and (min-width: 1358px) {
+
   #search-input #search-text {
     font-size: 14px;
   }
