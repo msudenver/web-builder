@@ -1,8 +1,4 @@
 /* MainHeaderNavigation Styles */
-body {
-  // padding-top: 65px;
-}
-
 .blue-header {
   background: #00447c;
 }
@@ -34,8 +30,6 @@ body {
   ul li a:hover {
     color: #333;
   }
-  navbar-collapse .navbar-collapse.collapse .nav.navbar-nav.navbar-right {
-  }
 }
 
 .navbar {
@@ -44,13 +38,15 @@ body {
   margin-bottom: 0;
 }
 
-.navbar-nav {
-  margin: 0;
-}
+//.navbar-nav {
+//  margin: 0;
+//}//.navbar-nav {
+//  margin: 0;
+//}
 
-.navbar-default {
-  border: none;
-}
+//.navbar-default {
+//  border: none;
+//}
 
 .navbar-collapse {
   padding-right: 0;
@@ -69,7 +65,7 @@ body {
   display: none;
   border-right: 1px solid black;
   border-spacing: 10px;
-  margin-top: 1.8em;
+  margin-top: 1em;
 }
 
 #nav-faculty {
@@ -256,7 +252,7 @@ li.dropdown.last {
   }
 }
 
-.button {
+.search-button {
   height: 35px;
   line-height: 35px;
   display: block;
@@ -270,14 +266,14 @@ li.dropdown.last {
   border: 0;
 }
 
-.button:hover {
+.search-button:hover {
   text-decoration: none;
   color: #FFF;
   cursor: pointer;
   font-family: 'Open Sans';
 }
 
-.button:focus {
+.search-button:focus {
   text-decoration: none;
   color: #FFF;
 }
@@ -527,9 +523,9 @@ li.dropdown.last {
   z-index: 1;
 }
 
-.container {
-    position: relative;
-  }
+//.container {
+//    position: relative;
+//  }
 
 .header-menu {
   line-height: 50px;
@@ -590,9 +586,9 @@ li.dropdown.last {
 }
 
 @media screen and (max-width: 991px) {
-  .container{
-   width: 100%;
-  }
+//  .container{
+//   width: 100%;
+//  }
 
   .navbar-collapse {
     border-top: 5px solid #005fae;
@@ -701,7 +697,8 @@ li.dropdown.last {
   }
 }
 
-@media screen and (min-width: 992px) {
+
+@media (min-width: $screen-md-min) {
   body {
     padding-top: 123px;
   }
@@ -752,6 +749,7 @@ li.dropdown.last {
     width: fit-content;
     float: none;
     display: inline-block;
+    padding-top: 15px;
   }
 
   .navbar-collapse #wrapper {
@@ -766,10 +764,10 @@ li.dropdown.last {
     display: none;
   }
 
-  .pushdown-menu {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
+//  .pushdown-menu {
+//    padding-top: 5px;
+//    padding-bottom: 5px;
+//  }
 
   li.dropdown {
     padding: 5px 0px;
@@ -795,8 +793,35 @@ li.dropdown.last {
   }
 }
 
-@media only screen and (min-width:1200px) {
-  .msudenver_logo {
+
+@media (max-width: $screen-xs-max) {
+    
+    
+    
+}
+
+
+.header-container { 
+    @include container-fixed();
+    padding-bottom: 30px;
+   
+}
+
+@media (min-width: $screen-sm-min) {
+
+
+
+}
+
+
+
+@media (min-width: $screen-lg-min) {
+.header-container {
+        padding-left: percentage(1/$grid-columns) ;
+        padding-right: percentage(1/$grid-columns) ;
+    }
+    
+.msudenver_logo {
     max-height:150px;
   }
   li.dropdown {
@@ -816,10 +841,8 @@ li.dropdown.last {
   #content-nav #search-input .button {
       top: -3.3em;
       left: 82em;
-  }
-}
-
-@media only screen and (min-width:1358px) {
+  }    
+    
   #search-input #search-text {
     font-size: 14px;
   }
@@ -858,3 +881,4 @@ li.dropdown.last {
     width: 80.5em;
   }
 }
+
