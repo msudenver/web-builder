@@ -1,0 +1,884 @@
+/* MainHeaderNavigation Styles */
+.blue-header {
+  background: #00447c;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.toolbar {
+  z-index: 9999;
+    .navbar-collapse {
+  }
+  button.navbar-toggle {
+    color: #fff;
+    font-size: 25px;
+  }
+  button.navbar-toggle span.icon-bar {
+    color: #fff;
+  }
+  ul li a {
+    color: #00447c;
+    padding-left: 7px;
+    padding-right: 6px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+  ul li a:hover {
+    color: #333;
+  }
+}
+
+.navbar {
+  min-height: 46px;
+  border-radius: 0!important;
+  margin-bottom: 0;
+}
+
+//.navbar-nav {
+//  margin: 0;
+//}//.navbar-nav {
+//  margin: 0;
+//}
+
+//.navbar-default {
+//  border: none;
+//}
+
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.pushdown-menu {
+  font-size: 0.8em;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  text-decoration: none;
+  text-align: left;
+  list-style-type: inherit;
+  padding-left: 0.5em;
+  text-indent:-0.6em;
+  display: none;
+  border-right: 1px solid black;
+  border-spacing: 10px;
+  margin-top: 1em;
+}
+
+#nav-faculty {
+  width: 16em;
+}
+#nav-admissions {
+  width: 17em;
+}
+#nav-academics {
+  width: 17em;
+}
+#nav-campus {
+  width: 15em;
+}
+#nav-alumni {
+  width: 15em;
+}
+#nav-search {
+  width: 1em;
+}
+
+li.dropdown {
+  color: #00447c;
+  font-weight: 800;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  padding: 5px 0px 5px 0px;
+}
+
+li.dropdown.last {
+  border-right: none;
+}
+
+.nav > li > a {
+  display: inline;
+  line-height: 50px;
+  font-weight: 800;
+  font-size: 1.4em;
+  padding-bottom: 8px;
+}
+//begin expanding search css
+#content-nav {
+  max-height: 600px;
+  transition: max-height 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  background: linear-gradient(to bottom, #fff 0px,#fff 50px, #ddd 50px);
+}
+
+#content-nav #wrapper li {
+  padding-left: 0;
+  border-bottom: 2px solid #4cb4f2;
+  margin: 5px 0 -5px;
+  font-weight: bold;
+}
+
+.container-dropdown {
+  margin: 0 40px 0 50px;
+}
+
+#content-nav #wrapper #nav-search div {
+  border: none;
+}
+
+#content-nav #wrapper ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+}
+
+#content-nav #wrapper ul li {
+  float: left;
+  padding: 0;
+  color: #FFF;
+  font-size: 18px;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#content-nav #wrapper ul li:hover {
+  position: relative;
+  left: -1px;
+  background-color: #E9EDF1;
+  color: #00447c;
+  cursor: pointer;
+}
+
+#content-nav #wrapper ul li.active-section {
+  position: relative;
+  left: -1px;
+  background-color: #ebd0f5;
+  cursor: pointer;
+}
+
+#content-nav #wrapper ul li.active-nav {
+  position: relative;
+  left: -1px;
+  background-color: #f7f2f9;
+}
+
+#content-nav #wrapper ul li a {
+  display: block;
+  padding: 0 20px;
+  text-decoration: none;
+  border-bottom: 0 solid #4cb4f2;
+}
+
+#content-nav #wrapper ul li div {
+  padding: 0 14px;
+  border-right: 1px solid #e6d6ed;
+  height: 20px;
+  line-height: 1.3em;
+  position: relative;
+  top: 10px;
+}
+
+#content-nav #nav-search-close {
+  position: relative;
+  top: -78px;
+  left: 50em;
+  color: #007dc3;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+#content-nav .search-input-desktop {
+  display: none;
+  position: absolute; // was relative
+}
+
+#content-nav #search-input div {
+  padding-right: 0 !important;
+  top: 3px !important;
+}
+
+#content-nav #search-input input[type=text] {
+  display: inline-block;
+  height: 50px;
+  width: 32em;
+  border: none;
+  color: #6E6E6E;
+  border: 2px solid #fff;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #fff;
+}
+
+#content-nav #search-input .button {
+  display: inline-block;
+  padding-left: 3px;
+  top: -4.2em;
+  left: 66em;
+  position: relative;
+  height: 2.8em;
+  width: 8.0em;
+  background-color: #007dc3;
+  border-radius: 2;
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+}
+
+#content-nav #search-input .button:hover {
+  color: #fff;
+  background-color: #00447c;
+  ::-webkit-input-placeholder {
+    color: #fff;
+    background-color: #00447c;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: gray;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: gray;
+  }
+
+  :-ms-input-placeholder {
+    color: gray;
+  }
+}
+
+.search-button {
+  height: 35px;
+  line-height: 35px;
+  display: block;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  color: #fff;
+  border: 0;
+}
+
+.search-button:hover {
+  text-decoration: none;
+  color: #FFF;
+  cursor: pointer;
+  font-family: 'Open Sans';
+}
+
+.search-button:focus {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.glyphicon-search {
+  color: #007dc3 !important;
+  padding-top: 1.2em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.glyphicon-opened {
+  color: #717171 !important;
+  padding-top: 10px;
+  font-size: 1.2em;
+  padding-right: 30px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  top: 0.77em;
+  border-radius: 5px 0 0 5px;
+  cursor: unset;
+}
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 20px 10px 10px 10px;
+  pointer-events: none;
+}
+/* align glyph */
+.left-addon .glyphicon {
+  left: 1em;
+}
+
+.right-addon .glyphicon {
+  right: 0;
+}
+/* add padding  */
+.left-addon input {
+  padding-left: 70px;
+}
+
+.right-addon input {
+  padding-right: 30px;
+}
+/* add back pointer functionality for x-out button  */
+.glyphicon-remove {
+  pointer-events: all !important;
+}
+//end expanding search css
+.apply-button {
+  background: #d11242;
+  color: white;
+  font-size: 1.6em;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  padding: 0.5em 0.5em;
+  width: 10%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  float: right !important;
+  margin-left: 0.1em;
+}
+
+.give-visit-buttons {
+  background: gray;
+}
+
+.msudenver_logo {
+  padding: 15px 0px;
+  max-height:65px;
+}
+
+.custom-search-input {
+  margin-top: 5px;
+  height: 40px;
+  padding: 3px;
+  border: solid 1px #E4E4E4;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.custom-search-input input {
+  border: 0;
+  box-shadow: none;
+}
+
+.custom-search-input button {
+  margin: 2px 0 0;
+  background: none;
+  box-shadow: none;
+  border: 0;
+  color: #003663;
+  padding: 0 8px 0 10px;
+  border-left: solid 1px #ccc;
+}
+
+.custom-search-input button:hover {
+  border: 0;
+  box-shadow: none;
+  border-left: solid 1px #ccc;
+  background: none;
+  color: #d11242;
+}
+
+#search-input #search-text {
+  height: 14px;
+  border-style: none;
+  border-color: inherit;
+  border-width: 0;
+  width: 207px;
+  margin-top: 3px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.0em;
+  color: #bcbcbc;
+  letter-spacing: 2px;
+}
+
+#search-input #autoSuggestResults {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 794px;
+  margin-left: 15px;
+  margin-top: 36px;
+  background-color: white;
+  border: 1px solid #999;
+  box-shadow: 3px 3px 3px #AAA;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-family: Verdana;
+  font-size: 8pt;
+  color: #999;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+#autoSuggestResults .autoSuggestResult {
+  padding: 3px 19px 3px 11px;
+  cursor: default;
+}
+
+#autoSuggestResults .autoSuggestResultMouseOver {
+  background-color: #EEE;
+}
+
+.gobutton #searchGoLink.disableGoButton {
+  visibility: hidden;
+}
+
+.fa-bars {
+  background-color: #005fae;
+  padding: 20px;
+  margin: -17px -30px -16px -16px;
+}
+
+.glyphicon-search-mobile {
+  color: #fff !important;
+  font-size: 20px !important;
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 23px;
+}
+
+.quicktools {
+  border-bottom: 2px solid #4cb4f2;
+}
+
+.chevron-pulldown {
+  cursor: pointer;
+}
+
+.col-xs-9,
+.navbar-header {
+  padding-left: 0;
+}
+
+.search-desktop {
+  display: none;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: none;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: transparent;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.dropdown-menu>li>a {
+    font-weight: 700;
+}
+
+.pushdown-menu>li>a {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.search-input-mobile {
+  display: none;
+}
+
+#content-nav-mobile {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
+  font-weight: 500;
+  padding-left: 3px;
+  color: #6E6E6E;
+  border: none;
+  width: 100%;
+  display: none;
+}
+
+#content-nav-mobile #nav-search-close {
+  color: #007dc3;
+  cursor: pointer;
+  font-size: 1.3em
+}
+
+.search-text-mobile {
+  width: 100%;
+  border: none;
+  opacity: 0.8;
+  color: #919195;
+}
+
+.glyphicon-opened-mobile {
+  color: #007dc3 !important;
+  padding-top: 10px;
+  font-size: 1.2em;
+  padding-right: 30px;
+  padding-left: 50px;
+  padding-bottom: 12px;
+  top: 0.0em;
+  border-radius: 5px 0 0 5px;
+  cursor: unset;
+  z-index: 1;
+}
+
+//.container {
+//    position: relative;
+//  }
+
+.header-menu {
+  line-height: 50px;
+  font-weight: 800;
+  font-size: 1.4em;
+  color: #337ab7;
+  text-decoration: none;
+}
+
+
+.menu-last {
+  margin-right: 0em;
+  border-right: none !important;
+}
+
+.nav > li > a {
+  padding-left: 0px;
+  padding-top: 3px;
+}
+
+.mobile-header {
+  cursor: pointer;
+  border-right: 1px solid #337ab7;
+}
+
+.faculty-staff, .faculty-staff a {
+  text-align: right;
+  margin-top: -1.0em;
+  color: #fff;
+}
+
+.navbar-nav > li > a {
+  line-height: 0.1em !important;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+.container .pushdown-menu {
+  padding-left: 0em !important;
+  border-right: 1px solid #4cb4f2;
+}
+
+@media screen and (max-width: 450px) {
+  .navbar-toggle{
+   padding: 9px 5px;
+  }
+  .glyphicon-search-mobile {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .msudenver_logo {
+    max-height: 56px;
+  }
+  .fa-bars {
+    padding-left: 10px;
+    margin: -16px -30px -16px -10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+//  .container{
+//   width: 100%;
+//  }
+
+  .navbar-collapse {
+    border-top: 5px solid #005fae;
+  }
+  .navbar .navbar-collapse .search-input-mobile {
+    text-align: left;
+  }
+  #content-nav #search-input input[type="text"] {
+    width: 100%;
+  }
+  #content-nav #nav-search-close {
+    left: 70%;
+  }
+  #content-nav-mobile {
+    display: block;
+    padding-left: 0px;
+    width: 101%;
+  }
+  .left-addon input {
+    padding-top: 20px !important;
+    padding-bottom: 6px;
+  }
+  .blue-header {
+    border-bottom: 5px solid #005fae;
+  }
+  .navbar-toggle {
+    margin-bottom: 6px;
+  }
+
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+
+  .dropdown .dropdown-menu {
+      -webkit-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+      -moz-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+      -ms-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+      -o-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+      transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+
+      max-height: 0;
+      display: block;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+  }
+
+  .dropdown.open .dropdown-menu {
+      -webkit-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+      -moz-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+      -ms-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+      -o-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+      transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+
+      max-height: 500px;
+      opacity: 1;
+      visibility: visible;
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .navbar-nav .dropdown-menu>li>a {
+    padding: 5px 15px 5px 25px;
+  }
+  .apply-button {
+    display: none;
+  }
+}
+
+
+@media (min-width: $screen-md-min) {
+  body {
+    padding-top: 123px;
+  }
+  .msudenver_logo {
+    max-height:100px;
+  }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    margin-bottom: -2px;
+  }
+
+  .navbar .navbar-nav > .quicktools {
+    display: inline-block;
+    float: none;
+    margin-bottom: -2px;
+  }
+  .search-desktop {
+    display: block;
+  }
+  li.dropdown {
+    border-right: 2px solid #4cb4f2;
+    font-size: 0.74em;
+    margin-top: 10px;
+    margin-bottom:7px;
+    padding: 5px 0px;
+    border-bottom: none;
+    margin-right: 0.8em;
+  }
+
+  li.dropdown.last {
+    border-right: none;
+    margin-right: none;
+  }
+  ul.dropdown-menu > li a {
+    padding-top: 0;
+  }
+
+  ul.pushdown-menu > li a {
+    padding-top: 0;
+  }
+
+  ul.nav.navbar-nav.navbar-center {
+    list-style: none;
+    margin: auto !important;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    float: none;
+    display: inline-block;
+    padding-top: 15px;
+  }
+
+  .navbar-collapse #wrapper {
+    display: none;
+  }
+
+  .glyphicon-search-mobile {
+    display: none !important;
+  }
+
+  .container-dropdown {
+    display: none;
+  }
+
+//  .pushdown-menu {
+//    padding-top: 5px;
+//    padding-bottom: 5px;
+//  }
+
+  li.dropdown {
+    padding: 5px 0px;
+    font-size: 1.08em;
+  }
+
+  #content-nav #search-input input[type=text] {
+    width: 65em;
+  }
+
+  #content-nav #nav-search-close {
+    top: -78px;
+    left: 49em;
+  }
+
+  #content-nav #search-input .button {
+      top: -3.5em;
+      left: 66em;
+  }
+
+  .blue-header {
+    height: 10em;
+  }
+}
+
+
+@media (max-width: $screen-xs-max) {
+    
+    
+    
+}
+
+
+.header-container { 
+    @include container-fixed();
+    padding-bottom: 30px;
+   
+}
+
+@media (min-width: $screen-sm-min) {
+
+
+
+}
+
+
+
+@media (min-width: $screen-lg-min) {
+.header-container {
+        padding-left: percentage(1/$grid-columns) ;
+        padding-right: percentage(1/$grid-columns) ;
+    }
+    
+.msudenver_logo {
+    max-height:150px;
+  }
+  li.dropdown {
+  padding: 5px 0px;
+  font-size: 1.33em;
+  }
+  .glyphicon-search {
+  font-size: 1.2em;
+  }
+  #content-nav #search-input input[type=text] {
+    width: 89em;
+  }
+  #content-nav #nav-search-close {
+      top: -77px;
+      left: 60.2em;
+  }
+  #content-nav #search-input .button {
+      top: -3.3em;
+      left: 82em;
+  }    
+    
+  #search-input #search-text {
+    font-size: 14px;
+  }
+
+  .left-addon .glyphicon {
+    font-size: 23px;
+    top: -0.2em;
+  }
+
+  #content-nav #nav-search-close {
+    font-size: 20px;
+    top: -4.2em;
+    left: 25em;
+  }
+
+  .glyphicon-search {
+    margin-right: 12px;
+    padding-top: 0.9em;
+  }
+
+  .search-desktop {
+    top: 0.3em !important;
+  }
+  #content-nav #search-input .button {
+    top: -2.8em;
+    height: 30px;
+    width: 130px;
+    left: 28em;
+  }
+
+  .button {
+    font-size: 14px;
+    line-height: 31px;
+  }
+  #content-nav #search-input input[type=text] {
+    width: 80.5em;
+  }
+}
+
