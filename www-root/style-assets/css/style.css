@@ -7427,7 +7427,8 @@ header {
   color: #fff;
   font-size: 25px;
 }
-.toolbar ul li a {
+.toolbar ul a li {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #00447c;
   padding-left: 7px;
   padding-right: 6px;
@@ -7436,7 +7437,7 @@ header {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-.toolbar ul li a:hover {
+.toolbar ul a li:hover {
   color: #333;
 }
 
@@ -7446,13 +7447,6 @@ header {
   margin-bottom: 0;
 }
 
-<<<<<<< HEAD
-.navbar-nav {
-  margin: 0;
-}
-
-=======
->>>>>>> origin/2column-dev-to-header-merge
 .navbar-collapse {
   padding-right: 0;
   padding-left: 0;
@@ -7473,7 +7467,7 @@ header {
   margin-top: 1em;
 }
 
-.nav > li > a {
+.nav > a > li {
   display: inline;
   line-height: 50px;
   font-weight: 800;
@@ -7520,13 +7514,8 @@ header {
 #content-nav #search-input .button {
   display: inline-block;
   padding-left: 3px;
-<<<<<<< HEAD
   top: -3.5em;
   left: 15em;
-=======
-  top: -4.2em;
-  left: 66em;
->>>>>>> origin/2column-dev-to-header-merge
   position: relative;
   height: 2.8em;
   width: 8.0em;
@@ -7583,14 +7572,14 @@ header {
   color: #FFF;
 }
 
-.glyphicon-search {
+.fa-search {
   color: #007dc3 !important;
   padding-top: 1.2em;
   font-size: 1.2em;
   cursor: pointer;
 }
 
-.glyphicon-opened {
+.fa-search-opened {
   color: #717171 !important;
   padding-top: 10px;
   font-size: 1.2em;
@@ -7608,15 +7597,16 @@ header {
 }
 
 /* style glyph */
-.inner-addon .glyphicon {
+.inner-addon .fa-search {
   position: absolute;
   padding: 17px 10px 10px 10px;
   pointer-events: none;
 }
 
 /* align glyph */
-.left-addon .glyphicon {
+.left-addon .fa-search {
   left: 1em;
+  top: -0.4em;
 }
 
 /* add padding  */
@@ -7626,7 +7616,7 @@ header {
 }
 
 /* add back pointer functionality for x-out button  */
-.glyphicon-remove {
+.fa-close {
   pointer-events: all !important;
 }
 
@@ -7696,7 +7686,7 @@ header {
   margin: -17px -30px -16px -16px;
 }
 
-.glyphicon-search-mobile {
+.fa-search-mobile {
   color: #fff !important;
   font-size: 20px !important;
   display: inline-block;
@@ -7714,7 +7704,7 @@ header {
   max-height: none;
 }
 
-.nav > li > a:focus, .nav > li > a:hover {
+.nav > a > li:focus, .nav > a > li:hover {
   background-color: transparent;
 }
 
@@ -7732,6 +7722,16 @@ header {
   display: none;
 }
 
+#content-nav {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
+  font-weight: 500;
+  padding-left: 3px;
+  color: #6E6E6E;
+  border: none;
+  width: 100%;
+}
+
 #content-nav-mobile {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 5px;
@@ -7743,7 +7743,7 @@ header {
   display: none;
 }
 
-.glyphicon-opened-mobile {
+.fa-search-opened-mobile {
   color: #007dc3 !important;
   padding-top: 10px;
   font-size: 1.2em;
@@ -7756,25 +7756,12 @@ header {
   z-index: 1;
 }
 
-<<<<<<< HEAD
-.container {
-  position: relative;
-=======
-.header-menu {
-  line-height: 50px;
-  font-weight: 800;
-  font-size: 1.4em;
-  color: #337ab7;
-  text-decoration: none;
->>>>>>> origin/2column-dev-to-header-merge
-}
-
 .menu-last {
   margin-right: 0em;
   border-right: none !important;
 }
 
-.nav > li > a {
+.nav > a > li {
   padding-left: 0px;
   padding-top: 3px;
 }
@@ -7783,14 +7770,16 @@ header {
   cursor: pointer;
 }
 
-.faculty-staff, .faculty-staff a {
+.faculty-staff a {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px;
   text-align: right;
   margin-top: -1.0em;
   color: #fff;
   display: none;
 }
 
-.navbar-nav > li > a {
+.navbar-nav > a > li {
   line-height: 0.1em !important;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
@@ -7834,7 +7823,7 @@ header {
 }
 
 @media screen and (max-width: 450px) {
-  .glyphicon-search-mobile {
+  .fa-search-mobile {
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -7848,15 +7837,7 @@ header {
     margin: -16px -30px -16px -10px;
   }
 }
-<<<<<<< HEAD
-@media screen and (max-width: 767px) {
-  .container {
-    width: 100%;
-  }
-
-=======
 @media screen and (max-width: 991px) {
->>>>>>> origin/2column-dev-to-header-merge
   .navbar-collapse {
     border-top: 5px solid #005fae;
   }
@@ -7932,11 +7913,7 @@ header {
     margin-left: 2em;
   }
 }
-<<<<<<< HEAD
-@media screen and (min-width: 768px) {
-=======
 @media (min-width: 992px) {
->>>>>>> origin/2column-dev-to-header-merge
   body {
     padding-top: 123px;
   }
@@ -7970,7 +7947,7 @@ header {
     margin-right: none;
   }
 
-  ul.pushdown-menu > li a {
+  ul.pushdown-menu > a li {
     padding-top: 0;
   }
 
@@ -7989,18 +7966,12 @@ header {
     display: none;
   }
 
-  .glyphicon-search-mobile {
+  .fa-search-mobile {
     display: none !important;
   }
 
-<<<<<<< HEAD
-  .pushdown-menu {
-    padding-top: 5px;
-    padding-bottom: 5px;
-=======
   .container-dropdown {
     display: none;
->>>>>>> origin/2column-dev-to-header-merge
   }
 
   li.dropdown {
@@ -8033,7 +8004,7 @@ header {
     border-right: 1px solid #4cb4f2;
   }
 
-  .faculty-staff, .faculty-staff a {
+  .faculty-staff a {
     display: block;
   }
 
@@ -8059,6 +8030,14 @@ header {
 
   #nav-search {
     width: 1em;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .fa.pull-right {
+    display: none;
   }
 }
 .header-container {
@@ -8091,7 +8070,7 @@ header {
     font-size: 1.33em;
   }
 
-  .glyphicon-search {
+  .fa-search {
     font-size: 1.2em;
   }
 
@@ -8109,7 +8088,6 @@ header {
     left: 32em;
   }
 
-<<<<<<< HEAD
   #nav-faculty {
     width: 16em;
   }
@@ -8128,17 +8106,13 @@ header {
 
   #nav-alumni {
     width: 15em;
-=======
-  #search-input #search-text {
-    font-size: 14px;
->>>>>>> origin/2column-dev-to-header-merge
   }
 
   #nav-search {
     width: 1em;
   }
 
-  .nav > li > a {
+  .nav > a > li {
     font-size: 1.4em;
   }
 
@@ -8148,18 +8122,22 @@ header {
   }
 }
 @media only screen and (min-width: 1358px) {
-  .left-addon .glyphicon {
+  #search-input #search-text {
+    font-size: 14px;
+  }
+
+  .left-addon .fa-search {
     font-size: 23px;
     top: -0.2em;
   }
 
   #content-nav #nav-search-close {
     font-size: 20px;
-    top: -4.0em;
+    top: -3.3em;
     left: 28em;
   }
 
-  .glyphicon-search {
+  .fa-search {
     margin-right: 12px;
     padding-top: 0.9em;
   }
