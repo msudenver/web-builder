@@ -17,7 +17,8 @@
     font-size: 25px;
   }
 
-  ul li a {
+  ul a li {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #00447c;
     padding-left: 7px;
     padding-right: 6px;
@@ -26,7 +27,7 @@
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
   }
-  ul li a:hover {
+  ul a li:hover {
     color: #333;
   }
 }
@@ -61,7 +62,7 @@
   margin-top: 1.8em;
 }
 
-.nav > li > a {
+.nav > a > li {
   display: inline;
   line-height: 50px;
   font-weight: 800;
@@ -297,7 +298,7 @@
     max-height: none;
 }
 
-.nav > li > a:focus, .nav > li > a:hover {
+.nav > a > li:focus, .nav > a > li:hover {
     background-color: transparent;
 }
 
@@ -347,7 +348,7 @@
   border-right: none !important;
 }
 
-.nav > li > a {
+.nav > a > li {
   padding-left: 0px;
   padding-top: 3px;
 }
@@ -363,7 +364,7 @@
   display: none;
 }
 
-.navbar-nav > li > a {
+.navbar-nav > a > li {
   line-height: 0.1em !important;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
@@ -513,7 +514,7 @@
     margin-right: none;
   }
 
-  ul.pushdown-menu > li a {
+  ul.pushdown-menu > a li {
     padding-top: 0;
   }
 
@@ -629,7 +630,7 @@
   #nav-search {
     width: 1em;
   }
-  .nav > li > a {
+  .nav > a > li {
     font-size: 1.4em;
   }
   .pushdown-menu>li>a {
