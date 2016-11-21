@@ -16,7 +16,7 @@
               <a href="http://msudenver.edu/admissions"><div class="col-xs-1 apply-button">APPLY</div></a>
               <a href="http://msudenver.edu/alumni/give/"><div class="col-xs-1 apply-button give-visit-buttons">GIVE</div></a>
               <a href="https://msudenver.edu/visit/"><div class="col-xs-1 apply-button give-visit-buttons">VISIT</div></a>
-              <span class="glyphicon glyphicon-search glyphicon-search-mobile"></span>
+              <span class="fa fa-search fa-search-mobile"></span>
               <div class="col-xs-12 faculty-staff">
                 <a href="">Faculty &amp; Staff</a>
               </div>
@@ -97,11 +97,11 @@
                    <a href=""><li>Alumni Events</li></a>
                  </ul>
                </li>
-               <li id="nav-search"><div><span class="glyphicon glyphicon-search search-desktop"></span></div></li>
+               <li id="nav-search"><div><span class="fa fa-search search-desktop"></span></div></li>
         <!-- Hidden Search Bar-->
               <form action="https://www.msudenver.edu/search">
                 <div id="search-input" class="inner-addon left-addon search-input-desktop" role="search" action="https://www.msudenver.edu/search">
-                  <span class="glyphicon glyphicon-search glyphicon-opened"></span>
+                  <span class="fa fa-search fa-search-opened"></span>
                   <input  id="q" name="q" type="text" class="home-input" placeholder="SEARCH MSU DENVER" tabindex="2"; style="margin-left: -3px; outline: none;";>
               <!-- AUTO SUGGEST -->
               <!-- Code auto suggest server by DEV, PROD, etc. -->
@@ -112,7 +112,7 @@
                       <button type="submit" class="button" id="qButton">SEARCH</button>
                     </a>
                   </div>
-                  <span id="nav-search-close" class="glyphicon glyphicon-remove"></span>
+                  <span id="nav-search-close" class="fa fa-close"></span>
                 </div> <!-- search-input -->
               </form>
             </ul>
@@ -126,7 +126,7 @@
         <div id="" class="" role="search" action="https://www.msudenver.edu/search">
                 <div id="content-nav-mobile">
                   <div id="search-input" class="inner-addon left-addon search-input-mobile">
-                      <span class="glyphicon glyphicon-search glyphicon-opened-mobile"></span>
+                      <span class="fa fa-search fa-search-opened-mobile"></span>
                             <input  id="q"
                               name="q"
                               type="text"
@@ -185,18 +185,18 @@ $('.search-text-mobile').focusout(function () {
 });
 
 // when desktop search icon clicked: open/close nav bar, change mobile search glyph and hamburger background colors
-$('.glyphicon-search-mobile').click(function(){
+$('.fa-search-mobile').click(function(){
    $('.search-input-mobile').slideToggle();
    $('#content-nav').removeClass('in');
    $('.fa-bars').css('background-color', 'transparent');
-   $('.glyphicon-search-mobile').css('background-color', '#005fae');
+   $('.fa-search-mobile').css('background-color', '#005fae');
 });
 
 // when hamburger clicked, hide search bar and change hamburger/search glyph background colors ***NEEDS FIXING SINCE ORIGINAL MOBILE DESIGN WAS MODIFIED***
 $('.navbar-toggle').click(function(){
    $('.search-input-mobile').hide();
    $('.fa-bars').css('background-color', '#005fae');
-   $('.glyphicon-search-mobile').css('background-color', 'transparent');
+   $('.fa-search-mobile').css('background-color', 'transparent');
    $('#content-nav').toggleClass('in');
 });
 
@@ -227,7 +227,7 @@ else {
 $('.search-desktop').click(function(){
    $('#content-nav').css('max-height', '55px');
 });
-$('.glyphicon-remove').click(function(){
+$('.fa-close').click(function(){
    $('#content-nav').css('max-height', '');
 });
 </script>

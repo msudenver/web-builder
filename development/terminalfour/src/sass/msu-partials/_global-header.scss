@@ -170,14 +170,14 @@
   color: #FFF;
 }
 
-.glyphicon-search {
+.fa-search {
   color: #007dc3 !important;
   padding-top: 1.2em;
   font-size: 1.2em;
   cursor: pointer;
 }
 
-.glyphicon-opened {
+.fa-search-opened {
   color: #717171 !important;
   padding-top: 10px;
   font-size: 1.2em;
@@ -193,13 +193,13 @@
   position: relative;
 }
 /* style glyph */
-.inner-addon .glyphicon {
+.inner-addon .fa-search {
   position: absolute;
   padding: 17px 10px 10px 10px;
   pointer-events: none;
 }
 /* align glyph */
-.left-addon .glyphicon {
+.left-addon .fa-search {
   left: 1em;
 }
 
@@ -210,7 +210,7 @@
 }
 
 /* add back pointer functionality for x-out button  */
-.glyphicon-remove {
+.fa-close {
   pointer-events: all !important;
 }
 //end expanding search css
@@ -280,7 +280,7 @@
   margin: -17px -30px -16px -16px;
 }
 
-.glyphicon-search-mobile {
+.fa-search-mobile {
   color: #fff !important;
   font-size: 20px !important;
   display: inline-block;
@@ -326,7 +326,7 @@
   display: none;
 }
 
-.glyphicon-opened-mobile {
+.fa-search-opened-mobile {
   color: #007dc3 !important;
   padding-top: 10px;
   font-size: 1.2em;
@@ -403,7 +403,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  .glyphicon-search-mobile {
+  .fa-search-mobile {
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -532,7 +532,7 @@
     display: none;
   }
 
-  .glyphicon-search-mobile {
+  .fa-search-mobile {
     display: none !important;
   }
 
@@ -588,6 +588,10 @@
   #nav-search {
     width: 1em;
   }
+  .navbar-toggle {
+    display: none;
+  }
+
 }
 
 @media only screen and (min-width:1200px) {
@@ -598,7 +602,7 @@
   padding: 5px 0px;
   font-size: 1.33em;
   }
-  .glyphicon-search {
+  .fa-search {
   font-size: 1.2em;
   }
   #content-nav #search-input input[type=text] {
@@ -641,7 +645,7 @@
 
 @media only screen and (min-width:1358px) {
 
-  .left-addon .glyphicon {
+  .left-addon .fa-search {
     font-size: 23px;
     top: -0.2em;
   }
@@ -652,7 +656,7 @@
     left: 28em;
   }
 
-  .glyphicon-search {
+  .fa-search {
     margin-right: 12px;
     padding-top: 0.9em;
   }
