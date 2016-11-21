@@ -1,5 +1,4 @@
 /* MainHeaderNavigation Styles */
-
 .blue-header {
   background: #00447c;
 }
@@ -38,9 +37,9 @@
   margin-bottom: 0;
 }
 
-.navbar-nav {
-  margin: 0;
-}
+//.navbar-nav {
+//  margin: 0;
+//}
 
 .navbar-collapse {
   padding-right: 0;
@@ -59,7 +58,7 @@
   display: none;
   border-right: 1px solid black;
   border-spacing: 10px;
-  margin-top: 1.8em;
+  margin-top: 1em;
 }
 
 .nav > a > li {
@@ -144,7 +143,7 @@
   }
 }
 
-.button {
+.search-button {
   height: 35px;
   line-height: 35px;
   display: block;
@@ -158,14 +157,14 @@
   border: 0;
 }
 
-.button:hover {
+.search-button:hover {
   text-decoration: none;
   color: #FFF;
   cursor: pointer;
   font-family: 'Open Sans';
 }
 
-.button:focus {
+.search-button:focus {
   text-decoration: none;
   color: #FFF;
 }
@@ -339,9 +338,9 @@
   z-index: 1;
 }
 
-.container {
-    position: relative;
-  }
+//.container {
+//    position: relative;
+//  }
 
 .menu-last {
   margin-right: 0em;
@@ -416,10 +415,12 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .container{
-   width: 100%;
-  }
+
+@media screen and (max-width: 991px) {
+//  .container{
+//   width: 100%;
+//  }
+
 
   .navbar-collapse {
     border-top: 5px solid #005fae;
@@ -483,7 +484,9 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+
+@media (min-width: $screen-md-min) {
+
   body {
     padding-top: 123px;
   }
@@ -526,6 +529,7 @@
     width: fit-content;
     float: none;
     display: inline-block;
+    padding-top: 15px;
   }
 
   .navbar-collapse #wrapper {
@@ -536,10 +540,16 @@
     display: none !important;
   }
 
-  .pushdown-menu {
-    padding-top: 5px;
-    padding-bottom: 5px;
+
+  .container-dropdown {
+    display: none;
   }
+
+//  .pushdown-menu {
+//    padding-top: 5px;
+//    padding-bottom: 5px;
+//  }
+
 
   li.dropdown {
     padding: 5px 0px;
@@ -594,8 +604,35 @@
 
 }
 
-@media only screen and (min-width:1200px) {
-  .msudenver_logo {
+
+@media (max-width: $screen-xs-max) {
+
+
+
+}
+
+
+.header-container {
+    @include container-fixed();
+    padding-bottom: 30px;
+
+}
+
+@media (min-width: $screen-sm-min) {
+
+
+
+}
+
+
+
+@media (min-width: $screen-lg-min) {
+.header-container {
+        padding-left: percentage(1/$grid-columns) ;
+        padding-right: percentage(1/$grid-columns) ;
+    }
+
+.msudenver_logo {
     max-height:150px;
   }
   li.dropdown {
@@ -644,6 +681,15 @@
 }
 
 @media only screen and (min-width:1358px) {
+
+      top: -3.3em;
+      left: 82em;
+  }
+
+  #search-input #search-text {
+    font-size: 14px;
+  }
+
 
   .left-addon .fa-search {
     font-size: 23px;

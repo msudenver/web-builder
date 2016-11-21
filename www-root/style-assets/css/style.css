@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/**
+/** 
     ===========================================
-            Start Bootstrap  v 3.3.7
+            Start Bootstrap  v 3.3.7  
     ===========================================
 **/
 /*!
@@ -7389,9 +7389,9 @@ button.close {
   }
 }
 /** -------  End Bootstrap  v 3.3.7 -------- **/
-/**
+/** 
     =================================================
-        MSU Denver 2016 custom style declarations
+        MSU Denver 2016 custom style declarations 
     =================================================
 **/
 /** SVG fallback for IE 8 **/
@@ -7446,10 +7446,13 @@ header {
   margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 .navbar-nav {
   margin: 0;
 }
 
+=======
+>>>>>>> origin/2column-dev-to-header-merge
 .navbar-collapse {
   padding-right: 0;
   padding-left: 0;
@@ -7467,7 +7470,7 @@ header {
   display: none;
   border-right: 1px solid black;
   border-spacing: 10px;
-  margin-top: 1.8em;
+  margin-top: 1em;
 }
 
 .nav > li > a {
@@ -7517,8 +7520,13 @@ header {
 #content-nav #search-input .button {
   display: inline-block;
   padding-left: 3px;
+<<<<<<< HEAD
   top: -3.5em;
   left: 15em;
+=======
+  top: -4.2em;
+  left: 66em;
+>>>>>>> origin/2column-dev-to-header-merge
   position: relative;
   height: 2.8em;
   width: 8.0em;
@@ -7549,7 +7557,7 @@ header {
   color: gray;
 }
 
-.button {
+.search-button {
   height: 35px;
   line-height: 35px;
   display: block;
@@ -7563,14 +7571,14 @@ header {
   border: 0;
 }
 
-.button:hover {
+.search-button:hover {
   text-decoration: none;
   color: #FFF;
   cursor: pointer;
   font-family: 'Open Sans';
 }
 
-.button:focus {
+.search-button:focus {
   text-decoration: none;
   color: #FFF;
 }
@@ -7748,8 +7756,17 @@ header {
   z-index: 1;
 }
 
+<<<<<<< HEAD
 .container {
   position: relative;
+=======
+.header-menu {
+  line-height: 50px;
+  font-weight: 800;
+  font-size: 1.4em;
+  color: #337ab7;
+  text-decoration: none;
+>>>>>>> origin/2column-dev-to-header-merge
 }
 
 .menu-last {
@@ -7831,11 +7848,15 @@ header {
     margin: -16px -30px -16px -10px;
   }
 }
+<<<<<<< HEAD
 @media screen and (max-width: 767px) {
   .container {
     width: 100%;
   }
 
+=======
+@media screen and (max-width: 991px) {
+>>>>>>> origin/2column-dev-to-header-merge
   .navbar-collapse {
     border-top: 5px solid #005fae;
   }
@@ -7911,7 +7932,11 @@ header {
     margin-left: 2em;
   }
 }
+<<<<<<< HEAD
 @media screen and (min-width: 768px) {
+=======
+@media (min-width: 992px) {
+>>>>>>> origin/2column-dev-to-header-merge
   body {
     padding-top: 123px;
   }
@@ -7957,6 +7982,7 @@ header {
     width: fit-content;
     float: none;
     display: inline-block;
+    padding-top: 15px;
   }
 
   .navbar-collapse #wrapper {
@@ -7967,9 +7993,14 @@ header {
     display: none !important;
   }
 
+<<<<<<< HEAD
   .pushdown-menu {
     padding-top: 5px;
     padding-bottom: 5px;
+=======
+  .container-dropdown {
+    display: none;
+>>>>>>> origin/2column-dev-to-header-merge
   }
 
   li.dropdown {
@@ -8030,7 +8061,27 @@ header {
     width: 1em;
   }
 }
-@media only screen and (min-width: 1200px) {
+.header-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+}
+.header-container:before, .header-container:after {
+  content: " ";
+  display: table;
+}
+.header-container:after {
+  clear: both;
+}
+
+@media (min-width: 1200px) {
+  .header-container {
+    padding-left: 8.33333%;
+    padding-right: 8.33333%;
+  }
+
   .msudenver_logo {
     max-height: 150px;
   }
@@ -8058,6 +8109,7 @@ header {
     left: 32em;
   }
 
+<<<<<<< HEAD
   #nav-faculty {
     width: 16em;
   }
@@ -8076,6 +8128,10 @@ header {
 
   #nav-alumni {
     width: 15em;
+=======
+  #search-input #search-text {
+    font-size: 14px;
+>>>>>>> origin/2column-dev-to-header-merge
   }
 
   #nav-search {
@@ -8162,9 +8218,6 @@ header {
 .homepage-feature svg {
   fill: currentColor;
 }
-.homepage-feature .fa {
-  padding-left: 10px;
-}
 
 .homepage-feature-block {
   position: relative;
@@ -8232,8 +8285,21 @@ header {
   color: #d11242;
 }
 
+.main-button {
+  margin-bottom: 0;
+}
+
+/* Small button */
+@media (max-width: 767px) {
+  .homepage-btn.homepage-btn__small {
+    font-size: 16px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
+  }
+}
 @media (max-width: 991px) {
-  .homepage-btn .fa {
+  .main-button .fa {
     display: none;
   }
 }
@@ -8257,6 +8323,9 @@ header {
     margin: 0 0 1.78571rem;
   }
 
+  .homepage-btn {
+    float: none;
+  }
   .homepage-btn:not(.footer-btn) {
     font-family: "Karla", "Georgia", "Times New Roman", Times, serif;
     font-weight: 700;
@@ -8266,21 +8335,36 @@ header {
     padding-right: 0;
     color: #fff;
     background-color: transparent;
-    float: right;
   }
   .homepage-btn:not(.footer-btn):hover, .homepage-btn:not(.footer-btn):active, .homepage-btn:not(.footer-btn):focus {
     color: #fff;
+    text-decoration: underline;
   }
 
-  .homepage-btn:active, .homepage-btn:focus, .homepage-btn:hover {
+  /* Wraps buttons in the main body area */
+  .main-button {
+    padding: 10px 0px;
+    padding: 0.625rem 0rem;
     color: #fff;
-    text-decoration: underline;
+    text-align: right;
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+  .main-button:before, .main-button:after {
+    content: " ";
+    display: table;
+  }
+  .main-button:after {
+    clear: both;
+  }
+  .main-button .homepage-btn {
+    padding: 0;
+    line-height: 1;
   }
 }
 /* Homepage-feature-caption partial */
 #homepage-feature-caption {
   padding: 0;
-  position: relative;
   text-align: right;
 }
 
@@ -8302,6 +8386,8 @@ header {
   padding-bottom: 1rem;
   background-color: #000;
   text-align: right;
+  position: relative;
+  float: right;
 }
 @media (min-width: 768px) {
   .homepage-feature-caption-text {
@@ -8309,32 +8395,63 @@ header {
     width: 100%;
   }
 }
+.homepage-feature-caption-text .fa {
+  display: inline-block;
+  color: #fff;
+  float: right;
+}
 
 .homepage-feature-caption-link {
-  display: block;
+  display: inline-block;
+  font-size: 20.8px;
+  font-size: 1.3rem;
   text-transform: uppercase;
   color: #fff;
+  float: right;
 }
 
 .homepage-feature-caption-link:hover, .homepage-feature-caption-link:focus, .homepage-feature-caption-link:active {
   color: #fff;
 }
 
+.carousel-control {
+  display: none;
+}
+
+.t4-slide .carousel-control {
+  display: block;
+  top: 80%;
+}
+
 /* End homepage-feature-caption partial */
 @media (min-width: 992px) {
   .homepage-feature-caption-text {
     width: 75%;
+    float: right;
     position: absolute;
-    top: calc(28%);
+    top: 30%;
     right: 0;
+    left: auto;
+    bottom: auto;
     background-color: rgba(0, 0, 0, 0.7);
+  }
+  .homepage-feature-caption-text .feature-heading {
+    line-height: 1.3;
+  }
+  .homepage-feature-caption-text .main-button {
+    padding: 0;
+  }
+
+  .homepage-feature-caption-link {
+    font-size: 25px;
+    font-size: 1.5625rem;
   }
 }
 @media (min-width: 1200px) {
   .homepage-feature-caption-text {
     padding: 50px 15px;
     padding: 3.125rem 0.9375rem;
-    top: calc(40%);
+    top: 40%;
   }
 }
 @media (min-width: 1300px) {
@@ -8355,6 +8472,11 @@ header {
   }
 }
 #homepage-ryor {
+  background: url("../media/RYOR_bg_extended.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin-top: 8px;
   margin-top: 0.5rem;
   margin-bottom: 0.5em;
@@ -8382,8 +8504,10 @@ header {
 }
 #homepage-ryor .feature-heading, #homepage-ryor .feature-heading-sub, #homepage-ryor .feature-text {
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.77);
+  position: relative;
+  z-index: 5;
 }
-#homepage-ryor .homepage-btn {
+#homepage-ryor .homepage-btn:not(.ryor-md-button) {
   position: relative;
   bottom: calc(20px);
   right: calc(15px);
@@ -8394,14 +8518,15 @@ header {
   display: block;
   max-width: 100%;
   height: auto;
-  position: relative;
+  overflow: hidden;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
 }
 
 /* IMage gradient overlay */
-.ryor-student::before {
+.ryor-student-image::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -8418,23 +8543,10 @@ header {
 .ryor-student {
   padding-top: 32px;
   padding-top: 2rem;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  overflow: hidden;
 }
 
-.ryor-image {
-  background: url("../media/RYOR_bg.jpg") no-repeat;
-  color: #fff;
-  overflow: visible;
-}
-.ryor-image svg {
-  min-height: 300px;
-  min-width: 300px;
-}
-
-.ryor-student, .ryor-image {
+.ryor-student, .ryor-image, .ryor-image-mobile {
   position: relative;
   float: left;
   width: 100%;
@@ -8442,6 +8554,28 @@ header {
   padding-left: 15px;
   padding-right: 15px;
   z-index: 2;
+}
+
+.ryor-image-mobile {
+  color: #fff;
+  overflow: visible;
+  min-height: 150px;
+}
+.ryor-image-mobile svg {
+  fill: #fff;
+  min-height: 200px;
+  min-width: 300px;
+  position: absolute;
+  top: calc(-20px);
+}
+
+.ryor-image {
+  color: #fff;
+  overflow: visible;
+}
+.ryor-image svg {
+  min-height: 200px;
+  min-width: 300px;
 }
 
 @media (min-width: 992px) {
@@ -8465,34 +8599,29 @@ header {
     margin-bottom: 1.875rem;
     line-height: 1.2;
   }
-  #homepage-ryor .homepage-btn {
-    float: left;
-    left: calc(15px);
+  #homepage-ryor .main-button {
+    text-align: left;
+    padding: 0 25px;
   }
 
   .ryor-image {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: right;
+    height: 200px;
+    width: 100%;
+    padding: 0;
+    margin: 20px auto;
+    width: 41.6666%;
+    text-align: center;
   }
-}
-@media (min-width: 992px) and (min-width: 992px) {
-  .ryor-image {
-    float: left;
-    width: 41.66667%;
+  .ryor-image svg {
+    width: 100%;
   }
-}
 
-@media (min-width: 992px) {
   .ryor-student {
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 48px;
-    padding-top: 3rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 2rem;
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
@@ -8502,6 +8631,11 @@ header {
   }
 }
 
+@media (min-width: 992px) {
+  .ryor-student-image::before {
+    display: none;
+  }
+}
 /* Homepage news items */
 #homepage-news {
   padding-top: 36px;
@@ -8517,11 +8651,18 @@ header {
 #homepage-news p {
   color: #fff;
 }
-#homepage-news .homepage-btn {
-  margin: 32px 0 0;
-  margin: 2rem 0 0;
+#homepage-news a:hover, #homepage-news a:active, #homepage-news a:focus {
+  text-decoration: none;
 }
 
+@media (max-width: 767px) {
+  .homepage-btn.homepage-btn__small {
+    font-size: 16px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
+  }
+}
 .home-news-features {
   position: relative;
   float: left;
@@ -8542,6 +8683,7 @@ header {
   margin-right: 0;
   margin-top: 36px;
   margin-top: 2.57143rem;
+  margin-bottom: 15px;
 }
 .news-features:before, .news-features:after {
   content: " ";
@@ -8594,7 +8736,10 @@ header {
 .news-feature-bg {
   padding: 15px;
   padding: 0.9375rem;
-  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+}
+.news-feature-bg:hover, .news-feature-bg:active, .news-feature-bgfocus {
+  background: black;
 }
 .news-feature-bg:before, .news-feature-bg:after {
   content: " ";
@@ -8650,14 +8795,15 @@ header {
 }
 @media (min-width: 1200px) {
   #homepage-news {
-    padding: 50px 8.33333%;
-    padding: 3.57143rem 8.33333%;
+    padding: 50px 8.33333% 30px;
+    padding: 3.57143rem 8.33333% 1.875rem;
     background: url(../media/newsbg.jpg) no-repeat;
     background-size: cover;
   }
-  #homepage-news .homepage-btn {
-    margin: 25px 0;
-    margin: 1.5625rem 0;
+
+  .news-features {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .news-feature__large {
@@ -8665,6 +8811,7 @@ header {
     min-height: 1px;
     padding-left: 12.5px;
     padding-right: 12.5px;
+    left: 42.5% !important;
   }
 }
 @media (min-width: 1200px) and (min-width: 1200px) {
@@ -8696,11 +8843,16 @@ header {
     font-size: 2.25rem;
   }
 
+  .news-features__small-row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
   .news-features__small {
     position: relative;
     min-height: 1px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media (min-width: 1200px) and (min-width: 1200px) {
@@ -8717,7 +8869,8 @@ header {
 @media (min-width: 1200px) {
   .news-features__small .news-feature {
     width: 100%;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 25px;
   }
   .news-features__small .news-feature:last-child {
@@ -8881,6 +9034,9 @@ header {
 #homepage-events {
   background: url("../media/eventsbg_mobile.jpg");
 }
+#homepage-events a:hover, #homepage-events a:active, #homepage-events a:focus {
+  text-decoration: none;
+}
 
 /* Events grid */
 .home-events {
@@ -8923,6 +9079,9 @@ header {
   padding: 0.9375rem;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.6);
+}
+.event-bg:hover, .event-bg:active, .event-bgfocus {
+  background: black;
 }
 
 .home-event-image {
@@ -8972,11 +9131,6 @@ header {
     padding-bottom: 0;
   }
 
-  .home-events-row {
-    margin: auto -15px;
-    margin: auto -0.9375rem;
-  }
-
   .home-event {
     width: 31.686429512516%;
     /* >= 320.6666px  */
@@ -9001,20 +9155,32 @@ header {
     font-size: 1.5rem;
   }
 }
-/**
-    Site-wide footer
+/** 
+    Site-wide footer 
 **/
 footer {
   margin-top: 8px;
   margin-top: 0.5rem;
+  background: url(../media/downtowndenver_msudenver.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center bottom;
 }
 
+/* For the background color gradient in mobile */
+@media (max-width: 991px) {
+  .footer-bg-mob {
+    background-color: #003a6e;
+  }
+}
 .footer-container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  background: #003a6e;
+  padding-bottom: 48px;
 }
 .footer-container:before, .footer-container:after {
   content: " ";
@@ -9029,7 +9195,7 @@ footer {
 
 /* Used inbetween html rows in the footer */
 .footer-row-hr {
-  border-top-width: 4px;
+  border-top-width: 2px;
   margin: 0;
 }
 
@@ -9107,6 +9273,11 @@ footer {
   margin-bottom: 1rem;
 }
 
+.footer-campus-info .fa {
+  width: 5%;
+  text-align: center;
+}
+
 .footer-links-row {
   margin-left: -15px;
   margin-right: -15px;
@@ -9126,6 +9297,14 @@ footer {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.social-mobile {
+  margin-top: 18px;
+  margin-top: 1.125rem;
+}
+.social-mobile.footer-social {
+  padding: 0 10%;
 }
 
 /* Footer links type elements */
@@ -9168,14 +9347,32 @@ footer {
   text-align: center;
 }
 
+.footer-logo-img {
+  margin: 0 auto;
+  max-width: 250px;
+}
+
 .footer-social {
   display: flex;
   justify-content: space-between;
   padding: 0 12.5%;
+  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 .footer-social li {
   display: inline-flex;
   float: left;
+}
+.footer-social .fa {
+  font-size: 2.2em;
+  font-size: 2.2rem;
+  -webkit-transition: color  0.1s     ease-in;
+  -moz-transition: color  0.1s     ease-in;
+  -o-transition: color  0.1s     ease-in;
+  transition: color  0.1s     ease-in;
+}
+.footer-social .fa:hover {
+  color: #d11242;
 }
 
 /** Footer media queries **/
@@ -9187,7 +9384,7 @@ footer {
     padding-right: 15px;
   }
 }
-@media (min-width: 768px) and (min-width: 1200px) {
+@media (min-width: 768px) and (min-width: 768px) {
   .footer-promo {
     float: left;
     width: 33.33333%;
@@ -9195,6 +9392,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .footer-logo-img {
+    max-width: 180px;
+  }
+
   .footer-promo-heading {
     font-size: 25px;
     font-size: 1.5625rem;
@@ -9216,17 +9417,23 @@ footer {
     padding-right: 15px;
   }
 }
-@media (min-width: 768px) and (min-width: 992px) {
+@media (min-width: 768px) and (min-width: 768px) {
   .footer-links-col {
     float: left;
     width: 50%;
   }
 }
+@media (min-width: 768px) {
+  .footer-links-col li:last-child:after {
+    display: none;
+  }
 
-@media (min-width: 992px) {
-  .footer-btn:hover, .footer-btn:focus, .footer-btn:active {
-    color: #d11242;
-    text-decoration: none;
+  .footer-nav {
+    padding: 0;
+  }
+
+  .footer-social {
+    padding: 0 4%;
   }
 
   .footer-campus-info, .footer-logo {
@@ -9234,16 +9441,36 @@ footer {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 18px;
+    margin-top: 1.125rem;
   }
 }
-@media (min-width: 992px) and (min-width: 992px) {
+@media (min-width: 768px) and (min-width: 768px) {
   .footer-campus-info, .footer-logo {
     float: left;
     width: 50%;
   }
 }
 
+@media (min-width: 992px) {
+  .footer-container {
+    padding-bottom: 900px;
+  }
+
+  .footer-btn:hover, .footer-btn:focus, .footer-btn:active {
+    color: #d11242;
+    text-decoration: none;
+  }
+
+  .footer-campus-info, .footer-logo {
+    margin-top: 0;
+  }
+}
 @media (min-width: 1200px) {
+  footer .homepage-btn {
+    float: right;
+  }
+
   .footer-container {
     padding-left: 8.33333%;
     padding-right: 8.33333%;

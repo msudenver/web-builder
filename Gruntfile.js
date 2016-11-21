@@ -10,7 +10,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-svg-sprite');
   //grunt.loadNpmTasks('grunt-parallel');
 
-
+  
   grunt.loadNpmTasks('grunt-html-validation');
 
 
@@ -22,11 +22,11 @@ module.exports = function(grunt) {
 
   //Uncomment the line below to add text replace to the project
   //grunt.loadNpmTasks('grunt-text-replace');
-
+  
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-
+    
     express: {
       all: {
         options: {
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         }
       }
     },
-
+    
     bower: {
       install: {
          options: {
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
          }//options
       }//install
     },//bower
-
+    
     //Uncomment this region to add in JSHint to the project.
     /*jshint: {
       options: {
@@ -69,7 +69,7 @@ module.exports = function(grunt) {
         dest: 'www-root/style-assets/js/t4-custom.min.js'
       }//build
     }, //uglify
-
+    
     sass: {
       dist: {
         options: {
@@ -78,11 +78,12 @@ module.exports = function(grunt) {
           //compass: true,
         },//options
         files: {
-          'www-root/style-assets/css/style.css': 'development/terminalfour/src/sass/style.scss'
+          'www-root/style-assets/css/style.css': 'development/terminalfour/src/sass/style.scss',
+          'www-root/style-assets/css/inner-style.css': 'development/terminalfour/src/sass/inner-style.scss'
         }//files
       }//dist
     },//sass
-
+    
     //Uncomment this region to add csslint to the project
     /*
     csslint: {
@@ -97,7 +98,7 @@ module.exports = function(grunt) {
       }
     },//csslint
     */
-
+    
     //Uncomment the block below to add text replace to the project
     /*
     replace: {
@@ -107,11 +108,11 @@ module.exports = function(grunt) {
         replacements: []
       }//css
     },//replace
-
+    
     */
 
     //Uncomment the region below to add HTML Validation into the project
-
+    
     validation: {
       options: {
         reset: true,
@@ -120,7 +121,7 @@ module.exports = function(grunt) {
       },//options
       files: ['www-root/**/*.html']
     },//validation
-
+    
 
     includereplace: {
       dist: {
@@ -132,7 +133,7 @@ module.exports = function(grunt) {
         ]
       }
     },//includereplace
-
+    
     copy: {
       main: {
         files: [
@@ -150,10 +151,10 @@ module.exports = function(grunt) {
       options: { livereload: true },
       sass: {
         files: ['development/**/**/**/*.scss'],
-
+        
         //Uncomment the line below and delete the other tasks line to add csslint into the project
         //tasks: ['sass:dist','csslint:strict']
-
+        
         //Uncomment the line below to add in text replace
         //tasks: ['sass:dist','replace-pre']
 
@@ -172,12 +173,12 @@ module.exports = function(grunt) {
         files: ['development/terminalfour/src/html/**/*.html'],
         tasks: ['includereplace']
       },//htmlcompile
-
+    
       copymedia: {
           files: ['development/terminalfour/src/html/**/*.html', 'development/**/**/**/*.scss'],
           tasks: ['copy:media']
       }
-
+      
       //Uncomment the region below to add HTML Validation into the project (Dont forget to add a comment on the line above after the HTML compile curly braces right before the comment)
       // html: {
       //   files: ['www-root/**/*.html'],
@@ -185,13 +186,13 @@ module.exports = function(grunt) {
       // }
 
     },//watch
-
-    /*  Grunt SVG sprite
+      
+    /*  Grunt SVG sprite 
         https://www.npmjs.com/package/grunt-svg-sprite
         For more options see https://github.com/jkphl/svg-sprite/blob/master/docs/configuration.md
     */
     svg_sprite: {
-
+        
         svg_files: {
             expand: true,
             cwd: 'development/terminalfour/src/media',
@@ -201,14 +202,14 @@ module.exports = function(grunt) {
                 mode: {
                     defs: true
                 }
-            }
+            }           
         }
     }
   });
 
   // Default task(s).
   grunt.registerTask('default', ['server']);
-
+  
   /*grunt.registerTask('replace-pre', function() {
     var cssReplacements = grunt.file.readJSON('replacements.json');
     grunt.config('replace.css.replacements', cssReplacements);

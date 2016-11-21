@@ -1,6 +1,11 @@
 /* Homepage events */
 #homepage-events {
     background: url('../media/eventsbg_mobile.jpg') ;
+    a {
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+        } 
+    }
 }
 /* Events grid */
 .home-events {
@@ -22,6 +27,10 @@
     padding: torem(15);
     background-color: $gray-base;
     background-color: rgba(0,0,0,0.6);
+    
+    &:hover, &:active, &focus {
+        background: rgba(0, 0, 0, 1);
+    }
 }
 .home-event-image {
     @include img-responsive;
@@ -53,7 +62,7 @@
             &:nth-child(even) {
                  margin-left: 0.98944591029024%; /* (15px gutter / 2) / 758px */
             }
-    }
+        }
 }
 @media (min-width: $screen-lg-min) {
     #homepage-events {
@@ -61,10 +70,6 @@
         padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(30);
         .homepage-btn { padding-bottom: 0; }
     }
-    .home-events-row {
-        margin: auto -15px;
-        margin: auto torem(-15);
-     }
     .home-event{
         width: 31.686429512516%; /* >= 320.6666px  */
         &:nth-child(odd), &:nth-child(even) { 
