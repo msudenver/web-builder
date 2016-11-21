@@ -7793,23 +7793,23 @@ header {
 }
 
 #nav-faculty {
-  width: 11em;
+  width: auto;
 }
 
 #nav-admissions {
-  width: 12em;
+  width: auto;
 }
 
 #nav-academics {
-  width: 12em;
+  width: auto;
 }
 
 #nav-campus {
-  width: 10em;
+  width: auto;
 }
 
 #nav-alumni {
-  width: 10em;
+  width: auto;
 }
 
 #nav-search {
@@ -8004,6 +8004,30 @@ header {
 
   .faculty-staff, .faculty-staff a {
     display: block;
+  }
+
+  #nav-faculty {
+    width: 11em;
+  }
+
+  #nav-admissions {
+    width: 12em;
+  }
+
+  #nav-academics {
+    width: 12em;
+  }
+
+  #nav-campus {
+    width: 10em;
+  }
+
+  #nav-alumni {
+    width: 10em;
+  }
+
+  #nav-search {
+    width: 1em;
   }
 }
 @media only screen and (min-width: 1200px) {
