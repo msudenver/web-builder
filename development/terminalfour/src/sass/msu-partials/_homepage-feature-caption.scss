@@ -17,18 +17,9 @@
     padding-bottom: torem(16);
     background-color: $gray-base;
     text-align: right;
-    
-    position: relative;
     float: right;
+    position: static;
     
-    
-    
-    
-    .fa { 
-        display: inline-block;
-        color: $white;
-        float: right;
-    }
 }
 .homepage-feature-caption-link {
     display: inline-block;
@@ -46,10 +37,42 @@
 }
 .t4-slide .carousel-control {
     display: block;
-    
-    top: 80%;
+    position: absolute;
+    width: 2.5rem;
+    background: transparent;
+    top: 45%;
+    transform: translateY(-50%);
+    .fa { 
+        display: inline-block;
+        color: $white;
+        font-size: 2rem;
+    }
+    &.right {
+        .fa { float: left; }
+    }
+    &.left {
+        .fa { float: right;} 
+    } 
 }
-/* End homepage-feature-caption partial */
+@media (min-width: 480px) {
+    .t4-slide .carousel-control {
+        top: 50%;
+    }
+}
+@media (min-width: 690px) {
+    .t4-slide .carousel-control {
+        top: 55%;
+    }
+}
+@media (min-width: $screen-sm-min) {
+    .t4-slide .carousel-control {
+        width: 3rem;
+        .fa { 
+            font-size: 3rem;
+        }
+    }
+}
+
 
 @media (min-width: $screen-md-min) {
     
@@ -57,7 +80,8 @@
         width: percentage((9 / $grid-columns));
         float: right;
         position: absolute;
-        top: 30%;
+        top: 50%;
+        transform: translateY(-50%);
         right: 0;
         left: auto;
         bottom: auto;
@@ -66,9 +90,15 @@
         .feature-heading { line-height: 1.3 }
         .main-button {padding: 0}
     }
+    
     .homepage-feature-caption-link {
         font-size: 25px;
         font-size: torem(25);
+    }
+    .t4-slide .carousel-control {
+         top: 88%;
+        transform: translateY(-50%);
+        width: 4rem;
     }
 }
 @media (min-width: $screen-lg-min) {
@@ -76,26 +106,17 @@
         
         padding: 50px 15px ;
         padding: torem(50) torem(15) ;
-        top:40%;
+        
     }
 }
 @media (min-width: 1300px) {
     .homepage-feature-caption-text {
         width: percentage((7 / $grid-columns));
         padding-right: percentage((1 / $grid-columns));
-        top: calc(45%);
+        
         
     }
 }
-@media (min-width: 1500px) {
-    .homepage-feature-caption-text {
-        top: calc(50%);
 
-    }
-}
-@media (min-width: 1600px) {
-    .homepage-feature-caption-text {
-        top: calc(55%);
 
-    }
-}
+/* End homepage-feature-caption */
