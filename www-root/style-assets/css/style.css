@@ -7470,35 +7470,11 @@ header {
   margin-top: 1.8em;
 }
 
-#nav-faculty {
-  width: 16em;
-}
-
-#nav-admissions {
-  width: 17em;
-}
-
-#nav-academics {
-  width: 17em;
-}
-
-#nav-campus {
-  width: 15em;
-}
-
-#nav-alumni {
-  width: 15em;
-}
-
-#nav-search {
-  width: 1em;
-}
-
 .nav > li > a {
   display: inline;
   line-height: 50px;
   font-weight: 800;
-  font-size: 1.4em;
+  font-size: 1.0em;
   padding-bottom: 8px;
 }
 
@@ -7541,8 +7517,8 @@ header {
 #content-nav #search-input .button {
   display: inline-block;
   padding-left: 3px;
-  top: -4.2em;
-  left: 66em;
+  top: -3.5em;
+  left: 15em;
   position: relative;
   height: 2.8em;
   width: 8.0em;
@@ -7626,7 +7602,7 @@ header {
 /* style glyph */
 .inner-addon .glyphicon {
   position: absolute;
-  padding: 20px 10px 10px 10px;
+  padding: 17px 10px 10px 10px;
   pointer-events: none;
 }
 
@@ -7638,6 +7614,7 @@ header {
 /* add padding  */
 .left-addon input {
   padding-left: 70px;
+  width: 101%;
 }
 
 /* add back pointer functionality for x-out button  */
@@ -7722,7 +7699,7 @@ header {
 }
 
 .search-desktop {
-  display: none;
+  display: none !important;
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
@@ -7740,7 +7717,7 @@ header {
 
 .pushdown-menu > li > a {
   font-weight: 600;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .search-input-mobile {
@@ -7787,13 +7764,13 @@ header {
 
 .mobile-header {
   cursor: pointer;
-  border-right: 1px solid #337ab7;
 }
 
 .faculty-staff, .faculty-staff a {
   text-align: right;
   margin-top: -1.0em;
   color: #fff;
+  display: none;
 }
 
 .navbar-nav > li > a {
@@ -7804,14 +7781,42 @@ header {
 
 .container .pushdown-menu {
   padding-left: 0em !important;
-  border-right: 1px solid #4cb4f2;
+  border-right: none;
+}
+
+.navbar-toggle {
+  margin-bottom: 0em !important;
+  margin-right: 0em !important;
+  margin-top: 0em !important;
+  padding: 14px 10px !important;
+  display: block;
+}
+
+#nav-faculty {
+  width: 11em;
+}
+
+#nav-admissions {
+  width: 12em;
+}
+
+#nav-academics {
+  width: 12em;
+}
+
+#nav-campus {
+  width: 10em;
+}
+
+#nav-alumni {
+  width: 10em;
+}
+
+#nav-search {
+  width: 1em;
 }
 
 @media screen and (max-width: 450px) {
-  .navbar-toggle {
-    padding: 9px 5px;
-  }
-
   .glyphicon-search-mobile {
     padding-right: 10px;
     padding-left: 10px;
@@ -7826,7 +7831,7 @@ header {
     margin: -16px -30px -16px -10px;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 100%;
   }
@@ -7835,8 +7840,9 @@ header {
     border-top: 5px solid #005fae;
   }
 
-  .navbar .navbar-collapse .search-input-mobile {
+  .navbar .navbar-collapse .search-input-mobile, .navbar .navbar-collapse {
     text-align: left;
+    border-right: none;
   }
 
   #content-nav #search-input input[type="text"] {
@@ -7851,24 +7857,16 @@ header {
     display: block;
     padding-left: 0px;
     width: 101%;
-    padding-top: 5em;
+    text-align: left;
   }
 
   .left-addon input {
-    padding-top: 20px !important;
-    padding-bottom: 6px;
+    padding-top: 5px !important;
+    padding-bottom: 2px;
   }
 
   .blue-header {
     border-bottom: 5px solid #005fae;
-  }
-
-  .navbar-toggle {
-    margin-bottom: 6px;
-  }
-
-  .navbar-toggle {
-    display: block;
   }
 
   .navbar-collapse {
@@ -7906,8 +7904,14 @@ header {
   .apply-button {
     display: none;
   }
+
+  .pushdown-menu {
+    margin-top: 0em;
+    padding-top: 0em;
+    margin-left: 2em;
+  }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   body {
     padding-top: 123px;
   }
@@ -7923,7 +7927,7 @@ header {
   }
 
   .search-desktop {
-    display: block;
+    display: block !important;
   }
 
   li.dropdown {
@@ -7978,13 +7982,8 @@ header {
   }
 
   #content-nav #nav-search-close {
-    top: -78px;
-    left: 49em;
-  }
-
-  #content-nav #search-input .button {
-    top: -3.5em;
-    left: 66em;
+    top: -84px;
+    left: 14em;
   }
 
   .blue-header {
@@ -7993,6 +7992,18 @@ header {
 
   #content-nav {
     background: linear-gradient(to bottom, #fff 0px, #fff 50px, #ddd 50px);
+  }
+
+  .mobile-header {
+    border-right: 1px solid #337ab7;
+  }
+
+  .container .pushdown-menu {
+    border-right: 1px solid #4cb4f2;
+  }
+
+  .faculty-staff, .faculty-staff a {
+    display: block;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -8014,13 +8025,46 @@ header {
   }
 
   #content-nav #nav-search-close {
-    top: -77px;
-    left: 60.2em;
+    top: -84px;
+    left: 25.2em;
   }
 
   #content-nav #search-input .button {
-    top: -3.3em;
-    left: 82em;
+    top: -3.5em;
+    left: 32em;
+  }
+
+  #nav-faculty {
+    width: 16em;
+  }
+
+  #nav-admissions {
+    width: 17em;
+  }
+
+  #nav-academics {
+    width: 17em;
+  }
+
+  #nav-campus {
+    width: 15em;
+  }
+
+  #nav-alumni {
+    width: 15em;
+  }
+
+  #nav-search {
+    width: 1em;
+  }
+
+  .nav > li > a {
+    font-size: 1.4em;
+  }
+
+  .pushdown-menu > li > a {
+    font-weight: 600;
+    font-size: 1.3em;
   }
 }
 @media only screen and (min-width: 1358px) {
@@ -8031,8 +8075,8 @@ header {
 
   #content-nav #nav-search-close {
     font-size: 20px;
-    top: -4.2em;
-    left: 25em;
+    top: -4.0em;
+    left: 28em;
   }
 
   .glyphicon-search {
