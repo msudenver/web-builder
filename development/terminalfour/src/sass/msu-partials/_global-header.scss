@@ -200,6 +200,7 @@
 /* align glyph */
 .left-addon .fa-search {
   left: 1em;
+  top: -0.4em;
 }
 
 /* add padding  */
@@ -314,6 +315,16 @@
   display: none;
 }
 
+#content-nav {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
+  font-weight: 500;
+  padding-left: 3px;
+  color: #6E6E6E;
+  border: none;
+  width: 100%;
+}
+
 #content-nav-mobile {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 5px;
@@ -356,7 +367,9 @@
   cursor: pointer;
 }
 
-.faculty-staff, .faculty-staff a {
+.faculty-staff a {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px;
   text-align: right;
   margin-top: -1.0em;
   color: #fff;
@@ -577,7 +590,7 @@
   .container .pushdown-menu {
     border-right: 1px solid #4cb4f2;
   }
-  .faculty-staff, .faculty-staff a {
+  .faculty-staff a {
     display: block;
   }
   #nav-faculty {
@@ -601,7 +614,9 @@
   .navbar-toggle {
     display: none;
   }
-
+  .fa.pull-right {
+    display: none;
+  }
 }
 
 
@@ -698,7 +713,7 @@
 
   #content-nav #nav-search-close {
     font-size: 20px;
-    top: -4.0em;
+    top: -3.3em;
     left: 28em;
   }
 
