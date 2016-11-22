@@ -193,11 +193,13 @@ $('.fa-search-mobile').click(function(){
    $('.fa-search-mobile').css('background-color', '#005fae');
 });
 
-// when hamburger clicked, hide search bar and change hamburger/search glyph background colors ***NEEDS FIXING SINCE ORIGINAL MOBILE DESIGN WAS MODIFIED***
+// when hamburger clicked, hide search bar and change hamburger/search glyph background colors
 $('.navbar-toggle').click(function(){
    $('.search-input-mobile').hide();
    $('.fa-bars').css('background-color', '#005fae');
    $('.fa-search-mobile').css('background-color', 'transparent');
+});
+$('.fa-bars').click(function(){
    $('#content-nav').toggleClass('in');
 });
 
