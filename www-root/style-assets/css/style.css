@@ -7430,8 +7430,8 @@ header {
 .toolbar ul a li {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #00447c;
-  padding-left: 7px;
-  padding-right: 6px;
+  padding-left: 1.5em;
+  padding-right: 1.4em;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
@@ -7724,8 +7724,8 @@ header {
 
 #content-nav {
   font-family: 'Raleway', sans-serif;
-  letter-spacing: 5px;
-  font-weight: 500;
+  letter-spacing: 3px;
+  font-weight: 700;
   padding-left: 3px;
   color: #6E6E6E;
   border: none;
@@ -7776,6 +7776,7 @@ header {
   text-align: right;
   margin-top: -1.0em;
   color: #fff;
+  padding-bottom: 0.6em;
   display: none;
 }
 
@@ -7898,6 +7899,8 @@ header {
   .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
   }
 
   .collapse.in {
@@ -7960,7 +7963,6 @@ header {
     width: fit-content;
     float: none;
     display: inline-block;
-    padding-top: 15px;
   }
 
   .navbar-collapse #wrapper {
@@ -7994,7 +7996,7 @@ header {
   }
 
   #content-nav {
-    background: linear-gradient(to bottom, #fff 0px, #fff 50px, #ddd 50px);
+    background: linear-gradient(to bottom, #fff 0px, #fff 60px, #ddd 60px);
   }
 
   .mobile-header {
@@ -8055,10 +8057,41 @@ header {
   clear: both;
 }
 
+@media (min-width: 992px) {
+  .navbar-nav > li > a {
+    padding-bottom: 8px;
+  }
+
+  #content-nav {
+    letter-spacing: 0px;
+    font-weight: 500;
+  }
+
+  .mobile-header {
+    margin-top: 5px;
+  }
+
+  .fa-search {
+    padding-top: 1.0em;
+  }
+
+  #content-nav #nav-search-close {
+    top: -3.2em;
+    left: 17.6em;
+  }
+}
 @media (min-width: 1200px) {
   .header-container {
     padding-left: 8.33333%;
     padding-right: 8.33333%;
+  }
+
+  #content-nav {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 18px;
+    padding-right: 1em;
+    padding-left: 0em;
   }
 
   .msudenver_logo {
@@ -8088,37 +8121,33 @@ header {
     left: 32em;
   }
 
+  li .pushdown-menu {
+    font-weight: 500;
+    font-size: 0.8em;
+  }
+
   #nav-faculty {
-    width: 16em;
+    width: 12em;
   }
 
   #nav-admissions {
-    width: 17em;
+    width: 15em;
   }
 
   #nav-academics {
-    width: 17em;
+    width: 13em;
   }
 
   #nav-campus {
-    width: 15em;
+    width: 13em;
   }
 
   #nav-alumni {
-    width: 15em;
+    width: 12em;
   }
 
   #nav-search {
-    width: 1em;
-  }
-
-  .nav > a > li {
-    font-size: 1.4em;
-  }
-
-  .pushdown-menu > li > a {
-    font-weight: 600;
-    font-size: 1.3em;
+    width: 0.3em;
   }
 }
 @media only screen and (min-width: 1358px) {
@@ -8160,6 +8189,30 @@ header {
 
   #content-nav #search-input input[type=text] {
     width: 80.5em;
+  }
+
+  #nav-faculty {
+    width: 14em;
+  }
+
+  #nav-admissions {
+    width: 17em;
+  }
+
+  #nav-academics {
+    width: 14em;
+  }
+
+  #nav-campus {
+    width: 14em;
+  }
+
+  #nav-alumni {
+    width: 14em;
+  }
+
+  #nav-search {
+    width: 0.3em;
   }
 }
 /* Homepage base styles */
