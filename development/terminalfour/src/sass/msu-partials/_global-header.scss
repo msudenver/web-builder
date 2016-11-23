@@ -105,11 +105,11 @@
   background-color: #fff;
 }
 
-#content-nav #search-input .button {
+#content-nav #search-input .search-button {
   display: inline-block;
   padding-left: 3px;
-  top: -3.5em;
-  left: 15em;
+  top: -3.3em;
+  left: 26em;
   position: relative;
   height: 2.8em;
   width: 8.0em;
@@ -120,7 +120,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-#content-nav #search-input .button:hover {
+#content-nav #search-input .search-button:hover {
   color: #fff;
   background-color: #00447c;
   ::-webkit-input-placeholder {
@@ -171,7 +171,7 @@
 
 .fa-search {
   color: #007dc3 !important;
-  padding-top: 1.2em;
+  padding-top: 0.9em;
   font-size: 1.2em;
   cursor: pointer;
 }
@@ -639,18 +639,41 @@
       padding-bottom: 8px;
   }
   #content-nav {
-    letter-spacing: 0px;
+    letter-spacing: 1px;
     font-weight: 500;
+    padding-right: 4em;
   }
   .mobile-header {
     margin-top: 5px;
   }
-  .fa-search {
-    padding-top: 1.0em;
+  .left-addon .fa-search {
+    left: 1em;
+    top: 0;
   }
   #content-nav #nav-search-close {
       top: -3.2em;
-      left: 17.6em;
+      left: 19.2em;
+  }
+  #nav-faculty {
+    width: 11em;
+  }
+  #nav-admissions {
+    width: 14em;
+  }
+  #nav-academics {
+    width: 11em;
+  }
+  #nav-campus {
+    width: 11em;
+  }
+  #nav-alumni {
+    width: 10em;
+  }
+  #nav-search {
+    width: 0em;
+  }
+  #content-nav #search-input input[type="text"] {
+      padding-top: 0.3em;
   }
 }
 
@@ -663,7 +686,7 @@
       letter-spacing: 2px;
       font-weight: 600;
       font-size: 18px;
-      padding-right: 1em;
+      padding-right: 6em;
       padding-left: 0em;
   }
 .msudenver_logo {
@@ -680,12 +703,12 @@
     width: 89em;
   }
   #content-nav #nav-search-close {
-      top: -84px;
-      left: 25.2em;
+      top: -67px;
+      left: 12.6em;
   }
-  #content-nav #search-input .button {
-      top: -3.5em;
-      left: 32em;
+  #content-nav #search-input .search-button {
+      top: -3.3em;
+      left: 17em;
   }
 
 
@@ -695,22 +718,22 @@
   }
 
   #nav-faculty {
-    width: 12em;
+    width: 11em;
   }
   #nav-admissions {
     width: 15em;
   }
   #nav-academics {
-    width: 13em;
-  }
-  #nav-campus {
-    width: 13em;
-  }
-  #nav-alumni {
     width: 12em;
   }
+  #nav-campus {
+    width: 11em;
+  }
+  #nav-alumni {
+    width: 11em;
+  }
   #nav-search {
-    width: 0.3em;
+    width: 0em;
   }
 
 }
@@ -728,8 +751,8 @@
 
   #content-nav #nav-search-close {
     font-size: 20px;
-    top: -3.3em;
-    left: 28em;
+    top: -3.2em;
+    left: 19em;
   }
 
   .fa-search {
@@ -740,38 +763,69 @@
   .search-desktop {
     top: 0.3em !important;
   }
-  #content-nav #search-input .button {
-    top: -2.8em;
+  #content-nav #search-input .search-button {
+    top: -2.7em;
     height: 30px;
     width: 130px;
-    left: 28em;
+    left: 19em;
   }
 
-  .button {
+  .search-button {
     font-size: 14px;
     line-height: 31px;
   }
   #content-nav #search-input input[type=text] {
-    width: 80.5em;
+    width: 97em;
   }
 
   #nav-faculty {
-    width: 14em;
+    width: 13em;
   }
   #nav-admissions {
     width: 17em;
   }
   #nav-academics {
-    width: 14em;
+    width: 13em;
   }
   #nav-campus {
-    width: 14em;
+    width: 13em;
   }
   #nav-alumni {
-    width: 14em;
+    width: 13em;
   }
   #nav-search {
-    width: 0.3em;
+    width: 0em;
+  }
+  #content-nav{
+      padding-right: 4em;
+  }
+}
+
+@media only screen and (min-width:1500px) {
+
+  #content-nav #nav-search-close {
+    left: 28em;
+  }
+  #content-nav #search-input .search-button {
+    left: 32em;
   }
 
+  #nav-faculty {
+    width: 15em;
+  }
+  #nav-admissions {
+    width: 19em;
+  }
+  #nav-academics {
+    width: 15em;
+  }
+  #nav-campus {
+    width: 15em;
+  }
+  #nav-alumni {
+    width: 15em;
+  }
+  #nav-search {
+    width: 0em;
+  }
 }
