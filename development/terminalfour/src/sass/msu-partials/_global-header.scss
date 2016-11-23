@@ -37,10 +37,6 @@
   margin-bottom: 0;
 }
 
-//.navbar-nav {
-//  margin: 0;
-//}
-
 .navbar-collapse {
   padding-right: 0;
   padding-left: 0;
@@ -194,18 +190,18 @@
 /* style glyph */
 .inner-addon .fa-search {
   position: absolute;
-  padding: 17px 10px 10px 10px;
+  padding: 0.9em 1em 1em 3em;
   pointer-events: none;
 }
 /* align glyph */
 .left-addon .fa-search {
-  left: 1em;
-  top: -0.4em;
+  left: 0.3em;
+  top: 0em;
 }
 
 /* add padding  */
 .left-addon input {
-  padding-left: 70px;
+  padding-left: 8em;
   width: 101%;
 }
 
@@ -351,10 +347,6 @@
   z-index: 1;
 }
 
-//.container {
-//    position: relative;
-//  }
-
 .menu-last {
   margin-right: 0em;
   border-right: none !important;
@@ -433,10 +425,6 @@
 
 
 @media screen and (max-width: 991px) {
-//  .container{
-//   width: 100%;
-//  }
-
 
   .navbar-collapse {
     border-top: 5px solid #005fae;
@@ -478,7 +466,7 @@
   }
   .navbar-nav {
       float: none!important;
-      margin-top: 7.5px;
+      margin: 7px 0px;
   }
   .navbar-nav>li {
       float: none;
@@ -648,10 +636,7 @@
   .mobile-header {
     margin-top: 5px;
   }
-  .left-addon .fa-search {
-    left: 1em;
-    top: 0;
-  }
+
   #content-nav #nav-search-close {
       top: -3.2em;
       left: 19.2em;
@@ -844,5 +829,10 @@
     font-weight: 600;
     margin-left: 0.15em;
   }
-
+  .left-addon input {
+    padding-left: 9em;
+  }
+  .left-addon .fa-search {
+    left: 1.5em;
+  }
 }
