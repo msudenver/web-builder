@@ -7574,7 +7574,7 @@ header {
 
 .fa-search {
   color: #007dc3 !important;
-  padding-top: 0.9em;
+  padding-top: 1.3em;
   font-size: 1.2em;
   cursor: pointer;
 }
@@ -7606,7 +7606,7 @@ header {
 /* align glyph */
 .left-addon .fa-search {
   left: 0.3em;
-  top: 0em;
+  top: -0.3em;
 }
 
 /* add padding  */
@@ -7684,7 +7684,7 @@ header {
 
 .fa-bars {
   background-color: #005fae;
-  padding: 20px;
+  padding: 24px;
   margin: -17px -30px -16px -16px;
 }
 
@@ -7695,7 +7695,7 @@ header {
   float: right;
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
 }
 
 .search-desktop {
@@ -8044,6 +8044,10 @@ header {
   .fa.pull-right {
     display: none;
   }
+
+  .left-addon .fa-search {
+    top: 0em;
+  }
 }
 .header-container {
   margin-right: auto;
@@ -8132,6 +8136,7 @@ header {
 
   .fa-search {
     font-size: 1.2em;
+    padding-top: 0.9em;
   }
 
   #content-nav #search-input input[type=text] {
