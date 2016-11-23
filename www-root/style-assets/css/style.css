@@ -7623,20 +7623,22 @@ header {
 .apply-button {
   background: #d11242;
   color: white;
-  font-size: 1.6em;
+  font-size: 1.0em;
   border-radius: 0 0 10px 10px;
   text-align: center;
-  padding: 0.5em 0.5em;
-  width: 10%;
+  padding: 0.3em 0.3em;
+  width: 7%;
   font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 2px;
   float: right !important;
-  margin-left: 0.1em;
+  margin-left: 0.15em;
+  margin-right: 1em;
 }
 
 .give-visit-buttons {
   background: gray;
+  margin-right: 0em;
 }
 
 .msudenver_logo {
@@ -8179,6 +8181,15 @@ header {
   #nav-search {
     width: 0em;
   }
+
+  .apply-button {
+    font-size: 1.2em;
+    padding: 0.3em 0.3em;
+    width: 8%;
+    font-weight: 600;
+    margin-left: 0.15em;
+    margin-right: 0em;
+  }
 }
 @media only screen and (min-width: 1358px) {
   #search-input #search-text {
@@ -8280,6 +8291,14 @@ header {
 
   #nav-search {
     width: 0em;
+  }
+
+  .apply-button {
+    font-size: 1.4em;
+    padding: 0.3em 0.3em;
+    width: 7%;
+    font-weight: 600;
+    margin-left: 0.15em;
   }
 }
 /* Homepage base styles */
