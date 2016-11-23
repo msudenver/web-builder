@@ -21,17 +21,6 @@ body {
   transition: height .35s ease
 }
 
-@media (max-width: 767px) {
-  .header {
-    text-align: left
-  }
-
-}
-@media (min-width: 767px) {
-  .header {
-    text-align: left
-  }
-}
 
 .linkcolumn a {
   word-break: break-word
@@ -60,16 +49,7 @@ body {
 .depsocial {
   margin-bottom: 1.5em
 }
-.custombtn {
-  // border-radius: 0;
-  margin-bottom: 15px;
-  width: 100%;
-  font-weight: 100!important;
-  box-shadow: 1px 5px 5px rgba(0,0,0,0.175);
-}
-.custombtn span {
-  color: #FFF
-}
+
 
 .ie8 .img-responsive {
   display: block;
@@ -107,16 +87,17 @@ img {
 .navbar-default {
   border: none
 }
-#slider>a.left.carousel-control, #slider>a.right.carousel-control {
-  color: #fff
-}
-.promo_date {
-  text-align: right;
-  font-size: small
-}
-.promo_date+h3 {
-  width: 80%
-}
+// #slider>a.left.carousel-control, #slider>a.right.carousel-control {
+//   color: #fff
+// }
+// .promo_date {
+//   text-align: right;
+//   font-size: small
+// }
+// .promo_date+h3 {
+//   width: 80%
+// }
+
 
 .clickable {
   cursor: pointer
@@ -125,11 +106,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', Open Sans, helvetica, arial, sans-serif;
 }
 h1 {
-  padding-left: .5em;
-  color: #002856;
+  // padding-left: .5em;
+  color: #fff;
   font-size: 2.6em;
   font-weight: 600;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 h2 {
 font-weight: 600;
@@ -228,20 +209,11 @@ ul.breadcrumb a {
   padding: .5em;
   margin: 1em
 }
-.btn-primary a {
-  color: #fff
-}
-.btn-primary a a:hover {
-  text-decoration: none
-}
+
 .modal-dialog {
   padding-top: 12%
 }
 
-
-@media (max-width: 767px){
-	background-color:#cc2951;
-}
 
 
 .custom-search-input{
@@ -280,17 +252,4 @@ hr {
     border-top: 1px solid #e6e1e1;
     margin-top: 15px;
     margin-bottom: 15px;
-}
-.btn {
-    border-radius: 0;
-    margin-bottom: 15px;
-    font-weight: 100!important;
-    opacity: .80;
-    transition: opacity 250ms ease-in-out;
-    box-shadow: 1px 5px 5px rgba(0,0,0,0.175);
-}
-
-.btn:hover {
-opacity: 1;
-transition: opacity 250ms ease-in-out;
 }
