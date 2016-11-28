@@ -1,11 +1,22 @@
+#site-header {
+    background: url('../media/eventsbg_mobile.jpg') ;
+    a {
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+        }
+    }
+}
+
 .siteheader {
   margin-top: 15px;
   margin-bottom: 15px;
-  border-bottom: 2px solid #cc2951;
+  color: #fff;
+  // border-bottom: 2px solid #cc2951;
 }
+
 @media (max-width: 767px) {
   .siteheader {
-    margin-top: 15px;
+    // margin-top: 15px;
     text-align: right;
     padding-right: 10px;
   }
