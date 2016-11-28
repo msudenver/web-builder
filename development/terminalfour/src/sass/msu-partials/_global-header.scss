@@ -37,10 +37,6 @@
   margin-bottom: 0;
 }
 
-//.navbar-nav {
-//  margin: 0;
-//}
-
 .navbar-collapse {
   padding-right: 0;
   padding-left: 0;
@@ -59,6 +55,7 @@
   border-right: 1px solid black;
   border-spacing: 10px;
   margin-top: 1.8em;
+  margin-bottom: 0.5em;
 }
 
 .nav > a > li {
@@ -171,7 +168,7 @@
 
 .fa-search {
   color: #007dc3 !important;
-  padding-top: 0.9em;
+  padding-top: 1.1em;
   font-size: 1.2em;
   cursor: pointer;
 }
@@ -194,18 +191,18 @@
 /* style glyph */
 .inner-addon .fa-search {
   position: absolute;
-  padding: 17px 10px 10px 10px;
+  padding: 0.9em 1em 1em 3em;
   pointer-events: none;
 }
 /* align glyph */
 .left-addon .fa-search {
-  left: 1em;
-  top: -0.4em;
+  left: 0.3em;
+  top: -0.45em;
 }
 
 /* add padding  */
 .left-addon input {
-  padding-left: 70px;
+  padding-left: 8em;
   width: 101%;
 }
 
@@ -217,20 +214,22 @@
 .apply-button {
   background: #d11242;
   color: white;
-  font-size: 1.6em;
+  font-size: 1.0em;
   border-radius: 0 0 10px 10px;
   text-align: center;
-  padding: 0.5em 0.5em;
-  width: 10%;
+  padding: 0.3em 0.3em;
+  width: 7%;
   font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 2px;
   float: right !important;
-  margin-left: 0.1em;
+  margin-left: 0.15em;
+  margin-right: 1em;
 }
 
 .give-visit-buttons {
   background: gray;
+  margin-right: 0em;
 }
 
 .msudenver_logo {
@@ -276,7 +275,7 @@
 
 .fa-bars {
   background-color: #005fae;
-  padding: 20px;
+  padding: 24px;
   margin: -17px -30px -16px -16px;
 }
 
@@ -287,7 +286,7 @@
   float: right;
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
 }
 
 .search-desktop {
@@ -348,10 +347,6 @@
   cursor: unset;
   z-index: 1;
 }
-
-//.container {
-//    position: relative;
-//  }
 
 .menu-last {
   margin-right: 0em;
@@ -431,10 +426,6 @@
 
 
 @media screen and (max-width: 991px) {
-//  .container{
-//   width: 100%;
-//  }
-
 
   .navbar-collapse {
     border-top: 5px solid #005fae;
@@ -454,10 +445,9 @@
     padding-left: 0px;
     width: 101%;
     text-align: left;
-    padding-top: 4.1em;
   }
   .left-addon input {
-    padding-top: 5px !important;
+    padding-top: 3px !important;
     padding-bottom: 2px;
   }
   .blue-header {
@@ -469,14 +459,14 @@
   }
   .navbar-fixed-top {
       top: 0;
-      border-width: 0 0 1px;
+      border-width: 0 0 0px;
   }
   .navbar-collapse.collapse {
       display: none!important;
   }
   .navbar-nav {
       float: none!important;
-      margin-top: 7.5px;
+      margin: 7px 0px;
   }
   .navbar-nav>li {
       float: none;
@@ -614,6 +604,12 @@
   .fa.pull-right {
     display: none;
   }
+  .left-addon .fa-search {
+    top: 0em;
+  }
+  .pushdown-menu {
+      height: 21em;
+  }
 }
 
 
@@ -646,10 +642,7 @@
   .mobile-header {
     margin-top: 5px;
   }
-  .left-addon .fa-search {
-    left: 1em;
-    top: 0;
-  }
+
   #content-nav #nav-search-close {
       top: -3.2em;
       left: 19.2em;
@@ -698,6 +691,7 @@
   }
   .fa-search {
   font-size: 1.2em;
+  padding-top: 0.9em;
   }
   #content-nav #search-input input[type=text] {
     width: 89em;
@@ -735,7 +729,17 @@
   #nav-search {
     width: 0em;
   }
-
+  .apply-button {
+    font-size: 1.2em;
+    padding: 0.3em 0.3em;
+    width: 8%;
+    font-weight: 600;
+    margin-left: 0.15em;
+    margin-right: 0em;
+  }
+  .pushdown-menu {
+      height: 22em;
+  }
 }
 
 @media only screen and (min-width:1358px) {
@@ -799,6 +803,9 @@
   #content-nav{
       padding-right: 4em;
   }
+  .pushdown-menu {
+      height: 19em;
+  }
 }
 
 @media only screen and (min-width:1500px) {
@@ -827,5 +834,18 @@
   }
   #nav-search {
     width: 0em;
+  }
+  .apply-button {
+    font-size: 1.4em;
+    padding: 0.3em 0.3em;
+    width: 7%;
+    font-weight: 600;
+    margin-left: 0.15em;
+  }
+  .left-addon input {
+    padding-left: 9em;
+  }
+  .left-addon .fa-search {
+    left: 1.5em;
   }
 }
