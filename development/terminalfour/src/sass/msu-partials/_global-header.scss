@@ -55,6 +55,7 @@
   border-right: 1px solid black;
   border-spacing: 10px;
   margin-top: 1.8em;
+  margin-bottom: 0.5em;
 }
 
 .nav > a > li {
@@ -167,7 +168,7 @@
 
 .fa-search {
   color: #007dc3 !important;
-  padding-top: 1.3em;
+  padding-top: 1.1em;
   font-size: 1.2em;
   cursor: pointer;
 }
@@ -606,7 +607,9 @@
   .left-addon .fa-search {
     top: 0em;
   }
-
+  .pushdown-menu {
+      height: 21em;
+  }
 }
 
 
@@ -734,6 +737,9 @@
     margin-left: 0.15em;
     margin-right: 0em;
   }
+  .pushdown-menu {
+      height: 22em;
+  }
 }
 
 @media only screen and (min-width:1358px) {
@@ -796,6 +802,9 @@
   }
   #content-nav{
       padding-right: 4em;
+  }
+  .pushdown-menu {
+      height: 19em;
   }
 }
 
