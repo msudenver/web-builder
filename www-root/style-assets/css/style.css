@@ -8523,14 +8523,19 @@ header {
   padding-bottom: 1rem;
   background-color: #000;
   text-align: right;
+  position: relative;
   float: right;
-  position: static;
 }
 @media (min-width: 768px) {
   .homepage-feature-caption-text {
     float: left;
     width: 100%;
   }
+}
+.homepage-feature-caption-text .fa {
+  display: inline-block;
+  color: #fff;
+  float: right;
 }
 
 .homepage-feature-caption-link {
@@ -8552,49 +8557,16 @@ header {
 
 .t4-slide .carousel-control {
   display: block;
-  position: absolute;
-  width: 2.5rem;
-  background: transparent;
-  top: 45%;
-  transform: translateY(-50%);
-}
-.t4-slide .carousel-control .fa {
-  display: inline-block;
-  color: #fff;
-  font-size: 2rem;
-}
-.t4-slide .carousel-control.right .fa {
-  float: left;
-}
-.t4-slide .carousel-control.left .fa {
-  float: right;
+  top: 80%;
 }
 
-@media (min-width: 480px) {
-  .t4-slide .carousel-control {
-    top: 50%;
-  }
-}
-@media (min-width: 690px) {
-  .t4-slide .carousel-control {
-    top: 55%;
-  }
-}
-@media (min-width: 768px) {
-  .t4-slide .carousel-control {
-    width: 3rem;
-  }
-  .t4-slide .carousel-control .fa {
-    font-size: 3rem;
-  }
-}
+/* End homepage-feature-caption partial */
 @media (min-width: 992px) {
   .homepage-feature-caption-text {
     width: 75%;
     float: right;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
     right: 0;
     left: auto;
     bottom: auto;
@@ -8611,26 +8583,31 @@ header {
     font-size: 25px;
     font-size: 1.5625rem;
   }
-
-  .t4-slide .carousel-control {
-    top: 88%;
-    transform: translateY(-50%);
-    width: 4rem;
-  }
 }
 @media (min-width: 1200px) {
   .homepage-feature-caption-text {
     padding: 50px 15px;
     padding: 3.125rem 0.9375rem;
+    top: 40%;
   }
 }
 @media (min-width: 1300px) {
   .homepage-feature-caption-text {
     width: 58.33333%;
     padding-right: 8.33333%;
+    top: calc(45%);
   }
 }
-/* End homepage-feature-caption */
+@media (min-width: 1500px) {
+  .homepage-feature-caption-text {
+    top: calc(50%);
+  }
+}
+@media (min-width: 1600px) {
+  .homepage-feature-caption-text {
+    top: calc(55%);
+  }
+}
 #homepage-ryor {
   background: url("../media/RYOR_bg_extended.png");
   -webkit-background-size: cover;
