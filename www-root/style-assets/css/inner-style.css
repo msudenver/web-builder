@@ -10611,13 +10611,12 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', Open Sans, helvetica, arial, sans-serif;
+  font-family: 'Karla', Open Sans, helvetica, arial, sans-serif;
 }
 
 h1 {
   color: #fff;
-  font-size: 2.6em;
-  font-weight: 600;
+  font-size: 2.375rem;
 }
 
 h2 {
@@ -10657,22 +10656,18 @@ h6 {
   font-weight: 500;
 }
 
-.msudenver_logo img {
-  padding-bottom: 15px;
-  padding-top: 25px;
-}
-
 .breadcrumb {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 0;
 }
 
 ul.breadcrumb {
-  color: #2c3e50;
+  font-size: 16px;
+  color: #fff;
 }
 
 ul.breadcrumb a {
-  color: #00447c;
+  color: #fff;
 }
 
 .readmore {
