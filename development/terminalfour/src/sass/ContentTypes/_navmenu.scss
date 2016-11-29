@@ -21,12 +21,14 @@
   left: 150px;
   bottom: 0;
   z-index: 9998;
-  background: #002856;
+  // background: #002856;
+  color:black;
   -webkit-overflow-scroll: touch
 }
 #menu a {
   border: none;
-  font-size:15px;
+  color:black;
+  font-size:1.2rem;
   font-weight:300;
   padding: 10px 20px 10px 10px;
   line-height: 1em;
@@ -46,7 +48,7 @@
   border: none
 }
 #menu .pure-menu li a:focus, #menu .pure-menu li a:hover {
-  background: #fff;
+  // background: #fff;
   line-height: 1em;
   color: #1b557a;
   padding: 10px 15px
@@ -217,22 +219,22 @@ ul.multilevel-linkul-0 {
   color: #fff
 }
 ul.multilevel-linkul-0 li {
-  background: #00447C
+  // background: #00447C
 }
 ul.multilevel-linkul-1 li {
-  background: #005BA5
+  // background: #005BA5
 }
 ul.multilevel-linkul-2 li {
-  background: #00447C
+  // background: #00447C
 }
 ul.multilevel-linkul-3 li {
-  background: #2e8ece
+  // background: #2e8ece
 }
 ul.multilevel-linkul-4 li {
-  background: #409ad5
+  // background: #409ad5
 }
 ul.multilevel-linkul-5 li {
-  background: #55a5d9
+  // background: #55a5d9
 }
 .currentbranch0 a {
   background: #fff;

@@ -1,5 +1,6 @@
 #site-header {
     background: url('../media/eventsbg.jpg') ;
+    margin-bottom: 25px;
     a {
         &:hover, &:active, &:focus {
             text-decoration: none;
@@ -9,7 +10,7 @@
 
 .siteheader {
   margin-top: 15px;
-  margin-bottom: 15px;
+
   color: #fff;
   // border-bottom: 2px solid #cc2951;
 }
