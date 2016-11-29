@@ -24,13 +24,13 @@
   background: #fff
 }
 .content a {
-  color: #248dc1;
-  text-decoration: none;
+  color: #007dc3;
   font-weight: 700
 }
 .content a:hover {
-  color: #003663;
-  border-bottom: 1px solid
+  // color: #003663;
+  border-bottom: 1px solid;
+  text-decoration: none;
 }
 .content .description {
   font-size: 10px
@@ -41,18 +41,17 @@
   color: #888
 }
 
-.content p a,
-.content ul a {
-color: #248dc1 !important;
-text-decoration: none !important;
-padding-bottom: 0px !important;
-border-bottom:  0px solid #248dc1 !important;
-transition: all 250ms ease-in-out;
-}
-.content p a:hover,
-.content ul a:hover {
-text-decoration: none !important;
-padding-bottom: 3px !important;
-border-bottom:  2px solid #248dc1 !important;
-transition: all 250ms ease-in-out;
-}
+// .content p a, .content ul a {
+// color: #248dc1 !important;
+// text-decoration: none !important;
+// padding-bottom: 0px !important;
+// border-bottom:  0px solid #248dc1 !important;
+// transition: all 250ms ease-in-out;
+// }
+// .content p a:hover,
+// .content ul a:hover {
+// text-decoration: none !important;
+// padding-bottom: 3px !important;
+// border-bottom:  2px solid #248dc1 !important;
+// transition: all 250ms ease-in-out;
+// }
