@@ -1,0 +1,27 @@
+/* User Profile */
+.contact-info > h4 {
+    line-height: 20pt !important;
+    font-size: 18pt !important;
+    font-weight: 400 !important;
+    color: #323e48 !important;
+	}
+
+
+ .contact-info > p {
+  line-height: 16pt !important;
+  font-size:12pt !important;
+  }
+
+ .contact-card > * >img.img-responsive {
+   width: 155px;
+   border-radius: 50%;
+   padding: 5px;
+   display: inline;
+}
+
+  .contact-info >hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
