@@ -10015,12 +10015,8 @@ hr.style-one {
   color: #fff;
   padding: 1.5em;
   margin-bottom: 1.5em;
-  background: #16a085;
+  background: grey;
   position: relative;
-  zoom: 1;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 .HighlightBox .HighlightBox-title {
@@ -10212,7 +10208,7 @@ hr.style-one {
 }
 
 .panel-default > .panel-heading {
-  background: #00447C;
+  background: grey;
   color: #fff;
   font-size: 1.5em;
   border-color: #00447C;
