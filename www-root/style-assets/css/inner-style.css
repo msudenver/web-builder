@@ -9027,6 +9027,7 @@ footer {
   left: 150px;
   bottom: 0;
   z-index: 9998;
+  background: #fff;
   color: black;
   -webkit-overflow-scroll: touch;
 }
@@ -9050,6 +9051,10 @@ footer {
   -moz-transition: all .25 ease-in-out;
   -o-transition: all .25 ease-in-out;
   transition: all 0.25 ease-in-out;
+}
+
+ul.nav.nav-list {
+  margin-top: 15px;
 }
 
 #menu .pure-menu, #menu .pure-menu ul {
@@ -9110,8 +9115,6 @@ footer {
 .menu-link:focus span, .menu-link:hover span {
   position: relative;
   display: block;
-  background: #fff;
-  color: #fff;
   width: 100%;
   height: 0.2em;
 }
@@ -9203,7 +9206,6 @@ ul.multilevel-linkul-0 {
 .sidebar-nav li a {
   display: block;
   line-height: 1em;
-  color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -9218,30 +9220,11 @@ ul.multilevel-linkul-0 {
 }
 
 .sidebar-nav li a:hover {
-  background: #fff;
+  background: light-gray;
   -webkit-transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -o-transition: all .25s ease-in-out;
   transition: all 0.25s ease-in-out;
-}
-
-.sidebar-nav a:hover, .sidebar-nav li a:after {
-  color: #fff;
-}
-
-.currentbranch0 a {
-  background: #fff;
-  color: #20638f !important;
-}
-
-.currentbranch1 a, .currentbranch2 a {
-  background: #fff;
-  color: #003663 !important;
-}
-
-.currentbranch3 a, .currentbranch4 a {
-  background: #fff;
-  color: #003663 !important;
 }
 
 table.atoz {
