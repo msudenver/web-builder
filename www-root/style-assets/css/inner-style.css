@@ -8041,7 +8041,7 @@ header {
     display: none;
   }
 
-  .fa.pull-right {
+  .mobile-header > .fa.fa-chevron-down {
     display: none;
   }
 
@@ -10211,7 +10211,6 @@ hr.style-one {
   background: grey;
   color: #fff;
   font-size: 1.5em;
-  border-color: #00447C;
 }
 
 .panel-title {
