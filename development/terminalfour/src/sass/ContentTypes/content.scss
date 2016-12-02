@@ -5,8 +5,8 @@
   min-width: inherit;
   padding: 1.5em;
   color: #333;
-  background: #fff;
-  max-width: 1200px
+  // background: #fff;
+  // max-width: 1200px
 }
 .content .img-responsive {
   padding: 0 15px;
@@ -14,6 +14,7 @@
 .content .hero>.img-responsive {
   padding: inherit;
   margin-bottom:30px;
+  width:100%;
 }
 .content .nopadding img.img-responsive {
   padding: 0
