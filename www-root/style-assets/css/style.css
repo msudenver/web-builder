@@ -7480,6 +7480,7 @@ header {
   background-color: #fff;
   max-height: none;
   transition: max-height 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175);
 }
 
 #content-nav #nav-search-close {
