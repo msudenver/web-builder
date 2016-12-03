@@ -1,39 +1,39 @@
 // STYLES USED FOR THE PAGE CONTENT TYPE
 .content {
-  margin: 0 auto 15px;
+  // margin: 0 auto 15px;
   line-height: 1.6em;
-  min-width: inherit;
-  padding: 1.5em;
-  color: #333;
+  // min-width: inherit;
+  // padding: 1.5em;
+  // color: #333;
   // background: #fff;
   // max-width: 1200px
-}
-.content .img-responsive {
+
+.img-responsive {
   padding: 0 15px;
 }
-.content .hero>.img-responsive {
+.hero>.img-responsive {
   padding: inherit;
   margin-bottom:30px;
   width:100%;
 }
-.content .nopadding img.img-responsive {
+.nopadding img.img-responsive {
   padding: 0
 }
-.content img.border {
+img.border {
   padding: 10px;
   border: 1px solid #ececec;
   background: #fff
 }
-.content a {
+ a {
   color: #007dc3;
   font-weight: 700
 }
-.content a:hover {
+ a:hover {
   // color: #003663;
   border-bottom: 1px solid;
   text-decoration: none;
 }
-.content .description {
+.description {
   font-size: 10px
 }
 .content-subhead {
@@ -56,3 +56,5 @@
 // border-bottom:  2px solid #248dc1 !important;
 // transition: all 250ms ease-in-out;
 // }
+
+}
