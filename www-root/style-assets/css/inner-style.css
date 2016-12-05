@@ -10350,9 +10350,10 @@ hr.style-one {
 }
 
 .panel-default > .panel-heading {
-  background: grey;
+  background: black;
   color: #fff;
   font-size: 1.5em;
+  border-color: black;
 }
 
 .panel-title {
@@ -10369,9 +10370,7 @@ hr.style-one {
 .panel-danger > .panel-heading {
   background: #d63647;
   color: white;
-  border-color: #df1300;
-  font-weight: 700;
-  font-size: 24px;
+  border-color: #d63647;
 }
 
 .panel-danger {
