@@ -10774,6 +10774,15 @@ a.t4Edit-page:hover {
   border-bottom: none !important;
 }
 
+#callstoaction {
+  background-color: gray;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .card {
   background: #fff;
   padding: 1em;
