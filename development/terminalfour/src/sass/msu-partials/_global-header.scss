@@ -17,7 +17,7 @@
   }
 
   ul a li {
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #00447c;
     padding-left: 1.5em;
     padding-right: 1.4em;
@@ -114,8 +114,9 @@
   background-color: #007dc3;
   border-radius: 2;
   letter-spacing: 5px;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
   font-weight: 500;
-  font-family: 'Raleway', sans-serif;
 }
 
 #content-nav #search-input .search-button:hover {
@@ -220,8 +221,9 @@
   text-align: center;
   padding: 0.3em 0.3em;
   width: 7%;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 700;
   letter-spacing: 2px;
   float: right !important;
   margin-left: 0.15em;
@@ -245,7 +247,9 @@
   border-width: 0;
   width: 207px;
   margin-top: 3px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 1.0em;
   color: #bcbcbc;
   letter-spacing: 2px;
@@ -316,7 +320,8 @@
 }
 
 #content-nav {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
   letter-spacing: 3px;
   font-weight: 700;
   padding-left: 3px;
@@ -326,7 +331,8 @@
 }
 
 #content-nav-mobile {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
   letter-spacing: 5px;
   font-weight: 500;
   padding-left: 3px;
@@ -364,7 +370,9 @@
 }
 
 .faculty-staff a {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   letter-spacing: 3px;
   text-align: right;
   margin-top: -1.0em;
