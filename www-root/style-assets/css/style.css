@@ -1398,7 +1398,7 @@ html {
 }
 
 body {
-  font-family: "Karla", "Georgia", "Times New Roman", Times, serif;
+  font-family: "Gotham A", "Gotham B", "Georgia", "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333333;
@@ -6606,7 +6606,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Karla", "Georgia", "Times New Roman", Times, serif;
+  font-family: "Gotham A", "Gotham B", "Georgia", "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6728,7 +6728,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Karla", "Georgia", "Times New Roman", Times, serif;
+  font-family: "Gotham A", "Gotham B", "Georgia", "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7428,7 +7428,7 @@ header {
   font-size: 25px;
 }
 .toolbar ul a li {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #00447c;
   padding-left: 1.5em;
   padding-right: 1.4em;
@@ -7524,8 +7524,9 @@ header {
   background-color: #007dc3;
   border-radius: 2;
   letter-spacing: 5px;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
   font-weight: 500;
-  font-family: 'Raleway', sans-serif;
 }
 
 #content-nav #search-input .search-button:hover {
@@ -7630,8 +7631,9 @@ header {
   text-align: center;
   padding: 0.3em 0.3em;
   width: 7%;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 700;
   letter-spacing: 2px;
   float: right !important;
   margin-left: 0.15em;
@@ -7655,7 +7657,9 @@ header {
   border-width: 0;
   width: 207px;
   margin-top: 3px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 1.0em;
   color: #bcbcbc;
   letter-spacing: 2px;
@@ -7727,7 +7731,8 @@ header {
 }
 
 #content-nav {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
   letter-spacing: 3px;
   font-weight: 700;
   padding-left: 3px;
@@ -7737,7 +7742,8 @@ header {
 }
 
 #content-nav-mobile {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
   letter-spacing: 5px;
   font-weight: 500;
   padding-left: 3px;
@@ -7775,7 +7781,9 @@ header {
 }
 
 .faculty-staff a {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   letter-spacing: 3px;
   text-align: right;
   margin-top: -1.0em;
@@ -8051,7 +8059,7 @@ header {
   }
 
   .pushdown-menu {
-    height: 21em;
+    height: 27em;
   }
 }
 .header-container {
@@ -8197,7 +8205,7 @@ header {
   }
 
   .pushdown-menu {
-    height: 22em;
+    height: 26em;
   }
 }
 @media only screen and (min-width: 1358px) {
@@ -8270,7 +8278,7 @@ header {
   }
 
   .pushdown-menu {
-    height: 19em;
+    height: 22em;
   }
 }
 @media only screen and (min-width: 1500px) {
@@ -8381,7 +8389,7 @@ header {
 }
 
 .feature-heading-large {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 32px;
   font-size: 2rem;
   line-height: 1.3;
@@ -8408,7 +8416,7 @@ header {
 }
 
 .homepage-btn {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   font-size: 20.8px;
   font-size: 1.3rem;
@@ -8466,7 +8474,7 @@ header {
     float: none;
   }
   .homepage-btn:not(.footer-btn) {
-    font-family: "Karla", "Georgia", "Times New Roman", Times, serif;
+    font-family: "Gotham A", "Gotham B", "Georgia", "Times New Roman", Times, serif;
     font-weight: 700;
     font-size: 30px;
     font-size: 1.875rem;
@@ -9425,7 +9433,7 @@ footer {
 }
 
 .footer-promo-heading {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   font-size: 24px;
   font-size: 1.5rem;
