@@ -244,3 +244,14 @@ hr {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+// Edit this page styles
+a.t4Edit-page {
+    color: white;
+    float: right;
+}
+a.t4Edit-page:hover {
+    color: #003663;
+    text-decoration: none !important;
+  	border-bottom: none !important;
+}

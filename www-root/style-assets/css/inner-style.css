@@ -9074,39 +9074,10 @@ a:focus, a:hover {
   outline-offset: -2px;
 }
 
-.content a:hover {
-  color: #003663;
-  border-bottom: 1px solid #adadad;
-}
-
-.hero {
-  border-bottom: 3px solid #c50f3c;
-}
-
 .programtitle {
   color: white;
   font-size: 30pt;
   line-height: 24pt;
-}
-
-h2 {
-  color: #00457c;
-  font-size: 3em;
-  font-weight: 500;
-}
-
-h3 {
-  color: #626161;
-}
-
-h4 {
-  color: #c50f3c;
-  font-style: bold;
-  font-size: 1.75em;
-}
-
-.btn .btn-default .btn-block .btn-lg, .btn .btn-default .btn-block .btn-group-lg > .btn {
-  border-radius: 0;
 }
 
 #programHeader {
@@ -10790,6 +10761,17 @@ hr {
   border-top: 1px solid #e6e1e1;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+a.t4Edit-page {
+  color: white;
+  float: right;
+}
+
+a.t4Edit-page:hover {
+  color: #003663;
+  text-decoration: none !important;
+  border-bottom: none !important;
 }
 
 .card {
