@@ -9205,7 +9205,7 @@ a:focus, a:hover {
   border: none;
   color: black;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 700;
   padding: 10px 20px 10px 10px;
   line-height: 1em;
   -webkit-transition: all .25 ease-in-out;
@@ -10507,6 +10507,7 @@ div#lhnContainerDone {
 }
 #site-header a:hover, #site-header a:active, #site-header a:focus {
   text-decoration: none;
+  font-weight: 700;
 }
 #site-header .siteheader {
   color: #fff;
@@ -10637,6 +10638,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   color: #fff;
   font-size: 2.375rem;
+  font-weight: 800;
 }
 
 h2 {
@@ -10652,7 +10654,7 @@ h2 {
 h3 {
   color: #414b63;
   font-size: 1.875em;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 4px;
   margin-top: 2px;
 }
