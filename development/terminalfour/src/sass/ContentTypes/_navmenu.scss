@@ -45,9 +45,9 @@
   transition: all .25 ease-in-out
 }
 
-ul.nav.nav-list {
-    margin-top: 15px;
-}
+// ul.nav.nav-list {
+//     margin-top: 15px;
+// }
 
 #menu .pure-menu, #menu .pure-menu ul {
   border: none;
@@ -126,9 +126,10 @@ ul.nav.nav-list {
   margin-top: .6em
 }
 
-ul.multilevel-linkul-0 {
+.multilevel-linkul-0 {
    margin-left: -20px;
 }
+
 .multilevel-linkul-1 {
     margin-left: -20px;
 }
@@ -177,9 +178,6 @@ ul.multilevel-linkul-0 {
     margin: 0 auto;
     width: 100%
   }
-  // .header {
-  //   text-align: left
-  // }
 }
 .sidebar-nav {
   margin-bottom: 15px;
@@ -188,16 +186,7 @@ ul.multilevel-linkul-0 {
 .sidebar-nav ul li {
   list-style-type: none
 }
-.sidebar-nav li a:hover {
-  position: relative;
-  padding: 10px 15px
-}
-.sidebar-nav li:after {
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out
-}
+
 .sidebar-nav li a {
   display: block;
   line-height: 1em;
@@ -207,45 +196,26 @@ ul.multilevel-linkul-0 {
   padding-left: 10px;
   text-decoration: none
 }
-.sidebar-nav li {
-  height: 100%;
-  width: 100%;
-  padding-top: 0;
-  padding-bottom: 0
-}
+
 .sidebar-nav li a:hover {
-  background: light-gray;
+  background: #eeeeee;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  position: relative;
+  padding: 10px 15px
+}
+
+.sidebar-nav li:after {
   -webkit-transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -o-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out
 }
-// .sidebar-nav a:hover, .sidebar-nav li a:after {
-//   color: #fff
-// }
-ul.multilevel-linkul-0 li {
-  // background: #00447C
-}
-ul.multilevel-linkul-1 li {
-  // background: #005BA5
-}
-ul.multilevel-linkul-2 li {
-  // background: #00447C
-}
-ul.multilevel-linkul-3 li {
-  // background: #2e8ece
-}
-ul.multilevel-linkul-4 li {
-  // background: #409ad5
-}
-ul.multilevel-linkul-5 li {
-  // background: #55a5d9
-}
-.currentbranch0 a {
-  // background: #fff;
-  // color: #20638f!important
-}
-.currentbranch1 a, .currentbranch2 a, .currentbranch3 a, .currentbranch4 a {
-  // background: #fff;
-  // color: #003663!important
+
+
+
+.currentbranch0 a , .currentbranch1 a, .currentbranch2 a, .currentbranch3 a, .currentbranch4 a {
+  color: #d11242;
 }

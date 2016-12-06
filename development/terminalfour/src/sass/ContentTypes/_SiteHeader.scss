@@ -1,6 +1,7 @@
 #site-header {
     background: url('../media/eventsbg.jpg') ;
     margin-bottom: 25px;
+    background-size: 100%;
     a {
         &:hover, &:active, &:focus {
             text-decoration: none;
@@ -8,7 +9,6 @@
     }
 .siteheader {
   color: #fff;
-  // border-bottom: 2px solid #cc2951;
 }
 
 .breadcrumb {
@@ -17,7 +17,7 @@
   padding: 0;
 }
 ul.breadcrumb {
-  // color: #fff;
+  color: #fff;
   font-family: 'Gotham A', 'Gotham B', Open Sans, helvetica, arial, sans-serif;
   font-size: 1em;
   font-style: normal;

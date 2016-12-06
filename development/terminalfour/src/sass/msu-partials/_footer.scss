@@ -1,5 +1,5 @@
-/** 
-    Site-wide footer 
+/**
+    Site-wide footer
 **/
 footer {
     margin-top: 8px;
@@ -8,22 +8,22 @@ footer {
     -webkit-background-size:  cover;
     -moz-background-size:     cover;
     -o-background-size:       cover;
-    background-size:          cover; 
+    background-size:          cover;
     background-position:         center bottom;
-    
+
 }
 
 /* For the background color gradient in mobile */
 @media (max-width: $screen-sm-max) {
     .footer-bg-mob {
-        background-color: $msu-blue; 
-    }        
+        background-color: $msu-blue;
+    }
 }
 
-.footer-container { 
+.footer-container {
     @include container-fixed();
     padding-bottom: 48px;
-   
+
     *:not(.btn) { color: $white; }
 }
 /* Used inbetween html rows in the footer */
@@ -56,17 +56,17 @@ footer {
 }
 .footer-promo-heading {
     font-family: $font-family-sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 24px;
     font-size: torem(24);
     line-height: 1.3;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     margin-top: 0;
 }
 .footer-promo-text {
     line-height: 1.3;
     margin-bottom: 8px;
-    margin-bottom: torem(8); 
+    margin-bottom: torem(8);
 }
 
 /** Footer links and contacts row **/
@@ -76,7 +76,7 @@ footer {
     margin-bottom: torem(16);
 }
 .footer-campus-info {
-    .fa { 
+    .fa {
         width: 5%;
         text-align: center;
     }
@@ -131,7 +131,7 @@ footer {
 
 .footer-logo {
     text-align: center;
-    
+
 }
 .footer-logo-img {
     margin: 0 auto;
@@ -146,7 +146,7 @@ footer {
     margin-top: torem(20);
     li {
         display: inline-flex;
-         
+
         float: left;
     }
     .fa {
@@ -168,12 +168,12 @@ footer {
         @include make-sm-column(4);
     }
     .footer-logo-img {
-        max-width: 180px; 
+        max-width: 180px;
     }
     .footer-promo-heading {
         font-size: 25px;
-        font-size: torem(25); 
-        line-height: 1.4;   
+        font-size: torem(25);
+        line-height: 1.4;
     }
     .footer-promo-text {
         font-size: 20px;
@@ -189,7 +189,7 @@ footer {
         }
     }
     .footer-nav {
-         padding: 0;   
+         padding: 0;
     }
     .footer-social {
         padding: 0 4%;
@@ -200,9 +200,9 @@ footer {
         margin-top: torem(18);
     }
 
- 
-    
-    
+
+
+
 }
 @media (min-width: $screen-md-min) {
     .footer-container {
@@ -247,8 +247,3 @@ footer {
         }
     }
 }
-
-
-
-
-

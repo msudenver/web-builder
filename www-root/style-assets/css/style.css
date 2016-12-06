@@ -9342,8 +9342,8 @@ header {
     font-size: 1.5rem;
   }
 }
-/** 
-    Site-wide footer 
+/**
+    Site-wide footer
 **/
 footer {
   margin-top: 8px;
@@ -9434,7 +9434,7 @@ footer {
 
 .footer-promo-heading {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.3;

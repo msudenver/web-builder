@@ -8509,8 +8509,8 @@ header {
     line-height: 1;
   }
 }
-/** 
-    Site-wide footer 
+/**
+    Site-wide footer
 **/
 footer {
   margin-top: 8px;
@@ -8601,7 +8601,7 @@ footer {
 
 .footer-promo-heading {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.3;
@@ -9222,10 +9222,6 @@ a:focus, a:hover {
   transition: all 0.25 ease-in-out;
 }
 
-ul.nav.nav-list {
-  margin-top: 15px;
-}
-
 #menu .pure-menu, #menu .pure-menu ul {
   border: none;
 }
@@ -9301,7 +9297,7 @@ ul.nav.nav-list {
   margin-top: 0.6em;
 }
 
-ul.multilevel-linkul-0 {
+.multilevel-linkul-0 {
   margin-left: -20px;
 }
 
@@ -9360,7 +9356,21 @@ ul.multilevel-linkul-0 {
   list-style-type: none;
 }
 
+.sidebar-nav li a {
+  display: block;
+  line-height: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
 .sidebar-nav li a:hover {
+  background: #eeeeee;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
   position: relative;
   padding: 10px 15px;
 }
@@ -9372,28 +9382,8 @@ ul.multilevel-linkul-0 {
   transition: all 0.25s ease-in-out;
 }
 
-.sidebar-nav li a {
-  display: block;
-  line-height: 1em;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  text-decoration: none;
-}
-
-.sidebar-nav li {
-  height: 100%;
-  width: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.sidebar-nav li a:hover {
-  background: light-gray;
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+.currentbranch0 a, .currentbranch1 a, .currentbranch2 a, .currentbranch3 a, .currentbranch4 a {
+  color: #d11242;
 }
 
 table.atoz {
@@ -10513,6 +10503,7 @@ div#lhnContainerDone {
 #site-header {
   background: url("../media/eventsbg.jpg");
   margin-bottom: 25px;
+  background-size: 100%;
 }
 #site-header a:hover, #site-header a:active, #site-header a:focus {
   text-decoration: none;
@@ -10526,6 +10517,7 @@ div#lhnContainerDone {
   padding: 0;
 }
 #site-header ul.breadcrumb {
+  color: #fff;
   font-family: 'Gotham A', 'Gotham B', Open Sans, helvetica, arial, sans-serif;
   font-size: 1em;
   font-style: normal;
