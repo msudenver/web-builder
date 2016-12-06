@@ -8520,7 +8520,7 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center top;
 }
 
 /* For the background color gradient in mobile */
