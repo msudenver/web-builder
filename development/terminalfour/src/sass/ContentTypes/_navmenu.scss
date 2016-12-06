@@ -21,13 +21,15 @@
   left: 150px;
   bottom: 0;
   z-index: 9998;
-  background: #002856;
+  background: #fff;
+  color:black;
   -webkit-overflow-scroll: touch
 }
 #menu a {
   border: none;
-  font-size:15px;
-  font-weight:300;
+  color:black;
+  font-size:1.2rem;
+  font-weight:700;
   padding: 10px 20px 10px 10px;
   line-height: 1em;
   -webkit-transition: all .25 ease-in-out;
@@ -42,11 +44,16 @@
   -o-transition: all .25 ease-in-out;
   transition: all .25 ease-in-out
 }
+
+ul.nav.nav-list {
+    margin-top: 15px;
+}
+
 #menu .pure-menu, #menu .pure-menu ul {
-  border: none
+  border: none;
 }
 #menu .pure-menu li a:focus, #menu .pure-menu li a:hover {
-  background: #fff;
+  // background: #fff;
   line-height: 1em;
   color: #1b557a;
   padding: 10px 15px
@@ -102,8 +109,8 @@
 .menu-link:focus span, .menu-link:hover span {
   position: relative;
   display: block;
-  background: #fff;
-  color: #fff;
+  // background: #fff;
+  // color: #fff;
   width: 100%;
   height: .2em
 }
@@ -194,7 +201,7 @@ ul.multilevel-linkul-0 {
 .sidebar-nav li a {
   display: block;
   line-height: 1em;
-  color: #fff;
+  // color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -207,42 +214,38 @@ ul.multilevel-linkul-0 {
   padding-bottom: 0
 }
 .sidebar-nav li a:hover {
-  background: #fff;
+  background: light-gray;
   -webkit-transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -o-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out
 }
-.sidebar-nav a:hover, .sidebar-nav li a:after {
-  color: #fff
-}
+// .sidebar-nav a:hover, .sidebar-nav li a:after {
+//   color: #fff
+// }
 ul.multilevel-linkul-0 li {
-  background: #00447C
+  // background: #00447C
 }
 ul.multilevel-linkul-1 li {
-  background: #005BA5
+  // background: #005BA5
 }
 ul.multilevel-linkul-2 li {
-  background: #00447C
+  // background: #00447C
 }
 ul.multilevel-linkul-3 li {
-  background: #2e8ece
+  // background: #2e8ece
 }
 ul.multilevel-linkul-4 li {
-  background: #409ad5
+  // background: #409ad5
 }
 ul.multilevel-linkul-5 li {
-  background: #55a5d9
+  // background: #55a5d9
 }
 .currentbranch0 a {
-  background: #fff;
-  color: #20638f!important
+  // background: #fff;
+  // color: #20638f!important
 }
-.currentbranch1 a, .currentbranch2 a {
-  background: #fff;
-  color: #003663!important
-}
-.currentbranch3 a, .currentbranch4 a {
-  background: #fff;
-  color: #003663!important
+.currentbranch1 a, .currentbranch2 a, .currentbranch3 a, .currentbranch4 a {
+  // background: #fff;
+  // color: #003663!important
 }
