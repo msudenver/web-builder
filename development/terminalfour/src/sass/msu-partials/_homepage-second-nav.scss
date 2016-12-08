@@ -14,6 +14,8 @@ color:#fff;
 //  font-size:2.5rem;
 // margin-top:15px;
 // margin-bottom:15px;
+background-image:url(../media/RYOR_bg_extended.png);
+display: none;
 }
 
 .homepage-feature ul, {
@@ -23,15 +25,15 @@ color:#fff;
   table-layout: fixed;
   margin-top: 9px;
   padding-left: 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .homepage-feature li {
   display: table-cell;
 }
 
-#homepage-second-nav {
-  display: none;
+#homepage-second-nav a {
+  color: #fff;
 }
 
 @media (min-width: $screen-md-min) {

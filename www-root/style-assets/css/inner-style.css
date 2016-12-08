@@ -7638,11 +7638,27 @@ header {
   float: right !important;
   margin-left: 0.15em;
   margin-right: 1em;
+  -webkit-transition: background .25s ease;
+  -moz-transition: background .25s ease;
+  -o-transition: background .25s ease;
+  transition: background .25s ease;
+}
+
+.apply-button:hover {
+  background: #a60029;
 }
 
 .give-visit-buttons {
+  -webkit-transition: background .25s ease;
+  -moz-transition: background .25s ease;
+  -o-transition: background .25s ease;
+  transition: background .25s ease;
   background: gray;
   margin-right: 0em;
+}
+
+.give-visit-buttons:hover {
+  background: #424448;
 }
 
 .msudenver_logo {
@@ -7796,6 +7812,19 @@ header {
   line-height: 0.1em !important;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
+}
+
+.nav > li > a {
+  -webkit-transition: font-weight .15s ease;
+  -moz-transition: font-weight .15s ease;
+  -o-transition: font-weight .15s ease;
+  transition: font-weight .15s ease;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent;
+  color: #001e36;
+  font-weight: 800;
 }
 
 .container .pushdown-menu {
@@ -8356,7 +8385,7 @@ header {
   background-color: #000;
   text-align: center;
   font-family: 'Gotham A', 'Gotham B';
-  font-weight: 500;
+  font-weight: 600;
 }
 .homepage-feature:before, .homepage-feature:after {
   content: " ";
