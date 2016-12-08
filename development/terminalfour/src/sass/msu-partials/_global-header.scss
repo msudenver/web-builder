@@ -149,7 +149,7 @@
   border-radius: 4px;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Open Sans';
+  font-family: 'Gotham A', 'Gotham B';
   font-size: 12px;
   letter-spacing: 1.2px;
   color: #fff;
@@ -160,7 +160,7 @@
   text-decoration: none;
   color: #FFF;
   cursor: pointer;
-  font-family: 'Open Sans';
+  font-family: 'Gotham A', 'Gotham B';
 }
 
 .search-button:focus {
@@ -620,7 +620,6 @@
       height: 27em;
   }
 }
-
 
 @media (max-width: $screen-xs-max) {
 

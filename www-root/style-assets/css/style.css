@@ -7556,7 +7556,7 @@ header {
   border-radius: 4px;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Open Sans';
+  font-family: 'Gotham A', 'Gotham B';
   font-size: 12px;
   letter-spacing: 1.2px;
   color: #fff;
@@ -7567,7 +7567,7 @@ header {
   text-decoration: none;
   color: #FFF;
   cursor: pointer;
-  font-family: 'Open Sans';
+  font-family: 'Gotham A', 'Gotham B';
 }
 
 .search-button:focus {
@@ -8354,6 +8354,9 @@ header {
   padding-bottom: 36px;
   padding-bottom: 2.57143rem;
   background-color: #000;
+  text-align: center;
+  font-family: 'Gotham A', 'Gotham B';
+  font-weight: 500;
 }
 .homepage-feature:before, .homepage-feature:after {
   content: " ";
@@ -8517,13 +8520,20 @@ header {
   margin-top: 0px;
   padding: 0;
   position: relative;
-  height: 100px;
-}
-#homepage-second-nav span {
+  height: 3em;
   color: #fff;
-  font-size: 2.5rem;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.homepage-feature ul {
+  list-style-type: none;
+  display: table;
+  width: 100%;
+}
+
+.homepage-feature li {
+  display: table-cell;
 }
 
 /* Homepage-feature-caption partial */

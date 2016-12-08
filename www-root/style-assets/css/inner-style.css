@@ -7556,7 +7556,7 @@ header {
   border-radius: 4px;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Open Sans';
+  font-family: 'Gotham A', 'Gotham B';
   font-size: 12px;
   letter-spacing: 1.2px;
   color: #fff;
@@ -7567,7 +7567,7 @@ header {
   text-decoration: none;
   color: #FFF;
   cursor: pointer;
-  font-family: 'Open Sans';
+  font-family: 'Gotham A', 'Gotham B';
 }
 
 .search-button:focus {
@@ -8354,6 +8354,9 @@ header {
   padding-bottom: 36px;
   padding-bottom: 2.57143rem;
   background-color: #000;
+  text-align: center;
+  font-family: 'Gotham A', 'Gotham B';
+  font-weight: 500;
 }
 .homepage-feature:before, .homepage-feature:after {
   content: " ";
