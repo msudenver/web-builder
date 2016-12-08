@@ -8543,6 +8543,15 @@ header {
   display: table-cell;
 }
 
+#homepage-second-nav {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #homepage-second-nav {
+    display: block;
+  }
+}
 /* Homepage-feature-caption partial */
 #homepage-feature-caption {
   padding: 0;
