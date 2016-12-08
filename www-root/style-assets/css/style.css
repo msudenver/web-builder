@@ -8336,7 +8336,7 @@ header {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .homepage-main:before, .homepage-main:after {
   content: " ";
@@ -8512,6 +8512,11 @@ header {
     line-height: 1;
   }
 }
+@media (min-width: 1200px) {
+  .homepage-main {
+    margin-top: 70px;
+  }
+}
 #homepage-second-nav {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8522,14 +8527,16 @@ header {
   position: relative;
   height: 3em;
   color: #fff;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .homepage-feature ul {
   list-style-type: none;
   display: table;
   width: 100%;
+  table-layout: fixed;
+  margin-top: 9px;
+  padding-left: 0;
+  font-size: 1.2rem;
 }
 
 .homepage-feature li {

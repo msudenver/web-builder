@@ -8336,7 +8336,7 @@ header {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .homepage-main:before, .homepage-main:after {
   content: " ";
@@ -8510,6 +8510,11 @@ header {
   .main-button .homepage-btn {
     padding: 0;
     line-height: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .homepage-main {
+    margin-top: 70px;
   }
 }
 /** 
