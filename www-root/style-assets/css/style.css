@@ -7801,11 +7801,14 @@ header {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 3px;
-  text-align: right;
   margin-top: -1.0em;
   color: #fff;
   padding-bottom: 0.6em;
   display: none;
+}
+
+col-xs-12, .faculty-staff-students {
+  text-align: right;
 }
 
 .navbar-nav > a > li {
