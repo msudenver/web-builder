@@ -7413,7 +7413,7 @@ header {
 /**  Homepage Feature Components michael.mason@terminalfour.com **/
 /* MainHeaderNavigation Styles */
 .blue-header {
-  background: #00447c;
+  background-image: url(../media/RYOR_bg_extended.png);
 }
 
 .navbar .navbar-collapse {
@@ -7796,7 +7796,7 @@ header {
   cursor: pointer;
 }
 
-.faculty-staff a {
+.faculty-staff-students a {
   font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -8047,8 +8047,8 @@ header {
     border-right: 1px solid #4cb4f2;
   }
 
-  .faculty-staff a {
-    display: block;
+  .faculty-staff-students a {
+    display: inline-block;
   }
 
   #nav-faculty {
