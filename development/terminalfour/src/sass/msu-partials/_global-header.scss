@@ -252,6 +252,46 @@
   background: #424448;
 }
 
+.visit-give-mobile {
+  background: gray;
+  color: white;
+  font-size: 1.0em;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0.25em 0.25em 0em 0em;
+  text-align: center;
+  width: 99%;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
+  float: right !important;
+  -webkit-transition: background .25s ease;
+  -moz-transition: background .25s ease;
+  -o-transition: background .25s ease;
+  transition: background .25s ease;
+  display: none;
+}
+
+.apply-mobile {
+  background: #d11242;
+  color: white;
+  font-size: 1.0em;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0.25em 0.25em 0.4em 0em;
+  text-align: center;
+  width: 99%;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
+  float: right !important;
+  -webkit-transition: background .25s ease;
+  -moz-transition: background .25s ease;
+  -o-transition: background .25s ease;
+  transition: background .25s ease;
+  display: none;
+}
+
 .msudenver_logo {
   padding: 15px 0px;
   max-height:65px;
@@ -531,6 +571,9 @@ col-xs-12, .faculty-staff-students {
     padding-top: 0em;
     margin-left: 2em;
   }
+  .visit-give-mobile, .apply-mobile {
+    display: block;
+  }
 }
 
 
@@ -651,6 +694,9 @@ col-xs-12, .faculty-staff-students {
   }
   .pushdown-menu {
       height: 27em;
+  }
+  .fac-staf-stu-mobile {
+    display: none;
   }
 }
 
