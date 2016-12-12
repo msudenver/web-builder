@@ -7749,7 +7749,7 @@ header {
 }
 
 .fa-bars {
-  background-color: #005fae;
+  background-color: #003a6e;
   padding: 24px;
   margin: -17px -30px -16px -16px;
 }
@@ -9282,7 +9282,7 @@ a:focus, a:hover {
 }
 
 #layout {
-  z-index: 9998;
+  z-index: 998;
   padding-left: 200px;
   left: 0;
   top: 100px;
@@ -9307,16 +9307,20 @@ a:focus, a:hover {
   color: black;
   font-size: 1.2rem;
   font-weight: 700;
-  padding: 10px 20px 10px 10px;
+  padding: 15px 20px;
   line-height: 1em;
+  display: block;
+  line-height: 1em;
+  text-decoration: none;
   -webkit-transition: all .25 ease-in-out;
   -moz-transition: all .25 ease-in-out;
   -o-transition: all .25 ease-in-out;
   transition: all 0.25 ease-in-out;
 }
 
-#menu a:hover {
-  color: #1b557a;
+#menu a:hover, .pure-menu li a:focus, #menu .pure-menu li a:hover {
+  color: #d11242;
+  padding: 15px 15px;
   -webkit-transition: all .25 ease-in-out;
   -moz-transition: all .25 ease-in-out;
   -o-transition: all .25 ease-in-out;
@@ -9325,12 +9329,6 @@ a:focus, a:hover {
 
 #menu .pure-menu, #menu .pure-menu ul {
   border: none;
-}
-
-#menu .pure-menu li a:focus, #menu .pure-menu li a:hover {
-  line-height: 1em;
-  color: #1b557a;
-  padding: 10px 15px;
 }
 
 #menu .pure-menu-heading:hover, #menu .pure-menu-selected:hover {
@@ -9386,12 +9384,12 @@ a:focus, a:hover {
 }
 
 .menu-link:focus span:after, .menu-link:focus span:before, .menu-link:hover span:after, .menu-link:hover span:before {
+  content: " ";
   background: #fff;
   width: 100%;
   height: .2em;
   position: absolute;
   margin-top: -.6em;
-  content: " ";
 }
 
 .menu-link:focus span:after, .menu-link:hover span:after {
@@ -9408,6 +9406,30 @@ a:focus, a:hover {
 
 .multilevel-linkul-2 {
   margin-left: -20px;
+}
+
+.sidebar-nav {
+  margin-bottom: 15px;
+}
+.sidebar-nav ul li {
+  list-style-type: none;
+  border-bottom: 1px solid gray;
+}
+.sidebar-nav ul li:last-child {
+  border-bottom: none;
+}
+.sidebar-nav li a:hover {
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  position: relative;
+  padding: 10px 15px;
+}
+
+.currentbranch0 a, .currentbranch1 a, .currentbranch2 a, .currentbranch3 a, .currentbranch4 a {
+  color: #d11242 !important;
+  font-size: 1.2em;
 }
 
 @media (max-width: 767px) {
@@ -9449,44 +9471,6 @@ a:focus, a:hover {
     width: 100%;
   }
 }
-.sidebar-nav {
-  margin-bottom: 15px;
-}
-
-.sidebar-nav ul li {
-  list-style-type: none;
-}
-
-.sidebar-nav li a {
-  display: block;
-  line-height: 1em;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  text-decoration: none;
-}
-
-.sidebar-nav li a:hover {
-  background: #eeeeee;
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
-  position: relative;
-  padding: 10px 15px;
-}
-
-.sidebar-nav li:after {
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-
-.currentbranch0 a, .currentbranch1 a, .currentbranch2 a, .currentbranch3 a, .currentbranch4 a {
-  color: #d11242;
-}
-
 table.atoz {
   color: #333;
   border-width: 1px;
@@ -10602,7 +10586,7 @@ div#lhnContainerDone {
   }
 }
 #site-header {
-  background: url("../media/eventsbg.jpg");
+  background: #003a6e;
   margin-bottom: 25px;
   background-size: 100%;
 }
