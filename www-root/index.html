@@ -29,17 +29,22 @@
               <a href="http://msudenver.edu/alumni/give/"><div class="col-xs-1 apply-button give-visit-buttons">GIVE</div></a>
               <a href="https://msudenver.edu/visit/"><div class="col-xs-1 apply-button give-visit-buttons">VISIT</div></a>
               <span class="fa fa-search fa-search-mobile"></span>
-              <div class="col-xs-12 faculty-staff">
-                <a href="">Faculty &amp; Staff</a>
+              <div class="col-xs-12 faculty-staff-students">
+                <a href="">Current Students |</a>
+                <a href=""> Faculty &amp; Staff</a>
               </div>
             </div>
         </div>
-
-
-
-
         <nav class="navbar-collapse collapse" id="content-nav">
-
+            <div>
+              <button type="button" class="btn btn-default visit-give-mobile">Visit</button>
+              <button type="button" class="btn btn-default visit-give-mobile">Give</button>
+              <button type="button" class="btn btn-default apply-mobile">Apply</button>
+              <ul class="fac-staf-stu-mobile">
+                <li><a href="">Current Students</a></li>
+                <li><a href="">Faculty &amp; Staff</a></li>
+              </ul>
+            </div>
             <ul class="nav navbar-nav navbar-center dropdown" id="nav-middle">
               <li id="nav-faculty">
                 <a class="mobile-header mobile-about">About<span class="fa fa-chevron-down pull-right"></span></a>
@@ -84,21 +89,8 @@
                    <a href="#"><li>Special Programs</li></a>
                  </ul>
                </li>
-               <li id="nav-campus">
-                 <a class="mobile-header mobile-campus"><span class="fa fa-chevron-down pull-right"></span>Campus Life</a>
-                 <ul class="pushdown-menu pushdown-campus">
-                   <a href="/campuslife/"><li>Campus Life</li></a>
-                   <a href="/studentactivities/"><li>Student Activities</li></a>
-                   <a href="/campuslife/wellnessrecreation/"><li>Health &amp; Counseling</li></a>
-                   <a href="/campuslife/involvementrecreation/"><li>Involvement &amp; Recreation</li></a>
-                   <a href="/studentengagementandwellness/"><li>Student Engagement &#38; Wellness</li></a>
-                   <a href="/campuslife/studentpublications/"><li>Student Media</li></a>
-                   <a href=""><li>Student Organizations</li></a>
-                   <a href=""><li>Student Resources</li></a>
-                 </ul>
-               </li>
                <li id="nav-alumni">
-                 <a class="mobile-header mobile-alumni menu-last"><span class="fa fa-chevron-down pull-right"></span>Alumni</a>
+                 <a class="mobile-header mobile-alumni"><span class="fa fa-chevron-down pull-right"></span>Alumni</a>
                  <ul class="pushdown-menu pushdown-alumni menu-last">
                    <a href="/alumni/"><li>Alumni</li></a>
                    <a href="/alumni/careerservices/"><li>Career Services</li></a>
@@ -108,6 +100,9 @@
                    <a href="/alumni/studentalumniassociation/"><li>Student Alumni Association</li></a>
                    <a href=""><li>Alumni Events</li></a>
                  </ul>
+               </li>
+               <li id="">
+                 <a href="" class="mobile-alumni athletics-header">Athletics</a>
                </li>
                <li id="nav-search"><div><span class="fa fa-search search-desktop"></span></div></li>
         <!-- Hidden Search Bar-->
@@ -274,10 +269,20 @@ $('#nav-search-close').click(function(){
 </script>
 
         <main class="homepage-main">
-						<section class="homepage-feature" id="homepage-second-nav" style="background-image:url(../media/RYOR_bg_extended.png);">
-  <span>Current Students </span>   <span>Catalog</span>   <span>Athletics</span>
+						<!-- <section class="homepage-feature" id="homepage-second-nav">
+  <ul>
+    <li>
+      <a href="">Current Students</a>
+    </li>
+    <li>
+      <a href="">Schedules, Calendar &#38; Catalog</a>
+    </li>
+    <li>
+      <a href="">Athletics</a>
+    </li>
+  </ul>
 </section>
-
+ -->
             <section class="homepage-feature carousel t4-slide slide" id="homepage-feature-caption">
     <div class="carousel-inner">
         <div class="homepage-feature-caption-item item active ">

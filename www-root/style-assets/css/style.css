@@ -7413,7 +7413,7 @@ header {
 /**  Homepage Feature Components michael.mason@terminalfour.com **/
 /* MainHeaderNavigation Styles */
 .blue-header {
-  background: #00447c;
+  background: #1b1b1b;
 }
 
 .navbar .navbar-collapse {
@@ -7556,7 +7556,7 @@ header {
   border-radius: 4px;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Open Sans';
+  font-family: 'Gotham A', 'Gotham B';
   font-size: 12px;
   letter-spacing: 1.2px;
   color: #fff;
@@ -7567,7 +7567,7 @@ header {
   text-decoration: none;
   color: #FFF;
   cursor: pointer;
-  font-family: 'Open Sans';
+  font-family: 'Gotham A', 'Gotham B';
 }
 
 .search-button:focus {
@@ -7580,6 +7580,10 @@ header {
   padding-top: 1.3em;
   font-size: 1.2em;
   cursor: pointer;
+}
+
+#nav-search .fa-search {
+  padding-left: 1em;
 }
 
 .fa-search-opened {
@@ -7638,11 +7642,67 @@ header {
   float: right !important;
   margin-left: 0.15em;
   margin-right: 1em;
+  -webkit-transition: background .25s ease;
+  -moz-transition: background .25s ease;
+  -o-transition: background .25s ease;
+  transition: background .25s ease;
+}
+
+.apply-button:hover {
+  background: #a60029;
 }
 
 .give-visit-buttons {
+  -webkit-transition: background .25s ease;
+  -moz-transition: background .25s ease;
+  -o-transition: background .25s ease;
+  transition: background .25s ease;
   background: gray;
   margin-right: 0em;
+}
+
+.give-visit-buttons:hover {
+  background: #424448;
+}
+
+.visit-give-mobile {
+  background: gray;
+  color: white;
+  font-size: 1.0em;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0.25em 0.25em 0em 0em;
+  text-align: center;
+  width: 99%;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
+  float: right !important;
+  -webkit-transition: background .25s ease;
+  -moz-transition: background .25s ease;
+  -o-transition: background .25s ease;
+  transition: background .25s ease;
+  display: none;
+}
+
+.apply-mobile {
+  background: #d11242;
+  color: white;
+  font-size: 1.0em;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0.25em 0.25em 0.4em 0em;
+  text-align: center;
+  width: 99%;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
+  float: right !important;
+  -webkit-transition: background .25s ease;
+  -moz-transition: background .25s ease;
+  -o-transition: background .25s ease;
+  transition: background .25s ease;
+  display: none;
 }
 
 .msudenver_logo {
@@ -7780,22 +7840,38 @@ header {
   cursor: pointer;
 }
 
-.faculty-staff a {
+.faculty-staff-students a {
   font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 3px;
-  text-align: right;
   margin-top: -1.0em;
   color: #fff;
   padding-bottom: 0.6em;
   display: none;
 }
 
+col-xs-12, .faculty-staff-students {
+  text-align: right;
+}
+
 .navbar-nav > a > li {
   line-height: 0.1em !important;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
+}
+
+.nav > li > a {
+  -webkit-transition: font-weight .15s ease;
+  -moz-transition: font-weight .15s ease;
+  -o-transition: font-weight .15s ease;
+  transition: font-weight .15s ease;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent;
+  color: #001e36;
+  font-weight: 800;
 }
 
 .container .pushdown-menu {
@@ -7927,6 +8003,10 @@ header {
     padding-top: 0em;
     margin-left: 2em;
   }
+
+  .visit-give-mobile, .apply-mobile {
+    display: block;
+  }
 }
 @media (min-width: 992px) {
   body {
@@ -8018,8 +8098,8 @@ header {
     border-right: 1px solid #4cb4f2;
   }
 
-  .faculty-staff a {
-    display: block;
+  .faculty-staff-students a {
+    display: inline-block;
   }
 
   #nav-faculty {
@@ -8061,6 +8141,14 @@ header {
   .pushdown-menu {
     height: 27em;
   }
+
+  .fac-staf-stu-mobile {
+    display: none;
+  }
+
+  .blue-header {
+    background-image: url(../media/RYOR_bg_extended.png);
+  }
 }
 .header-container {
   margin-right: auto;
@@ -8089,6 +8177,11 @@ header {
 
   .mobile-header {
     margin-top: 5px;
+  }
+
+  .athletics-header {
+    margin-top: 5px;
+    border-right: 1px solid #337ab7;
   }
 
   #content-nav #nav-search-close {
@@ -8336,7 +8429,7 @@ header {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .homepage-main:before, .homepage-main:after {
   content: " ";
@@ -8354,6 +8447,9 @@ header {
   padding-bottom: 36px;
   padding-bottom: 2.57143rem;
   background-color: #000;
+  text-align: center;
+  font-family: 'Gotham A', 'Gotham B';
+  font-weight: 600;
 }
 .homepage-feature:before, .homepage-feature:after {
   content: " ";
@@ -8509,6 +8605,11 @@ header {
     line-height: 1;
   }
 }
+@media (min-width: 1200px) {
+  .homepage-main {
+    margin-top: 70px;
+  }
+}
 #homepage-second-nav {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8517,15 +8618,35 @@ header {
   margin-top: 0px;
   padding: 0;
   position: relative;
-  height: 100px;
-}
-#homepage-second-nav span {
+  height: 3em;
   color: #fff;
-  font-size: 2.5rem;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  background-image: url(../media/RYOR_bg_extended.png);
+  display: none;
 }
 
+.homepage-feature ul {
+  list-style-type: none;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  margin-top: 6px;
+  padding-left: 0;
+  font-size: 1.5rem;
+}
+
+.homepage-feature li {
+  display: table-cell;
+}
+
+#homepage-second-nav a {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  #homepage-second-nav {
+    display: block;
+  }
+}
 /* Homepage-feature-caption partial */
 #homepage-feature-caption {
   padding: 0;
