@@ -8770,7 +8770,6 @@ header {
     font-size: 40px;
     font-size: 2.5em;
     line-height: 1.5;
-    padding-top: 70px;
   }
   #homepage-ryor .feature-heading-sub {
     font-size: 36px;
@@ -8799,12 +8798,9 @@ header {
     margin: 20px auto;
     width: 41.6666%;
     text-align: center;
-    padding-top: 35px;
   }
   .ryor-image svg {
     width: 100%;
-    min-height: 250px;
-    min-width: 400px;
   }
 
   .ryor-student {
