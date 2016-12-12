@@ -7413,7 +7413,7 @@ header {
 /**  Homepage Feature Components michael.mason@terminalfour.com **/
 /* MainHeaderNavigation Styles */
 .blue-header {
-  background-image: url(../media/RYOR_bg_extended.png);
+  background: #1b1b1b;
 }
 
 .navbar .navbar-collapse {
@@ -8144,6 +8144,10 @@ col-xs-12, .faculty-staff-students {
 
   .fac-staf-stu-mobile {
     display: none;
+  }
+
+  .blue-header {
+    background-image: url(../media/RYOR_bg_extended.png);
   }
 }
 .header-container {

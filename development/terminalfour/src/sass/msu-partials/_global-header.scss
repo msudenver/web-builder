@@ -1,7 +1,7 @@
 /* MainHeaderNavigation Styles */
 .blue-header {
-  // background: #00447c;
-  background-image:url(../media/RYOR_bg_extended.png);
+  background: #1b1b1b;
+  // background-image:url(../media/RYOR_bg_extended.png);
 }
 
 .navbar .navbar-collapse {
@@ -702,6 +702,11 @@ col-xs-12, .faculty-staff-students {
   .fac-staf-stu-mobile {
     display: none;
   }
+  .blue-header {
+    // background: #1b1b1b;
+    background-image:url(../media/RYOR_bg_extended.png);
+  }
+
 }
 
 @media (max-width: $screen-xs-max) {
