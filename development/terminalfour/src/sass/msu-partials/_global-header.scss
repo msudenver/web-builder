@@ -17,19 +17,31 @@
     font-size: 25px;
   }
 
-  ul a li {
+  ul li {
     font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #00447c;
-    padding-left: 1.5em;
-    padding-right: 1.4em;
+    padding-right: 0.6em;
+    padding-left: 0.5em;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
   }
-  ul a li:hover {
+  ul li:hover {
     color: #333;
   }
+}
+
+#nav-faculty, #nav-academics, #nav-alumni {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.pushdown-alumni {
+  padding-left: 1.2em !important;
+}
+#nav-admissions .mobile-header {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .navbar {
@@ -372,10 +384,6 @@
     border-color: transparent;
 }
 
-.pushdown-menu>li>a {
-    font-weight: 600;
-    font-size: 1.2em;
-}
 .search-input-mobile {
   display: none;
 }
@@ -697,7 +705,7 @@ col-xs-12, .faculty-staff-students {
     top: 0em;
   }
   .pushdown-menu {
-      height: 27em;
+      height: 19em;
   }
   .fac-staf-stu-mobile {
     display: none;
@@ -741,7 +749,9 @@ col-xs-12, .faculty-staff-students {
 
   .athletics-header {
     margin-top: 5px;
-    border-right: 1px solid #337ab7;
+    // border-right: 1px solid #337ab7;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   #content-nav #nav-search-close {
@@ -807,7 +817,7 @@ col-xs-12, .faculty-staff-students {
   }
 
 
-  li .pushdown-menu {
+  a .pushdown-menu {
       font-weight: 500;
       font-size: 0.8em;
   }
@@ -839,7 +849,7 @@ col-xs-12, .faculty-staff-students {
     margin-right: 0em;
   }
   .pushdown-menu {
-      height: 26em;
+      height: 19em;
   }
 }
 
@@ -905,7 +915,7 @@ col-xs-12, .faculty-staff-students {
       padding-right: 4em;
   }
   .pushdown-menu {
-      height: 22em;
+      height: 19em;
   }
 }
 
