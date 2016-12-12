@@ -7450,11 +7450,6 @@ header {
   padding-left: 1.2em !important;
 }
 
-#nav-admissions .mobile-header {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 .navbar {
   min-height: 46px;
   border-radius: 0 !important;
@@ -8163,6 +8158,22 @@ col-xs-12, .faculty-staff-students {
 
   .blue-header {
     background-image: url(../media/RYOR_bg_extended.png);
+  }
+
+  #nav-admissions .mobile-header {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 991px) {
+  #nav-admissions {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #nav-athletics {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 .header-container {
