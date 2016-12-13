@@ -8291,6 +8291,10 @@ col-xs-12, .faculty-staff-students {
     left: 17em;
   }
 
+  body {
+    padding-top: 122px;
+  }
+
   a .pushdown-menu {
     font-weight: 500;
     font-size: 0.8em;
@@ -8408,6 +8412,10 @@ col-xs-12, .faculty-staff-students {
 
   .pushdown-menu {
     height: 19em;
+  }
+
+  body {
+    padding-top: 144px;
   }
 }
 @media only screen and (min-width: 1500px) {
