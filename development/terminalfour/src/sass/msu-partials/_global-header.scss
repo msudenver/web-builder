@@ -543,7 +543,7 @@ col-xs-12, .faculty-staff-students {
     text-align: left;
   }
   .left-addon input {
-    padding-top: 3px !important;
+    padding-top: 5px !important;
     padding-bottom: 2px;
   }
   .blue-header {
@@ -584,6 +584,7 @@ col-xs-12, .faculty-staff-students {
     margin-top: 0em;
     padding-top: 0em;
     margin-left: 2em;
+    padding-left: 1.2em;
   }
   .visit-give-mobile, .apply-mobile {
     display: block;
@@ -594,7 +595,7 @@ col-xs-12, .faculty-staff-students {
 @media (min-width: $screen-md-min) {
 
   body {
-    padding-top: 123px;
+    padding-top: 122px;
   }
   .msudenver_logo {
     max-height:100px;
@@ -766,6 +767,10 @@ col-xs-12, .faculty-staff-students {
     padding-right: 0px;
   }
 
+  .msudenver_logo {
+      max-height:100px;
+  }
+
   #content-nav #nav-search-close {
       top: -3.2em;
       left: 18em;
@@ -806,7 +811,7 @@ col-xs-12, .faculty-staff-students {
       padding-left: 0em;
   }
 .msudenver_logo {
-    max-height:150px;
+    max-height:100px;
   }
   li.dropdown {
   padding: 5px 0px;
@@ -895,6 +900,10 @@ col-xs-12, .faculty-staff-students {
     height: 30px;
     width: 130px;
     left: 19em;
+  }
+
+  .msudenver_logo {
+      max-height:150px;
   }
 
   .search-button {
