@@ -7427,18 +7427,27 @@ header {
   color: #fff;
   font-size: 25px;
 }
-.toolbar ul a li {
+.toolbar ul li {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #00447c;
-  padding-left: 1.5em;
-  padding-right: 1.4em;
+  padding-right: 0.6em;
+  padding-left: 0.5em;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-.toolbar ul a li:hover {
+.toolbar ul li:hover {
   color: #333;
+}
+
+#nav-faculty, #nav-academics, #nav-alumni {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.pushdown-alumni {
+  padding-left: 1.2em !important;
 }
 
 .navbar {
@@ -7583,7 +7592,13 @@ header {
 }
 
 #nav-search .fa-search {
-  padding-left: 1em;
+  color: #fff !important;
+  background: #005fae;
+  margin-top: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 1.7em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .fa-search-opened {
@@ -7779,11 +7794,6 @@ header {
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
   background-color: transparent;
   border-color: transparent;
-}
-
-.pushdown-menu > li > a {
-  font-weight: 600;
-  font-size: 1.2em;
 }
 
 .search-input-mobile {
@@ -8139,7 +8149,7 @@ col-xs-12, .faculty-staff-students {
   }
 
   .pushdown-menu {
-    height: 27em;
+    height: 19em;
   }
 
   .fac-staf-stu-mobile {
@@ -8148,6 +8158,22 @@ col-xs-12, .faculty-staff-students {
 
   .blue-header {
     background-image: url(../media/RYOR_bg_extended.png);
+  }
+
+  #nav-admissions .mobile-header {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 991px) {
+  #nav-admissions {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #nav-athletics {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 .header-container {
@@ -8181,12 +8207,13 @@ col-xs-12, .faculty-staff-students {
 
   .athletics-header {
     margin-top: 5px;
-    border-right: 1px solid #337ab7;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   #content-nav #nav-search-close {
     top: -3.2em;
-    left: 19.2em;
+    left: 18em;
   }
 
   #nav-faculty {
@@ -8251,7 +8278,7 @@ col-xs-12, .faculty-staff-students {
 
   #content-nav #nav-search-close {
     top: -67px;
-    left: 12.6em;
+    left: 11.3em;
   }
 
   #content-nav #search-input .search-button {
@@ -8259,7 +8286,7 @@ col-xs-12, .faculty-staff-students {
     left: 17em;
   }
 
-  li .pushdown-menu {
+  a .pushdown-menu {
     font-weight: 500;
     font-size: 0.8em;
   }
@@ -8298,7 +8325,7 @@ col-xs-12, .faculty-staff-students {
   }
 
   .pushdown-menu {
-    height: 26em;
+    height: 19em;
   }
 }
 @media only screen and (min-width: 1358px) {
@@ -8314,7 +8341,7 @@ col-xs-12, .faculty-staff-students {
   #content-nav #nav-search-close {
     font-size: 20px;
     top: -3.2em;
-    left: 19em;
+    left: 16em;
   }
 
   .fa-search {
@@ -8371,12 +8398,12 @@ col-xs-12, .faculty-staff-students {
   }
 
   .pushdown-menu {
-    height: 22em;
+    height: 19em;
   }
 }
 @media only screen and (min-width: 1500px) {
   #content-nav #nav-search-close {
-    left: 28em;
+    left: 23.3em;
   }
 
   #content-nav #search-input .search-button {
