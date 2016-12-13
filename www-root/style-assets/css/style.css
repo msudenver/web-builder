@@ -1398,7 +1398,7 @@ html {
 }
 
 body {
-  font-family: "Gotham A", "Gotham B", "Georgia", "Times New Roman", Times, serif;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333333;
@@ -6606,7 +6606,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Gotham A", "Gotham B", "Georgia", "Times New Roman", Times, serif;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6728,7 +6728,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Gotham A", "Gotham B", "Georgia", "Times New Roman", Times, serif;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7533,7 +7533,7 @@ header {
   background-color: #007dc3;
   border-radius: 2;
   letter-spacing: 5px;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
 }
@@ -8491,9 +8491,6 @@ col-xs-12, .faculty-staff-students {
   padding-bottom: 36px;
   padding-bottom: 2.57143rem;
   background-color: #000;
-  text-align: center;
-  font-family: 'Gotham A', 'Gotham B';
-  font-weight: 600;
 }
 .homepage-feature:before, .homepage-feature:after {
   content: " ";
@@ -8614,7 +8611,7 @@ col-xs-12, .faculty-staff-students {
     float: none;
   }
   .homepage-btn:not(.footer-btn) {
-    font-family: "Gotham A", "Gotham B", "Georgia", "Times New Roman", Times, serif;
+    font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 30px;
     font-size: 1.875rem;

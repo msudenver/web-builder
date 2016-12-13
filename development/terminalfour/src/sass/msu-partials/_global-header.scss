@@ -18,7 +18,7 @@
   }
 
   ul li {
-    font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $font-family-serif;
     color: #00447c;
     padding-right: 0.6em;
     padding-left: 0.5em;
@@ -123,7 +123,7 @@
   background-color: #007dc3;
   border-radius: 2;
   letter-spacing: 5px;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-family: $font-family-sans-serif;
   font-style: normal;
   font-weight: 500;
 }
