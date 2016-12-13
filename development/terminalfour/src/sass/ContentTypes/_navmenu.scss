@@ -187,6 +187,14 @@
   font-size: 1.2em;
 }
 
+.currentbranch0 a:after, .currentbranch1 a:after, .currentbranch2 a:after, .currentbranch3 a:after, .currentbranch4 a:after  {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    float: right;
+  }
 
 @media (max-width: 767px) {
   // .header {
