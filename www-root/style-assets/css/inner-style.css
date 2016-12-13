@@ -8213,7 +8213,7 @@ col-xs-12, .faculty-staff-students {
 
   #content-nav #nav-search-close {
     top: -3.2em;
-    left: 19.2em;
+    left: 18em;
   }
 
   #nav-faculty {
@@ -8278,7 +8278,7 @@ col-xs-12, .faculty-staff-students {
 
   #content-nav #nav-search-close {
     top: -67px;
-    left: 12.6em;
+    left: 11.3em;
   }
 
   #content-nav #search-input .search-button {
@@ -8341,7 +8341,7 @@ col-xs-12, .faculty-staff-students {
   #content-nav #nav-search-close {
     font-size: 20px;
     top: -3.2em;
-    left: 19em;
+    left: 16em;
   }
 
   .fa-search {
@@ -8403,7 +8403,7 @@ col-xs-12, .faculty-staff-students {
 }
 @media only screen and (min-width: 1500px) {
   #content-nav #nav-search-close {
-    left: 28em;
+    left: 23.3em;
   }
 
   #content-nav #search-input .search-button {
