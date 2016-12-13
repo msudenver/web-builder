@@ -9351,7 +9351,7 @@ a:focus, a:hover {
   color: black;
   font-size: 1.2rem;
   font-weight: 700;
-  padding: 15px 20px;
+  padding: 15px 0px;
   line-height: 1em;
   display: block;
   line-height: 1em;
@@ -9457,7 +9457,7 @@ a:focus, a:hover {
 }
 .sidebar-nav ul li {
   list-style-type: none;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
 .sidebar-nav ul li:last-child {
   border-bottom: none;
@@ -10160,7 +10160,7 @@ table.caption {
 }
 
 .presidentsheader-orange {
-  background-image: linear-gradient(#f39c12, #d78b13);
+  background: #00447c;
   background-repeat: no-repeat;
   width: 100%;
   padding: 10px 25px;
@@ -10168,7 +10168,7 @@ table.caption {
 }
 
 .presidentsheader-teal {
-  background-image: linear-gradient(#16a085, #008d71);
+  background: #00447c;
   background-repeat: no-repeat;
   width: 100%;
   padding: 10px 25px;
@@ -10176,7 +10176,7 @@ table.caption {
 }
 
 .presidentsheader-blue {
-  background-image: linear-gradient(#3498db, #0476c2);
+  background: #00447c;
   background-repeat: no-repeat;
   width: 100%;
   padding: 10px 25px;
@@ -10184,7 +10184,7 @@ table.caption {
 }
 
 .presidentsheader-purple {
-  background-image: linear-gradient(#9b59b6, #8e44ad);
+  background: #00447c;
   background-repeat: no-repeat;
   width: 100%;
   padding: 10px 25px;
@@ -10192,7 +10192,7 @@ table.caption {
 }
 
 .presidentsheader-green {
-  background-image: linear-gradient(#2ecc71, #27ae60);
+  background: #00447c;
   background-repeat: no-repeat;
   width: 100%;
   padding: 10px 25px;
@@ -10200,7 +10200,7 @@ table.caption {
 }
 
 .presidentsheader-gray {
-  background-image: linear-gradient(#34495e, #2c3e50);
+  background: #00447c;
   background-repeat: no-repeat;
   width: 100%;
   padding: 10px 25px;
@@ -10208,7 +10208,7 @@ table.caption {
 }
 
 .presidentsheader-lightgray {
-  background-image: linear-gradient(#95a5a6, #7f8c8d);
+  background: #00447c;
   background-repeat: no-repeat;
   width: 100%;
   padding: 10px 25px;
@@ -10216,7 +10216,7 @@ table.caption {
 }
 
 .presidentsheader-orangered {
-  background-image: linear-gradient(#e74c3c, #c0392b);
+  background: #00447c;
   background-repeat: no-repeat;
   width: 100%;
   padding: 10px 25px;
@@ -10224,7 +10224,7 @@ table.caption {
 }
 
 .presidentsheader-pumpkin {
-  background-image: linear-gradient(#d35400, #b04600);
+  background: #00447c;
   background-repeat: no-repeat;
   width: 100%;
   padding: 10px 25px;
@@ -10286,7 +10286,7 @@ hr.style-one {
   color: #fff;
   padding: 1.5em;
   margin-bottom: 1.5em;
-  background: grey;
+  background: #4e5462;
   position: relative;
 }
 
