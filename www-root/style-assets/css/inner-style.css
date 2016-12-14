@@ -8491,6 +8491,7 @@ col-xs-12, .faculty-staff-students {
   padding-bottom: 36px;
   padding-bottom: 2.57143rem;
   background-color: #000;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .homepage-feature:before, .homepage-feature:after {
   content: " ";

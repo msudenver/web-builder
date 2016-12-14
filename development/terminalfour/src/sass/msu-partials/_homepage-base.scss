@@ -11,9 +11,7 @@
     padding-bottom: torem(36, $small-unit);
     background-color: $gray-base;
     svg { fill: currentColor; }
-    // text-align: center;
-    // font-family: 'Gotham A', 'Gotham B';
-    // font-weight: 600;
+    font-family: $font-family-sans-serif;
 }
 .homepage-feature-block {
     @include make-sm-column(12);
