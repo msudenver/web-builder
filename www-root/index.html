@@ -87,6 +87,7 @@
                    <a href="#"><li>Academic Support</li></a>
                    <a href="#"><li>Online Courses / Extended Campus</li></a>
                    <a href="#"><li>Special Programs</li></a>
+                   <a href="#"><li>Student Engagement &amp; Wellness</li></a>
                  </ul>
                </li>
                <li id="nav-alumni">
@@ -109,6 +110,7 @@
               <form action="https://www.msudenver.edu/search">
                 <div id="search-input" class="inner-addon left-addon search-input-desktop" role="search" action="https://www.msudenver.edu/search">
                   <span class="fa fa-search fa-search-opened"></span>
+                  <label for="q" class="sr-only">Search MSU Denver site</label>
                   <input  id="q" name="q" type="text" class="home-input" placeholder="SEARCH MSU DENVER" tabindex="2"; style="margin-left: -3px; outline: none; font-weight: initial;";>
               <!-- AUTO SUGGEST -->
               <!-- Code auto suggest server by DEV, PROD, etc. -->
@@ -235,7 +237,7 @@ else {
 };
 // open/close content-nav bar when search/close glyphs clicked
 $('.search-desktop').click(function(){
-   $('#content-nav').css('max-height', '55px');
+   $('#content-nav').css('max-height', '60px');
 });
 $('.fa-close').click(function(){
    $('#content-nav').css('max-height', '');
