@@ -7862,6 +7862,10 @@ header {
   display: none;
 }
 
+.fss-pipe {
+  padding-left: 10px !important;
+}
+
 col-xs-12, .faculty-staff-students {
   text-align: right;
 }
