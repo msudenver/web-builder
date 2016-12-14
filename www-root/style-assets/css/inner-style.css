@@ -7565,7 +7565,7 @@ header {
   border-radius: 4px;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Gotham A', 'Gotham B';
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   letter-spacing: 1.2px;
   color: #fff;
@@ -7576,7 +7576,7 @@ header {
   text-decoration: none;
   color: #FFF;
   cursor: pointer;
-  font-family: 'Gotham A', 'Gotham B';
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .search-button:focus {
@@ -7644,13 +7644,13 @@ header {
 
 .apply-button {
   background: #d11242;
-  color: white;
+  color: #fff;
   font-size: 1.0em;
   border-radius: 0 0 10px 10px;
   text-align: center;
   padding: 0.3em 0.3em;
   width: 7%;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 2px;
@@ -7681,8 +7681,8 @@ header {
 }
 
 .visit-give-mobile {
-  background: gray;
-  color: white;
+  background: #555555;
+  color: #fff;
   font-size: 1.0em;
   border-radius: 5px 5px 5px 5px;
   margin: 0.25em 0.25em 0em 0em;
