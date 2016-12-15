@@ -90,9 +90,9 @@
                  </ul>
                </li>
                <li id="nav-alumni">
-                 <a class="mobile-header mobile-alumni"><span class="fa fa-chevron-down pull-right"></span>Alumni</a>
+                 <a class="mobile-header mobile-alumni"><span class="fa fa-chevron-down pull-right"></span>Alumni &amp; Friends</a>
                  <ul class="pushdown-menu pushdown-alumni menu-last">
-                   <li><a href="/alumni/">Alumni</a></li>
+                   <li><a href="/alumni/">Alumni &amp; Friends</a></li>
                    <li><a href="/alumni/careerservices/">Career Services</a></li>
                    <li><a href="/alumni/alumnibenefits/">Alumni Benefits</a></li>
                    <li><a href="/magazine">MSU Denver Magazine</a></li>
@@ -246,6 +246,25 @@ $('#nav-search').click(function(){
 $('#nav-search-close').click(function(){
 	$('#search-input').hide();
 	$('#nav-admissions, #nav-academics, #nav-campus, #nav-athletics, #nav-hub, #nav-alumni, #nav-faculty, #nav-search').fadeTo('slow', 1);
+});
+</script>
+
+<script>
+// scrollTop function
+$(window).scroll(function(){
+  var width_threshold = 900;
+  var href = document.location.href;
+  var position = $(window).scrollTop();
+  var width     =  $(window).width();
+  $(".header-fluid").removeClass("header-fluid-change");
+  $(".msudenver_logo").removeClass("msudenver_logo_change");
+
+
+  if( position > 15 && width > width_threshold) {
+    $(".header-fluid").toggleClass("header-fluid-change");
+    $(".msudenver_logo").toggleClass("msudenver_logo_change");
+  }
+
 });
 </script>
 

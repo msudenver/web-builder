@@ -7420,6 +7420,17 @@ header {
   text-align: center;
 }
 
+.msudenver_logo, .msudenver_logo_change {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.msudenver_logo_change {
+  height: 102px;
+}
+
 .toolbar {
   z-index: 9999;
 }
@@ -7729,7 +7740,7 @@ header {
 
 .msudenver_logo {
   padding: 15px 0px;
-  max-height: 65px;
+  max-height: 72px;
 }
 
 #search-input #search-text {
