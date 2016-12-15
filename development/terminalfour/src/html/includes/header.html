@@ -1,5 +1,5 @@
   <!-- Global Header -->
-    <div class="navbar navbar-fixed-top toolbar blue-header" >
+    <div class="navbar navbar-fixed-top toolbar blue-header" style="background-image:url(https://msudenver.edu/media/newsiteassets/images/header_asphalt.png);">
       <div class="header-container">
         <button type="search-button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle quick links navigation</span>
@@ -7,10 +7,10 @@
         </button>
             <div class="row">
               <div class="col-xs-8">
-                <img class="msudenver_logo" src="http://sitemanager.msudenver.edu/media/assets/img/MSUdenver-logo.png" alt="MSU Denver Logo">
+                <img class="msudenver_logo" src="https://msudenver.edu/media/newsiteassets/images/msudenver_logo_header.svg" alt="MSU Denver Logo">
               </div>
               <a href="/admissions"><div class="col-xs-1 apply-button">APPLY</div></a>
-              <a href="/give"><div class="col-xs-1 apply-button give-visit-buttons">GIVE</div></a>
+              <a href="/giving"><div class="col-xs-1 apply-button give-visit-buttons">GIVE</div></a>
               <a href="/visit"><div class="col-xs-1 apply-button give-visit-buttons">VISIT</div></a>
               <span class="fa fa-search fa-search-mobile"></span>
               <div class="col-xs-12 faculty-staff-students">
@@ -69,17 +69,16 @@
                    <li><a href="/education/">School of Education</a></li>
                    <li><a href="/fys/">First Year Success</a></li>
                    <li><a href="/campuslife/academicsupport">Academic Support</a></li>
-                   <!-- <li><a href="/academic/extended">Online Courses / Extended Campus</a></li> -->
-                   <li><a href="/academic/extended">Online Courses</a></li>
-                   <li><a href="/academic/extended">Extended Campus</a></li>
+                   <li><a href="/online/">Online Courses</a></li>
+                   <li><a href="/extendedcampus">Extended Campus</a></li>
                    <li><a href="/academics/specialprograms">Special Programs</a></li>
                    <li><a href="/studentengagementandwellness">Student Engagement &amp; Wellness</a></li>
                  </ul>
                </li>
                <li id="nav-alumni">
-                 <a class="mobile-header mobile-alumni"><span class="fa fa-chevron-down pull-right"></span>Alumni</a>
+                 <a class="mobile-header mobile-alumni"><span class="fa fa-chevron-down pull-right"></span>Alumni &amp; Friends</a>
                  <ul class="pushdown-menu pushdown-alumni menu-last">
-                   <li><a href="/alumni/">Alumni</a></li>
+                   <li><a href="/alumni/">Alumni &amp; Friends</a></li>
                    <li><a href="/alumni/careerservices/">Career Services</a></li>
                    <li><a href="/alumni/alumnibenefits/">Alumni Benefits</a></li>
                    <li><a href="/magazine">MSU Denver Magazine</a></li>
@@ -142,15 +141,6 @@
     </div>
 </header>
 
-
-<!--CDN-->
-
-<!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
-<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' media='screen'>
-<!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,700,600' rel='stylesheet' type='text/css'>-->
-<!--<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>-->
-
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
 <script type="text/javascript">
 // make search button appear when text entered in search field
 $('#q').keyup(function () {
@@ -242,5 +232,24 @@ $('#nav-search').click(function(){
 $('#nav-search-close').click(function(){
 	$('#search-input').hide();
 	$('#nav-admissions, #nav-academics, #nav-campus, #nav-athletics, #nav-hub, #nav-alumni, #nav-faculty, #nav-search').fadeTo('slow', 1);
+});
+</script>
+
+<script>
+// scrollTop function
+$(window).scroll(function(){
+  var width_threshold = 900;
+  var href = document.location.href;
+  var position = $(window).scrollTop();
+  var width     =  $(window).width();
+  $(".header-fluid").removeClass("header-fluid-change");
+  $(".msudenver_logo").removeClass("msudenver_logo_change");
+
+
+  if( position > 15 && width > width_threshold) {
+    $(".header-fluid").toggleClass("header-fluid-change");
+    $(".msudenver_logo").toggleClass("msudenver_logo_change");
+  }
+
 });
 </script>
