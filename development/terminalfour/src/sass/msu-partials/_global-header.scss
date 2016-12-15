@@ -745,7 +745,12 @@ col-xs-12, .faculty-staff-students {
     padding-left: 0px;
     padding-right: 0px;
   }
-
+  .inner-addon .fa-search {
+    padding: 0.9em 1em 1em 1em;
+  }
+  .left-addon input {
+    padding-left: 4em;
+  }
 }
 
 
