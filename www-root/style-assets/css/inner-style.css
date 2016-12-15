@@ -8162,7 +8162,7 @@ col-xs-12, .faculty-staff-students {
   }
 
   .pushdown-menu {
-    height: 22em;
+    height: 29em;
   }
 
   .fac-staf-stu-mobile {
@@ -8346,7 +8346,7 @@ col-xs-12, .faculty-staff-students {
   }
 
   .pushdown-menu {
-    height: 22em;
+    height: 29em;
   }
 }
 @media only screen and (min-width: 1358px) {
@@ -8423,7 +8423,7 @@ col-xs-12, .faculty-staff-students {
   }
 
   .pushdown-menu {
-    height: 22em;
+    height: 27em;
   }
 
   body {
@@ -8477,6 +8477,10 @@ col-xs-12, .faculty-staff-students {
 
   .left-addon .fa-search {
     left: 1.5em;
+  }
+
+  .pushdown-menu {
+    height: 25em;
   }
 }
 /* Homepage base styles */
