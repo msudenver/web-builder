@@ -7436,9 +7436,15 @@ header {
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+  list-style: none;
 }
 .toolbar ul li:hover {
   color: #333;
+}
+
+.fac-staf-stu-mobile {
+  padding-left: 20px !important;
+  font-weight: 500;
 }
 
 #nav-faculty, #nav-academics, #nav-alumni {
@@ -7685,7 +7691,7 @@ header {
   color: white;
   font-size: 1.0em;
   border-radius: 5px 5px 5px 5px;
-  margin: 0.25em 0.25em 0em 0em;
+  margin: 0.75em 0.25em 0em 0em;
   text-align: center;
   width: 99%;
   font-family: 'Gotham A', 'Gotham B', sans-serif;
@@ -7705,7 +7711,7 @@ header {
   color: white;
   font-size: 1.0em;
   border-radius: 5px 5px 5px 5px;
-  margin: 0.25em 0.25em 0.4em 0em;
+  margin: 0.75em 0.25em 0.4em 0em;
   text-align: center;
   width: 99%;
   font-family: 'Gotham A', 'Gotham B', sans-serif;
@@ -7737,7 +7743,7 @@ header {
   font-weight: 400;
   font-size: 1.0em;
   color: #bcbcbc;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
 
 #search-input #autoSuggestResults {
@@ -7803,7 +7809,7 @@ header {
 #content-nav {
   font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-style: normal;
-  letter-spacing: 3px;
+  letter-spacing: 0px;
   font-weight: 700;
   padding-left: 3px;
   color: #6E6E6E;
@@ -7814,7 +7820,7 @@ header {
 #content-nav-mobile {
   font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-style: normal;
-  letter-spacing: 5px;
+  letter-spacing: 0px;
   font-weight: 500;
   padding-left: 3px;
   color: #6E6E6E;
@@ -7854,7 +7860,7 @@ header {
   font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 3px;
+  letter-spacing: 0px;
   margin-top: -1.0em;
   color: #fff;
   padding-bottom: 0.6em;
@@ -8202,7 +8208,7 @@ col-xs-12, .faculty-staff-students {
   }
 
   #content-nav {
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     font-weight: 500;
     padding-right: 4em;
   }
@@ -8261,7 +8267,7 @@ col-xs-12, .faculty-staff-students {
   }
 
   #content-nav {
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     font-weight: 600;
     font-size: 18px;
     padding-right: 6em;
