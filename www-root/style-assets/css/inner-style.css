@@ -8034,7 +8034,7 @@ col-xs-12, .faculty-staff-students {
 }
 @media (min-width: 992px) {
   body {
-    padding-top: 122px;
+    padding-top: 105px;
   }
 
   .msudenver_logo {
@@ -8272,8 +8272,6 @@ col-xs-12, .faculty-staff-students {
     letter-spacing: 0px;
     font-weight: 600;
     font-size: 18px;
-    padding-right: 6em;
-    padding-left: 0em;
   }
 
   .msudenver_logo {
@@ -8305,7 +8303,7 @@ col-xs-12, .faculty-staff-students {
   }
 
   body {
-    padding-top: 122px;
+    padding-top: 90px;
   }
 
   a .pushdown-menu {
@@ -8419,16 +8417,12 @@ col-xs-12, .faculty-staff-students {
     width: 0em;
   }
 
-  #content-nav {
-    padding-right: 4em;
-  }
-
   .pushdown-menu {
     height: 27em;
   }
 
   body {
-    padding-top: 144px;
+    padding-top: 122px;
   }
 }
 @media only screen and (min-width: 1500px) {
