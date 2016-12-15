@@ -9354,7 +9354,7 @@ a:focus, a:hover {
   color: black;
   font-size: 1.2rem;
   font-weight: 700;
-  padding: 15px 0px;
+  padding: 15px 0px 0px 15px;
   line-height: 1em;
   display: block;
   line-height: 1em;
@@ -9486,6 +9486,7 @@ a:focus, a:hover {
   font-weight: normal;
   text-decoration: inherit;
   float: right;
+  padding-right: 15px;
 }
 
 @media (max-width: 767px) {
