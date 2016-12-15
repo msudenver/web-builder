@@ -7875,6 +7875,7 @@ header {
 
 col-xs-12, .faculty-staff-students {
   text-align: right;
+  margin-top: -35px;
 }
 
 .navbar-nav > a > li {
