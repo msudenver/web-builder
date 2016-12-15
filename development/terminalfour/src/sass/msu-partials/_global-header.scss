@@ -26,10 +26,16 @@
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
+    list-style: none;
   }
   ul li:hover {
     color: #333;
   }
+}
+
+.fac-staf-stu-mobile {
+  padding-left: 20px !important;
+  font-weight: 500;
 }
 
 #nav-faculty, #nav-academics, #nav-alumni {
@@ -65,6 +71,7 @@
   border-spacing: 10px;
   margin-top: 1.8em;
   margin-bottom: 0.5em;
+  line-height: 2em;
 }
 
 .nav > a > li {
@@ -275,7 +282,7 @@
   color: $white;
   font-size: 1.0em;
   border-radius: 5px 5px 5px 5px;
-  margin: 0.25em 0.25em 0em 0em;
+  margin: 0.75em 0.25em 0em 0em;
   text-align: center;
   width: 99%;
   font-family: 'Gotham A', 'Gotham B', sans-serif;
@@ -295,7 +302,7 @@
   color: white;
   font-size: 1.0em;
   border-radius: 5px 5px 5px 5px;
-  margin: 0.25em 0.25em 0.4em 0em;
+  margin: 0.75em 0.25em 0.4em 0em;
   text-align: center;
   width: 99%;
   font-family: 'Gotham A', 'Gotham B', sans-serif;
@@ -327,7 +334,7 @@
   font-weight: 400;
   font-size: 1.0em;
   color: #bcbcbc;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
 
 #search-input #autoSuggestResults {
@@ -393,7 +400,7 @@
 #content-nav {
   font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-style: normal;
-  letter-spacing: 3px;
+  letter-spacing: 0px;
   font-weight: 700;
   padding-left: 3px;
   color: #6E6E6E;
@@ -404,7 +411,7 @@
 #content-nav-mobile {
   font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-style: normal;
-  letter-spacing: 5px;
+  letter-spacing: 0px;
   font-weight: 500;
   padding-left: 3px;
   color: #6E6E6E;
@@ -444,12 +451,16 @@
   font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 3px;
+  letter-spacing: 0px;
   margin-top: -1.0em;
   color: #fff;
   padding-bottom: 0.6em;
   padding-left: 6px;
   display: none;
+}
+
+.fss-pipe {
+    padding-left: 10px !important;
 }
 
 col-xs-12, .faculty-staff-students {
@@ -753,7 +764,7 @@ col-xs-12, .faculty-staff-students {
       padding-bottom: 8px;
   }
   #content-nav {
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     font-weight: 500;
     padding-right: 4em;
   }
@@ -805,7 +816,7 @@ col-xs-12, .faculty-staff-students {
         padding-right: percentage(1/$grid-columns) ;
     }
   #content-nav {
-      letter-spacing: 2px;
+      letter-spacing: 0px;
       font-weight: 600;
       font-size: 18px;
       padding-right: 6em;
@@ -870,7 +881,7 @@ col-xs-12, .faculty-staff-students {
     margin-right: 0em;
   }
   .pushdown-menu {
-      height: 26em;
+      height: 29em;
   }
 }
 
@@ -940,7 +951,7 @@ col-xs-12, .faculty-staff-students {
       padding-right: 4em;
   }
   .pushdown-menu {
-      height: 26em;
+      height: 27em;
   }
   body {
     padding-top: 144px;
@@ -987,5 +998,8 @@ col-xs-12, .faculty-staff-students {
   }
   .left-addon .fa-search {
     left: 1.5em;
+  }
+  .pushdown-menu {
+      height: 25em;
   }
 }
