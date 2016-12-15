@@ -18,7 +18,7 @@
   }
 
   ul li {
-    font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $font-family-serif;
     color: #00447c;
     padding-right: 0.6em;
     padding-left: 0.5em;
@@ -130,7 +130,7 @@
   background-color: #007dc3;
   border-radius: 2;
   letter-spacing: 5px;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-family: $font-family-sans-serif;
   font-style: normal;
   font-weight: 500;
 }
@@ -165,7 +165,7 @@
   border-radius: 4px;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Gotham A', 'Gotham B';
+  font-family: $font-family-sans-serif;
   font-size: 12px;
   letter-spacing: 1.2px;
   color: #fff;
@@ -176,7 +176,7 @@
   text-decoration: none;
   color: #FFF;
   cursor: pointer;
-  font-family: 'Gotham A', 'Gotham B';
+  font-family: $font-family-sans-serif;
 }
 
 .search-button:focus {
@@ -192,7 +192,7 @@
 }
 
 #nav-search .fa-search {
-  color: #fff !important;
+  color: $white !important;
   background: #005fae;
   margin-top: 0.4em;
   padding-left: 0.8em;
@@ -240,14 +240,14 @@
 }
 //end expanding search css
 .apply-button {
-  background: #d11242;
-  color: white;
+  background: $msu-red;
+  color: $white;
   font-size: 1.0em;
   border-radius: 0 0 10px 10px;
   text-align: center;
   padding: 0.3em 0.3em;
   width: 7%;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-family: $font-family-sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 2px;
@@ -278,8 +278,8 @@
 }
 
 .visit-give-mobile {
-  background: gray;
-  color: white;
+  background: $gray;
+  color: $white;
   font-size: 1.0em;
   border-radius: 5px 5px 5px 5px;
   margin: 0.75em 0.25em 0em 0em;
