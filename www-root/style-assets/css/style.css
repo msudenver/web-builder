@@ -7481,6 +7481,7 @@ header {
   border-spacing: 10px;
   margin-top: 1.8em;
   margin-bottom: 0.5em;
+  line-height: 2em;
 }
 
 .nav > a > li {
