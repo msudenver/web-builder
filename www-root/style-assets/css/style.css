@@ -7953,7 +7953,7 @@ col-xs-12, .faculty-staff-students {
 
   .fa-bars {
     padding-left: 10px;
-    margin: -16px -30px -16px -10px;
+    margin: -16px -30px -15px -10px;
   }
 }
 @media (max-width: 991px) {
