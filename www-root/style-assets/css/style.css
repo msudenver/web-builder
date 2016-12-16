@@ -7437,6 +7437,8 @@ header {
 .toolbar button.navbar-toggle {
   color: #fff;
   font-size: 25px;
+  background-color: #003a6e;
+  border-radius: 0px;
 }
 .toolbar ul li {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -7456,6 +7458,7 @@ header {
 .fac-staf-stu-mobile {
   padding-left: 20px !important;
   font-weight: 500;
+  line-height: 2.5em;
 }
 
 #nav-faculty, #nav-academics, #nav-alumni {
@@ -7739,7 +7742,7 @@ header {
 }
 
 .msudenver_logo {
-  padding: 15px 0px;
+  padding: 15px 15px 0px 15px;
   max-height: 56px;
 }
 
@@ -7779,12 +7782,6 @@ header {
 
 .gobutton #searchGoLink.disableGoButton {
   visibility: hidden;
-}
-
-.fa-bars {
-  background-color: #003a6e;
-  padding: 24px;
-  margin: -17px -30px -16px -16px;
 }
 
 .fa-search-mobile {
@@ -7917,7 +7914,7 @@ col-xs-12, .faculty-staff-students {
   margin-bottom: 0em !important;
   margin-right: 0em !important;
   margin-top: 0em !important;
-  padding: 14px 10px !important;
+  padding: 15px !important;
   display: block;
 }
 
@@ -7950,11 +7947,6 @@ col-xs-12, .faculty-staff-students {
     padding-right: 10px;
     padding-left: 10px;
   }
-
-  .fa-bars {
-    padding-left: 10px;
-    margin: -16px -30px -15px -10px;
-  }
 }
 @media (max-width: 991px) {
   #nav-admissions {
@@ -7975,20 +7967,6 @@ col-xs-12, .faculty-staff-students {
     padding-left: 4em;
   }
 }
-.header-container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.header-container:before, .header-container:after {
-  content: " ";
-  display: table;
-}
-.header-container:after {
-  clear: both;
-}
-
 @media screen and (max-width: 991px) {
   .navbar-collapse {
     border-top: 5px solid #005fae;
@@ -8075,6 +8053,20 @@ col-xs-12, .faculty-staff-students {
 @media (min-width: 992px) {
   body {
     padding-top: 105px;
+  }
+
+  .header-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-container:before, .header-container:after {
+    content: " ";
+    display: table;
+  }
+  .header-container:after {
+    clear: both;
   }
 
   .msudenver_logo {

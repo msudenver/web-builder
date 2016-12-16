@@ -179,14 +179,14 @@ $('.fa-search-mobile').click(function(){
    $('.search-input-mobile').slideToggle();
    $('#content-nav').removeClass('in');
    $('#content-nav').addClass('collapse');
-   $('.fa-bars').css('background-color', 'transparent');
+   $('.navbar-toggle').css('background-color', 'transparent');
    $('.fa-search-mobile').css('background-color', '#003a6e');
 });
 
 // when hamburger clicked, hide search bar and change hamburger/search glyph background colors
 $('.navbar-toggle').click(function(){
    $('.search-input-mobile').hide();
-   $('.fa-bars').css('background-color', '#003a6e');
+   $('.navbar-toggle').css('background-color', '#003a6e');
    $('.fa-search-mobile').css('background-color', 'transparent');
 });
 
