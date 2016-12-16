@@ -1,7 +1,7 @@
 /* Homepage base styles */
 .homepage-main {
     @include container-fixed();
-    margin-top: 50px;
+    // margin-top: 50px;
 }
 .homepage-feature {
     @include make-row();
@@ -137,7 +137,7 @@
 }
 
 @media (min-width: $screen-lg-min) {
-  .homepage-main {
-      margin-top: 70px;
-  }
+  // .homepage-main {
+  //     margin-top: 70px;
+  // }
 }
