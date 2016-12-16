@@ -15,12 +15,12 @@
           <!-- Global Header -->
     <div class="navbar navbar-fixed-top toolbar blue-header" style="background-image:url(https://msudenver.edu/media/newsiteassets/images/header_asphalt.png);">
       <div class="header-container">
-        <button type="search-button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle quick links navigation</span>
           <span class="fa fa-bars"></span>
         </button>
             <div class="row">
-              <div class="col-xs-9 col-sm-8">
+              <div class="col-xs-8">
                 <img class="msudenver_logo" src="https://msudenver.edu/media/newsiteassets/images/msudenver_logo_header.svg" alt="MSU Denver Logo">
               </div>
               <a href="/admissions"><div class="col-xs-1 apply-button">APPLY</div></a>
@@ -179,14 +179,14 @@ $('.fa-search-mobile').click(function(){
    $('.search-input-mobile').slideToggle();
    $('#content-nav').removeClass('in');
    $('#content-nav').addClass('collapse');
-   $('.fa-bars').css('background-color', 'transparent');
-   $('.fa-search-mobile').css('background-color', '#005fae');
+   $('.navbar-toggle').css('background-color', 'transparent');
+   $('.fa-search-mobile').css('background-color', '#003a6e');
 });
 
 // when hamburger clicked, hide search bar and change hamburger/search glyph background colors
 $('.navbar-toggle').click(function(){
    $('.search-input-mobile').hide();
-   $('.fa-bars').css('background-color', '#005fae');
+   $('.navbar-toggle').css('background-color', '#003a6e');
    $('.fa-search-mobile').css('background-color', 'transparent');
 });
 
