@@ -7968,6 +7968,10 @@ col-xs-12, .faculty-staff-students {
   }
 }
 @media screen and (max-width: 991px) {
+  body {
+    padding-top: 70px;
+  }
+
   .navbar-collapse {
     border-top: 5px solid #005fae;
   }
@@ -8052,7 +8056,7 @@ col-xs-12, .faculty-staff-students {
 }
 @media (min-width: 992px) {
   body {
-    padding-top: 105px;
+    padding-top: 160px;
   }
 
   .header-container {
@@ -8071,6 +8075,7 @@ col-xs-12, .faculty-staff-students {
 
   .msudenver_logo {
     max-height: 104px;
+    padding-bottom: 15px;
   }
 
   .navbar .navbar-nav {
@@ -8262,6 +8267,10 @@ col-xs-12, .faculty-staff-students {
     padding-right: 8.33333%;
   }
 
+  body {
+    padding-top: 160px;
+  }
+
   #content-nav {
     letter-spacing: 0px;
     font-weight: 600;
@@ -8290,10 +8299,6 @@ col-xs-12, .faculty-staff-students {
   #content-nav #search-input .search-button {
     top: -3.3em;
     left: 14em;
-  }
-
-  body {
-    padding-top: 90px;
   }
 
   a .pushdown-menu {
@@ -8339,6 +8344,10 @@ col-xs-12, .faculty-staff-students {
   }
 }
 @media only screen and (min-width: 1358px) {
+  body {
+    padding-top: 180px;
+  }
+
   #search-input #search-text {
     font-size: 14px;
   }
@@ -8470,7 +8479,6 @@ col-xs-12, .faculty-staff-students {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 50px;
 }
 .homepage-main:before, .homepage-main:after {
   content: " ";
@@ -8642,11 +8650,6 @@ col-xs-12, .faculty-staff-students {
   .main-button .homepage-btn {
     padding: 0;
     line-height: 1;
-  }
-}
-@media (min-width: 1200px) {
-  .homepage-main {
-    margin-top: 70px;
   }
 }
 #homepage-second-nav {
