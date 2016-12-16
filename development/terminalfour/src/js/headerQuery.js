@@ -38,7 +38,7 @@ $('.mobile-header').click(function(){
 
 // open/close content-nav bar when search/close glyphs clicked
 $('.search-desktop').click(function(){
-   $('#content-nav').css('max-height', '55px');
+   $('#content-nav').css('max-height', '60px');
 });
 $('.glyphicon-remove').click(function(){
    $('#content-nav').css('max-height', '');

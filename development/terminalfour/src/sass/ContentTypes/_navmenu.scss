@@ -6,7 +6,7 @@
   transition: all .2s ease-out
 }
 #layout {
-  z-index: 9998;
+  z-index: 998;
   padding-left: 200px;
   left: 0;
   top: 100px
@@ -16,57 +16,49 @@
   margin-left: -150px;
   width: 150px;
   position: fixed;
-  padding-top: 60px;
+  padding-top: 70px;
   top: 0;
   left: 150px;
   bottom: 0;
   z-index: 9998;
-  background: #002856;
+  background: #fff;
+  color:black;
   -webkit-overflow-scroll: touch
 }
 #menu a {
   border: none;
-  font-size:15px;
-  font-weight:300;
-  padding: 10px 20px 10px 10px;
+  color:black;
+  font-size:1.2rem;
+  font-weight:700;
+  padding: 15px 15px;
   line-height: 1em;
+  display: block;
+  text-decoration: none;
   -webkit-transition: all .25 ease-in-out;
   -moz-transition: all .25 ease-in-out;
   -o-transition: all .25 ease-in-out;
   transition: all .25 ease-in-out
 }
-#menu a:hover {
-  color: #1b557a;
+#menu a:hover, .pure-menu li a:focus, #menu .pure-menu li a:hover {
+  color: #d11242;
+  padding: 15px 15px;
   -webkit-transition: all .25 ease-in-out;
   -moz-transition: all .25 ease-in-out;
   -o-transition: all .25 ease-in-out;
   transition: all .25 ease-in-out
 }
+
+
 #menu .pure-menu, #menu .pure-menu ul {
-  border: none
+  border: none;
 }
-#menu .pure-menu li a:focus, #menu .pure-menu li a:hover {
-  background: #fff;
-  line-height: 1em;
-  color: #1b557a;
-  padding: 10px 15px
-}
-#menu .pure-menu-heading, #menu .pure-menu-selected {
-  // background: #333;
-  // color: #fff
-}
+
+
 #menu .pure-menu-heading:hover, #menu .pure-menu-selected:hover {
-  // color: #fff;
+
   text-decoration: none
 }
-#menu .pure-menu-selected a {
-  // color: #fff
-}
-#menu .pure-menu-heading {
-  // font-size: 110%;
-  // color: #fff;
-  margin: 0
-}
+
 .menu-link {
   display: none;
   top: 88px;
@@ -102,35 +94,122 @@
 .menu-link:focus span, .menu-link:hover span {
   position: relative;
   display: block;
-  background: #fff;
-  color: #fff;
+  // background: #fff;
+  // color: #fff;
   width: 100%;
   height: .2em
 }
 .menu-link:focus span:after, .menu-link:focus span:before, .menu-link:hover span:after, .menu-link:hover span:before {
+  content: " ";
   background: #fff;
   width: 100%;
   height: .2em;
   position: absolute;
   margin-top: -.6em;
-  content: " "
+
 }
 .menu-link:focus span:after, .menu-link:hover span:after {
   margin-top: .6em
 }
 
-ul.multilevel-linkul-0 {
-   margin-left: -20px;
+.multilevel-linkul-0 {
+   margin-left: -15px;
 }
+
 .multilevel-linkul-1 {
-    margin-left: -20px;
+    margin-left: -15px;
 }
 
 .multilevel-linkul-2 {
-    margin-left: -20px;
+    margin-left: -15px;
 }
 
-@media (max-width: 767px) {
+.sidebar-nav {
+  margin-bottom: 15px;
+  // background: #002856;
+    ul li {
+      list-style-type: none;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+      // border-width: 100%;
+    }
+
+    ul li:last-child {
+        border-bottom: none;
+    }
+
+    // li a {
+    //
+    // }
+
+     li a:hover {
+      // background: #eeeeee;
+      -webkit-transition: all .25s ease-in-out;
+      -moz-transition: all .25s ease-in-out;
+      -o-transition: all .25s ease-in-out;
+      transition: all .25s ease-in-out;
+      position: relative;
+      padding: 10px 15px
+    }
+}
+
+// .sidebar-nav li:after {
+//   -webkit-transition: all .25s ease-in-out;
+//   -moz-transition: all .25s ease-in-out;
+//   -o-transition: all .25s ease-in-out;
+//   transition: all .25s ease-in-out
+// }
+
+.currentbranch0 a , .currentbranch1 a, .currentbranch2 a, .currentbranch3 a, .currentbranch4 a {
+  color: #d11242 !important;
+  font-size: 1.2em;
+}
+
+.currentbranch0 a:after, .currentbranch1 a:after, .currentbranch2 a:after, .currentbranch3 a:after, .currentbranch4 a:after  {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    float: right;
+    padding-right: 15px;
+  }
+
+  @media (min-width: 767px) {
+    #layout {
+      padding: 0;
+      margin: 0 auto;
+      left: 0
+    }
+    #menu {
+      position: relative;
+      left: 0;
+      padding: 0;
+      margin: 0 auto;
+      width: 100%
+    }
+
+    #menu a {
+      padding: 15px 0px;
+      line-height: 1em;
+      -webkit-transition: all .25 ease-in-out;
+      -moz-transition: all .25 ease-in-out;
+      -o-transition: all .25 ease-in-out;
+      transition: all .25 ease-in-out
+    }
+
+    // #menu a:hover, .pure-menu li a:focus, #menu .pure-menu li a:hover {
+    //   color: #d11242;
+    //   // line-height: 1em;
+    //   // font-size: 2em;
+    //   padding: 15px px;
+    //   -webkit-transition: all .25 ease-in-out;
+    //   -moz-transition: all .25 ease-in-out;
+    //   -o-transition: all .25 ease-in-out;
+    //   transition: all .25 ease-in-out
+    // }
+  }
+
+@media (max-width: 992px) {
   // .header {
   //   text-align: left
   // }
@@ -156,93 +235,4 @@ ul.multilevel-linkul-0 {
   #layout.active .menu-link {
     left: 70%
   }
-}
-@media (min-width: 767px) {
-  #layout {
-    padding: 0;
-    margin: 0 auto;
-    left: 0
-  }
-  #menu {
-    position: relative;
-    left: 0;
-    padding: 0;
-    margin: 0 auto;
-    width: 100%
-  }
-  // .header {
-  //   text-align: left
-  // }
-}
-.sidebar-nav {
-  margin-bottom: 15px;
-  // background: #002856;
-}
-.sidebar-nav ul li {
-  list-style-type: none
-}
-.sidebar-nav li a:hover {
-  position: relative;
-  padding: 10px 15px
-}
-.sidebar-nav li:after {
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out
-}
-.sidebar-nav li a {
-  display: block;
-  line-height: 1em;
-  color: #fff;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  text-decoration: none
-}
-.sidebar-nav li {
-  height: 100%;
-  width: 100%;
-  padding-top: 0;
-  padding-bottom: 0
-}
-.sidebar-nav li a:hover {
-  background: #fff;
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out
-}
-.sidebar-nav a:hover, .sidebar-nav li a:after {
-  color: #fff
-}
-ul.multilevel-linkul-0 li {
-  background: #00447C
-}
-ul.multilevel-linkul-1 li {
-  background: #005BA5
-}
-ul.multilevel-linkul-2 li {
-  background: #00447C
-}
-ul.multilevel-linkul-3 li {
-  background: #2e8ece
-}
-ul.multilevel-linkul-4 li {
-  background: #409ad5
-}
-ul.multilevel-linkul-5 li {
-  background: #55a5d9
-}
-.currentbranch0 a {
-  background: #fff;
-  color: #20638f!important
-}
-.currentbranch1 a, .currentbranch2 a {
-  background: #fff;
-  color: #003663!important
-}
-.currentbranch3 a, .currentbranch4 a {
-  background: #fff;
-  color: #003663!important
 }

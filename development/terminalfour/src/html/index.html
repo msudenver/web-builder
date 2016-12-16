@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang="en-US"> 
+<html lang="en-US">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1">
 	<title>MSU Denver - Homepage</title>
-    <link href="//fonts.googleapis.com/css?family=Karla:400,700|Open+Sans:400,400i,700|Raleway:400,700,900" rel="stylesheet">
-    <link href="style-assets/media/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7291556/7343172/css/fonts.css" />
+	<link href="style-assets/media/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen" />
 	<link rel="stylesheet" href="style-assets/css/style.css" />
 <!--	<link rel="stylesheet" href="style-assets/lib/slick-1.6.0/slick/slick.css" />-->
-	
-	<script src="style-assets/lib/jquery/jquery.min.js"></script> 
-</head> 
-    <body>  
-        @@include('header.html') 
-        <main class="homepage-main">  
-            @@include('homepage-feature-caption.html')   
-            @@include('homepage-ryor.html')  
-            @@include('homepage-news.html') 
-            @@include('homepage-at-a-glance.html')  
-            @@include('homepage-community.html') 
-            @@include('homepage-events.html') 
-            
+
+	<script src="style-assets/lib/jquery/jquery.min.js"></script>
+</head>
+    <body>
+        @@include('header.html')
+        <main class="homepage-main">
+						<!-- @@include('homepage-second-nav.html') -->
+            @@include('homepage-feature-caption.html')
+            @@include('homepage-ryor.html')
+            @@include('homepage-news.html')
+            @@include('homepage-at-a-glance.html')
+            @@include('homepage-community.html')
+            @@include('homepage-events.html')
+
         </main>
-        @@include('footer.html')   
-        <script src="style-assets/lib/jquery/jquery.min.js"></script> 
-        <script src="style-assets/lib/jquery-match-height/jquery.matchHeight.js"></script> 
+        @@include('footer.html')
+        <script src="style-assets/lib/jquery/jquery.min.js"></script>
+        <script src="style-assets/lib/jquery-match-height/jquery.matchHeight.js"></script>
 <!--        <script src="style-assets/lib/slick-1.6.0/slick/slick.min.js"></script>-->
         <script src="style-assets/lib/boostrap/bootstrap.min.js"></script>
         <script>
@@ -33,12 +34,12 @@
                 wrap: false,
                 interval: 1500,
                 keyboard: true
-            }); 
+            });
             $('#homepage-feature-caption').on('slide.bs.carousel', function() {
                 console.log('slid');
             } );
         });
         </script>
     </body>
-    
+
 </html>

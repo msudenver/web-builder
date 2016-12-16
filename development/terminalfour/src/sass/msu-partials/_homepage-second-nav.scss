@@ -1,0 +1,43 @@
+#homepage-second-nav{
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+margin-top: 0px;
+// margin-top: torem(8);
+// margin-bottom: toem(8);
+// margin-bottom: torem(8);
+padding: 0;
+position: relative;
+height: 3em;
+color:#fff;
+//  font-size:2.5rem;
+// margin-top:15px;
+// margin-bottom:15px;
+background-image:url(../media/RYOR_bg_extended.png);
+display: none;
+}
+
+.homepage-feature ul, {
+  list-style-type: none;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  margin-top: 6px;
+  padding-left: 0;
+  font-size: 1.5rem;
+}
+
+.homepage-feature li {
+  display: table-cell;
+}
+
+#homepage-second-nav a {
+  color: #fff;
+}
+
+@media (min-width: $screen-md-min) {
+  #homepage-second-nav {
+    display: block;
+  }
+}

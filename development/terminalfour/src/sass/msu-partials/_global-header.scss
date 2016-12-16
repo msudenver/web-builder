@@ -1,10 +1,22 @@
 /* MainHeaderNavigation Styles */
 .blue-header {
-  background: #00447c;
+  background: #000;
+  // background-image:url(../media/RYOR_bg_extended.png);
 }
 
 .navbar .navbar-collapse {
   text-align: center;
+}
+
+.msudenver_logo, .msudenver_logo_change {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.msudenver_logo_change {
+  height:102px;
 }
 
 .toolbar {
@@ -14,21 +26,38 @@
   button.navbar-toggle {
     color: #fff;
     font-size: 25px;
+    background-color: #003a6e;
+    border-radius: 0px;
   }
 
-  ul a li {
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  ul li {
+    font-family: $font-family-serif;
     color: #00447c;
-    padding-left: 1.5em;
-    padding-right: 1.4em;
+    padding-right: .25em;
+    padding-left: .25em;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
+    list-style: none;
   }
-  ul a li:hover {
+  ul li:hover {
     color: #333;
   }
+}
+
+.fac-staf-stu-mobile {
+  padding-left: 20px !important;
+  font-weight: 500;
+  line-height: 2.5em;
+}
+
+#nav-faculty, #nav-academics, #nav-alumni {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.pushdown-alumni {
+  padding-left: 1.2em !important;
 }
 
 .navbar {
@@ -56,6 +85,7 @@
   border-spacing: 10px;
   margin-top: 1.8em;
   margin-bottom: 0.5em;
+  line-height: 2em;
 }
 
 .nav > a > li {
@@ -70,6 +100,7 @@
   background-color: #fff;
   max-height: none;
   transition: max-height 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175);
 }
 
 #content-nav #nav-search-close {
@@ -104,17 +135,18 @@
 
 #content-nav #search-input .search-button {
   display: inline-block;
-  padding-left: 3px;
+  padding-left: 10px;
   top: -3.3em;
-  left: 26em;
+  left: 24em;
   position: relative;
   height: 2.8em;
   width: 8.0em;
   background-color: #007dc3;
   border-radius: 2;
   letter-spacing: 5px;
+  font-family: $font-family-sans-serif;
+  font-style: normal;
   font-weight: 500;
-  font-family: 'Raleway', sans-serif;
 }
 
 #content-nav #search-input .search-button:hover {
@@ -147,7 +179,7 @@
   border-radius: 4px;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Open Sans';
+  font-family: $font-family-sans-serif;
   font-size: 12px;
   letter-spacing: 1.2px;
   color: #fff;
@@ -158,7 +190,7 @@
   text-decoration: none;
   color: #FFF;
   cursor: pointer;
-  font-family: 'Open Sans';
+  font-family: $font-family-sans-serif;
 }
 
 .search-button:focus {
@@ -171,6 +203,16 @@
   padding-top: 1.3em;
   font-size: 1.2em;
   cursor: pointer;
+}
+
+#nav-search .fa-search {
+  color: $white !important;
+  background: #005fae;
+  margin-top: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 1.7em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .fa-search-opened {
@@ -212,29 +254,86 @@
 }
 //end expanding search css
 .apply-button {
-  background: #d11242;
-  color: white;
+  background: $msu-red;
+  color: $white;
   font-size: 1.0em;
   border-radius: 0 0 10px 10px;
   text-align: center;
   padding: 0.3em 0.3em;
   width: 7%;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
+  font-family: $font-family-sans-serif;
+  font-style: normal;
+  font-weight: 700;
   letter-spacing: 2px;
   float: right !important;
   margin-left: 0.15em;
   margin-right: 1em;
+  -webkit-transition: background .25s ease;
+  -moz-transition: background .25s ease;
+  -o-transition: background .25s ease;
+  transition: background .25s ease;
+}
+
+.apply-button:hover {
+  background: #a60029;
 }
 
 .give-visit-buttons {
+  -webkit-transition: background .25s ease;
+  -moz-transition: background .25s ease;
+  -o-transition: background .25s ease;
+  transition: background .25s ease;
   background: gray;
   margin-right: 0em;
 }
 
+.give-visit-buttons:hover {
+  background: #424448;
+}
+
+.visit-give-mobile {
+  background: $gray;
+  color: $white;
+  font-size: 1.0em;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0.75em 0.25em 0em 0em;
+  text-align: center;
+  width: 99%;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
+  float: right !important;
+  -webkit-transition: background .25s ease;
+  -moz-transition: background .25s ease;
+  -o-transition: background .25s ease;
+  transition: background .25s ease;
+  display: none;
+}
+
+.apply-mobile {
+  background: #d11242;
+  color: white;
+  font-size: 1.0em;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0.75em 0.25em 0.4em 0em;
+  text-align: center;
+  width: 99%;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
+  float: right !important;
+  -webkit-transition: background .25s ease;
+  -moz-transition: background .25s ease;
+  -o-transition: background .25s ease;
+  transition: background .25s ease;
+  display: none;
+}
+
 .msudenver_logo {
-  padding: 15px 0px;
-  max-height:65px;
+  padding: 15px 15px 0px 15px;
+  max-height:56px;
 }
 
 #search-input #search-text {
@@ -244,10 +343,12 @@
   border-width: 0;
   width: 207px;
   margin-top: 3px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 1.0em;
   color: #bcbcbc;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
 
 #search-input #autoSuggestResults {
@@ -274,9 +375,9 @@
 }
 
 .fa-bars {
-  background-color: #005fae;
-  padding: 24px;
-  margin: -17px -30px -16px -16px;
+  // background-color: #003a6e;
+  // padding: 24px;
+  // margin: -17px -30px -16px -16px;
 }
 
 .fa-search-mobile {
@@ -306,17 +407,14 @@
     border-color: transparent;
 }
 
-.pushdown-menu>li>a {
-    font-weight: 600;
-    font-size: 1.2em;
-}
 .search-input-mobile {
   display: none;
 }
 
 #content-nav {
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 3px;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  letter-spacing: 0px;
   font-weight: 700;
   padding-left: 3px;
   color: #6E6E6E;
@@ -325,8 +423,9 @@
 }
 
 #content-nav-mobile {
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 5px;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  letter-spacing: 0px;
   font-weight: 500;
   padding-left: 3px;
   color: #6E6E6E;
@@ -362,20 +461,44 @@
   cursor: pointer;
 }
 
-.faculty-staff a {
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 3px;
-  text-align: right;
+.faculty-staff-students a {
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
   margin-top: -1.0em;
   color: #fff;
   padding-bottom: 0.6em;
+  padding-left: 6px;
   display: none;
+}
+
+.fss-pipe {
+    padding-left: 10px !important;
+}
+
+col-xs-12, .faculty-staff-students {
+  text-align: right;
+  margin-top: -35px;
 }
 
 .navbar-nav > a > li {
   line-height: 0.1em !important;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
+}
+
+.nav > li > a{
+  -webkit-transition: font-weight .15s ease;
+  -moz-transition: font-weight .15s ease;
+  -o-transition: font-weight .15s ease;
+  transition: font-weight .15s ease;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+    color: #001e36;
+    font-weight: 800;
 }
 
 .container .pushdown-menu {
@@ -387,7 +510,7 @@
   margin-bottom: 0em !important;
   margin-right: 0em !important;
   margin-top: 0em !important;
-  padding: 14px 10px !important;
+  padding: 15px !important;
   display: block;
 }
 
@@ -415,18 +538,45 @@
     padding-right: 10px;
     padding-left: 10px;
   }
-  .msudenver_logo {
-    max-height: 56px;
-  }
+
   .fa-bars {
-    padding-left: 10px;
-    margin: -16px -30px -16px -10px;
+    // padding-left: 10px;
+    // margin: -16px -30px -15px -10px;
   }
 }
 
 
-@media screen and (max-width: 991px) {
 
+
+@media (max-width: $screen-sm-max) {
+  #nav-admissions {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #nav-athletics {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .inner-addon .fa-search {
+    padding: 0.9em 1em 1em 1em;
+  }
+  .left-addon input {
+    padding-left: 4em;
+  }
+}
+
+
+
+@media (min-width: $screen-sm-min) {
+
+
+
+}
+
+@media screen and (max-width: 991px) {
+body{
+  padding-top: 70px;
+}
   .navbar-collapse {
     border-top: 5px solid #005fae;
   }
@@ -447,7 +597,7 @@
     text-align: left;
   }
   .left-addon input {
-    padding-top: 3px !important;
+    padding-top: 5px !important;
     padding-bottom: 2px;
   }
   .blue-header {
@@ -488,17 +638,28 @@
     margin-top: 0em;
     padding-top: 0em;
     margin-left: 2em;
+    padding-left: 1.2em;
+  }
+  .visit-give-mobile, .apply-mobile {
+    display: block;
   }
 }
+
+
 
 
 @media (min-width: $screen-md-min) {
 
   body {
-    padding-top: 123px;
+    padding-top: 160px;
+  }
+
+  .header-container {
+      @include container-fixed();
   }
   .msudenver_logo {
-    max-height:100px;
+    max-height:104px;
+    padding-bottom: 15px;
   }
   .navbar .navbar-nav {
     display: inline-block;
@@ -577,8 +738,8 @@
   .container .pushdown-menu {
     border-right: 1px solid #4cb4f2;
   }
-  .faculty-staff a {
-    display: block;
+  .faculty-staff-students a {
+    display: inline-block;
   }
   #nav-faculty {
     width: 11em;
@@ -601,41 +762,32 @@
   .navbar-toggle {
     display: none;
   }
-  .fa.pull-right {
+  .mobile-header > .fa.fa-chevron-down {
     display: none;
   }
   .left-addon .fa-search {
     top: 0em;
   }
   .pushdown-menu {
-      height: 21em;
+      height: 29em;
   }
-}
+  .fac-staf-stu-mobile {
+    display: none;
+  }
+  .blue-header {
+    // background: #1b1b1b;
+    // background-image:url(../media/RYOR_bg_extended.png);
+  }
+  #nav-admissions .mobile-header {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
-
-@media (max-width: $screen-xs-max) {
-
-
-
-}
-
-
-.header-container {
-    @include container-fixed();
-}
-
-@media (min-width: $screen-sm-min) {
-
-
-
-}
-
-@media (min-width: $screen-md-min) {
   .navbar-nav > li > a {
       padding-bottom: 8px;
   }
   #content-nav {
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     font-weight: 500;
     padding-right: 4em;
   }
@@ -643,9 +795,16 @@
     margin-top: 5px;
   }
 
+  .athletics-header {
+    margin-top: 5px;
+    // border-right: 1px solid #337ab7;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   #content-nav #nav-search-close {
       top: -3.2em;
-      left: 19.2em;
+      left: 17.8em;
   }
   #nav-faculty {
     width: 11em;
@@ -662,29 +821,34 @@
   #nav-alumni {
     width: 10em;
   }
-  #nav-search {
-    width: 0em;
-  }
+  // #nav-search {
+  //   width: 0em;
+  // }
   #content-nav #search-input input[type="text"] {
       padding-top: 0.3em;
   }
 }
+
 
 @media (min-width: $screen-lg-min) {
   .header-container {
         padding-left: percentage(1/$grid-columns) ;
         padding-right: percentage(1/$grid-columns) ;
     }
+
+    body {
+      padding-top: 160px;
+    }
   #content-nav {
-      letter-spacing: 2px;
+      letter-spacing: 0px;
       font-weight: 600;
       font-size: 18px;
-      padding-right: 6em;
-      padding-left: 0em;
+      // padding-right: 6em;
+      // padding-left: 0em;
   }
-.msudenver_logo {
-    max-height:150px;
-  }
+// .msudenver_logo {
+//     max-height:100px;
+//   }
   li.dropdown {
   padding: 5px 0px;
   font-size: 1.33em;
@@ -698,15 +862,15 @@
   }
   #content-nav #nav-search-close {
       top: -67px;
-      left: 12.6em;
+      left: 10.6em;
   }
   #content-nav #search-input .search-button {
       top: -3.3em;
-      left: 17em;
+      left: 14em;
   }
 
 
-  li .pushdown-menu {
+  a .pushdown-menu {
       font-weight: 500;
       font-size: 0.8em;
   }
@@ -738,12 +902,14 @@
     margin-right: 0em;
   }
   .pushdown-menu {
-      height: 22em;
+      height: 29em;
   }
 }
 
 @media only screen and (min-width:1358px) {
-
+  body {
+    padding-top: 180px;
+  }
   #search-input #search-text {
     font-size: 14px;
   }
@@ -756,7 +922,7 @@
   #content-nav #nav-search-close {
     font-size: 20px;
     top: -3.2em;
-    left: 19em;
+    left: 15em;
   }
 
   .fa-search {
@@ -771,7 +937,11 @@
     top: -2.7em;
     height: 30px;
     width: 130px;
-    left: 19em;
+    left: 14em;
+  }
+
+  .msudenver_logo {
+      max-height:125px;
   }
 
   .search-button {
@@ -801,20 +971,24 @@
     width: 0em;
   }
   #content-nav{
-      padding-right: 4em;
+      // padding-right: 4em;
   }
   .pushdown-menu {
-      height: 19em;
+      height: 27em;
   }
+  // body {
+  //   padding-top: 122px;
+  // }
+
 }
 
 @media only screen and (min-width:1500px) {
 
   #content-nav #nav-search-close {
-    left: 28em;
+    left: 22.3em;
   }
   #content-nav #search-input .search-button {
-    left: 32em;
+    left: 24em;
   }
 
   #nav-faculty {
@@ -847,5 +1021,8 @@
   }
   .left-addon .fa-search {
     left: 1.5em;
+  }
+  .pushdown-menu {
+      height: 25em;
   }
 }

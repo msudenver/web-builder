@@ -5,15 +5,19 @@
 }
 .panel-heading {
     border-radius: 0;
+    font-weight: 700;
+    font-size: 24px;
 }
 .panel-default > .panel-heading {
-    background: #00447C;
+    background: black;
     color: #fff;
     font-size: 1.5em;
-    border-color: #00447C;
+    border-color: black;
 }
 .panel-title {
     color: #fff;
+    font-weight: 700;
+    font-size: 24px;
 }
 .panel-group {
   margin-bottom: 20px;
@@ -23,9 +27,7 @@
 .panel-danger>.panel-heading {
     background: #d63647;
     color: white;
-    font-size: 1.75em;
-    font-weight: 100;
-    border-color: #df1300;
+    border-color: #d63647;
 }
 
 .panel-danger {
