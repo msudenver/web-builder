@@ -13,7 +13,7 @@
 </head>
     <body>
           <!-- Global Header -->
-    <div class="navbar navbar-fixed-top toolbar blue-header" style="background-image:url(https://msudenver.edu/media/newsiteassets/images/header_asphalt.png);">
+    <nav class="navbar navbar-fixed-top toolbar blue-header" style="background-image:url(https://msudenver.edu/media/newsiteassets/images/header_asphalt.png);">
       <div class="header-container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle quick links navigation</span>
@@ -33,7 +33,7 @@
               </div>
             </div>
         </div>
-        <nav class="navbar-collapse collapse" id="content-nav" role="navigation">
+        <div class="navbar-collapse collapse" id="content-nav" role="navigation">
             <div>
               <a href="/visit"><button type="button" class="btn btn-default visit-give-mobile">Visit</button></a>
               <a href="/giving"><button type="button" class="btn btn-default visit-give-mobile">Give</button></a>
@@ -45,7 +45,7 @@
             </div>
             <ul class="nav navbar-nav navbar-center dropdown" id="nav-middle" aria-controls="st1">
               <li id="nav-faculty" role="button" aria-haspopup="true" aria-label="About Menu">
-                <a class="mobile-header mobile-about">About<span class="fa fa-chevron-down pull-right"></span></a>
+                <a href="#" class="mobile-header mobile-about">About<span class="fa fa-chevron-down pull-right"></span></a>
                 <ul class="pushdown-menu pushdown-about">
                   <li><a href="/about">About</a></li>
                   <li><a href="/about/strategicplan2020">Strategic Plan 2020</a></li>
@@ -57,7 +57,7 @@
                  </ul>
                </li>
                <li id="nav-admissions" role="button" aria-haspopup="true" aria-label="Prospective Students Menu">
-                 <a class="mobile-header mobile-ps"><span class="fa fa-chevron-down pull-right"></span>Prospective Students</a>
+                 <a href="#" class="mobile-header mobile-ps"><span class="fa fa-chevron-down pull-right"></span>Prospective Students</a>
                  <ul class="pushdown-menu pushdown-ps">
                    <li><a href="/admissions">Prospective Students</a></li>
                    <li><a href="/admissions/apply/first-timeundergraduate/">First-Time Undergraduate</a></li>
@@ -74,7 +74,7 @@
                  </ul>
                </li>
                <li id="nav-academics" role="button" aria-haspopup="true" aria-label="Academics Menu">
-                 <a class="mobile-header mobile-academics"><span class="fa fa-chevron-down pull-right"></span>Academics</a>
+                 <a href="#" class="mobile-header mobile-academics"><span class="fa fa-chevron-down pull-right"></span>Academics</a>
                  <ul class="pushdown-menu pushdown-academics">
                    <li><a href="/programs/">Academic Programs</a></li>
                    <li><a href="/las/">College of Letters, Arts and Sciences</a></li>
@@ -90,7 +90,7 @@
                  </ul>
                </li>
                <li id="nav-alumni" role="button" aria-haspopup="true" aria-label="Alumni &amp; Friends Menu">
-                 <a class="mobile-header mobile-alumni"><span class="fa fa-chevron-down pull-right"></span>Alumni &amp; Friends</a>
+                 <a href="#" aria-label="Alumni menu" class="mobile-header mobile-alumni"><span class="fa fa-chevron-down pull-right"></span>Alumni &amp; Friends</a>
                  <ul class="pushdown-menu pushdown-alumni menu-last">
                    <li><a href="/alumni/">Alumni &amp; Friends</a></li>
                    <li><a href="/alumni/careerservices/">Career Services</a></li>
@@ -104,7 +104,7 @@
                <li id="nav-athletics" role="button" aria-haspopup="true" aria-label="Athletics Link">
                  <a href="http://roadrunnersathletics.com" class="mobile-alumni athletics-header">Athletics</a>
                </li>
-               <li id="nav-search" role="button" aria-label="Search"><span class="fa fa-search search-desktop"></span></li>
+               <li id="nav-search" role="button" aria-label="Search"><span href="#" class="fa fa-search search-desktop"></span></li>
         <!-- Hidden Search Bar-->
               <form action="https://www.msudenver.edu/search">
                 <div id="search-input" class="inner-addon left-addon search-input-desktop" role="search" action="https://www.msudenver.edu/search">
@@ -125,7 +125,7 @@
               </form>
             </ul>
 
-        </nav>
+        </div>
         <!-- mobile search-input -->
         <form action="https://www.msudenver.edu/search">
           <div id="" class="" role="search" action="https://www.msudenver.edu/search">
@@ -152,7 +152,7 @@
         </form>
         <!-- end mobile search-input -->
       </div>
-    </div>
+    </nav>
 </header>
 
 <script type="text/javascript">
