@@ -7902,6 +7902,7 @@ col-xs-12, .faculty-staff-students {
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent;
   color: #001e36;
+  font-weight: 800;
 }
 
 .container .pushdown-menu {
