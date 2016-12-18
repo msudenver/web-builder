@@ -7902,7 +7902,6 @@ col-xs-12, .faculty-staff-students {
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent;
   color: #001e36;
-  font-weight: 800;
 }
 
 .container .pushdown-menu {
@@ -8084,6 +8083,10 @@ col-xs-12, .faculty-staff-students {
     margin-bottom: -2px;
   }
 
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
   .search-desktop {
     display: block !important;
   }
@@ -8105,16 +8108,6 @@ col-xs-12, .faculty-staff-students {
 
   ul.pushdown-menu > a li {
     padding-top: 0;
-  }
-
-  ul.nav.navbar-nav.navbar-center {
-    list-style: none;
-    margin: auto !important;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    float: none;
-    display: inline-block;
   }
 
   .navbar-collapse #wrapper {
@@ -8163,26 +8156,6 @@ col-xs-12, .faculty-staff-students {
     display: inline-block;
   }
 
-  #nav-faculty {
-    width: 11em;
-  }
-
-  #nav-admissions {
-    width: 12em;
-  }
-
-  #nav-academics {
-    width: 12em;
-  }
-
-  #nav-campus {
-    width: 10em;
-  }
-
-  #nav-alumni {
-    width: 10em;
-  }
-
   #nav-search {
     width: 1em;
   }
@@ -8219,7 +8192,6 @@ col-xs-12, .faculty-staff-students {
   #content-nav {
     letter-spacing: 0px;
     font-weight: 500;
-    padding-right: 4em;
   }
 
   .mobile-header {
@@ -8341,136 +8313,6 @@ col-xs-12, .faculty-staff-students {
 
   .pushdown-menu {
     height: 29em;
-  }
-}
-@media only screen and (min-width: 1358px) {
-  body {
-    padding-top: 180px;
-  }
-
-  #search-input #search-text {
-    font-size: 14px;
-  }
-
-  .left-addon .fa-search {
-    font-size: 23px;
-    top: -0.2em;
-  }
-
-  #content-nav #nav-search-close {
-    font-size: 20px;
-    top: -3.2em;
-    left: 15em;
-  }
-
-  .fa-search {
-    margin-right: 12px;
-    padding-top: 0.9em;
-  }
-
-  .search-desktop {
-    top: 0.3em !important;
-  }
-
-  #content-nav #search-input .search-button {
-    top: -2.7em;
-    height: 30px;
-    width: 130px;
-    left: 14em;
-  }
-
-  .msudenver_logo {
-    max-height: 125px;
-  }
-
-  .search-button {
-    font-size: 14px;
-    line-height: 31px;
-  }
-
-  #content-nav #search-input input[type=text] {
-    width: 97em;
-  }
-
-  #nav-faculty {
-    width: 13em;
-  }
-
-  #nav-admissions {
-    width: 17em;
-  }
-
-  #nav-academics {
-    width: 13em;
-  }
-
-  #nav-campus {
-    width: 13em;
-  }
-
-  #nav-alumni {
-    width: 13em;
-  }
-
-  #nav-search {
-    width: 0em;
-  }
-
-  .pushdown-menu {
-    height: 27em;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  #content-nav #nav-search-close {
-    left: 22.3em;
-  }
-
-  #content-nav #search-input .search-button {
-    left: 24em;
-  }
-
-  #nav-faculty {
-    width: 15em;
-  }
-
-  #nav-admissions {
-    width: 19em;
-  }
-
-  #nav-academics {
-    width: 15em;
-  }
-
-  #nav-campus {
-    width: 15em;
-  }
-
-  #nav-alumni {
-    width: 15em;
-  }
-
-  #nav-search {
-    width: 0em;
-  }
-
-  .apply-button {
-    font-size: 1.4em;
-    padding: 0.3em 0.3em;
-    width: 7%;
-    font-weight: 600;
-    margin-left: 0.15em;
-  }
-
-  .left-addon input {
-    padding-left: 9em;
-  }
-
-  .left-addon .fa-search {
-    left: 1.5em;
-  }
-
-  .pushdown-menu {
-    height: 25em;
   }
 }
 /* Homepage base styles */
