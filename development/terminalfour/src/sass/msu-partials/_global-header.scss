@@ -1,8 +1,8 @@
 /* MainHeaderNavigation Styles */
-.blue-header {
-  background: #000;
-  // background-image:url(../media/RYOR_bg_extended.png);
-}
+// .blue-header {
+//   background: #000;
+// background-image:url(../media/RYOR_bg_extended.png);
+// }
 
 .navbar .navbar-collapse {
   text-align: center;
@@ -16,13 +16,29 @@
 }
 
 .msudenver_logo_change {
-  height:102px;
+  height:70px;
 }
 
-.toolbar {
+.fac-staf-stu-mobile {
+  padding-left: 20px !important;
+  font-weight: 500;
+  line-height: 2.5em;
+}
+
+#nav-faculty, #nav-academics, #nav-alumni {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.pushdown-alumni {
+  padding-left: 1.2em !important;
+}
+
+.navbar {
+  min-height: 46px;
+  border-radius: 0!important;
+  margin-bottom: 0;
+  background: #000;
   z-index: 9999;
-    .navbar-collapse {
-  }
   button.navbar-toggle {
     color: #fff;
     font-size: 25px;
@@ -44,26 +60,6 @@
   ul li:hover {
     color: #333;
   }
-}
-
-.fac-staf-stu-mobile {
-  padding-left: 20px !important;
-  font-weight: 500;
-  line-height: 2.5em;
-}
-
-#nav-faculty, #nav-academics, #nav-alumni {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.pushdown-alumni {
-  padding-left: 1.2em !important;
-}
-
-.navbar {
-  min-height: 46px;
-  border-radius: 0!important;
-  margin-bottom: 0;
 }
 
 .navbar-collapse {
@@ -260,14 +256,14 @@
   border-radius: 0 0 10px 10px;
   text-align: center;
   padding: 0.3em 0.3em;
-  width: 7%;
+  width: 8%;
   font-family: $font-family-sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 2px;
   float: right !important;
   margin-left: 0.15em;
-  margin-right: 1em;
+  margin-right: .5em;
   -webkit-transition: background .25s ease;
   -moz-transition: background .25s ease;
   -o-transition: background .25s ease;
@@ -332,7 +328,8 @@
 }
 
 .msudenver_logo {
-  padding: 15px 15px 0px 15px;
+  margin-top: 15px;
+  margin-right:15px;
   max-height:56px;
 }
 
@@ -600,9 +597,9 @@ body{
     padding-top: 5px !important;
     padding-bottom: 2px;
   }
-  .blue-header {
-    border-bottom: 5px solid #005fae;
-  }
+  // .blue-header {
+  //   border-bottom: 5px solid #005fae;
+  // }
   .navbar-collapse {
       border-top: 1px solid transparent;
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
@@ -659,12 +656,12 @@ body{
   }
   .msudenver_logo {
     max-height:104px;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
   .navbar .navbar-nav {
     display: inline-block;
     float: none;
-    margin-bottom: -2px;
+    // margin-bottom: -2px;
   }
 
   .navbar .navbar-collapse {
@@ -730,9 +727,9 @@ body{
     left: 14em;
   }
 
-  .blue-header {
-    height: 10em;
-  }
+  // .blue-header {
+  //   height: 10em;
+  // }
   #content-nav {
     background: linear-gradient(to bottom, #fff 0px,#fff 60px, #ddd 60px);
   }
@@ -744,24 +741,6 @@ body{
   }
   .faculty-staff-students a {
     display: inline-block;
-  }
-  // #nav-faculty {
-  //   width: 11em;
-  // }
-  // #nav-admissions {
-  //   width: 12em;
-  // }
-  // #nav-academics {
-  //   width: 12em;
-  // }
-  // #nav-campus {
-  //   width: 10em;
-  // }
-  // #nav-alumni {
-  //   width: 10em;
-  // }
-  #nav-search {
-    width: 1em;
   }
   .navbar-toggle {
     display: none;
@@ -778,10 +757,10 @@ body{
   .fac-staf-stu-mobile {
     display: none;
   }
-  .blue-header {
+  // .blue-header {
     // background: #1b1b1b;
     // background-image:url(../media/RYOR_bg_extended.png);
-  }
+  // }
   #nav-admissions .mobile-header {
     padding-left: 0px;
     padding-right: 0px;
@@ -810,6 +789,25 @@ body{
       top: -3.2em;
       left: 17.8em;
   }
+
+  // #nav-faculty {
+  //   width: 11em;
+  // }
+  // #nav-admissions {
+  //   width: 12em;
+  // }
+  // #nav-academics {
+  //   width: 12em;
+  // }
+  // #nav-campus {
+  //   width: 10em;
+  // }
+  // #nav-alumni {
+  //   width: 10em;
+  // }
+  #nav-search {
+      width: 1em;
+    }
   #nav-faculty {
     width: 11em;
   }
@@ -899,11 +897,11 @@ body{
   }
   .apply-button {
     font-size: 1.2em;
-    padding: 0.3em 0.3em;
-    width: 8%;
-    font-weight: 600;
-    margin-left: 0.15em;
-    margin-right: 0em;
+    // padding: 0.3em 0.3em;
+    // width: 8%;
+    // font-weight: 600;
+    // margin-left: 0.15em;
+    // margin-right: 0em;
   }
   .pushdown-menu {
       height: 29em;
