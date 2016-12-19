@@ -13,15 +13,15 @@
 </head>
     <body>
           <!-- Global Header -->
-    <div class="navbar navbar-fixed-top toolbar blue-header" style="background-image:url(https://msudenver.edu/media/newsiteassets/images/header_asphalt.png);">
-      <div class="header-container">
+    <div class="navbar navbar-fixed-top" >
+      <div class="header-container" style="background-image:url(https://msudenver.edu/media/newsiteassets/images/header_asphalt.png); background-size: 100%;">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle quick links navigation</span>
           <span class="fa fa-bars"></span>
         </button>
             <div class="row">
               <div class="col-xs-8">
-                <img class="msudenver_logo" src="https://msudenver.edu/media/newsiteassets/images/msudenver_logo_header.svg" alt="MSU Denver Logo">
+                <a href="/"> <img class="msudenver_logo" src="https://msudenver.edu/media/newsiteassets/images/msudenver_logo_header.svg" alt="MSU Denver Logo"> </a>
               </div>
               <a href="/admissions"><div class="col-xs-1 apply-button">APPLY</div></a>
               <a href="/giving"><div class="col-xs-1 apply-button give-visit-buttons">GIVE</div></a>
@@ -44,8 +44,8 @@
               </ul>
             </div>
             <ul class="nav navbar-nav navbar-center dropdown" id="nav-middle">
-              <li id="nav-faculty">
-                <a class="mobile-header mobile-about">About<span class="fa fa-chevron-down pull-right"></span></a>
+              <li id="nav-faculty" role="button" aria-haspopup="true" aria-label="About Menu">
+                <a href="#" class="mobile-header mobile-about">About<span class="fa fa-chevron-down pull-right"></span></a>
                 <ul class="pushdown-menu pushdown-about">
                   <li><a href="/about">About</a></li>
                   <li><a href="/about/strategicplan2020">Strategic Plan 2020</a></li>
@@ -56,8 +56,8 @@
                   <li><a href="/commencement">Graduation / Commencement</a></li>
                  </ul>
                </li>
-               <li id="nav-admissions">
-                 <a class="mobile-header mobile-ps"><span class="fa fa-chevron-down pull-right"></span>Prospective Students</a>
+               <li id="nav-admissions"  role="button" aria-haspopup="true" aria-label="Admissions Menu">
+                 <a href="#" class="mobile-header mobile-ps"><span class="fa fa-chevron-down pull-right"></span>Prospective Students</a>
                  <ul class="pushdown-menu pushdown-ps">
                    <li><a href="/admissions">Prospective Students</a></li>
                    <li><a href="/admissions/apply/first-timeundergraduate/">First-Time Undergraduate</a></li>
@@ -73,8 +73,8 @@
                    <li><a href="/cost">Cost</a></li>
                  </ul>
                </li>
-               <li id="nav-academics">
-                 <a class="mobile-header mobile-academics"><span class="fa fa-chevron-down pull-right"></span>Academics</a>
+               <li id="nav-academics" role="button" aria-haspopup="true" aria-label="Academics Menu">
+                 <a href="#" class="mobile-header mobile-academics"><span class="fa fa-chevron-down pull-right"></span>Academics</a>
                  <ul class="pushdown-menu pushdown-academics">
                    <li><a href="/programs/">Academic Programs</a></li>
                    <li><a href="/las/">College of Letters, Arts and Sciences</a></li>
@@ -89,8 +89,8 @@
                    <li><a href="/studentengagementandwellness">Student Engagement &amp; Wellness</a></li>
                  </ul>
                </li>
-               <li id="nav-alumni">
-                 <a class="mobile-header mobile-alumni"><span class="fa fa-chevron-down pull-right"></span>Alumni &amp; Friends</a>
+               <li id="nav-alumni" role="button" aria-haspopup="true" aria-label="Alumni Menu">
+                 <a href="#" class="mobile-header mobile-alumni"><span class="fa fa-chevron-down pull-right"></span>Alumni &amp; Friends</a>
                  <ul class="pushdown-menu pushdown-alumni menu-last">
                    <li><a href="/alumni/">Alumni &amp; Friends</a></li>
                    <li><a href="/alumni/careerservices/">Career Services</a></li>
@@ -101,10 +101,10 @@
                    <li><a href="/alumni/events">Alumni Events</a></li>
                  </ul>
                </li>
-               <li id="nav-athletics">
+               <li id="nav-athletics" role="button" aria-haspopup="true" aria-label="Athletics Link">
                  <a href="http://roadrunnersathletics.com" class="mobile-alumni athletics-header">Athletics</a>
                </li>
-               <li id="nav-search"><span class="fa fa-search search-desktop"></span></li>
+               <li id="nav-search" aria-haspopup="true" aria-label="Search toolbar" class="hidden-xs hidden-sm"><a href="#"><span class="fa fa-search search-desktop"></span></a></li>
         <!-- Hidden Search Bar-->
               <form action="https://www.msudenver.edu/search">
                 <div id="search-input" class="inner-addon left-addon search-input-desktop" role="search" action="https://www.msudenver.edu/search">

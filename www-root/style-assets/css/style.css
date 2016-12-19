@@ -7412,10 +7412,6 @@ header {
 
 /**  Homepage Feature Components michael.mason@terminalfour.com **/
 /* MainHeaderNavigation Styles */
-.blue-header {
-  background: #000;
-}
-
 .navbar .navbar-collapse {
   text-align: center;
 }
@@ -7428,31 +7424,7 @@ header {
 }
 
 .msudenver_logo_change {
-  height: 102px;
-}
-
-.toolbar {
-  z-index: 9999;
-}
-.toolbar button.navbar-toggle {
-  color: #fff;
-  font-size: 25px;
-  background-color: #003a6e;
-  border-radius: 0px;
-}
-.toolbar ul li {
-  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #00447c;
-  padding-right: .25em;
-  padding-left: .25em;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-  list-style: none;
-}
-.toolbar ul li:hover {
-  color: #333;
+  height: 70px;
 }
 
 .fac-staf-stu-mobile {
@@ -7471,9 +7443,30 @@ header {
 }
 
 .navbar {
-  min-height: 46px;
-  border-radius: 0 !important;
+  border: 0;
   margin-bottom: 0;
+  background: #000;
+  z-index: 9999;
+}
+.navbar button.navbar-toggle {
+  color: #fff;
+  font-size: 25px;
+  background-color: #003a6e;
+  border-radius: 0px;
+}
+.navbar ul li {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #00447c;
+  padding-right: .25em;
+  padding-left: .25em;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  list-style: none;
+}
+.navbar ul li:hover {
+  color: #333;
 }
 
 .navbar-collapse {
@@ -7607,19 +7600,15 @@ header {
 
 .fa-search {
   color: #007dc3 !important;
-  padding-top: 1.3em;
   font-size: 1.2em;
   cursor: pointer;
 }
 
+#nav-search a {
+  background: #005fae;
+}
 #nav-search .fa-search {
   color: #fff !important;
-  background: #005fae;
-  margin-top: 0.4em;
-  padding-left: 0.8em;
-  padding-right: 1.7em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
 }
 
 .fa-search-opened {
@@ -7670,14 +7659,14 @@ header {
   border-radius: 0 0 10px 10px;
   text-align: center;
   padding: 0.3em 0.3em;
-  width: 7%;
+  width: 8%;
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 2px;
   float: right !important;
   margin-left: 0.15em;
-  margin-right: 1em;
+  margin-right: .5em;
   -webkit-transition: background .25s ease;
   -moz-transition: background .25s ease;
   -o-transition: background .25s ease;
@@ -7742,8 +7731,10 @@ header {
 }
 
 .msudenver_logo {
-  padding: 15px 15px 0px 15px;
-  max-height: 56px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  max-height: 46px;
 }
 
 #search-input #search-text {
@@ -7792,10 +7783,7 @@ header {
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 24px;
-}
-
-.search-desktop {
-  display: none !important;
+  padding-top: 0.9em;
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
@@ -7902,7 +7890,6 @@ col-xs-12, .faculty-staff-students {
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent;
   color: #001e36;
-  font-weight: 800;
 }
 
 .container .pushdown-menu {
@@ -7939,7 +7926,8 @@ col-xs-12, .faculty-staff-students {
 }
 
 #nav-search {
-  width: 1em;
+  width: 60px;
+  padding-top: 4px;
 }
 
 @media screen and (max-width: 450px) {
@@ -7999,10 +7987,6 @@ col-xs-12, .faculty-staff-students {
   .left-addon input {
     padding-top: 5px !important;
     padding-bottom: 2px;
-  }
-
-  .blue-header {
-    border-bottom: 5px solid #005fae;
   }
 
   .navbar-collapse {
@@ -8075,17 +8059,16 @@ col-xs-12, .faculty-staff-students {
 
   .msudenver_logo {
     max-height: 104px;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
 
   .navbar .navbar-nav {
     display: inline-block;
     float: none;
-    margin-bottom: -2px;
   }
 
-  .search-desktop {
-    display: block !important;
+  .navbar .navbar-collapse {
+    text-align: center;
   }
 
   li.dropdown {
@@ -8105,16 +8088,6 @@ col-xs-12, .faculty-staff-students {
 
   ul.pushdown-menu > a li {
     padding-top: 0;
-  }
-
-  ul.nav.navbar-nav.navbar-center {
-    list-style: none;
-    margin: auto !important;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    float: none;
-    display: inline-block;
   }
 
   .navbar-collapse #wrapper {
@@ -8143,10 +8116,6 @@ col-xs-12, .faculty-staff-students {
     left: 14em;
   }
 
-  .blue-header {
-    height: 10em;
-  }
-
   #content-nav {
     background: linear-gradient(to bottom, #fff 0px, #fff 60px, #ddd 60px);
   }
@@ -8161,30 +8130,6 @@ col-xs-12, .faculty-staff-students {
 
   .faculty-staff-students a {
     display: inline-block;
-  }
-
-  #nav-faculty {
-    width: 11em;
-  }
-
-  #nav-admissions {
-    width: 12em;
-  }
-
-  #nav-academics {
-    width: 12em;
-  }
-
-  #nav-campus {
-    width: 10em;
-  }
-
-  #nav-alumni {
-    width: 10em;
-  }
-
-  #nav-search {
-    width: 1em;
   }
 
   .navbar-toggle {
@@ -8207,19 +8152,9 @@ col-xs-12, .faculty-staff-students {
     display: none;
   }
 
-  #nav-admissions .mobile-header {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .navbar-nav > li > a {
-    padding-bottom: 8px;
-  }
-
   #content-nav {
     letter-spacing: 0px;
     font-weight: 500;
-    padding-right: 4em;
   }
 
   .mobile-header {
@@ -8262,7 +8197,7 @@ col-xs-12, .faculty-staff-students {
   }
 }
 @media (min-width: 1200px) {
-  .header-container {
+  .header-container, .container-fluid {
     padding-left: 8.33333%;
     padding-right: 8.33333%;
   }
@@ -8272,7 +8207,6 @@ col-xs-12, .faculty-staff-students {
   }
 
   #content-nav {
-    letter-spacing: 0px;
     font-weight: 600;
     font-size: 18px;
   }
@@ -8284,7 +8218,6 @@ col-xs-12, .faculty-staff-students {
 
   .fa-search {
     font-size: 1.2em;
-    padding-top: 0.9em;
   }
 
   #content-nav #search-input input[type=text] {
@@ -8323,154 +8256,15 @@ col-xs-12, .faculty-staff-students {
   }
 
   #nav-alumni {
-    width: 11em;
-  }
-
-  #nav-search {
-    width: 0em;
+    width: 12em;
   }
 
   .apply-button {
     font-size: 1.2em;
-    padding: 0.3em 0.3em;
-    width: 8%;
-    font-weight: 600;
-    margin-left: 0.15em;
-    margin-right: 0em;
   }
 
   .pushdown-menu {
     height: 29em;
-  }
-}
-@media only screen and (min-width: 1358px) {
-  body {
-    padding-top: 180px;
-  }
-
-  #search-input #search-text {
-    font-size: 14px;
-  }
-
-  .left-addon .fa-search {
-    font-size: 23px;
-    top: -0.2em;
-  }
-
-  #content-nav #nav-search-close {
-    font-size: 20px;
-    top: -3.2em;
-    left: 15em;
-  }
-
-  .fa-search {
-    margin-right: 12px;
-    padding-top: 0.9em;
-  }
-
-  .search-desktop {
-    top: 0.3em !important;
-  }
-
-  #content-nav #search-input .search-button {
-    top: -2.7em;
-    height: 30px;
-    width: 130px;
-    left: 14em;
-  }
-
-  .msudenver_logo {
-    max-height: 125px;
-  }
-
-  .search-button {
-    font-size: 14px;
-    line-height: 31px;
-  }
-
-  #content-nav #search-input input[type=text] {
-    width: 97em;
-  }
-
-  #nav-faculty {
-    width: 13em;
-  }
-
-  #nav-admissions {
-    width: 17em;
-  }
-
-  #nav-academics {
-    width: 13em;
-  }
-
-  #nav-campus {
-    width: 13em;
-  }
-
-  #nav-alumni {
-    width: 13em;
-  }
-
-  #nav-search {
-    width: 0em;
-  }
-
-  .pushdown-menu {
-    height: 27em;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  #content-nav #nav-search-close {
-    left: 22.3em;
-  }
-
-  #content-nav #search-input .search-button {
-    left: 24em;
-  }
-
-  #nav-faculty {
-    width: 15em;
-  }
-
-  #nav-admissions {
-    width: 19em;
-  }
-
-  #nav-academics {
-    width: 15em;
-  }
-
-  #nav-campus {
-    width: 15em;
-  }
-
-  #nav-alumni {
-    width: 15em;
-  }
-
-  #nav-search {
-    width: 0em;
-  }
-
-  .apply-button {
-    font-size: 1.4em;
-    padding: 0.3em 0.3em;
-    width: 7%;
-    font-weight: 600;
-    margin-left: 0.15em;
-  }
-
-  .left-addon input {
-    padding-left: 9em;
-  }
-
-  .left-addon .fa-search {
-    left: 1.5em;
-  }
-
-  .pushdown-menu {
-    height: 25em;
   }
 }
 /* Homepage base styles */

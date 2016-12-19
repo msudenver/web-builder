@@ -1,8 +1,8 @@
 /* MainHeaderNavigation Styles */
-.blue-header {
-  background: #000;
-  // background-image:url(../media/RYOR_bg_extended.png);
-}
+// .blue-header {
+//   background: #000;
+// background-image:url(../media/RYOR_bg_extended.png);
+// }
 
 .navbar .navbar-collapse {
   text-align: center;
@@ -16,13 +16,29 @@
 }
 
 .msudenver_logo_change {
-  height:102px;
+  height:70px;
 }
 
-.toolbar {
+.fac-staf-stu-mobile {
+  padding-left: 20px !important;
+  font-weight: 500;
+  line-height: 2.5em;
+}
+
+#nav-faculty, #nav-academics, #nav-alumni {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.pushdown-alumni {
+  padding-left: 1.2em !important;
+}
+
+.navbar {
+  // min-height: 46px;
+  border: 0;
+  margin-bottom: 0;
+  background: #000;
   z-index: 9999;
-    .navbar-collapse {
-  }
   button.navbar-toggle {
     color: #fff;
     font-size: 25px;
@@ -44,26 +60,6 @@
   ul li:hover {
     color: #333;
   }
-}
-
-.fac-staf-stu-mobile {
-  padding-left: 20px !important;
-  font-weight: 500;
-  line-height: 2.5em;
-}
-
-#nav-faculty, #nav-academics, #nav-alumni {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.pushdown-alumni {
-  padding-left: 1.2em !important;
-}
-
-.navbar {
-  min-height: 46px;
-  border-radius: 0!important;
-  margin-bottom: 0;
 }
 
 .navbar-collapse {
@@ -200,21 +196,26 @@
 
 .fa-search {
   color: #007dc3 !important;
-  padding-top: 1.3em;
+  // padding-top: 1.3em;
   font-size: 1.2em;
   cursor: pointer;
 }
 
-#nav-search .fa-search {
+#nav-search {
+  a{
+    background: #005fae;
+  }
+  .fa-search {
   color: $white !important;
-  background: #005fae;
-  margin-top: 0.4em;
-  padding-left: 0.8em;
-  padding-right: 1.7em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+
+  // margin-top: 0.4em;
+  // padding-left: 0.8em;
+  // padding-right: 1.7em;
+  // padding-top: 0.5em;
+  // padding-bottom: 0.5em;
 }
 
+}
 .fa-search-opened {
   color: #717171 !important;
   padding-top: 10px;
@@ -260,14 +261,14 @@
   border-radius: 0 0 10px 10px;
   text-align: center;
   padding: 0.3em 0.3em;
-  width: 7%;
+  width: 8%;
   font-family: $font-family-sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 2px;
   float: right !important;
   margin-left: 0.15em;
-  margin-right: 1em;
+  margin-right: .5em;
   -webkit-transition: background .25s ease;
   -moz-transition: background .25s ease;
   -o-transition: background .25s ease;
@@ -332,8 +333,10 @@
 }
 
 .msudenver_logo {
-  padding: 15px 15px 0px 15px;
-  max-height:56px;
+  margin-top: 15px;
+  margin-right:15px;
+  margin-left:15px;
+  max-height:46px;
 }
 
 #search-input #search-text {
@@ -388,11 +391,12 @@
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 24px;
+    padding-top: 0.9em;
 }
 
-.search-desktop {
-  display: none !important;
-}
+// .search-desktop {
+//   display: none !important;
+// }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
     max-height: none;
@@ -498,7 +502,7 @@ col-xs-12, .faculty-staff-students {
 .nav > li > a:hover, .nav > li > a:focus {
     background-color: transparent;
     color: #001e36;
-    font-weight: 800;
+    // font-weight: 800;
 }
 
 .container .pushdown-menu {
@@ -530,7 +534,8 @@ col-xs-12, .faculty-staff-students {
   width: auto;
 }
 #nav-search {
-  width: 1em;
+  width: 60px;
+  padding-top: 4px;
 }
 
 @media screen and (max-width: 450px) {
@@ -600,9 +605,9 @@ body{
     padding-top: 5px !important;
     padding-bottom: 2px;
   }
-  .blue-header {
-    border-bottom: 5px solid #005fae;
-  }
+  // .blue-header {
+  //   border-bottom: 5px solid #005fae;
+  // }
   .navbar-collapse {
       border-top: 1px solid transparent;
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
@@ -659,17 +664,21 @@ body{
   }
   .msudenver_logo {
     max-height:104px;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
   .navbar .navbar-nav {
     display: inline-block;
     float: none;
-    margin-bottom: -2px;
+    // margin-bottom: -2px;
   }
 
-  .search-desktop {
-    display: block !important;
+  .navbar .navbar-collapse {
+    text-align: center;
   }
+
+  // .search-desktop {
+  //   display: block !important;
+  // }
   li.dropdown {
     border-right: 2px solid #4cb4f2;
     font-size: 0.74em;
@@ -689,15 +698,15 @@ body{
     padding-top: 0;
   }
 
-  ul.nav.navbar-nav.navbar-center {
-    list-style: none;
-    margin: auto !important;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    float: none;
-    display: inline-block;
-  }
+  // ul.nav.navbar-nav.navbar-center {
+  //   list-style: none;
+  //   margin: auto !important;
+  //   width: -webkit-fit-content;
+  //   width: -moz-fit-content;
+  //   width: fit-content;
+  //   float: none;
+  //   display: inline-block;
+  // }
 
   .navbar-collapse #wrapper {
     display: none;
@@ -726,9 +735,9 @@ body{
     left: 14em;
   }
 
-  .blue-header {
-    height: 10em;
-  }
+  // .blue-header {
+  //   height: 10em;
+  // }
   #content-nav {
     background: linear-gradient(to bottom, #fff 0px,#fff 60px, #ddd 60px);
   }
@@ -740,24 +749,6 @@ body{
   }
   .faculty-staff-students a {
     display: inline-block;
-  }
-  #nav-faculty {
-    width: 11em;
-  }
-  #nav-admissions {
-    width: 12em;
-  }
-  #nav-academics {
-    width: 12em;
-  }
-  #nav-campus {
-    width: 10em;
-  }
-  #nav-alumni {
-    width: 10em;
-  }
-  #nav-search {
-    width: 1em;
   }
   .navbar-toggle {
     display: none;
@@ -774,22 +765,22 @@ body{
   .fac-staf-stu-mobile {
     display: none;
   }
-  .blue-header {
+  // .blue-header {
     // background: #1b1b1b;
     // background-image:url(../media/RYOR_bg_extended.png);
-  }
-  #nav-admissions .mobile-header {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
+  // }
+  // #nav-admissions .mobile-header {
+  //   padding-left: 0px;
+  //   padding-right: 0px;
+  // }
 
-  .navbar-nav > li > a {
-      padding-bottom: 8px;
-  }
+  // .navbar-nav > li > a {
+  //     padding-bottom: 8px;
+  // }
   #content-nav {
     letter-spacing: 0px;
     font-weight: 500;
-    padding-right: 4em;
+    // padding-right: 4em;
   }
   .mobile-header {
     margin-top: 5px;
@@ -806,6 +797,25 @@ body{
       top: -3.2em;
       left: 17.8em;
   }
+
+  // #nav-faculty {
+  //   width: 11em;
+  // }
+  // #nav-admissions {
+  //   width: 12em;
+  // }
+  // #nav-academics {
+  //   width: 12em;
+  // }
+  // #nav-campus {
+  //   width: 10em;
+  // }
+  // #nav-alumni {
+  //   width: 10em;
+  // }
+  // #nav-search {
+  //     width: 1em;
+  //   }
   #nav-faculty {
     width: 11em;
   }
@@ -831,7 +841,7 @@ body{
 
 
 @media (min-width: $screen-lg-min) {
-  .header-container {
+  .header-container, .container-fluid {
         padding-left: percentage(1/$grid-columns) ;
         padding-right: percentage(1/$grid-columns) ;
     }
@@ -840,7 +850,7 @@ body{
       padding-top: 160px;
     }
   #content-nav {
-      letter-spacing: 0px;
+      // letter-spacing: 0px;
       font-weight: 600;
       font-size: 18px;
       // padding-right: 6em;
@@ -855,7 +865,7 @@ body{
   }
   .fa-search {
   font-size: 1.2em;
-  padding-top: 0.9em;
+
   }
   #content-nav #search-input input[type=text] {
     width: 89em;
@@ -888,18 +898,18 @@ body{
     width: 11em;
   }
   #nav-alumni {
-    width: 11em;
+    width: 12em;
   }
-  #nav-search {
-    width: 0em;
-  }
+  // #nav-search {
+  //   width: 3em;
+  // }
   .apply-button {
     font-size: 1.2em;
-    padding: 0.3em 0.3em;
-    width: 8%;
-    font-weight: 600;
-    margin-left: 0.15em;
-    margin-right: 0em;
+    // padding: 0.3em 0.3em;
+    // width: 8%;
+    // font-weight: 600;
+    // margin-left: 0.15em;
+    // margin-right: 0em;
   }
   .pushdown-menu {
       height: 29em;
@@ -907,75 +917,75 @@ body{
 }
 
 @media only screen and (min-width:1358px) {
-  body {
-    padding-top: 180px;
-  }
-  #search-input #search-text {
-    font-size: 14px;
-  }
-
-  .left-addon .fa-search {
-    font-size: 23px;
-    top: -0.2em;
-  }
-
-  #content-nav #nav-search-close {
-    font-size: 20px;
-    top: -3.2em;
-    left: 15em;
-  }
-
-  .fa-search {
-    margin-right: 12px;
-    padding-top: 0.9em;
-  }
-
-  .search-desktop {
-    top: 0.3em !important;
-  }
-  #content-nav #search-input .search-button {
-    top: -2.7em;
-    height: 30px;
-    width: 130px;
-    left: 14em;
-  }
-
-  .msudenver_logo {
-      max-height:125px;
-  }
-
-  .search-button {
-    font-size: 14px;
-    line-height: 31px;
-  }
-  #content-nav #search-input input[type=text] {
-    width: 97em;
-  }
-
-  #nav-faculty {
-    width: 13em;
-  }
-  #nav-admissions {
-    width: 17em;
-  }
-  #nav-academics {
-    width: 13em;
-  }
-  #nav-campus {
-    width: 13em;
-  }
-  #nav-alumni {
-    width: 13em;
-  }
-  #nav-search {
-    width: 0em;
-  }
-  #content-nav{
+  // body {
+  //   padding-top: 180px;
+  // }
+  // #search-input #search-text {
+  //   font-size: 14px;
+  // }
+  //
+  // .left-addon .fa-search {
+  //   font-size: 23px;
+  //   top: -0.2em;
+  // }
+  //
+  // #content-nav #nav-search-close {
+  //   font-size: 20px;
+  //   top: -3.2em;
+  //   left: 15em;
+  // }
+  //
+  // .fa-search {
+  //   margin-right: 12px;
+  //   padding-top: 0.9em;
+  // }
+  //
+  // .search-desktop {
+  //   top: 0.3em !important;
+  // }
+  // #content-nav #search-input .search-button {
+  //   top: -2.7em;
+  //   height: 30px;
+  //   width: 130px;
+  //   left: 14em;
+  // }
+  //
+  // .msudenver_logo {
+  //     max-height:125px;
+  // }
+  //
+  // .search-button {
+  //   font-size: 14px;
+  //   line-height: 31px;
+  // }
+  // #content-nav #search-input input[type=text] {
+  //   width: 97em;
+  // }
+  //
+  // #nav-faculty {
+  //   width: 13em;
+  // }
+  // #nav-admissions {
+  //   width: 17em;
+  // }
+  // #nav-academics {
+  //   width: 13em;
+  // }
+  // #nav-campus {
+  //   width: 13em;
+  // }
+  // #nav-alumni {
+  //   width: 13em;
+  // }
+  // #nav-search {
+  //   width: 0em;
+  // }
+  // #content-nav{
       // padding-right: 4em;
-  }
-  .pushdown-menu {
-      height: 27em;
-  }
+  // }
+  // .pushdown-menu {
+  //     height: 27em;
+  // }
   // body {
   //   padding-top: 122px;
   // }
@@ -984,45 +994,45 @@ body{
 
 @media only screen and (min-width:1500px) {
 
-  #content-nav #nav-search-close {
-    left: 22.3em;
-  }
-  #content-nav #search-input .search-button {
-    left: 24em;
-  }
-
-  #nav-faculty {
-    width: 15em;
-  }
-  #nav-admissions {
-    width: 19em;
-  }
-  #nav-academics {
-    width: 15em;
-  }
-  #nav-campus {
-    width: 15em;
-  }
-  #nav-alumni {
-    width: 15em;
-  }
-  #nav-search {
-    width: 0em;
-  }
-  .apply-button {
-    font-size: 1.4em;
-    padding: 0.3em 0.3em;
-    width: 7%;
-    font-weight: 600;
-    margin-left: 0.15em;
-  }
-  .left-addon input {
-    padding-left: 9em;
-  }
-  .left-addon .fa-search {
-    left: 1.5em;
-  }
-  .pushdown-menu {
-      height: 25em;
-  }
+  // #content-nav #nav-search-close {
+  //   left: 22.3em;
+  // }
+  // #content-nav #search-input .search-button {
+  //   left: 24em;
+  // }
+  //
+  // #nav-faculty {
+  //   width: 15em;
+  // }
+  // #nav-admissions {
+  //   width: 19em;
+  // }
+  // #nav-academics {
+  //   width: 15em;
+  // }
+  // #nav-campus {
+  //   width: 15em;
+  // }
+  // #nav-alumni {
+  //   width: 15em;
+  // }
+  // #nav-search {
+  //   width: 0em;
+  // }
+  // .apply-button {
+  //   font-size: 1.4em;
+  //   padding: 0.3em 0.3em;
+  //   width: 7%;
+  //   font-weight: 600;
+  //   margin-left: 0.15em;
+  // }
+  // .left-addon input {
+  //   padding-left: 9em;
+  // }
+  // .left-addon .fa-search {
+  //   left: 1.5em;
+  // }
+  // .pushdown-menu {
+  //     height: 25em;
+  // }
 }
