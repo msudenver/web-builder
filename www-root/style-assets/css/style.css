@@ -7443,8 +7443,7 @@ header {
 }
 
 .navbar {
-  min-height: 46px;
-  border-radius: 0 !important;
+  border: 0;
   margin-bottom: 0;
   background: #000;
   z-index: 9999;
@@ -7601,19 +7600,15 @@ header {
 
 .fa-search {
   color: #007dc3 !important;
-  padding-top: 1.3em;
   font-size: 1.2em;
   cursor: pointer;
 }
 
+#nav-search a {
+  background: #005fae;
+}
 #nav-search .fa-search {
   color: #fff !important;
-  background: #005fae;
-  margin-top: 0.4em;
-  padding-left: 0.8em;
-  padding-right: 1.7em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
 }
 
 .fa-search-opened {
@@ -7788,10 +7783,7 @@ header {
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 24px;
-}
-
-.search-desktop {
-  display: none !important;
+  padding-top: 0.9em;
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
@@ -7934,7 +7926,8 @@ col-xs-12, .faculty-staff-students {
 }
 
 #nav-search {
-  width: 1em;
+  width: 60px;
+  padding-top: 4px;
 }
 
 @media screen and (max-width: 450px) {
@@ -8078,10 +8071,6 @@ col-xs-12, .faculty-staff-students {
     text-align: center;
   }
 
-  .search-desktop {
-    display: block !important;
-  }
-
   li.dropdown {
     border-right: 2px solid #4cb4f2;
     font-size: 0.74em;
@@ -8163,15 +8152,6 @@ col-xs-12, .faculty-staff-students {
     display: none;
   }
 
-  #nav-admissions .mobile-header {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .navbar-nav > li > a {
-    padding-bottom: 8px;
-  }
-
   #content-nav {
     letter-spacing: 0px;
     font-weight: 500;
@@ -8190,10 +8170,6 @@ col-xs-12, .faculty-staff-students {
   #content-nav #nav-search-close {
     top: -3.2em;
     left: 17.8em;
-  }
-
-  #nav-search {
-    width: 1em;
   }
 
   #nav-faculty {
@@ -8221,7 +8197,7 @@ col-xs-12, .faculty-staff-students {
   }
 }
 @media (min-width: 1200px) {
-  .header-container {
+  .header-container, .container-fluid {
     padding-left: 8.33333%;
     padding-right: 8.33333%;
   }
@@ -8231,7 +8207,6 @@ col-xs-12, .faculty-staff-students {
   }
 
   #content-nav {
-    letter-spacing: 0px;
     font-weight: 600;
     font-size: 18px;
   }
@@ -8243,7 +8218,6 @@ col-xs-12, .faculty-staff-students {
 
   .fa-search {
     font-size: 1.2em;
-    padding-top: 0.9em;
   }
 
   #content-nav #search-input input[type=text] {
@@ -8282,11 +8256,7 @@ col-xs-12, .faculty-staff-students {
   }
 
   #nav-alumni {
-    width: 11em;
-  }
-
-  #nav-search {
-    width: 0em;
+    width: 12em;
   }
 
   .apply-button {

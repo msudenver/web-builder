@@ -34,8 +34,8 @@
 }
 
 .navbar {
-  min-height: 46px;
-  border-radius: 0!important;
+  // min-height: 46px;
+  border: 0;
   margin-bottom: 0;
   background: #000;
   z-index: 9999;
@@ -196,21 +196,26 @@
 
 .fa-search {
   color: #007dc3 !important;
-  padding-top: 1.3em;
+  // padding-top: 1.3em;
   font-size: 1.2em;
   cursor: pointer;
 }
 
-#nav-search .fa-search {
+#nav-search {
+  a{
+    background: #005fae;
+  }
+  .fa-search {
   color: $white !important;
-  background: #005fae;
-  margin-top: 0.4em;
-  padding-left: 0.8em;
-  padding-right: 1.7em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+
+  // margin-top: 0.4em;
+  // padding-left: 0.8em;
+  // padding-right: 1.7em;
+  // padding-top: 0.5em;
+  // padding-bottom: 0.5em;
 }
 
+}
 .fa-search-opened {
   color: #717171 !important;
   padding-top: 10px;
@@ -386,11 +391,12 @@
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 24px;
+    padding-top: 0.9em;
 }
 
-.search-desktop {
-  display: none !important;
-}
+// .search-desktop {
+//   display: none !important;
+// }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
     max-height: none;
@@ -528,7 +534,8 @@ col-xs-12, .faculty-staff-students {
   width: auto;
 }
 #nav-search {
-  width: 1em;
+  width: 60px;
+  padding-top: 4px;
 }
 
 @media screen and (max-width: 450px) {
@@ -669,9 +676,9 @@ body{
     text-align: center;
   }
 
-  .search-desktop {
-    display: block !important;
-  }
+  // .search-desktop {
+  //   display: block !important;
+  // }
   li.dropdown {
     border-right: 2px solid #4cb4f2;
     font-size: 0.74em;
@@ -762,14 +769,14 @@ body{
     // background: #1b1b1b;
     // background-image:url(../media/RYOR_bg_extended.png);
   // }
-  #nav-admissions .mobile-header {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
+  // #nav-admissions .mobile-header {
+  //   padding-left: 0px;
+  //   padding-right: 0px;
+  // }
 
-  .navbar-nav > li > a {
-      padding-bottom: 8px;
-  }
+  // .navbar-nav > li > a {
+  //     padding-bottom: 8px;
+  // }
   #content-nav {
     letter-spacing: 0px;
     font-weight: 500;
@@ -806,9 +813,9 @@ body{
   // #nav-alumni {
   //   width: 10em;
   // }
-  #nav-search {
-      width: 1em;
-    }
+  // #nav-search {
+  //     width: 1em;
+  //   }
   #nav-faculty {
     width: 11em;
   }
@@ -834,7 +841,7 @@ body{
 
 
 @media (min-width: $screen-lg-min) {
-  .header-container {
+  .header-container, .container-fluid {
         padding-left: percentage(1/$grid-columns) ;
         padding-right: percentage(1/$grid-columns) ;
     }
@@ -843,7 +850,7 @@ body{
       padding-top: 160px;
     }
   #content-nav {
-      letter-spacing: 0px;
+      // letter-spacing: 0px;
       font-weight: 600;
       font-size: 18px;
       // padding-right: 6em;
@@ -858,7 +865,7 @@ body{
   }
   .fa-search {
   font-size: 1.2em;
-  padding-top: 0.9em;
+
   }
   #content-nav #search-input input[type=text] {
     width: 89em;
@@ -891,11 +898,11 @@ body{
     width: 11em;
   }
   #nav-alumni {
-    width: 11em;
+    width: 12em;
   }
-  #nav-search {
-    width: 0em;
-  }
+  // #nav-search {
+  //   width: 3em;
+  // }
   .apply-button {
     font-size: 1.2em;
     // padding: 0.3em 0.3em;
