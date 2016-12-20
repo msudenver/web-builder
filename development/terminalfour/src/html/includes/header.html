@@ -215,7 +215,7 @@ $('.search-desktop').click(function(){
    $('#content-nav').css('max-height', '60px');
 });
 $('.fa-close').click(function(){
-   $('#content-nav').css('max-height', '');
+   $('#content-nav').css('max-height',$(window).height());
 });
 </script>
 
@@ -244,6 +244,11 @@ $('#nav-search-close').click(function(){
 	$('#search-input').hide();
 	$('#nav-admissions, #nav-academics, #nav-campus, #nav-athletics, #nav-hub, #nav-alumni, #nav-faculty, #nav-search').fadeTo('slow', 1);
 });
+</script>
+
+/* allow mobile menu dropdown to scroll */
+<script>
+$('#content-nav').css('max-height',$(window).height());
 </script>
 
 <script>
