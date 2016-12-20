@@ -15,10 +15,6 @@
   transition: all 0.5s ease-in-out;
 }
 
-.msudenver_logo_change {
-  height:70px;
-}
-
 .fac-staf-stu-mobile {
   padding-left: 20px !important;
   font-weight: 500;
@@ -336,7 +332,7 @@
   margin-top: 15px;
   margin-right:15px;
   margin-left:15px;
-  max-height:46px;
+  height:46px;
 }
 
 #search-input #search-text {
@@ -659,16 +655,18 @@ body{
 @media (min-width: $screen-md-min) {
 
   body {
-    padding-top: 160px;
+    padding-top: 210px;
   }
 
   .header-container {
       @include container-fixed();
   }
   .msudenver_logo {
-    max-height:104px;
+    height:120px;
     margin-bottom: 15px;
   }
+
+
   .navbar .navbar-nav {
     display: inline-block;
     float: none;
@@ -742,7 +740,7 @@ body{
   //   height: 10em;
   // }
   #content-nav {
-    background: linear-gradient(to bottom, #fff 0px,#fff 60px, #ddd 60px);
+    background: linear-gradient(to bottom, #fff 0px,#fff 65px, #ddd 55px);
   }
   .mobile-header {
     border-right: 1px solid #337ab7;
@@ -849,9 +847,9 @@ body{
         padding-right: percentage(1/$grid-columns) ;
     }
 
-    body {
-      padding-top: 160px;
-    }
+    // body {
+    //   padding-top: 210px;
+    // }
   #content-nav {
       // letter-spacing: 0px;
       font-weight: 600;
@@ -1039,3 +1037,8 @@ body{
   //     height: 25em;
   // }
 }
+
+
+  .msudenver_logo_change {
+    height:70px;
+  }

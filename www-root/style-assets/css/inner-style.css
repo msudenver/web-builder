@@ -7423,10 +7423,6 @@ header {
   transition: all 0.5s ease-in-out;
 }
 
-.msudenver_logo_change {
-  height: 70px;
-}
-
 .fac-staf-stu-mobile {
   padding-left: 20px !important;
   font-weight: 500;
@@ -7734,7 +7730,7 @@ header {
   margin-top: 15px;
   margin-right: 15px;
   margin-left: 15px;
-  max-height: 46px;
+  height: 46px;
 }
 
 #search-input #search-text {
@@ -8044,7 +8040,7 @@ col-xs-12, .faculty-staff-students {
 }
 @media (min-width: 992px) {
   body {
-    padding-top: 160px;
+    padding-top: 210px;
   }
 
   .header-container {
@@ -8062,8 +8058,12 @@ col-xs-12, .faculty-staff-students {
   }
 
   .msudenver_logo {
-    max-height: 104px;
+    height: 120px;
     margin-bottom: 15px;
+  }
+
+  .msudenver_logo_change {
+    height: 70px;
   }
 
   .navbar .navbar-nav {
@@ -8121,7 +8121,7 @@ col-xs-12, .faculty-staff-students {
   }
 
   #content-nav {
-    background: linear-gradient(to bottom, #fff 0px, #fff 60px, #ddd 60px);
+    background: linear-gradient(to bottom, #fff 0px, #fff 65px, #ddd 55px);
   }
 
   .mobile-header {
@@ -8204,10 +8204,6 @@ col-xs-12, .faculty-staff-students {
   .header-container, .container-fluid {
     padding-left: 8.33333%;
     padding-right: 8.33333%;
-  }
-
-  body {
-    padding-top: 160px;
   }
 
   #content-nav {
@@ -9975,7 +9971,7 @@ a:focus, a:hover {
 }
 
 #layout {
-  z-index: 998;
+  z-index: 9998;
   padding-left: 200px;
   left: 0;
   top: 100px;
@@ -10029,8 +10025,8 @@ a:focus, a:hover {
 
 .menu-link {
   display: none;
-  top: 88px;
-  left: 15px;
+  top: 75px;
+  left: 10px;
   background: #002856;
   background: rgba(27, 85, 122, 0.5);
   width: 4.5em;
@@ -10130,31 +10126,16 @@ a:focus, a:hover {
   padding-right: 15px;
 }
 
-@media (min-width: 767px) {
+@media (max-width: 991px) {
+  .header {
+    text-align: left;
+  }
+
   #layout {
-    padding: 0;
-    margin: 0 auto;
-    left: 0;
-  }
-
-  #menu {
     position: relative;
-    left: 0;
-    padding: 0;
-    margin: 0 auto;
-    width: 100%;
+    padding-left: 0;
   }
 
-  #menu a {
-    padding: 15px 0px;
-    line-height: 1em;
-    -webkit-transition: all .25 ease-in-out;
-    -moz-transition: all .25 ease-in-out;
-    -o-transition: all .25 ease-in-out;
-    transition: all 0.25 ease-in-out;
-  }
-}
-@media (max-width: 992px) {
   #layout.active {
     position: relative;
     left: 150px;
@@ -10176,6 +10157,30 @@ a:focus, a:hover {
 
   #layout.active .menu-link {
     left: 70%;
+  }
+}
+@media (min-width: 992px) {
+  #layout {
+    padding: 0;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  #menu {
+    position: relative;
+    left: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #menu a {
+    padding: 15px 0px;
+    line-height: 1em;
+    -webkit-transition: all .25 ease-in-out;
+    -moz-transition: all .25 ease-in-out;
+    -o-transition: all .25 ease-in-out;
+    transition: all 0.25 ease-in-out;
   }
 }
 table.atoz {
@@ -11319,13 +11324,13 @@ div#lhnContainerDone {
 #site-header ul.breadcrumb a {
   color: #fff;
 }
-@media (max-width: 767px) {
-  #site-header .siteheader {
+
+@media (max-width: 992px) {
+  .siteheader {
     text-align: right;
     padding-right: 10px;
   }
 }
-
 body {
   background: #fff;
   font-family: 'Gotham A', 'Gotham B', Open Sans, helvetica, arial, sans-serif;
