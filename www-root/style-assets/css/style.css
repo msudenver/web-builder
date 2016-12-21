@@ -8040,7 +8040,7 @@ col-xs-12, .faculty-staff-students {
 }
 @media (min-width: 992px) {
   body {
-    padding-top: 210px;
+    padding-top: 180px;
   }
 
   .header-container {
@@ -8058,12 +8058,8 @@ col-xs-12, .faculty-staff-students {
   }
 
   .msudenver_logo {
-    height: 120px;
+    height: 90px;
     margin-bottom: 15px;
-  }
-
-  .msudenver_logo_change {
-    height: 70px;
   }
 
   .navbar .navbar-nav {
@@ -8267,6 +8263,10 @@ col-xs-12, .faculty-staff-students {
     height: 29em;
   }
 }
+.msudenver_logo_change {
+  height: 70px;
+}
+
 /* Homepage base styles */
 .homepage-main {
   margin-right: auto;

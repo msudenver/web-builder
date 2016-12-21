@@ -655,14 +655,14 @@ body{
 @media (min-width: $screen-md-min) {
 
   body {
-    padding-top: 210px;
+    padding-top: 180px;
   }
 
   .header-container {
       @include container-fixed();
   }
   .msudenver_logo {
-    height:120px;
+    height:90px;
     margin-bottom: 15px;
   }
 
@@ -858,7 +858,7 @@ body{
       // padding-left: 0em;
   }
 // .msudenver_logo {
-//     max-height:100px;
+//     height:100px;
 //   }
   li.dropdown {
   padding: 5px 0px;
