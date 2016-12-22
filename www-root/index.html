@@ -104,34 +104,25 @@
                <li id="nav-athletics" role="button" aria-haspopup="true" aria-label="Athletics Link">
                  <a href="http://roadrunnersathletics.com" class="mobile-alumni athletics-header">Athletics</a>
                </li>
-               <li class="sr-only">
-                 <form class="navbar-form" role="search" action="https://www.msudenver.edu/search">
-                   <div class="input-group">
-                     <label for="search-msu-denver" class="sr-only">Search MSU Denver site</label>
-                     <input id="search-msu-denver" type="text" class="form-control" placeholder="Search" name="q">
-                     <div class="input-group-btn">
-                       <button class="btn btn-default" type="submit"></button>
-                     </div>
-                   </div>
-                 </form>
-               </li>
                <li id="nav-search" aria-haspopup="true" aria-label="Search toolbar" class="hidden-xs hidden-sm"><a href="#"><span class="fa fa-search search-desktop"></span></a></li>
         <!-- Hidden Search Bar-->
               <form action="https://www.msudenver.edu/search">
                 <div id="search-input" class="inner-addon left-addon search-input-desktop" role="search" action="https://www.msudenver.edu/search">
                   <span class="fa fa-search fa-search-opened"></span>
                   <label for="q" class="sr-only">Search MSU Denver site</label>
-                  <input  id="q" name="q" type="text" class="home-input" placeholder="SEARCH MSU DENVER" tabindex="2"; style="margin-left: -3px; outline: none; font-weight: initial;";>
+                  <input  id="q" name="q" type="text" class="home-input" placeholder="SEARCH MSU DENVER" style="margin-left: -3px; outline: none; font-weight: initial;">
               <!-- AUTO SUGGEST -->
               <!-- Code auto suggest server by DEV, PROD, etc. -->
                   <div id="autoSuggestResults"></div>
                           <!-- END AUTO SUGGEST -->
                   <div class="gobutton">
                     <a id="searchGoLink" class="disableGoButton">
+                      <label for="qButton" class="sr-only">execute search</label>
                       <button type="submit" class="search-button" id="qButton">SEARCH</button>
                     </a>
                   </div>
-                  <span id="nav-search-close" class="fa fa-close"></span>
+                      <label for="nav-search-close" class="sr-only">leave search area</label>
+                      <button id="nav-search-close" type="button" class="fa fa-close"></button>
                 </div> <!-- search-input -->
               </form>
             </ul>

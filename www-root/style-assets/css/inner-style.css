@@ -7926,6 +7926,11 @@ col-xs-12, .faculty-staff-students {
   padding-top: 4px;
 }
 
+#nav-search-close {
+  background-color: transparent;
+  border-color: transparent;
+}
+
 @media screen and (max-width: 450px) {
   .fa-search-mobile {
     padding-right: 10px;
