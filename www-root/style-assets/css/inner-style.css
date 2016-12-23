@@ -7730,7 +7730,7 @@ header {
   margin-top: 15px;
   margin-right: 15px;
   margin-left: 15px;
-  height: 46px;
+  height: 35px;
 }
 
 #search-input #search-text {
@@ -8186,7 +8186,7 @@ col-xs-12, .faculty-staff-students {
   }
 
   #nav-academics {
-    width: 13em;
+    width: 14em;
   }
 
   #nav-campus {
