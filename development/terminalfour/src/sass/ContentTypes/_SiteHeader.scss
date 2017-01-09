@@ -4,7 +4,7 @@
     background-size: 100%;
     a {
         &:hover, &:active, &:focus {
-            text-decoration: none;
+            text-decoration: underline;
             font-weight: 700;
         }
     }
@@ -25,7 +25,8 @@ ul.breadcrumb {
   font-weight: 400;
 }
 ul.breadcrumb a {
-  color: #fff
+  color: #fff;
+  font-weight: 700;
 }
 }
 

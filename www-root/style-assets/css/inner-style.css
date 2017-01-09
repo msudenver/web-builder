@@ -11304,7 +11304,7 @@ div#lhnContainerDone {
   background-size: 100%;
 }
 #site-header a:hover, #site-header a:active, #site-header a:focus {
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: 700;
 }
 #site-header .siteheader {
@@ -11324,6 +11324,7 @@ div#lhnContainerDone {
 }
 #site-header ul.breadcrumb a {
   color: #fff;
+  font-weight: 700;
 }
 
 @media (max-width: 992px) {
