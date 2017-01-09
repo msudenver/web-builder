@@ -1,13 +1,13 @@
   <!-- Global Header -->
-    <div class="navbar navbar-fixed-top toolbar blue-header" style="background-image:url(https://msudenver.edu/media/newsiteassets/images/header_asphalt.png);">
-      <div class="header-container">
+    <div class="navbar navbar-fixed-top" >
+      <div class="header-container" style="background-image:url(https://msudenver.edu/media/newsiteassets/images/header_asphalt.png); background-size: 100%;" alt="Asphalt Image">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle quick links navigation</span>
           <span class="fa fa-bars"></span>
         </button>
             <div class="row">
               <div class="col-xs-8">
-                <img class="msudenver_logo" src="https://msudenver.edu/media/newsiteassets/images/msudenver_logo_header.svg" alt="MSU Denver Logo">
+                <a href="/"> <img class="msudenver_logo" src="https://msudenver.edu/media/newsiteassets/images/msudenver_logo_header.svg" alt="MSU Denver Homepage"> </a>
               </div>
               <a href="/admissions"><div class="col-xs-1 apply-button">APPLY</div></a>
               <a href="/giving"><div class="col-xs-1 apply-button give-visit-buttons">GIVE</div></a>
@@ -30,8 +30,8 @@
               </ul>
             </div>
             <ul class="nav navbar-nav navbar-center dropdown" id="nav-middle">
-              <li id="nav-faculty">
-                <a class="mobile-header mobile-about">About<span class="fa fa-chevron-down pull-right"></span></a>
+              <li id="nav-faculty" role="button" aria-haspopup="true" aria-label="About Menu">
+                <a href="#" class="mobile-header mobile-about">About<span class="fa fa-chevron-down pull-right"></span></a>
                 <ul class="pushdown-menu pushdown-about">
                   <li><a href="/about">About</a></li>
                   <li><a href="/about/strategicplan2020">Strategic Plan 2020</a></li>
@@ -42,8 +42,8 @@
                   <li><a href="/commencement">Graduation / Commencement</a></li>
                  </ul>
                </li>
-               <li id="nav-admissions">
-                 <a class="mobile-header mobile-ps"><span class="fa fa-chevron-down pull-right"></span>Prospective Students</a>
+               <li id="nav-admissions"  role="button" aria-haspopup="true" aria-label="Prospective Students Menu">
+                 <a href="#" class="mobile-header mobile-ps"><span class="fa fa-chevron-down pull-right"></span>Prospective Students</a>
                  <ul class="pushdown-menu pushdown-ps">
                    <li><a href="/admissions">Prospective Students</a></li>
                    <li><a href="/admissions/apply/first-timeundergraduate/">First-Time Undergraduate</a></li>
@@ -59,11 +59,13 @@
                    <li><a href="/cost">Cost</a></li>
                  </ul>
                </li>
-               <li id="nav-academics">
-                 <a class="mobile-header mobile-academics"><span class="fa fa-chevron-down pull-right"></span>Academics</a>
+               <li id="nav-academics" role="button" aria-haspopup="true" aria-label="Academics Menu">
+                 <a href="#" class="mobile-header mobile-academics"><span class="fa fa-chevron-down pull-right"></span>Academics</a>
                  <ul class="pushdown-menu pushdown-academics">
+                   <li><a href="/academics/">Academics</a></li>
                    <li><a href="/programs/">Academic Programs</a></li>
-                   <li><a href="/las/">College of Letters, Arts and Sciences</a></li>
+                   <li><a href="/academics/schedulescalendarscatalogs/">Schedules, Calendars &amp; Catalogs</a></li>
+                   <li><a href="/las/">College of Letters, Arts &amp; Sciences</a></li>
                    <li><a href="/cps/">College of Professional Studies</a></li>
                    <li><a href="/business/">College of Business</a></li>
                    <li><a href="/education/">School of Education</a></li>
@@ -75,8 +77,8 @@
                    <li><a href="/studentengagementandwellness">Student Engagement &amp; Wellness</a></li>
                  </ul>
                </li>
-               <li id="nav-alumni">
-                 <a class="mobile-header mobile-alumni"><span class="fa fa-chevron-down pull-right"></span>Alumni &amp; Friends</a>
+               <li id="nav-alumni" role="button" aria-haspopup="true" aria-label="Alumni Menu">
+                 <a href="#" class="mobile-header mobile-alumni"><span class="fa fa-chevron-down pull-right"></span>Alumni &amp; Friends</a>
                  <ul class="pushdown-menu pushdown-alumni menu-last">
                    <li><a href="/alumni/">Alumni &amp; Friends</a></li>
                    <li><a href="/alumni/careerservices/">Career Services</a></li>
@@ -87,26 +89,28 @@
                    <li><a href="/alumni/events">Alumni Events</a></li>
                  </ul>
                </li>
-               <li id="nav-athletics">
+               <li id="nav-athletics" role="button" aria-haspopup="true" aria-label="Athletics Link">
                  <a href="http://roadrunnersathletics.com" class="mobile-alumni athletics-header">Athletics</a>
                </li>
-               <li id="nav-search"><span class="fa fa-search search-desktop"></span></li>
+               <li id="nav-search" class="hidden-xs hidden-sm"><a href="#"><span class="fa fa-search search-desktop"><span class="sr-only">click to enter search input area</span></span></a></li>
         <!-- Hidden Search Bar-->
               <form action="https://www.msudenver.edu/search">
                 <div id="search-input" class="inner-addon left-addon search-input-desktop" role="search" action="https://www.msudenver.edu/search">
                   <span class="fa fa-search fa-search-opened"></span>
-                  <label for="q" class="sr-only">Search MSU Denver site</label>
-                  <input  id="q" name="q" type="text" class="home-input" placeholder="SEARCH MSU DENVER" tabindex="2"; style="margin-left: -3px; outline: none; font-weight: initial;";>
+                  <label for="q" class="sr-only">Search MSU Denver dot e d u</label>
+                  <input  id="q" name="q" type="text" class="home-input" placeholder="SEARCH MSU DENVER" style="margin-left: -3px; outline: none; font-weight: initial;">
               <!-- AUTO SUGGEST -->
               <!-- Code auto suggest server by DEV, PROD, etc. -->
                   <div id="autoSuggestResults"></div>
                           <!-- END AUTO SUGGEST -->
                   <div class="gobutton">
                     <a id="searchGoLink" class="disableGoButton">
+                      <label for="qButton" class="sr-only">conduct search</label>
                       <button type="submit" class="search-button" id="qButton">SEARCH</button>
                     </a>
                   </div>
-                  <span id="nav-search-close" class="fa fa-close"></span>
+                      <label for="nav-search-close" class="sr-only">leave search area</label>
+                      <button id="nav-search-close" type="reset" class="fa fa-close"></button>
                 </div> <!-- search-input -->
               </form>
             </ul>
@@ -204,18 +208,15 @@ $('.search-desktop').click(function(){
    $('#content-nav').css('max-height', '60px');
 });
 $('.fa-close').click(function(){
-   $('#content-nav').css('max-height', '');
+   $('#content-nav').css('max-height',$(window).height());
 });
 </script>
 
 <script type="text/javascript">
 
-console.log('Script loaded - 9232015.3');
 function hideAllSubNav(){
 	$('#nav-admissions, #nav-academics, #nav-campus, #nav-athletics, #nav-hub, #nav-alumni, #nav-faculty, #nav-search').parent().removeClass('active-nav');
-	$('#hero').css('margin-top','0');
 }
-
 hideAllSubNav();
 
 /* Search Click Event */
@@ -225,14 +226,20 @@ $('#nav-search').click(function(){
 	$('#nav-admissions, #nav-academics, #nav-campus, #nav-athletics, #nav-hub, #nav-alumni, #nav-faculty, #nav-search').fadeTo('fast', 0);
 	setTimeout(function(){
 		$('#search-input').fadeTo('fast', 1);
-		$('#search-text').focus();
+		$('#q').focus();
 	}, 100);
 });
 
 $('#nav-search-close').click(function(){
 	$('#search-input').hide();
 	$('#nav-admissions, #nav-academics, #nav-campus, #nav-athletics, #nav-hub, #nav-alumni, #nav-faculty, #nav-search').fadeTo('slow', 1);
+  $('#nav-search').focus();
 });
+</script>
+
+<!-- allow mobile menu dropdown to scroll -->
+<script>
+$('#content-nav').css('max-height',$(window).height());
 </script>
 
 <script>

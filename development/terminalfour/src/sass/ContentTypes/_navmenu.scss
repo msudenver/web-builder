@@ -6,7 +6,7 @@
   transition: all .2s ease-out
 }
 #layout {
-  z-index: 998;
+  z-index: 9998;
   padding-left: 200px;
   left: 0;
   top: 100px
@@ -61,8 +61,8 @@
 
 .menu-link {
   display: none;
-  top: 88px;
-  left: 15px;
+  top: 75px;
+  left: 10px;
   background: #002856;
   background: rgba(27, 85, 122, .5);
   width: 4.5em;
@@ -174,49 +174,16 @@
     padding-right: 15px;
   }
 
-  @media (min-width: 767px) {
-    #layout {
-      padding: 0;
-      margin: 0 auto;
-      left: 0
-    }
-    #menu {
-      position: relative;
-      left: 0;
-      padding: 0;
-      margin: 0 auto;
-      width: 100%
-    }
 
-    #menu a {
-      padding: 15px 0px;
-      line-height: 1em;
-      -webkit-transition: all .25 ease-in-out;
-      -moz-transition: all .25 ease-in-out;
-      -o-transition: all .25 ease-in-out;
-      transition: all .25 ease-in-out
-    }
 
-    // #menu a:hover, .pure-menu li a:focus, #menu .pure-menu li a:hover {
-    //   color: #d11242;
-    //   // line-height: 1em;
-    //   // font-size: 2em;
-    //   padding: 15px px;
-    //   -webkit-transition: all .25 ease-in-out;
-    //   -moz-transition: all .25 ease-in-out;
-    //   -o-transition: all .25 ease-in-out;
-    //   transition: all .25 ease-in-out
-    // }
+
+@media (max-width: 991px) {
+
+  #layout {
+    position: relative;
+    padding-left: 0
   }
 
-@media (max-width: 992px) {
-  // .header {
-  //   text-align: left
-  // }
-  // #layout {
-  //   position: relative;
-  //   padding-left: 0
-  // }
   #layout.active {
     position: relative;
     left: 150px
@@ -236,3 +203,39 @@
     left: 70%
   }
 }
+
+@media (min-width: 992px) {
+  #layout {
+    padding: 0;
+    margin: 0 auto;
+    left: 0
+  }
+  #menu {
+    position: relative;
+    left: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%
+  }
+
+  #menu a {
+    padding: 15px 0px;
+    line-height: 1em;
+    -webkit-transition: all .25 ease-in-out;
+    -moz-transition: all .25 ease-in-out;
+    -o-transition: all .25 ease-in-out;
+    transition: all .25 ease-in-out
+  }
+
+      // #menu a:hover, .pure-menu li a:focus, #menu .pure-menu li a:hover {
+      //   color: #d11242;
+      //   // line-height: 1em;
+      //   // font-size: 2em;
+      //   padding: 15px px;
+      //   -webkit-transition: all .25 ease-in-out;
+      //   -moz-transition: all .25 ease-in-out;
+      //   -o-transition: all .25 ease-in-out;
+      //   transition: all .25 ease-in-out
+      // }
+    }
+@media (max-width: 992px) {}

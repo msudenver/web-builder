@@ -1,0 +1,99 @@
+@media print {
+	* {
+		text-shadow: none !important;
+		color: #000 !important;
+		background: transparent !important;
+		box-shadow: none !important;
+	}
+	.msudenver_logo img{
+		width: 200px;
+		padding:1em;
+    margin-top: 10px;
+	}
+	.sr-only, .navbar, .navbar-inverse,
+	.navbar-fixed-top, .sidebar-nav, .linkcolumn {
+		display:none;
+	}
+	body {
+    line-height: 1.4em;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 13px;
+	}
+	h1 {
+		font-size:20px;
+    margin-top: 10px;
+	}
+	h2 {
+		font-size:18px;
+	}
+	h3 {
+		font-size:16px;
+	}
+	h4 {
+		font-size:14px;
+	}
+	.container-fluid, button.btn > span.icon-bar {
+		display:none;
+	}
+	a, a:visited {
+		text-decoration: inherit;
+	}
+
+    	a[href]:after {
+        	display:none;
+    	}
+    	abbr[title]:after {
+        	display:none;
+    	}
+	pre, blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	thead {
+		display: table-header-group;
+	}
+	tr, img {
+		page-break-inside: avoid;
+	}
+	img {
+		max-width: 100% !important;
+    		padding: 10px;
+	}
+	@page {
+		margin: 0.5cm;
+	}
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2, h3 {
+		page-break-after: avoid;
+	}
+	.search-box, .nav, .magazine-preview, .icon-bar, .nav-collapse {
+		display: none;
+	}
+	.visible-desktop, .addthis_toolbox, .addthis_floating_style, .addthis_32x32_style, iframe {
+		display: none;
+	}
+	.span12 {
+		margin: 0;
+	}
+	.container > button {
+		display:none;
+	}
+	.container-fluid, .navbar-inner {
+		margin: 0 40% 0 40%;
+	}
+	.msudenver-logo {
+		display:none;
+	}
+	.left-nav-1 {
+		display:none;
+	}
+	.span12 {
+		padding-top:0;
+	}
+	.footer {
+		display:none;
+	}
+}
