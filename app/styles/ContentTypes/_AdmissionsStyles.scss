@@ -63,7 +63,7 @@
   min-height: 100px;
   transition: .5s;
   margin-bottom: 1em;
-  height: 100px;
+  // height: 100px;
   z-index: 101
 }
 .ThreeCornerBox:hover {
@@ -109,9 +109,9 @@
 .action-one, .action-three, .action-two {
   width: 100%;
   color: #fff;
-  padding: 1.5em;
-  height: 166px;
-  font-size: 2em;
+  // padding: 1.5em;
+  // height: 166px;
+  font-size: 1.7em;
   z-index: 100;
   line-height: 1.5em;
   text-align: center;
@@ -148,7 +148,7 @@
   }
 }
 .action-two {
-  padding: .8em 1.8em;
+  // padding: .8em 1.8em;
   background-color: #e67e22
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
