@@ -140,7 +140,7 @@
   }
 }
 .action-one {
-  background-color: #1abc9c
+  background-color: #d11242;
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .action-one {
@@ -149,7 +149,7 @@
 }
 .action-two {
   // padding: .8em 1.8em;
-  background-color: #e67e22
+  background-color: #00447c;
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .action-two {
@@ -158,7 +158,7 @@
   }
 }
 .action-three {
-  background-color: #8e44ad
+  background-color: #717073;
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .action-three {
@@ -175,6 +175,23 @@
 .action-three i {
   color: #8e44ad
 }
+
+.content .img-responsive {
+    padding: 0px !important;
+}
+.admissions-deadlines {
+    font-size: 1.65em;
+    margin-bottom: 15px;
+    display: block;
+    padding: .5em 5px;
+    text-align: center;
+    line-height: 1em;
+    color: #fff;
+}
+.actionHeader.events {
+    background-color: #000000;
+}
+
 .tool-four, .tool-one, .tool-three, .tool-two {
   position: relative;
   margin: 0 auto;
