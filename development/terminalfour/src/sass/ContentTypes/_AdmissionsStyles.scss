@@ -1,40 +1,14 @@
-.ThreeCornerBox {
-  position: relative;
+.action-btns {
   border-radius: 15px;
-  transition: .5s;
-  margin-bottom: 1em;
-  z-index: 101;
-  color: #fff;
-}
-
-.ThreeCornerBox:hover {
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-}
-
-.action-one, .action-two, .action-three {
-  width: 100%;
-  color: #fff;
-  z-index: 100;
-  line-height: 1em;
   text-align: center;
   margin-bottom: .5em;
   padding: 1.25em;
   font-size: 1.75em;
+  color: #fff;
 }
 
-.action-one {
-  background-color: #d11242;
-  margin-top: .5em;
-}
-
-.action-two {
-  background-color: #00447c;
-}
-
-.action-three {
-  background-color: #717073;
+.action-btns-container {
+  margin: 0em 1em 0em 1em;
 }
 
 .admissions-deadlines {
@@ -54,8 +28,8 @@
 .tool {
   position: relative;
   margin: 0 auto;
-  padding: 1.3em 0 1.5em;
-  height: 80px;
+  padding: 1.3em 0.5em 1.5em 0.5em;
+  height: 4em;
   font-size: 1.2em;
   background-color: #fff;
   color: #00447c;
@@ -65,7 +39,7 @@
 }
 
 .tool:hover {
-  background-color: #16a085;
+  background-color: #00447c;
   color: #fff;
 }
 
@@ -78,30 +52,37 @@
   border-top: 1px solid #00447c;
 }
 
-.tool-four {
-  margin-bottom: .5em;
+.tool-last {
+  margin-bottom: 1em;
 }
 
-.info-section .container {
-  padding: 0;
+.info-section {
+  padding: 13px 0 13px 0;
+  height: 20em;
+  margin-bottom: 0.5em;
 }
 
 .info-box {
-  width: 100%;
+  width: 85%;
   color: #003a6e;
-  padding: 1.5em;
+  height: 33%;
   z-index: 100;
   line-height: 1.5em;
-  text-align: center;
-  margin-bottom: .5em;
+  margin: 0em 0em 0.5em 2em;
   font-size: 150%;
   background: #e5e5e5;
-  vertical-align: middle;
+  display: table;
 }
 .info-box:hover {
   color: #00447c;
   border: 1px solid #00447c;
   background-color: #ecf0f1;
+}
+
+.infocenter {
+  display: table-cell;
+  vertical-align: middle;
+  text-align:center;
 }
 
 .admissions-deadlines-container {
@@ -122,38 +103,15 @@
   line-height: 1em;
   color: #fff;
 }
-.marginsForIE8Colums {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-.ie8 .ThreeCornerBox {
-  width: 300px;
-}
-.ie8 .ThreeCornerBox i {
-  display: none;
-}
-.ie8 .action-one, .ie8 .action-three, .ie8 .action-two {
-  width: 400px;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-.ie8 .tool-four, .ie8 .tool-one, .ie8 .tool-three, .ie8 .tool-two {
-  width: 200px;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-.ie8 .info-box {
-  width: 300px;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-.ie8 .col-lg-4 .container #admissions-calendar {
-  width: 400px;
-  margin-left: 30px;
-  margin-right: 30px;
-}
 
-.tool-four, .tool-one, .tool-three, .tool-two {
-  padding: 1em 0 .5em;
-  font-size: 1.5em;
+@media screen and (min-width: 992px) {
+  .action-btns-container {
+    margin: 0em;
+  }
+
+  .info-box {
+    width: 97%;
+    margin: 0em 0em 0.5em 0em;
+  }
+
 }
