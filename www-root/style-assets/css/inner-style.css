@@ -10515,6 +10515,7 @@ table.caption {
 
 .tool-one {
   border-top: 1px solid #00447c;
+  margin-top: 0.7em;
 }
 
 .tool-last {
@@ -10528,12 +10529,12 @@ table.caption {
 }
 
 .info-box {
-  width: 85%;
+  width: 100%;
   color: #003a6e;
   height: 33%;
   z-index: 100;
   line-height: 1.5em;
-  margin: 0em 0em 0.5em 2em;
+  margin: 0em 0em 0.5em 0em;
   font-size: 150%;
   background: #e5e5e5;
   display: table;
@@ -10571,14 +10572,26 @@ table.caption {
   color: #fff;
 }
 
+#content .row {
+  margin: 0;
+}
+
+.panel {
+  padding: 0;
+}
+
 @media screen and (min-width: 992px) {
   .action-btns-container {
     margin: 0em;
   }
-
+}
+@media screen and (min-width: 1200px) {
   .info-box {
-    width: 97%;
-    margin: 0em 0em 0.5em 0em;
+    width: 96%;
+  }
+
+  .panel {
+    padding: 0 15px 0 15px;
   }
 }
 .presidentmessagecontainer {
