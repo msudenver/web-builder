@@ -10478,12 +10478,12 @@ table.caption {
   text-align: center;
   margin-bottom: .5em;
   padding: 1.25em;
-  font-size: 1.75em;
   color: #fff;
+  font-size: 3.0vw;
 }
 
 .action-btns-container {
-  margin: 0em 1em 0em 1em;
+  margin: 0em 0em 0em 0em;
 }
 
 .actionHeader.events {
@@ -10494,13 +10494,11 @@ table.caption {
   position: relative;
   margin: 0 auto;
   padding: 1.1em 0.5em 1.3em 0.5em;
-  font-size: 1.2em;
   background-color: #fff;
   color: #00447c;
   text-align: left;
   border-bottom: 1px solid #00447c;
   transition: .5s;
-  white-space: nowrap;
 }
 
 .tool:hover {
@@ -10508,7 +10506,11 @@ table.caption {
   color: #fff;
 }
 
-.tool:after {
+.nobreak {
+  white-space: nowrap;
+}
+
+.nobreak:after {
   content: "\f105";
   font-family: FontAwesome;
 }
@@ -10535,7 +10537,6 @@ table.caption {
   z-index: 100;
   line-height: 1.5em;
   margin: 0em 0em 0.5em 0em;
-  font-size: 150%;
   background: #e5e5e5;
   display: table;
 }
@@ -10580,14 +10581,30 @@ table.caption {
   padding: 0;
 }
 
+.admissions-img {
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .info-box {
+    width: 96%;
+  }
+}
+.tool {
+  font-size: 1.2em;
+}
+
 @media screen and (min-width: 992px) {
+  .action-btns {
+    font-size: 1.75em;
+  }
+
   .action-btns-container {
     margin: 0em;
   }
-}
-@media screen and (min-width: 1200px) {
+
   .info-box {
-    width: 96%;
+    font-size: 1.5em;
   }
 
   .panel {
