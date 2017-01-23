@@ -11329,7 +11329,7 @@ h6 {
 
 .custom-search-input {
   margin-top: 5px;
-  height: 40px;
+  height: auto;
   padding: 3px;
   border: solid 1px #E4E4E4;
   border-radius: 6px;
