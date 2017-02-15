@@ -9562,7 +9562,7 @@ footer {
   font-family: 'Gotham A', 'Gotham B', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1.0rem;
 }
 
 .blue {
@@ -10307,6 +10307,10 @@ table.caption {
   border-color: #f8e5be;
 }
 
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #d4d4d4;
+}
+
 @media (max-width: 768px) {
   .importedTableCSS .table-responsive {
     width: 100%;
@@ -10701,15 +10705,18 @@ hr.style-one {
 
 .hero-caption p {
   color: #fff;
-  position: absolute;
   right: 0;
   bottom: 0;
-  width: 30%;
-  background: rgba(0, 0, 0, 0.5);
+  position: static;
+  background: #000;
   margin: 0;
   font-size: 16.1px;
   font-weight: 100;
   padding: 2%;
+}
+
+.content .hero > .img-responsive {
+  margin-bottom: 0px;
 }
 
 .hero-caption h2 {
@@ -10723,6 +10730,18 @@ hr.style-one {
   padding: 2%;
 }
 
+@media (min-width: 1200px) {
+  .hero-caption p {
+    position: absolute;
+    width: 35%;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0;
+  }
+
+  .content .hero > .img-responsive {
+    margin-bottom: 0px;
+  }
+}
 .byline,
 .location {
   color: #1E1E1E;
@@ -10804,9 +10823,9 @@ hr.style-one {
 }
 
 .panel-default > .panel-heading {
-  background: black;
+  background: #717073;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.2rem;
   border-color: black;
 }
 
@@ -11092,23 +11111,23 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   color: #fff;
-  font-size: 2.375rem;
+  font-size: 2.25rem;
   font-weight: 800;
 }
 
 h2 {
   font-weight: 700;
-  color: #4e5462;
-  font-size: 2.25rem;
+  color: #00447c;
+  font-size: 1.75rem;
   width: 100%;
   margin: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   line-height: 1.3;
 }
 
 h3 {
-  color: #414b63;
-  font-size: 1.875em;
+  color: #5091cd;
+  font-size: 1.3rem;
   font-weight: 500;
   margin-bottom: 4px;
   margin-top: 2px;
@@ -11116,7 +11135,7 @@ h3 {
 
 h4 {
   color: #000000;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.3;
 }
@@ -11128,9 +11147,12 @@ h5 {
 }
 
 h6 {
-  color: #e74c3c;
-  font-size: 13px;
+  background-color: #005fae;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
   font-weight: 500;
+  padding: 5px;
 }
 
 .readmore {
