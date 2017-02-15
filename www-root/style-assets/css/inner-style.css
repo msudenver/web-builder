@@ -8488,138 +8488,6 @@ col-xs-12, .faculty-staff-students {
     display: block;
   }
 }
-/* Homepage-feature-caption partial */
-#homepage-feature-caption {
-  padding: 0;
-  text-align: right;
-}
-
-.homepage-feature-caption-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-}
-
-.homepage-feature-caption-text {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #000;
-  text-align: right;
-  float: right;
-  position: static;
-}
-@media (min-width: 768px) {
-  .homepage-feature-caption-text {
-    float: left;
-    width: 100%;
-  }
-}
-
-.homepage-feature-caption-link {
-  display: inline-block;
-  font-size: 20.8px;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  color: #fff;
-  float: right;
-}
-
-.homepage-feature-caption-link:hover, .homepage-feature-caption-link:focus, .homepage-feature-caption-link:active {
-  color: #fff;
-}
-
-.carousel-control {
-  display: none;
-}
-
-.t4-slide .carousel-control {
-  display: block;
-  position: absolute;
-  width: 2.5rem;
-  background: transparent;
-  top: 45%;
-  transform: translateY(-50%);
-}
-.t4-slide .carousel-control .fa {
-  display: inline-block;
-  color: #fff;
-  font-size: 2rem;
-}
-.t4-slide .carousel-control.right .fa {
-  float: left;
-}
-.t4-slide .carousel-control.left .fa {
-  float: right;
-}
-
-@media (min-width: 480px) {
-  .t4-slide .carousel-control {
-    top: 50%;
-  }
-}
-@media (min-width: 690px) {
-  .t4-slide .carousel-control {
-    top: 55%;
-  }
-}
-@media (min-width: 768px) {
-  .t4-slide .carousel-control {
-    width: 3rem;
-  }
-  .t4-slide .carousel-control .fa {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 992px) {
-  .homepage-feature-caption-text {
-    width: 75%;
-    float: right;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    left: auto;
-    bottom: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  .homepage-feature-caption-text .feature-heading {
-    line-height: 1.3;
-  }
-  .homepage-feature-caption-text .main-button {
-    padding: 0;
-  }
-
-  .homepage-feature-caption-link {
-    font-size: 25px;
-    font-size: 1.5625rem;
-  }
-
-  .t4-slide .carousel-control {
-    top: 88%;
-    transform: translateY(-50%);
-    width: 4rem;
-  }
-}
-@media (min-width: 1200px) {
-  .homepage-feature-caption-text {
-    padding: 50px 15px;
-    padding: 3.125rem 0.9375rem;
-  }
-}
-@media (min-width: 1300px) {
-  .homepage-feature-caption-text {
-    width: 58.33333%;
-    padding-right: 8.33333%;
-  }
-}
-/* End homepage-feature-caption */
 #homepage-ryor {
   background: url("../media/RYOR_bg_extended.png");
   -webkit-background-size: cover;
@@ -10577,10 +10445,6 @@ table.caption {
   margin: 0;
 }
 
-.panel {
-  padding: 0;
-}
-
 .admissions-img {
   margin-bottom: 1em;
 }
@@ -10605,10 +10469,6 @@ table.caption {
 
   .info-box {
     font-size: 1.5em;
-  }
-
-  .panel {
-    padding: 0 15px 0 15px;
   }
 }
 .presidentmessagecontainer {
@@ -11450,5 +11310,122 @@ a.t4Edit-page:hover {
 }
 
 /** print styles **/
+@media print {
+  * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .sr-only, .navbar, .navbar-fixed-top, .sidebar-nav, .linkcolumn {
+    display: none;
+  }
+
+  body {
+    line-height: 1.4em;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  a, a:visited {
+    text-decoration: inherit;
+  }
+
+  a[href]:after {
+    display: none;
+  }
+
+  abbr[title]:after {
+    display: none;
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+    padding: 10px;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+
+  .search-box, .nav, .magazine-preview, .icon-bar, .nav-collapse {
+    display: none;
+  }
+
+  .visible-desktop, .addthis_toolbox, .addthis_floating_style, .addthis_32x32_style, iframe {
+    display: none;
+  }
+
+  .span12 {
+    margin: 0;
+  }
+
+  .container > button {
+    display: none;
+  }
+
+  .msudenver_logo, .msudenver_logo_change {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .footer-container {
+    display: none;
+  }
+
+  .fb-like-box {
+    display: none;
+  }
+
+  .carousel-inner {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=inner-style.css.map */
