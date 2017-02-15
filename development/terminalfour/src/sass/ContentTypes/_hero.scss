@@ -2,17 +2,19 @@
   position: relative;
   }
 .hero-caption p {
- 	color: #fff;
-    position: absolute;
+   	color: #fff;
     right: 0;
     bottom: 0;
-  	width: 30%;
-    background: rgba(0, 0, 0, .5);
+    position: static;
+    background: #000;
     margin: 0;
     font-size: 16.1px;
     font-weight: 100;
     padding: 2%;
-  }
+}
+.content .hero > .img-responsive {
+  margin-bottom: 0px;
+}
 .hero-caption h2 {
     color: #fff;
     position: absolute;
@@ -22,4 +24,16 @@
     margin: 0;
     font-weight: 100;
     padding: 2%;
+}
+
+@media (min-width: 1200px) {
+  .hero-caption p {
+    position: absolute;
+  	width: 35%;
+    background: rgba(0, 0, 0, .5);
+    margin: 0;
+  }
+  .content .hero > .img-responsive {
+    margin-bottom: 0px;
+  }
 }
