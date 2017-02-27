@@ -11,9 +11,10 @@
     margin-bottom: torem(8);
     padding: 0;
     position: relative;
-    .feature-heading { 
+    .feature-heading {
         margin: 0 0 toem(10, $small-unit);
         margin: 0 0 torem(10, $small-unit);
+        padding-top: 1rem;
     }
     .feature-heading-sub {
         font-size: 25.6;
@@ -22,8 +23,8 @@
         margin: 0 0 toem(10, $small-unit);
         margin: 0 0 torem(10, $small-unit);
     }
-    .feature-text { 
-        font-size: 20.8px; 
+    .feature-text {
+        font-size: 20.8px;
         font-size: torem(20.8);
         font-weight: 700;
         margin: 0 0 toem(35, $small-unit);
@@ -47,7 +48,7 @@
     overflow: hidden;
     position: absolute;
     top: 0;
-    left: 0; 
+    left: 0;
     z-index: 0;
 }
 /* IMage gradient overlay */
@@ -60,37 +61,38 @@
     left: 0;
     z-index: 1;
     /* http://colorzilla.com/gradient-editor */
-    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,1) 100%); 
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,1) 100%); 
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,1) 100%); 
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,1) 100%);
 }
 .ryor-student {
-    padding-top: 32px;
-    padding-top: torem(32);
+    // padding-top: 32px;
+    // padding-top: torem(32);
+    padding-bottom: torem(16);
     overflow: hidden;
 }
 .ryor-student, .ryor-image, .ryor-image-mobile {
-    @include make-xs-column(12);   
+    @include make-xs-column(12);
     z-index: 2;
 }
 .ryor-image-mobile {
-     
+
     color: $white;
     overflow: visible;
-    svg { 
+    svg {
         fill: $white;
         min-height: 200px;
         min-width: 300px;
-        position: absolute; 
-        top: calc(-20px);
+        position: absolute;
+        // top: calc(-20px);
     }
     min-height: 150px;
 }
 .ryor-image {
-     
+
     color: $white;
     overflow: visible;
-    svg { 
+    svg {
         min-height: 200px;
         min-width: 300px;
 
@@ -98,7 +100,7 @@
 }
 
 
-@media (min-width: $screen-md-min) {    
+@media (min-width: $screen-md-min) {
     #homepage-ryor {
         .feature-heading {
             font-size: 40px;
@@ -113,17 +115,17 @@
             margin: 0 0 toem(10, $base-unit);
             margin: 0 0 torem(10, $base-unit);
         }
-        .feature-text { 
-            font-size: toem(30, $small-unit); 
+        .feature-text {
+            font-size: toem(30, $small-unit);
             font-size: torem(30, $small-unit);
             margin-bottom: 30px;
             margin-bottom: torem(30);
             line-height: 1.2;
         }
-        .main-button { 
-            text-align: left; 
+        .main-button {
+            text-align: left;
             padding: 0 25px;
-            
+
         }
     }
     .ryor-image {
@@ -133,16 +135,20 @@
         margin: 20px auto;
         width: 41.6666%;
         text-align: center;
-        
+
         svg {
             width: 100%;
-            
+
         }
     }
     .ryor-student {
-        @include make-md-column(7, 50px);
-        padding-bottom: 2rem;
-        
+        @include make-md-column(6, 50px);
     }
+
     .ryor-student-image::before { display: none;}
+
+    .ryor-image-mobile {
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+    }
 }
