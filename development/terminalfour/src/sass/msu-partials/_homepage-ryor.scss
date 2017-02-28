@@ -68,7 +68,7 @@
 .ryor-student {
     // padding-top: 32px;
     // padding-top: torem(32);
-    padding-bottom: torem(16);
+    // padding-bottom: torem(16);
     overflow: hidden;
 }
 .ryor-student, .ryor-image, .ryor-image-mobile {
@@ -98,7 +98,12 @@
 
     }
 }
-
+.ryor-student-picbox {
+  @include make-md-column(5, 50px);
+  overflow: hidden;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 @media (min-width: $screen-md-min) {
     #homepage-ryor {
@@ -142,7 +147,7 @@
         }
     }
     .ryor-student {
-        @include make-md-column(6, 50px);
+        @include make-md-column(7, 50px);
     }
 
     .ryor-student-image::before { display: none;}
@@ -150,5 +155,8 @@
     .ryor-image-mobile {
         padding-top: 5rem;
         padding-bottom: 1rem;
+    }
+    .ryor-student-image {
+        max-width: 120%;
     }
 }
