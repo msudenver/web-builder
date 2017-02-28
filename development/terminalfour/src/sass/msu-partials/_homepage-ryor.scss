@@ -160,3 +160,10 @@
         max-width: 120%;
     }
 }
+
+@media (min-width: $screen-lg-min) {
+    .ryor-student-image {
+        max-width: 100%;
+    }
+
+}
