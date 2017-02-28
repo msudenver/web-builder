@@ -8636,6 +8636,7 @@ col-xs-12, .faculty-staff-students {
 #homepage-ryor .feature-heading {
   margin: 0 0 0.71429em;
   margin: 0 0 0.71429rem;
+  padding-top: 1rem;
 }
 #homepage-ryor .feature-heading-sub {
   font-size: 25.6;
@@ -8690,8 +8691,6 @@ col-xs-12, .faculty-staff-students {
 }
 
 .ryor-student {
-  padding-top: 32px;
-  padding-top: 2rem;
   overflow: hidden;
 }
 
@@ -8715,7 +8714,6 @@ col-xs-12, .faculty-staff-students {
   min-height: 200px;
   min-width: 300px;
   position: absolute;
-  top: calc(-20px);
 }
 
 .ryor-image {
@@ -8725,6 +8723,22 @@ col-xs-12, .faculty-staff-students {
 .ryor-image svg {
   min-height: 200px;
   min-width: 300px;
+}
+
+.ryor-student-picbox {
+  position: relative;
+  min-height: 1px;
+  padding-left: 25px;
+  padding-right: 25px;
+  overflow: hidden;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media (min-width: 992px) {
+  .ryor-student-picbox {
+    float: left;
+    width: 41.66667%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -8770,7 +8784,6 @@ col-xs-12, .faculty-staff-students {
     min-height: 1px;
     padding-left: 25px;
     padding-right: 25px;
-    padding-bottom: 2rem;
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
@@ -8783,6 +8796,20 @@ col-xs-12, .faculty-staff-students {
 @media (min-width: 992px) {
   .ryor-student-image::before {
     display: none;
+  }
+
+  .ryor-image-mobile {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
+
+  .ryor-student-image {
+    max-width: 120%;
+  }
+}
+@media (min-width: 1200px) {
+  .ryor-student-image {
+    max-width: 100%;
   }
 }
 /* Homepage news items */
