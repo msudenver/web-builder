@@ -539,6 +539,36 @@ col-xs-12, .faculty-staff-students {
   border-color: transparent;
 }
 
+// fix anchor tag jump padding from top on A-to-Z page
+a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, a[name="E"]:before, a[name="F"]:before, a[name="G"]:before, a[name="H"]:before, a[name="I"]:before, a[name="J"]:before, a[name="K"]:before, a[name="L"]:before, a[name="M"]:before, a[name="N"]:before, a[name="O"]:before, a[name="P"]:before, a[name="Q"]:before, a[name="R"]:before, a[name="S"]:before, a[name="T"]:before, a[name="U"]:before, a[name="V"]:before, a[name="W"]:before, a[name="X"]:before, a[name="Y"]:before, a[name="Z"]:before {
+    content: "";
+    display:block;
+    height:180px; /* fixed header height*/
+    margin:-180px 0 0;
+}
+
+@-moz-document url-prefix() {
+  a[name="A"], a[name="B"], a[name="C"], a[name="D"], a[name="E"], a[name="F"], a[name="G"], a[name="H"], a[name="I"], a[name="J"], a[name="K"], a[name="L"], a[name="M"], a[name="N"], a[name="O"], a[name="P"], a[name="Q"], a[name="R"], a[name="S"], a[name="T"], a[name="U"], a[name="V"], a[name="W"], a[name="X"], a[name="Y"], a[name="Z"] {
+    position: relative;
+    border-top: 162px solid transparent; /* navbar height +2 */
+    margin: -30px 0 0;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+  }
+a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, a[name="E"]:before, a[name="F"]:before, a[name="G"]:before, a[name="H"]:before, a[name="I"]:before, a[name="J"]:before, a[name="K"]:before, a[name="L"]:before, a[name="M"]:before, a[name="N"]:before, a[name="O"]:before, a[name="P"]:before, a[name="Q"]:before, a[name="R"]:before, a[name="S"]:before, a[name="T"]:before, a[name="U"]:before, a[name="V"]:before, a[name="W"]:before, a[name="X"]:before, a[name="Y"]:before, a[name="Z"]:before {
+    content: "";
+    position: absolute;
+    top: -170px;
+    left: 0;
+    right: 0;
+    border-top: 170px solid #ccc;
+  }
+}
+
+
+
+
 @media screen and (max-width: 450px) {
   .fa-search-mobile {
     padding-right: 10px;
