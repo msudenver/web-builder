@@ -9712,10 +9712,26 @@ section.filter-titles {
 }
 
 .degreeTitle {
-  color: #00447c;
+  color: #1E1E1E;
   font-size: 1.6em;
   padding-bottom: 0px;
   margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.card {
+  margin-bottom: 15px;
+  height: 125px;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: block;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: #f1f2f5;
+  box-shadow: none;
 }
 
 .degreeType {
