@@ -468,7 +468,7 @@
   letter-spacing: 0px;
   margin-top: -1.0em;
   color: #fff;
-  padding-bottom: 0.6em;
+  padding-bottom: 0.2em;
   padding-left: 6px;
   display: none;
 }
@@ -690,14 +690,14 @@ body{
 @media (min-width: $screen-md-min) {
 
   body {
-    padding-top: 180px;
+    padding-top: 170px;
   }
 
   .header-container {
       @include container-fixed();
   }
   .msudenver_logo {
-    height:90px;
+    height:70px;
     margin-bottom: 15px;
   }
 
@@ -898,5 +898,5 @@ body{
   }
 }
 .msudenver_logo_change {
-    height:70px;
+    height:50px;
   }
