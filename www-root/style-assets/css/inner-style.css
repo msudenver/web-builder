@@ -11382,6 +11382,8 @@ a.t4Edit-page:hover {
 
 .btn {
   transition: opacity 250ms ease-in-out;
+  text-align: left;
+  white-space: normal;
 }
 
 .btn:hover {
