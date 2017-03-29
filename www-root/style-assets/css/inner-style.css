@@ -3668,13 +3668,13 @@ select[multiple].input-lg,
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
-  white-space: nowrap;
+  white-space: normal;
   padding: 6px 12px;
   font-size: 16px;
   line-height: 1.42857;
