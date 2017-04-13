@@ -412,20 +412,6 @@ $(window).scroll(function(){
     padding: 0 !important;
 }
 
-@media screen and (min-width: 768px) {
-  .action-btns-container {
-    height: 11em;
-  }
-  .action-btns {
-      margin: 7px;
-      width: 32.1%;
-      height: 100%;
-  }
-  .panel {
-     max-height:0px;
-  }
-}
-
 </style>
 
 <div class="row">
@@ -436,21 +422,22 @@ $(window).scroll(function(){
 </div>
 </div>
 
-<div class="row action-btns-container">
-     <a class="rowdyred col-xs-12 col-sm-4 action-one action-btns" href="/admissions/apply/">
-        <span>START YOUR APPLICATION</span>
-     </a>
 
-     <a class="rowdyblue col-xs-12 col-sm-4 action-two action-btns" href="https://admission.msudenver.edu/Datatel.ERecruiting.Web.External/Pages/Login.aspx">
-      <span>CHECK STATUS / FINISH APPLICATION</span>
+<div class="col-xs-12 col-sm-4  action-section">
+      <a class="action-box clickable rowdyred action-btns" href="/admissions/apply/">
+            <span class="infocenter">START YOUR APPLICATION</span>
+        </a>
+</div>
+<div class="col-xs-12 col-sm-4 action-section">
+        <a class="action-box clickable rowdyblue action-btns" href="https://admission.msudenver.edu/Datatel.ERecruiting.Web.External/Pages/Login.aspx">
+           <span class="infocenter">CHECK STATUS / FINISH APPLICATION</span>
+        </a>
+</div>
+<div class="col-xs-12 col-sm-4 action-section">
+        <a class="action-box clickable rowdygray action-btns" href="/admissions/after/">
+           <span class="infocenter">AFTER YOU'VE BEEN ADMITTED</span>
       </a>
-
-       <a class="give-visit-buttons rowdygray col-xs-12 col-sm-4 action-three clickable action-btns" href="/admissions/after/">
-          <span>AFTER YOU'VE BEEN ADMITTED</span>
-  		</a>
-	</div>
-
-
+</div>
 
                             <div class="col-xs-12 col-sm-3  info-section">
                                   <div class="info-box clickable" data-href="/programs/">

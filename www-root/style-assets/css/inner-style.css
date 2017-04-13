@@ -3668,13 +3668,13 @@ select[multiple].input-lg,
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
-  text-align: left;
+  text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
-  white-space: normal;
+  white-space: nowrap;
   padding: 6px 12px;
   font-size: 16px;
   line-height: 1.42857;
@@ -10416,19 +10416,6 @@ table.caption {
     border-bottom: 0;
   }
 }
-.action-btns {
-  border-radius: 15px;
-  text-align: center;
-  margin-bottom: .5em;
-  padding: 3.5vw;
-  color: #fff;
-  font-size: 3.0vw;
-}
-
-.action-btns-container {
-  margin: 0em 0em 0em 0em;
-}
-
 .actionHeader.events {
   background-color: #000000;
 }
@@ -10496,6 +10483,23 @@ table.caption {
   text-align: center;
 }
 
+.action-section {
+  padding: 0;
+  height: 4em;
+  margin-bottom: 0.5em;
+}
+
+.action-box {
+  width: 100%;
+  color: #fff;
+  height: 100%;
+  z-index: 100;
+  line-height: 1.5em;
+  margin: 0em 0em 0.5em 0em;
+  display: table;
+  border-radius: 15px;
+}
+
 .admissions-deadlines-container {
   padding: 5px 8px 30px;
   line-height: 1.428571429;
@@ -10525,21 +10529,35 @@ table.caption {
 }
 
 @media screen and (min-width: 768px) {
+  .action-btns {
+    font-size: 2.5vw;
+  }
+
   .info-box {
     width: 96%;
   }
-}
-.tool {
-  font-size: 1.2em;
-}
 
+  .tool {
+    font-size: 1.2em;
+  }
+
+  .panel {
+    max-height: 0px;
+  }
+
+  .action-box {
+    width: 96%;
+  }
+
+  .action-section {
+    padding: 13px 0 13px 0;
+    height: 8em;
+    margin-bottom: 0.5em;
+  }
+}
 @media screen and (min-width: 992px) {
   .action-btns {
     font-size: 1.75em;
-  }
-
-  .action-btns-container {
-    margin: 0em;
   }
 
   .info-box {
