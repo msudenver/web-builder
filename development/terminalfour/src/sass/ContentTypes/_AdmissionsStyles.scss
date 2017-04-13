@@ -2,40 +2,6 @@
     background-color: #000000;
 }
 
-.tool {
-  position: relative;
-  margin: 0 auto;
-  padding: 1.1em 0.5em 1.3em 0.5em;
-  background-color: #fff;
-  color: #00447c;
-  text-align: left;
-  border-bottom: 1px solid #00447c;
-  transition: .5s;
-}
-
-.tool:hover {
-  background-color: #00447c;
-  color: #fff;
-}
-
-.nobreak {
-  white-space: nowrap;
-}
-
-.nobreak:after {
-  content: "\f105";
-  font-family: FontAwesome;
-}
-
-.tool-one {
-  border-top: 1px solid #00447c;
-  margin-top: 0.7em;
-}
-
-.tool-last {
-  margin-bottom: 1em;
-}
-
 .info-section {
   padding: 13px 0 13px 0;
   height: 20em;
@@ -106,6 +72,10 @@
 
 .admissions-img {
   margin-bottom: 1em;
+}
+
+.content a:hover {
+    border-bottom: 0px solid;
 }
 
 @media screen and (min-width: 768px) {
