@@ -10516,10 +10516,6 @@ table.caption {
     font-size: 1.2em;
   }
 
-  .panel {
-    max-height: 0px;
-  }
-
   .action-box {
     width: 96%;
   }
