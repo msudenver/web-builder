@@ -8073,7 +8073,7 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
 }
 @media (min-width: 992px) {
   body {
-    padding-top: 170px;
+    padding-top: 160px;
   }
 
   .header-container {
