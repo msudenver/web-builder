@@ -174,8 +174,11 @@
     padding-right: 15px;
   }
 
-
-
+@media (max-width: $screen-sm-max) {
+  #menu {
+    overflow-x: scroll;
+  }
+}
 
 @media (max-width: 991px) {
 

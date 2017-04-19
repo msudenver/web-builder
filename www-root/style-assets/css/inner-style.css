@@ -7856,7 +7856,7 @@ header {
   letter-spacing: 0px;
   margin-top: -1.0em;
   color: #fff;
-  padding-bottom: 0.6em;
+  padding-bottom: 0.2em;
   padding-left: 6px;
   display: none;
 }
@@ -9712,10 +9712,26 @@ section.filter-titles {
 }
 
 .degreeTitle {
-  color: #00447c;
+  color: #1E1E1E;
   font-size: 1.6em;
   padding-bottom: 0px;
   margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.card {
+  margin-bottom: 15px;
+  height: 125px;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: block;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: #f1f2f5;
+  box-shadow: none;
 }
 
 .degreeType {
@@ -10054,6 +10070,11 @@ a:focus, a:hover {
   padding-right: 15px;
 }
 
+@media (max-width: 991px) {
+  #menu {
+    overflow-x: scroll;
+  }
+}
 @media (max-width: 991px) {
   #layout {
     position: relative;
@@ -10400,55 +10421,8 @@ table.caption {
     border-bottom: 0;
   }
 }
-.action-btns {
-  border-radius: 15px;
-  text-align: center;
-  margin-bottom: .5em;
-  padding: 3.5vw;
-  color: #fff;
-  font-size: 3.0vw;
-}
-
-.action-btns-container {
-  margin: 0em 0em 0em 0em;
-}
-
 .actionHeader.events {
   background-color: #000000;
-}
-
-.tool {
-  position: relative;
-  margin: 0 auto;
-  padding: 1.1em 0.5em 1.3em 0.5em;
-  background-color: #fff;
-  color: #00447c;
-  text-align: left;
-  border-bottom: 1px solid #00447c;
-  transition: .5s;
-}
-
-.tool:hover {
-  background-color: #00447c;
-  color: #fff;
-}
-
-.nobreak {
-  white-space: nowrap;
-}
-
-.nobreak:after {
-  content: "\f105";
-  font-family: FontAwesome;
-}
-
-.tool-one {
-  border-top: 1px solid #00447c;
-  margin-top: 0.7em;
-}
-
-.tool-last {
-  margin-bottom: 1em;
 }
 
 .info-section {
@@ -10480,6 +10454,23 @@ table.caption {
   text-align: center;
 }
 
+.action-section {
+  padding: 0;
+  height: 4em;
+  margin-bottom: 0.5em;
+}
+
+.action-box {
+  width: 100%;
+  color: #fff;
+  height: 100%;
+  z-index: 100;
+  line-height: 1.5em;
+  margin: 0em 0em 0.5em 0em;
+  display: table;
+  border-radius: 15px;
+}
+
 .admissions-deadlines-container {
   padding: 5px 8px 30px;
   line-height: 1.428571429;
@@ -10508,22 +10499,40 @@ table.caption {
   margin-bottom: 1em;
 }
 
+.content a:hover {
+  border-bottom: 0px solid;
+}
+
 @media screen and (min-width: 768px) {
+  .action-btns {
+    font-size: 2.5vw;
+  }
+
   .info-box {
     width: 96%;
   }
-}
-.tool {
-  font-size: 1.2em;
-}
 
+  .tool {
+    font-size: 1.2em;
+  }
+
+  .panel {
+    max-height: 0px;
+  }
+
+  .action-box {
+    width: 96%;
+  }
+
+  .action-section {
+    padding: 13px 0 13px 0;
+    height: 8em;
+    margin-bottom: 0.5em;
+  }
+}
 @media screen and (min-width: 992px) {
   .action-btns {
     font-size: 1.75em;
-  }
-
-  .action-btns-container {
-    margin: 0em;
   }
 
   .info-box {
