@@ -11385,6 +11385,10 @@ a.t4Edit-page:hover {
   font-size: 12pt !important;
 }
 
+.contact-card {
+  margin-bottom: 15px;
+}
+
 .contact-card > * > img.img-responsive {
   width: 155px;
   border-radius: 50%;
