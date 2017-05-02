@@ -10761,18 +10761,16 @@ hr.style-one {
 
 .hero {
   position: relative;
+  margin-bottom: 15px;
+}
+
+.hero-caption {
+  background: #000;
+  padding: 2%;
 }
 
 .hero-caption p {
   color: #fff;
-  right: 0;
-  bottom: 0;
-  position: static;
-  background: #000;
-  margin: 0;
-  font-size: 16.1px;
-  font-weight: 100;
-  padding: 2%;
 }
 
 .content .hero > .img-responsive {
@@ -10781,25 +10779,15 @@ hr.style-one {
 
 .hero-caption h2 {
   color: #fff;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  margin: 0;
-  font-weight: 100;
-  padding: 2%;
 }
 
 @media (min-width: 1200px) {
-  .hero-caption p {
+  .hero-caption {
     position: absolute;
-    width: 35%;
+    width: 45%;
     background: rgba(0, 0, 0, 0.5);
     margin: 0;
-  }
-
-  .content .hero > .img-responsive {
-    margin-bottom: 0px;
+    padding: 15px;
   }
 }
 .byline,
