@@ -9690,6 +9690,13 @@ footer {
   margin-bottom: 15px;
 }
 
+.pageTitle {
+  height: 200px;
+  padding-left: 15px;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
 section.filter-titles {
   background: #1B557A;
   padding: 5px;
@@ -9711,14 +9718,6 @@ section.filter-titles {
   align-items: center;
 }
 
-.degreeTitle {
-  color: #1E1E1E;
-  font-size: 1.6em;
-  padding-bottom: 0px;
-  margin-bottom: 15px;
-  font-weight: 800;
-}
-
 .card {
   margin-bottom: 15px;
   height: 125px;
@@ -9734,37 +9733,49 @@ section.filter-titles {
   box-shadow: none;
 }
 
+.degreeTitle {
+  color: #1e1e1e;
+  font-size: 1.6em;
+  padding-bottom: 0px;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
 .degreeType {
   font-size: 1.2em;
   color: #3A3A3A;
 }
 
+.content {
+  background: none !important;
+}
+
 .card.Master {
-  border-left: 10px solid #FDB913;
+  border-left: 10px solid #717073;
 }
 
 .card.Bachelor {
-  border-left: 10px solid #F58025;
+  border-left: 10px solid #d11242;
 }
 
 .card.Minor {
-  border-left: 10px solid #9D3393;
+  border-left: 10px solid #00447c;
 }
 
 .card.Concentration {
-  border-left: 10px solid #00A94F;
+  border-left: 10px solid #5191cd;
 }
 
 .card.Certificate {
-  border-left: 10px solid #00A0AF;
+  border-left: 10px solid #9cadcd;
 }
 
 .card.Special.Academic.Program {
-  border-left: 10px solid #007DC3;
+  border-left: 10px solid #e68d89;
 }
 
 .card.Teacher.Licensure {
-  border-left: 10px solid #b2bb1e;
+  border-left: 10px solid #000000;
 }
 
 a:focus, a:hover {
@@ -9772,43 +9783,43 @@ a:focus, a:hover {
 }
 
 #Bachelor:active, #Bachelor.btn-default.focus, #Bachelor.btn-default:focus {
-  background-color: rgba(245, 128, 37, 0.1) !important;
+  background-color: rgba(209, 18, 66, 0.1) !important;
   outline: none;
   outline-offset: -2px;
 }
 
 #Minor:active, #Minor.btn-default.focus, #Minor.btn-default:focus {
-  background-color: rgba(157, 51, 147, 0.1) !important;
+  background-color: rgba(0, 68, 124, 0.1) !important;
   outline: none;
   outline-offset: -2px;
 }
 
 #Master:active, #Master.btn-default.focus, #Master.btn-default:focus {
-  background-color: rgba(253, 185, 19, 0.1) !important;
+  background-color: rgba(113, 112, 115, 0.1) !important;
   outline: none;
   outline-offset: -2px;
 }
 
 #Teacher:active, #Teacher.btn-default.focus, #Teacher.btn-default:focus {
-  background-color: rgba(178, 187, 30, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
   outline: none;
   outline-offset: -2px;
 }
 
 #Certificate:active, #Certificate.btn-default.focus, #Certificate.btn-default:focus {
-  background-color: rgba(0, 160, 175, 0.1) !important;
+  background-color: rgba(156, 173, 205, 0.1) !important;
   outline: none;
   outline-offset: -2px;
 }
 
 #Concentration:active, #Concentration.btn-default.focus, #Concentration.btn-default:focus {
-  background-color: rgba(0, 169, 79, 0.1) !important;
+  background-color: rgba(81, 145, 205, 0.1) !important;
   outline: none;
   outline-offset: -2px;
 }
 
 #Special:active, #Special.btn-default.focus, #Special.btn-default:focus {
-  background-color: rgba(0, 125, 195, 0.1) !important;
+  background-color: rgba(230, 141, 137, 0.1) !important;
   outline: none;
   outline-offset: -2px;
 }
@@ -9868,6 +9879,60 @@ a:focus, a:hover {
   font-size: 1.25em;
   background: rgba(0, 69, 124, 0.56);
   background-color: rgba(0, 69, 124, 0.56);
+}
+
+.btn-default:hover {
+  background-color: #EFEFEF;
+}
+
+.academic-programs {
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.fa.fa-square {
+  padding-right: 10px;
+}
+
+.shuffle-buttons {
+  padding-bottom: 15px !important;
+}
+
+.shuffle-button-box {
+  padding-left: 0px;
+}
+
+.content a:hover {
+  border-bottom: none;
+}
+
+#Bachelor .fa-square {
+  color: #d11242;
+}
+
+#Certificate .fa-square {
+  color: #9cadcd;
+}
+
+#Minor .fa-square {
+  color: #00447c;
+}
+
+#Concentration .fa-square {
+  color: #5191cd;
+}
+
+#Master .fa-square {
+  color: #717073;
+}
+
+#Special .fa-square {
+  color: #e68d89;
+}
+
+#Teacher .fa-square {
+  color: #000000;
 }
 
 .content {
@@ -11359,6 +11424,9 @@ a.t4Edit-page:hover {
 
 .btn {
   transition: opacity 250ms ease-in-out;
+  text-align: left;
+  white-space: normal;
+  border: 0px solid transparent;
 }
 
 .btn:hover {
