@@ -77,7 +77,7 @@
 @media (min-width: $screen-md-min) {
     
     .homepage-feature-caption-text {
-        width: percentage((9 / $grid-columns));
+        width: 40%;
         float: right;
         position: absolute;
         top: 50%;
@@ -109,14 +109,5 @@
         
     }
 }
-@media (min-width: 1300px) {
-    .homepage-feature-caption-text {
-        width: percentage((7 / $grid-columns));
-        padding-right: percentage((1 / $grid-columns));
-        
-        
-    }
-}
-
 
 /* End homepage-feature-caption */

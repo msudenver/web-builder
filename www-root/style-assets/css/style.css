@@ -8073,7 +8073,7 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
 }
 @media (min-width: 992px) {
   body {
-    padding-top: 170px;
+    padding-top: 160px;
   }
 
   .header-container {
@@ -8607,7 +8607,7 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
 }
 @media (min-width: 992px) {
   .homepage-feature-caption-text {
-    width: 75%;
+    width: 40%;
     float: right;
     position: absolute;
     top: 50%;
@@ -8639,12 +8639,6 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
   .homepage-feature-caption-text {
     padding: 50px 15px;
     padding: 3.125rem 0.9375rem;
-  }
-}
-@media (min-width: 1300px) {
-  .homepage-feature-caption-text {
-    width: 58.33333%;
-    padding-right: 8.33333%;
   }
 }
 /* End homepage-feature-caption */

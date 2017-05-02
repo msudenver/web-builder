@@ -1,15 +1,9 @@
 .btn {
-    // border-radius: 0;
-    // margin-bottom: 15px;
-    // font-weight: 100!important;
     transition: opacity 250ms ease-in-out;
-    // box-shadow: 1px 5px 5px rgba(0,0,0,0.175);
     text-align: left;
     white-space: normal;
     border: 0px solid transparent;
 }
-
-
 
 .btn:hover {
 opacity: 1.5;
@@ -24,12 +18,6 @@ transition: opacity 250ms ease-in-out;
 }
 
 .custombtn {
-  // border-radius: 0;
   margin-bottom: 15px;
   width: 100%;
-  // font-weight: 100!important;
-  // box-shadow: 1px 5px 5px rgba(0,0,0,0.175);
 }
-// .custombtn span {
-//   color: #FFF
-// }
