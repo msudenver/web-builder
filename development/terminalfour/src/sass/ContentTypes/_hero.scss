@@ -1,29 +1,29 @@
 .hero {
   position: relative;
-    margin-bottom: 15px;
+  margin-bottom: 15px;
   }
 
-.hero-caption{
-    background: #000; 
-    padding: 2%;
-}
-.hero-caption p {
-   	color: #fff;
-}
+// .hero-caption{
+//     background: #000;
+//     padding: 2%;
+// }
+// .hero-caption p {
+//    	color: #fff;
+// }
 .content .hero > .img-responsive {
   margin-bottom: 0px;
 }
-.hero-caption h2 {
-    color: #fff;
-
-}
+// .hero-caption h2 {
+//     color: #fff;
+//
+// }
 
 @media (min-width: 1200px) {
-  .hero-caption {
-    position: absolute;
-  	width: 45%;
-    background: rgba(0, 0, 0, .5);
-    margin: 0;
-    padding:15px;
-  }
+  // .hero-caption {
+  //   position: absolute;
+  // 	width: 45%;
+  //   background: rgba(0, 0, 0, .5);
+  //   margin: 0;
+  //   padding:15px;
+  // }
 }
