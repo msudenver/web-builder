@@ -9870,6 +9870,8 @@ a:focus, a:hover {
   font-weight: 800 !important;
   text-transform: uppercase;
   text-align: left;
+  border: 1px solid #ccc !important;
+  width: 100%;
 }
 
 .fa.fa-square {
