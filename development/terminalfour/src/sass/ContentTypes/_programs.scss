@@ -20,19 +20,6 @@ section.filter-titles {
     margin-bottom: 10px;
 }
 
-//.card-program {
-//    margin-bottom: 15px;
-//    height: 125px;
-//    overflow:hidden;
-//    display: -ms-flexbox;
-//    display: -webkit-flex;
-//    display: -webkit-box;
-//    display: block;
-//   -webkit-align-items: center;
-//   -webkit-box-align: center;
-//   align-items: center;
-//}
-
 // .btn{
 //     text-align: left;
 //     font-weight: normal !important;
@@ -69,9 +56,9 @@ font-weight: 800;
   color: #3A3A3A;
 }
 
-.content {
-background: none !important;
-}
+//.content {
+//background: none !important;
+//}
 
 .card-program.Master {
     border-left: 10px solid #717073;
@@ -199,11 +186,11 @@ background: rgba(0, 69, 124, 0.56);
 background-color: rgba(0, 69, 124, 0.56);
 }
 
-.btn-default:hover {
-    background-color: #EFEFEF;
-}
+//.btn-default:hover {
+//    background-color: #EFEFEF;
+//}
 
-.academic-programs {
+.btn-academic-programs {
     font-weight: 800 !important;
     text-transform: uppercase;
     text-align: left;
