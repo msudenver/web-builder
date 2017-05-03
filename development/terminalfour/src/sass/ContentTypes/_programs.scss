@@ -20,18 +20,18 @@ section.filter-titles {
     margin-bottom: 10px;
 }
 
-.card-program {
-    margin-bottom: 15px;
-    height: 125px;
-    overflow:hidden;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: -webkit-box;
-    display: block;
-   -webkit-align-items: center;
-   -webkit-box-align: center;
-   align-items: center;
-}
+//.card-program {
+//    margin-bottom: 15px;
+//    height: 125px;
+//    overflow:hidden;
+//    display: -ms-flexbox;
+//    display: -webkit-flex;
+//    display: -webkit-box;
+//    display: block;
+//   -webkit-align-items: center;
+//   -webkit-box-align: center;
+//   align-items: center;
+//}
 
 // .btn{
 //     text-align: left;
@@ -39,7 +39,9 @@ section.filter-titles {
 // width: 100%;
 // }
 
-.card {
+.card-program {
+    padding: 1em;
+    border: 1px solid #d4d4d4;
     margin-bottom: 15px;
     height: 125px;
     overflow:hidden;
@@ -71,31 +73,31 @@ font-weight: 800;
 background: none !important;
 }
 
-.card.Master {
+.card-program.Master {
     border-left: 10px solid #717073;
 }
 
-.card.Bachelor {
+.card-program.Bachelor {
     border-left: 10px solid #d11242;
 }
 
-.card.Minor {
+.card-program.Minor {
     border-left: 10px solid #00447c;
 }
 
-.card.Concentration {
+.card-program.Concentration {
     border-left: 10px solid #5191cd;
 }
 
-.card.Certificate {
+.card-program.Certificate {
     border-left: 10px solid #9cadcd;
 }
 
-.card.Special.Academic.Program {
+.card-program.Special.Academic.Program {
     border-left: 10px solid #e68d89;
 }
 
-.card.Teacher.Licensure {
+.card-program.Teacher.Licensure {
     border-left: 10px solid #000000;
 }
 
