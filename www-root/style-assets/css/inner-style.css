@@ -9886,10 +9886,6 @@ a:focus, a:hover {
   padding-left: 0px;
 }
 
-.content a:hover {
-  border-bottom: none;
-}
-
 #Bachelor .fa-square {
   color: #d11242;
 }
@@ -9942,7 +9938,7 @@ a:focus, a:hover {
   font-weight: 700;
 }
 .content a:hover {
-  border-bottom: 1px solid;
+  border-bottom: 0px solid;
   text-decoration: none;
 }
 .content .description {
@@ -10545,10 +10541,6 @@ table.caption {
 
 .admissions-img {
   margin-bottom: 1em;
-}
-
-.content a:hover {
-  border-bottom: 0px solid;
 }
 
 @media screen and (min-width: 768px) {
@@ -11338,11 +11330,6 @@ a.t4Edit-page:hover {
   padding-left: 25px;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-
-.content a {
-  color: #007dc3;
-  font-weight: 700;
 }
 
 .card {
