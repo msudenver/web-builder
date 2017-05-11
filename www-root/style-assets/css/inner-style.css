@@ -11340,6 +11340,11 @@ a.t4Edit-page:hover {
   padding-bottom: 15px;
 }
 
+.content a {
+  color: #007dc3;
+  font-weight: 700;
+}
+
 .card {
   background: #fff;
   padding: 1em;
