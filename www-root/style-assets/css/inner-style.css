@@ -10543,6 +10543,50 @@ table.caption {
   margin-bottom: 1em;
 }
 
+.admissions-promo {
+  background-size: cover;
+  background-position: center top;
+  background: no-repeat center center;
+  margin-bottom: 1em;
+}
+
+.admissions-promo img.img-responsive {
+  width: 100%;
+  padding: 0 !important;
+}
+
+.hero-caption {
+  color: #fff;
+  right: 0;
+  bottom: 0;
+  position: static;
+  background: #000;
+  margin: 0;
+  font-size: 16.1px;
+  font-weight: 100;
+  padding: 2%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 40%;
+}
+
+.action-btns {
+  display: table;
+}
+
+.action-btns-container {
+  height: 6.25em;
+}
+
+.action-btns {
+  height: 100%;
+}
+
+.action-btns-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 @media screen and (min-width: 768px) {
   .action-btns {
     font-size: 2.5vw;
