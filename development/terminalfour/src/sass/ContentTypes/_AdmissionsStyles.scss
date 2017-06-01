@@ -24,6 +24,22 @@
   background-color: #ecf0f1;
 }
 
+.info-box-lower {
+  width: 100%;
+  color: #003a6e;
+  height: 33%;
+  z-index: 100;
+  line-height: 1.5em;
+  margin: 0em 0em 0.5em 0em;
+  background: #e5e5e5;
+  display: table;
+}
+.info-box-lower:hover {
+  color: #00447c;
+  border: 1px solid #00447c;
+  background-color: #ecf0f1;
+}
+
 .infocenter {
   display: table-cell;
   vertical-align: middle;
@@ -75,7 +91,7 @@
 }
 
 .content a:hover {
-    border-bottom: 0px solid;
+    border-bottom: 1px solid;
 }
 
 .admissions-promo{
@@ -112,22 +128,43 @@
 
 .action-btns {
   height: 100%;
+  border-radius: 12px;
 }
 
 .action-btns-text {
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
 }
 
+.hero-caption h2 {
+  color: white;
+}
 
+.action-btns-last {
+  color: white;
+  background-color: #002b52;
+}
+
+.action-btns-last:hover {
+  background: #001c36;
+  color: #fff !important;
+}
 
 @media screen and (min-width: 768px) {
   .action-btns {
     font-size: 2.5vw;
+    width: 24.5%;
+    margin-right: 0.5%;
   }
 
   .info-box {
     width: 96%;
+  }
+
+  .info-box-lower {
+    width: 48.7%;
+    margin-right: 0.5rem;
   }
 
   .tool {
@@ -149,6 +186,9 @@
     font-size: 1.75em;
   }
   .info-box {
+    font-size: 1.5em;
+  }
+  .info-box-lower {
     font-size: 1.5em;
   }
 }

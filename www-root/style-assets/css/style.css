@@ -7500,6 +7500,7 @@ header {
   max-height: none;
   transition: max-height 500ms cubic-bezier(0.42, 0, 0.58, 1);
   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175);
+  padding-top: 5px;
 }
 
 #content-nav #nav-search-close {
@@ -8150,7 +8151,7 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
   }
 
   #content-nav {
-    background: linear-gradient(to bottom, #fff 0px, #fff 65px, #ddd 55px);
+    background: linear-gradient(to bottom, #fff 0px, #fff 70px, #ddd 55px);
   }
 
   .mobile-header {
@@ -8255,7 +8256,7 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
 
   #content-nav #nav-search-close {
     top: -67px;
-    left: 10em;
+    left: 12em;
   }
 
   #content-nav #search-input .search-button {

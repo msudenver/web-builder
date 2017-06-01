@@ -7500,6 +7500,7 @@ header {
   max-height: none;
   transition: max-height 500ms cubic-bezier(0.42, 0, 0.58, 1);
   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175);
+  padding-top: 5px;
 }
 
 #content-nav #nav-search-close {
@@ -8150,7 +8151,7 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
   }
 
   #content-nav {
-    background: linear-gradient(to bottom, #fff 0px, #fff 65px, #ddd 55px);
+    background: linear-gradient(to bottom, #fff 0px, #fff 70px, #ddd 55px);
   }
 
   .mobile-header {
@@ -8255,7 +8256,7 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
 
   #content-nav #nav-search-close {
     top: -67px;
-    left: 10em;
+    left: 12em;
   }
 
   #content-nav #search-input .search-button {
@@ -9886,6 +9887,10 @@ a:focus, a:hover {
   padding-left: 0px;
 }
 
+.content a:hover {
+  border-bottom: none;
+}
+
 #Bachelor .fa-square {
   color: #d11242;
 }
@@ -9938,7 +9943,7 @@ a:focus, a:hover {
   font-weight: 700;
 }
 .content a:hover {
-  border-bottom: 0px solid;
+  border-bottom: 1px solid;
   text-decoration: none;
 }
 .content .description {
@@ -10492,6 +10497,23 @@ table.caption {
   background-color: #ecf0f1;
 }
 
+.info-box-lower {
+  width: 100%;
+  color: #003a6e;
+  height: 33%;
+  z-index: 100;
+  line-height: 1.5em;
+  margin: 0em 0em 0.5em 0em;
+  background: #e5e5e5;
+  display: table;
+}
+
+.info-box-lower:hover {
+  color: #00447c;
+  border: 1px solid #00447c;
+  background-color: #ecf0f1;
+}
+
 .infocenter {
   display: table-cell;
   vertical-align: middle;
@@ -10543,6 +10565,10 @@ table.caption {
   margin-bottom: 1em;
 }
 
+.content a:hover {
+  border-bottom: 1px solid;
+}
+
 .admissions-promo {
   background-size: cover;
   background-position: center top;
@@ -10580,20 +10606,43 @@ table.caption {
 
 .action-btns {
   height: 100%;
+  border-radius: 12px;
 }
 
 .action-btns-text {
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
+}
+
+.hero-caption h2 {
+  color: white;
+}
+
+.action-btns-last {
+  color: white;
+  background-color: #002b52;
+}
+
+.action-btns-last:hover {
+  background: #001c36;
+  color: #fff !important;
 }
 
 @media screen and (min-width: 768px) {
   .action-btns {
     font-size: 2.5vw;
+    width: 24.5%;
+    margin-right: 0.5%;
   }
 
   .info-box {
     width: 96%;
+  }
+
+  .info-box-lower {
+    width: 48.7%;
+    margin-right: 0.5rem;
   }
 
   .tool {
@@ -10616,6 +10665,10 @@ table.caption {
   }
 
   .info-box {
+    font-size: 1.5em;
+  }
+
+  .info-box-lower {
     font-size: 1.5em;
   }
 }
@@ -11374,6 +11427,11 @@ a.t4Edit-page:hover {
   padding-left: 25px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.content a {
+  color: #007dc3;
+  font-weight: 700;
 }
 
 .card {
