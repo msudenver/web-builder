@@ -9938,14 +9938,6 @@ a:focus, a:hover {
   border: 1px solid #ececec;
   background: #fff;
 }
-.content a {
-  color: #007dc3;
-  font-weight: 700;
-}
-.content a:hover {
-  border-bottom: 1px solid;
-  text-decoration: none;
-}
 .content .description {
   font-size: 10px;
 }
@@ -9953,6 +9945,15 @@ a:focus, a:hover {
   margin: 50px 0 20px;
   font-weight: 300;
   color: #888;
+}
+
+.content-inner a {
+  color: #007dc3;
+  font-weight: 700;
+}
+.content-inner a:hover {
+  border-bottom: 1px solid;
+  text-decoration: none;
 }
 
 #layout, #menu, .menu-link {
@@ -10565,10 +10566,6 @@ table.caption {
 
 .admissions-img {
   margin-bottom: 1em;
-}
-
-.content a:hover {
-  border-bottom: 1px solid;
 }
 
 .admissions-promo {
