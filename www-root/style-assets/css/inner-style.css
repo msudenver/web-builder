@@ -10482,13 +10482,14 @@ table.caption {
 
 .info-box {
   width: 100%;
-  color: #003a6e;
+  color: #003a6e !important;
   height: 33%;
   z-index: 100;
   line-height: 1.5em;
   margin: 0em 0em 0.5em 0em;
   background: #e5e5e5;
   display: table;
+  font-weight: 400 !important;
 }
 
 .info-box:hover {
@@ -10499,13 +10500,14 @@ table.caption {
 
 .info-box-lower {
   width: 100%;
-  color: #003a6e;
+  color: #003a6e !important;
   height: 33%;
   z-index: 100;
   line-height: 1.5em;
   margin: 0em 0em 0.5em 0em;
   background: #e5e5e5;
   display: table;
+  font-weight: 400 !important;
 }
 
 .info-box-lower:hover {
@@ -10598,6 +10600,7 @@ table.caption {
 
 .action-btns {
   display: table;
+  font-weight: 400 !important;
 }
 
 .action-btns-container {
@@ -10620,12 +10623,12 @@ table.caption {
 }
 
 .action-btns-last {
-  color: white;
-  background-color: #002b52;
+  color: white !important;
+  background-color: #002b52 !important;
 }
 
 .action-btns-last:hover {
-  background: #001c36;
+  background: #001c36 !important;
   color: #fff !important;
 }
 
@@ -11182,6 +11185,11 @@ body {
   -ms-backface-visibility: hidden;
 }
 
+.content a {
+  color: #007dc3;
+  font-weight: 700;
+}
+
 .collapse {
   position: relative;
   height: 0;
@@ -11410,7 +11418,7 @@ hr {
 }
 
 a.t4Edit-page {
-  color: white;
+  color: white !important;
   float: right;
 }
 
@@ -11427,11 +11435,6 @@ a.t4Edit-page:hover {
   padding-left: 25px;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-
-.content a {
-  color: #007dc3;
-  font-weight: 700;
 }
 
 .card {

@@ -12,6 +12,10 @@ body {
 
 }
 
+.content a {
+  color: #007dc3;
+  font-weight: 700;
+}
 
 .collapse {
   position: relative;
@@ -251,7 +255,7 @@ hr {
 
 // Edit this page styles
 a.t4Edit-page {
-    color: white;
+    color: white !important;
     float: right;
 }
 a.t4Edit-page:hover {
@@ -270,8 +274,4 @@ a.t4Edit-page:hover {
     padding-left: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
-}
-.content a {
-  color: #007dc3;
-  font-weight: 700;
 }
