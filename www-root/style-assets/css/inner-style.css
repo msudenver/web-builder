@@ -10476,7 +10476,7 @@ table.caption {
 }
 
 .info-section {
-  padding: 13px 0 13px 0;
+  padding: 0px 0 13px 0;
   height: 20em;
   margin-bottom: 0.5em;
 }
@@ -10631,6 +10631,10 @@ table.caption {
   color: #fff !important;
 }
 
+.action-btns-last {
+  margin-bottom: 7px;
+}
+
 @media screen and (min-width: 768px) {
   .action-btns {
     font-size: 2.5vw;
@@ -10659,6 +10663,14 @@ table.caption {
     padding: 13px 0 13px 0;
     height: 8em;
     margin-bottom: 0.5em;
+  }
+
+  .info-section {
+    padding: 13px 0 13px 0;
+  }
+
+  .action-btns-last {
+    margin-bottom: 5px;
   }
 }
 @media screen and (min-width: 992px) {
