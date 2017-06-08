@@ -106,21 +106,7 @@
   width: 100%;
   padding: 0 !important;
 }
-.hero-caption {
-  color: #fff;
-  right: 0;
-  bottom: 0;
-  position: static !important;
-  background: #000;
-  margin: 0;
-  font-size: 16.1px;
-  font-weight: 100;
-  padding: 2%;
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  width: 100%;
-  bottom: auto !important;
-}
+
 .action-btns {
   display: table;
   font-weight: 400 !important;
@@ -137,10 +123,6 @@
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-}
-
-.hero-caption h2 {
-  color: white;
 }
 
 .action-btns-last {
@@ -203,13 +185,7 @@
   .info-box-lower {
     font-size: 1.5em;
   }
-  .hero-caption {
-    width: 40%;
-    float: right;
-    position: absolute !important;
-    top: inherit;
-    right: 0;
-    left: auto;
-    bottom: 0 !important;
+  .action-btns-last {
+    margin-bottom: 5px;
   }
 }
