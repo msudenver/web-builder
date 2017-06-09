@@ -11537,6 +11537,19 @@ a.t4Edit-page:hover {
   width: 100%;
 }
 
+.contact-info button {
+  float: left !important;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-info-mobile {
+    display: none;
+  }
+
+  .contact-info button {
+    float: right !important;
+  }
+}
 /** print styles **/
 @media print {
   * {
