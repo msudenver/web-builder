@@ -9956,6 +9956,11 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
+.content-inner ul li {
+  position: relative;
+  left: 1em;
+}
+
 #layout, #menu, .menu-link {
   -webkit-transition: all .2s ease-out;
   -moz-transition: all .2s ease-out;
