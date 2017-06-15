@@ -211,6 +211,10 @@ h6 {
   margin: 1em
 }
 
+.thumbnail > img, .thumbnail a > img {
+  padding: 10px !important;
+}
+
 .modal-dialog {
   padding-top: 12%
 }
