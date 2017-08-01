@@ -11484,6 +11484,10 @@ a.t4Edit-page:hover {
   padding-bottom: 15px;
 }
 
+.well > .img-responsive {
+  padding-left: 0px;
+}
+
 .card {
   background: #fff;
   padding: 1em;
