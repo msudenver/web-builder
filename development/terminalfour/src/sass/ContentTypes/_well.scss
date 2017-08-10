@@ -1,0 +1,39 @@
+.well {
+  width: 100%;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 1.2575em;
+
+  img.img-responsive {
+    padding-left: 0px;
+  }
+
+  h5 {
+    color: #000;
+  }
+
+  .content a .promo-element {
+    color: #535354;
+    font-weight: 400;
+  }
+
+  h4 {
+    color: #007dc3;
+  }
+
+  .promo-element .img-responsive {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .promo-center {
+    display: flex;
+    align-items: center;
+  }
+  .promo-element {
+    display: inline-block;
+  }
+}
