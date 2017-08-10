@@ -12,6 +12,10 @@ body {
 
 }
 
+.content a {
+  color: #007dc3;
+  font-weight: 700;
+}
 
 .collapse {
   position: relative;
@@ -180,15 +184,6 @@ h6 {
   border: 1px solid #ececec
 }
 
-.well {
-  background: #fff;
-  border: 1px solid #e3e3e3;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  margin-bottom: 20px;
-  padding: 1.2575em
-}
 .nav-header {
   color: #fff
 }
@@ -205,6 +200,10 @@ h6 {
 .img-thumbnail, .thumbnail {
   padding: .5em;
   margin: 1em
+}
+
+.thumbnail > img, .thumbnail a > img {
+  padding: 10px !important;
 }
 
 .modal-dialog {
@@ -251,7 +250,7 @@ hr {
 
 // Edit this page styles
 a.t4Edit-page {
-    color: white;
+    color: white !important;
     float: right;
 }
 a.t4Edit-page:hover {
@@ -271,7 +270,7 @@ a.t4Edit-page:hover {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.content a {
-  color: #007dc3;
-  font-weight: 700;
+
+.well > .img-responsive {
+  padding-left: 0px;
 }
