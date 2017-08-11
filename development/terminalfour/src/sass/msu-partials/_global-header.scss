@@ -299,7 +299,7 @@
   -moz-transition: background .25s ease;
   -o-transition: background .25s ease;
   transition: background .25s ease;
-  display: none;
+  // display: none;
 }
 
 .apply-mobile {
@@ -319,7 +319,7 @@
   -moz-transition: background .25s ease;
   -o-transition: background .25s ease;
   transition: background .25s ease;
-  display: none;
+  // display: none;
 }
 
 .msudenver_logo {
@@ -641,7 +641,7 @@ body{
   .navbar .navbar-collapse {
     text-align: center;
   }
-    
+
 .dropdown-menu {
     background-color: rgba(255, 255, 255, 0.95);
     border-bottom: red;
@@ -649,7 +649,7 @@ body{
     border-bottom: 3px solid #d11242;
     border-radius: 0;
 }
-    
+
   li {
     font-size: 0.74em;
     margin-top: 10px;
@@ -658,7 +658,7 @@ body{
     border-bottom: none;
     margin-right: 0.8em;
   }
-    
+
     li.dropdown{
     border-right: 2px solid #003a6e;
     }
@@ -775,6 +775,28 @@ body{
   #content-nav #search-input input[type="text"] {
       padding-top: 0.3em;
   }
+  button.btn.btn-default.visit-give-mobile, button.btn.btn-default.give-mobile, button.btn.btn-default.apply-mobile {
+    width: 9%;
+    position: relative;
+    top: -5.7em;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    padding: 0.3em 1.2em !important;
+    text-transform: uppercase;
+  }
+  .visit-give-mobile, .apply-mobile {
+    font-size: 1.2em;
+  }
+  button.btn.btn-default.visit-give-mobile {
+      right: 3em;
+  }
+  button.btn.btn-default.give-mobile {
+      right: -9em;
+  }
+  button.btn.btn-default.apply-mobile {
+      right: -21em;
+  }
+
 }
 
 
