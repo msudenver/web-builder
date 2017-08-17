@@ -615,9 +615,6 @@ body{
   }
 }
 
-
-
-
 @media (min-width: $screen-md-min) {
 
   body {
@@ -775,6 +772,23 @@ body{
   #content-nav #search-input input[type="text"] {
       padding-top: 0.3em;
   }
+  .apply-mobile {
+    font-size: 1.2em;
+    background: #d11242;
+    transition: background .25s ease !important;
+  }
+  .apply-mobile:hover {
+    background: #a60029;
+    color: #fff;
+  }
+  .visit-give-mobile {
+    background: gray;
+    transition: background .25s ease !important;
+  }
+  .visit-give-mobile:hover {
+    background: #424448;
+    color: #fff;
+  }
   button.btn.btn-default.visit-give-mobile, button.btn.btn-default.give-mobile, button.btn.btn-default.apply-mobile {
     width: 9%;
     position: relative;
@@ -788,17 +802,18 @@ body{
     font-size: 1.2em;
   }
   button.btn.btn-default.visit-give-mobile {
-      right: 3em;
+      right: 8.9em;
+      padding: 0.3em 0.1em !important;
   }
   button.btn.btn-default.give-mobile {
-      right: -9em;
+      right: 0em;
+      padding: 0.3em 0.1em !important;
   }
   button.btn.btn-default.apply-mobile {
-      right: -21em;
+      right: -8.95em;
+      padding: 0.3em 0.1em !important;
   }
-
 }
-
 
 @media (min-width: $screen-lg-min) {
   .header-container, .container-fluid {
@@ -847,10 +862,17 @@ body{
   #nav-alumni {
     width: 12em;
   }
-
-  .apply-button {
-    font-size: 1.2em;
+  button.btn.btn-default.visit-give-mobile {
+      right: 19.65%;
   }
+  button.btn.btn-default.give-mobile {
+      right: 1%;
+  }
+  button.btn.btn-default.apply-mobile {
+      right: -17.76%;
+  }
+
+
 //  .pushdown-menu {
 //      height: 29em;
 //  }
