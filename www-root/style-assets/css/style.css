@@ -7609,6 +7609,24 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
     border-top: 170px solid #ccc;
   }
 }
+.hide-pipe {
+  display: none;
+}
+
+#nav-search {
+  position: absolute;
+  top: -3.5em;
+  right: 2em;
+}
+
+#nav-search a {
+  color: #fff;
+}
+
+.navbar {
+  min-height: 0;
+}
+
 @media (max-width: 991px) {
   #nav-admissions {
     padding-left: 0px;
@@ -7817,10 +7835,6 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
     height: 29em;
   }
 
-  .fac-staf-stu-mobile {
-    display: none;
-  }
-
   #content-nav #nav-search-close {
     top: -3.2em;
     left: 18.5em;
@@ -7900,8 +7914,69 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
     padding: 0.3em 0.1em !important;
   }
 
-  button.apply-mobile, button.visit-give-mobile {
+  button.apply-mobile, button.visit-give-mobile, .fac-staf-stu-mobile {
     position: absolute !important;
+  }
+
+  .fac-staf-stu-mobile li, .fac-staf-stu-mobile li.hide-pipe {
+    display: inline;
+  }
+
+  ul.fac-staf-stu-mobile {
+    right: 5%;
+    top: -2em;
+  }
+
+  ul.fac-staf-stu-mobile li a, .fac-staf-stu-mobile li.hide-pipe {
+    font-family: 'Gotham A', 'Gotham B', sans-serif;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    letter-spacing: 0px !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+
+  a.dropdown-toggle, ul.nav.navbar-nav li a {
+    color: #003a6e;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+  }
+
+  .dropdown-menu > li > a {
+    font-size: 0.8em !important;
+  }
+
+  .navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  li.dropdown {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  div#bs-example-navbar-collapse-1.collapse.navbar-collapse {
+    transition: max-height 500ms cubic-bezier(0.42, 0, 0.58, 1);
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175);
+  }
+
+  #nav-search {
+    position: relative;
+    top: inherit;
+    right: inherit;
+  }
+
+  #nav-search a {
+    background: #005fae;
+    position: relative;
+  }
+
+  .fa-search {
+    color: #fff;
   }
 }
 @media (min-width: 1200px) {

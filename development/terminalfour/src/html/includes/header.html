@@ -30,6 +30,7 @@
                <a href="/admissions"><button type="button" class="btn btn-default apply-mobile">Apply</button></a>
                <ul class="fac-staf-stu-mobile">
                   <li><a href="/studenthub">Current Students</a></li>
+                  <li class="hide-pipe">|</li>
                   <li><a href="/facstaff">Faculty &amp; Staff</a></li>
                </ul>
                <li class="dropdown">
@@ -75,8 +76,10 @@
                <li>
                   <a href="#"  role="button">Athletics </a>
                </li>
-               <li>
-                  <button type="button" class="btn rowdyblue" data-toggle="modal" data-target="#myModal">Search</button>
+               <li id="nav-search" type="button">
+                 <a href="#" data-toggle="modal" data-target="#myModal">
+                   <span class="fa fa-search search-desktop"></span>
+                 </a>
                </li>
             </ul>
          </div>
