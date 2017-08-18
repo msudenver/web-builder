@@ -7886,18 +7886,22 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
   }
 
   button.btn.btn-default.visit-give-mobile {
-    right: 8.9em;
+    right: 22%;
     padding: 0.3em 0.1em !important;
   }
 
   button.btn.btn-default.give-mobile {
-    right: 0em;
+    right: 12.8%;
     padding: 0.3em 0.1em !important;
   }
 
   button.btn.btn-default.apply-mobile {
-    right: -8.95em;
+    right: 3.56%;
     padding: 0.3em 0.1em !important;
+  }
+
+  button.apply-mobile, button.visit-give-mobile {
+    position: absolute !important;
   }
 }
 @media (min-width: 1200px) {
@@ -7960,15 +7964,15 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
   }
 
   button.btn.btn-default.visit-give-mobile {
-    right: 19.65%;
+    right: 23.77%;
   }
 
   button.btn.btn-default.give-mobile {
-    right: 1%;
+    right: 14.6%;
   }
 
   button.btn.btn-default.apply-mobile {
-    right: -17.76%;
+    right: 5.4%;
   }
 }
 .msudenver_logo_change {
