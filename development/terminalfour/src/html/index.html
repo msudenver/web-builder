@@ -41,6 +41,33 @@
             } );
         });
         </script>
+
+				<!-- allow mobile menu dropdown to scroll -->
+				<!-- <script>
+				$('#bs-example-navbar-collapse-1').css('max-height',$(window).height());
+				</script> -->
+				<script>
+				$('.navbar-nav').css('max-height',$(window).height());
+				</script>
+				<script>
+				// scrollTop function
+				$(window).scroll(function(){
+				  var width_threshold = 900;
+				  var href = document.location.href;
+				  var position = $(window).scrollTop();
+				  var width     =  $(window).width();
+				  $(".header-fluid").removeClass("header-fluid-change");
+				  $(".msudenver_logo").removeClass("msudenver_logo_change");
+
+
+				  if( position > 15 && width > width_threshold) {
+				    $(".header-fluid").toggleClass("header-fluid-change");
+				    $(".msudenver_logo").toggleClass("msudenver_logo_change");
+				  }
+
+				});
+				</script>
+
     </body>
 
 </html>
