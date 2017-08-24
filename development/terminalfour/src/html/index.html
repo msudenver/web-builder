@@ -63,7 +63,15 @@
 				  if( position > 15 && width > width_threshold) {
 				    $(".header-fluid").toggleClass("header-fluid-change");
 				    $(".msudenver_logo").toggleClass("msudenver_logo_change");
+						$("button.btn.btn-default.visit-give-mobile").css("top", "-4.9em");
+						$("button.btn.btn-default.give-mobile").css("top", "-4.9em");
+						$("button.btn.btn-default.apply-mobile").css("top", "-4.9em");
 				  }
+					if( position <= 15 && width > width_threshold) {
+						$("button.btn.btn-default.visit-give-mobile").css("top", "-5.7em");
+						$("button.btn.btn-default.give-mobile").css("top", "-5.7em");
+						$("button.btn.btn-default.apply-mobile").css("top", "-5.7em");
+					}
 
 				});
 				</script>
