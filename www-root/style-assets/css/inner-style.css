@@ -7416,13 +7416,6 @@ header {
   text-align: center;
 }
 
-.msudenver_logo, .msudenver_logo_change {
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
 .navbar {
   border: 0;
   margin-bottom: 0;
@@ -7432,8 +7425,6 @@ header {
 .navbar ul li {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #00447c;
-  padding-right: .25em;
-  padding-left: .25em;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
@@ -7615,8 +7606,8 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
 
 #nav-search {
   position: absolute;
-  top: -3.5em;
-  right: 2em;
+  top: -3.6em;
+  right: 3.5em;
 }
 
 #nav-search a {
@@ -7625,6 +7616,19 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
 
 .navbar {
   min-height: 0;
+}
+
+.navbar-nav > li#nav-search > a {
+  padding: 10px 1em;
+}
+
+button.btn.btn-default.visit-give-mobile, button.btn.btn-default.give-mobile, button.btn.btn-default.apply-mobile {
+  text-align: center;
+}
+
+div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar-collapse-1 {
+  transition: max-height 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175);
 }
 
 @media (max-width: 991px) {
@@ -7701,6 +7705,11 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
   .navbar-nav {
     float: none !important;
     margin: 7px 0px;
+    overflow: scroll;
+  }
+
+  #bs-example-navbar-collapse-1 {
+    overflow: scroll;
   }
 
   .navbar-nav > li {
@@ -7957,11 +7966,6 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
   li.dropdown {
     margin-bottom: 0;
     margin-right: 0;
-  }
-
-  div#bs-example-navbar-collapse-1.collapse.navbar-collapse {
-    transition: max-height 500ms cubic-bezier(0.42, 0, 0.58, 1);
-    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175);
   }
 
   #nav-search {
