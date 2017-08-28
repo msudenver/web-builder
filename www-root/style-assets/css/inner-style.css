@@ -7811,6 +7811,15 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
     display: none;
   }
 
+  #nav-search {
+    top: 18px;
+    margin-top: 11px;
+  }
+
+  ul.nav.navbar-nav li a {
+    padding: 10px;
+  }
+
   #content-nav {
     background: linear-gradient(to bottom, #fff 0px, #fff 65px, #ddd 55px);
   }

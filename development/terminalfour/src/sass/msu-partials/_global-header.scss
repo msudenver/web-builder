@@ -720,6 +720,15 @@ body{
     display: none;
   }
 
+  #nav-search {
+  	top: 18px;
+  	margin-top: 11px;
+  }
+
+  ul.nav.navbar-nav li a {
+  	padding: 10px;
+  }
+
 //  li.dropdown {
 //    padding: 5px 0px;
 //    font-size: 1.08em;
