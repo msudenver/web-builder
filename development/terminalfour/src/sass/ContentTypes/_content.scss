@@ -58,3 +58,17 @@ img.border {
 // }
 
 }
+
+.content-inner a {
+  color: #007dc3;
+  font-weight: 700;
+}
+.content-inner a:hover {
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+.content-inner ul li {
+  position: relative;
+  left: 1em;
+}
