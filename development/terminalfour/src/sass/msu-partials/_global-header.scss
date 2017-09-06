@@ -536,7 +536,7 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
 }
 
 .navbar-nav > li#nav-search > a {
-  padding: 10px 1em;
+  padding: 7px 0.5em;
 }
 
 button.btn.btn-default.visit-give-mobile, button.btn.btn-default.give-mobile, button.btn.btn-default.apply-mobile {
@@ -678,23 +678,31 @@ body{
     border-radius: 0;
 }
 
-  li {
+  li.dropdown {
     font-size: 0.74em;
-    margin-top: 10px;
-    margin-bottom:7px;
-    padding: 5px 0px;
+    margin-top: 8px;
+    padding: 0px;
     border-bottom: none;
     margin-right: 0.8em;
+    border-right: 2px solid #003a6e;
   }
 
-    li.dropdown{
-    border-right: 2px solid #003a6e;
-    }
+  li.dropdown.last {
+    border-right: none;
+    margin-right: none;
+  }
 
-
+  ul.dropdown-menu li {
+    margin-top: 0px;
+  }
 
   ul.pushdown-menu > a li {
     padding-top: 0;
+  }
+
+  .dropdown-last {
+    border-right: none !important;
+    margin-right: none !important;
   }
 
   // ul.nav.navbar-nav.navbar-center {
@@ -722,7 +730,7 @@ body{
 
   #nav-search {
   	top: 18px;
-  	margin-top: 11px;
+  	margin-top: 7px;
   }
 
   ul.nav.navbar-nav li a {
@@ -914,7 +922,7 @@ body{
       font-size: 18px;
   }
   .nav >li * {
-  padding: 5px 0px;
+  padding: 0px;
   font-size: 1.33em;
   }
   .fa-search {
