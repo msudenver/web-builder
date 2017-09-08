@@ -539,7 +539,7 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
   padding: 7px 0.5em;
 }
 
-button.btn.btn-default.visit-give-mobile, button.btn.btn-default.give-mobile, button.btn.btn-default.apply-mobile {
+a.btn.btn-default.visit-give-mobile, a.btn.btn-default.give-mobile, a.btn.btn-default.apply-mobile {
   text-align: center;
 }
 
@@ -836,7 +836,7 @@ body{
     background: #424448;
     color: #fff;
   }
-  button.btn.btn-default.visit-give-mobile, button.btn.btn-default.give-mobile, button.btn.btn-default.apply-mobile {
+  a.btn.btn-default.visit-give-mobile, a.btn.btn-default.give-mobile, a.btn.btn-default.apply-mobile {
     width: 9%;
     position: relative;
     top: -5.7em;
@@ -848,20 +848,20 @@ body{
   .visit-give-mobile, .apply-mobile {
     font-size: 1.2em;
   }
-  button.btn.btn-default.visit-give-mobile {
+  a.btn.btn-default.visit-give-mobile {
       right: 22%;
       padding: 0.3em 0.1em !important;
   }
-  button.btn.btn-default.give-mobile {
+  a.btn.btn-default.give-mobile {
       right: 12.8%;
       padding: 0.3em 0.1em !important;
   }
-  button.btn.btn-default.apply-mobile {
+  a.btn.btn-default.apply-mobile {
       right: 3.56%;
       padding: 0.3em 0.1em !important;
   }
 
-  button.apply-mobile, button.visit-give-mobile, .fac-staf-stu-mobile {
+  a.apply-mobile, a.visit-give-mobile, .fac-staf-stu-mobile {
     position: absolute !important;
   }
   .fac-staf-stu-mobile li, .fac-staf-stu-mobile li.hide-pipe {
@@ -959,13 +959,13 @@ body{
   #nav-alumni {
     width: 12em;
   }
-  button.btn.btn-default.visit-give-mobile {
+  a.btn.btn-default.visit-give-mobile {
       right: 23.77%;
   }
-  button.btn.btn-default.give-mobile {
+  a.btn.btn-default.give-mobile {
       right: 14.6%;
   }
-  button.btn.btn-default.apply-mobile {
+  a.btn.btn-default.apply-mobile {
       right: 5.4%;
   }
 
@@ -978,7 +978,7 @@ body{
   }
 
 
-.skip {
+.skip-content {
     position: absolute;
     top: -1000px;
     left: -1000px;
@@ -989,12 +989,12 @@ body{
     font-size: x-large;
 }
 
-a.skip {
+a.skip-content {
   color: white;
   text-decoration: underline;
 }
 
-a.skip:active, a.skip:focus, a.skip:hover {
+a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
     left: 0;
     top: 0;
     width: auto;
