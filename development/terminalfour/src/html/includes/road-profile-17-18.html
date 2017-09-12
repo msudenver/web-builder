@@ -1,0 +1,141 @@
+<style>
+
+   #site-header {
+   display: none;
+   }
+   .well {
+   background: #f5f5f5;
+   }
+   .well h4 {
+   color: #007dc3;
+   }
+   .ryor > .hero  > .hero-caption-ryor > h2,h3 {
+   color:white;
+   }
+   .hero-caption-ryor {
+   position: static;
+   background-color: #000;
+   padding: 1em;
+   }
+   .ryor-logo {
+   position: absolute;
+   top: 5em;
+   left: 1em;
+   width: 50%;
+   }
+   span.bio {
+   font-size: 1.3em;
+   line-height: 1.8em;
+   }
+   a.btn.btn-lg.custombtn.rowdyblue {
+    text-align: center;
+   }
+   .content .img-responsive {
+    padding: 0px;
+    width: 95%;
+   }
+   .content a .promo-element {
+    color: #535354;
+    font-weight: 400;
+   }
+   .call-us {
+    text-align: center;
+   }
+
+  @media screen and (min-width: 992px) {
+   .hero-caption-ryor {
+    position: absolute;
+    top: 20%;
+    left: 3em;
+    background-color: transparent;
+    padding: 0;
+    text-shadow: 2px 2px 4px #000000;
+   }
+   .ryor-left {
+   width: 49%;
+   margin-right: 10px;
+   }
+   .ryor-right {
+   width: 49%;
+   margin-left: 10px;
+   }
+   .ryor-logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    width: 100%;
+   }
+</style>
+<t4 type="meta" meta="html_anchor" />
+<div class="ryor">
+   <div class="hero">
+      <t4 type="content" name="Full Profile Photo" output="normal" formatter="image/*" />
+      <div class="hero-caption-ryor">
+         <h2>
+            <t4 type="content" name="Name" output="normal" modifiers="htmlentities"/>
+         </h2>
+         <h3>
+            <t4 type="content" name="Attribute" output="normal" modifiers="htmlentities" />
+         </h3>
+         <h3>
+            <t4 type="content" name="First Word" output="normal" modifiers="htmlentities"/>.
+            <t4 type="content" name="Second Word" output="normal" modifiers="htmlentities"/>.
+            Roadrunner.
+         </h3>
+         <div class="visible-xs visible-sm visible-md visible-lg ryor-logo">
+            <t4 type="media" formatter="image/*" id="132031" />
+         </div>
+      </div>
+   </div>
+   <div class="col-xs-12 col-md-7">
+      <h2>
+         <t4 type="content" name="Bio Caption" output="normal" modifiers="striptags,htmlentities" />
+      </h2>
+      <span class="bio">
+      <t4 type="content" name="Bio" output="selective-output" modifiers=""  format="$value"/>
+      <span>
+   </div>
+   <div class="col-xs-12 col-md-5">
+      <p style="height: 650px;"><iframe src="https://msudenver.qualtrics.com/jfe/form/SV_07DbpVLhIxqZhGd" width="100%" height="100%"></iframe></p>
+      <div class="well">
+         <h4><strong>This is where lives are transformed. Where new paths unfold. Where the future spreads out in front of you. </strong></h4>
+         <p>At MSU Dever, we celebrate that each person’s road is different. Where will yours take you?</p>
+         <a role="button" class="btn btn-lg custombtn rowdyblue" style="border-bottom: 0px solid" href="https://www.msudenver.edu/admissions/apply">
+         <span>APPLY TO MSU DENVER</span>
+         </a>
+        <h4 class="call-us">Call Us: (800) 303-3030</h4>
+      </div>
+   </div>
+</div>
+<hr>
+<a href="">
+   <div class="well col-xs-12 col-lg-6 ryor-left" style="margin-bottom:20px;">
+      <div class="promo-center">
+         <span class="promo-glyph pull-left"></span>
+         <figure class="promo-element" style="float:left;"><img class="img-responsive" src="/media/marketingandcommunications/runyourownroad/read-more-roadrunner-stories.jpg" alt="" style=""> </figure>
+         <article class="featured-story-text promo-element">
+            <h4>Read her full story</h4>
+            <hr>
+            <div>
+               Keep you in the loop with our progress on University priorities.
+            </div>
+         </article>
+      </div>
+   </div>
+</a>
+<a href="">
+   <div class="well col-xs-12 col-lg-6 ryor-right" style="margin-bottom:20px;">
+      <div class="promo-center">
+         <span class="promo-glyph pull-left"></span>
+         <figure class="promo-element" style="float:left;"><img class="img-responsive" src="/media/marketingandcommunications/runyourownroad/read-more-roadrunner-stories.jpg" alt="" style=""> </figure>
+         <article class="featured-story-text promo-element">
+            <h4>More Roadrunner Stories</h4>
+            <hr>
+            <div>
+               Keep you in the loop with our progress on University priorities.
+            </div>
+         </article>
+      </div>
+   </div>
+</a>
