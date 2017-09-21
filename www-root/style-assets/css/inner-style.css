@@ -8094,10 +8094,14 @@ a.skip-content {
 
 a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
   left: 0;
-  top: 0;
+  top: -90px;
   width: auto;
   height: auto;
   overflow: visible;
+  color: #fff;
+  font-size: 30px;
+  position: relative;
+  z-index: 10000;
 }
 
 /* Homepage base styles */
