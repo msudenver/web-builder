@@ -7951,7 +7951,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
 
   ul.fac-staf-stu-mobile {
     right: 5%;
-    top: -2em;
+    top: -2.5em;
   }
 
   ul.fac-staf-stu-mobile li a, .fac-staf-stu-mobile li.hide-pipe {
@@ -8002,7 +8002,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
   }
 }
 @media (min-width: 1200px) {
-  .header-container, .container-fluid {
+  .container-fluid {
     padding-left: 8.33333%;
     padding-right: 8.33333%;
   }

@@ -869,7 +869,7 @@ body{
   }
   ul.fac-staf-stu-mobile {
     right: 5%;
-    top: -2em;
+    top: -2.5em;
   }
   ul.fac-staf-stu-mobile li a, .fac-staf-stu-mobile li.hide-pipe {
     font-family: 'Gotham A', 'Gotham B', sans-serif;
@@ -913,7 +913,7 @@ body{
 }
 
 @media (min-width: $screen-lg-min) {
-  .header-container, .container-fluid {
+  .container-fluid {
         padding-left: percentage(1/$grid-columns) ;
         padding-right: percentage(1/$grid-columns) ;
   }
