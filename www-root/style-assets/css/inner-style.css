@@ -8002,7 +8002,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
   }
 }
 @media (min-width: 1200px) {
-  .container-fluid {
+  .header-container, .container-fluid {
     padding-left: 8.33333%;
     padding-right: 8.33333%;
   }
@@ -8061,15 +8061,15 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
   }
 
   a.btn.btn-default.visit-give-mobile {
-    right: 23.77%;
+    right: 27.77%;
   }
 
   a.btn.btn-default.give-mobile {
-    right: 14.6%;
+    right: 18.6%;
   }
 
   a.btn.btn-default.apply-mobile {
-    right: 5.4%;
+    right: 9.4%;
   }
 }
 .msudenver_logo_change {
