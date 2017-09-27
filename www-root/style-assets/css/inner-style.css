@@ -7606,7 +7606,7 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
 
 #nav-search {
   position: absolute;
-  top: -3.6em;
+  top: -3.95em;
   right: 3.5em;
 }
 
@@ -7619,7 +7619,7 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
 }
 
 .navbar-nav > li#nav-search > a {
-  padding: 7px 0.5em;
+  padding: 13px 1em;
 }
 
 a.btn.btn-default.visit-give-mobile, a.btn.btn-default.give-mobile, a.btn.btn-default.apply-mobile {
@@ -7629,6 +7629,137 @@ a.btn.btn-default.visit-give-mobile, a.btn.btn-default.give-mobile, a.btn.btn-de
 div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar-collapse-1 {
   transition: max-height 500ms cubic-bezier(0.42, 0, 0.58, 1);
   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175);
+}
+
+.fa.pull-right {
+  margin-left: 0.5em;
+  margin-top: 0.1em;
+}
+
+.modal-content {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-dialog {
+  margin: 0px auto;
+}
+
+.close, .close:hover {
+  color: #fff;
+  opacity: 1;
+  font-size: 10px;
+  font-weight: 200;
+  line-height: 1;
+  text-shadow: none;
+  letter-spacing: 2px;
+}
+
+.modal-header {
+  padding: 0;
+  border-bottom: none;
+}
+
+.modal-footer {
+  padding: 0;
+  text-align: right;
+  border-top: none;
+}
+
+.modal-header .close {
+  margin-top: 15em;
+}
+
+button.close {
+  padding-bottom: 10px;
+}
+
+button.close span b {
+  font-size: 30px;
+}
+
+div.modal-body form button.btn.btn-default {
+  position: relative;
+  top: -50px;
+  float: right;
+  padding: 5px 12px;
+}
+
+.form-control {
+  border: 0px;
+  border-radius: 0;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+:-moz-placeholder {
+  font-style: italic;
+}
+
+::-moz-placeholder {
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  font-style: italic;
+}
+
+button.close b {
+  position: relative;
+  top: 5px;
+}
+
+.submit-desktop {
+  position: relative;
+  top: -52px;
+  float: right;
+  padding: 5px 15px;
+  color: #00447c !important;
+  font-size: 25px !important;
+}
+
+.search-button-text {
+  display: none;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #eeeeee;
+}
+
+.modal-dialog {
+  width: 80%;
+}
+
+li#nav-search > a {
+  width: 3.5rem;
+}
+
+.form-group {
+  background: white;
+}
+
+.collapse {
+  height: auto !important;
+}
+
+span.fa.fa-bars {
+  font-size: x-large;
+}
+
+.navbar-toggle {
+  padding: 17px !important;
+}
+
+span.fa.fa-search.search-desktop {
+  font-size: 1.5em;
 }
 
 @media (max-width: 991px) {
@@ -7652,6 +7783,10 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
 
   .header-container {
     line-height: 2.4em;
+  }
+
+  .navbar-toggle {
+    display: block !important;
   }
 }
 @media screen and (max-width: 991px) {
@@ -7704,7 +7839,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
 
   .navbar-nav {
     float: none !important;
-    margin: 7px 0px;
+    margin: 0px;
     overflow: scroll;
   }
 
@@ -7740,6 +7875,14 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
 
   .visit-give-mobile, .apply-mobile {
     display: block;
+  }
+
+  .fac-staf-stu-mobile {
+    top: unset;
+  }
+
+  div[alt^="Asphalt"] {
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175);
   }
 }
 @media (min-width: 992px) {
@@ -7788,7 +7931,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
     padding: 0px;
     border-bottom: none;
     margin-right: 0.8em;
-    border-right: 2px solid #003a6e;
+    border-right: 1px solid #337ab7;
   }
 
   li.dropdown.last {
@@ -7844,10 +7987,6 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
 
   .faculty-staff-students a {
     display: inline-block;
-  }
-
-  .navbar-toggle {
-    display: none;
   }
 
   .mobile-header > .fa.fa-chevron-down {
@@ -7950,7 +8089,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
   }
 
   ul.fac-staf-stu-mobile {
-    right: 5%;
+    right: 9%;
     top: -2.5em;
   }
 
@@ -7968,8 +8107,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
     color: #003a6e;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.5em;
-    letter-spacing: 1px;
+    font-size: 18px;
   }
 
   .dropdown-menu > li > a {
@@ -7993,12 +8131,43 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
   }
 
   #nav-search a {
-    background: #005fae;
+    background: #00447c;
     position: relative;
+    border-radius: 6px;
+    font-size: small;
+    font-weight: 400;
+  }
+
+  .nav > li#nav-search * {
+    font-size: small;
+  }
+
+  #nav-search a:hover {
+    background: #003663;
   }
 
   .fa-search {
     color: #fff;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .search-button-text {
+    display: inline;
+  }
+
+  li#nav-search > a {
+    width: 7rem;
+  }
+
+  li#nav-search a {
+    padding-top: 0;
+  }
+
+  .navbar-nav > li#nav-search > a {
+    padding: 8px 1em;
   }
 }
 @media (min-width: 1200px) {
@@ -8070,6 +8239,18 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
 
   a.btn.btn-default.apply-mobile {
     right: 9.4%;
+  }
+
+  a.dropdown-toggle, ul.nav.navbar-nav li a {
+    letter-spacing: 1px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  li#nav-search > a {
+    width: 9rem;
   }
 }
 .msudenver_logo_change {
