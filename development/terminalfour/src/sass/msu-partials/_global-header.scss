@@ -569,7 +569,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
 .close, .close:hover {
   color: #fff;
   opacity: 1;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 200;
   line-height: 1;
   text-shadow: none;
@@ -585,7 +585,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
     border-top: none;
 }
 .modal-header .close {
-    margin-top: 15em;
+    margin-top: 4em;
 }
 button.close {
     padding-bottom: 10px;
@@ -763,7 +763,7 @@ body{
 @media (min-width: $screen-md-min) {
 
   body {
-    padding-top: 90px;
+    padding-top: 150px;
 
   }
 
@@ -844,7 +844,7 @@ body{
 
   #nav-search {
   	top: 18px;
-  	margin-top: 7px;
+  	margin-top: 9px;
   }
 
   ul.nav.navbar-nav li a {
@@ -1074,36 +1074,36 @@ body{
   font-size: 1.2em;
 
   }
-  #content-nav #search-input input[type=text] {
-    width: 89em;
-  }
-  #content-nav #nav-search-close {
-      top: -67px;
-      left: 10em;
-  }
-  #content-nav #search-input .search-button {
-      top: -3.3em;
-      left: 14em;
-  }
-  a .pushdown-menu {
-      font-weight: 500;
-      font-size: 0.8em;
-  }
-  #nav-faculty {
-    width: 11em;
-  }
-  #nav-admissions {
-    width: 15em;
-  }
-  #nav-academics {
-    width: 14em;
-  }
-  #nav-campus {
-    width: 11em;
-  }
-  #nav-alumni {
-    width: 12em;
-  }
+  // #content-nav #search-input input[type=text] {
+  //   width: 89em;
+  // }
+  // #content-nav #nav-search-close {
+  //     top: -67px;
+  //     left: 10em;
+  // }
+  // #content-nav #search-input .search-button {
+  //     top: -3.3em;
+  //     left: 14em;
+  // }
+  // a .pushdown-menu {
+  //     font-weight: 500;
+  //     font-size: 0.8em;
+  // }
+  // #nav-faculty {
+  //   width: 11em;
+  // }
+  // #nav-admissions {
+  //   width: 15em;
+  // }
+  // #nav-academics {
+  //   width: 14em;
+  // }
+  // #nav-campus {
+  //   width: 11em;
+  // }
+  // #nav-alumni {
+  //   width: 12em;
+  // }
   a.btn.btn-default.visit-give-mobile {
       right: 27.77%;
       width: 9% !important;

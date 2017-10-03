@@ -7660,7 +7660,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
 .close, .close:hover {
   color: #fff;
   opacity: 1;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 200;
   line-height: 1;
   text-shadow: none;
@@ -7679,7 +7679,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
 }
 
 .modal-header .close {
-  margin-top: 15em;
+  margin-top: 4em;
 }
 
 button.close {
@@ -7893,7 +7893,7 @@ span.fa.fa-search.search-desktop {
 }
 @media (min-width: 992px) {
   body {
-    padding-top: 90px;
+    padding-top: 150px;
   }
 
   .header-container {
@@ -7972,7 +7972,7 @@ span.fa.fa-search.search-desktop {
 
   #nav-search {
     top: 18px;
-    margin-top: 7px;
+    margin-top: 9px;
   }
 
   ul.nav.navbar-nav li a {
@@ -8201,45 +8201,6 @@ span.fa.fa-search.search-desktop {
 
   .fa-search {
     font-size: 1.2em;
-  }
-
-  #content-nav #search-input input[type=text] {
-    width: 89em;
-  }
-
-  #content-nav #nav-search-close {
-    top: -67px;
-    left: 10em;
-  }
-
-  #content-nav #search-input .search-button {
-    top: -3.3em;
-    left: 14em;
-  }
-
-  a .pushdown-menu {
-    font-weight: 500;
-    font-size: 0.8em;
-  }
-
-  #nav-faculty {
-    width: 11em;
-  }
-
-  #nav-admissions {
-    width: 15em;
-  }
-
-  #nav-academics {
-    width: 14em;
-  }
-
-  #nav-campus {
-    width: 11em;
-  }
-
-  #nav-alumni {
-    width: 12em;
   }
 
   a.btn.btn-default.visit-give-mobile {
@@ -8487,43 +8448,6 @@ a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
   .main-button .homepage-btn {
     padding: 0;
     line-height: 1;
-  }
-}
-#homepage-second-nav {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin-top: 0px;
-  padding: 0;
-  position: relative;
-  height: 3em;
-  color: #fff;
-  background-image: url(../media/RYOR_bg_extended.png);
-  display: none;
-}
-
-.homepage-feature ul {
-  list-style-type: none;
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-  margin-top: 6px;
-  padding-left: 0;
-  font-size: 1.5rem;
-}
-
-.homepage-feature li {
-  display: table-cell;
-}
-
-#homepage-second-nav a {
-  color: #fff;
-}
-
-@media (min-width: 992px) {
-  #homepage-second-nav {
-    display: block;
   }
 }
 #homepage-ryor {
@@ -9988,7 +9912,6 @@ a:focus, a:hover {
 }
 
 #layout {
-  z-index: 9998;
   padding-left: 200px;
   left: 0;
   top: 100px;
@@ -10002,7 +9925,6 @@ a:focus, a:hover {
   top: 0;
   left: 150px;
   bottom: 0;
-  z-index: 9998;
   background: #fff;
   color: black;
   -webkit-overflow-scroll: touch;
@@ -10095,6 +10017,14 @@ a:focus, a:hover {
 
 .menu-link:focus span:after, .menu-link:hover span:after {
   margin-top: 0.6em;
+}
+
+ul.nav.nav-list > li > a {
+  margin-left: -30px;
+}
+
+.currentbranch0 a {
+  margin-left: -30px;
 }
 
 .multilevel-linkul-0 {
@@ -11619,6 +11549,43 @@ a.t4Edit-page:hover {
 
   .contact-info button {
     float: right !important;
+  }
+}
+#homepage-second-nav {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 0px;
+  padding: 0;
+  position: relative;
+  height: 3em;
+  color: #fff;
+  background-image: url(../media/RYOR_bg_extended.png);
+  display: none;
+}
+
+.homepage-feature ul {
+  list-style-type: none;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  margin-top: 6px;
+  padding-left: 0;
+  font-size: 1.5rem;
+}
+
+.homepage-feature li {
+  display: table-cell;
+}
+
+#homepage-second-nav a {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  #homepage-second-nav {
+    display: block;
   }
 }
 /** print styles **/

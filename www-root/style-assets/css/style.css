@@ -7660,7 +7660,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
 .close, .close:hover {
   color: #fff;
   opacity: 1;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 200;
   line-height: 1;
   text-shadow: none;
@@ -7679,7 +7679,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
 }
 
 .modal-header .close {
-  margin-top: 15em;
+  margin-top: 4em;
 }
 
 button.close {

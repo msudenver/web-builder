@@ -19,6 +19,7 @@ header {
     text-align: center;
     color: #fff;
 }
+
 #denver-city-svg { background: blue; color: #fff; }
 #denver-city-svg svg { color: #fff;}
 
@@ -27,7 +28,7 @@ header {
 @import "msu-partials/global-header";
 @import "msu-partials/msu-utils";
 @import "msu-partials/homepage-base";
-@import "msu-partials/homepage-second-nav";
+
 // @import "msu-partials/homepage-feature-caption";
 @import "msu-partials/homepage-ryor";
 @import "msu-partials/homepage-news";
@@ -56,5 +57,8 @@ header {
 @import "ContentTypes/card";
 @import "ContentTypes/user-profile";
 @import "ContentTypes/button-styles";
+
+@import "msu-partials/homepage-second-nav";
+
 /** print styles **/
 @import "print";
