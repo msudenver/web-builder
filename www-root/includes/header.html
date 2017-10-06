@@ -7,7 +7,7 @@
          <span class="sr-only">Toggle quick links navigation</span>
          <span class="fa fa-bars"></span>
          </button>
-         <div class="row header-container">
+         <div class="row container-fluid">
             <div class="col-xs-8">
                <a href="/"> <img class="msudenver_logo" src="https://msudenver.edu/media/newsiteassets/images/msudenver_logo_header.svg" alt="MSU Denver Homepage"> </a>
             </div>
@@ -25,7 +25,7 @@
          <!-- Brand and toggle get grouped for better mobile display -->
          <!-- Collect the nav links, forms, and other content for toggling -->
          <div class="" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
+            <ul id="menu-nav" class="nav navbar-nav">
               <li class="collapse navbar-collapse">
                  <a href="/visit" type="button" class="btn btn-default visit-give-mobile">Visit</a>
                  <a href="/giving" type="button" class="btn btn-default visit-give-mobile give-mobile ">Give</a>
@@ -122,12 +122,12 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Close Search  <b>&times;</b></span></button>
          </div>
          <div class="modal-body">
-            <form>
+            <form action="https://www.msudenver.edu/search">
                <div class="form-group">
                   <input type="text" class="form-control" placeholder="Search MSU Denver...">
                </div>
                <!-- <button type="submit" class="btn btn-default">Submit</button> -->
-               <span type="submit" class="fa fa-search submit-desktop"></span>
+               <button type="submit" class="fa fa-search submit-desktop"></button>
             </form>
          </div>
          <!-- <div class="modal-footer">
@@ -136,3 +136,28 @@
       </div>
    </div>
 </div>
+
+
+<!-- allow mobile menu dropdown to scroll -->
+<script>
+$('#menu-nav').css('max-height',$(window).height()-79);
+</script>
+
+<script>
+// scrollTop function
+$(window).scroll(function(){
+  var width_threshold = 900;
+  var href = document.location.href;
+  var position = $(window).scrollTop();
+  var width     =  $(window).width();
+  $(".header-fluid").removeClass("header-fluid-change");
+  $(".msudenver_logo").removeClass("msudenver_logo_change");
+
+
+  if( position > 15 && width > width_threshold) {
+    $(".header-fluid").toggleClass("header-fluid-change");
+    $(".msudenver_logo").toggleClass("msudenver_logo_change");
+  }
+
+});
+</script>
