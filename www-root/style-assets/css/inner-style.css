@@ -7892,6 +7892,10 @@ span.fa.fa-search.search-desktop {
   div[alt^="Asphalt"] {
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175);
   }
+
+  i.fa.fa-angle-down.fa-lg {
+    float: right;
+  }
 }
 @media (min-width: 992px) {
   body {
