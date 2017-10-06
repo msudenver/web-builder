@@ -7454,6 +7454,10 @@ header {
   padding-bottom: 8px;
 }
 
+#menu-nav {
+  overflow-y: scroll;
+}
+
 /* enable absolute positioning */
 /* style glyph */
 /* align glyph */
@@ -7612,12 +7616,13 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
 
 #nav-search {
   position: absolute;
-  top: -3.95em;
-  right: 3.5em;
+  top: -4.2em;
+  right: 4.5em;
 }
 
 #nav-search a {
   color: #fff;
+  background: #005fae;
 }
 
 .navbar {
@@ -7730,6 +7735,8 @@ button.close b {
   padding: 5px 15px;
   color: #00447c !important;
   font-size: 25px !important;
+  background: transparent;
+  border: none;
 }
 
 .search-button-text {
@@ -7797,7 +7804,7 @@ span.fa.fa-search.search-desktop {
 }
 @media screen and (max-width: 991px) {
   body {
-    padding-top: 90px;
+    padding-top: 79px;
   }
 
   .navbar-collapse {
@@ -7846,11 +7853,6 @@ span.fa.fa-search.search-desktop {
   .navbar-nav {
     float: none !important;
     margin: 0px;
-    overflow: scroll;
-  }
-
-  #bs-example-navbar-collapse-1 {
-    overflow: scroll;
   }
 
   .navbar-nav > li {
@@ -8181,6 +8183,10 @@ span.fa.fa-search.search-desktop {
 
   li.dropdown.collapse.navbar-collapse {
     position: relative;
+  }
+
+  #menu-nav {
+    overflow: visible;
   }
 }
 @media (min-width: 1200px) {
@@ -9921,7 +9927,7 @@ a:focus, a:hover {
   margin-left: -150px;
   width: 150px;
   position: fixed;
-  padding-top: 70px;
+  padding-top: 82px;
   top: 0;
   left: 150px;
   bottom: 0;
@@ -10017,14 +10023,6 @@ a:focus, a:hover {
 
 .menu-link:focus span:after, .menu-link:hover span:after {
   margin-top: 0.6em;
-}
-
-ul.nav.nav-list > li > a {
-  margin-left: -30px;
-}
-
-.currentbranch0 a {
-  margin-left: -30px;
 }
 
 .multilevel-linkul-0 {
@@ -11214,11 +11212,14 @@ body {
 .collapse {
   position: relative;
   height: 0;
-  overflow: hidden;
   -webkit-transition: height .35s ease;
   -moz-transition: height .35s ease;
   -o-transition: height .35s ease;
   transition: height 0.35s ease;
+}
+
+.collapse.navbar-collapse {
+  overflow: hidden;
 }
 
 .linkcolumn a {
@@ -11460,11 +11461,6 @@ a.t4Edit-page:hover {
   padding-left: 25px;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-
-.content a {
-  color: #007dc3;
-  font-weight: 700;
 }
 
 .card {

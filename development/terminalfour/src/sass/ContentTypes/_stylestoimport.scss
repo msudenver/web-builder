@@ -16,13 +16,16 @@ body {
 .collapse {
   position: relative;
   height: 0;
-  overflow: hidden;
+  // overflow: hidden;
   -webkit-transition: height .35s ease;
   -moz-transition: height .35s ease;
   -o-transition: height .35s ease;
   transition: height .35s ease
 }
 
+.collapse.navbar-collapse {
+  overflow: hidden;
+}
 
 .linkcolumn a {
   word-break: break-word
@@ -275,7 +278,7 @@ a.t4Edit-page:hover {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.content a {
-  color: #007dc3;
-  font-weight: 700;
-}
+// .content a {
+//   color: #007dc3;
+//   font-weight: 700;
+// }

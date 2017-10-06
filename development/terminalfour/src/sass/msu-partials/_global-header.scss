@@ -88,6 +88,9 @@
 //  transition: max-height 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 //  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175);
 //}
+#menu-nav {
+ overflow-y: scroll;
+}
 
 //#content-nav #nav-search-close {
 //  position: relative;
@@ -524,11 +527,12 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
 
 #nav-search {
   position: absolute;
-  top: -3.95em;
-  right: 3.5em;
+  top: -4.2em;
+  right: 4.5em;
 }
 #nav-search a {
   color: #fff;
+  background: #005fae;
 }
 
 .navbar {
@@ -626,6 +630,8 @@ button.close b {
   padding: 5px 15px;
   color: #00447c !important;
   font-size: 25px !important;
+  background: transparent;
+  border: none;
 }
 .search-button-text {
   display: none;
@@ -680,7 +686,7 @@ span.fa.fa-search.search-desktop {
 
 @media screen and (max-width: 991px) {
 body{
-  padding-top: 90px;
+  padding-top: 79px;
 }
   .navbar-collapse {
     border-top: 5px solid #005fae;
@@ -720,11 +726,11 @@ body{
   .navbar-nav {
       float: none!important;
       margin: 0px;
-      overflow: scroll;
+      // overflow: scroll;
   }
 
   #bs-example-navbar-collapse-1 {
-    overflow: scroll;
+    // overflow: scroll;
   }
 
   .navbar-nav>li {
@@ -1055,6 +1061,9 @@ body{
   }
   li.dropdown.collapse.navbar-collapse {
     position: relative;
+  }
+  #menu-nav {
+   overflow: visible;
   }
 }
 @media (min-width: $screen-lg-min) {
