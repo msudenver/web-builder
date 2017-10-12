@@ -1,5 +1,5 @@
 <!-- Global Header -->
-<a href="#content" class="skip-content">Skip to content</a>
+<a href="#content" class="skip-content">Skip to main content</a>
 <header>
    <div class="navbar-fixed-top ">
       <div class="" style="background-image:url(https://msudenver.edu/media/newsiteassets/images/header_asphalt.png); background-size: 100%;" alt="Asphalt Image">
@@ -11,25 +11,20 @@
             <div class="col-xs-8">
                <a href="/"> <img class="msudenver_logo" src="https://msudenver.edu/media/newsiteassets/images/msudenver_logo_header.svg" alt="MSU Denver Homepage"> </a>
             </div>
-            <!-- <a href="/admissions"><div class="col-xs-1 apply-button">APPLY</div></a>
-               <a href="/giving"><div class="col-xs-1 apply-button give-visit-buttons">GIVE</div></a>
-               <a href="/visit"><div class="col-xs-1 apply-button give-visit-buttons">VISIT</div></a>
-               <span class="fa fa-search fa-search-mobile"></span>
-               <div class="col-xs-12 faculty-staff-students">
-                 <a href="/studenthub">Current Students</a><a class="faculty-staff-students">|</a>
-                 <a href="/facstaff">Faculty &amp; Staff</a>
-               </div> -->
          </div>
       </div>
       <nav class="navbar nav-header">
          <!-- Brand and toggle get grouped for better mobile display -->
          <!-- Collect the nav links, forms, and other content for toggling -->
          <div class="" id="bs-example-navbar-collapse-1">
+           <div class="collapse navbar-collapse">
+               <a href="/visit" type="button" class="btn btn-default visit-give-mobile">Visit</a>
+               <a href="/giving" type="button" class="btn btn-default visit-give-mobile give-mobile ">Give</a>
+               <a href="/admissions" type="button" class="btn btn-default apply-mobile">Apply</a>
+           </div>
             <ul id="menu-nav" class="nav navbar-nav">
               <li class="collapse navbar-collapse">
-                 <a href="/visit" type="button" class="btn btn-default visit-give-mobile">Visit</a>
-                 <a href="/giving" type="button" class="btn btn-default visit-give-mobile give-mobile ">Give</a>
-                 <a href="/admissions" type="button" class="btn btn-default apply-mobile">Apply</a>
+
                  <ul class="fac-staf-stu-mobile">
                     <li><a href="/studenthub">Current Students</a></li>
                     <li class="hide-pipe">|</li>
@@ -119,15 +114,14 @@
    <div class="modal-dialog" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Close Search  <b>&times;</b></span></button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">close search  <b>&times;</b></span></button>
          </div>
          <div class="modal-body">
-            <form action="https://www.msudenver.edu/search">
-               <div class="form-group">
+            <form action="https://www.msudenver.edu/search" aria-label="search">
+               <div class="form-group" aria-label="search">
                   <input type="text" class="form-control" placeholder="Search MSU Denver...">
                </div>
-               <!-- <button type="submit" class="btn btn-default">Submit</button> -->
-               <button type="submit" class="fa fa-search submit-desktop"></button>
+               <button type="submit" class="fa fa-search submit-desktop" aria-label="submit search"></button>
             </form>
          </div>
          <!-- <div class="modal-footer">
@@ -140,7 +134,7 @@
 
 <!-- allow mobile menu dropdown to scroll -->
 <script>
-$('#menu-nav').css('max-height',$(window).height()-79);
+$('#bs-example-navbar-collapse-1').css('max-height',$(window).height()-79);
 </script>
 
 <script>

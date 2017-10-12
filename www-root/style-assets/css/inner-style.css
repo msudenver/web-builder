@@ -7454,7 +7454,7 @@ header {
   padding-bottom: 8px;
 }
 
-#menu-nav {
+#bs-example-navbar-collapse-1 {
   overflow-y: scroll;
 }
 
@@ -7520,7 +7520,7 @@ ul.nav.navbar-nav li .visit-give-mobile {
   transition: background .25s ease;
 }
 
-ul.nav.navbar-nav li .apply-mobile {
+.apply-mobile {
   background: #d11242;
   color: white;
   font-size: 1.0em;
@@ -7702,7 +7702,7 @@ div.modal-body form button.btn.btn-default {
   padding: 5px 12px;
 }
 
-.form-control {
+.modal-body > form > .form-group > .form-control {
   border: 0px;
   border-radius: 0;
 }
@@ -7775,6 +7775,43 @@ span.fa.fa-search.search-desktop {
   font-size: 1.5em;
 }
 
+.visit-give-mobile {
+  background: #555555;
+  color: #fff;
+  font-size: 1.0em;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0.75em 0.25em 0em 0em;
+  text-align: center;
+  width: 99%;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
+  float: right !important;
+  -webkit-transition: background .25s ease;
+  -moz-transition: background .25s ease;
+  -o-transition: background .25s ease;
+  transition: background .25s ease;
+}
+
+a.btn.btn-default.visit-give-mobile, a.btn.btn-default.apply-mobile {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 22px;
+  display: block;
+  padding: 10px 15px;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 @media (max-width: 991px) {
   #nav-admissions {
     padding-left: 0px;
@@ -7800,6 +7837,14 @@ span.fa.fa-search.search-desktop {
 
   .navbar-toggle {
     display: block !important;
+  }
+}
+@media (min-width: 768px) {
+  a.btn.btn-default.visit-give-mobile, a.btn.btn-default.apply-mobile {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -7896,6 +7941,14 @@ span.fa.fa-search.search-desktop {
   i.fa.fa-angle-down.fa-lg {
     float: right;
   }
+
+  a.btn.btn-default.visit-give-mobile, a.btn.btn-default.apply-mobile {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+    display: block;
+  }
 }
 @media (min-width: 992px) {
   body {
@@ -7982,7 +8035,7 @@ span.fa.fa-search.search-desktop {
   }
 
   ul.nav.navbar-nav li a {
-    padding: 10px;
+    padding: 10px 18px;
   }
 
   #content-nav {
@@ -8067,7 +8120,7 @@ span.fa.fa-search.search-desktop {
     text-align: center;
     text-transform: uppercase;
     width: 9% !important;
-    top: -6.7em;
+    top: -110px;
     border-radius: 0 0 10px 10px !important;
     padding: 0.3em 1.2em !important;
   }
@@ -8189,8 +8242,17 @@ span.fa.fa-search.search-desktop {
     position: relative;
   }
 
-  #menu-nav {
+  #bs-example-navbar-collapse-1 {
     overflow: visible;
+  }
+
+  a.btn.btn-default.visit-give-mobile, a.btn.btn-default.apply-mobile {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -8216,7 +8278,7 @@ span.fa.fa-search.search-desktop {
   a.btn.btn-default.visit-give-mobile {
     right: 27.77%;
     width: 9% !important;
-    top: -6.7em;
+    top: -110px;
     border-radius: 0 0 10px 10px !important;
     padding: 0.3em 1.2em !important;
   }
@@ -8224,7 +8286,7 @@ span.fa.fa-search.search-desktop {
   a.btn.btn-default.give-mobile {
     right: 18.6%;
     width: 9% !important;
-    top: -6.7em;
+    top: -110px;
     border-radius: 0 0 10px 10px !important;
     padding: 0.3em 1.2em !important;
   }
@@ -8232,7 +8294,7 @@ span.fa.fa-search.search-desktop {
   a.btn.btn-default.apply-mobile {
     right: 9.4%;
     width: 9% !important;
-    top: -6.7em;
+    top: -110px;
     border-radius: 0 0 10px 10px !important;
     padding: 0.3em 1.2em !important;
   }
@@ -10030,7 +10092,7 @@ a:focus, a:hover {
 }
 
 .multilevel-linkul-0 {
-  margin-left: -15px;
+  margin-left: 15px;
 }
 
 .multilevel-linkul-1 {
