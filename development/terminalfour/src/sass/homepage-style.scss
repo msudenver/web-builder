@@ -35,3 +35,18 @@ header {
 @import "ContentTypes/button-styles";
 @import "ContentTypes/variables";
 @import "msu-partials/footer";
+
+/** President's page styles **/
+@import "msu-partials/president-site";
+
+@import "ContentTypes/user-profile";
+
+
+// styles below this need to be removed once everything compiled into one stylesheet
+.content .img-responsive {
+    padding: 0 15px;
+}
+
+.well img.img-responsive {
+    padding-left: 0px;
+}
