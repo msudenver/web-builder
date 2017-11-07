@@ -698,6 +698,11 @@ a.btn.btn-default.visit-give-mobile, a.btn.btn-default.apply-mobile {
   margin-bottom: 0;
   padding-left: 0;
 }
+
+div#searchModal.modal.fade.in { 
+  top: 10em
+}
+
 //end action button fixes
 
 @media (max-width: $screen-sm-max) {
@@ -1071,7 +1076,7 @@ body{
     color: #003a6e;
     text-decoration: none;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 17px;
     // letter-spacing: 1px;
   }
   .dropdown-menu > li > a {
@@ -1218,6 +1223,7 @@ body{
 //  }
   a.dropdown-toggle, ul.nav.navbar-nav li a {
     letter-spacing: 1px;
+    font-size: 18px;
   }
   .navbar-toggle {
     display: none;
