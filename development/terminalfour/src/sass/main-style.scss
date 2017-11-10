@@ -32,15 +32,34 @@ header {
 @import "msu-partials/homepage-at-a-glance";
 @import "msu-partials/homepage-community";
 @import "msu-partials/homepage-events";
+@import "msu-partials/footer";
+
+/** content types **/
 @import "ContentTypes/button-styles";
 @import "ContentTypes/variables";
-@import "msu-partials/footer";
+@import "ContentTypes/programs";
+@import "ContentTypes/content";
+@import "ContentTypes/navmenu";
+@import "ContentTypes/TableStyles";
+// @import "ContentTypes/AdmissionsStyles";
+@import "ContentTypes/PresidentMessages";
+@import "ContentTypes/HighlightBox";
+@import "ContentTypes/CallsToAction";
+@import "ContentTypes/ExpertProfiles";
+@import "ContentTypes/hero";
+@import "ContentTypes/newsroom";
+@import "ContentTypes/panel";
+@import "ContentTypes/SiteHeader";
+@import "ContentTypes/stylestoimport";
+@import "ContentTypes/card";
+@import "ContentTypes/user-profile";
+@import "ContentTypes/user-profile";
 
 /** President's page styles **/
 @import "msu-partials/president-site";
 
-@import "ContentTypes/user-profile";
-
+/** print styles **/
+@import "print";
 
 // styles below this need to be removed once everything compiled into one stylesheet
 .content .img-responsive {
