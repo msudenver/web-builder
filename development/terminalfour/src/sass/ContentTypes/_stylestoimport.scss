@@ -6,12 +6,15 @@ body {
   font-weight: 400;
   font-size: 1rem;
   color: #1e1e1e;
-  line-height: 1.6em;
+  // line-height: 1.6em;
   -webkit-font-smoothing: subpixel-antialiased!important;
   -ms-backface-visibility: hidden;
 
 }
 
+p {
+    line-height: 1.6;
+}
 
 .collapse {
   position: relative;
@@ -116,7 +119,7 @@ h1 {
   // padding-left: .5em;
   color: #fff;
   font-size: 2.25rem;
-  font-weight: 800;
+  font-weight: 700;
   // text-transform: uppercase;
 }
 
@@ -285,7 +288,7 @@ h2 {
     color: #00447c;
     font-size: 1.75rem;
     width: 100%;
-    margin: 0px;
+    // margin: 0px;
     margin-bottom: 5px;
     line-height: 1.3;
 }
@@ -298,7 +301,7 @@ h3 {
   margin-top: 2px;
 }
 h4 {
-    color: #000000;  
+    color: #000000;
     font-size: 1.2rem;
     font-weight: 700;
     line-height: 1.3;
