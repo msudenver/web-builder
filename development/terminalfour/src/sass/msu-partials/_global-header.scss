@@ -557,20 +557,20 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
     margin-left: 0.5em;
     margin-top: 0.1em;
 }
-.modal-content {
+#searchModal .modal-content {
     background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
     border: none;
 }
 
-.modal-body {
+#searchModal .modal-body {
     padding: 0;
 }
-.modal-dialog {
+#searchModal .modal-dialog {
     margin: 0px auto;
 }
-.close, .close:hover {
+#searchModal .close, #searchModal .close:hover {
   color: #fff;
   opacity: 1;
   font-size: 15px;
@@ -579,16 +579,16 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar
   text-shadow: none;
   letter-spacing: 2px;
 }
-.modal-header {
+#searchModal .modal-header {
     padding: 0;
     border-bottom: none;
 }
-.modal-footer {
+#searchModal .modal-footer {
     padding: 0;
     text-align: right;
     border-top: none;
 }
-.modal-header .close {
+#searchModal .modal-header .close {
     margin-top: 4em;
 }
 button.close {
