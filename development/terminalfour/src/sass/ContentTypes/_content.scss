@@ -51,6 +51,7 @@ img.border {
 
 }
 
+<<<<<<< HEAD
 .content-inner {
   a {
    color: #007dc3;
@@ -65,5 +66,18 @@ img.border {
 
 .content-inner ul li {
 	position: relative;
+=======
+.content-inner a {
+  color: #007dc3;
+  font-weight: 700;
+}
+.content-inner a:hover {
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+.content-inner ul li {
+  position: relative;
+>>>>>>> fix-Visit-Give-Apply-Joel
   left: 1em;
 }
