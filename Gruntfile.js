@@ -78,8 +78,8 @@ module.exports = function(grunt) {
           //compass: true,
         },//options
         files: {
-          'www-root/style-assets/css/homepage-style.css': 'development/terminalfour/src/sass/homepage-style.scss',
-          'www-root/style-assets/css/inner-style.css': 'development/terminalfour/src/sass/inner-style.scss',
+          'www-root/style-assets/css/main-style.css': 'development/terminalfour/src/sass/main-style.scss',
+          // 'www-root/style-assets/css/inner-style.css': 'development/terminalfour/src/sass/inner-style.scss',
           'www-root/style-assets/css/print.css': 'development/terminalfour/src/sass/print.scss'
         }//files
       }//dist

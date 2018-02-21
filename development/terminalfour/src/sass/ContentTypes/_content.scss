@@ -1,13 +1,6 @@
 // STYLES USED FOR THE PAGE CONTENT TYPE
 .content {
-  // margin: 0 auto 15px;
   line-height: 1.6em;
-  // min-width: inherit;
-  // padding: 1.5em;
-  // color: #333;
-  // background: #fff;
-  // max-width: 1200px
-
 .img-responsive {
   padding: 0 15px;
 }
@@ -25,6 +18,16 @@ img.border {
   background: #fff
 }
 
+ a {
+  color: #007dc3;
+  font-weight: 700
+}
+ a:hover {
+  // color: #003663;
+  border-bottom: 0px solid;
+  text-decoration: none;
+}
+
 .description {
   font-size: 10px
 }
@@ -34,24 +37,47 @@ img.border {
   color: #888
 }
 
-// .content p a, .content ul a {
-// color: #248dc1 !important;
-// text-decoration: none !important;
-// padding-bottom: 0px !important;
-// border-bottom:  0px solid #248dc1 !important;
-// transition: all 250ms ease-in-out;
-// }
-// .content p a:hover,
-// .content ul a:hover {
-// text-decoration: none !important;
-// padding-bottom: 3px !important;
-// border-bottom:  2px solid #248dc1 !important;
-// transition: all 250ms ease-in-out;
-// }
+
 
 }
 
 .content-inner {
+
+  h2 {
+  font-weight: 700;
+  color: #00447c;
+  font-size: 1.75rem;
+  width: 100%;
+  // margin: 0px;
+  margin-bottom:5px;
+  line-height: 1.3;
+  }
+  h3 {
+    color: #717073;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-top: 2px
+  }
+  h4 {
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  h5 {
+    color: #535354;
+    font-size: 1.125em;
+    font-weight: 700;
+  }
+  h6 {
+    background-color: #005fae;
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px;
+  }
   a {
    color: #007dc3;
    font-weight: 700
@@ -60,22 +86,11 @@ img.border {
    // color: #003663;
    border-bottom: 1px solid;
    text-decoration: none;
- }
-}
+  }
 
-.content-inner ul li {
-	position: relative;
-}
-.content-inner a {
-  color: #007dc3;
-  font-weight: 700;
-}
-.content-inner a:hover {
-  border-bottom: 1px solid;
-  text-decoration: none;
-}
-
-.content-inner ul li {
+ul li {
   position: relative;
   left: 1em;
+}
+
 }
