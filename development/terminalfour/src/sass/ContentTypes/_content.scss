@@ -24,6 +24,7 @@ img.border {
   border: 1px solid #ececec;
   background: #fff
 }
+
  a {
   color: #007dc3;
   font-weight: 700
@@ -33,6 +34,7 @@ img.border {
   border-bottom: 0px solid;
   text-decoration: none;
 }
+
 .description {
   font-size: 10px
 }
@@ -98,6 +100,24 @@ img.border {
   }
 
 a {
+
+.content-inner {
+  a {
+   color: #007dc3;
+   font-weight: 700
+ }
+  a:hover {
+   // color: #003663;
+   border-bottom: 1px solid;
+   text-decoration: none;
+ }
+}
+
+.content-inner ul li {
+	position: relative;
+
+.content-inner a {
+
   color: #007dc3;
   font-weight: 700;
 }

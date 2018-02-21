@@ -4,27 +4,36 @@
   background: rgba(0, 0, 0, .5);
   }
 
-// .hero-caption{
-//     background: #000;
-//     padding: 2%;
-// }
-// .hero-caption p {
-//    	color: #fff;
-// }
 .content .hero > .img-responsive {
   margin-bottom: 0px;
 }
-// .hero-caption h2 {
-//     color: #fff;
-//
-// }
 
-@media (min-width: 1200px) {
-  // .hero-caption {
-  //   position: absolute;
-  // 	width: 45%;
-  //   background: rgba(0, 0, 0, .5);
-  //   margin: 0;
-  //   padding:15px;
-  // }
+.hero-caption {
+  color: #fff;
+  right: 0;
+  bottom: 0;
+  position: static !important;
+  background: #000;
+  margin: 0;
+  font-size: 16.1px;
+  font-weight: 100;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  bottom: auto !important;
+  padding: 2%;
+  h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero-caption {
+    width: 40%;
+    float: right;
+    position: absolute !important;
+    top: inherit;
+    right: 0;
+    left: auto;
+    bottom: 0 !important;
+  }
 }
