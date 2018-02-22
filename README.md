@@ -14,6 +14,20 @@ This document aims to develop a standardised workflow for developers creating HT
 There are several tools being used to make a developers life a little easier. These include tools such as SASS and Grunt amongst others. All of these tools are detailed in this document as well as a guide on how to get up and running with your development environment.
 
 ---
+
+## Links to Preview pages
+
+<h2><a href="/www-root/homepage.html"> Homepage layout </a></h2>
+	<h2><a href="/www-root/admissions.html"> Admissions layout </a></h2>
+	<h2><a href="/www-root/2column.html"> 2column layout </a></h2>
+	<h2><a href="/www-root/president.html"> President layout </a></h2>
+	<h2><a href="/www-root/studenthubhome.html"> Student Hub layout </a></h2>
+	<h2><a href="/www-root/studenthubsecondary.html"> Student Hub inner layout </a></h2>
+
+
+---
+
+
 ## Tools we are going to use
 
 This section details the tools involved, what they do and how to install them on your development machine. There are several steps involved, but once up and running development will become far more consistent and you will start to wonder how you ever developed without them...
@@ -81,7 +95,7 @@ Before we can start using Grunt, we need Node Package Manager (NPM), which in tu
 
 ### Grunt
 
-Now that we have Node.js and NPM installed we can install Grunt. 
+Now that we have Node.js and NPM installed we can install Grunt.
 
 To begin, hold shift and right click in the home directory of this project. Select "*Open Command window here*" Alternatively you can press the `Windows key + R` and type in cmd and navigate to the directory using the command line
 
@@ -90,7 +104,7 @@ Once you are in the directory using the command prompt, type in
 npm install -g grunt-cli
 ```
 
-Once this has finished downloading you will need to run the command 
+Once this has finished downloading you will need to run the command
 ```
 npm install grunt --save-dev
 ```
@@ -159,7 +173,7 @@ We have our setup ready to go, but we haven’t automated anything yet. You migh
 
 This template is set up to work with two main folders, 'development' and 'www-root'
 
-The 'development' folder is where all the files you will actually be coding will be kept. 
+The 'development' folder is where all the files you will actually be coding will be kept.
 
 - HTML files should go in 'development/terminalfour/html/src'
 - Javascript files should go in 'development/terminalfour/js/'
