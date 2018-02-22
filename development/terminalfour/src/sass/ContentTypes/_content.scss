@@ -1,13 +1,6 @@
 // STYLES USED FOR THE PAGE CONTENT TYPE
 .content {
-  // margin: 0 auto 15px;
   line-height: 1.6em;
-  // min-width: inherit;
-  // padding: 1.5em;
-  // color: #333;
-  // background: #fff;
-  // max-width: 1200px
-
 .img-responsive {
   padding: 0 15px;
 }
@@ -24,6 +17,7 @@ img.border {
   border: 1px solid #ececec;
   background: #fff
 }
+
  a {
   color: #007dc3;
   font-weight: 700
@@ -33,6 +27,7 @@ img.border {
   border-bottom: 0px solid;
   text-decoration: none;
 }
+
 .description {
   font-size: 10px
 }
@@ -42,20 +37,7 @@ img.border {
   color: #888
 }
 
-// .content p a, .content ul a {
-// color: #248dc1 !important;
-// text-decoration: none !important;
-// padding-bottom: 0px !important;
-// border-bottom:  0px solid #248dc1 !important;
-// transition: all 250ms ease-in-out;
-// }
-// .content p a:hover,
-// .content ul a:hover {
-// text-decoration: none !important;
-// padding-bottom: 3px !important;
-// border-bottom:  2px solid #248dc1 !important;
-// transition: all 250ms ease-in-out;
-// }
+
 
 }
 
@@ -96,15 +78,15 @@ img.border {
     font-weight: 500;
     padding: 5px;
   }
-
-a {
-  color: #007dc3;
-  font-weight: 700;
-}
- a:hover {
-  border-bottom: 1px solid;
-  text-decoration: none;
-}
+  a {
+   color: #007dc3;
+   font-weight: 700
+ }
+  a:hover {
+   // color: #003663;
+   border-bottom: 1px solid;
+   text-decoration: none;
+  }
 
 ul li {
   position: relative;
