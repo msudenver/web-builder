@@ -11513,6 +11513,43 @@ h4 {
   border-top: 1px solid #eee;
 }
 
+/** Admissions Homepage **/
+section.admissionsHomepageSlider .carousel-inner .item img {
+  width: 100%;
+}
+section.admissionsHomepageSlider .carousel-controls {
+  width: 25%;
+  left: unset;
+  right: 5%;
+  position: absolute;
+  bottom: 10px;
+  z-index: 15;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+section.admissionsHomepageSlider .carousel-controls a {
+  z-index: 15;
+  display: inline-block;
+}
+section.admissionsHomepageSlider .carousel-indicators {
+  position: initial;
+  width: 200px;
+  margin-left: unset;
+  display: inline-block;
+}
+section.admissionsHomepageSlider .carousel-indicators li {
+  height: 20px;
+  width: 20px;
+  margin: 1px 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+section.admissionsHomepageSlider .carousel-indicators li.active {
+  background-color: white;
+}
+
 /** President's page styles **/
 body .president-page, p .president-page {
   color: #434343;
@@ -11902,9 +11939,9 @@ hr.pres-links {
 }
 
 .pres-button-interact {
-  display: ┬átable-cell;
-  vertical-align: ┬ámiddle;
-  text-align: ┬ácenter;
+  display:  table-cell;
+  vertical-align:  middle;
+  text-align:  center;
 }
 
 .president-page .form-group {
