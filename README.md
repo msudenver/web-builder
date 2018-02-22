@@ -15,23 +15,6 @@ There are several tools being used to make a developers life a little easier. Th
 
 ---
 
-## Links to Preview pages
-
-<h2><a href="/web-builder/www-root/homepage.html"> Homepage layout </a></h2>
-
-	<h2><a href="/web-builder/www-root/admissions.html"> Admissions layout </a></h2>
-
-	<h2><a href="/web-builder/www-root/2column.html"> 2column layout </a></h2>
-
-	<h2><a href="/web-builder/www-root/president.html"> President layout </a></h2>
-
-	<h2><a href="/web-builder/www-root/studenthubhome.html"> Student Hub layout </a></h2>
-
-  <h2><a href="/web-builder/www-root/studenthubsecondary.html"> Student Hub inner layout </a></h2>
-
-
----
-
 
 ## Tools we are going to use
 
