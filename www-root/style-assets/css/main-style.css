@@ -11514,12 +11514,42 @@ h4 {
 }
 
 /** Admissions Homepage **/
+.hero-cta {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  border-radius: 0px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  border-width: 5px;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  min-width: 270px;
+  max-width: 350px;
+  width: 100%;
+  height: 66px;
+  text-align: center;
+}
+
 section.admissionsHomepageSlider {
   background-color: #00447C;
   color: #ffffff;
 }
 section.admissionsHomepageSlider h1, section.admissionsHomepageSlider h2, section.admissionsHomepageSlider h3, section.admissionsHomepageSlider p {
   color: #ffffff;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+section.admissionsHomepageSlider h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+section.admissionsHomepageSlider p {
+  font-size: 1rem;
+  font-weight: 500;
 }
 section.admissionsHomepageSlider .carousel-inner .item img {
   width: 100%;
@@ -11565,11 +11595,19 @@ section.admissionsHomepageSlider .container.carousel-cta {
   padding-right: 8.3333333333%;
   border-top: 15px solid #d11242;
 }
+section.admissionsHomepageSlider .container.carousel-cta .details {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
 
 @media only screen and (max-width: 991px) {
   section.admissionsHomepageSlider .carousel-controls {
     width: 35%;
     right: 0%;
+  }
+  section.admissionsHomepageSlider .container.carousel-cta {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -11579,27 +11617,6 @@ section.admissionsHomepageSlider .container.carousel-cta {
     bottom: 0px;
   }
 }
-.hero-cta {
-  color: #fff;
-  border-radius: 0px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-width: 5px;
-  border-color: #fff;
-  background: rgba(255, 255, 255, 0.15);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 1rem;
-  font-weight: 500;
-  width: 100%;
-  heigh: 66px;
-  text-align: center;
-}
-
 /** President's page styles **/
 body .president-page, p .president-page {
   color: #434343;

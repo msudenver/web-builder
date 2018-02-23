@@ -1,20 +1,19 @@
 .hero-cta{
+    font-family: $font-family-sans-serif;
     color: #fff;
     border-radius: 0px;
-    margin-top: 5px;
+    margin-top: 50px;
     margin-bottom: 5px;
     border-width: 5px;
     border-color: #fff;
     background: rgba(255, 255, 255, 0.15);
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 1rem;
-    font-weight: 500;
+    min-width: 270px;
+    max-width: 350px;
     width: 100%;
-    heigh: 66px;
+    height: 66px;
     text-align: center;
 }
