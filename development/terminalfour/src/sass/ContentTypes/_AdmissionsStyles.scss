@@ -19,7 +19,6 @@
   display: table;
   font-weight: 400 !important;
 }
-
 .info-box:hover, .info-box-lower:hover {
   color: #00447c;
   border: 1px solid #00447c;
@@ -86,9 +85,9 @@
   color: #fff;
 }
 
-// #content .row {
-//   margin: 0;
-// }
+#content .row {
+  margin: 0;
+}
 
 .admissions-img {
   margin-bottom: 1em;
@@ -99,61 +98,13 @@
   background-position: center top;
   background: no-repeat center center;
   margin-bottom:1em;
-  padding-left: 0px;
-  padding-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .admissions-promo img.img-responsive {
   width: 100%;
   padding: 0 !important;
-}
-.hero-caption {
-  color: #fff;
-  right: 0;
-  bottom: 0;
-  position: static !important;
-  background: #000;
-  margin: 0;
-  font-size: 16.1px;
-  font-weight: 100;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  bottom: auto !important;
-  padding: 0%;
-}
-.hero-caption h1, .hero-caption h2, .hero-caption h3, .hero-caption h4, .hero-caption h5, .hero-caption h6 {
-  color: #fff;
-}
-.hero p {
-  padding: 0 2%;
-}
-.hero span > :first-child {
-  padding-top: 2% !important;
-}
-.hero span > :last-child {
-  padding-bottom: 2% !important;
-}
-
-@media screen and (min-width: 992px) {
-  .hero-caption {
-    width: 40%;
-    float: right;
-    position: absolute !important;
-    top: inherit;
-    right: 0;
-    left: auto;
-    bottom: 0 !important;
-    padding: 2%;
-  }
-  .hero p {
-    padding: inherit;
-  }
-  .hero span > :first-child {
-    padding-top: inherit;
-  }
-  .hero span > :last-child {
-    padding-bottom: inherit;
-  }
 }
 
 .action-btns {
@@ -172,24 +123,6 @@
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-}
-
-.action-btns-last {
-  color: white !important;
-  background-color: #002b52 !important;
-}
-
-.action-btns-last:hover {
-  background: #001c36 !important;
-  color: #fff !important;
-}
-
-.action-btns-last {
-  margin-bottom: 7px;
-}
-
-.infobox-last-row {
-  max-height: 13em;
 }
 
 .action-btns-last {
@@ -238,18 +171,15 @@
     height: 8em;
     margin-bottom: 0.5em;
   }
-
-    .info-section {
-      padding: 13px 0 13px 0;
-    }
-
-    .action-btns-last {
-      margin-bottom: 5px;
-    }
-
-    .infobox-last-row {
-      max-height: 5em;
-    }
+  .info-section {
+    padding: 13px 0 13px 0;
+  }
+  .action-btns-last {
+    margin-bottom: 5px;
+  }
+  .infobox-last-row {
+    max-height: 5em;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -260,13 +190,10 @@
   .info-box {
     font-size: 1.5em;
   }
-
   .info-box-lower {
     font-size: 1.5em;
   }
-
   .action-btns-last {
     margin-bottom: 5px;
   }
-
 }

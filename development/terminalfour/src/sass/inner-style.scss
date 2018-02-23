@@ -5,13 +5,13 @@
 **/
 @import "../../../lib/bootstrap-sass/assets/stylesheets/bootstrap";
 /** -------  End Bootstrap  v 3.3.7 -------- **/
-
-
 /**
     =================================================
         MSU Denver 2016 custom style declarations
     =================================================
 **/
+
+
 
 /** SVG fallback for IE 8 **/
 header {
@@ -21,12 +21,14 @@ header {
 }
 #denver-city-svg { background: blue; color: #fff; }
 #denver-city-svg svg { color: #fff;}
-/**  Homepage Feature Components michael.mason@terminalfour.com **/
+
+
+/**  Components michael.mason@terminalfour.com **/
 @import "msu-partials/global-header";
 @import "msu-partials/msu-utils";
 @import "msu-partials/homepage-base";
 @import "msu-partials/homepage-second-nav";
-@import "msu-partials/homepage-feature-caption";
+// @import "msu-partials/homepage-feature-caption";
 @import "msu-partials/homepage-ryor";
 @import "msu-partials/homepage-news";
 @import "msu-partials/homepage-at-a-glance";
@@ -34,14 +36,13 @@ header {
 @import "msu-partials/homepage-events";
 @import "msu-partials/footer";
 
-/** content types **/
-@import "ContentTypes/button-styles";
+/**  ContentType Styles **/
 @import "ContentTypes/variables";
 @import "ContentTypes/programs";
 @import "ContentTypes/content";
 @import "ContentTypes/navmenu";
 @import "ContentTypes/TableStyles";
-// @import "ContentTypes/AdmissionsStyles";
+@import "ContentTypes/AdmissionsStyles";
 @import "ContentTypes/PresidentMessages";
 @import "ContentTypes/HighlightBox";
 @import "ContentTypes/CallsToAction";
@@ -49,28 +50,12 @@ header {
 @import "ContentTypes/hero";
 @import "ContentTypes/newsroom";
 @import "ContentTypes/panel";
+@import "ContentTypes/footer";
 @import "ContentTypes/SiteHeader";
 @import "ContentTypes/stylestoimport";
 @import "ContentTypes/card";
 @import "ContentTypes/user-profile";
-@import "ContentTypes/user-profile";
-
-/** Admissions Homepage **/
-@import "admissionsHomepage/buttons.scss";
-@import "admissionsHomepage/homepage-slider.scss";
-@import "admissionsHomepage/responsive-overrides.scss";
-
-/** President's page styles **/
-@import "msu-partials/president-site";
-
+@import "ContentTypes/button-styles";
+@import "ContentTypes/well";
 /** print styles **/
 @import "print";
-
-// styles below this need to be removed once everything compiled into one stylesheet
-.content .img-responsive {
-    padding: 0 15px;
-}
-
-.well img.img-responsive {
-    padding-left: 0px;
-}
