@@ -11514,6 +11514,13 @@ h4 {
 }
 
 /** Admissions Homepage **/
+section.admissionsHomepageSlider {
+  background-color: #00447C;
+  color: #ffffff;
+}
+section.admissionsHomepageSlider h1, section.admissionsHomepageSlider h2, section.admissionsHomepageSlider h3, section.admissionsHomepageSlider p {
+  color: #ffffff;
+}
 section.admissionsHomepageSlider .carousel-inner .item img {
   width: 100%;
 }
@@ -11522,7 +11529,7 @@ section.admissionsHomepageSlider .carousel-controls {
   left: unset;
   right: 5%;
   position: absolute;
-  bottom: 10px;
+  bottom: 25px;
   z-index: 15;
   margin-left: -30%;
   padding-left: 0;
@@ -11532,6 +11539,9 @@ section.admissionsHomepageSlider .carousel-controls {
 section.admissionsHomepageSlider .carousel-controls a {
   z-index: 15;
   display: inline-block;
+}
+section.admissionsHomepageSlider .carousel-controls a span {
+  color: #ffffff;
 }
 section.admissionsHomepageSlider .carousel-indicators {
   position: initial;
@@ -11548,6 +11558,46 @@ section.admissionsHomepageSlider .carousel-indicators li {
 }
 section.admissionsHomepageSlider .carousel-indicators li.active {
   background-color: white;
+}
+section.admissionsHomepageSlider .container.carousel-cta {
+  width: 100%;
+  padding-left: 8.3333333333%;
+  padding-right: 8.3333333333%;
+  border-top: 15px solid #d11242;
+}
+
+@media only screen and (max-width: 991px) {
+  section.admissionsHomepageSlider .carousel-controls {
+    width: 35%;
+    right: 0%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.admissionsHomepageSlider .carousel-controls {
+    width: 100%;
+    right: 0%;
+    bottom: 0px;
+  }
+}
+.hero-cta {
+  color: #fff;
+  border-radius: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-width: 5px;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  heigh: 66px;
+  text-align: center;
 }
 
 /** President's page styles **/

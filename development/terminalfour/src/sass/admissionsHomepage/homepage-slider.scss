@@ -1,4 +1,9 @@
 section.admissionsHomepageSlider {
+	background-color: #00447C;
+	color: #ffffff;
+	h1, h2, h3, p {
+		color: #ffffff;
+	}
 	 .carousel-inner {
 	 	.item {
 	 		img {
@@ -12,7 +17,7 @@ section.admissionsHomepageSlider {
 	    left: unset;
 	    right: 5%;
 	    position: absolute;
-	    bottom: 10px;
+	    bottom: 25px;
 	    z-index: 15;
 	    margin-left: -30%;
 	    padding-left: 0;
@@ -23,6 +28,9 @@ section.admissionsHomepageSlider {
 	 		// bottom: 20px;
 	 		z-index: 15;
 	 		display: inline-block;
+	 		span {
+	 			color: #ffffff;
+	 		}
 	 	}
 	 }
 
@@ -41,5 +49,12 @@ section.admissionsHomepageSlider {
 	 			background-color: rgba(255, 255, 255, 1);
 	 		}
 	 	}
+	 }
+
+	 .container.carousel-cta {
+	 	width: 100%;
+	 	padding-left: 8.3333333333%;
+	 	padding-right: 8.3333333333%;
+	 	border-top: 15px solid $msu-red;
 	 }
 }
