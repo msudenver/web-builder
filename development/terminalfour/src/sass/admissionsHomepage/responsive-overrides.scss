@@ -1,0 +1,24 @@
+@media only screen and (max-width: 991px) {
+	section.admissionsHomepageSlider {
+		.carousel-controls {
+			width: 35%;
+			right: 0%;
+		}
+
+		.container.carousel-cta {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	section.admissionsHomepageSlider {
+		.carousel-controls {
+			width: 100%;
+			right: 0%;
+			bottom: 0px;
+		}
+
+	}
+}

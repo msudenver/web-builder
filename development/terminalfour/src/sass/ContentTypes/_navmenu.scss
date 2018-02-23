@@ -6,7 +6,7 @@
   transition: all .2s ease-out
 }
 #layout {
-  z-index: 9998;
+  // z-index: 1;
   padding-left: 200px;
   left: 0;
   top: 100px
@@ -16,11 +16,11 @@
   margin-left: -150px;
   width: 150px;
   position: fixed;
-  padding-top: 70px;
+  padding-top: 82px;
   top: 0;
   left: 150px;
   bottom: 0;
-  z-index: 9998;
+  // z-index: 9998;
   background: #fff;
   color:black;
   -webkit-overflow-scroll: touch
@@ -113,7 +113,7 @@
 }
 
 .multilevel-linkul-0 {
-   margin-left: -15px;
+   margin-left: 15px;
 }
 
 .multilevel-linkul-1 {
