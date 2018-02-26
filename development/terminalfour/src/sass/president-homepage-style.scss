@@ -32,4 +32,11 @@ header {
 @import "msu-partials/homepage-at-a-glance";
 @import "msu-partials/homepage-community";
 @import "msu-partials/homepage-events";
+@import "ContentTypes/button-styles";
+@import "ContentTypes/variables";
 @import "msu-partials/footer";
+
+
+
+/** President's page styles **/
+@import "msu-partials/president-site";

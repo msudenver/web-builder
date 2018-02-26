@@ -42,6 +42,9 @@
 //   font-size: 1.5em;
 //   text-align: center
 // }
+.HighlightBox .img-responsive {
+  margin: auto;
+}
 .ThreeColumnRight .HighlightBox, .ThreeColumnRight .HighlightBox .HighlightBox-content, .ThreeColumnRight .HighlightBox .HighlightBox-content a, .ThreeColumnRight .HighlightBox .HighlightBox-content a:hover, .ThreeColumnRight .HighlightBox a, .ThreeColumnRight .HighlightBox a:hover, .content .HighlightBox .HighlightBox-content, .content .HighlightBox .HighlightBox-content a, .content .HighlightBox .HighlightBox-content a:hover {
   color: #fff
 }
