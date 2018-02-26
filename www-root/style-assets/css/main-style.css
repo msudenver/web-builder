@@ -11527,7 +11527,7 @@ h4 {
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-  min-width: 235px;
+  min-width: 270px;
   max-width: 350px;
   width: 100%;
   height: 66px;
@@ -11615,10 +11615,6 @@ section.admissionsHomepageSlider .container.carousel-cta .details {
     width: 100%;
     right: 0%;
     bottom: 0px;
-  }
-  section.admissionsHomepageSlider .hero-cta {
-    margin-top: 5px;
-    margin-bottom: 32px;
   }
 }
 /** President's page styles **/
