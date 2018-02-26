@@ -17,3 +17,26 @@
     height: 66px;
     text-align: center;
 }
+
+.application-cta {
+    margin-top: 20px;
+    // margin-bottom: 30px;
+    font-family: $font-family-sans-serif;
+    border-color: #00447c;
+    border-width: 5px;
+    background: rgba(0, 0, 0, 0.0);
+    color: #00447c;
+    border-radius: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.application-cta:hover {
+    color: #fff;
+    background: rgba(0, 68, 124, 0.75);
+    border-color: #00447c;
+}
