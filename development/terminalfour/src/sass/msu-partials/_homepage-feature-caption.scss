@@ -1,9 +1,9 @@
 /* Homepage-feature-caption partial */
 #homepage-feature-caption {
     padding: 0;
-
+    
     text-align: right;
-
+    
 }
 .homepage-feature-caption-img {
     @include img-responsive ;
@@ -19,22 +19,22 @@
     text-align: right;
     float: right;
     position: static;
-
+    
 }
 .homepage-feature-caption-link {
     display: inline-block;
     font-size: 20.8px;
     font-size: torem(20.8);
     text-transform: uppercase;
-    color: #fff;
+    color: #fff;  
     float: right;
 }
 .homepage-feature-caption-link:hover, .homepage-feature-caption-link:focus, .homepage-feature-caption-link:active {
     color: #fff;
+} 
+.carousel-control {
+    display: none;
 }
-// .carousel-control {
-//     display: none;
-// }
 .t4-slide .carousel-control {
     display: block;
     position: absolute;
@@ -42,7 +42,7 @@
     background: transparent;
     top: 45%;
     transform: translateY(-50%);
-    .fa {
+    .fa { 
         display: inline-block;
         color: $white;
         font-size: 2rem;
@@ -51,8 +51,8 @@
         .fa { float: left; }
     }
     &.left {
-        .fa { float: right;}
-    }
+        .fa { float: right;} 
+    } 
 }
 @media (min-width: 480px) {
     .t4-slide .carousel-control {
@@ -67,7 +67,7 @@
 @media (min-width: $screen-sm-min) {
     .t4-slide .carousel-control {
         width: 3rem;
-        .fa {
+        .fa { 
             font-size: 3rem;
         }
     }
@@ -75,9 +75,9 @@
 
 
 @media (min-width: $screen-md-min) {
-
+    
     .homepage-feature-caption-text {
-        width: 50%;
+        width: 40%;
         float: right;
         position: absolute;
         top: 50%;
@@ -85,12 +85,12 @@
         right: 0;
         left: auto;
         bottom: auto;
-
+        
         background-color: rgba(0,0,0,0.7);
         .feature-heading { line-height: 1.3 }
         .main-button {padding: 0}
     }
-
+    
     .homepage-feature-caption-link {
         font-size: 25px;
         font-size: torem(25);
@@ -103,10 +103,10 @@
 }
 @media (min-width: $screen-lg-min) {
     .homepage-feature-caption-text {
-
+        
         padding: 50px 15px ;
         padding: torem(50) torem(15) ;
-
+        
     }
 }
 
