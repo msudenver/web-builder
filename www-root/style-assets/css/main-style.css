@@ -11556,6 +11556,24 @@ h4 {
   border-color: #00447c;
 }
 
+.panel-cta {
+  margin-top: 20px;
+  padding: 15px 16px;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: rgba(0, 68, 124, 0.8);
+  color: #ffffff;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  max-width: 290px;
+  position: relative;
+  top: 65%;
+}
+
 section.admissionsHomepageSlider {
   background-color: #00447C;
   color: #ffffff;
