@@ -58,4 +58,11 @@
     max-width: 290px;
     position: relative;
     top: 65%;
+    span {
+        position: relative;
+        z-index: 1;
+    }
+    // &:hover {
+    //     pointer-events: none;
+    // }
 }

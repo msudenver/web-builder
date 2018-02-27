@@ -11573,6 +11573,10 @@ h4 {
   position: relative;
   top: 65%;
 }
+.panel-cta span {
+  position: relative;
+  z-index: 1;
+}
 
 section.admissionsHomepageSlider {
   background-color: #00447C;
@@ -11679,6 +11683,28 @@ section.admissionsHomepagePanels .panel-row {
 }
 section.admissionsHomepagePanels .panel-sizing {
   height: 33.75vw;
+}
+section.admissionsHomepagePanels .panel-sizing:hover span {
+  z-index: 10;
+  color: #d11242;
+  pointer-events: none;
+}
+section.admissionsHomepagePanels .overlay {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background: #ffffff;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+section.admissionsHomepagePanels .overlay:hover {
+  opacity: 0.9;
 }
 
 @media only screen and (max-width: 991px) {
