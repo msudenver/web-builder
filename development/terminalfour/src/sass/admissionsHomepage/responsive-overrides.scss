@@ -25,6 +25,12 @@
 			padding-bottom: 0px;
 		}
 	}
+
+	section.admissionsHomepagePanels {
+		.overlay-content {
+			top: 28%;
+		}
+	}
 }
 
 @media only screen and (max-width: 767px) {
@@ -55,6 +61,12 @@
 		.application-image-padding {
 			padding-left: 0px;
 			padding-right: 0px;
+		}
+	}
+
+	section.admissionsHomepagePanels {
+		.panel-sizing {
+			height: 67.535vw;
 		}
 	}
 }

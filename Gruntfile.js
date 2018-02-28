@@ -145,6 +145,11 @@ module.exports = function(grunt) {
           files: [{
               expand: true, flatten: true, src: ['development/terminalfour/src/media/*'], dest: 'www-root/style-assets/media/', filter: 'isFile'
           }]
+      },
+      mediaAdmissions: {
+          files: [{
+              expand: true, flatten: true, src: ['development/terminalfour/src/media/admissions-redesign/*'], dest: 'www-root/style-assets/media/admissions-redesign/', filter: 'isFile'
+          }]
       }
     },//copy
 
