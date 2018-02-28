@@ -1,0 +1,35 @@
+section.admissionsHomepagePanels {
+	.panel-row {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.panel-sizing {
+		height: 33.75vw;
+	}
+
+	.panel-sizing:hover span{
+		z-index: 10;
+		color: #d11242;
+		pointer-events: none;
+	}
+
+	.overlay {
+	    width:100%;
+	    height: auto;
+	    margin:auto;
+	    text-align: center;
+	    left:0;
+	    top:0;
+	    bottom: 0;
+	    right: 0;
+	    position:absolute;
+	    background:#ffffff;
+	    opacity: 0;
+	    transition: opacity 0.2s ease;
+	}
+	.overlay:hover {
+		opacity: 0.9;
+	}
+}

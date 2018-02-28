@@ -11513,6 +11513,248 @@ h4 {
   border-top: 1px solid #eee;
 }
 
+/** Admissions Homepage **/
+.hero-cta {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  border-radius: 0px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  border-width: 5px;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  min-width: 235px;
+  max-width: 350px;
+  width: 100%;
+  height: 66px;
+  text-align: center;
+}
+
+.application-cta {
+  margin-top: 20px;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-color: #00447c;
+  border-width: 5px;
+  background: rgba(0, 0, 0, 0);
+  color: #00447c;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+
+.application-cta:hover {
+  color: #fff;
+  background: rgba(0, 68, 124, 0.75);
+  border-color: #00447c;
+}
+
+.panel-cta {
+  margin-top: 20px;
+  padding: 15px 16px;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: rgba(0, 68, 124, 0.8);
+  color: #ffffff;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  max-width: 290px;
+  position: relative;
+  top: 65%;
+}
+.panel-cta span {
+  position: relative;
+  z-index: 1;
+}
+
+section.admissionsHomepageSlider {
+  background-color: #00447C;
+  color: #ffffff;
+}
+section.admissionsHomepageSlider h1, section.admissionsHomepageSlider h2, section.admissionsHomepageSlider h3, section.admissionsHomepageSlider p {
+  color: #ffffff;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+section.admissionsHomepageSlider h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+section.admissionsHomepageSlider p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+section.admissionsHomepageSlider .carousel-inner .item img {
+  width: 100%;
+}
+section.admissionsHomepageSlider .carousel-controls {
+  width: 25%;
+  left: unset;
+  right: 5%;
+  position: absolute;
+  bottom: 25px;
+  z-index: 15;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+section.admissionsHomepageSlider .carousel-controls a {
+  z-index: 15;
+  display: inline-block;
+}
+section.admissionsHomepageSlider .carousel-controls a span {
+  color: #ffffff;
+}
+section.admissionsHomepageSlider .carousel-indicators {
+  position: initial;
+  width: 200px;
+  margin-left: unset;
+  display: inline-block;
+}
+section.admissionsHomepageSlider .carousel-indicators li {
+  height: 20px;
+  width: 20px;
+  margin: 1px 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+section.admissionsHomepageSlider .carousel-indicators li.active {
+  background-color: white;
+}
+section.admissionsHomepageSlider .container.carousel-cta {
+  width: 100%;
+  padding-left: 8.3333333333%;
+  padding-right: 8.3333333333%;
+  border-top: 15px solid #d11242;
+}
+section.admissionsHomepageSlider .container.carousel-cta .details {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+section.admissionsHomepageApply .application-outer-col {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 40px;
+}
+section.admissionsHomepageApply .application-row {
+  padding-top: 35px;
+}
+section.admissionsHomepageApply .application-image {
+  width: 100%;
+}
+section.admissionsHomepageApply .application-copy {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-weight: 500;
+}
+section.admissionsHomepageApply a.application-link {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #0f61bd;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+section.admissionsHomepageApply a.application-link:hover {
+  color: #00447c;
+}
+section.admissionsHomepageApply a.application-link span.pointer {
+  font-size: 14px;
+}
+
+section.admissionsHomepagePanels .panel-row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.admissionsHomepagePanels .panel-sizing {
+  height: 33.75vw;
+}
+section.admissionsHomepagePanels .panel-sizing:hover span {
+  z-index: 10;
+  color: #d11242;
+  pointer-events: none;
+}
+section.admissionsHomepagePanels .overlay {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background: #ffffff;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+section.admissionsHomepagePanels .overlay:hover {
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 991px) {
+  section.admissionsHomepageSlider .carousel-controls {
+    width: 35%;
+    right: 0%;
+  }
+  section.admissionsHomepageSlider .container.carousel-cta {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  section.admissionsHomepageApply .application-outer-col {
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  section.admissionsHomepageApply .application-cta {
+    max-width: 395px;
+  }
+  section.admissionsHomepageApply .application-copy {
+    padding-top: 15px;
+    padding-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.admissionsHomepageSlider .carousel-controls {
+    width: 100%;
+    right: 0%;
+    bottom: 0px;
+  }
+  section.admissionsHomepageSlider .hero-cta {
+    margin-top: 5px;
+    margin-bottom: 32px;
+  }
+
+  section.admissionsHomepageApply .application-row {
+    padding-top: 10px;
+  }
+  section.admissionsHomepageApply .application-outer-col {
+    padding-bottom: 30px;
+  }
+  section.admissionsHomepageApply .application-cta {
+    margin-top: 30px;
+  }
+  section.admissionsHomepageApply .application-image-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 /** President's page styles **/
 body .president-page, p .president-page {
   color: #434343;
@@ -11902,9 +12144,9 @@ hr.pres-links {
 }
 
 .pres-button-interact {
-  display: ┬átable-cell;
-  vertical-align: ┬ámiddle;
-  text-align: ┬ácenter;
+  display:  table-cell;
+  vertical-align:  middle;
+  text-align:  center;
 }
 
 .president-page .form-group {

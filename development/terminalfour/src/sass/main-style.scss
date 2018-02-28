@@ -55,6 +55,14 @@ header {
 @import "ContentTypes/user-profile";
 @import "ContentTypes/user-profile";
 
+/** Admissions Homepage **/
+@import "admissionsHomepage/buttons.scss";
+@import "admissionsHomepage/homepage-slider.scss";
+@import "admissionsHomepage/homepage-apply.scss";
+@import "admissionsHomepage/homepage-panels.scss";
+@import "admissionsHomepage/responsive-overrides.scss";
+
+
 /** President's page styles **/
 @import "msu-partials/president-site";
 

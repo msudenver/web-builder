@@ -1,0 +1,60 @@
+@media only screen and (max-width: 991px) {
+	section.admissionsHomepageSlider {
+		.carousel-controls {
+			width: 35%;
+			right: 0%;
+		}
+
+		.container.carousel-cta {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	section.admissionsHomepageApply {
+		.application-outer-col {
+			padding-bottom: 20px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.application-cta {
+			max-width: 395px;
+		}
+		.application-copy {
+			padding-top: 15px;
+			padding-bottom: 0px;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	section.admissionsHomepageSlider {
+		.carousel-controls {
+			width: 100%;
+			right: 0%;
+			bottom: 0px;
+		}
+
+		.hero-cta{
+			margin-top: 5px;
+			margin-bottom: 32px;
+		}
+
+	}
+
+	section.admissionsHomepageApply {
+		.application-row {
+			padding-top: 10px;
+		}
+		.application-outer-col {
+			padding-bottom: 30px;
+		}
+		.application-cta {
+			margin-top: 30px;
+		}
+		.application-image-padding {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
+}
