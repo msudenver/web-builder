@@ -11708,7 +11708,7 @@ section.admissionsHomepagePanels .overlay:hover {
 }
 section.admissionsHomepagePanels .overlay-content {
   position: relative;
-  top: 38%;
+  top: 36%;
 }
 section.admissionsHomepagePanels .overlay-content p {
   font-size: 18px;
@@ -11775,6 +11775,11 @@ section.admissionsHomepagePanels .overlay-content p {
 
   section.admissionsHomepagePanels .panel-sizing {
     height: 67.535vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.admissionsHomepagePanels .overlay-content {
+    top: 5%;
   }
 }
 /** President's page styles **/

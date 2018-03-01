@@ -70,3 +70,11 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 767px) {
+	section.admissionsHomepagePanels {
+		.overlay-content {
+			top: 5%;
+		}
+	}
+}
