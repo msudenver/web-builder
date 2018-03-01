@@ -1,0 +1,75 @@
+section.admissionsHomepageEAB {
+	.eab-header {
+	    font-size: 1.75rem;
+	    font-family: $font-family-sans-serif;
+    	text-transform: uppercase;
+    	letter-spacing: 2px;
+    	word-spacing: 1px;
+    	width: 100%;
+    	max-width: 415px;
+	}
+	.eab-row {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.eab-sizing {
+		height: 33.75vw;
+		border-right: 10px solid white;
+	}
+
+	hr {
+	    display: block;
+	    height: 1px;
+	    border: 0;
+	    border-top: 2px solid #00447c;
+	    margin: 1em 0;
+	    padding: 0;
+	}
+
+	.eab-description {
+		font-family: $font-family-sans-serif;
+		font-weight: 500;
+	}
+
+	// .eab-sizing:hover span{
+	// 	z-index: 10;
+	// 	color: #d11242;
+	// 	pointer-events: none;
+	// }
+
+	// .overlay {
+	//     width:100%;
+	//     height: auto;
+	//     margin:auto;
+	//     text-align: center;
+	//     left:0;
+	//     top:0;
+	//     bottom: 0;
+	//     right: 0;
+	//     position:absolute;
+	//     background:#ffffff;
+	//     opacity: 0;
+	//     transition: opacity 0.2s ease;
+	// }
+	// .overlay:hover {
+	// 	opacity: 0.9;
+	// }
+
+	// .overlay-content {
+	// 	position: relative;
+	// 	top: 36%;
+	// 	p {
+	// 		font-size: 18px;
+	// 		text-transform: uppercase;
+	// 		margin-left: auto;
+	// 		margin-right: auto;
+	// 		width: 100%;
+	// 		max-width: 387px;
+	// 		word-spacing: 1px;
+ //    		letter-spacing: 1px;
+	// 	}
+		
+	// }
+}

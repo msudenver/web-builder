@@ -11659,6 +11659,7 @@ section.admissionsHomepageApply .application-copy {
   padding-top: 30px;
   padding-bottom: 25px;
   font-weight: 500;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 section.admissionsHomepageApply a.application-link {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -11680,6 +11681,7 @@ section.admissionsHomepagePanels .panel-row {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 30px;
 }
 section.admissionsHomepagePanels .panel-sizing {
   height: 33.75vw;
@@ -11711,6 +11713,7 @@ section.admissionsHomepagePanels .overlay-content {
   top: 36%;
 }
 section.admissionsHomepagePanels .overlay-content p {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   margin-left: auto;
@@ -11719,6 +11722,37 @@ section.admissionsHomepagePanels .overlay-content p {
   max-width: 387px;
   word-spacing: 1px;
   letter-spacing: 1px;
+}
+
+section.admissionsHomepageEAB .eab-header {
+  font-size: 1.75rem;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  width: 100%;
+  max-width: 415px;
+}
+section.admissionsHomepageEAB .eab-row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.admissionsHomepageEAB .eab-sizing {
+  height: 33.75vw;
+  border-right: 10px solid white;
+}
+section.admissionsHomepageEAB hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #00447c;
+  margin: 1em 0;
+  padding: 0;
+}
+section.admissionsHomepageEAB .eab-description {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 991px) {
