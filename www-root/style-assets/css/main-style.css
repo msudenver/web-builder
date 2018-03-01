@@ -11748,11 +11748,29 @@ section.admissionsHomepageEAB hr {
   border: 0;
   border-top: 2px solid #00447c;
   margin: 1em 0;
+  margin-top: 0.5em;
   padding: 0;
+  width: 80%;
 }
 section.admissionsHomepageEAB .eab-description {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
+  width: 80%;
+}
+section.admissionsHomepageEAB .eab-list {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+section.admissionsHomepageEAB .eab-list li {
+  padding-bottom: 5px;
+}
+section.admissionsHomepageEAB .eab-form {
+  width: 80%;
+}
+section.admissionsHomepageEAB .eab-form .eab-select, section.admissionsHomepageEAB .eab-form .eab-cta {
+  width: 49%;
 }
 
 @media only screen and (max-width: 991px) {

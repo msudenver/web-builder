@@ -25,12 +25,32 @@ section.admissionsHomepageEAB {
 	    border: 0;
 	    border-top: 2px solid #00447c;
 	    margin: 1em 0;
+	    margin-top: 0.5em;
 	    padding: 0;
+	    width: 80%;
 	}
 
 	.eab-description {
 		font-family: $font-family-sans-serif;
 		font-weight: 500;
+		width: 80%;
+	}
+
+	.eab-list {
+		font-family: $font-family-sans-serif;
+		font-weight: 700;
+		padding-top: 15px;
+		padding-left: 20px;
+		li {
+			padding-bottom: 5px;
+		}
+	}
+
+	.eab-form {
+		width: 80%;
+		.eab-select, .eab-cta {
+			width: 49%;
+		}
 	}
 
 	// .eab-sizing:hover span{
