@@ -1,7 +1,9 @@
 <section class="admissionsHomepageEAB">
 	<div class="row eab-row">
 		<div class="col-xs-12 col-sm-6 col-md-6 eab-sizing" style="background: url('style-assets/media/admissions-redesign/eab.jpg') center center no-repeat; background-size: cover;">
-			<button class="btn btn-lg btn-default panel-cta center-block"><span>Visit</span></button>
+			<div class="eab-content">
+				hello world!
+			</div>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-6">
 			<h2 class="eab-header">Steps for After you've been admitted</h2>
@@ -35,7 +37,7 @@
 		$(document).ready(function(){
 			var value = $('#thedropdown').val();
 		    $("#thedropdown").change(function(){
-		    	value = $('#thedropdown').val()
+		    	value = $('#thedropdown').val();
 		        if (value == "#") {
 		        	console.log("no class applied");
 		        	$(".eab-cta").css("background", "rgb(204, 204, 204)");
