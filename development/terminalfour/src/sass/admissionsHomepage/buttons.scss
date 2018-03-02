@@ -68,14 +68,13 @@
 }
 
 .eab-cta {
-    margin-top: 20px;
     // margin-bottom: 30px;
-    padding: 10px 7px;
+    padding: 15px 7px;
     font-family: $font-family-sans-serif;
-    border-color: #00447c;
+    border-color: #e2e2e2;
     border-width: 5px;
-    background: rgba(0, 0, 0, 0.0);
-    color: #00447c;
+    background: rgb(204, 204, 204);
+    color: #e2e2e2;
     border-radius: 0px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -83,4 +82,11 @@
     font-weight: 700;
     text-align: center;
     width: 100%;
+    pointer-events: none;
+    transition: all 0.25s ease;
+    &:hover {
+        color: #fff !important;
+        background: rgba(0, 68, 124, 0.75) !important;
+        border-color: #00447c !important;
+    }
 }

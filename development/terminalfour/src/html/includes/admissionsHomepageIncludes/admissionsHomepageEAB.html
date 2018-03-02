@@ -16,14 +16,17 @@
 				<li>Ut wisi enim</li>
 				<li>Consecteteur adispcine elit</li>
 			</ol>
-			<button class="btn btn-lg btn-default btn-primary">Get started</button>
+
 			<form name="jump" class="eab-form">
-				<select name="menu" class="eab-select" id="thedropdown">
-					<option value="#">Select an option</option>
-					<option value="#1">Link 1</option>
-					<option value="#2">Link 2</option>
-					<option value="#3">Link 3</option>
-				</select>
+				<div class="custom-select">
+					<select name="menu" class="eab-select" id="thedropdown">
+						<option value="#">SELECT STUDENT TYPE &#9660;</option>
+						<option value="#1">Link 1</option>
+						<option value="#2">Link 2</option>
+						<option value="#3">Link 3</option>
+					</select>
+				</div>
+				
 				<input type="button" class="eab-cta" name="link" onClick="location=document.jump.menu.options[document.jump.menu.selectedIndex].value;" value="GET STARTED">
 			</form>
 		</div>
@@ -35,8 +38,16 @@
 		    	value = $('#thedropdown').val()
 		        if (value == "#") {
 		        	console.log("no class applied");
+		        	$(".eab-cta").css("background", "rgb(204, 204, 204)");
+		        	$(".eab-cta").css("color", "#e2e2e2");
+		        	$(".eab-cta").css("border-color", "#e2e2e2");
+		        	$(".eab-cta").css("pointer-events", "none");
 		        } else {
 		        	console.log("apply class");
+		        	$(".eab-cta").css("background", "rgb(255, 255, 255)");
+		        	$(".eab-cta").css("color", "#00447c");
+		        	$(".eab-cta").css("border-color", "#00447c");
+		        	$(".eab-cta").css("pointer-events", "visible");
 		        }
 		    });
 		});
