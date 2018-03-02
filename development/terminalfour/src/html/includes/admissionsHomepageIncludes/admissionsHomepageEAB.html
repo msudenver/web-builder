@@ -24,19 +24,21 @@
 					<option value="#2">Link 2</option>
 					<option value="#3">Link 3</option>
 				</select>
-				<input type="button" class="eab-cta" name="link" onClick="location=document.jump.menu.options[document.jump.menu.selectedIndex].value;" value="GO">
+				<input type="button" class="eab-cta" name="link" onClick="location=document.jump.menu.options[document.jump.menu.selectedIndex].value;" value="GET STARTED">
 			</form>
 		</div>
 	</div>
 	<script>
-		
 		$(document).ready(function(){
 			var value = $('#thedropdown').val();
 		    $("#thedropdown").change(function(){
 		    	value = $('#thedropdown').val()
-		        alert(value);
+		        if (value == "#") {
+		        	console.log("no class applied");
+		        } else {
+		        	console.log("apply class");
+		        }
 		    });
 		});
-
 	</script>
 </section>

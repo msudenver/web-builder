@@ -68,5 +68,19 @@
 }
 
 .eab-cta {
-    
+    margin-top: 20px;
+    // margin-bottom: 30px;
+    padding: 10px 7px;
+    font-family: $font-family-sans-serif;
+    border-color: #00447c;
+    border-width: 5px;
+    background: rgba(0, 0, 0, 0.0);
+    color: #00447c;
+    border-radius: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
 }
