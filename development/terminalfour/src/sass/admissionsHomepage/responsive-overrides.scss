@@ -31,6 +31,19 @@
 			top: 28%;
 		}
 	}
+
+	section.admissionsHomepageEAB {
+		.eab-form {
+			.custom-select {
+				width: 60%;
+				margin-right: 10px;
+			}
+			.eab-cta {
+				width: 36%;
+			}
+		}
+	}
+
 }
 
 @media only screen and (max-width: 767px) {

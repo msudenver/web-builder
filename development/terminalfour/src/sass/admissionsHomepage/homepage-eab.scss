@@ -75,7 +75,7 @@ section.admissionsHomepageEAB {
 			font-weight: 700;
 			margin-right: 15px;
 		    border: none;
-		    width: 40%;
+		    width: 50%;
 		    border-radius: 0px;
 		    display: inline-block;
 		    color: #5e5e5e;
@@ -83,9 +83,6 @@ section.admissionsHomepageEAB {
 		    &:hover {
 		    	background: #ececec;
 		    }
-		  //   span {
-				// width: 20%;
-		  //   }
 		}
 
 		.custom-select select {
@@ -108,44 +105,4 @@ section.admissionsHomepageEAB {
 		    outline: none;
 		}
 	}
-
-	// .eab-sizing:hover span{
-	// 	z-index: 10;
-	// 	color: #d11242;
-	// 	pointer-events: none;
-	// }
-
-	// .overlay {
-	//     width:100%;
-	//     height: auto;
-	//     margin:auto;
-	//     text-align: center;
-	//     left:0;
-	//     top:0;
-	//     bottom: 0;
-	//     right: 0;
-	//     position:absolute;
-	//     background:#ffffff;
-	//     opacity: 0;
-	//     transition: opacity 0.2s ease;
-	// }
-	// .overlay:hover {
-	// 	opacity: 0.9;
-	// }
-
-	// .overlay-content {
-	// 	position: relative;
-	// 	top: 36%;
-	// 	p {
-	// 		font-size: 18px;
-	// 		text-transform: uppercase;
-	// 		margin-left: auto;
-	// 		margin-right: auto;
-	// 		width: 100%;
-	// 		max-width: 387px;
-	// 		word-spacing: 1px;
- //    		letter-spacing: 1px;
-	// 	}
-		
-	// }
 }

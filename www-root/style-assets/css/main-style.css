@@ -11591,7 +11591,6 @@ h4 {
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
-  width: 100%;
   pointer-events: none;
   transition: all 0.25s ease;
 }
@@ -11807,7 +11806,7 @@ section.admissionsHomepageEAB .eab-form .custom-select {
   font-weight: 700;
   margin-right: 15px;
   border: none;
-  width: 40%;
+  width: 50%;
   border-radius: 0px;
   display: inline-block;
   color: #5e5e5e;
@@ -11858,6 +11857,14 @@ section.admissionsHomepageEAB .eab-form .custom-select select:focus {
 
   section.admissionsHomepagePanels .overlay-content {
     top: 28%;
+  }
+
+  section.admissionsHomepageEAB .eab-form .custom-select {
+    width: 60%;
+    margin-right: 10px;
+  }
+  section.admissionsHomepageEAB .eab-form .eab-cta {
+    width: 36%;
   }
 }
 @media only screen and (max-width: 767px) {
