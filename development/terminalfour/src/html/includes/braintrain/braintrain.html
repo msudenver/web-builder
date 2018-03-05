@@ -1,3 +1,24 @@
+
+<script>
+  Modernizr.addTest('preserve3d', function(){return Modernizr.testAllProps('transformStyle', 'preserve-3d');});
+</script>
+
+
+
+<script>
+  $(document).ready(function(){
+
+    $('.hover').hover(function(){
+      $(this).addClass('flip');
+    },function(){
+      $(this).removeClass('flip');
+    });
+
+  });
+</script>
+
+
+
 <style>
 .homepage-main {
     margin-right: auto;
@@ -17,59 +38,73 @@ button.button-brain-train-hero {
     color: white;
     padding: 0.625rem 1.875rem;
     border-radius: 11px;
+    border: 2px solid #fff;
+    margin-top: 5%;
 }
 
-.panel-brain-train {
-   min-height: 300px;
-   padding: 15px ;
-   margin-left: -15px;
-    margin-right: -15px;
-}
-.panel-brain-train > h4{
-    color:#f4ba10;
-    font-size: 1rem;
-    margin-top: 0px;
+button.btn.btn-brain-train {
+  background: none;
+  /* font-size: 20px; */
+  color: white;
+  /* padding: 0.625rem 1.875rem; */
+  border-radius: 11px;
+  border: 2px solid #fff;
+  margin-top: 5%;
 }
 
-.panel-brain-train > p{
-    color:#f4ba10;
-    font-size: 1rem;
-}
-
-.panel-brain-train > hr{
-    border-top: 1px solid #f4ba10;
-    margin-top: 0px;
-    margin-bottom: 5px;
-}
-</style>
-
-<style type="text/css">
-
-  .panel {
+.panel-brain-train, .panel {
+    min-height: 290px;
+    padding: 15px ;
+    border: 1px solid #fff;
     float: left;
-    width: 200px;
-    height: 200px;
-    margin: 20px;
+    margin-bottom: 2px;
     position: relative;
-    /* font-size: .8em; */
 
     -webkit-perspective: 600px;
             perspective: 600px;
-  }
+}
+
+.panel-brain-train h3 {
+    color: #f4ba10;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.panel-brain-train  h4{
+    color:#f4ba10;
+    font-size: 1rem;
+    margin-top: 0px;
+}
+
+.panel-brain-train  p{
+    color:#f4ba10;
+    font-size: 1.06rem;
+}
+
+.panel-brain-train  hr{
+    border-top: 1px solid #f4ba10;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
   /* -- make sure to declare a default for every property that you want animated -- */
   /* -- general styles, including Y axis rotation -- */
-  .panel .front {
+  .panel-brain-train .front, .panel .front {
     float: none;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 900;
-    width: inherit;
-    height: inherit;
-    border: 1px solid #ccc;
-    background: #6b7077;
-    text-align: center;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.9);
+    padding: 15px;
+    height: 290px;
+    /* width: inherit;
+    height: inherit; */
+    /* border: 1px solid #fff; */
+    /* background: #6b7077; */
+    /* text-align: center; */
+    /* box-shadow: 0 1px 5px rgba(0,0,0,0.9); */
 
     -webkit-transform: rotateX(0) rotateY(0);
             transform: rotateX(0) rotateY(0);
@@ -86,7 +121,7 @@ button.button-brain-train-hero {
   }
   .panel.flip .front {
     z-index: 900;
-    border-color: #eee;
+    /* border-color: #eee; */
     background: #333;
     box-shadow: 0 15px 50px rgba(0,0,0,0.2);
 
@@ -100,11 +135,10 @@ button.button-brain-train-hero {
     top: 0;
     left: 0;
     z-index: 800;
-    width: inherit;
-    height: inherit;
-    border: 1px solid #ccc;
-    background: #333;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    text-align: center;
+    /* width: inherit; */
+    height: 290px;
+    background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/brain-train-header-background.png); background-size: 100%; min-height:200px; padding:30px;"
 
     -webkit-transform: rotateY(-179deg);
             transform: rotateY(-179deg);
@@ -122,136 +156,13 @@ button.button-brain-train-hero {
 
   .panel.flip .back {
     z-index: 1000;
-    background: #80868d;
+    /* background: #80868d; */
 
     -webkit-transform: rotateX(0) rotateY(0);
             transform: rotateX(0) rotateY(0);
-
-    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
-  }
-
-  /* -- X axis rotation for click panel -- */
-  .click .front {
-    cursor: pointer;
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-  }
-  .click.flip .front {
-    -webkit-transform: rotateX(180deg);
-            transform: rotateX(180deg);
-  }
-  .click .back {
-    cursor: pointer;
-    -webkit-transform: rotateX(-180deg);
-            transform: rotateX(-180deg);
-  }
-  .click.flip .back {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-  }
-
-  /* -- contact panel -- */
-  .contact {
-    width: 290px;
-    height: 240px;
-  }
-
-  /* -- diagonal axis rotation -- */
-  .diagonal .front {
-    -webkit-transform: rotate3d(45,45,0,0deg);
-            transform: rotate3d(45,45,0,0deg);
-  }
-  .diagonal .front:hover {
-    /* for the patient :) */
-    -webkit-transition-duration: 10s;
-            transition-duration: 10s;
-
-    -webkit-transform: rotate3d(45,45,0,-36deg);
-            transform: rotate3d(45,45,0,-36deg);
-  }
-
-  .diagonal.flip .front,
-  .diagonal.flip .front:hover {
-    -webkit-transform: rotate3d(-45,-45,0,150deg);
-            transform: rotate3d(-45,-45,0,150deg);
-
-    /* unset the long default transition time */
-    -webkit-transition: all .4s ease-in-out;
-            transition: all .4s ease-in-out;
-  }
-
-  .diagonal .front .message {
-    opacity: 0;
-    font-size: 1.4em;
-  }
-  .diagonal .front:hover .message {
-    opacity: .4;
-    -webkit-transition-duration: 12s;
-            transition-duration: 12s;
-
-    -webkit-transition-delay: 4s;
-            transition-delay: 4s;
-
-    -webkit-transform: translateX(-30px) translateZ(40px) scale(1.4);
-            transform: translateX(-30px) translateZ(40px) scale(1.4);
-  }
-  .diagonal.flip .front .message {
-    -webkit-transition-duration: 1s;
-            transition-duration: 1s;
-    -webkit-transform: translateZ(0px) scale(.5);
-            transform: translateZ(0px) scale(.5);
-  }
-
-  .diagonal .back {
-    -webkit-transform: rotate3d(45,45,0,-180deg);
-            transform: rotate3d(45,45,0,-180deg);
-  }
-  .diagonal.flip .back {
-    -webkit-transform: rotate3d(45,45,0,-30deg);
-            transform: rotate3d(45,45,0,-30deg);
-  }
-
-  /* -- swing like a gate -- */
-  .swing .front,
-  .swing .back {
-    width: 140px;
-
-    -webkit-transition-duration: 1s;
-            transition-duration: 1s;
-
-    -webkit-transform-origin: 170px 0;
-            transform-origin: 170px 0;
-  }
-  .swing .front {
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-  }
-  .swing .back {
-    background-color: #555; /* hiding this side, so get darker */
-    -webkit-transform: rotateY(-180deg) translateX(198px) translateZ(2px);
-            transform: rotateY(-180deg) translateX(198px) translateZ(2px);
-  }
-
-  .swing.flip .front {
-    background-color: #222; /* hiding this side, so get darker */
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-  }
-  .swing.flip .back {
-    background-color: #80888f;
-    -webkit-transform: rotateY(0) translateX(198px) translateZ(2px);
-            transform: rotateY(0) translateX(198px) translateZ(2px);
   }
 
 
-  /* -- cosmetics -- */
-  .panel .pad {padding: 0 15px; }
-  .panel.flip .action {display: none; }
-  .block ol li {text-align: left; margin: 0 0 0 28px; }
-  .block .action {display: block; padding: 3px; background: #333; text-align: right; font-size: .8em; opacity: 0; position: absolute; cursor: pointer; -webkit-transition: opacity .2s linear; }
-  .block:hover .action {opacity: .7; }
-  .circle div {border-radius: 100px; }
-  .circle div h2 {padding-top: 3em; text-align: center; }
 
 </style>
 
@@ -270,8 +181,8 @@ Learn about our 200-plus academic programs
 </button>
 </div>
 
-</div><div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="140717">
-  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/1moon-landing.jpg); background-size: 100%;">
+</div><div class="hover panel panel-brain-train col-xs-12 col-sm-6 col-md-4 col-lg-3 " id="140717">
+  <div class=" front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/1moon-landing.jpg); background-size: 100%;">
     <h4>WHAT FLAVOR OF ICE CREAM WAS INVENTED IN 1969 TO COMMEMORATE AMERICA&rsquo;S MOON LANDING? </h4>
     <hr>
     <p>A Lunar Cheesecake</p>
@@ -288,8 +199,8 @@ Learn about our 200-plus academic programs
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="140718">
-  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/2earth-sun.jpg); background-size: 100%;">
+<div class="hover panel col-xs-12 col-sm-6 col-md-4 col-lg-3 panel-brain-train " id="140718">
+  <div class="front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/2earth-sun.jpg); background-size: 100%;">
     <h4>IN WHAT MONTH IS THE EARTH CLOSEST TO THE SUN?  </h4>
     <hr>
     <p>A January</p>
@@ -378,279 +289,19 @@ Learn about our 200-plus academic programs
 
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="141108">
-  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/7laughing-stationary-bike.jpg); background-size: 100%;">
-    <h4>LAUGHING 100 TIMES IS EQUIVALENT TO HOW MANY MINUTES ON A STATIONARY BIKE? </h4>
-    <hr>
-    <p>A 15 Minutes</p>
-    <p>B 5 Minutes</p>
-    <p>C 35 Minutes</p>
-
-    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
-  </div>
-
-  <div class="panel-brain-train back">
-   <h3>15 Minutes</h3>
-    <a href="/programs/integrative-health-care-major-bs.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
-  </div>
-
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="141111">
-  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/8rhinorrhea.jpg); background-size: 100%;">
-    <h4>RHINORRHEA IS THE MEDICAL CONDITION OTHERWISE KNOWN AS: </h4>
-    <hr>
-    <p>A Runny Nose</p>
-    <p>B Insomnia</p>
-    <p>C Intestinal Flu</p>
-
-    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
-  </div>
-
-  <div class="panel-brain-train back">
-   <h3>Runny Nose</h3>
-    <a href="/programs/integrative-health-care-major-bs.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
-  </div>
-
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="141113">
-  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/9breakfast.jpg); background-size: 100%;">
-    <h4>PEOPLE WHO REGULARLY EAT BREAKFAST AND DINNER OUT HAVE INCREASED RISK OF: </h4>
-    <hr>
-    <p>A Obesity</p>
-    <p>B Bad Breath</p>
-    <p>C Food Poisoning</p>
-
-    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
-  </div>
-
-  <div class="panel-brain-train back">
-   <h3>Obesity</h3>
-    <a href="/programs/integrative-health-care-major-bs.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
-  </div>
-
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="141115">
-  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/10hotel-rooms.jpg); background-size: 100%;">
-    <h4>HOW MANY HOTEL ROOMS ARE THERE IN THE GREATER DENVER METRO AREA? </h4>
-    <hr>
-    <p>A 55K</p>
-    <p>B 10K</p>
-    <p>C 25K</p>
-
-    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
-  </div>
-
-  <div class="panel-brain-train back">
-   <h3>55K</h3>
-    <a href="/programs/hotel-management-major-bs.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
-  </div>
-
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="141116">
-  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/12tourists.jpg); background-size: 100%;">
-    <h4>HOW MANY TOURISTS VISITED COLORADO LAST YEAR?</h4>
-    <hr>
-    <p>A 31.5 Million</p>
-    <p>B 15.2 Million</p>
-    <p>C 2.5 Million</p>
-
-    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
-  </div>
-
-  <div class="panel-brain-train back">
-   <h3>31.5 Million</h3>
-    <a href="/programs/travel-and-tourism-management-major-bs.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
-  </div>
-
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="141117">
-  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/16beer.jpg); background-size: 100%;">
-    <h4>HOW MUCH WATER GOES INTO ONE PINT OF BEER?</h4>
-    <hr>
-    <p>A 20 Gallons</p>
-    <p>B 3 Pints</p>
-    <p>C 1 Pint</p>
-
-    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
-  </div>
-
-  <div class="panel-brain-train back">
-   <h3>20 Gallons</h3>
-    <a href="/programs/craft-brewing-and-pub-operations-major-bs.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
-  </div>
-
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="141118">
-  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/13job-growth.jpg); background-size: 100%;">
-    <h4>60% OF THE FASTEST GROWING JOBS IN COLORADO ARE IN WHICH INDUSTRY?</h4>
-    <hr>
-    <p>A Health Care</p>
-    <p>B Higher Education</p>
-    <p>C Electrical Engineering</p>
-
-    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
-  </div>
-
-  <div class="panel-brain-train back">
-   <h3>Health Care</h3>
-    <a href="/programs/health-care-professional-services-major-bs.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
-  </div>
-
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="141119">
-  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/14entrepreneurs.jpg); background-size: 100%;">
-    <h4>WHAT DO 70% OF ENTREPRENEURS DO WHILE INCUBATING THEIR NEW BUSINESS IDEAS?</h4>
-    <hr>
-    <p>A Work a traditional job</p>
-    <p>B Devote full time to their standup</p>
-    <p>C Live with their parents</p>
-
-    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
-  </div>
-
-  <div class="panel-brain-train back">
-   <h3>Work a traditional job</h3>
-    <a href="/programs/global-business-studies-major-ba.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
-  </div>
-
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="141120">
-  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/11industry-growth.jpg); background-size: 100%;">
-    <h4>WHAT INDUSTRY IN COLORADO HAS GROWN OVER THREE TIMES THE NATIONAL AVERAGE?</h4>
-    <hr>
-    <p>A Tourism</p>
-    <p>B Agriculture</p>
-    <p>C Manufacturing</p>
-
-    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
-  </div>
-
-  <div class="panel-brain-train back">
-   <h3>Tourism</h3>
-    <a href="/programs/travel-and-tourism-management-major-bs.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
-  </div>
-
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="141121">
-  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/15dog-homework.jpg); background-size: 100%;">
-    <h4>IN 1905, WHO FIRST USED &ldquo;THE DOG ATE MY HOMEWORK&rdquo; EXCUSE?</h4>
-    <hr>
-    <p>A A Priest</p>
-    <p>B A Politician</p>
-    <p>C A High School Freshman</p>
-
-    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
-  </div>
-
-  <div class="panel-brain-train back">
-   <h3>A Priest</h3>
-    <a href="/programs/elementary-education-major-ba.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
-  </div>
-
-</div>
-
 <script>
   Modernizr.addTest('preserve3d', function(){return Modernizr.testAllProps('transformStyle', 'preserve-3d');});
 </script>
 
 
 
-
-
-
-<div class="hover panel">
-  <div class="front">
-    <div class="pad">
-      <h2>Mouse Over Me!</h2>
-      <p>
-        The effect on this box can be done using 100% CSS.<br><br>
-        The other boxes all require some Javascript, but the animation is driven by CSS3.
-      </p>
-    </div>
-  </div>
-  <div class="back">
-    <div class="pad">
-      <h2>check you on the flip side</h2>
-    </div>
-  </div>
-</div>
-
-<div class="contact panel">
-  <div class="front">
-    <h3>Contact Us</h3>
-    Acme, Co.<br>
-    123 Easy St.<br>
-    Austin, TX 78731
-    <p>Or <a class="action" href="#form">send us a message</a></p>
-  </div>
-  <div class="back" id="contact">
-    <div class="pad">
-      <h3>Send us a Fake Message</h3>
-      <form method="post">
-        <p><input id="f-name" name="f-name" type="text" placeholder="name" /></p>
-        <p><input id="f-email" name="f-email" type="text" placeholder="email" /></p>
-        <p><select id="f-how" name="f-how"><option value="">How did you find us?</option><option value="internet">Internet</option></select></p>
-        <p><textarea id="f-msg" name="f-msg" placeholder="Enter your message"> </textarea></p>
-        <input type="submit" class="edit-submit" value="Fake Send Message" />
-      </form>
-    </div>
-  </div>
-</div>
-
-
-
 <script>
   $(document).ready(function(){
 
-    // set up hover panels
-    // although this can be done without JavaScript, we've attached these events
-    // because it causes the hover to be triggered when the element is tapped on a touch device
     $('.hover').hover(function(){
       $(this).addClass('flip');
     },function(){
       $(this).removeClass('flip');
-    });
-
-    // set up click/tap panels
-    $('.click').toggle(function(){
-      $(this).addClass('flip');
-    },function(){
-      $(this).removeClass('flip');
-    });
-
-    // set up block configuration
-    $('.block .action').click(function(){
-      $('.block').addClass('flip');
-    });
-    $('.block .edit-submit').click(function(e){
-      $('.block').removeClass('flip');
-
-      // why not update that list for fun?
-      $('#list-title').text($('#form_title').val());
-      $('#list-items').empty();
-      for (var num = $('#form_items').val(); num >= 1; num--) {
-        $('#list-items').append('<li>Super seller</li>');
-      }
-      e.preventDefault();
-    });
-
-    // set up contact form link
-    $('.contact .action').click(function(e){
-      $('.contact').addClass('flip');
-      e.preventDefault();
-    });
-    $('.contact .edit-submit').click(function(e){
-      $('.contact').removeClass('flip');
-      e.preventDefault();
     });
 
   });
