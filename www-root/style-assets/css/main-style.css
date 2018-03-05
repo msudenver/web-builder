@@ -11835,6 +11835,10 @@ section.admissionsHomepageEAB .eab-form .custom-select select:focus {
   outline: none;
 }
 
+section.admissionsHomepageResources h2 {
+  color: orange;
+}
+
 @media only screen and (max-width: 991px) {
   section.admissionsHomepageSlider .carousel-controls {
     width: 35%;
