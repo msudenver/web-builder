@@ -11746,6 +11746,9 @@ section.admissionsHomepagePanels .overlay-content p {
   letter-spacing: 1px;
 }
 
+section.admissionsHomepageEAB {
+  padding-bottom: 100px;
+}
 section.admissionsHomepageEAB .eab-header {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -11859,6 +11862,9 @@ section.admissionsHomepageEAB .eab-form .custom-select select:focus {
     top: 28%;
   }
 
+  section.admissionsHomepageEAB {
+    padding-bottom: 50px;
+  }
   section.admissionsHomepageEAB .eab-header {
     margin-top: 0px;
   }
@@ -11908,8 +11914,13 @@ section.admissionsHomepageEAB .eab-form .custom-select select:focus {
     height: 67.535vw;
   }
 
+  section.admissionsHomepageEAB .eab-sizing {
+    height: 67.535vw;
+    border-right: none;
+  }
   section.admissionsHomepageEAB .eab-header {
     margin-top: 22px;
+    font-size: 24px;
   }
   section.admissionsHomepageEAB .eab-list {
     padding-top: 15px;
