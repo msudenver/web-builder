@@ -11835,8 +11835,50 @@ section.admissionsHomepageEAB .eab-form .custom-select select:focus {
   outline: none;
 }
 
-section.admissionsHomepageResources h2 {
-  color: orange;
+section.admissionsHomepageResources {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+section.admissionsHomepageResources h2.fancy {
+  position: relative;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+section.admissionsHomepageResources h2.fancy:before {
+  background: #3a3a3a;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+section.admissionsHomepageResources h2.fancy:before {
+  left: 0;
+}
+section.admissionsHomepageResources h2.fancy span {
+  background: #fff;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+section.admissionsHomepageResources .resources-container {
+  background: #3a3a3a;
+  border-top: 15px solid #d11242;
+}
+section.admissionsHomepageResources .resources-container .resources-link {
+  color: white;
+  font-size: 16px;
+}
+section.admissionsHomepageResources .resources-container .resources-link p {
+  margin: 0;
+  padding: 15px 0px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  font-weight: 500;
+  transition: border-bottom 0.2s ease;
+}
+section.admissionsHomepageResources .resources-container .resources-link p:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 @media only screen and (max-width: 991px) {
