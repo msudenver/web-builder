@@ -34,7 +34,7 @@
 
 	section.admissionsHomepageEAB {
 		padding-bottom: 50px;
-		
+
 		.eab-header {
 			margin-top: 0px;
 		}
@@ -58,6 +58,17 @@
 			}
 			.eab-cta {
 				width: 36%;
+			}
+		}
+	}
+
+	section.admissionsHomepageResources {
+		.resources-container {
+			.resources-link {
+				p {
+					margin: 0 auto;
+					width: 80%;
+				}
 			}
 		}
 	}

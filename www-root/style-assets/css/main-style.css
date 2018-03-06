@@ -11755,7 +11755,7 @@ section.admissionsHomepageEAB .eab-header {
   letter-spacing: 2px;
   word-spacing: 1px;
   width: 100%;
-  max-width: 430px;
+  max-width: 440px;
   font-size: calc(12px + (20 - 12) * ((100vw - 375px) / (991 - 375)));
 }
 section.admissionsHomepageEAB .eab-row {
@@ -11929,6 +11929,11 @@ section.admissionsHomepageResources .resources-container .resources-link p:hover
   }
   section.admissionsHomepageEAB .eab-form .eab-cta {
     width: 36%;
+  }
+
+  section.admissionsHomepageResources .resources-container .resources-link p {
+    margin: 0 auto;
+    width: 80%;
   }
 }
 @media only screen and (max-width: 767px) {
