@@ -11865,6 +11865,7 @@ section.admissionsHomepageResources h2.fancy span {
 section.admissionsHomepageResources .resources-container {
   background: #3a3a3a;
   border-top: 15px solid #d11242;
+  padding-bottom: 20px;
 }
 section.admissionsHomepageResources .resources-container .resources-link {
   color: white;
