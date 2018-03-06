@@ -1,5 +1,6 @@
 section.admissionsHomepageEAB {
 	padding-bottom: 100px;
+	font-family: $font-family-sans-serif;
 	
 	.eab-header {
 	    font-family: $font-family-sans-serif;
@@ -8,7 +9,7 @@ section.admissionsHomepageEAB {
     	word-spacing: 1px;
     	width: 100%;
     	max-width: 440px;
-    	font-size: calc(12px + (20 - 12) * ((100vw - 375px) / (991 - 375)));
+    	font-size: calc(12px + (18 - 12) * ((100vw - 375px) / (991 - 375)));
 	}
 	.eab-row {
 		width: 100%;
@@ -41,13 +42,11 @@ section.admissionsHomepageEAB {
 	}
 
 	.eab-description {
-		font-family: $font-family-sans-serif;
 		font-weight: 500;
 		width: 80%;
 	}
 
 	.eab-list {
-		font-family: $font-family-sans-serif;
 		font-weight: 700;
 		padding-top: 15px;
 		padding-left: 20px;
@@ -61,19 +60,8 @@ section.admissionsHomepageEAB {
 		.eab-cta {
 			width: 38%;
 		}
-		// .eab-select {
-		// 	padding: 10px 7px;
-		// 	font-size: 16px;
-		// 	color: #00447c;
-		// 	border: #00447c solid 5px;
-  //   		border-radius: 0px;
-  //   		text-align: center;
-  //   		width: 45%;
-  //   		height: 54px;
-		// }
 
 		.custom-select {
-			font-family: $font-family-sans-serif;
 			font-weight: 700;
 			margin-right: 15px;
 		    border: none;
@@ -91,8 +79,6 @@ section.admissionsHomepageEAB {
 		    padding: 5px 8px;
 		    width: 100%;
 		    height: 64px;
-		    // margin-left: auto;
-		    // margin-right: auto;
 		    display: block;
 		    border: none;
 		    box-shadow: none;
@@ -101,10 +87,10 @@ section.admissionsHomepageEAB {
 		    -webkit-appearance: none;
 		    text-align-last:center;
 		    cursor: pointer;
+		    &:focus {
+		    	online: none;
+		    }
 		}
 
-		.custom-select select:focus {
-		    outline: none;
-		}
 	}
 }

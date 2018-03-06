@@ -11513,7 +11513,8 @@ h4 {
   border-top: 1px solid #eee;
 }
 
-/** Admissions Homepage **/
+/** Admissions Homepage Styles **/
+/** Objects **/
 .admissionsHomepage button {
   border-width: 5px;
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -11587,6 +11588,7 @@ h4 {
   border-color: #00447c !important;
 }
 
+/** Components **/
 section.admissionsHomepageSlider {
   background-color: #00447C;
   color: #ffffff;
@@ -11735,6 +11737,7 @@ section.admissionsHomepagePanels .overlay-content p {
 
 section.admissionsHomepageEAB {
   padding-bottom: 100px;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 section.admissionsHomepageEAB .eab-header {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -11743,7 +11746,7 @@ section.admissionsHomepageEAB .eab-header {
   word-spacing: 1px;
   width: 100%;
   max-width: 440px;
-  font-size: calc(12px + (20 - 12) * ((100vw - 375px) / (991 - 375)));
+  font-size: calc(12px + (18 - 12) * ((100vw - 375px) / (991 - 375)));
 }
 section.admissionsHomepageEAB .eab-row {
   width: 100%;
@@ -11772,12 +11775,10 @@ section.admissionsHomepageEAB hr {
   width: 80%;
 }
 section.admissionsHomepageEAB .eab-description {
-  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   width: 80%;
 }
 section.admissionsHomepageEAB .eab-list {
-  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   padding-top: 15px;
   padding-left: 20px;
@@ -11792,7 +11793,6 @@ section.admissionsHomepageEAB .eab-form .eab-cta {
   width: 38%;
 }
 section.admissionsHomepageEAB .eab-form .custom-select {
-  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   margin-right: 15px;
   border: none;
@@ -11819,7 +11819,7 @@ section.admissionsHomepageEAB .eab-form .custom-select select {
   cursor: pointer;
 }
 section.admissionsHomepageEAB .eab-form .custom-select select:focus {
-  outline: none;
+  online: none;
 }
 
 section.admissionsHomepageResources {
@@ -11869,6 +11869,7 @@ section.admissionsHomepageResources .resources-container .resources-link p:hover
   border-bottom: 2px solid rgba(255, 255, 255, 0.8);
 }
 
+/** Responsive Overrides **/
 @media only screen and (max-width: 991px) {
   section.admissionsHomepageSlider .carousel-controls {
     width: 35%;
