@@ -11974,9 +11974,10 @@ section.admissionsHomepageResources .resources-container .resources-link p:hover
     width: 100%;
   }
 }
-@media only screen and (max-width: 767px) {
+/** specific breakpoint media query being used in Exceptional Case **/
+@media only screen and (max-width: 385px) {
   section.admissionsHomepagePanels .overlay-content {
-    top: 5%;
+    top: 10%;
   }
 }
 /** President's page styles **/
