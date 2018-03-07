@@ -25,6 +25,54 @@
 			padding-bottom: 0px;
 		}
 	}
+
+	section.admissionsHomepagePanels {
+		.overlay-content {
+			top: 28%;
+		}
+	}
+
+	section.admissionsHomepageEAB {
+		padding-bottom: 50px;
+
+		.eab-header {
+			margin-top: 0px;
+		}
+
+		.eab-description {
+			width: 100%;
+		}
+
+		hr {
+			margin-bottom: 0.5em;
+		}
+
+		.eab-list {
+			padding-top: 0px;
+		}
+
+		.eab-form {
+			.custom-select {
+				width: 60%;
+				margin-right: 10px;
+			}
+			.eab-cta {
+				width: 36%;
+			}
+		}
+	}
+
+	section.admissionsHomepageResources {
+		.resources-container {
+			.resources-link {
+				p {
+					margin: 0 auto;
+					width: 80%;
+				}
+			}
+		}
+	}
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -55,6 +103,48 @@
 		.application-image-padding {
 			padding-left: 0px;
 			padding-right: 0px;
+		}
+	}
+
+	section.admissionsHomepagePanels {
+		.panel-sizing {
+			height: 67.535vw;
+		}
+	}
+
+	section.admissionsHomepageEAB {
+		.eab-sizing {
+			height: 67.535vw;
+			border-right: none;
+		}
+
+		.eab-header {
+			margin-top: 22px;
+			font-size: 24px;
+		}
+
+		.eab-list {
+			padding-top: 15px;
+		}
+
+		.eab-form {
+			.custom-select {
+				width: 100%;
+				margin-right: 0px;
+				margin-bottom: 20px;
+			}
+			.eab-cta {
+				width: 100%;
+			}
+		}
+	}
+}
+
+/** specific breakpoint media query being used in Exceptional Case **/ 
+@media only screen and (max-width: 385px) {
+	section.admissionsHomepagePanels {
+		.overlay-content {
+			top: 10%;
 		}
 	}
 }

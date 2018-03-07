@@ -55,11 +55,16 @@ header {
 @import "ContentTypes/user-profile";
 @import "ContentTypes/user-profile";
 
-/** Admissions Homepage **/
+/** Admissions Homepage Styles **/
+/** Objects **/
 @import "admissionsHomepage/buttons.scss";
+/** Components **/
 @import "admissionsHomepage/homepage-slider.scss";
 @import "admissionsHomepage/homepage-apply.scss";
 @import "admissionsHomepage/homepage-panels.scss";
+@import "admissionsHomepage/homepage-eab.scss";
+@import "admissionsHomepage/homepage-resources.scss";
+/** Responsive Overrides **/
 @import "admissionsHomepage/responsive-overrides.scss";
 
 
