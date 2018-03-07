@@ -11513,6 +11513,473 @@ h4 {
   border-top: 1px solid #eee;
 }
 
+/** Admissions Homepage Styles **/
+/** Objects **/
+.admissionsHomepage button {
+  border-width: 5px;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border-radius: 0px;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.admissionsHomepage .hero-cta {
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  min-width: 235px;
+  max-width: 350px;
+  height: 66px;
+}
+.admissionsHomepage .hero-cta:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  transition: all 0.2s ease;
+}
+.admissionsHomepage .application-cta {
+  margin-top: 20px;
+  border-color: #00447c;
+  background: rgba(0, 0, 0, 0);
+  color: #00447c;
+  transition: all 0.2s ease;
+}
+.admissionsHomepage .application-cta:hover {
+  color: #fff;
+  background: rgba(0, 68, 124, 0.75);
+  border-color: #00447c;
+}
+.admissionsHomepage .panel-cta {
+  margin-top: 20px;
+  padding: 15px 16px;
+  background: rgba(0, 68, 124, 0.8);
+  color: #ffffff;
+  max-width: 290px;
+  position: relative;
+  top: 60%;
+}
+.admissionsHomepage .panel-cta span {
+  position: relative;
+  z-index: 1;
+}
+.admissionsHomepage .eab-cta {
+  padding: 15px 7px;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-color: #e2e2e2;
+  border-width: 5px;
+  background: #cccccc;
+  color: #e2e2e2;
+  border-radius: 0px;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+.admissionsHomepage .eab-cta:hover {
+  color: #fff !important;
+  background: rgba(0, 68, 124, 0.75) !important;
+  border-color: #00447c !important;
+}
+
+/** Components **/
+section.admissionsHomepageSlider {
+  background-color: #00447C;
+  color: #ffffff;
+}
+section.admissionsHomepageSlider h1, section.admissionsHomepageSlider h2, section.admissionsHomepageSlider h3, section.admissionsHomepageSlider p {
+  color: #ffffff;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+section.admissionsHomepageSlider h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+section.admissionsHomepageSlider p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+section.admissionsHomepageSlider .carousel-inner .item img {
+  width: 100%;
+}
+section.admissionsHomepageSlider .carousel-controls {
+  width: 25%;
+  left: unset;
+  right: 5%;
+  position: absolute;
+  bottom: 25px;
+  z-index: 15;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+section.admissionsHomepageSlider .carousel-controls a {
+  z-index: 15;
+  display: inline-block;
+}
+section.admissionsHomepageSlider .carousel-controls a span {
+  color: #ffffff;
+}
+section.admissionsHomepageSlider .carousel-indicators {
+  position: initial;
+  width: 200px;
+  margin-left: unset;
+  display: inline-block;
+}
+section.admissionsHomepageSlider .carousel-indicators li {
+  height: 20px;
+  width: 20px;
+  margin: 1px 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+section.admissionsHomepageSlider .carousel-indicators li.active {
+  background-color: white;
+}
+section.admissionsHomepageSlider .container.carousel-cta {
+  width: 100%;
+  padding-left: 8.3333333333%;
+  padding-right: 8.3333333333%;
+  border-top: 15px solid #d11242;
+}
+section.admissionsHomepageSlider .container.carousel-cta .details {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+section.admissionsHomepageApply .application-outer-col {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 40px;
+}
+section.admissionsHomepageApply .application-row {
+  padding-top: 35px;
+}
+section.admissionsHomepageApply .application-image {
+  width: 100%;
+}
+section.admissionsHomepageApply .application-copy {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-weight: 500;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+section.admissionsHomepageApply a.application-link {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #0f61bd;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+section.admissionsHomepageApply a.application-link:hover {
+  color: #00447c;
+}
+section.admissionsHomepageApply a.application-link span.pointer {
+  font-size: 14px;
+}
+
+section.admissionsHomepagePanels .panel-row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+section.admissionsHomepagePanels .panel-sizing {
+  height: 33.75vw;
+}
+section.admissionsHomepagePanels .panel-sizing:hover span {
+  z-index: 10;
+  color: #d11242;
+  pointer-events: none;
+}
+section.admissionsHomepagePanels .overlay {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background: #ffffff;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+section.admissionsHomepagePanels .overlay:hover {
+  opacity: 0.9;
+}
+section.admissionsHomepagePanels .overlay-content {
+  position: relative;
+  top: 36%;
+}
+section.admissionsHomepagePanels .overlay-content p {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 387px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+section.admissionsHomepageEAB {
+  padding-bottom: 100px;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+section.admissionsHomepageEAB .eab-header {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  width: 100%;
+  max-width: 440px;
+  font-size: calc(12px + (18 - 12) * ((100vw - 375px) / (991 - 375)));
+}
+section.admissionsHomepageEAB .eab-row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.admissionsHomepageEAB .eab-sizing {
+  height: 33.75vw;
+  border-right: 10px solid white;
+}
+section.admissionsHomepageEAB .eab-content {
+  background: rgba(255, 255, 255, 0.8);
+  height: 91%;
+  width: 98%;
+  margin-top: 3%;
+  margin-left: 1%;
+}
+section.admissionsHomepageEAB hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #00447c;
+  margin: 1em 0;
+  margin-top: 0.5em;
+  padding: 0;
+  width: 80%;
+}
+section.admissionsHomepageEAB .eab-description {
+  font-weight: 500;
+  width: 80%;
+}
+section.admissionsHomepageEAB .eab-list {
+  font-weight: 700;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+section.admissionsHomepageEAB .eab-list li {
+  padding-bottom: 5px;
+}
+section.admissionsHomepageEAB .eab-form {
+  width: 100%;
+}
+section.admissionsHomepageEAB .eab-form .eab-cta {
+  width: 38%;
+}
+section.admissionsHomepageEAB .eab-form .custom-select {
+  font-weight: 700;
+  margin-right: 15px;
+  border: none;
+  width: 50%;
+  border-radius: 0px;
+  display: inline-block;
+  color: #5e5e5e;
+  background: #e8e8e8;
+}
+section.admissionsHomepageEAB .eab-form .custom-select:hover {
+  background: #ececec;
+}
+section.admissionsHomepageEAB .eab-form .custom-select select {
+  padding: 5px 8px;
+  width: 100%;
+  height: 64px;
+  display: block;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  text-align-last: center;
+  cursor: pointer;
+}
+section.admissionsHomepageEAB .eab-form .custom-select select:focus {
+  online: none;
+}
+
+section.admissionsHomepageResources {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+section.admissionsHomepageResources h2.fancy {
+  position: relative;
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+section.admissionsHomepageResources h2.fancy:before {
+  background: #3a3a3a;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+section.admissionsHomepageResources h2.fancy:before {
+  left: 0;
+}
+section.admissionsHomepageResources h2.fancy span {
+  background: #fff;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+section.admissionsHomepageResources .resources-container {
+  background: #3a3a3a;
+  border-top: 15px solid #d11242;
+  padding-bottom: 20px;
+}
+section.admissionsHomepageResources .resources-container .resources-link {
+  color: white;
+  font-size: 16px;
+}
+section.admissionsHomepageResources .resources-container .resources-link p {
+  margin: 0;
+  padding: 15px 0px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  font-weight: 500;
+  transition: border-bottom 0.2s ease;
+}
+section.admissionsHomepageResources .resources-container .resources-link p:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+/** Responsive Overrides **/
+@media only screen and (max-width: 991px) {
+  section.admissionsHomepageSlider .carousel-controls {
+    width: 35%;
+    right: 0%;
+  }
+  section.admissionsHomepageSlider .container.carousel-cta {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  section.admissionsHomepageApply .application-outer-col {
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  section.admissionsHomepageApply .application-cta {
+    max-width: 395px;
+  }
+  section.admissionsHomepageApply .application-copy {
+    padding-top: 15px;
+    padding-bottom: 0px;
+  }
+
+  section.admissionsHomepagePanels .overlay-content {
+    top: 28%;
+  }
+
+  section.admissionsHomepageEAB {
+    padding-bottom: 50px;
+  }
+  section.admissionsHomepageEAB .eab-header {
+    margin-top: 0px;
+  }
+  section.admissionsHomepageEAB .eab-description {
+    width: 100%;
+  }
+  section.admissionsHomepageEAB hr {
+    margin-bottom: 0.5em;
+  }
+  section.admissionsHomepageEAB .eab-list {
+    padding-top: 0px;
+  }
+  section.admissionsHomepageEAB .eab-form .custom-select {
+    width: 60%;
+    margin-right: 10px;
+  }
+  section.admissionsHomepageEAB .eab-form .eab-cta {
+    width: 36%;
+  }
+
+  section.admissionsHomepageResources .resources-container .resources-link p {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.admissionsHomepageSlider .carousel-controls {
+    width: 100%;
+    right: 0%;
+    bottom: 0px;
+  }
+  section.admissionsHomepageSlider .hero-cta {
+    margin-top: 5px;
+    margin-bottom: 32px;
+  }
+
+  section.admissionsHomepageApply .application-row {
+    padding-top: 10px;
+  }
+  section.admissionsHomepageApply .application-outer-col {
+    padding-bottom: 30px;
+  }
+  section.admissionsHomepageApply .application-cta {
+    margin-top: 30px;
+  }
+  section.admissionsHomepageApply .application-image-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  section.admissionsHomepagePanels .panel-sizing {
+    height: 67.535vw;
+  }
+
+  section.admissionsHomepageEAB .eab-sizing {
+    height: 67.535vw;
+    border-right: none;
+  }
+  section.admissionsHomepageEAB .eab-header {
+    margin-top: 22px;
+    font-size: 24px;
+  }
+  section.admissionsHomepageEAB .eab-list {
+    padding-top: 15px;
+  }
+  section.admissionsHomepageEAB .eab-form .custom-select {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  section.admissionsHomepageEAB .eab-form .eab-cta {
+    width: 100%;
+  }
+}
+/** specific breakpoint media query being used in Exceptional Case **/
+@media only screen and (max-width: 385px) {
+  section.admissionsHomepagePanels .overlay-content {
+    top: 10%;
+  }
+}
 /** President's page styles **/
 body .president-page, p .president-page {
   color: #434343;
@@ -11902,9 +12369,9 @@ hr.pres-links {
 }
 
 .pres-button-interact {
-  display: ┬átable-cell;
-  vertical-align: ┬ámiddle;
-  text-align: ┬ácenter;
+  display:  table-cell;
+  vertical-align:  middle;
+  text-align:  center;
 }
 
 .president-page .form-group {

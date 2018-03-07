@@ -1,0 +1,56 @@
+<section class="admissionsHomepageEAB">
+	<div class="row eab-row">
+		<div class="col-xs-12 col-sm-6 col-md-6 eab-sizing" style="background: url('style-assets/media/admissions-redesign/eab.jpg') center center no-repeat; background-size: cover;">
+			<div class="eab-content">
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6">
+			<h2 class="eab-header">Steps for After you've been admitted</h2>
+			<hr/>
+			<p class="eab-description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non id aspernatur velit inventore quis laborum dignissimos autem sequi similique voluptates, repellendus distinctio itaque illum nemo dolorem asperiores voluptatibus laboriosam libero?
+			</p>
+			<ol class="eab-list">
+				<li>Lorem ipsum dolor amet</li>
+				<li>Consecteteur adispcine elit</li>
+				<li>Sed dla conummy</li>
+				<li>Ut wisi enim</li>
+				<li>Consecteteur adispcine elit</li>
+			</ol>
+
+			<form name="jump" class="eab-form">
+				<div class="custom-select">
+					<select name="menu" class="eab-select" id="thedropdown">
+						<option value="#">SELECT STUDENT TYPE &#9660;</option>
+						<option value="#1">Link 1</option>
+						<option value="#2">Link 2</option>
+						<option value="#3">Link 3</option>
+					</select>
+				</div>
+				
+				<input type="button" class="eab-cta" name="link" onClick="location=document.jump.menu.options[document.jump.menu.selectedIndex].value;" value="GET STARTED">
+			</form>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			var value = $('#thedropdown').val();
+		    $("#thedropdown").change(function(){
+		    	value = $('#thedropdown').val();
+		        if (value == "#") {
+		        	console.log("no class applied");
+		        	$(".eab-cta").css("background", "rgb(204, 204, 204)");
+		        	$(".eab-cta").css("color", "#e2e2e2");
+		        	$(".eab-cta").css("border-color", "#e2e2e2");
+		        	$(".eab-cta").css("pointer-events", "none");
+		        } else {
+		        	console.log("apply class");
+		        	$(".eab-cta").css("background", "rgb(255, 255, 255)");
+		        	$(".eab-cta").css("color", "#00447c");
+		        	$(".eab-cta").css("border-color", "#00447c");
+		        	$(".eab-cta").css("pointer-events", "visible");
+		        }
+		    });
+		});
+	</script>
+</section>

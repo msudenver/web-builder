@@ -1,0 +1,81 @@
+
+.admissionsHomepage {
+    button {
+        border-width: 5px;
+        font-family: $font-family-sans-serif;
+        font-weight: 700;
+        border-radius: 0px;
+        text-align: center;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .hero-cta{
+        color: #fff;
+        margin-top: 50px;
+        margin-bottom: 5px;
+        border-color: #fff;
+        background: rgba(255, 255, 255, 0.15);
+        min-width: 235px;
+        max-width: 350px;
+        height: 66px;
+        &:hover {
+            color: #333;
+            background-color: #e6e6e6;
+            border-color: #adadad;
+            transition: all 0.2s ease;
+        }
+    }
+
+    .application-cta {
+        margin-top: 20px;
+        border-color: #00447c;
+        background: rgba(0, 0, 0, 0.0);
+        color: #00447c;
+        transition: all 0.2s ease;
+    }
+
+    .application-cta:hover {
+        color: #fff;
+        background: rgba(0, 68, 124, 0.75);
+        border-color: #00447c;
+    }
+
+    .panel-cta {
+        margin-top: 20px;
+        padding: 15px 16px;
+        background: rgba(0, 68, 124, 0.8);
+        color: #ffffff;
+        max-width: 290px;
+        position: relative;
+        top: 60%;
+        span {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .eab-cta {
+        // margin-bottom: 30px;
+        padding: 15px 7px;
+        font-family: $font-family-sans-serif;
+        border-color: #e2e2e2;
+        border-width: 5px;
+        background: rgb(204, 204, 204);
+        color: #e2e2e2;
+        border-radius: 0px;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        pointer-events: none;
+        transition: all 0.25s ease;
+        &:hover {
+            color: #fff !important;
+            background: rgba(0, 68, 124, 0.75) !important;
+            border-color: #00447c !important;
+        }
+    }
+}
