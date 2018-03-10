@@ -11516,7 +11516,7 @@ h4 {
 /** Admissions Homepage Styles **/
 /** Objects **/
 .admissionsHomepage button {
-  border-width: 5px;
+  border-width: 3px;
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border-radius: 0px;
@@ -11566,12 +11566,13 @@ h4 {
 .admissionsHomepage .panel-cta span {
   position: relative;
   z-index: 1;
+  font-size: 1.15em;
 }
 .admissionsHomepage .eab-cta {
   padding: 15px 7px;
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-color: #e2e2e2;
-  border-width: 5px;
+  border-width: 3px;
   background: #cccccc;
   color: #e2e2e2;
   border-radius: 0px;
@@ -11870,6 +11871,11 @@ section.admissionsHomepageResources .resources-container .resources-link p:hover
 }
 
 /** Responsive Overrides **/
+@media only screen and (max-width: 1345px) {
+  section.admissionsHomepageApply .application-cta {
+    height: 72px;
+  }
+}
 @media only screen and (max-width: 991px) {
   section.admissionsHomepageSlider .carousel-controls {
     width: 35%;
@@ -11913,11 +11919,12 @@ section.admissionsHomepageResources .resources-container .resources-link p:hover
     padding-top: 0px;
   }
   section.admissionsHomepageEAB .eab-form .custom-select {
-    width: 60%;
-    margin-right: 10px;
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
   }
   section.admissionsHomepageEAB .eab-form .eab-cta {
-    width: 36%;
+    width: 100%;
   }
 
   section.admissionsHomepageResources .resources-container .resources-link p {
@@ -11952,6 +11959,11 @@ section.admissionsHomepageResources .resources-container .resources-link p:hover
 
   section.admissionsHomepagePanels .panel-sizing {
     height: 67.535vw;
+  }
+  section.admissionsHomepagePanels .panel-cta span {
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
   }
 
   section.admissionsHomepageEAB .eab-sizing {

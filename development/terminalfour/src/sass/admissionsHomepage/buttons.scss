@@ -1,7 +1,7 @@
 
 .admissionsHomepage {
     button {
-        border-width: 5px;
+        border-width: 3px;
         font-family: $font-family-sans-serif;
         font-weight: 700;
         border-radius: 0px;
@@ -54,6 +54,8 @@
         span {
             position: relative;
             z-index: 1;
+            font-size: 1.15em;
+
         }
     }
 
@@ -62,7 +64,7 @@
         padding: 15px 7px;
         font-family: $font-family-sans-serif;
         border-color: #e2e2e2;
-        border-width: 5px;
+        border-width: 3px;
         background: rgb(204, 204, 204);
         color: #e2e2e2;
         border-radius: 0px;
