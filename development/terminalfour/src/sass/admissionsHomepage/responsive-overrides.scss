@@ -1,3 +1,11 @@
+@media only screen and (max-width: 1345px) {
+	section.admissionsHomepageApply {
+		.application-cta {
+			height: 72px;
+		}	
+	}
+}
+
 @media only screen and (max-width: 991px) {
 	section.admissionsHomepageSlider {
 		.carousel-controls {
@@ -53,11 +61,12 @@
 
 		.eab-form {
 			.custom-select {
-				width: 60%;
-				margin-right: 10px;
+				width: 100%;
+				margin-right: 0px;
+				margin-bottom: 20px;
 			}
 			.eab-cta {
-				width: 36%;
+				width: 100%;
 			}
 		}
 	}
@@ -110,6 +119,15 @@
 		.panel-sizing {
 			height: 67.535vw;
 		}
+
+		.panel-cta {
+	        span {
+	            position: relative;
+	            z-index: 1;
+	            font-size: 1em;
+
+	        }
+    	}
 	}
 
 	section.admissionsHomepageEAB {
