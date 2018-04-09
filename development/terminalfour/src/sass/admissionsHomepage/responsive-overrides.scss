@@ -1,8 +1,25 @@
+@media only screen and (max-width: 1345px) {
+	.admissionsHomepageApply {
+		.application-cta {
+			height: 72px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.admissionsHomepageSlider {
+		.carousel-controls {
+			bottom: 40%;
+		}
+	}
+}
+
 @media only screen and (max-width: 991px) {
-	section.admissionsHomepageSlider {
+	.admissionsHomepageSlider {
 		.carousel-controls {
 			width: 35%;
 			right: 0%;
+			bottom: 60%;
 		}
 
 		.container.carousel-cta {
@@ -11,7 +28,7 @@
 		}
 	}
 
-	section.admissionsHomepageApply {
+	.admissionsHomepageApply {
 		.application-outer-col {
 			padding-bottom: 20px;
 			padding-left: 15px;
@@ -26,13 +43,17 @@
 		}
 	}
 
-	section.admissionsHomepagePanels {
+
+ 	.admissionsHomepagePanels {
+		.panel-sizing {
+				 height: 45vw;
+		 }
 		.overlay-content {
 			top: 28%;
 		}
 	}
 
-	section.admissionsHomepageEAB {
+	.admissionsHomepageEAB {
 		padding-bottom: 50px;
 
 		.eab-header {
@@ -53,16 +74,17 @@
 
 		.eab-form {
 			.custom-select {
-				width: 60%;
-				margin-right: 10px;
+				width: 100%;
+				margin-right: 0px;
+				margin-bottom: 20px;
 			}
 			.eab-cta {
-				width: 36%;
+				width: 100%;
 			}
 		}
 	}
 
-	section.admissionsHomepageResources {
+	.admissionsHomepageResources {
 		.resources-container {
 			.resources-link {
 				p {
@@ -80,7 +102,7 @@
 		.carousel-controls {
 			width: 100%;
 			right: 0%;
-			bottom: 0px;
+			bottom: 65%;
 		}
 
 		.hero-cta{
@@ -90,7 +112,7 @@
 
 	}
 
-	section.admissionsHomepageApply {
+	.admissionsHomepageApply {
 		.application-row {
 			padding-top: 10px;
 		}
@@ -106,10 +128,19 @@
 		}
 	}
 
-	section.admissionsHomepagePanels {
+	.admissionsHomepagePanels {
 		.panel-sizing {
 			height: 67.535vw;
 		}
+
+		.panel-cta {
+	        span {
+	            position: relative;
+	            z-index: 1;
+	            font-size: 1em;
+
+	        }
+    	}
 	}
 
 	section.admissionsHomepageEAB {
@@ -140,9 +171,17 @@
 	}
 }
 
-/** specific breakpoint media query being used in Exceptional Case **/ 
+/** specific breakpoint media query being used in Exceptional Case **/
 @media only screen and (max-width: 385px) {
-	section.admissionsHomepagePanels {
+	section.admissionsHomepageSlider {
+		.carousel-controls {
+			width: 100%;
+			right: 0%;
+			bottom: 72%;
+		}
+}
+
+	.admissionsHomepagePanels {
 		.overlay-content {
 			top: 10%;
 		}
