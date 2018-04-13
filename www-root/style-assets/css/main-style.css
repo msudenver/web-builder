@@ -12010,6 +12010,13 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
   }
 }
 /** Newsroom Homepage Styles **/
+.newsroomHomepage .newsroom-nav-container {
+  background-color: #d11242;
+}
+.newsroomHomepage .newsroom-nav-container li a {
+  color: #ffffff !important;
+}
+
 /** President's page styles **/
 body .president-page, p .president-page {
   color: #434343;
