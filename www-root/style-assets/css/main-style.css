@@ -12009,6 +12009,7 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
     top: 10%;
   }
 }
+/** Newsroom Homepage Styles **/
 /** President's page styles **/
 body .president-page, p .president-page {
   color: #434343;
@@ -12398,9 +12399,9 @@ hr.pres-links {
 }
 
 .pres-button-interact {
-  display: ┬átable-cell;
-  vertical-align: ┬ámiddle;
-  text-align: ┬ácenter;
+  display:  table-cell;
+  vertical-align:  middle;
+  text-align:  center;
 }
 
 .president-page .form-group {
