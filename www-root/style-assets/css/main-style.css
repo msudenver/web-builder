@@ -12013,6 +12013,9 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
 .newsroomHomepage .newsroom-nav-container {
   background-color: #d11242;
 }
+.newsroomHomepage .newsroom-nav-container .collapse.navbar-collapse {
+  padding: 22px 0px;
+}
 .newsroomHomepage .newsroom-nav-container li a {
   color: #ffffff !important;
   text-decoration: none;
@@ -12029,8 +12032,8 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
   margin-top: 5px;
   left: 0;
   background: #fff;
-  transition: width .2s ease;
-  -webkit-transition: width .2s ease;
+  transition: width .25s ease;
+  -webkit-transition: width .25s ease;
 }
 .newsroomHomepage .newsroom-nav-container .underline-link:hover:after {
   width: 100%;

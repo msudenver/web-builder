@@ -1,5 +1,8 @@
 .newsroomHomepage {
 	.newsroom-nav-container{
+		.collapse.navbar-collapse {
+			padding: 22px 0px;
+		}
 		background-color: $msu-red;
 		li a {
 			color: #ffffff!important;
@@ -18,8 +21,8 @@
 			margin-top: 5px;
 			left: 0;
 			background: #fff;
-			transition: width .2s ease;
-			-webkit-transition: width .2s ease;
+			transition: width .25s ease;
+			-webkit-transition: width .25s ease;
 		}
 
 		.underline-link:hover:after{
