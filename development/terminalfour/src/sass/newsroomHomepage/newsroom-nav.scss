@@ -3,6 +3,29 @@
 		background-color: $msu-red;
 		li a {
 			color: #ffffff!important;
+			text-decoration: none;
+		}
+		.underline-link{
+			position: relative;
+		}
+
+		.underline-link:after{
+			content: '';
+			position: absolute;
+			width: 0; 
+			height: 5px;
+			display: block;
+			margin-top: 5px;
+			left: 0;
+			background: #fff;
+			transition: width .2s ease;
+			-webkit-transition: width .2s ease;
+		}
+
+		.underline-link:hover:after{
+			width: 100%;
+			left: 0;
+			background: #fff;
 		}
 	}
 }
