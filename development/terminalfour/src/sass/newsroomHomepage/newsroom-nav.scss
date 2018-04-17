@@ -41,6 +41,13 @@
 		.navbar-form {
 			margin-top: 0px;
 			margin-bottom: 0px;
+			.form-control {
+				width: 100%;
+			}
+		}
+
+		.form-group {
+			width: 350px;
 		}
 	}
 }
