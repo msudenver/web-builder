@@ -12009,6 +12009,55 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
     top: 10%;
   }
 }
+/** Newsroom Homepage Styles **/
+.newsroomHomepage .newsroom-nav-container {
+  background-color: #d11242;
+}
+.newsroomHomepage .newsroom-nav-container .collapse.navbar-collapse {
+  padding: 30px 0px;
+}
+.newsroomHomepage .newsroom-nav-container li {
+  padding-right: 60px;
+}
+.newsroomHomepage .newsroom-nav-container li a {
+  color: #ffffff !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  letter-spacing: 0.075em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.newsroomHomepage .newsroom-nav-container .underline-link {
+  position: relative;
+}
+.newsroomHomepage .newsroom-nav-container .underline-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 5px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: #fff;
+  transition: width .25s ease;
+  -webkit-transition: width .25s ease;
+}
+.newsroomHomepage .newsroom-nav-container .underline-link:hover:after {
+  width: 100%;
+  left: 0;
+  background: #fff;
+}
+.newsroomHomepage .newsroom-nav-container .navbar-form {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.newsroomHomepage .newsroom-nav-container .navbar-form .form-control {
+  width: 100%;
+}
+.newsroomHomepage .newsroom-nav-container .form-group {
+  width: 350px;
+}
+
 /** President's page styles **/
 body .president-page, p .president-page {
   color: #434343;
@@ -12398,9 +12447,9 @@ hr.pres-links {
 }
 
 .pres-button-interact {
-  display: ┬átable-cell;
-  vertical-align: ┬ámiddle;
-  text-align: ┬ácenter;
+  display:  table-cell;
+  vertical-align:  middle;
+  text-align:  center;
 }
 
 .president-page .form-group {

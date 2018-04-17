@@ -1,0 +1,53 @@
+.newsroomHomepage {
+	.newsroom-nav-container{
+		.collapse.navbar-collapse {
+			padding: 30px 0px;
+		}
+		background-color: $msu-red;
+		li {
+			padding-right: 60px;
+		}
+		li a {
+			color: #ffffff!important;
+			padding-left: 0px !important;
+			padding-right: 0px !important;
+			letter-spacing: 0.075em;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+		.underline-link{
+			position: relative;
+		}
+
+		.underline-link:after{
+			content: '';
+			position: absolute;
+			width: 0; 
+			height: 5px;
+			display: block;
+			margin-top: 5px;
+			left: 0;
+			background: #fff;
+			transition: width .25s ease;
+			-webkit-transition: width .25s ease;
+		}
+
+		.underline-link:hover:after{
+			width: 100%;
+			left: 0;
+			background: #fff;
+		}
+
+		.navbar-form {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			.form-control {
+				width: 100%;
+			}
+		}
+
+		.form-group {
+			width: 350px;
+		}
+	}
+}
