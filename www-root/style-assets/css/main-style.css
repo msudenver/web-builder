@@ -12016,8 +12016,13 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
 .newsroomHomepage .newsroom-nav-container .collapse.navbar-collapse {
   padding: 30px 0px;
 }
+.newsroomHomepage .newsroom-nav-container li {
+  padding-right: 60px;
+}
 .newsroomHomepage .newsroom-nav-container li a {
   color: #ffffff !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
   letter-spacing: 0.075em;
   text-decoration: none;
   text-transform: uppercase;

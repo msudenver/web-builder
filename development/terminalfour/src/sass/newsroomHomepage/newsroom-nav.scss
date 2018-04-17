@@ -4,8 +4,13 @@
 			padding: 30px 0px;
 		}
 		background-color: $msu-red;
+		li {
+			padding-right: 60px;
+		}
 		li a {
 			color: #ffffff!important;
+			padding-left: 0px !important;
+			padding-right: 0px !important;
 			letter-spacing: 0.075em;
 			text-decoration: none;
 			text-transform: uppercase;
