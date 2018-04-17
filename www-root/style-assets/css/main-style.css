@@ -12014,11 +12014,13 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
   background-color: #d11242;
 }
 .newsroomHomepage .newsroom-nav-container .collapse.navbar-collapse {
-  padding: 22px 0px;
+  padding: 30px 0px;
 }
 .newsroomHomepage .newsroom-nav-container li a {
   color: #ffffff !important;
+  letter-spacing: 0.075em;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .newsroomHomepage .newsroom-nav-container .underline-link {
   position: relative;
@@ -12039,6 +12041,10 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
   width: 100%;
   left: 0;
   background: #fff;
+}
+.newsroomHomepage .newsroom-nav-container .navbar-form {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /** President's page styles **/
