@@ -12011,21 +12011,23 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
 }
 /** Newsroom Homepage Styles **/
 /** Components **/
-.newsroomHomepage .newsroom-nav-container {
+.newsroom-nav-container {
+  font-weight: 700;
   background-color: #d11242;
 }
-.newsroomHomepage .newsroom-nav-container .navbar-left {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.newsroom-nav-container .navbar-left {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 55px;
 }
-.newsroomHomepage .newsroom-nav-container .collapse.navbar-collapse {
+.newsroom-nav-container .collapse.navbar-collapse {
   padding: 0px 0px;
   padding-bottom: 0px;
 }
-.newsroomHomepage .newsroom-nav-container li {
+.newsroom-nav-container li {
   padding-right: 60px;
 }
-.newsroomHomepage .newsroom-nav-container li a {
+.newsroom-nav-container li a {
   color: #ffffff !important;
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -12033,10 +12035,10 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
   text-decoration: none;
   text-transform: uppercase;
 }
-.newsroomHomepage .newsroom-nav-container .underline-link {
+.newsroom-nav-container .underline-link {
   position: relative;
 }
-.newsroomHomepage .newsroom-nav-container .underline-link:after {
+.newsroom-nav-container .underline-link:after {
   content: '';
   position: absolute;
   width: 0;
@@ -12048,43 +12050,44 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
   transition: width .25s ease;
   -webkit-transition: width .25s ease;
 }
-.newsroomHomepage .newsroom-nav-container .underline-link:hover:after {
+.newsroom-nav-container .underline-link:hover:after {
   width: 100%;
   left: 0;
   background: #fff;
 }
-.newsroomHomepage .newsroom-nav-container .navbar-form {
+.newsroom-nav-container .navbar-form {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.newsroomHomepage .newsroom-nav-container .navbar-form .form-control {
+.newsroom-nav-container .navbar-form .form-control {
   width: 100%;
 }
-.newsroomHomepage .newsroom-nav-container .input-group {
-  width: 400px;
+.newsroom-nav-container .input-group {
+  width: 685px;
   padding-top: 13px;
 }
-.newsroomHomepage .newsroom-nav-container .input-group .input-group-btn {
-  left: -16px;
+.newsroom-nav-container .input-group .input-group-btn {
+  left: 0px;
 }
-.newsroomHomepage .newsroom-nav-container .input-group .input-group-btn button.btn.btn-default {
-  height: 55px;
+.newsroom-nav-container .input-group .input-group-btn button.btn.btn-default {
+  height: 67px;
   border-radius: 0px;
+  border: none;
 }
-.newsroomHomepage .newsroom-nav-container .input-group .input-group-btn button.btn.btn-default span {
+.newsroom-nav-container .input-group .input-group-btn button.btn.btn-default span {
   color: #003a6e;
 }
-.newsroomHomepage .newsroom-nav-container .form-control {
-  height: 55px;
+.newsroom-nav-container .form-control {
+  height: 67px;
   border: none;
   border-radius: 0px;
 }
-.newsroomHomepage .newsroom-nav-container .form-control:focus {
+.newsroom-nav-container .form-control:focus {
   border-color: inherit;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.newsroomHomepage .newsroom-nav-container input.form-control[type="text"] {
+.newsroom-nav-container input.form-control[type="text"] {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   text-transform: uppercase;

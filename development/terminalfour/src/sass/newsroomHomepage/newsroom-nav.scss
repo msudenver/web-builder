@@ -1,89 +1,91 @@
-.newsroomHomepage {
-	.newsroom-nav-container{
-		.navbar-left {
-			padding-top: 20px;
-			padding-bottom: 20px;
-		}
-		.collapse.navbar-collapse {
-			padding: 0px 0px;
-			padding-bottom: 0px;
-		}
-		background-color: $msu-red;
-		li {
-			padding-right: 60px;
-		}
-		li a {
-			color: #ffffff!important;
-			padding-left: 0px !important;
-			padding-right: 0px !important;
-			letter-spacing: 0.075em;
-			text-decoration: none;
-			text-transform: uppercase;
-		}
-		.underline-link{
-			position: relative;
-		}
+.newsroom-nav-container{
+	font-weight: 700;
+	.navbar-left {
+		padding-top: 22px;
+		padding-bottom: 22px;
+		padding-left: 55px;
+	}
+	.collapse.navbar-collapse {
+		padding: 0px 0px;
+		padding-bottom: 0px;
+	}
+	background-color: $msu-red;
+	li {
+		padding-right: 60px;
+	}
+	li a {
+		color: #ffffff!important;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+		letter-spacing: 0.075em;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	.underline-link{
+		position: relative;
+	}
 
-		.underline-link:after{
-			content: '';
-			position: absolute;
-			width: 0; 
-			height: 5px;
-			display: block;
-			margin-top: 5px;
-			left: 0;
-			background: #fff;
-			transition: width .25s ease;
-			-webkit-transition: width .25s ease;
-		}
+	.underline-link:after{
+		content: '';
+		position: absolute;
+		width: 0; 
+		height: 5px;
+		display: block;
+		margin-top: 5px;
+		left: 0;
+		background: #fff;
+		transition: width .25s ease;
+		-webkit-transition: width .25s ease;
+	}
 
-		.underline-link:hover:after{
+	.underline-link:hover:after{
+		width: 100%;
+		left: 0;
+		background: #fff;
+	}
+
+	.navbar-form {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		.form-control {
 			width: 100%;
-			left: 0;
-			background: #fff;
 		}
+	}
 
-		.navbar-form {
-			margin-top: 0px;
-			margin-bottom: 0px;
-			.form-control {
-				width: 100%;
-			}
-		}
-
-		.input-group {
-			width: 400px;
-			padding-top: 13px;
-			.input-group-btn {
-				left: -16px;
-				button.btn.btn-default {
-					height: 55px;
-					border-radius: 0px;
-					span {
-						color: $msu-blue;
-					}
+	.input-group {
+		width: 685px;
+		padding-top: 13px;
+		.input-group-btn {
+			left: 0px;
+			button.btn.btn-default {
+				height: 67px;
+				border-radius: 0px;
+				border: none;
+				span {
+					color: $msu-blue;
 				}
 			}
 		}
-
-		.form-control {
-			height: 55px;
-			border: none;
-			border-radius: 0px;
-			&:focus {
-				border-color: inherit;
-				-webkit-box-shadow: none;
-				box-shadow: none;
-			}
-		}
-
-		input.form-control[type="text"] {
-			font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-size: 18px;
-			text-transform: uppercase;
-			letter-spacing: 0.075em;
-		}
-
-
 	}
+
+	.form-control {
+		height: 67px;
+		border: none;
+		border-radius: 0px;
+		&:focus {
+			border-color: inherit;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+	}
+
+	input.form-control[type="text"] {
+		font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 0.075em;
+	}
+
+
 }
+
