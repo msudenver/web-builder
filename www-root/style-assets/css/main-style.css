@@ -12013,8 +12013,13 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
 .newsroomHomepage .newsroom-nav-container {
   background-color: #d11242;
 }
+.newsroomHomepage .newsroom-nav-container .navbar-left {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .newsroomHomepage .newsroom-nav-container .collapse.navbar-collapse {
-  padding: 30px 0px;
+  padding: 0px 0px;
+  padding-bottom: 0px;
 }
 .newsroomHomepage .newsroom-nav-container li {
   padding-right: 60px;
@@ -12054,8 +12059,35 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
 .newsroomHomepage .newsroom-nav-container .navbar-form .form-control {
   width: 100%;
 }
-.newsroomHomepage .newsroom-nav-container .form-group {
-  width: 350px;
+.newsroomHomepage .newsroom-nav-container .input-group {
+  width: 400px;
+  padding-top: 13px;
+}
+.newsroomHomepage .newsroom-nav-container .input-group .input-group-btn {
+  left: -16px;
+}
+.newsroomHomepage .newsroom-nav-container .input-group .input-group-btn button.btn.btn-default {
+  height: 55px;
+  border-radius: 0px;
+}
+.newsroomHomepage .newsroom-nav-container .input-group .input-group-btn button.btn.btn-default span {
+  color: #003a6e;
+}
+.newsroomHomepage .newsroom-nav-container .form-control {
+  height: 55px;
+  border: none;
+  border-radius: 0px;
+}
+.newsroomHomepage .newsroom-nav-container .form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.newsroomHomepage .newsroom-nav-container input.form-control[type="text"] {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
 }
 
 /** President's page styles **/
