@@ -12010,6 +12010,7 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
   }
 }
 /** Newsroom Homepage Styles **/
+/** Components **/
 .newsroomHomepage .newsroom-nav-container {
   background-color: #d11242;
 }
@@ -12090,6 +12091,8 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
   letter-spacing: 0.075em;
 }
 
+/** Responsive Overrides **/
+/** specific breakpoint media query being used in Exceptional Case **/
 /** President's page styles **/
 body .president-page, p .president-page {
   color: #434343;
