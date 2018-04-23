@@ -7385,10 +7385,15 @@ button.close {
 }
 /** General Elements **/
 body {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
 
 /** Components **/
+.top-banner img {
+  width: 100%;
+}
+
 .newsroom-nav-container {
   font-weight: 700;
   background-color: #d11242;

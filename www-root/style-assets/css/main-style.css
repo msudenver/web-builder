@@ -12011,6 +12011,10 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
 }
 /** Newsroom Homepage Styles **/
 /** Components **/
+.top-banner img {
+  width: 100%;
+}
+
 .newsroom-nav-container {
   font-weight: 700;
   background-color: #d11242;
