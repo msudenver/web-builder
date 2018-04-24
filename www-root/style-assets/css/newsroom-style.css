@@ -7493,6 +7493,42 @@ nav.navbar {
   object-fit: cover;
   object-position: center center;
 }
+.homepage-hero .container {
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  top: -154px;
+}
+.homepage-hero .container .hero-tab {
+  letter-spacing: 0.15em;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 8px solid #ffffff;
+}
+.homepage-hero .container .hero-tab h3 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 0px;
+  margin: 0px;
+}
+.homepage-hero .container .hero-tab h2 {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0px;
+}
+.homepage-hero .container .hero-tab h4 {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0px;
+  padding: 20px 0px;
+}
+.homepage-hero .container .description-tab {
+  background-color: #003a6e;
+}
+.homepage-hero .container .description-tab p {
+  padding: 40px 0px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
 
 /** Responsive Overrides **/
 /** specific breakpoint media query being used in Exceptional Case **/
