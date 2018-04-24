@@ -11,6 +11,8 @@
 		color: #ffffff;
 		position: relative;
 		top: -154px;
+		// negative margin cancels out the whitespace from relative positioning
+		margin-bottom: -154px;
 		.hero-tab {
 			letter-spacing: 0.15em;
 			background-color: rgba(0,0,0,0.8);

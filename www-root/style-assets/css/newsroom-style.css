@@ -7498,6 +7498,7 @@ nav.navbar {
   color: #ffffff;
   position: relative;
   top: -154px;
+  margin-bottom: -154px;
 }
 .homepage-hero .container .hero-tab {
   letter-spacing: 0.15em;
