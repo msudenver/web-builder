@@ -12022,7 +12022,6 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
 .newsroom-nav-container .navbar-left {
   padding-top: 22px;
   padding-bottom: 22px;
-  padding-left: 55px;
 }
 .newsroom-nav-container .collapse.navbar-collapse {
   padding: 0px 0px;
@@ -12064,10 +12063,10 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
   margin-bottom: 0px;
 }
 .newsroom-nav-container .navbar-form .form-control {
-  width: 100%;
+  width: 550px;
 }
 .newsroom-nav-container .input-group {
-  width: 685px;
+  width: auto;
   padding-top: 13px;
 }
 .newsroom-nav-container .input-group .input-group-btn {
