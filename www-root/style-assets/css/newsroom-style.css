@@ -7401,6 +7401,10 @@ body {
   width: 100%;
 }
 
+nav.navbar {
+  margin-bottom: 0px;
+}
+
 .newsroom-nav-container {
   font-weight: 700;
   background-color: #d11242;
@@ -7418,8 +7422,8 @@ body {
 }
 .newsroom-nav-container li a {
   color: #ffffff !important;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  padding-left: 0px;
+  padding-right: 0px;
   letter-spacing: 0.075em;
   text-decoration: none;
   text-transform: uppercase;
@@ -7481,6 +7485,13 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.075em;
+}
+
+.homepage-hero img {
+  width: 100%;
+  max-height: 1258px;
+  object-fit: cover;
+  object-position: center center;
 }
 
 /** Responsive Overrides **/

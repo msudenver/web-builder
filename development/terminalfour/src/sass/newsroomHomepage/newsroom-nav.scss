@@ -3,6 +3,13 @@
 		width: 100%;
 	}
 }
+
+nav {
+	&.navbar {
+		margin-bottom: 0px;
+	}
+}
+
 .newsroom-nav-container{
 	font-weight: 700;
 	.navbar-left {
@@ -19,9 +26,9 @@
 		padding-right: 60px;
 	}
 	li a {
-		color: #ffffff!important;
-		padding-left: 0px !important;
-		padding-right: 0px !important;
+		color: #ffffff !important;
+		padding-left: 0px ;
+		padding-right: 0px ;
 		letter-spacing: 0.075em;
 		text-decoration: none;
 		text-transform: uppercase;

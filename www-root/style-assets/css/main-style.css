@@ -12015,6 +12015,10 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
   width: 100%;
 }
 
+nav.navbar {
+  margin-bottom: 0px;
+}
+
 .newsroom-nav-container {
   font-weight: 700;
   background-color: #d11242;
@@ -12032,8 +12036,8 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
 }
 .newsroom-nav-container li a {
   color: #ffffff !important;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  padding-left: 0px;
+  padding-right: 0px;
   letter-spacing: 0.075em;
   text-decoration: none;
   text-transform: uppercase;
