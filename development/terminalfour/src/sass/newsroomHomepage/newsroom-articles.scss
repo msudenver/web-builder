@@ -1,0 +1,32 @@
+.container-fluid {
+	&.article-container {
+		margin-top: 60px;
+		.row {
+			img {
+				width: 100%;
+			    height: 100%;
+			    max-height: 450px;
+			    object-fit: cover;
+			    object-position: center center;
+			}
+			h4 {
+		    	font-size:18px;
+		    	font-weight: 400;
+		    	text-transform: uppercase;
+		    	letter-spacing: 0.15em;
+		    	padding-top: 35px;
+		    }
+		    h3 {
+		    	font-size: 30px;
+		    	font-weight: 700;
+		    	letter-spacing: none;
+		    	color: #00447C;
+		    }
+		    p {
+		    	font-size: 22px;
+		    	font-weight: 500;
+		    	letter-spacing: none;
+		    }
+		}
+	}
+}
