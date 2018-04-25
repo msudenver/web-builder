@@ -7572,6 +7572,7 @@ nav.navbar {
 .container-fluid.article-container .row button {
   font-size: 20px;
   padding: 20px 16px;
+  margin-top: 20px;
   background: #d11242;
   color: #ffffff;
   max-width: 310px;
