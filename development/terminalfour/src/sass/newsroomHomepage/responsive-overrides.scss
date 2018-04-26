@@ -2,6 +2,16 @@
 
 }
 
+@media only screen and (max-width: 1333px) {
+	.newsroom-nav-container {
+		.navbar-form {
+			.form-control {
+				width: 299px;
+			}
+		}
+	}
+}
+
 // medium screen breakpoint
 @media only screen and (max-width: 1199px) {
 
@@ -9,12 +19,21 @@
 
 // tablet screen breakpoint 
 @media only screen and (max-width: 991px) {
-
+	.newsroom-nav-container{
+		li {
+			padding-right: 30px;
+		}
+	}
 }
 
 // mobile screen breakpoint
 @media only screen and (max-width: 767px) {
-
+	.top-banner {
+		display: none;
+	}
+	.newsroom-nav-container{
+		background-color: $msu-blue;
+	}
 }
 
 /** specific breakpoint media query being used in Exceptional Case **/

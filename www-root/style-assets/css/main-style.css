@@ -12102,6 +12102,25 @@ nav.navbar {
 }
 
 /** Responsive Overrides **/
+@media only screen and (max-width: 1333px) {
+  .newsroom-nav-container .navbar-form .form-control {
+    width: 299px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .newsroom-nav-container li {
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .top-banner {
+    display: none;
+  }
+
+  .newsroom-nav-container {
+    background-color: #003a6e;
+  }
+}
 /** specific breakpoint media query being used in Exceptional Case **/
 /** President's page styles **/
 body .president-page, p .president-page {

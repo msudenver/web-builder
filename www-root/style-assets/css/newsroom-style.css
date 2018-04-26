@@ -7399,7 +7399,6 @@ body {
 button {
   letter-spacing: 1px;
   text-transform: uppercase;
-  width: 100%;
 }
 
 /** Components **/
@@ -7575,12 +7574,32 @@ nav.navbar {
   margin-top: 20px;
   background: #d11242;
   color: #ffffff;
+  width: 100%;
   max-width: 310px;
   font-weight: 800;
   border-radius: 0px;
 }
 
 /** Responsive Overrides **/
+@media only screen and (max-width: 1333px) {
+  .newsroom-nav-container .navbar-form .form-control {
+    width: 299px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .newsroom-nav-container li {
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .top-banner {
+    display: none;
+  }
+
+  .newsroom-nav-container {
+    background-color: #003a6e;
+  }
+}
 /** specific breakpoint media query being used in Exceptional Case **/
 
 /*# sourceMappingURL=newsroom-style.css.map */
