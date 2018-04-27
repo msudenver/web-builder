@@ -7596,8 +7596,34 @@ nav.navbar {
     display: none;
   }
 
+  nav.navbar {
+    border: none;
+  }
+
   .newsroom-nav-container {
     background-color: #003a6e;
+  }
+  .newsroom-nav-container .collapse {
+    border: none;
+    background: #d11242;
+    opacity: 0.9;
+  }
+  .newsroom-nav-container .collapse.navbar-collapse {
+    margin-right: -18px;
+    margin-left: -18px;
+  }
+  .newsroom-nav-container li a {
+    padding: 10px 15px;
+  }
+  .newsroom-nav-container form {
+    display: none;
+  }
+  .newsroom-nav-container form .navbar-form {
+    border: none;
+  }
+
+  .navbar-nav {
+    margin: 0px;
   }
 }
 /** specific breakpoint media query being used in Exceptional Case **/

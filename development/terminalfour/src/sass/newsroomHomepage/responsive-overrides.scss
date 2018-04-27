@@ -31,8 +31,35 @@
 	.top-banner {
 		display: none;
 	}
+	nav.navbar {
+		border: none;
+	}
 	.newsroom-nav-container{
 		background-color: $msu-blue;
+		.collapse {
+			border: none;
+			background: $msu-red;
+			opacity: 0.9;
+			&.navbar-collapse {
+				margin-right: -18px;
+				margin-left: -18px;
+			}
+		}
+		li {
+			a {
+				padding: 10px 15px;
+			}
+		}
+		form {
+			display: none;
+			.navbar-form {
+				border: none;
+			}
+		}
+		
+	}
+	.navbar-nav {
+		margin: 0px;
 	}
 }
 
