@@ -31,16 +31,19 @@
 			    	letter-spacing: none;
 		    	}
 			}
-			button {
-				font-size: 20px;
-				padding: 20px 16px;
-				margin-top: 20px;
-		        background: $msu-red;
-		        color: #ffffff;
-		        width: 100%;
-		        max-width: 310px;
-		        font-weight: 800;
-		        border-radius: 0px;
+			.article-cta {
+				float: none;
+				button{
+					font-size: 20px;
+					padding: 20px 16px;
+					margin-top: 20px;
+			        background: $msu-red;
+			        color: #ffffff;
+			        width: 100%;
+			        // max-width: 320px;
+			        font-weight: 800;
+			        border-radius: 0px;
+				}
 			}
 		}
 	}

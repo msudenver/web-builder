@@ -7568,14 +7568,16 @@ nav.navbar {
   font-weight: 500;
   letter-spacing: none;
 }
-.container-fluid.article-container .row button {
+.container-fluid.article-container .row .article-cta {
+  float: none;
+}
+.container-fluid.article-container .row .article-cta button {
   font-size: 20px;
   padding: 20px 16px;
   margin-top: 20px;
   background: #d11242;
   color: #ffffff;
   width: 100%;
-  max-width: 310px;
   font-weight: 800;
   border-radius: 0px;
 }
@@ -7606,11 +7608,12 @@ nav.navbar {
   .newsroom-nav-container .collapse {
     border: none;
     background: #d11242;
-    opacity: 0.9;
   }
   .newsroom-nav-container .collapse.navbar-collapse {
-    margin-right: -18px;
-    margin-left: -18px;
+    padding: 15px 0px;
+  }
+  .newsroom-nav-container li {
+    padding-right: 0px;
   }
   .newsroom-nav-container li a {
     padding: 10px 15px;
@@ -7624,6 +7627,21 @@ nav.navbar {
 
   .navbar-nav {
     margin: 0px;
+  }
+
+  .homepage-hero .container {
+    top: 0px;
+    margin-bottom: 0px;
+  }
+  .homepage-hero .container .hero-tab {
+    background-color: black;
+    border-bottom: none;
+  }
+  .homepage-hero .container .hero-tab .text-center {
+    text-align: left;
+  }
+  .homepage-hero .container .description-tab .text-center {
+    text-align: left;
   }
 }
 /** specific breakpoint media query being used in Exceptional Case **/

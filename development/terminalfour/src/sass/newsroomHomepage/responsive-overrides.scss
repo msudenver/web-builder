@@ -39,13 +39,15 @@
 		.collapse {
 			border: none;
 			background: $msu-red;
-			opacity: 0.9;
+			// opacity: 0.9;
 			&.navbar-collapse {
-				margin-right: -18px;
-				margin-left: -18px;
+				// margin-right: -18px;
+				// margin-left: -18px;
+				padding: 15px 0px;
 			}
 		}
 		li {
+			padding-right: 0px;
 			a {
 				padding: 10px 15px;
 			}
@@ -60,6 +62,24 @@
 	}
 	.navbar-nav {
 		margin: 0px;
+	}
+	.homepage-hero {
+		.container {
+			top: 0px;
+			margin-bottom: 0px;
+			.hero-tab {
+				background-color: rgba(0,0,0,1.0);
+				border-bottom: none;
+				.text-center {
+					text-align: left;
+				}
+			}
+			.description-tab {
+				.text-center {
+					text-align: left;
+				}
+			}
+		}
 	}
 }
 
