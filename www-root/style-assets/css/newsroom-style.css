@@ -7624,9 +7624,26 @@ nav.navbar {
   .newsroom-nav-container form .navbar-form {
     border: none;
   }
+  .newsroom-nav-container .navbar-header button.navbar-toggle {
+    border: none;
+  }
+  .newsroom-nav-container .navbar-header button.navbar-toggle:focus {
+    background-color: transparent;
+  }
+  .newsroom-nav-container .navbar-header button.navbar-toggle span.icon-bar {
+    width: 26px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+  .newsroom-nav-container .navbar-header button.navbar-toggle span.icon-bar + .icon-bar {
+    margin-top: 5px;
+  }
 
   .navbar-nav {
     margin: 0px;
+  }
+  .navbar-nav.navbar-left {
+    padding-top: 0px;
   }
 
   .homepage-hero .container {
