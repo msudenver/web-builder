@@ -7585,13 +7585,23 @@ nav.navbar {
 footer {
   background: #707070;
   color: #FFFFFF;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 footer .footer-body {
   padding: 50px 0px;
 }
-footer .footer-body .footer-header {
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
+footer .footer-body ul {
+  list-style-type: none;
+}
+footer .footer-body ul li {
+  padding: 25px 0px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+footer .footer-body ul li a {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 /** Responsive Overrides **/

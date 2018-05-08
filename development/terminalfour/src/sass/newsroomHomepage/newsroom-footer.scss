@@ -1,11 +1,24 @@
 footer {
 	background: #707070;
 	color: #FFFFFF;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
 	.footer-body {
 		padding: 50px 0px;
 		.footer-header {
-			text-transform: uppercase; 
-			letter-spacing: 0.15em;
 		}
+		ul {
+			list-style-type: none;
+			li {
+				padding: 25px 0px;
+				border-bottom: 3px solid rgba(255, 255,255, 0.5);
+				a {
+					color: white;
+					font-size: 24px;
+					font-weight: 400;
+				}
+			}
+		}
+		
 	}
 }
