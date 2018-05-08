@@ -1,5 +1,11 @@
 footer {
-	h2 { 
-		color: orange;
+	background: #707070;
+	color: #FFFFFF;
+	.footer-body {
+		padding: 50px 0px;
+		.footer-header {
+			text-transform: uppercase; 
+			letter-spacing: 0.15em;
+		}
 	}
 }

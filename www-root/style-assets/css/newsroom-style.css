@@ -7582,8 +7582,16 @@ nav.navbar {
   border-radius: 0px;
 }
 
-footer h2 {
-  color: orange;
+footer {
+  background: #707070;
+  color: #FFFFFF;
+}
+footer .footer-body {
+  padding: 50px 0px;
+}
+footer .footer-body .footer-header {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 
 /** Responsive Overrides **/
