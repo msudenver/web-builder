@@ -7412,6 +7412,10 @@ nav.navbar {
 
 .newsroom-nav-container {
   font-weight: 700;
+  background: url("./../media/newsroom-redesign/insider-header-background.png");
+  background-size: cover;
+  background-position: center;
+  background-opacity: 0.5;
   background-color: #d11242;
 }
 .newsroom-nav-container .navbar-left {

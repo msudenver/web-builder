@@ -12,6 +12,13 @@ nav {
 
 .newsroom-nav-container{
 	font-weight: 700;
+	background: url("./../media/newsroom-redesign/insider-header-background.png");
+	background-size:cover;
+  	background-position:center;
+  	background-opacity: 0.5;
+
+  	background-color: rgba(209, 18, 66, 1);
+
 	.navbar-left {
 		padding-top: 22px;
 		padding-bottom: 22px;
@@ -21,7 +28,6 @@ nav {
 		padding: 0px 0px;
 		padding-bottom: 0px;
 	}
-	background-color: $msu-red;
 	li {
 		padding-right: 60px;
 	}
