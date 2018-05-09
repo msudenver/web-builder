@@ -7587,6 +7587,7 @@ footer {
   color: #FFFFFF;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  margin-top: 100px;
 }
 footer a {
   color: white;
@@ -7599,6 +7600,7 @@ footer .footer-body ul {
   list-style-type: none;
   padding-top: 30px;
   padding-left: 0px;
+  padding-right: 50px;
 }
 footer .footer-body ul li {
   padding: 25px 0px;
@@ -7608,6 +7610,9 @@ footer .footer-body ul li a {
   font-size: 24px;
   font-weight: 400;
 }
+footer .footer-body img {
+  width: auto;
+}
 footer .footer-body .icon-links {
   padding-top: 50px;
 }
@@ -7615,20 +7620,28 @@ footer .footer-bottom {
   background: #00447C;
 }
 footer .footer-bottom .container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+footer .footer-bottom .container .msu-links {
+  border-right: 3px solid white;
 }
 footer .footer-bottom .container a {
   font-size: 22px;
   font-weight: 800;
 }
 footer .footer-bottom .container .ptc {
+  font-weight: 500;
   padding-top: 30px;
   font-size: 16px;
 }
-footer .footer-bottom .container .ptc a {
+footer .footer-bottom .container .ptc .links {
+  position: relative;
+  top: 10px;
+}
+footer .footer-bottom .container .ptc .links a {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /** Responsive Overrides **/
