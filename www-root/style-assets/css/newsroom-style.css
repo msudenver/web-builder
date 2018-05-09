@@ -7588,19 +7588,46 @@ footer {
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
+footer a {
+  color: white;
+}
 footer .footer-body {
   padding: 50px 0px;
+  border-bottom: 5px solid #ffffff;
 }
 footer .footer-body ul {
   list-style-type: none;
+  padding-top: 30px;
+  padding-left: 0px;
 }
 footer .footer-body ul li {
   padding: 25px 0px;
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 footer .footer-body ul li a {
-  color: white;
   font-size: 24px;
+  font-weight: 400;
+}
+footer .footer-body .icon-links {
+  padding-top: 50px;
+}
+footer .footer-bottom {
+  background: #00447C;
+}
+footer .footer-bottom .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer .footer-bottom .container a {
+  font-size: 22px;
+  font-weight: 800;
+}
+footer .footer-bottom .container .ptc {
+  padding-top: 30px;
+  font-size: 16px;
+}
+footer .footer-bottom .container .ptc a {
+  font-size: 16px;
   font-weight: 400;
 }
 

@@ -3,22 +3,49 @@ footer {
 	color: #FFFFFF;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
+	a {
+		color: white;
+	}
 	.footer-body {
 		padding: 50px 0px;
+		border-bottom: 5px solid #ffffff;
 		.footer-header {
 		}
 		ul {
 			list-style-type: none;
+			padding-top: 30px;
+			padding-left: 0px;
 			li {
 				padding: 25px 0px;
 				border-bottom: 3px solid rgba(255, 255,255, 0.5);
 				a {
-					color: white;
 					font-size: 24px;
 					font-weight: 400;
 				}
 			}
 		}
-		
+
+		.icon-links {
+			padding-top: 50px;
+		}
+	}
+	.footer-bottom {
+		background: #00447C;
+		.container {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			a {
+				font-size: 22px;
+				font-weight: 800;
+			}
+			.ptc {
+				padding-top: 30px;
+				font-size: 16px;
+				a {
+					font-size: 16px;
+					font-weight: 400;
+				}
+			}
+		}
 	}
 }
