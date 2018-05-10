@@ -7624,6 +7624,10 @@ nav.navbar {
   border-radius: 0px;
 }
 
+.newsroom-article-detail {
+  padding-top: 50px;
+}
+
 footer {
   background: #707070;
   color: #FFFFFF;
