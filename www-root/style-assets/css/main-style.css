@@ -12024,21 +12024,33 @@ nav.navbar {
   background: url("./../media/newsroom-redesign/insider-header-background.png");
   background-size: cover;
   background-position: center;
-  height: 200px;
+  height: 340px;
 }
 .newsroom-nav-container .navbar-header {
+  width: 270px;
   position: relative;
   z-index: 1;
 }
+.newsroom-nav-container .navbar-header .navbar-brand {
+  width: 100%;
+}
 .newsroom-nav-container .navbar-header .navbar-brand img {
-  padding-top: 15px;
+  width: 100%;
+  padding-top: 35px;
 }
 .newsroom-nav-container .navbar-left {
   padding-top: 22px;
   padding-bottom: 22px;
-  top: 50px;
   position: relative;
   z-index: 1;
+}
+.newsroom-nav-container .navbar-left h3 {
+  color: #ffffff;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 80px;
 }
 .newsroom-nav-container .collapse.navbar-collapse {
   padding: 0px 0px;
@@ -12048,6 +12060,7 @@ nav.navbar {
   padding-right: 60px;
 }
 .newsroom-nav-container li a {
+  font-size: 18px;
   color: #ffffff !important;
   padding-left: 0px;
   padding-right: 0px;
@@ -12085,6 +12098,7 @@ nav.navbar {
 .newsroom-nav-container .input-group {
   width: auto;
   padding-top: 13px;
+  z-index: 1;
 }
 .newsroom-nav-container .input-group .input-group-btn {
   left: 0px;

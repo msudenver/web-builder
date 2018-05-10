@@ -17,20 +17,31 @@ nav {
 	background-size:cover;
   	background-position:center;
   	// background-color: rgba(209, 18, 66, 1);
-  	height: 200px;
+  	height: 340px;
   	.navbar-header {
+  		width: 270px;
   		position: relative;
   		z-index: 1;
   		.navbar-brand {
+  			width: 100%;
   			img {
-  				padding-top: 15px;
+  				width: 100%;
+  				padding-top: 35px;
   			}
   		}
   	}
 	.navbar-left {
+		h3 {
+			color: #ffffff;
+			letter-spacing: 0.15em;
+			text-transform: uppercase;
+			margin: 0;
+			padding-top: 70px;
+			padding-bottom: 80px;
+		}
 		padding-top: 22px;
 		padding-bottom: 22px;
-		top: 50px;
+		// top: 50px;
 		position: relative;
 		z-index: 1;
 		// padding-left: 55px;
@@ -43,6 +54,7 @@ nav {
 		padding-right: 60px;
 	}
 	li a {
+		font-size: 18px;
 		color: #ffffff !important;
 		padding-left: 0px ;
 		padding-right: 0px ;
@@ -84,6 +96,7 @@ nav {
 	.input-group {
 		width: auto;
 		padding-top: 13px;
+		z-index: 1;
 		.input-group-btn {
 			left: 0px;
 			button.btn.btn-default {
