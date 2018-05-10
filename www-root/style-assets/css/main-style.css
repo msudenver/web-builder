@@ -12024,15 +12024,19 @@ nav.navbar {
   background: url("./../media/newsroom-redesign/insider-header-background.png");
   background-size: cover;
   background-position: center;
-  height: 180px;
+  height: 200px;
 }
 .newsroom-nav-container .navbar-header {
   position: relative;
   z-index: 1;
 }
+.newsroom-nav-container .navbar-header .navbar-brand img {
+  padding-top: 15px;
+}
 .newsroom-nav-container .navbar-left {
   padding-top: 22px;
   padding-bottom: 22px;
+  top: 50px;
   position: relative;
   z-index: 1;
 }

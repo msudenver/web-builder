@@ -17,14 +17,20 @@ nav {
 	background-size:cover;
   	background-position:center;
   	// background-color: rgba(209, 18, 66, 1);
-  	height: 180px;
+  	height: 200px;
   	.navbar-header {
   		position: relative;
   		z-index: 1;
+  		.navbar-brand {
+  			img {
+  				padding-top: 15px;
+  			}
+  		}
   	}
 	.navbar-left {
 		padding-top: 22px;
 		padding-bottom: 22px;
+		top: 50px;
 		position: relative;
 		z-index: 1;
 		// padding-left: 55px;
