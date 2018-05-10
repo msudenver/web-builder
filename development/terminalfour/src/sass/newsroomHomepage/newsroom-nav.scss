@@ -10,18 +10,23 @@ nav {
 	}
 }
 
+
 .newsroom-nav-container{
 	font-weight: 700;
 	background: url("./../media/newsroom-redesign/insider-header-background.png");
 	background-size:cover;
   	background-position:center;
-  	background-opacity: 0.5;
-
-  	background-color: rgba(209, 18, 66, 1);
-
+  	// background-color: rgba(209, 18, 66, 1);
+  	height: 180px;
+  	.navbar-header {
+  		position: relative;
+  		z-index: 1;
+  	}
 	.navbar-left {
 		padding-top: 22px;
 		padding-bottom: 22px;
+		position: relative;
+		z-index: 1;
 		// padding-left: 55px;
 	}
 	.collapse.navbar-collapse {
@@ -105,5 +110,20 @@ nav {
 	}
 
 
+}
+
+.overlay {
+	position: relative;
+}
+
+.overlay:after {
+	background-color: $msu-red;
+	position: absolute;
+	content:"";
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:0.8;
 }
 
