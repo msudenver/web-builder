@@ -7627,6 +7627,21 @@ nav.navbar {
 .newsroom-article-detail {
   padding-top: 50px;
 }
+.newsroom-article-detail p {
+  margin: 30px 0px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.newsroom-article-detail blockquote {
+  font-weight: 700;
+  font-style: italic;
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 30px 22px;
+}
+.newsroom-article-detail img {
+  width: 100%;
+}
 
 footer {
   background: #707070;
