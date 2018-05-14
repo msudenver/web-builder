@@ -137,11 +137,17 @@ module.exports = function(grunt) {
     },//includereplace
 
     copy: {
-      main: {
-        files: [
-          {expand: true, cwd: 'development/lib/', src: ['./*.js'], dest: 'www-root/style-assets/lib/', filter: 'isFile'}
-        ]
-      },//main
+      // main: {
+      //   files: [{
+      //     expand: true, flatten: true, src: ['development/lib/**/*.js'], dest: 'www-root/style-assets/lib/', filter: 'isFile'
+      //   }]
+      // },
+      //main --- this needs to be reviewed further. this will now work, but we need to determine what we need from the src folder.
+      customScripts: {
+        files: [{
+          expand: true, flatten: true, src: ['development/lib/custom-scripts/*.js'], dest: 'www-root/style-assets/lib/custom-scripts/', filter: 'isFile'
+        }]
+      },
       media: {
           files: [{
               expand: true, flatten: true, src: ['development/terminalfour/src/media/*'], dest: 'www-root/style-assets/media/', filter: 'isFile'
