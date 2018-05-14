@@ -131,11 +131,11 @@ nav {
 
 }
 
-.overlay {
+.news-overlay {
 	position: relative;
 }
 
-.overlay:after {
+.news-overlay:after {
 	background-color: $msu-red;
 	position: absolute;
 	content:"";

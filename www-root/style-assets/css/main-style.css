@@ -12128,11 +12128,11 @@ nav.navbar {
   letter-spacing: 0.075em;
 }
 
-.overlay {
+.news-overlay {
   position: relative;
 }
 
-.overlay:after {
+.news-overlay:after {
   background-color: #d11242;
   position: absolute;
   content: "";
