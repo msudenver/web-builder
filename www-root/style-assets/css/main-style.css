@@ -12010,27 +12010,68 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
   }
 }
 /** Newsroom Homepage Styles **/
-.newsroomHomepage .newsroom-nav-container {
-  background-color: #d11242;
+/** Components **/
+.top-banner img {
+  width: 100%;
 }
-.newsroomHomepage .newsroom-nav-container .collapse.navbar-collapse {
-  padding: 30px 0px;
+
+nav.navbar {
+  margin-bottom: 0px;
 }
-.newsroomHomepage .newsroom-nav-container li {
+
+.newsroom-nav-container {
+  font-weight: 700;
+  background: url("./../media/newsroom-redesign/insider-header-background.png");
+  background-size: cover;
+  background-position: center;
+  height: 340px;
+}
+.newsroom-nav-container .navbar-header {
+  width: 270px;
+  position: relative;
+  z-index: 1;
+}
+.newsroom-nav-container .navbar-header .navbar-brand {
+  width: 100%;
+}
+.newsroom-nav-container .navbar-header .navbar-brand img {
+  width: 100%;
+  padding-top: 35px;
+}
+.newsroom-nav-container .navbar-left {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  position: relative;
+  z-index: 1;
+}
+.newsroom-nav-container .navbar-left h3 {
+  color: #ffffff;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+.newsroom-nav-container .collapse.navbar-collapse {
+  padding: 0px 0px;
+  padding-bottom: 0px;
+}
+.newsroom-nav-container li {
   padding-right: 60px;
 }
-.newsroomHomepage .newsroom-nav-container li a {
+.newsroom-nav-container li a {
+  font-size: 18px;
   color: #ffffff !important;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  padding-left: 0px;
+  padding-right: 0px;
   letter-spacing: 0.075em;
   text-decoration: none;
   text-transform: uppercase;
 }
-.newsroomHomepage .newsroom-nav-container .underline-link {
+.newsroom-nav-container .underline-link {
   position: relative;
 }
-.newsroomHomepage .newsroom-nav-container .underline-link:after {
+.newsroom-nav-container .underline-link:after {
   content: '';
   position: absolute;
   width: 0;
@@ -12042,22 +12083,146 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
   transition: width .25s ease;
   -webkit-transition: width .25s ease;
 }
-.newsroomHomepage .newsroom-nav-container .underline-link:hover:after {
+.newsroom-nav-container .underline-link:hover:after {
   width: 100%;
   left: 0;
   background: #fff;
 }
-.newsroomHomepage .newsroom-nav-container .navbar-form {
-  margin-top: 0px;
+.newsroom-nav-container .navbar-form {
+  margin-top: 180px;
   margin-bottom: 0px;
 }
-.newsroomHomepage .newsroom-nav-container .navbar-form .form-control {
-  width: 100%;
+.newsroom-nav-container .navbar-form .form-control {
+  width: 540px;
 }
-.newsroomHomepage .newsroom-nav-container .form-group {
-  width: 350px;
+.newsroom-nav-container .input-group {
+  width: auto;
+  padding-top: 13px;
+  z-index: 1;
+}
+.newsroom-nav-container .input-group .input-group-btn {
+  left: 0px;
+}
+.newsroom-nav-container .input-group .input-group-btn button.btn.btn-default {
+  height: 67px;
+  border-radius: 0px;
+  border: none;
+}
+.newsroom-nav-container .input-group .input-group-btn button.btn.btn-default span {
+  color: #003a6e;
+}
+.newsroom-nav-container .form-control {
+  height: 67px;
+  border: none;
+  border-radius: 0px;
+}
+.newsroom-nav-container .form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.newsroom-nav-container input.form-control[type="text"] {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
 }
 
+.news-overlay {
+  position: relative;
+}
+
+.news-overlay:after {
+  background-color: #d11242;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+/** Responsive Overrides **/
+@media only screen and (max-width: 1333px) {
+  .newsroom-nav-container .navbar-form .form-control {
+    width: 299px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .newsroom-nav-container li {
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .top-banner {
+    display: none;
+  }
+
+  nav.navbar {
+    border: none;
+  }
+
+  .newsroom-nav-container {
+    background-color: #003a6e;
+  }
+  .newsroom-nav-container .collapse {
+    border: none;
+    background: #d11242;
+  }
+  .newsroom-nav-container .collapse.navbar-collapse {
+    padding: 15px 0px;
+  }
+  .newsroom-nav-container li {
+    padding-right: 0px;
+  }
+  .newsroom-nav-container li a {
+    padding: 10px 15px;
+  }
+  .newsroom-nav-container form {
+    display: none;
+  }
+  .newsroom-nav-container form .navbar-form {
+    border: none;
+  }
+  .newsroom-nav-container .navbar-header button.navbar-toggle {
+    border: none;
+  }
+  .newsroom-nav-container .navbar-header button.navbar-toggle:focus {
+    background-color: transparent;
+  }
+  .newsroom-nav-container .navbar-header button.navbar-toggle span.icon-bar {
+    width: 26px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+  .newsroom-nav-container .navbar-header button.navbar-toggle span.icon-bar + .icon-bar {
+    margin-top: 5px;
+  }
+
+  .navbar-nav {
+    margin: 0px;
+  }
+  .navbar-nav.navbar-left {
+    padding-top: 0px;
+  }
+
+  .homepage-hero .container {
+    top: 0px;
+    margin-bottom: 0px;
+  }
+  .homepage-hero .container .hero-tab {
+    background-color: black;
+    border-bottom: none;
+  }
+  .homepage-hero .container .hero-tab .text-center {
+    text-align: left;
+  }
+  .homepage-hero .container .description-tab .text-center {
+    text-align: left;
+  }
+}
+/** specific breakpoint media query being used in Exceptional Case **/
 /** President's page styles **/
 body .president-page, p .president-page {
   color: #434343;
@@ -12447,9 +12612,9 @@ hr.pres-links {
 }
 
 .pres-button-interact {
-  display:  table-cell;
-  vertical-align:  middle;
-  text-align:  center;
+  display: ┬átable-cell;
+  vertical-align: ┬ámiddle;
+  text-align: ┬ácenter;
 }
 
 .president-page .form-group {

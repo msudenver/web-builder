@@ -1,0 +1,112 @@
+@media only screen and (max-width: 1345px) {
+
+}
+
+@media only screen and (max-width: 1333px) {
+	.newsroom-nav-container {
+		.navbar-form {
+			.form-control {
+				width: 299px;
+			}
+		}
+	}
+}
+
+// medium screen breakpoint
+@media only screen and (max-width: 1199px) {
+
+}
+
+// tablet screen breakpoint 
+@media only screen and (max-width: 991px) {
+	.newsroom-nav-container{
+		li {
+			padding-right: 30px;
+		}
+	}
+}
+
+// mobile screen breakpoint
+@media only screen and (max-width: 767px) {
+	.top-banner {
+		display: none;
+	}
+	nav.navbar {
+		border: none;
+	}
+	.newsroom-nav-container{
+		background-color: $msu-blue;
+		.collapse {
+			border: none;
+			background: $msu-red;
+			// opacity: 0.9;
+			&.navbar-collapse {
+				// margin-right: -18px;
+				// margin-left: -18px;
+				padding: 15px 0px;
+			}
+		}
+		li {
+			padding-right: 0px;
+			a {
+				padding: 10px 15px;
+			}
+		}
+		form {
+			display: none;
+			.navbar-form {
+				border: none;
+			}
+		}
+		.navbar-header {
+			button.navbar-toggle {
+				&:focus {
+					background-color: transparent;
+				}
+				border: none;
+				span {
+					&.icon-bar {
+						width: 26px;
+						height: 3px;
+						background-color: #ffffff;
+						& + .icon-bar {
+							margin-top: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.navbar-nav {
+		margin: 0px;
+		&.navbar-left {
+			padding-top: 0px;
+		}
+	}
+	.homepage-hero {
+		.container {
+			top: 0px;
+			margin-bottom: 0px;
+			.hero-tab {
+				background-color: rgba(0,0,0,1.0);
+				border-bottom: none;
+				.text-center {
+					text-align: left;
+				}
+			}
+			.description-tab {
+				.text-center {
+					text-align: left;
+				}
+			}
+		}
+	}
+	.article-container {
+
+	}
+}
+
+/** specific breakpoint media query being used in Exceptional Case **/
+@media only screen and (max-width: 385px) {
+
+}

@@ -1,0 +1,64 @@
+footer {
+	background: #707070;
+	color: #FFFFFF;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	margin-top: 100px;
+	a {
+		color: white;
+	}
+	.footer-body {
+		padding: 50px 0px;
+		border-bottom: 5px solid #ffffff;
+		.footer-header {
+		}
+		ul {
+			list-style-type: none;
+			padding-top: 30px;
+			padding-left: 0px;
+			padding-right: 50px;
+			li {
+				padding: 25px 0px;
+				border-bottom: 3px solid rgba(255, 255,255, 0.5);
+				a {
+					font-size: 24px;
+					font-weight: 400;
+				}
+			}
+		}
+		img {
+			width: auto;
+		}
+		.icon-links {
+			padding-top: 50px;
+		}
+	}
+	.footer-bottom {
+		background: #00447C;
+		.container {
+			padding-top: 40px;
+			padding-bottom: 40px;
+			.msu-links {
+				border-right: 3px solid white;
+			}
+			a {
+				font-size: 22px;
+				font-weight: 800;
+			}
+			.ptc {
+				font-weight: 500;
+				padding-top: 30px;
+				font-size: 16px;
+				.links {
+					position: relative;
+				    top: 10px;
+					a {
+						font-size: 16px;
+						font-weight: 500;
+					}
+				}
+				
+			}
+		}
+	}
+}
