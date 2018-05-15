@@ -7,35 +7,37 @@
 /** -------  End Bootstrap  v 3.3.7 -------- **/
 
 
-/**
-    =================================================
-        MSU Denver 2016 custom style declarations
-    =================================================
-**/
-
 /** SVG fallback for IE 8 **/
 header {
     background-color: #505050;
     text-align: center;
     color: #fff;
 }
-#denver-city-svg { background: blue; color: #fff; }
-#denver-city-svg svg { color: #fff;}
+
 /**  Homepage Feature Components michael.mason@terminalfour.com **/
 @import "msu-partials/global-header";
 @import "msu-partials/msu-utils";
-@import "msu-partials/homepage-base";
-@import "msu-partials/homepage-second-nav";
-@import "msu-partials/homepage-feature-caption";
-@import "msu-partials/homepage-ryor";
-@import "msu-partials/homepage-news";
-@import "msu-partials/homepage-at-a-glance";
-@import "msu-partials/homepage-community";
-@import "msu-partials/homepage-events";
-@import "msu-partials/footer";
+// @import "msu-partials/footer";
 
+@import "admissionsHomepage/homepage-resources.scss";
 
 
 
 /** print styles **/
 @import "print";
+
+
+.navbar-fixed-top {
+  background-color:#00447c;
+};
+
+
+.footer-container {
+  background-color:#00447c;
+  color: #fff;
+  border-top: 10px solid #d11242;
+  padding: 30px 0px ;
+  a {
+    color: #fff;
+  };
+}
