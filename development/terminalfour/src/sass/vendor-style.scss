@@ -21,17 +21,24 @@ a.skip-content {
     display: none;
 };
 
-@media (min-width: 992px) {
 body {
     padding-top: 150px;
   };
-};
+@media (min-width: 992px) {
+  .privacy-statement > * {
+      display: inherit;
+      padding-top: 25%;};
+  };
+
 .navbar-fixed-top {
   background-color:#00447c;
   border-bottom: 10px solid #d11242;
   text-align: left;
   padding: 10px 0px;
   margin-bottom: 20px;
+  img.msudenver_logo {
+    max-width: 600px;
+  };
   h1{
     font-size: 40px;
     color: #fff;
@@ -45,12 +52,13 @@ body {
   color: #fff;
   border-top: 10px solid #d11242;
   padding: 30px 0px ;
-  a {
-    color: #fff;
+    a {
+      color: #fff;
+    };
+    img.footer-logo-img {
+    max-height: 120px;
+    };
   };
-};
-
-
 section.admissionsHomepageResources .resources-container {
     border-top: none;
 };
