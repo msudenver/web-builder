@@ -79,7 +79,7 @@ module.exports = function(grunt) {
         },//options
         files: {
           'www-root/style-assets/css/main-style.css': 'development/terminalfour/src/sass/main-style.scss',
-          // 'www-root/style-assets/css/inner-style.css': 'development/terminalfour/src/sass/inner-style.scss',
+          'www-root/style-assets/css/vendor-style.css': 'development/terminalfour/src/sass/vendor-style.scss',
           'www-root/style-assets/css/print.css': 'development/terminalfour/src/sass/print.scss',
           'www-root/style-assets/css/newsroom-style.css': 'development/terminalfour/src/sass/newsroomHomepage/newsroom-style.scss',
         }//files
