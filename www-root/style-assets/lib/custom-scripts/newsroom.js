@@ -5,6 +5,7 @@ $(document).ready(function() {
 	var navRight = $("#nav-right");
 	var navLeft = $("#nav-left");
 	var brandLogo = $("#newsroom-logo");
+	var newsHero = $("#newsroom-hero");
 	$(window).scroll(function() {
 		if( $(window).scrollTop() >= 35) {
 			mainNavId.addClass('navbar-fixed-top');
@@ -13,6 +14,7 @@ $(document).ready(function() {
 			navRight.css("margin-top", "30px");
 			navLeft.css("padding-top", "50px");
 			brandLogo.css({"max-width" :"120px", "padding-top" :"0px"});
+			newsHero.css("padding-top", "158px");
 		} else {
 			mainNavId.removeClass('navbar-fixed-top');
 			navbarId.removeAttr("style");
@@ -20,6 +22,7 @@ $(document).ready(function() {
 			navRight.removeAttr("style");
 			navLeft.removeAttr("style");
 			brandLogo.removeAttr("style");
+			newsHero.removeAttr("style");
 		}
 	});
 });
