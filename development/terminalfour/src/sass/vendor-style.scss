@@ -7,18 +7,9 @@
 /** -------  End Bootstrap  v 3.3.7 -------- **/
 
 
-/** SVG fallback for IE 8 **/
-header {
-    background-color: #505050;
-    text-align: center;
-    color: #fff;
-}
 
-/**  Homepage Feature Components michael.mason@terminalfour.com **/
-@import "msu-partials/global-header";
+
 @import "msu-partials/msu-utils";
-// @import "msu-partials/footer";
-
 @import "admissionsHomepage/homepage-resources.scss";
 
 
@@ -26,9 +17,26 @@ header {
 /** print styles **/
 @import "print";
 
+a.skip-content {
+    display: none;
+};
 
+@media (min-width: 992px) {
+body {
+    padding-top: 150px;
+  };
+};
 .navbar-fixed-top {
   background-color:#00447c;
+  border-bottom: 10px solid #d11242;
+  text-align: left;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+  h1{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+  };
 };
 
 
@@ -40,4 +48,9 @@ header {
   a {
     color: #fff;
   };
-}
+};
+
+
+section.admissionsHomepageResources .resources-container {
+    border-top: none;
+};
