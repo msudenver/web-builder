@@ -12,15 +12,17 @@ $(document).ready(function() {
 			mainNavId.addClass('navbar-fixed-top');
 			navbarId.css("height", "150px");
 			headerElement.css("display", "none");
-			navRight.css({"margin-top": "30px", "display": "inline-block"});
+			navRight.css({"margin-top": "0px", "display": "inline-block", "position": "relative", "top": "-50px"});
 			navRight.removeClass("navbar-right");
-			navLeft.css({"padding-top": "50px", "padding-right": "50px", "display": "inline-block", "float": "none!important"});
+			navLeft.css({"padding-top": "50px", "padding-right": "50px", "display": "inline-block", "float": "none"});
+			navLeft.removeClass("navbar-left");
 			brandLogo.css({"max-width" :"120px", "padding-top" :"0px"});
 			newsHero.css("padding-top", "158px");
 			navbarCollapse.css({"position": "relative", "right": "0px", "text-align": "right"});
 		} else {
 			mainNavId.removeClass('navbar-fixed-top');
 			navRight.addClass("navbar-right");
+			navLeft.addClass("navbar-left");
 			navbarId.removeAttr("style");
 			headerElement.removeAttr("style");
 			navRight.removeAttr("style");
