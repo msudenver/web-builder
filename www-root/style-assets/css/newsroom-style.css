@@ -7600,13 +7600,13 @@ nav.navbar {
   padding-top: 35px;
 }
 .container-fluid.article-container .row .article-item h3 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: none;
   color: #00447C;
 }
 .container-fluid.article-container .row .article-item p {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: none;
 }
@@ -7614,7 +7614,7 @@ nav.navbar {
   float: none;
 }
 .container-fluid.article-container .row .article-cta button {
-  font-size: 20px;
+  font-size: 18px;
   padding: 20px 16px;
   margin-top: 20px;
   background: #d11242;
@@ -7657,6 +7657,9 @@ footer .footer-body {
   padding: 50px 0px;
   border-bottom: 5px solid #ffffff;
 }
+footer .footer-body .footer-header {
+  font-size: 24px;
+}
 footer .footer-body ul {
   list-style-type: none;
   padding-top: 30px;
@@ -7668,7 +7671,7 @@ footer .footer-body ul li {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 footer .footer-body ul li a {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
 }
 footer .footer-body img {
@@ -7709,6 +7712,9 @@ footer .footer-bottom .container .ptc .links a {
 @media only screen and (max-width: 1333px) {
   .newsroom-nav-container .navbar-form .form-control {
     width: 299px;
+  }
+  .newsroom-nav-container li {
+    padding-right: 30px;
   }
 }
 @media only screen and (max-width: 991px) {

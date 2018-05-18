@@ -12148,6 +12148,9 @@ nav.navbar {
   .newsroom-nav-container .navbar-form .form-control {
     width: 299px;
   }
+  .newsroom-nav-container li {
+    padding-right: 30px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .newsroom-nav-container li {
