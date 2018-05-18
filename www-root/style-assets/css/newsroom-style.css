@@ -7408,6 +7408,7 @@ button {
 
 nav.navbar {
   margin-bottom: 0px;
+  border: none;
 }
 
 .newsroom-nav-container {
@@ -7691,7 +7692,7 @@ footer .footer-bottom .container .msu-links {
   border-right: 3px solid white;
 }
 footer .footer-bottom .container a {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 800;
 }
 footer .footer-bottom .container .ptc {
@@ -7702,9 +7703,10 @@ footer .footer-bottom .container .ptc {
 footer .footer-bottom .container .ptc .links {
   position: relative;
   top: 10px;
+  font-size: 12px;
 }
 footer .footer-bottom .container .ptc .links a {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
 }
 

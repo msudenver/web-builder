@@ -12017,6 +12017,7 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
 
 nav.navbar {
   margin-bottom: 0px;
+  border: none;
 }
 
 .newsroom-nav-container {
