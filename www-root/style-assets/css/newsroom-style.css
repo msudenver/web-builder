@@ -7401,6 +7401,29 @@ button {
   text-transform: uppercase;
 }
 
+.underline-link {
+  position: relative;
+}
+
+.underline-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 5px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: #fff;
+  transition: width .25s ease;
+  -webkit-transition: width .25s ease;
+}
+
+.underline-link:hover:after {
+  width: 100%;
+  left: 0;
+  background: #fff;
+}
+
 /** Components **/
 .top-banner img {
   width: 100%;
@@ -7459,26 +7482,6 @@ nav.navbar {
   letter-spacing: 0.075em;
   text-decoration: none;
   text-transform: uppercase;
-}
-.newsroom-nav-container .underline-link {
-  position: relative;
-}
-.newsroom-nav-container .underline-link:after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 5px;
-  display: block;
-  margin-top: 5px;
-  left: 0;
-  background: #fff;
-  transition: width .25s ease;
-  -webkit-transition: width .25s ease;
-}
-.newsroom-nav-container .underline-link:hover:after {
-  width: 100%;
-  left: 0;
-  background: #fff;
 }
 .newsroom-nav-container .navbar-form {
   margin-top: 180px;
