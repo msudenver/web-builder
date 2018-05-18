@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	var mainNavId = $("#main-news-nav");
 	var navbarId = $("#newsroom-nav.newsroom-nav-container");
+	var navbarHeader = $("#nav-header");
 	var navbarCollapse = $("#navbar-collapse-1");
 	var headerElement = $("#nav-h3");
 	var navRight = $("#nav-right");
@@ -19,6 +20,7 @@ $(document).ready(function() {
 			brandLogo.css({"max-width" :"120px", "padding-top" :"0px"});
 			newsHero.css("padding-top", "158px");
 			navbarCollapse.css({"position": "relative", "right": "0px", "text-align": "right"});
+			navbarHeader.css({"width": "150px"});
 		} else {
 			mainNavId.removeClass('navbar-fixed-top');
 			navRight.addClass("navbar-right");
@@ -30,6 +32,7 @@ $(document).ready(function() {
 			brandLogo.removeAttr("style");
 			newsHero.removeAttr("style");
 			navbarCollapse.removeAttr("style");
+			navbarHeader.removeAttr("style");
 		}
 	});
 });
