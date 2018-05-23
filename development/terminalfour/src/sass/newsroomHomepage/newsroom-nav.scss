@@ -12,7 +12,21 @@ nav {
 }
 
 .newsroom-mobile-container {
-
+	background: $msu-red;
+	.navbar-header {
+		.navbar-brand {
+			padding: 11px 15px;
+		}
+	}
+	.navbar-collapse {
+		.navbar-left {
+			li {
+				a {
+					color: white;
+				}
+			}
+		}
+	}
 }
 
 .newsroom-nav-container{

@@ -7434,6 +7434,16 @@ nav.navbar {
   border: none;
 }
 
+.newsroom-mobile-container {
+  background: #d11242;
+}
+.newsroom-mobile-container .navbar-header .navbar-brand {
+  padding: 11px 15px;
+}
+.newsroom-mobile-container .navbar-collapse .navbar-left li a {
+  color: white;
+}
+
 .newsroom-nav-container {
   font-weight: 700;
   background: url("./../media/newsroom-redesign/insider-header-background.png");
