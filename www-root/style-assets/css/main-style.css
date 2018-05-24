@@ -12041,6 +12041,16 @@ nav.navbar {
 .newsroom-mobile-container .navbar-header .navbar-brand {
   padding: 11px 15px;
 }
+.newsroom-mobile-container .navbar-collapse.collapsing {
+  background-color: #d11242;
+  margin-left: -24px;
+  margin-right: -24px;
+}
+.newsroom-mobile-container .navbar-collapse.in {
+  background-color: #d11242;
+  margin-left: -24px;
+  margin-right: -24px;
+}
 .newsroom-mobile-container .navbar-collapse .navbar-left li a {
   color: white;
 }
