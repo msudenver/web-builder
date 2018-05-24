@@ -11,14 +11,41 @@ nav {
 	}
 }
 
+/* mobile nav bar styling */ 
 .newsroom-mobile-container {
-	background: $msu-red;
+	background: $msu-blue;
 	.navbar-header {
+		.navbar-toggle {
+			border: none;
+			&:focus {
+				background-color: transparent;
+			}
+			span {
+				&.icon-bar {
+					width: 26px;
+					height: 3px;
+					background-color: #ffffff;
+					& + .icon-bar {
+						margin-top: 5px;
+					}
+				}
+			}
+		}
 		.navbar-brand {
 			padding: 11px 15px;
 		}
 	}
 	.navbar-collapse {
+		&.collapsing {
+			background-color: $msu-red;
+			margin-left: -24px;
+			margin-right: -24px;
+		}
+		&.in {
+			background-color: $msu-red;
+			margin-left: -24px;
+			margin-right: -24px;
+		}
 		.navbar-left {
 			li {
 				a {
