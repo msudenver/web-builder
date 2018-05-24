@@ -1,13 +1,13 @@
 .top-banner {
 	img {
-		width: 100%;
+		width: 150px;
 	}
 }
 
 nav {
 	&.navbar {
 		margin-bottom: 0px;
-		border: none; 	
+		border: none;
 	}
 }
 
@@ -62,15 +62,15 @@ nav {
 	background-size:cover;
   	background-position:center;
   	// background-color: rgba(209, 18, 66, 1);
-  	height: 340px;
+  	height: 245px;
   	.navbar-header {
-  		width: 270px;
+  		width: 170px;
   		position: relative;
   		z-index: 1;
   		.navbar-brand {
   			width: 100%;
   			img {
-  				width: 100%;
+  				width: 150px;
   				padding-top: 35px;
   			}
   		}
@@ -81,8 +81,8 @@ nav {
 			letter-spacing: 0.15em;
 			text-transform: uppercase;
 			margin: 0;
-			padding-top: 70px;
-			padding-bottom: 80px;
+			padding-top: 30px;
+			padding-bottom: 60px;
 		}
 		padding-top: 22px;
 		padding-bottom: 22px;
@@ -109,7 +109,7 @@ nav {
 	}
 
 	.navbar-form {
-		margin-top: 180px;
+		margin-top: 120px;
 		margin-bottom: 0px;
 		.form-control {
 			width: 20vw;
@@ -168,4 +168,3 @@ nav {
 	height:100%;
 	opacity:0.8;
 }
-

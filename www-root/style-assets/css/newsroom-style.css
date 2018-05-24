@@ -7426,7 +7426,7 @@ button {
 
 /** Components **/
 .top-banner img {
-  width: 100%;
+  width: 150px;
 }
 
 nav.navbar {
@@ -7474,10 +7474,10 @@ nav.navbar {
   background: url("./../media/newsroom-redesign/insider-header-background.png");
   background-size: cover;
   background-position: center;
-  height: 340px;
+  height: 245px;
 }
 .newsroom-nav-container .navbar-header {
-  width: 270px;
+  width: 170px;
   position: relative;
   z-index: 1;
 }
@@ -7485,7 +7485,7 @@ nav.navbar {
   width: 100%;
 }
 .newsroom-nav-container .navbar-header .navbar-brand img {
-  width: 100%;
+  width: 150px;
   padding-top: 35px;
 }
 .newsroom-nav-container .navbar-nav {
@@ -7499,8 +7499,8 @@ nav.navbar {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 70px;
-  padding-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 .newsroom-nav-container .collapse.navbar-collapse {
   padding: 0px 0px;
@@ -7519,7 +7519,7 @@ nav.navbar {
   text-transform: uppercase;
 }
 .newsroom-nav-container .navbar-form {
-  margin-top: 180px;
+  margin-top: 120px;
   margin-bottom: 0px;
 }
 .newsroom-nav-container .navbar-form .form-control {
