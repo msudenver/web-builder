@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 	function stickyNavbar() {
 		$(window).scroll(function() {
-			if( $(window).scrollTop() >= 35) {
+			if( $(window).scrollTop() >= 35 && $(window).width() >= 992) {
 				if(!isStuck) {
 					isStuck = true;
 					mainNavId.addClass('navbar-fixed-top');
@@ -48,18 +48,7 @@ $(document).ready(function() {
 		});
 	} 
 
-	if( $(window).width() > 992) {
-		stickyNavbar();
-	} else {
-		// alert("the window is under the threshold");
-	}
-
-	$(window).on('resize', function() {
-		if( $(window).width() > 992) {
-			stickyNavbar();
-		} else {
-			// alert("the window is under the threshold");
-		}
-	});
+	//initialize stickyNavbar() function
+	stickyNavbar();
 
 });
