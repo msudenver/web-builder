@@ -70,24 +70,24 @@
 				border: none;
 			}
 		}
-		.navbar-header {
-			button.navbar-toggle {
-				&:focus {
-					background-color: transparent;
-				}
-				border: none;
-				span {
-					&.icon-bar {
-						width: 26px;
-						height: 3px;
-						background-color: #ffffff;
-						& + .icon-bar {
-							margin-top: 5px;
-						}
-					}
-				}
-			}
-		}
+		// .navbar-header {
+		// 	button.navbar-toggle {
+		// 		&:focus {
+		// 			background-color: transparent;
+		// 		}
+		// 		border: none;
+		// 		span {
+		// 			&.icon-bar {
+		// 				width: 26px;
+		// 				height: 3px;
+		// 				background-color: #ffffff;
+		// 				& + .icon-bar {
+		// 					margin-top: 5px;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
 	}
 	.navbar-nav {
 		margin: 0px;
