@@ -12017,6 +12017,17 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
 
 nav.navbar {
   margin-bottom: 0px;
+  border: none;
+}
+
+.newsroom-mobile-container {
+  background: #d11242;
+}
+.newsroom-mobile-container .navbar-header .navbar-brand {
+  padding: 11px 15px;
+}
+.newsroom-mobile-container .navbar-collapse .navbar-left li a {
+  color: white;
 }
 
 .newsroom-nav-container {
@@ -12038,13 +12049,13 @@ nav.navbar {
   width: 100%;
   padding-top: 35px;
 }
-.newsroom-nav-container .navbar-left {
+.newsroom-nav-container .navbar-nav {
   padding-top: 22px;
   padding-bottom: 22px;
   position: relative;
   z-index: 1;
 }
-.newsroom-nav-container .navbar-left h3 {
+.newsroom-nav-container .navbar-nav h3 {
   color: #ffffff;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -12068,32 +12079,12 @@ nav.navbar {
   text-decoration: none;
   text-transform: uppercase;
 }
-.newsroom-nav-container .underline-link {
-  position: relative;
-}
-.newsroom-nav-container .underline-link:after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 5px;
-  display: block;
-  margin-top: 5px;
-  left: 0;
-  background: #fff;
-  transition: width .25s ease;
-  -webkit-transition: width .25s ease;
-}
-.newsroom-nav-container .underline-link:hover:after {
-  width: 100%;
-  left: 0;
-  background: #fff;
-}
 .newsroom-nav-container .navbar-form {
   margin-top: 180px;
   margin-bottom: 0px;
 }
 .newsroom-nav-container .navbar-form .form-control {
-  width: 540px;
+  width: 20vw;
 }
 .newsroom-nav-container .input-group {
   width: auto;
@@ -12147,6 +12138,9 @@ nav.navbar {
 @media only screen and (max-width: 1333px) {
   .newsroom-nav-container .navbar-form .form-control {
     width: 299px;
+  }
+  .newsroom-nav-container li {
+    padding-right: 30px;
   }
 }
 @media only screen and (max-width: 991px) {
