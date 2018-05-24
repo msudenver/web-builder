@@ -1,4 +1,6 @@
+//Once the DOM is ready for JS code to be executed. 
 $(document).ready(function() {
+	/* Define our element variables by getting elements by ID */
 	var mainNavId = $("#main-news-nav");
 	var navbarId = $("#newsroom-nav.newsroom-nav-container");
 	var navbarHeader = $("#nav-header");
@@ -8,11 +10,15 @@ $(document).ready(function() {
 	var navLeft = $("#nav-left");
 	var brandLogo = $("#newsroom-logo");
 	var newsHero = $("#newsroom-hero");
+	/* Our switch to let the window.scrollTop() function know
+		whether out navbar is sticky or not*/ 
 	var isStuck = false; 
 
 	function stickyNavbar() {
 		$(window).scroll(function() {
-			if( $(window).scrollTop() >= 35) {
+			/* when the window is scrolled, if we scroll past 35px AND our window's 
+				width is 992px change the following styles and classes */
+			if( $(window).scrollTop() >= 35 && $(window).width() >= 992) {
 				if(!isStuck) {
 					isStuck = true;
 					mainNavId.addClass('navbar-fixed-top');
@@ -26,10 +32,11 @@ $(document).ready(function() {
 					newsHero.css("padding-top", "158px");
 					navbarCollapse.css({"position": "relative", "right": "0px", "text-align": "right"});
 					navbarHeader.css({"width": "150px"});
-					console.log("is stuck");
+					console.log("is stuck");/* this is used for debugging. helps determine stuck or not stuck after styles change on scroll */
 				}
 				
 			} else {
+				/* Otherwise remove all the styling and classes */
 				if(isStuck) {
 					mainNavId.removeClass('navbar-fixed-top');
 					navRight.addClass("navbar-right");
@@ -48,18 +55,7 @@ $(document).ready(function() {
 		});
 	} 
 
-	if( $(window).width() > 992) {
-		stickyNavbar();
-	} else {
-		// alert("the window is under the threshold");
-	}
-
-	$(window).on('resize', function() {
-		if( $(window).width() > 992) {
-			stickyNavbar();
-		} else {
-			// alert("the window is under the threshold");
-		}
-	});
+	//initialize stickyNavbar() function
+	stickyNavbar();
 
 });
