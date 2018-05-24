@@ -32,7 +32,7 @@ $(document).ready(function() {
 					newsHero.css("padding-top", "158px");
 					navbarCollapse.css({"position": "relative", "right": "0px", "text-align": "right"});
 					navbarHeader.css({"width": "150px"});
-					console.log("is stuck");
+					console.log("is stuck");/* this is used for debugging. helps determine stuck or not stuck after styles change on scroll */
 				}
 				
 			} else {
