@@ -7701,7 +7701,6 @@ footer .footer-body .footer-header {
 }
 footer .footer-body ul {
   list-style-type: none;
-  padding-top: 30px;
   padding-left: 0px;
   padding-right: 50px;
 }
@@ -7714,7 +7713,8 @@ footer .footer-body ul li a {
   font-weight: 400;
 }
 footer .footer-body img {
-  width: auto;
+  width: 100%;
+  max-width: 300px;
 }
 footer .footer-body .icon-links {
   padding-top: 50px;
