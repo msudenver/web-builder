@@ -7523,7 +7523,15 @@ nav.navbar {
   margin-bottom: 0px;
 }
 .newsroom-nav-container .navbar-form .form-control {
-  width: 20vw;
+  width: 13vw;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+}
+.newsroom-nav-container .navbar-form .form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .newsroom-nav-container .input-group {
   width: auto;
@@ -7534,26 +7542,16 @@ nav.navbar {
   left: 0px;
 }
 .newsroom-nav-container .input-group .input-group-btn button.btn.btn-default {
-  height: 67px;
+  height: 50px;
   border-radius: 0px;
   border: none;
 }
 .newsroom-nav-container .input-group .input-group-btn button.btn.btn-default span {
   color: #003a6e;
 }
-.newsroom-nav-container .form-control {
-  height: 67px;
-  border: none;
-  border-radius: 0px;
-}
-.newsroom-nav-container .form-control:focus {
-  border-color: inherit;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
 .newsroom-nav-container input.form-control[type="text"] {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.075em;
 }

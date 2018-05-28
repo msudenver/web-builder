@@ -112,7 +112,15 @@ nav {
 		margin-top: 120px;
 		margin-bottom: 0px;
 		.form-control {
-			width: 20vw;
+			width: 13vw;
+			height: 50px;
+			border: none;
+			border-radius: 0px;
+			&:focus {
+				border-color: inherit;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
 		}
 	}
 
@@ -123,7 +131,7 @@ nav {
 		.input-group-btn {
 			left: 0px;
 			button.btn.btn-default {
-				height: 67px;
+				height: 50px;
 				border-radius: 0px;
 				border: none;
 				span {
@@ -134,19 +142,12 @@ nav {
 	}
 
 	.form-control {
-		height: 67px;
-		border: none;
-		border-radius: 0px;
-		&:focus {
-			border-color: inherit;
-			-webkit-box-shadow: none;
-			box-shadow: none;
-		}
+		
 	}
 
 	input.form-control[type="text"] {
 		font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size: 18px;
+		font-size: 16px;
 		text-transform: uppercase;
 		letter-spacing: 0.075em;
 	}
