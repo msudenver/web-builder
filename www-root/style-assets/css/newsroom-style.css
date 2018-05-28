@@ -7590,21 +7590,22 @@ nav.navbar {
   border-bottom: 8px solid #ffffff;
 }
 .homepage-hero .container .hero-tab h3 {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 500;
   padding: 20px 0px;
   margin: 0px;
 }
 .homepage-hero .container .hero-tab h2 {
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 700;
   margin: 0px;
 }
 .homepage-hero .container .hero-tab h4 {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   margin: 0px;
   padding: 20px 0px;
+  line-height: 1.5em;
 }
 .homepage-hero .container .description-tab {
   background-color: #003a6e;
@@ -7630,7 +7631,7 @@ nav.navbar {
   object-position: center center;
 }
 .container-fluid.article-container .row .article-item h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -7646,6 +7647,7 @@ nav.navbar {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: none;
+  text-align: left;
 }
 .container-fluid.article-container .row .article-cta {
   float: none;
