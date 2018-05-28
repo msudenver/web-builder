@@ -7653,13 +7653,13 @@ nav.navbar {
   float: none;
 }
 .container-fluid.article-container .row .article-cta button {
-  font-size: 18px;
+  font-size: 16px;
   padding: 20px 16px;
   margin-top: 20px;
   background: #d11242;
   color: #ffffff;
   width: 100%;
-  font-weight: 800;
+  font-weight: 700;
   border-radius: 0px;
 }
 
