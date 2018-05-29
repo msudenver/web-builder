@@ -7400,6 +7400,20 @@ button {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+button.newsroom-cta {
+  font-size: 16px;
+  padding: 20px 16px;
+  margin-top: 20px;
+  background: #d11242;
+  color: #ffffff;
+  width: 100%;
+  font-weight: 700;
+  border-radius: 0px;
+}
+button.newsroom-cta:hover {
+  background: #d11242;
+  color: #ffffff;
+}
 
 .underline-link {
   position: relative;
@@ -7652,16 +7666,6 @@ nav.navbar {
 .container-fluid.article-container .row .article-cta {
   float: none;
 }
-.container-fluid.article-container .row .article-cta button {
-  font-size: 16px;
-  padding: 20px 16px;
-  margin-top: 20px;
-  background: #d11242;
-  color: #ffffff;
-  width: 100%;
-  font-weight: 700;
-  border-radius: 0px;
-}
 
 .newsroom-article-detail {
   padding-top: 50px;
@@ -7722,7 +7726,24 @@ nav.navbar {
   color: #0071b9;
 }
 .newsroom-article-detail .newsroom-sidebar .sidebar-profiles .subscribe .input-group {
+  padding-top: 20px;
   width: 100%;
+}
+.newsroom-article-detail .newsroom-sidebar .sidebar-profiles .subscribe .input-group input {
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 30px 35px;
+  background: #eeeeee;
+  border: 1px solid #b1b1b1;
+}
+.newsroom-article-detail .newsroom-sidebar .sidebar-profiles .subscribe .input-group input::placeholder {
+  color: #555555;
+}
+.newsroom-article-detail .newsroom-sidebar .sidebar-profiles .subscribe button {
+  width: 100%;
+  letter-spacing: 0.15em;
 }
 
 footer {
