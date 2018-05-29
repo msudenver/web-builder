@@ -7523,7 +7523,7 @@ nav.navbar {
   margin-bottom: 0px;
 }
 .newsroom-nav-container .navbar-form .form-control {
-  width: 13vw;
+  width: 250px;
   height: 50px;
   border: none;
   border-radius: 0px;
@@ -7681,6 +7681,49 @@ nav.navbar {
 .newsroom-article-detail img {
   width: 100%;
 }
+.newsroom-article-detail .newsroom-sidebar h3 {
+  color: #d11242;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 15px 0px;
+  letter-spacing: 0.15em;
+  border-bottom: 6px solid #003a6e;
+}
+.newsroom-article-detail .newsroom-sidebar .sidebar-profiles {
+  padding-bottom: 20px;
+}
+.newsroom-article-detail .newsroom-sidebar .sidebar-profiles .sidebar-profile {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  border-bottom: 3px solid #eeeeee;
+}
+.newsroom-article-detail .newsroom-sidebar .sidebar-profiles .sidebar-profile:last-child {
+  border: none;
+}
+.newsroom-article-detail .newsroom-sidebar .sidebar-profiles .sidebar-profile h4 {
+  margin: 0;
+  padding-bottom: 10px;
+  color: #003a6e;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.newsroom-article-detail .newsroom-sidebar .sidebar-profiles .sidebar-profile p {
+  margin: 0;
+  padding-bottom: 10px;
+  color: #707070;
+  letter-spacing: 0.1em;
+  line-height: 23px;
+}
+.newsroom-article-detail .newsroom-sidebar .sidebar-profiles .sidebar-profile a {
+  margin: 0;
+  color: #0071b9;
+}
+.newsroom-article-detail .newsroom-sidebar .sidebar-profiles .sidebar-profile a:hover {
+  color: #0071b9;
+}
+.newsroom-article-detail .newsroom-sidebar .sidebar-profiles .subscribe .input-group {
+  width: 100%;
+}
 
 footer {
   background: #707070;
@@ -7755,7 +7798,7 @@ footer .footer-bottom .container .ptc .links a {
 /** Responsive Overrides **/
 @media only screen and (max-width: 1333px) {
   .newsroom-nav-container .navbar-form .form-control {
-    width: 299px;
+    width: 18vw;
   }
   .newsroom-nav-container li {
     padding-right: 30px;

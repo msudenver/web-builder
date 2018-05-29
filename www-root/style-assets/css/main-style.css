@@ -12109,7 +12109,7 @@ nav.navbar {
   margin-bottom: 0px;
 }
 .newsroom-nav-container .navbar-form .form-control {
-  width: 13vw;
+  width: 250px;
   height: 50px;
   border: none;
   border-radius: 0px;
@@ -12160,7 +12160,7 @@ nav.navbar {
 /** Responsive Overrides **/
 @media only screen and (max-width: 1333px) {
   .newsroom-nav-container .navbar-form .form-control {
-    width: 299px;
+    width: 18vw;
   }
   .newsroom-nav-container li {
     padding-right: 30px;
