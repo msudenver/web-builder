@@ -36,6 +36,16 @@
 			padding-right: 30px;
 		}
 	}
+
+	footer {
+		.footer-bottom {
+			.container {
+				.msu-links {
+					border-right: none;
+				}
+			}
+		}
+	}
 }
 
 // mobile screen breakpoint
@@ -89,6 +99,52 @@
 		// 	}
 		// }
 	}
+
+	.newsroom-mobile-container {
+		height: 60px;
+		.navbar-header {
+			.navbar-brand {
+				img {
+					max-width: 40px;
+				}
+			}
+		}
+		.navbar-collapse {
+			border-top: none;
+			box-shadow: none;
+			&.collapsing {
+				position: relative;
+				z-index: 10;
+			}
+			&.in {
+				position: relative;
+				z-index: 10;
+			}
+			.navbar-left {
+				padding-top: 10px;
+				li {
+					padding-right: 0px;
+					padding-left: 15px;
+				}
+			}
+		}
+		.navbar-form {
+			border-top: none;
+			border-bottom: none;
+			margin-right: 0px;
+			margin-left: 0px;
+			box-shadow: none;
+			&.navbar-right {
+				.input-group {
+					display: block;
+					.form-control {
+						width: 250px;
+					}
+				}
+			}
+		}
+	}
+
 	.navbar-nav {
 		margin: 0px;
 		&.navbar-left {
@@ -120,5 +176,15 @@
 
 /** specific breakpoint media query being used in Exceptional Case **/
 @media only screen and (max-width: 385px) {
-
+	.newsroom-mobile-container {
+		.navbar-form {
+			&.navbar-right {
+				.input-group {
+					.form-control {
+						width: 225px;
+					}
+				}
+			}
+		}
+	}
 }

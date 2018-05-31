@@ -7866,6 +7866,10 @@ footer .footer-bottom .container .ptc .links a {
   .newsroom-nav-container li {
     padding-right: 30px;
   }
+
+  footer .footer-bottom .container .msu-links {
+    border-right: none;
+  }
 }
 @media only screen and (max-width: 767px) {
   .top-banner {
@@ -7899,6 +7903,45 @@ footer .footer-bottom .container .ptc .links a {
     border: none;
   }
 
+  .newsroom-mobile-container {
+    height: 60px;
+  }
+  .newsroom-mobile-container .navbar-header .navbar-brand img {
+    max-width: 40px;
+  }
+  .newsroom-mobile-container .navbar-collapse {
+    border-top: none;
+    box-shadow: none;
+  }
+  .newsroom-mobile-container .navbar-collapse.collapsing {
+    position: relative;
+    z-index: 10;
+  }
+  .newsroom-mobile-container .navbar-collapse.in {
+    position: relative;
+    z-index: 10;
+  }
+  .newsroom-mobile-container .navbar-collapse .navbar-left {
+    padding-top: 10px;
+  }
+  .newsroom-mobile-container .navbar-collapse .navbar-left li {
+    padding-right: 0px;
+    padding-left: 15px;
+  }
+  .newsroom-mobile-container .navbar-form {
+    border-top: none;
+    border-bottom: none;
+    margin-right: 0px;
+    margin-left: 0px;
+    box-shadow: none;
+  }
+  .newsroom-mobile-container .navbar-form.navbar-right .input-group {
+    display: block;
+  }
+  .newsroom-mobile-container .navbar-form.navbar-right .input-group .form-control {
+    width: 250px;
+  }
+
   .navbar-nav {
     margin: 0px;
   }
@@ -7922,5 +7965,10 @@ footer .footer-bottom .container .ptc .links a {
   }
 }
 /** specific breakpoint media query being used in Exceptional Case **/
+@media only screen and (max-width: 385px) {
+  .newsroom-mobile-container .navbar-form.navbar-right .input-group .form-control {
+    width: 225px;
+  }
+}
 
 /*# sourceMappingURL=newsroom-style.css.map */
