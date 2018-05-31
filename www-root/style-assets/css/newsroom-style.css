@@ -7450,7 +7450,9 @@ nav.navbar {
 
 /* mobile nav bar styling */
 .newsroom-mobile-container {
-  background: #003a6e;
+  background: #d11242;
+  font-weight: 700;
+  height: 100px;
 }
 .newsroom-mobile-container .navbar-header .navbar-toggle {
   border: none;
@@ -7469,6 +7471,10 @@ nav.navbar {
 .newsroom-mobile-container .navbar-header .navbar-brand {
   padding: 11px 15px;
 }
+.newsroom-mobile-container .navbar-header .navbar-brand img {
+  width: 100%;
+  max-width: 75px;
+}
 .newsroom-mobile-container .navbar-collapse.collapsing {
   background-color: #d11242;
   margin-left: -24px;
@@ -7479,8 +7485,39 @@ nav.navbar {
   margin-left: -24px;
   margin-right: -24px;
 }
+.newsroom-mobile-container .navbar-collapse .navbar-left {
+  padding-top: 25px;
+}
+.newsroom-mobile-container .navbar-collapse .navbar-left li {
+  padding-right: 15px;
+}
 .newsroom-mobile-container .navbar-collapse .navbar-left li a {
-  color: white;
+  font-size: 14px;
+  color: #ffffff;
+  padding-left: 0px;
+  padding-right: 0px;
+  letter-spacing: 0.005em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.newsroom-mobile-container .navbar-collapse .navbar-right {
+  padding-top: 23px;
+}
+.newsroom-mobile-container .input-group .form-control {
+  border: none;
+  border-radius: 0px;
+  width: 22vw;
+}
+.newsroom-mobile-container .input-group .input-group-btn .form-group .btn {
+  border: none;
+  border-radius: 0px;
+  height: 36px;
+}
+.newsroom-mobile-container input.form-control[type="text"] {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
 }
 
 .newsroom-nav-container {
