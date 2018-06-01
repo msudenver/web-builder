@@ -15,7 +15,7 @@ footer {
 		}
 		ul {
 			list-style-type: none;
-			padding-top: 30px;
+			// padding-top: 30px;
 			padding-left: 0px;
 			padding-right: 50px;
 			li {
@@ -28,7 +28,8 @@ footer {
 			}
 		}
 		img {
-			width: auto;
+			width: 100%;
+			max-width: 300px;
 		}
 		.icon-links {
 			padding-top: 50px;
