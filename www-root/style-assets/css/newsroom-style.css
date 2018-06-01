@@ -7798,7 +7798,7 @@ footer .footer-body {
   border-bottom: 5px solid #ffffff;
 }
 footer .footer-body .footer-header {
-  font-size: 24px;
+  font-size: 20px;
 }
 footer .footer-body ul {
   list-style-type: none;
@@ -7815,7 +7815,7 @@ footer .footer-body ul li a {
 }
 footer .footer-body img {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
 }
 footer .footer-body .icon-links {
   padding-top: 50px;
