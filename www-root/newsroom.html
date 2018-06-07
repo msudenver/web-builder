@@ -1,21 +1,20 @@
-<!DOCTYPE html>
+
+        <!-- header includes -->
+        <!DOCTYPE html>
 <html lang="en-US">
 <head>
    <meta charset="UTF-8">
 
    <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
-   <title>MSU Denver - Homepage</title>
+   <title>RED - MSU Denver Newsroom</title>
   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7291556/7343172/css/fonts.css" />
   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7291556/6990192/css/fonts.css" /> <!-- test Gotham font -->
    <link href="style-assets/media/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen" />
    <link rel="stylesheet" href="style-assets/css/newsroom-style.css" />
-<!--  <link rel="stylesheet" href="style-assets/lib/slick-1.6.0/slick/slick.css" />-->
-
    <script src="style-assets/lib/jquery/jquery.min.js"></script>
 </head>
     <body style="padding-top: 0px;">
 
-        <!-- header includes -->
         <!-- <div class="top-banner">
   <img src="style-assets/media/newsroom-redesign/insider-header-background.png" alt="Insider Banner">
 </div> -->
@@ -99,6 +98,8 @@
 </nav>
 
 
+<!-- Terminal Four Header ends -->
+
         <!-- newsroom includes go here -->
         <div id="newsroom-hero" class="homepage-hero">
 	<img src="style-assets/media/newsroom-redesign/bradleypayton-insider-0400-ms180208-cc.jpg" alt="Featured Story Image">
@@ -167,6 +168,7 @@
 	</div>
 </div>
 
+<!-- Terminal Four Footer starts -->
         <!-- footer includes -->
 
         <footer>
@@ -221,21 +223,21 @@
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-md-4 msu-links">
-					<a href="" class="underline-link">MSUDenver.edu</a>
+					<a href="https://msudenver.edu" class="underline-link">msudenver.edu</a>
 				</div>
 				<div class="col-md-4 msu-links">
-					<a href="" class="underline-link">Give to MSU Denver</a>
+					<a href="https://msudenver.edu/visit" class="underline-link">Visit MSU Denver</a>
 				</div>
 				<div class="col-md-4 msu-links" style="border-right: none;">
-					<a href="" class="underline-link">Apply to MSU Denver</a>
+					<a href="https://msudenver.edu/admissions" class="underline-link">Apply to MSU Denver</a>
 				</div>
 			</div>
 			<div class="row ptc text-center">
 				<div class="col-md-12">
-					Metropolitan State University of Denver
+				<a href="https://msudenver.edu">	Metropolitan State University of Denver </a>
 					<br>
 					<span class="links">
-						<a href="">Privacy</a>, <a href="">Terms</a>, and <a href="">Conditions</a>
+						<a href="https://msudenver.edu/privacy">Privacy, Terms, and Conditions</a>
 					</span>
 				</div>
 			</div>
@@ -243,9 +245,9 @@
 	</div>
 </footer>
 
+
         <script src="style-assets/lib/jquery/jquery.min.js"></script>
         <script src="style-assets/lib/jquery-match-height/jquery.matchHeight.js"></script>
-<!--        <script src="style-assets/lib/slick-1.6.0/slick/slick.min.js"></script>-->
         <script src="style-assets/lib/boostrap/bootstrap.min.js"></script>
         <script src="style-assets/lib/custom-scripts/newsroom.js"></script>
 
@@ -257,37 +259,6 @@
             </script> -->
             <script>
             $('#menu-nav').css('max-height',$(window).height()-79);
-            </script>
-            <script>
-            // scrollTop function
-            $(window).scroll(function(){
-              var width_threshold = 900;
-              var href = document.location.href;
-              var position = $(window).scrollTop();
-              var width     =  $(window).width();
-              $(".header-fluid").removeClass("header-fluid-change");
-              $(".msudenver_logo").removeClass("msudenver_logo_change");
-
-
-               if( position <= 15 && width > width_threshold) {
-                  $("a.btn.btn-default.visit-give-mobile").css("top", "-109px");
-                  $("a.btn.btn-default.give-mobile").css("top", "-109px");
-                  $("a.btn.btn-default.apply-mobile").css("top", "-109px");
-               }
-              if( position > 15 && width > width_threshold) {
-                $(".header-fluid").toggleClass("header-fluid-change");
-                $(".msudenver_logo").toggleClass("msudenver_logo_change");
-                  $("a.btn.btn-default.visit-give-mobile").css("top", "-95px");
-                  $("a.btn.btn-default.give-mobile").css("top", "-95px");
-                  $("a.btn.btn-default.apply-mobile").css("top", "-95px");
-              }
-
-            });
-
-            $('.carousel').carousel({
-              interval: 30000
-            });
-
             </script>
 
     </body>

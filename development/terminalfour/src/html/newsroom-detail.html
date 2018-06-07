@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-   <meta charset="UTF-8">
-
-   <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
-   <title>MSU Denver - Homepage</title>
-  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7291556/7343172/css/fonts.css" />
-  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7291556/6990192/css/fonts.css" /> <!-- test Gotham font -->
-   <link href="style-assets/media/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen" />
-   <link rel="stylesheet" href="style-assets/css/newsroom-style.css" />
-<!--  <link rel="stylesheet" href="style-assets/lib/slick-1.6.0/slick/slick.css" />-->
-
-   <script src="style-assets/lib/jquery/jquery.min.js"></script>
-</head>
-    <body style="padding-top: 0px;">
 
         <!-- header includes -->
+        @@include('newsroomHomepageIncludes/header-includes.html')
         @@include('newsroomHomepageIncludes/newsroomNav.html')
 
         <!-- newsroom includes go here -->
@@ -28,59 +13,7 @@
 
         <script src="style-assets/lib/jquery/jquery.min.js"></script>
         <script src="style-assets/lib/jquery-match-height/jquery.matchHeight.js"></script>
-<!--        <script src="style-assets/lib/slick-1.6.0/slick/slick.min.js"></script>-->
         <script src="style-assets/lib/boostrap/bootstrap.min.js"></script>
-        <script>
-        $(document).ready(function() {
-            $('#homepage-feature-caption').carousel({
-                wrap: false,
-                interval: 1500,
-                keyboard: true
-            });
-            $('#homepage-feature-caption').on('slide.bs.carousel', function() {
-                console.log('slid');
-            } );
-        });
-        </script>
-
-            <!-- allow mobile menu dropdown to scroll -->
-            <!-- <script>
-            $('#bs-example-navbar-collapse-1').css('max-height',$(window).height());
-            </script> -->
-            <script>
-            $('#menu-nav').css('max-height',$(window).height()-79);
-            </script>
-            <script>
-            // scrollTop function
-            $(window).scroll(function(){
-              var width_threshold = 900;
-              var href = document.location.href;
-              var position = $(window).scrollTop();
-              var width     =  $(window).width();
-              $(".header-fluid").removeClass("header-fluid-change");
-              $(".msudenver_logo").removeClass("msudenver_logo_change");
-
-
-               if( position <= 15 && width > width_threshold) {
-                  $("a.btn.btn-default.visit-give-mobile").css("top", "-109px");
-                  $("a.btn.btn-default.give-mobile").css("top", "-109px");
-                  $("a.btn.btn-default.apply-mobile").css("top", "-109px");
-               }
-              if( position > 15 && width > width_threshold) {
-                $(".header-fluid").toggleClass("header-fluid-change");
-                $(".msudenver_logo").toggleClass("msudenver_logo_change");
-                  $("a.btn.btn-default.visit-give-mobile").css("top", "-95px");
-                  $("a.btn.btn-default.give-mobile").css("top", "-95px");
-                  $("a.btn.btn-default.apply-mobile").css("top", "-95px");
-              }
-
-            });
-
-            $('.carousel').carousel({
-              interval: 30000
-            });
-
-            </script>
 
     </body>
 
