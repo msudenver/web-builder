@@ -7640,15 +7640,15 @@ nav.navbar {
   background-color: rgba(0, 0, 0, 0.8);
   border-bottom: 8px solid #ffffff;
 }
+.homepage-hero .container .hero-tab h2 {
+  font-size: 26px;
+  font-weight: 700;
+  padding: 15px 0px;
+}
 .homepage-hero .container .hero-tab h3 {
   font-size: 19px;
   font-weight: 500;
-  padding: 20px 0px;
-  margin: 0px;
-}
-.homepage-hero .container .hero-tab h2 {
-  font-size: 30px;
-  font-weight: 700;
+  padding-bottom: 20px;
   margin: 0px;
 }
 .homepage-hero .container .hero-tab h4 {
