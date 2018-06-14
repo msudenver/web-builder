@@ -12094,10 +12094,10 @@ nav.navbar {
 
 .newsroom-nav-container {
   font-weight: 700;
-  background: url("./../media/newsroom-redesign/insider-header-background.png");
+  background: url("./../media/newsroom-redesign/red-header-background.png");
   background-size: cover;
   background-position: center;
-  height: 245px;
+  height: 215px;
 }
 .newsroom-nav-container .navbar-header {
   width: 170px;
@@ -12109,7 +12109,7 @@ nav.navbar {
 }
 .newsroom-nav-container .navbar-header .navbar-brand img {
   width: 150px;
-  padding-top: 35px;
+  padding-top: 15px;
 }
 .newsroom-nav-container .navbar-nav {
   padding-top: 22px;
@@ -12123,7 +12123,7 @@ nav.navbar {
   text-transform: uppercase;
   margin: 0;
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 .newsroom-nav-container .collapse.navbar-collapse {
   padding: 0px 0px;
@@ -12142,7 +12142,7 @@ nav.navbar {
   text-transform: uppercase;
 }
 .newsroom-nav-container .navbar-form {
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 0px;
 }
 .newsroom-nav-container .navbar-form .form-control {
@@ -12290,18 +12290,18 @@ nav.navbar {
     padding-top: 0px;
   }
 
-  .homepage-hero .container {
+  .news-hero .container {
     top: 0px;
     margin-bottom: 0px;
   }
-  .homepage-hero .container .hero-tab {
+  .news-hero .container .hero-tab {
     background-color: black;
     border-bottom: none;
   }
-  .homepage-hero .container .hero-tab .text-center {
+  .news-hero .container .hero-tab .text-center {
     text-align: left;
   }
-  .homepage-hero .container .description-tab .text-center {
+  .news-hero .container .description-tab .text-center {
     text-align: left;
   }
 }

@@ -11,7 +11,7 @@ nav {
 	}
 }
 
-/* mobile nav bar styling */ 
+/* mobile nav bar styling */
 .newsroom-mobile-container {
 	background: $msu-red;
 	font-weight: 700;
@@ -99,11 +99,11 @@ nav {
 
 .newsroom-nav-container{
 	font-weight: 700;
-	background: url("./../media/newsroom-redesign/insider-header-background.png");
+	background: url("./../media/newsroom-redesign/red-header-background.png");
 	background-size:cover;
   	background-position:center;
   	// background-color: rgba(209, 18, 66, 1);
-  	height: 245px;
+  	height: 215px;
   	.navbar-header {
   		width: 170px;
   		position: relative;
@@ -112,7 +112,7 @@ nav {
   			width: 100%;
   			img {
   				width: 150px;
-  				padding-top: 35px;
+  				padding-top: 15px;
   			}
   		}
   	}
@@ -123,7 +123,7 @@ nav {
 			text-transform: uppercase;
 			margin: 0;
 			padding-top: 30px;
-			padding-bottom: 60px;
+			padding-bottom: 40px;
 		}
 		padding-top: 22px;
 		padding-bottom: 22px;
@@ -150,7 +150,7 @@ nav {
 	}
 
 	.navbar-form {
-		margin-top: 120px;
+		margin-top: 100px;
 		margin-bottom: 0px;
 		.form-control {
 			width: 250px;

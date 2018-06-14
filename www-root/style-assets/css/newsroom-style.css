@@ -7522,10 +7522,10 @@ nav.navbar {
 
 .newsroom-nav-container {
   font-weight: 700;
-  background: url("./../media/newsroom-redesign/insider-header-background.png");
+  background: url("./../media/newsroom-redesign/red-header-background.png");
   background-size: cover;
   background-position: center;
-  height: 245px;
+  height: 215px;
 }
 .newsroom-nav-container .navbar-header {
   width: 170px;
@@ -7537,7 +7537,7 @@ nav.navbar {
 }
 .newsroom-nav-container .navbar-header .navbar-brand img {
   width: 150px;
-  padding-top: 35px;
+  padding-top: 15px;
 }
 .newsroom-nav-container .navbar-nav {
   padding-top: 22px;
@@ -7551,7 +7551,7 @@ nav.navbar {
   text-transform: uppercase;
   margin: 0;
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 .newsroom-nav-container .collapse.navbar-collapse {
   padding: 0px 0px;
@@ -7570,7 +7570,7 @@ nav.navbar {
   text-transform: uppercase;
 }
 .newsroom-nav-container .navbar-form {
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 0px;
 }
 .newsroom-nav-container .navbar-form .form-control {
@@ -7622,49 +7622,37 @@ nav.navbar {
   opacity: 0.8;
 }
 
-.homepage-hero img {
+.news-hero img {
   width: 100%;
   max-height: 1258px;
   object-fit: cover;
   object-position: center center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.homepage-hero .container {
+.news-hero .container {
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
   top: -154px;
   margin-bottom: -154px;
 }
-.homepage-hero .container .hero-tab {
+.news-hero .container .hero-tab {
   letter-spacing: 0.15em;
   background-color: rgba(0, 0, 0, 0.8);
-  border-bottom: 8px solid #ffffff;
+  padding-bottom: 20px;
 }
-.homepage-hero .container .hero-tab h2 {
+.news-hero .container .hero-tab h2 {
   font-size: 26px;
   font-weight: 700;
   padding: 15px 0px;
 }
-.homepage-hero .container .hero-tab h3 {
-  font-size: 19px;
-  font-weight: 500;
-  padding-bottom: 20px;
-  margin: 0px;
-}
-.homepage-hero .container .hero-tab h4 {
+.news-hero .container .hero-tab h3 {
   font-weight: 400;
   font-size: 14px;
+  padding-bottom: 20px;
   margin: 0px;
-  padding: 20px 0px;
-  line-height: 1.5em;
-}
-.homepage-hero .container .description-tab {
-  background-color: #003a6e;
-}
-.homepage-hero .container .description-tab p {
-  padding: 40px 0px;
-  font-weight: 700;
-  margin-bottom: 0px;
 }
 
 .container-fluid.article-container {
@@ -7949,18 +7937,18 @@ footer .footer-bottom .container .ptc .links a {
     padding-top: 0px;
   }
 
-  .homepage-hero .container {
+  .news-hero .container {
     top: 0px;
     margin-bottom: 0px;
   }
-  .homepage-hero .container .hero-tab {
+  .news-hero .container .hero-tab {
     background-color: black;
     border-bottom: none;
   }
-  .homepage-hero .container .hero-tab .text-center {
+  .news-hero .container .hero-tab .text-center {
     text-align: left;
   }
-  .homepage-hero .container .description-tab .text-center {
+  .news-hero .container .description-tab .text-center {
     text-align: left;
   }
 }
