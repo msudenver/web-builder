@@ -12097,10 +12097,10 @@ nav.navbar {
   background: url("./../media/newsroom-redesign/red-header-background.png");
   background-size: cover;
   background-position: center;
-  height: 215px;
+  height: 190px;
 }
 .newsroom-nav-container .navbar-header {
-  width: 170px;
+  width: 150px;
   position: relative;
   z-index: 1;
 }
@@ -12108,7 +12108,7 @@ nav.navbar {
   width: 100%;
 }
 .newsroom-nav-container .navbar-header .navbar-brand img {
-  width: 150px;
+  width: 130px;
   padding-top: 15px;
 }
 .newsroom-nav-container .navbar-nav {
@@ -12123,7 +12123,8 @@ nav.navbar {
   text-transform: uppercase;
   margin: 0;
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+  font-size: 25px;
 }
 .newsroom-nav-container .collapse.navbar-collapse {
   padding: 0px 0px;
@@ -12146,7 +12147,7 @@ nav.navbar {
   margin-bottom: 0px;
 }
 .newsroom-nav-container .navbar-form .form-control {
-  width: 250px;
+  width: 200px;
   height: 50px;
   border: none;
   border-radius: 0px;
