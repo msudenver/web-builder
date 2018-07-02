@@ -7454,6 +7454,13 @@ nav.navbar {
   font-weight: 700;
   height: 100px;
 }
+.newsroom-mobile-container .navbar-nav h3 {
+  color: #ffffff;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 18px;
+}
 .newsroom-mobile-container .navbar-header .navbar-toggle {
   border: none;
 }
@@ -7473,7 +7480,6 @@ nav.navbar {
 }
 .newsroom-mobile-container .navbar-header .navbar-brand img {
   width: 100%;
-  max-width: 75px;
 }
 .newsroom-mobile-container .navbar-collapse.collapsing {
   background-color: #d11242;
@@ -7525,10 +7531,10 @@ nav.navbar {
   background: url("./../media/newsroom-redesign/red-header-background.png");
   background-size: cover;
   background-position: center;
-  height: 190px;
+  height: 175px;
 }
 .newsroom-nav-container .navbar-header {
-  width: 150px;
+  margin-right: 15px;
   position: relative;
   z-index: 1;
 }
@@ -7536,7 +7542,7 @@ nav.navbar {
   width: 100%;
 }
 .newsroom-nav-container .navbar-header .navbar-brand img {
-  width: 130px;
+  width: 120px;
   padding-top: 15px;
 }
 .newsroom-nav-container .navbar-nav {
@@ -7571,7 +7577,7 @@ nav.navbar {
   text-transform: uppercase;
 }
 .newsroom-nav-container .navbar-form {
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 0px;
 }
 .newsroom-nav-container .navbar-form .form-control {
@@ -7636,8 +7642,8 @@ nav.navbar {
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
-  top: -154px;
-  margin-bottom: -154px;
+  top: -161px;
+  margin-bottom: -161px;
 }
 .news-hero .container .hero-tab {
   letter-spacing: 0.15em;
@@ -7678,13 +7684,12 @@ nav.navbar {
   padding-top: 35px;
 }
 .container-fluid.article-container .row .article-item h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
-  letter-spacing: none;
   color: #00447C;
 }
 .container-fluid.article-container .row .article-item p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: none;
   text-align: left;
@@ -7843,17 +7848,119 @@ footer .footer-bottom .container .ptc .links a {
 }
 
 /** Responsive Overrides **/
-@media only screen and (max-width: 1333px) {
-  .newsroom-nav-container .navbar-form .form-control {
-    width: 18vw;
+@media only screen and (min-width: 1200px) {
+  body {
+    padding-top: 150px;
   }
-  .newsroom-nav-container li {
-    padding-right: 30px;
+
+  .newsroom-mobile-container {
+    font-weight: 700;
+    background: url("./../media/newsroom-redesign/red-header-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+  }
+  .newsroom-mobile-container .navbar-header {
+    margin-right: 15px;
+    position: relative;
+    z-index: 1;
+  }
+  .newsroom-mobile-container .navbar-header .navbar-brand {
+    width: 100%;
+  }
+  .newsroom-mobile-container .navbar-header .navbar-brand img {
+    width: 120px;
+    padding-top: 15px;
+  }
+  .newsroom-mobile-container .navbar-nav {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    position: relative;
+    z-index: 1;
+  }
+  .newsroom-mobile-container .navbar-nav h3 {
+    color: #ffffff;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
+  .newsroom-mobile-container .collapse.navbar-collapse {
+    padding: 0px 0px;
+    padding-bottom: 0px;
+  }
+  .newsroom-mobile-container li {
+    padding-right: 60px;
+  }
+  .newsroom-mobile-container li a {
+    font-size: 16px;
+    color: #ffffff !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    letter-spacing: 0.075em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .newsroom-mobile-container .navbar-form {
+    margin-top: 80px;
+    margin-bottom: 0px;
+  }
+  .newsroom-mobile-container .navbar-form .form-control {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 0px;
+  }
+  .newsroom-mobile-container .navbar-form .form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .newsroom-mobile-container .input-group {
+    width: auto;
+    padding-top: 13px;
+    z-index: 1;
+  }
+  .newsroom-mobile-container .input-group .input-group-btn {
+    left: 0px;
+  }
+  .newsroom-mobile-container .input-group .input-group-btn button.btn.btn-default {
+    height: 50px;
+    border-radius: 0px;
+    border: none;
+  }
+  .newsroom-mobile-container .input-group .input-group-btn button.btn.btn-default span {
+    color: #003a6e;
+  }
+  .newsroom-mobile-container input.form-control[type="text"] {
+    font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .navbar-brand img {
+    max-width: 75px;
   }
 }
 @media only screen and (max-width: 991px) {
+  body {
+    padding-top: 100px;
+  }
+
   .newsroom-nav-container li {
     padding-right: 30px;
+  }
+
+  .navbar-brand img {
+    max-width: 75px;
   }
 
   footer .footer-bottom .container .msu-links {
@@ -7861,6 +7968,10 @@ footer .footer-bottom .container .ptc .links a {
   }
 }
 @media only screen and (max-width: 767px) {
+  body {
+    padding-top: 60px;
+  }
+
   .top-banner {
     display: none;
   }
@@ -7869,9 +7980,6 @@ footer .footer-bottom .container .ptc .links a {
     border: none;
   }
 
-  .newsroom-nav-container {
-    background-color: #003a6e;
-  }
   .newsroom-nav-container .collapse {
     border: none;
     background: #d11242;
@@ -7939,7 +8047,7 @@ footer .footer-bottom .container .ptc .links a {
   }
 
   .news-hero .container {
-    top: 0px;
+    top: -22px;
     margin-bottom: 0px;
   }
   .news-hero .container .hero-tab {
@@ -7955,6 +8063,10 @@ footer .footer-bottom .container .ptc .links a {
 }
 /** specific breakpoint media query being used in Exceptional Case **/
 @media only screen and (max-width: 385px) {
+  body {
+    padding-top: 60px;
+  }
+
   .newsroom-mobile-container .navbar-form.navbar-right .input-group .form-control {
     width: 225px;
   }

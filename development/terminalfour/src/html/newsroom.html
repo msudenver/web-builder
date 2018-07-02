@@ -13,19 +13,38 @@
         <script src="style-assets/lib/jquery/jquery.min.js"></script>
         <t4 type="media" id="117951"/>
         <script src="style-assets/lib/jquery-match-height/jquery.matchHeight.js"></script>
-        <t4 type="media" id="117952"/>
+        <!-- <t4 type="media" id="117952"/> -->
         <script src="style-assets/lib/boostrap/bootstrap.min.js"></script>
-        <t4 type="media" id="117953"/>
-        <script src="style-assets/lib/custom-scripts/newsroom.js"></script>
-        <t4 type="media" id="148794"/>
+        <!-- <t4 type="media" id="117953"/> -->
+        <!-- <script src="style-assets/lib/custom-scripts/newsroom.js"></script> -->
+        <!-- <t4 type="media" id="148794"/> -->
 
 
-            <!-- allow mobile menu dropdown to scroll -->
-            <!-- <script>
-            $('#bs-example-navbar-collapse-1').css('max-height',$(window).height());
-            </script> -->
             <script>
-            $('#menu-nav').css('max-height',$(window).height()-79);
+
+    $(document).ready(function(){
+    	'use strict' ;
+
+    	var width_threshold = 900;
+
+
+    	// scrollTop function
+    	$(window).scroll(function(){
+    		var position = $(window).scrollTop();
+    		var width     =  $(window).width();
+    		$(".magazine-logo").removeClass("magazine-logo-change");
+    		$(".navbar-collapse").removeClass("navbar-collapse-change");
+    		$(".msudenver-logo").removeClass("msudenver-logo-change");
+
+    		if( position > 15 && width > width_threshold) {
+    			$(".navbar-collapse").toggleClass("navbar-collapse-change");
+    			$(".magazine-logo").toggleClass("magazine-logo-change");
+    			$(".msudenver-logo").toggleClass("msudenver-logo-change");
+    		}
+
+    	});
+    });
+
             </script>
 
     </body>
