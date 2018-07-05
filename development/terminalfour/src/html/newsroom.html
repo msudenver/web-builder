@@ -32,14 +32,13 @@
     	$(window).scroll(function(){
     		var position = $(window).scrollTop();
     		var width     =  $(window).width();
-    		$(".magazine-logo").removeClass("magazine-logo-change");
-    		$(".navbar-collapse").removeClass("navbar-collapse-change");
-    		$(".msudenver-logo").removeClass("msudenver-logo-change");
+        $(".newsroom-navbar").removeClass("newsroom-navbar-change");
+        $(".navbar-brand").removeClass("navbar-brand-change");
+
 
     		if( position > 15 && width > width_threshold) {
-    			$(".navbar-collapse").toggleClass("navbar-collapse-change");
-    			$(".magazine-logo").toggleClass("magazine-logo-change");
-    			$(".msudenver-logo").toggleClass("msudenver-logo-change");
+    			$(".newsroom-navbar").toggleClass("newsroom-navbar-change");
+    			$(".navbar-brand").toggleClass("navbar-brand-change");
     		}
 
     	});

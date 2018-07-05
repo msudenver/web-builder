@@ -3,8 +3,7 @@
 @media only screen and (min-width: 1200px) {
 	body { padding-top: 150px; };
 
-		.newsroom-mobile-container {
-
+		.newsroom-navbar {
 					font-weight: 700;
 					background: url("./../media/newsroom-redesign/red-header-background.png");
 					background-size:cover;
@@ -23,6 +22,15 @@
 			  				padding-top: 15px;
 			  			}
 			  		}
+						.navbar-brand-change {
+							img{
+								width: 75px !important;
+								padding-top: 15px;
+							}
+						}
+
+
+
 			  	}
 				.navbar-nav {
 					h3 {
@@ -59,7 +67,7 @@
 				}
 
 				.navbar-form {
-					margin-top: 80px;
+					margin-top: 65px;
 					margin-bottom: 0px;
 					.form-control {
 						width: 200px;
@@ -98,7 +106,18 @@
 				}
 
 
-			}
+			};
+
+		.newsroom-navbar-change {
+				height: 120px;
+				h3 {display: none};
+				.navbar-form {margin-top: 0px;};
+				.navbar-left {padding-top: 35px !important;};
+			};
+
+
+
+
 		}
 
 // medium screen breakpoint
@@ -175,7 +194,7 @@
 		}
 	}
 
-	.newsroom-mobile-container {
+	.newsroom-navbar {
 		height: 60px;
 		.navbar-header {
 			.navbar-brand {
@@ -249,7 +268,7 @@
 /** specific breakpoint media query being used in Exceptional Case **/
 @media only screen and (max-width: 385px) {
 	body { padding-top: 60px; };
-	.newsroom-mobile-container {
+	.newsroom-navbar {
 		.navbar-form {
 			&.navbar-right {
 				.input-group {
