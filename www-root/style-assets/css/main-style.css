@@ -12020,6 +12020,26 @@ nav.navbar {
   border: none;
 }
 
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+  color: white;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 5px 10px;
+  clear: both;
+  font-weight: 600;
+  line-height: 1.428571429;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  text-decoration: none;
+  background-color: #ffffff00;
+}
+
 /* mobile nav bar styling */
 .newsroom-navbar {
   background: #d11242;
@@ -12261,7 +12281,7 @@ nav.navbar {
   }
   .newsroom-navbar li a {
     font-size: 16px;
-    color: #ffffff !important;
+    color: #ffffff;
     padding-left: 0px;
     padding-right: 0px;
     letter-spacing: 0.075em;
@@ -12319,6 +12339,16 @@ nav.navbar {
     padding-top: 35px !important;
   }
 }
+@media only screen and (min-width: 767px) {
+  .dropdown-menu {
+    padding: 10px;
+    background: #ffffffc7;
+  }
+  .dropdown-menu li a {
+    color: #d11242 !important;
+    font-size: 15px;
+  }
+}
 @media only screen and (max-width: 1199px) {
   body {
     padding-top: 100px;
@@ -12356,6 +12386,10 @@ nav.navbar {
 
   nav.navbar {
     border: none;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
   }
 
   .newsroom-nav-container .collapse {

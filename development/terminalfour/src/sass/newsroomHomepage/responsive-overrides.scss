@@ -58,7 +58,7 @@
 				}
 				li a {
 					font-size: 16px;
-					color: #ffffff !important;
+					color: #ffffff;
 					padding-left: 0px ;
 					padding-right: 0px ;
 					letter-spacing: 0.075em;
@@ -120,6 +120,19 @@
 
 		}
 
+@media only screen and (min-width: 767px) {
+		.dropdown-menu {
+			padding: 10px;
+			background: #ffffffc7;
+			li a{
+				color: $msu-red !important;
+				font-size: 15px;
+			}
+
+		}
+
+	}
+
 // medium screen breakpoint
 @media only screen and (max-width: 1199px) {
 	body { padding-top: 100px; };
@@ -168,6 +181,10 @@
 	nav.navbar {
 		border: none;
 	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+}
 	.newsroom-nav-container{
 		// background-color: $msu-blue;
 		.collapse {

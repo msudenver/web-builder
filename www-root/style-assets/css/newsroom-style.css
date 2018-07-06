@@ -7389,6 +7389,19 @@ body {
   font-weight: 400;
 }
 
+.content-inner {
+  margin-top: 50px;
+}
+
+.edit-page {
+  display: none;
+  float: right;
+}
+
+.edit-page:hover {
+  color: #003a6e;
+}
+
 /** Objects **/
 .container-fluid {
   width: 100%;
@@ -7396,11 +7409,9 @@ body {
   padding-right: 3.454545455%;
 }
 
-button {
+a.newsroom-cta {
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-button.newsroom-cta {
   font-size: 16px;
   padding: 20px 16px;
   margin-top: 20px;
@@ -7409,8 +7420,9 @@ button.newsroom-cta {
   width: 100%;
   font-weight: 700;
   border-radius: 0px;
+  width: 100%;
 }
-button.newsroom-cta:hover {
+a.newsroom-cta:hover {
   background: #d11242;
   color: #ffffff;
 }
@@ -7446,6 +7458,26 @@ button.newsroom-cta:hover {
 nav.navbar {
   margin-bottom: 0px;
   border: none;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+  color: white;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 5px 10px;
+  clear: both;
+  font-weight: 600;
+  line-height: 1.428571429;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  text-decoration: none;
+  background-color: #ffffff00;
 }
 
 /* mobile nav bar styling */
@@ -7907,7 +7939,7 @@ footer .footer-bottom .container .ptc .links a {
   }
   .newsroom-navbar li a {
     font-size: 16px;
-    color: #ffffff !important;
+    color: #ffffff;
     padding-left: 0px;
     padding-right: 0px;
     letter-spacing: 0.075em;
@@ -7965,6 +7997,16 @@ footer .footer-bottom .container .ptc .links a {
     padding-top: 35px !important;
   }
 }
+@media only screen and (min-width: 767px) {
+  .dropdown-menu {
+    padding: 10px;
+    background: #ffffffc7;
+  }
+  .dropdown-menu li a {
+    color: #d11242 !important;
+    font-size: 15px;
+  }
+}
 @media only screen and (max-width: 1199px) {
   body {
     padding-top: 100px;
@@ -8002,6 +8044,10 @@ footer .footer-bottom .container .ptc .links a {
 
   nav.navbar {
     border: none;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
   }
 
   .newsroom-nav-container .collapse {

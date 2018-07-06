@@ -11,6 +11,25 @@ nav {
 	}
 }
 
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: transparent;
+    color: white;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 5px 10px;
+    clear: both;
+    font-weight: 600;
+    line-height: 1.428571429;
+    color: #ffffff;
+    white-space: nowrap;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    text-decoration: none;
+    background-color: #ffffff00;
+}
+
 /* mobile nav bar styling */
 .newsroom-navbar {
 	background: $msu-red;

@@ -3,3 +3,16 @@ body {
 	font-weight: 400;
 }
 
+.content-inner {
+    margin-top: 50px;
+}
+
+
+.edit-page {
+	display: none;
+	float: right;
+}
+
+.edit-page:hover {
+	color: $msu-blue;
+}
