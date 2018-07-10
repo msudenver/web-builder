@@ -19,3 +19,11 @@ $(document).ready(function(){
 
   });
 });
+
+function showAlert() {
+    $("#subscribe").addClass("in");
+}
+
+window.setTimeout(function () {
+    showAlert();
+}, 3000);

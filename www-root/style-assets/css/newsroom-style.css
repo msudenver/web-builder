@@ -7473,6 +7473,25 @@ a:hover, a:focus > .call-to-action {
 }
 
 /** Components **/
+.subscribe-alert {
+  background: #ffffffc7;
+  position: absolute;
+  top: 250px;
+  margin-right: 20%;
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -moz-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
 .top-banner img {
   width: 150px;
 }
