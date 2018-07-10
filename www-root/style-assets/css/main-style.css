@@ -12231,7 +12231,7 @@ nav.navbar {
 /** Responsive Overrides **/
 @media only screen and (min-width: 1200px) {
   body {
-    padding-top: 150px;
+    padding-top: 175px;
   }
 
   .newsroom-navbar {
@@ -12459,18 +12459,12 @@ nav.navbar {
   }
 
   .news-hero .container {
-    top: -22px;
+    bottom: 0px;
     margin-bottom: 0px;
   }
   .news-hero .container .hero-tab {
     background-color: black;
     border-bottom: none;
-  }
-  .news-hero .container .hero-tab .text-center {
-    text-align: left;
-  }
-  .news-hero .container .description-tab .text-center {
-    text-align: left;
   }
 }
 /** specific breakpoint media query being used in Exceptional Case **/
