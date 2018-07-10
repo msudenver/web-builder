@@ -10,11 +10,12 @@
 		font-style: italic;
 		background-color: #eeeeee;
 		text-align: center;
-		padding: 30px 22px; 
+		padding: 30px 22px;
 	}
 	img {
 		width: 100%;
 	}
+	
 	.newsroom-sidebar {
 		h3 {
 			color: #d11242;
@@ -55,29 +56,7 @@
 					}
 				}
 			}
-			.subscribe {
-				.input-group {
-					padding-top: 20px;
-					width: 100%;
-					input {
-						font-style: italic;
-						font-weight: 500;
-						letter-spacing: 0.1em;
-						text-transform: uppercase;
-						padding: 30px 35px;
-						background: #eeeeee;
-						border: 1px solid #b1b1b1;
-						&::placeholder {
-							color: #555555;
-							// color: #b1b1b1;
-						}
-					}
-				}
-				button {
-					width: 100%;
-					letter-spacing: 0.15em;
-				}
-			}
+
 		}
 	}
 }

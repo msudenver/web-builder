@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /** Newsroom Homepage Style imports **/
-/** 
-	All of th styles imports and style declartions here will 
-	be compiled through its own seperate grunt process and will generate its 
-	own separate .css file. This is to be done in order to help keep 
-	the newsroom page styles completed separate and independent from 
-	the rest of the site 
+/**
+	All of th styles imports and style declartions here will
+	be compiled through its own seperate grunt process and will generate its
+	own separate .css file. This is to be done in order to help keep
+	the newsroom page styles completed separate and independent from
+	the rest of the site
 **/
 /** Vendors **/
 /*!
@@ -7393,12 +7393,12 @@ body {
   margin-top: 50px;
 }
 
-.edit-page {
+a.t4Edit-page {
   display: none;
   float: right;
 }
 
-.edit-page:hover {
+a.t4Edit-page:hover {
   color: #003a6e;
 }
 
@@ -7425,6 +7425,28 @@ a.newsroom-cta {
 a.newsroom-cta:hover {
   background: #d11242;
   color: #ffffff;
+}
+
+a:hover, a:focus > .call-to-action {
+  text-decoration: none !important;
+}
+
+.call-to-action {
+  background: #d11242;
+  color: white;
+  margin-bottom: 15px;
+}
+.call-to-action img {
+  margin: 0px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.call-to-action .call-to-action-caption {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  height: 120px;
 }
 
 .underline-link {
@@ -7668,75 +7690,6 @@ nav.navbar {
   transition: all 0.5s ease-in-out;
 }
 
-.news-hero img {
-  width: 100%;
-  max-height: 1258px;
-  object-fit: cover;
-  object-position: center center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.news-hero .container {
-  text-transform: uppercase;
-  color: #ffffff;
-  position: relative;
-  top: -161px;
-  margin-bottom: -161px;
-}
-.news-hero .container .hero-tab {
-  letter-spacing: 0.15em;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding-bottom: 20px;
-}
-.news-hero .container .hero-tab h2 {
-  font-size: 26px;
-  font-weight: 700;
-  padding: 15px 0px;
-}
-.news-hero .container .hero-tab h3 {
-  font-weight: 400;
-  font-size: 14px;
-  padding-bottom: 20px;
-  margin: 0px;
-}
-
-.container-fluid.article-container {
-  margin-top: 15px;
-}
-.container-fluid.article-container .row .article-item {
-  padding-top: 45px;
-  padding-bottom: 45px;
-}
-.container-fluid.article-container .row .article-item img {
-  width: 100%;
-  height: 100%;
-  height: 250px;
-  object-fit: cover;
-  object-position: center center;
-}
-.container-fluid.article-container .row .article-item h4 {
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  padding-top: 35px;
-}
-.container-fluid.article-container .row .article-item h3 {
-  font-size: 22px;
-  font-weight: 700;
-  color: #00447C;
-}
-.container-fluid.article-container .row .article-item p {
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: none;
-  text-align: left;
-}
-.container-fluid.article-container .row .article-cta {
-  float: none;
-}
-
 .newsroom-article-detail {
   padding-top: 50px;
 }
@@ -7794,26 +7747,6 @@ nav.navbar {
 }
 .newsroom-article-detail .newsroom-sidebar .sidebar-profiles .sidebar-profile a:hover {
   color: #0071b9;
-}
-.newsroom-article-detail .newsroom-sidebar .sidebar-profiles .subscribe .input-group {
-  padding-top: 20px;
-  width: 100%;
-}
-.newsroom-article-detail .newsroom-sidebar .sidebar-profiles .subscribe .input-group input {
-  font-style: italic;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 30px 35px;
-  background: #eeeeee;
-  border: 1px solid #b1b1b1;
-}
-.newsroom-article-detail .newsroom-sidebar .sidebar-profiles .subscribe .input-group input::placeholder {
-  color: #555555;
-}
-.newsroom-article-detail .newsroom-sidebar .sidebar-profiles .subscribe button {
-  width: 100%;
-  letter-spacing: 0.15em;
 }
 
 footer {
@@ -7884,6 +7817,72 @@ footer .footer-bottom .container .ptc .links {
 footer .footer-bottom .container .ptc .links a {
   font-size: 12px;
   font-weight: 500;
+}
+
+.news-hero img {
+  width: 100%;
+  max-height: 1000px;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news-hero .container {
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  top: -161px;
+  margin-bottom: -161px;
+}
+.news-hero .container .hero-tab {
+  letter-spacing: 0.15em;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 20px;
+}
+.news-hero .container .hero-tab h1 {
+  font-size: 24px !important;
+  font-weight: 700;
+}
+.news-hero .container .hero-tab h2 {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 0px;
+}
+.news-hero .container .hero-tab h3 {
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+
+.article-item {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.article-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center center;
+}
+.article-item h3 {
+  font-size: 20px !important;
+  font-weight: 700;
+  color: #00447C;
+}
+.article-item h4 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding-top: 35px;
+}
+.article-item p {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: none;
+  text-align: left;
 }
 
 /** Responsive Overrides **/

@@ -7,12 +7,11 @@ body {
     margin-top: 50px;
 }
 
-
-.edit-page {
+a.t4Edit-page {
 	display: none;
 	float: right;
 }
 
-.edit-page:hover {
+a.t4Edit-page:hover {
 	color: $msu-blue;
-}
+};

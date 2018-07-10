@@ -1,16 +1,17 @@
-.container-fluid {
-	&.article-container {
-		margin-top: 15px;
-		.row {
 			.article-item {
 				padding-top: 45px;
 				padding-bottom: 45px;
 				img {
 						width: 100%;
-				    height: 100%;
+				    // height: 100%;
 				    height: 250px;
 				    object-fit: cover;
 				    object-position: center center;
+				}
+				h3 {
+					font-size: 20px !important;
+					font-weight: 700;
+					color: #00447C;
 				}
 				h4 {
 			    	font-size: 16px;
@@ -19,12 +20,7 @@
 			    	letter-spacing: 0.15em;
 			    	padding-top: 35px;
 			    }
-			    h3 {
-			    	font-size: 22px;
-			    	font-weight: 700;
-			    	// letter-spacing: none;
-			    	color: #00447C;
-			    }
+
 			    p {
 			    	font-size: 18px;
 			    	font-weight: 500;
@@ -32,9 +28,3 @@
 			    	text-align: left;
 		    	}
 			}
-			.article-cta {
-				float: none;
-			}
-		}
-	}
-}
