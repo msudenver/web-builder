@@ -1,18 +1,17 @@
-button {
+a.newsroom-cta{
     letter-spacing: 1px;
     text-transform: uppercase;
-    &.newsroom-cta {
-    	font-size: 16px;
+    font-size: 16px;
 		padding: 20px 16px;
 		margin-top: 20px;
-        background: $msu-red;
-        color: #ffffff;
-        width: 100%;
-        font-weight: 700;
-        border-radius: 0px;
+    background: $msu-red;
+    color: #ffffff;
+    width: 100%;
+    font-weight: 700;
+    border-radius: 0px;
+    width:100%;
         &:hover {
         	background: $msu-red;
         	color: #ffffff;
-        }
-    }
+        };
 }
