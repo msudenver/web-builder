@@ -1,8 +1,26 @@
 .subscribe-alert {
-  background: #ffffffc7;
+  background: #ffff;
   position: absolute;
+  top: 70px;
+  h3{
+    color: $msu-blue;
+    text-align: center;
+  }
+  a.btn.btn-lg.btn-default.newsroom-cta {
+      margin-top: 0px;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 767px) {
+
+.subscribe-alert {
+  background: #ffffffc7;
   top: 250px;
   margin-right: 20%;
+  }
 }
 
 

@@ -7402,6 +7402,11 @@ a.t4Edit-page:hover {
   color: #003a6e;
 }
 
+.content-inner a {
+  text-decoration: underline;
+  color: #0072BC;
+}
+
 /** Objects **/
 .container-fluid {
   width: 100%;
@@ -7474,12 +7479,25 @@ a:hover, a:focus > .call-to-action {
 
 /** Components **/
 .subscribe-alert {
-  background: #ffffffc7;
+  background: #ffff;
   position: absolute;
-  top: 250px;
-  margin-right: 20%;
+  top: 70px;
+}
+.subscribe-alert h3 {
+  color: #003a6e;
+  text-align: center;
+}
+.subscribe-alert a.btn.btn-lg.btn-default.newsroom-cta, .subscribe-alert .btn-group-lg > a.btn.btn-default.newsroom-cta {
+  margin-top: 0px;
 }
 
+@media only screen and (min-width: 767px) {
+  .subscribe-alert {
+    background: #ffffffc7;
+    top: 250px;
+    margin-right: 20%;
+  }
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -7712,20 +7730,25 @@ nav.navbar {
 .newsroom-article-detail {
   padding-top: 50px;
 }
-.newsroom-article-detail p {
-  margin: 30px 0px;
-  line-height: 30px;
-  font-weight: 500;
+.newsroom-article-detail img {
+  width: 100%;
 }
-.newsroom-article-detail blockquote {
+.newsroom-article-detail .story p {
+  margin: 20px 0px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.newsroom-article-detail .story a {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #0072BC;
+}
+.newsroom-article-detail .story blockquote {
   font-weight: 700;
   font-style: italic;
   background-color: #eeeeee;
   text-align: center;
   padding: 30px 22px;
-}
-.newsroom-article-detail img {
-  width: 100%;
 }
 .newsroom-article-detail .newsroom-sidebar h3 {
   color: #d11242;

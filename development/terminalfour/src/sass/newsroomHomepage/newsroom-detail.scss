@@ -1,21 +1,29 @@
 .newsroom-article-detail {
 	padding-top: 50px;
-	p {
-		margin: 30px 0px;
-		line-height: 30px;
-		font-weight: 500;
-	}
-	blockquote {
-		font-weight: 700;
-		font-style: italic;
-		background-color: #eeeeee;
-		text-align: center;
-		padding: 30px 22px;
-	}
 	img {
 		width: 100%;
+	};
+	.story{
+		p {
+			margin: 20px 0px;
+			line-height: 25px;
+			font-weight: 400;
+		}
+		a {
+	    background-color: transparent;
+	    text-decoration: underline ;
+	    color: #0072BC;
+		}
+		blockquote {
+			font-weight: 700;
+			font-style: italic;
+			background-color: #eeeeee;
+			text-align: center;
+			padding: 30px 22px;
+		};
+
 	}
-	
+
 	.newsroom-sidebar {
 		h3 {
 			color: #d11242;
