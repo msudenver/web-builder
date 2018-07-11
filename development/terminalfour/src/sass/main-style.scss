@@ -67,6 +67,13 @@ header {
 /** Responsive Overrides **/
 @import "admissionsHomepage/responsive-overrides.scss";
 
+/** Newsroom Homepage Styles **/
+
+/** Components **/
+@import "newsroomHomepage/newsroom-nav.scss";
+/** Responsive Overrides **/
+@import "newsroomHomepage/responsive-overrides.scss";
+
 
 /** President's page styles **/
 @import "msu-partials/president-site";

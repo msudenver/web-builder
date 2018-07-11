@@ -1,0 +1,31 @@
+/** Newsroom Homepage Style imports **/
+/**
+	All of th styles imports and style declartions here will
+	be compiled through its own seperate grunt process and will generate its
+	own separate .css file. This is to be done in order to help keep
+	the newsroom page styles completed separate and independent from
+	the rest of the site
+**/
+
+/** Vendors **/
+@import "../../../../lib/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/** General Elements **/
+@import "newsroom-elements.scss";
+
+/** Objects **/
+@import "object-container.scss";
+@import "object-buttons.scss";
+@import "call-to-action.scss";
+@import "object-underline.scss";
+
+/** Components **/
+@import "subscribe-alert.scss";
+@import "newsroom-nav.scss";
+@import "newsroom-detail.scss";
+@import "newsroom-footer.scss";
+@import "newsroom-hero.scss";
+@import "newsroom-articles.scss";
+
+/** Responsive Overrides **/
+@import "responsive-overrides.scss";

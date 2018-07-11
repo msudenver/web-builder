@@ -12009,6 +12009,474 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
     top: 10%;
   }
 }
+/** Newsroom Homepage Styles **/
+/** Components **/
+.top-banner img {
+  width: 150px;
+}
+
+nav.navbar {
+  margin-bottom: 0px;
+  border: none;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+  color: white;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 5px 10px;
+  clear: both;
+  font-weight: 600;
+  line-height: 1.428571429;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  text-decoration: none;
+  background-color: #ffffff00;
+}
+
+/* mobile nav bar styling */
+.newsroom-navbar {
+  background: #d11242;
+  font-weight: 700;
+  height: 100px;
+}
+.newsroom-navbar .navbar-nav h3 {
+  color: #ffffff;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 18px;
+}
+.newsroom-navbar .navbar-header .navbar-toggle {
+  border: none;
+}
+.newsroom-navbar .navbar-header .navbar-toggle:focus {
+  background-color: transparent;
+}
+.newsroom-navbar .navbar-header .navbar-toggle span.icon-bar {
+  width: 26px;
+  height: 3px;
+  background-color: #ffffff;
+}
+.newsroom-navbar .navbar-header .navbar-toggle span.icon-bar + .icon-bar {
+  margin-top: 5px;
+}
+.newsroom-navbar .navbar-header .navbar-brand {
+  padding: 11px 15px;
+}
+.newsroom-navbar .navbar-header .navbar-brand img {
+  width: 100%;
+}
+.newsroom-navbar .navbar-collapse.collapsing {
+  background-color: #d11242;
+  margin-left: -24px;
+  margin-right: -24px;
+}
+.newsroom-navbar .navbar-collapse.in {
+  background-color: #d11242;
+  margin-left: -24px;
+  margin-right: -24px;
+}
+.newsroom-navbar .navbar-collapse .navbar-left {
+  padding-top: 25px;
+}
+.newsroom-navbar .navbar-collapse .navbar-left li {
+  padding-right: 15px;
+}
+.newsroom-navbar .navbar-collapse .navbar-left li a {
+  font-size: 14px;
+  color: #ffffff;
+  padding-left: 0px;
+  padding-right: 0px;
+  letter-spacing: 0.005em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.newsroom-navbar .navbar-collapse .navbar-right {
+  padding-top: 23px;
+}
+.newsroom-navbar .input-group .form-control {
+  border: none;
+  border-radius: 0px;
+  width: 22vw;
+}
+.newsroom-navbar .input-group .input-group-btn .form-group .btn {
+  border: none;
+  border-radius: 0px;
+  height: 36px;
+}
+.newsroom-navbar input.form-control[type="text"] {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+.newsroom-nav-container {
+  font-weight: 700;
+  background: url("./../media/newsroom-redesign/red-header-background.png");
+  background-size: cover;
+  background-position: center;
+  height: 175px;
+}
+.newsroom-nav-container .navbar-header {
+  margin-right: 15px;
+  position: relative;
+  z-index: 1;
+}
+.newsroom-nav-container .navbar-header .navbar-brand {
+  width: 100%;
+}
+.newsroom-nav-container .navbar-header .navbar-brand img {
+  width: 120px;
+  padding-top: 15px;
+}
+.newsroom-nav-container .navbar-nav {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  position: relative;
+  z-index: 1;
+}
+.newsroom-nav-container .navbar-nav h3 {
+  color: #ffffff;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+.newsroom-nav-container .collapse.navbar-collapse {
+  padding: 0px 0px;
+  padding-bottom: 0px;
+}
+.newsroom-nav-container li {
+  padding-right: 60px;
+}
+.newsroom-nav-container li a {
+  font-size: 16px;
+  color: #ffffff !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  letter-spacing: 0.075em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.newsroom-nav-container .navbar-form {
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+.newsroom-nav-container .navbar-form .form-control {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+}
+.newsroom-nav-container .navbar-form .form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.newsroom-nav-container .input-group {
+  width: auto;
+  padding-top: 13px;
+  z-index: 1;
+}
+.newsroom-nav-container .input-group .input-group-btn {
+  left: 0px;
+}
+.newsroom-nav-container .input-group .input-group-btn button.btn.btn-default {
+  height: 50px;
+  border-radius: 0px;
+  border: none;
+}
+.newsroom-nav-container .input-group .input-group-btn button.btn.btn-default span {
+  color: #003a6e;
+}
+.newsroom-nav-container input.form-control[type="text"] {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+.news-overlay {
+  position: relative;
+}
+
+.news-overlay:after {
+  background-color: #d11242;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.newsroom-navbar-change, .navbar-brand img, .navbar-brand-change img, .navbar-form {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/** Responsive Overrides **/
+@media only screen and (min-width: 1200px) {
+  body {
+    padding-top: 175px;
+  }
+
+  .newsroom-navbar {
+    font-weight: 700;
+    background: url("./../media/newsroom-redesign/red-header-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+  }
+  .newsroom-navbar .navbar-header {
+    margin-right: 15px;
+    position: relative;
+    z-index: 1;
+  }
+  .newsroom-navbar .navbar-header .navbar-brand {
+    width: 100%;
+  }
+  .newsroom-navbar .navbar-header .navbar-brand img {
+    width: 120px;
+    padding-top: 15px;
+  }
+  .newsroom-navbar .navbar-header .navbar-brand-change img {
+    width: 75px !important;
+    padding-top: 15px;
+  }
+  .newsroom-navbar .navbar-nav {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    position: relative;
+    z-index: 1;
+  }
+  .newsroom-navbar .navbar-nav h3 {
+    color: #ffffff;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
+  .newsroom-navbar .collapse.navbar-collapse {
+    padding: 0px 0px;
+    padding-bottom: 0px;
+  }
+  .newsroom-navbar li {
+    padding-right: 60px;
+  }
+  .newsroom-navbar li a {
+    font-size: 16px;
+    color: #ffffff;
+    padding-left: 0px;
+    padding-right: 0px;
+    letter-spacing: 0.075em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .newsroom-navbar .navbar-form {
+    margin-top: 65px;
+    margin-bottom: 0px;
+  }
+  .newsroom-navbar .navbar-form .form-control {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 0px;
+  }
+  .newsroom-navbar .navbar-form .form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .newsroom-navbar .input-group {
+    width: auto;
+    padding-top: 13px;
+    z-index: 1;
+  }
+  .newsroom-navbar .input-group .input-group-btn {
+    left: 0px;
+  }
+  .newsroom-navbar .input-group .input-group-btn button.btn.btn-default {
+    height: 50px;
+    border-radius: 0px;
+    border: none;
+  }
+  .newsroom-navbar .input-group .input-group-btn button.btn.btn-default span {
+    color: #003a6e;
+  }
+  .newsroom-navbar input.form-control[type="text"] {
+    font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+  }
+
+  .newsroom-navbar-change {
+    height: 120px;
+  }
+  .newsroom-navbar-change h3 {
+    display: none;
+  }
+  .newsroom-navbar-change .navbar-form {
+    margin-top: 0px;
+  }
+  .newsroom-navbar-change .navbar-left {
+    padding-top: 35px !important;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .dropdown-menu {
+    padding: 10px;
+    background: #ffffffc7;
+  }
+  .dropdown-menu li a {
+    color: #d11242 !important;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .navbar-brand img {
+    max-width: 75px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .newsroom-nav-container li {
+    padding-right: 30px;
+  }
+
+  .navbar-brand img {
+    max-width: 75px;
+  }
+
+  footer .footer-bottom .container .msu-links {
+    border-right: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body {
+    padding-top: 60px;
+  }
+
+  .top-banner {
+    display: none;
+  }
+
+  nav.navbar {
+    border: none;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+  }
+
+  .newsroom-nav-container .collapse {
+    border: none;
+    background: #d11242;
+  }
+  .newsroom-nav-container .collapse.navbar-collapse {
+    padding: 15px 0px;
+  }
+  .newsroom-nav-container li {
+    padding-right: 0px;
+  }
+  .newsroom-nav-container li a {
+    padding: 10px 15px;
+  }
+  .newsroom-nav-container form {
+    display: none;
+  }
+  .newsroom-nav-container form .navbar-form {
+    border: none;
+  }
+
+  .newsroom-navbar {
+    height: 60px;
+  }
+  .newsroom-navbar .navbar-header .navbar-brand img {
+    max-width: 40px;
+  }
+  .newsroom-navbar .navbar-collapse {
+    border-top: none;
+    box-shadow: none;
+  }
+  .newsroom-navbar .navbar-collapse.collapsing {
+    position: relative;
+    z-index: 10;
+  }
+  .newsroom-navbar .navbar-collapse.in {
+    position: relative;
+    z-index: 10;
+  }
+  .newsroom-navbar .navbar-collapse .navbar-left {
+    padding-top: 10px;
+  }
+  .newsroom-navbar .navbar-collapse .navbar-left li {
+    padding-right: 0px;
+    padding-left: 15px;
+  }
+  .newsroom-navbar .navbar-form {
+    border-top: none;
+    border-bottom: none;
+    margin-right: 0px;
+    margin-left: 0px;
+    box-shadow: none;
+  }
+  .newsroom-navbar .navbar-form.navbar-right .input-group {
+    display: block;
+  }
+  .newsroom-navbar .navbar-form.navbar-right .input-group .form-control {
+    width: 250px;
+  }
+
+  .navbar-nav {
+    margin: 0px;
+  }
+  .navbar-nav.navbar-left {
+    padding-top: 0px;
+  }
+
+  .news-hero .container {
+    bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .news-hero .container .hero-tab {
+    background-color: black;
+    border-bottom: none;
+  }
+}
+/** specific breakpoint media query being used in Exceptional Case **/
+@media only screen and (max-width: 385px) {
+  body {
+    padding-top: 60px;
+  }
+
+  .newsroom-navbar .navbar-form.navbar-right .input-group .form-control {
+    width: 225px;
+  }
+}
 /** President's page styles **/
 body .president-page, p .president-page {
   color: #434343;

@@ -79,8 +79,9 @@ module.exports = function(grunt) {
         },//options
         files: {
           'www-root/style-assets/css/main-style.css': 'development/terminalfour/src/sass/main-style.scss',
-          // 'www-root/style-assets/css/inner-style.css': 'development/terminalfour/src/sass/inner-style.scss',
-          'www-root/style-assets/css/print.css': 'development/terminalfour/src/sass/print.scss'
+          'www-root/style-assets/css/vendor-style.css': 'development/terminalfour/src/sass/vendor-style.scss',
+          'www-root/style-assets/css/print.css': 'development/terminalfour/src/sass/print.scss',
+          'www-root/style-assets/css/newsroom-style.css': 'development/terminalfour/src/sass/newsroomHomepage/newsroom-style.scss',
         }//files
       }//dist
     },//sass
@@ -136,11 +137,17 @@ module.exports = function(grunt) {
     },//includereplace
 
     copy: {
-      main: {
-        files: [
-          {expand: true, cwd: 'development/lib/', src: ['./*.js'], dest: 'www-root/style-assets/lib/', filter: 'isFile'}
-        ]
-      },//main
+      // main: {
+      //   files: [{
+      //     expand: true, flatten: true, src: ['development/lib/**/*.js'], dest: 'www-root/style-assets/lib/', filter: 'isFile'
+      //   }]
+      // },
+      //main --- this needs to be reviewed further. this will now work, but we need to determine what we need from the src folder.
+      customScripts: {
+        files: [{
+          expand: true, flatten: true, src: ['development/lib/custom-scripts/*.js'], dest: 'www-root/style-assets/lib/custom-scripts/', filter: 'isFile'
+        }]
+      },
       media: {
           files: [{
               expand: true, flatten: true, src: ['development/terminalfour/src/media/*'], dest: 'www-root/style-assets/media/', filter: 'isFile'
@@ -149,6 +156,11 @@ module.exports = function(grunt) {
       mediaAdmissions: {
           files: [{
               expand: true, flatten: true, src: ['development/terminalfour/src/media/admissions-redesign/*'], dest: 'www-root/style-assets/media/admissions-redesign/', filter: 'isFile'
+          }]
+      },
+      mediaNewsroom: {
+          files: [{
+              expand: true, flatten: true, src: ['development/terminalfour/src/media/newsroom-redesign/*'], dest: 'www-root/style-assets/media/newsroom-redesign/', filter: 'isFile'
           }]
       }
     },//copy

@@ -1,0 +1,30 @@
+			.article-item {
+				padding-top: 45px;
+				padding-bottom: 45px;
+				img {
+						width: 100%;
+				    // height: 100%;
+				    height: 250px;
+				    object-fit: cover;
+				    object-position: center center;
+				}
+				h3 {
+					font-size: 20px !important;
+					font-weight: 700;
+					color: #00447C;
+				}
+				h4 {
+			    	font-size: 16px;
+			    	font-weight: 400;
+			    	text-transform: uppercase;
+			    	letter-spacing: 0.15em;
+			    	padding-top: 35px;
+			    }
+
+			    p {
+			    	font-size: 18px;
+			    	font-weight: 500;
+			    	letter-spacing: none;
+			    	text-align: left;
+		    	}
+			}

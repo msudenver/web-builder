@@ -1,0 +1,22 @@
+body {
+	font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+
+.content-inner {
+    margin-top: 50px;
+}
+
+a.t4Edit-page {
+	display: none;
+	float: right;
+}
+
+a.t4Edit-page:hover {
+	color: $msu-blue;
+};
+
+.content-inner a {
+	text-decoration: underline ;
+	color: #0072BC;
+};

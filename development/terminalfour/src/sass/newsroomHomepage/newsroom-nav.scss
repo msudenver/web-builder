@@ -1,0 +1,250 @@
+.top-banner {
+	img {
+		width: 150px;
+	}
+}
+
+nav {
+	&.navbar {
+		margin-bottom: 0px;
+		border: none;
+	}
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: transparent;
+    color: white;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 5px 10px;
+    clear: both;
+    font-weight: 600;
+    line-height: 1.428571429;
+    color: #ffffff;
+    white-space: nowrap;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    text-decoration: none;
+    background-color: #ffffff00;
+}
+
+/* mobile nav bar styling */
+.newsroom-navbar {
+	background: $msu-red;
+	font-weight: 700;
+	height: 100px;
+
+	.navbar-nav {
+		h3 {
+			color: #ffffff;
+			letter-spacing: 0.15em;
+			text-transform: uppercase;
+			margin: 0;
+			font-size: 18px;
+		}
+
+	}
+
+	.navbar-header {
+		.navbar-toggle {
+			border: none;
+			&:focus {
+				background-color: transparent;
+			}
+			span {
+				&.icon-bar {
+					width: 26px;
+					height: 3px;
+					background-color: #ffffff;
+					& + .icon-bar {
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+		.navbar-brand {
+			padding: 11px 15px;
+			img {
+				width: 100%;
+				// max-width: 75px;
+			}
+		}
+	}
+
+	.navbar-collapse {
+		&.collapsing {
+			background-color: $msu-red;
+			margin-left: -24px;
+			margin-right: -24px;
+		}
+		&.in {
+			background-color: $msu-red;
+			margin-left: -24px;
+			margin-right: -24px;
+		}
+		.navbar-left {
+			padding-top: 25px;
+			li {
+				padding-right: 15px;
+				a {
+					font-size: 14px;
+					color: #ffffff;
+					padding-left: 0px ;
+					padding-right: 0px ;
+					letter-spacing: 0.005em;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		.navbar-right {
+			padding-top: 23px;
+		}
+	}
+	.input-group {
+		.form-control {
+			border: none;
+			border-radius: 0px;
+			width: 22vw;
+		}
+		.input-group-btn {
+			.form-group {
+				.btn {
+					border: none;
+					border-radius: 0px;
+					height: 36px;
+				}
+			}
+		}
+	}
+	input.form-control[type="text"] {
+		font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		text-transform: uppercase;
+		letter-spacing: 0.075em;
+	}
+}
+
+.newsroom-nav-container{
+		font-weight: 700;
+		background: url("./../media/newsroom-redesign/red-header-background.png");
+		background-size:cover;
+  	background-position:center;
+  	// background-color: rgba(209, 18, 66, 1);
+  	height: 175px;
+  	.navbar-header {
+  		// width: 150px;
+			margin-right: 15px;
+  		position: relative;
+  		z-index: 1;
+  		.navbar-brand {
+  			width: 100%;
+  			img {
+  				width: 120px;
+  				padding-top: 15px;
+  			}
+  		}
+  	}
+	.navbar-nav {
+		h3 {
+			color: #ffffff;
+			letter-spacing: 0.15em;
+			text-transform: uppercase;
+			margin: 0;
+			padding-top: 30px;
+			padding-bottom: 20px;
+			font-size: 25px;
+		}
+		padding-top: 22px;
+		padding-bottom: 22px;
+		// top: 50px;
+		position: relative;
+		z-index: 1;
+		// padding-left: 55px;
+	}
+	.collapse.navbar-collapse {
+		padding: 0px 0px;
+		padding-bottom: 0px;
+	}
+	li {
+		padding-right: 60px;
+	}
+	li a {
+		font-size: 16px;
+		color: #ffffff !important;
+		padding-left: 0px ;
+		padding-right: 0px ;
+		letter-spacing: 0.075em;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	.navbar-form {
+		margin-top: 80px;
+		margin-bottom: 0px;
+		.form-control {
+			width: 200px;
+			height: 50px;
+			border: none;
+			border-radius: 0px;
+			&:focus {
+				border-color: inherit;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+		}
+	}
+
+	.input-group {
+		width: auto;
+		padding-top: 13px;
+		z-index: 1;
+		.input-group-btn {
+			left: 0px;
+			button.btn.btn-default {
+				height: 50px;
+				border-radius: 0px;
+				border: none;
+				span {
+					color: $msu-blue;
+				}
+			}
+		}
+	}
+
+	input.form-control[type="text"] {
+		font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		text-transform: uppercase;
+		letter-spacing: 0.075em;
+	}
+
+
+}
+
+.news-overlay {
+	position: relative;
+}
+
+.news-overlay:after {
+	background-color: $msu-red;
+	position: absolute;
+	content:"";
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:0.8;
+}
+
+
+
+.newsroom-navbar-change, .navbar-brand img, .navbar-brand-change img, .navbar-form {
+  	-webkit-transition: all 0.5s ease-in-out;
+  	-moz-transition: all 0.5s ease-in-out;
+  	-o-transition: all 0.5s ease-in-out;
+  	transition: all 0.5s ease-in-out;
+}
