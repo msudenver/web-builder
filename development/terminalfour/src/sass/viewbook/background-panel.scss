@@ -1,0 +1,38 @@
+.background-panel {
+  // center center no-repeat;
+  // min-height:400px;
+  background-size: cover;
+  border: 10px solid white;
+  padding: 10px 5%;
+  // display: inline-block;
+
+
+    h2, h3, h4, h5, p, a {
+      color: white;
+      // display: inline-block;
+      // vertical-align: middle;
+    };
+
+
+    a {
+      float: right;
+      font-size: 2rem;
+    };
+};
+
+
+.background-panel-red {
+  background-color: $msu-red;
+};
+
+
+.background-panel-gray {
+  background-color: #717073;
+};
+
+.background-panel-inverse {
+  h2, h3, h4, h5, p, a {
+    color: $msu-blue !important;
+  };
+
+};

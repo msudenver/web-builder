@@ -12009,6 +12009,32 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
     top: 10%;
   }
 }
+/** Viewbook Styles **/
+.background-panel {
+  background-size: cover;
+  border: 10px solid white;
+  padding: 10px 5%;
+}
+.background-panel h2, .background-panel h3, .background-panel h4, .background-panel h5, .background-panel p, .background-panel a {
+  color: white;
+}
+.background-panel a {
+  float: right;
+  font-size: 2rem;
+}
+
+.background-panel-red {
+  background-color: #d11242;
+}
+
+.background-panel-gray {
+  background-color: #717073;
+}
+
+.background-panel-inverse h2, .background-panel-inverse h3, .background-panel-inverse h4, .background-panel-inverse h5, .background-panel-inverse p, .background-panel-inverse a {
+  color: #003a6e !important;
+}
+
 /** Newsroom Homepage Styles **/
 /** Components **/
 .top-banner img {
