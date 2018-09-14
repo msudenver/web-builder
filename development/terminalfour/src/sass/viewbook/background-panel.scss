@@ -1,33 +1,61 @@
 .background-panel {
-  // center center no-repeat;
-  // min-height:400px;
   background-size: cover;
   border: 10px solid white;
-  padding: 10px 5%;
-  // display: inline-block;
+  padding: 20px 5%;
+  height: 20vw;
+  display: table;
+  transition: transform .4s;
 
+  .img-responsive {
+      display: inline;
+  }
+
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    };
 
     h2, h3, h4, h5, p, a {
       color: white;
-      // display: inline-block;
-      // vertical-align: middle;
     };
 
+    h3 {
+      font-size: 1.5rem;
+    };
+    p {
+      font-size: 1.25rem;
+    };
 
     a {
       float: right;
-      font-size: 2rem;
+      font-size: 1.6rem;
+      margin-top: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
     };
 };
 
 
-.background-panel-red {
-  background-color: $msu-red;
+.background-panel a {
+  transition: transform .4s;
 };
 
+.background-panel a:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+};
+
+.background-panel-red {
+  background-color: $msu-red !important;
+};
+
+.background-panel-blue {
+  background-color: $msu-blue !important;
+};
 
 .background-panel-gray {
-  background-color: #717073;
+  background-color: #717073 !important;
 };
 
 .background-panel-inverse {

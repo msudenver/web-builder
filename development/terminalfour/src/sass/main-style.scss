@@ -75,9 +75,9 @@ header {
 /** Newsroom Homepage Styles **/
 
 /** Components **/
-@import "newsroomHomepage/newsroom-nav.scss";
+// @import "newsroomHomepage/newsroom-nav.scss";
 /** Responsive Overrides **/
-@import "newsroomHomepage/responsive-overrides.scss";
+// @import "newsroomHomepage/responsive-overrides.scss";
 
 
 /** President's page styles **/
@@ -87,10 +87,10 @@ header {
 @import "print";
 
 // styles below this need to be removed once everything compiled into one stylesheet
-.content .img-responsive {
-    padding: 0 15px;
-}
+// .content .img-responsive {
+//     padding: 0 15px;
+// }
 
-.well img.img-responsive {
-    padding-left: 0px;
-}
+// .well img.img-responsive {
+//     padding-left: 0px;
+// }
