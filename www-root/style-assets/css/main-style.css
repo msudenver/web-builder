@@ -8405,7 +8405,6 @@ a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
   margin: 0 0 16px;
   margin: 0 0 1rem;
   color: #fff;
-  text-transform: uppercase;
 }
 
 .feature-heading-sub {
@@ -9151,7 +9150,7 @@ a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
 }
 /* Homepage events */
 #homepage-events {
-  background: url("../media/eventsbg_mobile.jpg");
+  background-color: #cacaca;
 }
 #homepage-events a:hover, #homepage-events a:active, #homepage-events a:focus {
   text-decoration: none;
