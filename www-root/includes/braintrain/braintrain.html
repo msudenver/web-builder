@@ -1,0 +1,308 @@
+
+<script>
+  Modernizr.addTest('preserve3d', function(){return Modernizr.testAllProps('transformStyle', 'preserve-3d');});
+</script>
+
+
+
+<script>
+  $(document).ready(function(){
+
+    $('.hover').hover(function(){
+      $(this).addClass('flip');
+    },function(){
+      $(this).removeClass('flip');
+    });
+
+  });
+</script>
+
+
+
+<style>
+.homepage-main {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h2 {
+    color:white;
+    font-size:1.25rem;
+}
+
+button.button-brain-train-hero {
+    background: none;
+    font-size: 20px;
+    color: white;
+    padding: 0.625rem 1.875rem;
+    border-radius: 11px;
+    border: 2px solid #fff;
+    margin-top: 5%;
+}
+
+button.btn.btn-brain-train {
+  background: none;
+  /* font-size: 20px; */
+  color: white;
+  /* padding: 0.625rem 1.875rem; */
+  border-radius: 11px;
+  border: 2px solid #fff;
+  margin-top: 5%;
+}
+
+.panel-brain-train, .panel {
+    min-height: 290px;
+    padding: 15px ;
+    border: 1px solid #fff;
+    float: left;
+    margin-bottom: 2px;
+    position: relative;
+
+    -webkit-perspective: 600px;
+            perspective: 600px;
+}
+
+.panel-brain-train h3 {
+    color: #f4ba10;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.panel-brain-train  h4{
+    color:#f4ba10;
+    font-size: 1rem;
+    margin-top: 0px;
+}
+
+.panel-brain-train  p{
+    color:#f4ba10;
+    font-size: 1.06rem;
+}
+
+.panel-brain-train  hr{
+    border-top: 1px solid #f4ba10;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+  /* -- make sure to declare a default for every property that you want animated -- */
+  /* -- general styles, including Y axis rotation -- */
+  .panel-brain-train .front, .panel .front {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    padding: 15px;
+    height: 290px;
+    /* width: inherit;
+    height: inherit; */
+    /* border: 1px solid #fff; */
+    /* background: #6b7077; */
+    /* text-align: center; */
+    /* box-shadow: 0 1px 5px rgba(0,0,0,0.9); */
+
+    -webkit-transform: rotateX(0) rotateY(0);
+            transform: rotateX(0) rotateY(0);
+
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    /* -- transition is the magic sauce for animation -- */
+    -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+  }
+  .panel.flip .front {
+    z-index: 900;
+    /* border-color: #eee; */
+    background: #333;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+
+    -webkit-transform: rotateY(179deg);
+            transform: rotateY(179deg);
+  }
+
+  .panel .back {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 800;
+    text-align: center;
+    /* width: inherit; */
+    height: 290px;
+    background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/brain-train-header-background.png); background-size: 100%; min-height:200px; padding:30px;"
+
+    -webkit-transform: rotateY(-179deg);
+            transform: rotateY(-179deg);
+
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    /* -- transition is the magic sauce for animation -- */
+    -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+  }
+
+  .panel.flip .back {
+    z-index: 1000;
+    /* background: #80868d; */
+
+    -webkit-transform: rotateX(0) rotateY(0);
+            transform: rotateX(0) rotateY(0);
+  }
+
+
+
+</style>
+
+
+<div class="container-fluid" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/brain-train-header-background.png); background-size: 100%; min-height:200px; padding:30px;" >
+
+<div class="col-xs-12 col-md-2">
+<img class="img-responsive" src="https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/hop-on-the-brain-train-logo.png" alt="Hop on the brain train logo text" style="  " />
+</div>
+<div class="col-xs-12 col-md-7">
+<h2>Congratulations on boarding the MSU Denver Brain Train. We hope to improve your intellect with the questions below and improve your future by signing up for our classes.</h2>
+</div>
+<div class="col-xs-12 col-md-3">
+<button class="button-brain-train-hero">
+Learn about our 200-plus academic programs
+</button>
+</div>
+
+</div><div class="hover panel panel-brain-train col-xs-12 col-sm-6 col-md-4 col-lg-3 " id="140717">
+  <div class=" front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/1moon-landing.jpg); background-size: 100%;">
+    <h4>WHAT FLAVOR OF ICE CREAM WAS INVENTED IN 1969 TO COMMEMORATE AMERICA&rsquo;S MOON LANDING? </h4>
+    <hr>
+    <p>A Lunar Cheesecake</p>
+    <p>B Moonstruck Milkshake</p>
+    <p>C Moon Rocky</p>
+
+    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
+  </div>
+
+  <div class="panel-brain-train back">
+   <h3>Lunar Cheesecake</h3>
+    <a href="/programs/aviation-and-aerospace-science-aas-major-bs.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
+  </div>
+
+</div>
+
+<div class="hover panel col-xs-12 col-sm-6 col-md-4 col-lg-3 panel-brain-train " id="140718">
+  <div class="front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/2earth-sun.jpg); background-size: 100%;">
+    <h4>IN WHAT MONTH IS THE EARTH CLOSEST TO THE SUN?  </h4>
+    <hr>
+    <p>A January</p>
+    <p>B July</p>
+    <p>C August</p>
+
+    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
+  </div>
+
+  <div class="panel-brain-train back">
+   <h3>January</h3>
+    <a href="/programs/aviation-and-aerospace-management-major-bs.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
+  </div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="141066">
+  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/3human-moon-space.jpg); background-size: 100%;">
+    <h4>WHAT IS THE LONGEST CONTINUOUS TIME A HUMAN HAS SPENT IN SPACE?  </h4>
+    <hr>
+    <p>A 437 Days</p>
+    <p>B 2 Years</p>
+    <p>C 165 Days</p>
+
+    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
+  </div>
+
+  <div class="panel-brain-train back">
+   <h3>437 Days </h3>
+    <a href="/programs/aviation-and-aerospace-management-major-bs.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
+  </div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="141068">
+  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/4airplane.jpg); background-size: 100%;">
+    <h4>WHAT ARE THE FOUR FORCES NEEDED TO MAKE AN AIRPLANE FLY?</h4>
+    <hr>
+    <p>A Thrust, Drag, Weight &amp; Lift</p>
+    <p>B Air Pressure, FAA Clearance, Wind Velocity &amp; Thrust</p>
+    <p>C Weight, Gasoline, Thrust &amp; Atmosphere</p>
+
+    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
+  </div>
+
+  <div class="panel-brain-train back">
+   <h3>Thrust, Drag, Weight &amp; Lift</h3>
+    <a href="/programs/aviation-and-aerospace-science-aas-major-bs.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
+  </div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="141101">
+  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/5pop-star-album.jpg); background-size: 100%;">
+    <h4>WHICH POP STAR PLAYED 27 DIFFERENT INSTRUMENTS ON THEIR DEBUT ALBUM? </h4>
+    <hr>
+    <p>A Prince</p>
+    <p>B Madonna</p>
+    <p>C Ed Sheeran</p>
+
+    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
+  </div>
+
+  <div class="panel-brain-train back">
+   <h3>Prince</h3>
+    <a href="/programs/music-major-ba.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
+  </div>
+
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hover panel" id="141106">
+  <div class="panel-brain-train front" style="background-image:url(https://adt4apps.msudenver.edu/media/marketingandcommunications/braintrain/6k-pop.jpg); background-size: 100%;">
+    <h4>K-POP IS A GENRE OF MUSIC THAT ORIGINATED IN WHICH COUNTRY? </h4>
+    <hr>
+    <p>A South Korea</p>
+    <p>B Kenya</p>
+    <p>C Kazakhstan</p>
+
+    <a class="action"><button class="btn btn-brain-train">Answer</button></a>
+  </div>
+
+  <div class="panel-brain-train back">
+   <h3>South Korea</h3>
+    <a href="/programs/music-education-major-bme.shtml"><button class="btn btn-brain-train" target:"_blank">Learn more about our program</button></a>
+  </div>
+
+</div>
+
+<script>
+  Modernizr.addTest('preserve3d', function(){return Modernizr.testAllProps('transformStyle', 'preserve-3d');});
+</script>
+
+
+
+<script>
+  $(document).ready(function(){
+
+    $('.hover').hover(function(){
+      $(this).addClass('flip');
+    },function(){
+      $(this).removeClass('flip');
+    });
+
+  });
+</script>
