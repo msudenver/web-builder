@@ -15,14 +15,7 @@
     }
 
 }
-// @media (max-width: $screen-xs-max) {
-//     .homepage-btn.homepage-btn__small {
-//         font-size: 16px;
-//         font-size: torem(16);
-//         padding: 10px 20px;
-//         padding: torem(10) torem(20);
-//     }
-// }
+
 .home-news-features {
     @include make-xs-column(12);
     img {

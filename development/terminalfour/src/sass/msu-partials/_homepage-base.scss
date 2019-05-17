@@ -65,8 +65,20 @@
     }
 }
 .main-button {
+    @include clearfix;
     margin-bottom: 0;
+    border: white 6px solid;
+    background: none;
+    padding: 15px;
+    color: $white;
+    font-size: 30px; //33px @ 14px
+    font-size: torem(30, $base-unit); //33px @ 14px
+    .homepage-btn {
+        padding: 0;
+        line-height: 1;
+    }
 }
+
 /* Small button */
 @media (max-width: $screen-xs-max) {
     .homepage-btn.homepage-btn__small {
@@ -78,9 +90,7 @@
 }
 
 @media (max-width: $screen-sm-max) {
-    .main-button .fa {
-        display: none;
-    }
+
 
 }
 @media (min-width: $screen-md-min) {
@@ -118,20 +128,7 @@
             }
         }
     }
-    /* Wraps buttons in the main body area */
-    .main-button {
-        @include clearfix;
-        padding: 10px 0px;
-        padding: torem(10) torem(0);
-        color: $white;
-        text-align: right;
-        font-size: 30px; //33px @ 14px
-        font-size: torem(30, $base-unit); //33px @ 14px
-        .homepage-btn {
-            padding: 0;
-            line-height: 1;
-        }
-    }
+
 
 }
 

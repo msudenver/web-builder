@@ -7498,7 +7498,6 @@ ul.nav.navbar-nav li .visit-give-mobile {
   background: #555555;
   color: #fff;
   font-size: 1.0em;
-  border-radius: 5px 5px 5px 5px;
   margin: 0.75em 0.25em 0em 0em;
   text-align: center;
   width: 99%;
@@ -7517,7 +7516,6 @@ ul.nav.navbar-nav li .visit-give-mobile {
   background: #d11242;
   color: white;
   font-size: 1.0em;
-  border-radius: 5px 5px 5px 5px;
   margin: 0.75em 0.25em 0.4em 0em;
   text-align: center;
   width: 99%;
@@ -7772,7 +7770,7 @@ span.fa.fa-search.search-desktop {
   background: #555555;
   color: #fff;
   font-size: 1.0em;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 0px;
   margin: 0.75em 0.25em 0em 0em;
   text-align: center;
   width: 99%;
@@ -8118,7 +8116,6 @@ div#searchModal.modal.fade.in {
     text-transform: uppercase;
     width: 9% !important;
     top: -110px;
-    border-radius: 0 0 10px 10px !important;
     padding: 0.3em 1.2em !important;
   }
 
@@ -8276,7 +8273,6 @@ div#searchModal.modal.fade.in {
     right: 27.77%;
     width: 9% !important;
     top: -110px;
-    border-radius: 0 0 10px 10px !important;
     padding: 0.3em 1.2em !important;
   }
 
@@ -8284,7 +8280,6 @@ div#searchModal.modal.fade.in {
     right: 18.6%;
     width: 9% !important;
     top: -110px;
-    border-radius: 0 0 10px 10px !important;
     padding: 0.3em 1.2em !important;
   }
 
@@ -8292,7 +8287,6 @@ div#searchModal.modal.fade.in {
     right: 9.4%;
     width: 9% !important;
     top: -110px;
-    border-radius: 0 0 10px 10px !important;
     padding: 0.3em 1.2em !important;
   }
 
@@ -8444,6 +8438,23 @@ a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
 
 .main-button {
   margin-bottom: 0;
+  border: white 6px solid;
+  background: none;
+  padding: 15px;
+  color: #fff;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+.main-button:before, .main-button:after {
+  content: " ";
+  display: table;
+}
+.main-button:after {
+  clear: both;
+}
+.main-button .homepage-btn {
+  padding: 0;
+  line-height: 1;
 }
 
 /* Small button */
@@ -8453,11 +8464,6 @@ a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
     font-size: 1rem;
     padding: 10px 20px;
     padding: 0.625rem 1.25rem;
-  }
-}
-@media (max-width: 991px) {
-  .main-button .fa {
-    display: none;
   }
 }
 @media (min-width: 992px) {
@@ -8496,27 +8502,6 @@ a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
   .homepage-btn:not(.footer-btn):hover, .homepage-btn:not(.footer-btn):active, .homepage-btn:not(.footer-btn):focus {
     color: #fff;
     text-decoration: underline;
-  }
-
-  /* Wraps buttons in the main body area */
-  .main-button {
-    padding: 10px 0px;
-    padding: 0.625rem 0rem;
-    color: #fff;
-    text-align: right;
-    font-size: 30px;
-    font-size: 1.875rem;
-  }
-  .main-button:before, .main-button:after {
-    content: " ";
-    display: table;
-  }
-  .main-button:after {
-    clear: both;
-  }
-  .main-button .homepage-btn {
-    padding: 0;
-    line-height: 1;
   }
 }
 #homepage-second-nav {
