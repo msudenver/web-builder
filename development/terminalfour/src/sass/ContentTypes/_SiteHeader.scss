@@ -1,21 +1,23 @@
-#site-header {
-    background: #003a6e;
-    margin-bottom: 25px;
-    background-size: 100%;
-    a {
-        &:hover, &:active, &:focus {
-            text-decoration: underline;
-            font-weight: 700;
-        }
-    }
+
+
 .siteheader {
   color: #fff;
+  background: #003a6e;
+  margin-bottom: 25px;
+  background-size: 100%;
 }
 
 .breadcrumb {
   background-color: rgba(255, 255, 255, 0);
   border-radius: 0;
   padding: 0;
+
+      a {
+          &:hover, &:active, &:focus {
+              text-decoration: underline;
+              font-weight: 700;
+          }
+      }
 }
 ul.breadcrumb {
   color: #fff;
@@ -28,12 +30,12 @@ ul.breadcrumb a {
   color: #fff;
   font-weight: 700;
 }
-}
+
 
 @media (max-width: $screen-md-min) {
   .siteheader {
     // margin-top: 15px;
     text-align: right;
-    padding-right: 10px;
+    padding-right: 15px;
   }
 }
