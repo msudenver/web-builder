@@ -66,26 +66,25 @@
   <a href="#content" class="sr-only">Skip to main content</a>
 
 
-
-
     <div class="container-fluid" id="content">
         <div class="row">
-          <t4 type="navigation" id="106" />
-          @@include('page-hero.html')
-          @@include('site-header.html')
+          @@include('site-header.html') <t4 type="navigation" id="106" />
+          @@include('content-types-main/page-hero.html')
+
             <!-- BEGINS HERO IMAGE -->
 
                 <div class="col-xs-12 col-md-9 col-md-push-3 col-lg-9 col-lg-push-3">
                    <div class="content row">
 
-
                         <!-- *********************************  -->
                         <!-- SITEMANAGER HEADER ENDS HERE -->
                         <!-- *********************************  -->
-
-        @@include('content.html')
-        @@include('panel.html')
-        @@include('promo.html')
+                        <!-- @@include('content-types-main/page-content.html') -->
+                        <!-- @@include('content-types-main/facebook-feed.html') -->
+                        <!-- @@include('content-types-main/Slideshow-Gallery.html') -->
+                        <!-- @@include('content.html') -->
+                        <!-- @@include('panel.html') -->
+                        <!-- @@include('promo.html') -->
 
                         <!-- *********************************  -->
                         <!-- SITEMANAGER START FOOTER -->
@@ -105,29 +104,31 @@
             <span></span>
         </a>
         <div id="menu">
-            <div class="pure-menu pure-menu-open">
-     <t4 type="navigation" id="784"/>
+          <div class="pure-menu pure-menu-open">
+              <t4 type="navigation" id="784"/>
 
-                <ul class="nav nav-list"><li><a href="/newsroom/">Home</a></li><li><span class="currentbranch0"><a href="/newsroom/news/">All News/Archive</a></span>
-<ul class="multilevel-linkul-0">
-<li><span class="currentbranch1"><a href="/newsroom/news/2016/">2016</a></span>
-<ul class="multilevel-linkul-1">
-<li><span class="currentbranch2"><a href="/newsroom/news/2016/may/">May</a></span></li>
-<li><a href="/newsroom/news/2016/april/">April</a></li>
-<li><a href="/newsroom/news/2016/march/">March</a></li>
-<li><a href="/newsroom/news/2016/february/">February</a></li>
-<li><a href="/newsroom/news/2016/january/">January</a></li>
-
-</ul>
-</li>
-<li><a href="/newsroom/news/2015/">2015</a></li>
-<li><a href="/newsroom/news/2014/">2014</a></li>
-<li><a href="/newsroom/news/2013/">2013</a></li>
-<li><a href="http://www.msudenver.edu/collcom/artman/publish/">2005 - 2012</a></li>
-<li><a href="http://www.msudenver.edu/collcom/@metro/previoius_issues.htm">2003 - 2005</a></li>
-
-</ul>
-</li><li><a href="/newsroom/topics/">Topics</a></li><li><a href="/newsroom/pressreleases/">Press Releases</a></li><li><a href="/newsroom/dailyclips/">Daily News Clips</a></li><li><a href="/experts/">Faculty Experts Guide</a></li><li><a href="/newsroomhttps://msudenver.edu/mediaresources/">Media Resources</a></li><li><a href="/speakersbureau/" target="_blank">Speakers Bureau</a></li><li><a href="/newsroom/studentpublications/">Student Publications</a></li><li><a href="/newsroom/contactus/">Contact Us</a></li></ul>
+                <ul class="nav nav-list">
+                  <li><a href="#">Home</a></li>
+                  <li><span class="currentbranch0"><a href="/newsroom/news/">currentbranch0</a></span>
+                        <ul class="multilevel-linkul-0">
+                        <li><span class="currentbranch1"><a href="/#">currentbranch1</a></span>
+                        <ul class="multilevel-linkul-1">
+                          <li><span class="currentbranch2"><a href="/newsroom/news/2016/may/">May</a></span></li>
+                            <ul class="multilevel-linkul-2">
+                              <li><span class="currentbranch3"><a href="/newsroom/news/2016/may/">Third level</a></span></li>
+                              <li><a href="/#">April</a></li>
+                              <li><a href="#">March</a></li>
+                            </ul>
+                          <li><a href="#">April</a></li>
+                          <li><a href="#">March</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#">2015</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="#">Topics</a></li>
+                  <li><a href="#">Press Releases</a></li>
+                </ul>
             </div>
         </div>
     </div>

@@ -10999,32 +10999,6 @@ hr.style-one {
 
 .siteheader {
   color: #fff;
-  background: #003a6e;
-  margin-bottom: 25px;
-  background-size: 100%;
-}
-
-.breadcrumb {
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 0;
-  padding: 0;
-}
-.breadcrumb a:hover, .breadcrumb a:active, .breadcrumb a:focus {
-  text-decoration: underline;
-  font-weight: 700;
-}
-
-ul.breadcrumb {
-  color: #fff;
-  font-family: 'Gotham A', 'Gotham B', Open Sans, helvetica, arial, sans-serif;
-  font-size: 1em;
-  font-style: normal;
-  font-weight: 400;
-}
-
-ul.breadcrumb a {
-  color: #fff;
-  font-weight: 700;
 }
 
 @media (max-width: 992px) {
@@ -11141,9 +11115,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  color: #fff;
-  font-size: 2.25rem;
-  font-weight: 700;
+  color: #00447c;
+  font-size: 3rem;
+  margin: 20px 0;
 }
 
 .readmore {
