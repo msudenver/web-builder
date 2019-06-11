@@ -113,6 +113,9 @@ Once Ruby is installed we can install SASS. From the command prompt run the foll
 ```rb
 gem update --system
 gem install sass
+
+sudo gem install -n /usr/local/bin sass (for msudenver computers)
+
 ```
 
 ---
