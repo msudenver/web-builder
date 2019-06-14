@@ -1,10 +1,10 @@
 /* Homepage events */
 #homepage-events {
-    background: url('../media/eventsbg_mobile.jpg') ;
+    background-color: #cacaca;
     a {
         &:hover, &:active, &:focus {
             text-decoration: none;
-        } 
+        }
     }
 }
 /* Events grid */
@@ -27,7 +27,7 @@
     padding: torem(15);
     background-color: $gray-base;
     background-color: rgba(0,0,0,0.6);
-    
+
     &:hover, &:active, &focus {
         background: rgba(0, 0, 0, 1);
     }
@@ -47,17 +47,17 @@
     font-size: torem(22.4);
     line-height: 1.2;
     color: $white;
-} 
+}
 
 @media (min-width: $screen-sm-min) {
     .home-event{
          //@include make-sm-column(6, 15px);
         padding: 0;
         width: 49.01055408970976%; /* 758px - 15px gutter / 2 */
-        margin-bottom: 2.316602316602%; /* >= ~15px */  
+        margin-bottom: 2.316602316602%; /* >= ~15px */
             &:nth-child(odd) {
                 margin-right: 0.98944591029024%; /* (15px gutter / 2) / 758px */
-               
+
             }
             &:nth-child(even) {
                  margin-left: 0.98944591029024%; /* (15px gutter / 2) / 758px */
@@ -72,7 +72,7 @@
     }
     .home-event{
         width: 31.686429512516%; /* >= 320.6666px  */
-        &:nth-child(odd), &:nth-child(even) { 
+        &:nth-child(odd), &:nth-child(even) {
             margin: 0 2.470355731225% 25px 0; /* 25px (>= 25px) 25px 0 */
         }
         &:nth-child(3n+3) {
