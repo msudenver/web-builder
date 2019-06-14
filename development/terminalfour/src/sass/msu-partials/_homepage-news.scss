@@ -4,8 +4,6 @@
     padding-top: torem(36, $small-unit);
     padding-bottom: 36px;
     padding-bottom: torem(36, $small-unit);
-    background: url(../media/newsbg_mobile.jpg) no-repeat;
-    background-size: cover;
     .feature-text {
         margin-bottom: 0;
     }
@@ -13,23 +11,16 @@
     a {
         &:hover, &:active, &:focus {
             text-decoration: none;
-        } 
+        }
     }
 
 }
-@media (max-width: $screen-xs-max) {
-    .homepage-btn.homepage-btn__small {
-        font-size: 16px;
-        font-size: torem(16);
-        padding: 10px 20px;
-        padding: torem(10) torem(20);
-    }
-}
+
 .home-news-features {
     @include make-xs-column(12);
-    img { 
+    img {
         @include img-responsive;
-        width: 100%; 
+        width: 100%;
     }
 }
 .news-features {
@@ -38,25 +29,12 @@
     margin-top: torem(36, $small-unit);
     margin-bottom: 15px;
 }
-.news-feature, .news-feature__large { 
-    @include make-xs-column(12, 0);    
+.news-feature{
+    @include make-xs-column(12, 0);
     padding-top: 15px;
-    padding-top: torem(15); 
+    padding-top: torem(15);
 }
-.news-features__small {
-    @include make-xs-column(12);
-    
-}
-.news-feature__large {
-    padding-top: 0;
-    p { 
-        font-size: 22px;
-        font-size: torem(22);
-    }
-}
-.news-features__small-row {
-    @include make-row();
-}
+
 .news-feature-bg {
     padding: 15px;
     padding: torem(15);
@@ -70,7 +48,7 @@
     padding-top: 0;
 }
 
-.news-feature-heading {    
+.news-feature-heading {
     font-size: 26px;
     font-size: torem(26);
     margin: 12px 0;
@@ -78,82 +56,35 @@
 }
 
 @media (min-width: $screen-sm-min) {
-
-    .news-feature__large {
-         margin-bottom: 1.771479185119575%;
-        .news-feature-image, .news-feature-text { float: left;}
-        .news-feature-image { 
-            width: percentage((7 / $grid-columns));
-            padding-right: 7.5px;
-        }
-        .news-feature-text {
-            width: percentage((5 / $grid-columns));
-            padding-left: 7.5px;
-        }
-        
-    }
-    .news-features__small {
-        padding-top: 0;
         .news-feature {
             padding: 0;
-            width: 49.01055408970976%; /* 758px - 15px gutter / 2 */
-                
-            &:first-child {
-                margin-right: 0.98944591029024%; /* (15px gutter / 2) / 758px */
-            }
-            &:last-child {
-                 margin-left: 0.98944591029024%; /* (15px gutter / 2) / 758px */
-            }
+            @include make-xs-column(12);
         }
-    }
+}
+
+@media (min-width: $screen-md-min) {
+        .news-feature {
+            @include make-xs-column(4);
+        }
 }
 
 @media (min-width: $screen-lg-min) {
     #homepage-news {
         padding: 50px percentage(1/$grid-columns) 30px;
         padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(30);
-        background: url(../media/newsbg.jpg) no-repeat;
-        background-size: cover;
 
     }
-    .news-features { margin-left: 0px; margin-right: 0px;  }
-    .news-feature__large {
-         @include make-lg-column(7, 25px); 
-         @include make-lg-column-push(5);
-         
-         
-         left: 42.5% !important;
-        .news-feature-image, .news-feature-text { float: none; width: 100%; padding: 0;}
-        .news-feature-heading {
-            font-size: 48px;
-            font-size: torem(48);
-            line-height: 1.2;
-            margin: 18px 0 16px;
-            margin: torem(18) 0 torem(16);
-        }
-        p { 
-            font-size: 36px;
-            font-size: torem(36);
-        }
-            
-    }
-    .news-features__small-row {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-    .news-features__small {
-        @include make-lg-column(5, 30px); 
-        @include make-lg-column-pull(7); 
+
         .news-feature {
-            width: 100%;
-               margin-left: 0;
+          @include make-xs-column(4);
+            margin-left: 0;
             margin-right: 0;
             &:last-child {
                 margin: 0;
             }
             margin-bottom: 25px;
         }
-    }
+
     .news-item-heading {
         margin: 20px 0 20px;
         margin: torem(20) 0 torem(20);
