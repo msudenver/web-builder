@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+  var os = require('os'); os.tmpDir = os.tmpdir;
   // Load the various tasks required
   grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-contrib-uglify');

@@ -4,19 +4,18 @@
 footer {
     margin-top: 8px;
     margin-top: torem(8);
-    background: url(../media/downtowndenver_msudenver.jpg) no-repeat center center;
+    background: url() no-repeat center center;
     -webkit-background-size:  cover;
     -moz-background-size:     cover;
     -o-background-size:       cover;
     background-size:          cover;
     background-position:      center top;
-
 }
 
 /* For the background color gradient in mobile */
 @media (max-width: $screen-sm-max) {
     .footer-bg-mob {
-        background-color: $msu-blue;
+        background-color: white;
     }
 }
 
@@ -24,12 +23,29 @@ footer {
     @include container-fixed();
     padding-bottom: 48px;
 
-    *:not(.btn) { color: $white; }
+    *:not(.btn) { color: $primaryBlue; }
 }
 /* Used inbetween html rows in the footer */
 .footer-row-hr {
     border-top-width: 2px;
     margin: 0;
+}
+
+.footer-nav li {
+    margin-bottom: 0;
+    padding: 0;
+    &:last-of-type {
+        a {
+            border-bottom: none;
+        }
+    }
+}
+.footer-nav a {
+    display: block;
+    padding: torem(15) 0;
+    font-weight: 500;
+    font-size: torem(14);
+    border-bottom: 1px solid #e3e7ec;
 }
 /* Footer promos */
 .footer-promos-row, .footer-menu-row {
@@ -44,31 +60,56 @@ footer {
     padding-bottom: torem(14);
 }
 .footer-promo {
-    @include make-xs-column(12);
-    margin-bottom: 22px;
+    display: block;
     margin-bottom: torem(22);
 }
 .footer-promo-bg {
-    padding: 15px;
-    padding: torem(15);
-    background-color: $gray-base;
+    display: block;
+    padding: 15% 0;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
     @include clearfix;
 }
-.footer-promo-heading {
+.footer-promo-heading,
+.footer-promo-text {
     font-family: $font-family-sans-serif;
-    font-weight: 800;
-    font-size: 24px;
-    font-size: torem(24);
-    line-height: 1.3;
-    text-transform: uppercase;
+    font-weight: 500;
+    font-size: torem(18);
+    line-height: torem(20);
+    padding: 1rem;
     margin-top: 0;
+    margin-bottom: 0;
+    min-height: torem(72);
+    background-color: rgba($primaryBlue, 0.8);
+    display: table;
+    width: 100%;
+    span {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+.footer-promo-heading {
+    text-transform: uppercase;
+    span {
+        color: white !important;
+    }
 }
 .footer-promo-text {
-    line-height: 1.3;
-    margin-bottom: 8px;
-    margin-bottom: torem(8);
+    display: none;
+    background-color: rgba($white, .8);
 }
+.footer-promo-bg:hover,
+.footer-promo-bg:focus,
+.footer-promo-bg:active {
+    .footer-promo-heading {
+        display: none;
+    }
+    .footer-promo-text {
+        display: table;
+    }
 
+}
 /** Footer links and contacts row **/
 .footer-links, .footer-campus-info, .footer-logo {
     @include make-xs-column(12);
@@ -76,9 +117,12 @@ footer {
     margin-bottom: torem(16);
 }
 .footer-campus-info {
+    font-weight: 500;
     .fa {
-        width: 5%;
         text-align: center;
+    }
+    p {
+        line-height: torem(40);
     }
 }
 .footer-links-row {
@@ -100,10 +144,6 @@ footer {
 }
 .footer-nav li {
     text-align: center;
-    font-weight: 700;
-    padding: 12px 0;
-    padding: torem(12) 0;
-//    border-bottom: 1px solid;
 }
 
 /* Does the border after each link */
@@ -127,6 +167,7 @@ footer {
     font-size: 12.8px;
     font-size: torem(12.8);
     text-align: center;
+    font-weight: 500;
 }
 
 .footer-logo {
@@ -134,30 +175,26 @@ footer {
 
 }
 .footer-logo-img {
-    margin: 0 auto;
+    margin: 0 auto 4rem;
     max-width: 250px;
 }
 
 .footer-social {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 12.5%;
-    margin-top: 20px;
-    margin-top: torem(20);
-    li {
-        display: inline-flex;
 
-        float: left;
+    margin-top: torem(50);
+    li {
+        display: inline-block;
+        margin-right: torem(30);
     }
     .fa {
-        font-size: 2.2em;
-        font-size: 2.2rem;
+        font-size: torem(30);
         -webkit-transition:  color  0.1s     ease-in;
         -moz-transition:     color  0.1s     ease-in;
         -o-transition:       color  0.1s     ease-in;
         transition:          color  0.1s     ease-in;
+        color: $msu-red;
         &:hover {
-            color: $msu-red;
+            color: $primaryBlue;
         }
     }
 }
@@ -170,18 +207,7 @@ footer {
     .footer-logo-img {
         max-width: 180px;
     }
-    .footer-promo-heading {
-        font-size: 25px;
-        font-size: torem(25);
-        line-height: 1.4;
-    }
-    .footer-promo-text {
-        font-size: 20px;
-        font-size: torem(20);
-        line-height: 1.4;
-        margin-bottom: 16px;
-        margin-bottom: torem(16);
-    }
+
     .footer-links-col {
         @include make-sm-column(6);
         li:last-child:after {
@@ -190,9 +216,6 @@ footer {
     }
     .footer-nav {
          padding: 0;
-    }
-    .footer-social {
-        padding: 0 4%;
     }
     .footer-campus-info, .footer-logo {
         @include make-sm-column(6);
@@ -204,7 +227,11 @@ footer {
 }
 @media (min-width: $screen-md-min) {
     .footer-container {
-        padding-bottom: 1200px;
+        padding-bottom: 800px;
+        background-image: url(/style-assets/media/placeholder-images/tivoli-image-footer.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
     }
     .footer-btn:hover, .footer-btn:focus, .footer-btn:active {
         color: $msu-red;
@@ -234,9 +261,6 @@ footer {
     }
     .footer-logo {
         @include make-lg-column(2);
-    }
-    .footer-social {
-        padding: 0 12.5%;
     }
     .footer-nav {
         padding: 0;

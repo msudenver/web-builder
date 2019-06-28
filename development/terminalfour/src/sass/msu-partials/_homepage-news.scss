@@ -1,19 +1,45 @@
 /* Homepage news items */
+$primaryRed: #d11242;
 #homepage-news {
     padding-top: 36px;
     padding-top: torem(36, $small-unit);
     padding-bottom: 36px;
     padding-bottom: torem(36, $small-unit);
-    .feature-text {
-        margin-bottom: 0;
+    background: #f7f7f7;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        background: $primaryRed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 25rem;
     }
-    p { color: #fff; }
+    .main-button {
+        border-color: $primaryRed;
+        a {
+            color: $primaryRed;
+        }
+        &:hover,&:focus,&:active {
+            background-color: $primaryRed;
+            a {
+                color: $white;
+            }
+        }
+    }
     a {
         &:hover, &:active, &:focus {
             text-decoration: none;
         }
     }
 
+    .feature-text {
+      margin-bottom: 0;
+    }
+    .feature-heading-large {
+        color: $white;
+    }
 }
 
 .home-news-features {
@@ -29,10 +55,11 @@
     margin-top: torem(36, $small-unit);
     margin-bottom: 15px;
 }
-.news-feature{
+.news-feature {
     @include make-xs-column(12, 0);
     padding-top: 15px;
     padding-top: torem(15);
+    
 }
 
 .news-feature-bg {
@@ -46,13 +73,31 @@
 }
 .news-feature-text {
     padding-top: 0;
+    h3 {
+        font-weight: 400;
+        line-height: 22px;
+        font-size: 16px;
+        color: black;
+    }
 }
 
 .news-feature-heading {
-    font-size: 26px;
-    font-size: torem(26);
-    margin: 12px 0;
-    margin: torem(12) 0;
+    line-height: torem(30);
+    font-size: torem(22);
+    font-weight: 500;
+    margin: torem(12) 0 torem(20);
+    padding-bottom: torem(20);
+    color: black;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 90%;
+        height: 2px;
+        background-color: $primaryRed;
+        left: 0;
+        bottom: 0;
+    }
 }
 
 @media (min-width: $screen-sm-min) {
@@ -70,9 +115,7 @@
 
 @media (min-width: $screen-lg-min) {
     #homepage-news {
-        padding: 50px percentage(1/$grid-columns) 30px;
-        padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(30);
-
+        padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(100, $small-unit);
     }
 
         .news-feature {

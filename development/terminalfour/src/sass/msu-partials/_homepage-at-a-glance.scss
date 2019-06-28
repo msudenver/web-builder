@@ -2,10 +2,6 @@
 #homepage-at-a-glance {
     @include make-row(); 
     background-color: $white;
-    .feature-heading-large, .feature-text {
-        color: $gray-base;    
-        margin-bottom: 0;
-    }
     svg {
         width: 70%;
         height: 20px;
@@ -43,20 +39,22 @@
 }
 
 .at-a-glance-stat {
-    font-size: 32px;
-    font-size: torem(32);
-    font-weight: 700; 
+    font-size: torem(45);
+    font-weight: 400; 
     color: $msu-red; 
+    padding-bottom: torem(100);
+    margin-bottom: 0;
 }
 .at-a-glance-text {
-    font-size: 24px;
     font-size: torem(24);
-    line-height: 1.3;
-    font-weight: 700;
-    color: $gray-base; 
-}
-.at-a-glance-line {
-    
+    line-height: torem(30);
+    font-weight: 400;
+    color: $gray-base;
+    padding-bottom: torem(100);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
 }
 
 @media (min-width: 531px) and (max-width: $screen-xs-max) {
@@ -77,20 +75,5 @@
     #homepage-at-a-glance {
         padding: 50px percentage(1/$grid-columns);
         padding: torem(50, $small-unit) percentage(1/$grid-columns);
-    }
-    /* At a glance items */
-    .at-a-glance-img {
-        img {  }
-    }
-    .at-a-glance-stat {
-        font-size: 54px;
-        font-size: torem(54);
-    }
-    .at-a-glance-text {
-        font-size: 30px;
-        font-size: torem(30);
-    }
-    .at-a-glance-line {
-
     }
 }
