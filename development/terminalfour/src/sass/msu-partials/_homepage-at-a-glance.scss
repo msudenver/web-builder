@@ -42,7 +42,7 @@
     font-size: torem(45);
     font-weight: 400; 
     color: $msu-red; 
-    padding-bottom: torem(100);
+    padding-bottom: torem(40);
     margin-bottom: 0;
 }
 .at-a-glance-text {
@@ -50,21 +50,13 @@
     line-height: torem(30);
     font-weight: 400;
     color: $gray-base;
-    padding-bottom: torem(100);
+    padding-bottom: torem(70);
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
 }
 
-@media (min-width: 531px) and (max-width: $screen-xs-max) {
-    .at-a-glance-img, .at-a-glance-text-wrap {
-        padding: 0 15px;
-        padding: 0 torem(15);
-        width: 50%;
-        float: left;
-    }
-}
 @media (min-width: $screen-sm-min) {
     .at-a-glance-item {
         @include make-sm-column(4);   

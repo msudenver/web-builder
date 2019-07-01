@@ -20,16 +20,16 @@
   top: 0;
   left: 150px;
   bottom: 0;
-  // z-index: 9998;
+  z-index: 9998;
   background: #fff;
   color:black;
   -webkit-overflow-scroll: touch
 }
 #menu a {
   border: none;
-  color:black;
+  color: $primaryBlue;
   font-size:1.2rem;
-  font-weight:700;
+  font-weight:500;
   padding: 15px 15px;
   line-height: 1em;
   display: block;
@@ -39,13 +39,15 @@
   -o-transition: all .25 ease-in-out;
   transition: all .25 ease-in-out
 }
-#menu a:hover, .pure-menu li a:focus, #menu .pure-menu li a:hover {
+#menu a:hover, 
+.pure-menu li a:focus, 
+#menu .pure-menu li a:hover {
   color: #d11242;
-  padding: 15px 5px;
+  background: transparent;
   -webkit-transition: all .25 ease-in-out;
   -moz-transition: all .25 ease-in-out;
   -o-transition: all .25 ease-in-out;
-  transition: all .25 ease-in-out
+  transition: all .25 ease-in-out;
 }
 
 
@@ -112,17 +114,17 @@
   margin-top: .6em
 }
 
-.multilevel-linkul-0 {
-   margin-left: 15px;
-}
+// .multilevel-linkul-0 {
+//    margin-left: 15px;
+// }
 
-.multilevel-linkul-1 {
-    margin-left: -15px;
-}
+// .multilevel-linkul-1 {
+//     margin-left: -15px;
+// }
 
-.multilevel-linkul-2 {
-    margin-left: -15px;
-}
+// .multilevel-linkul-2 {
+//     margin-left: -15px;
+// }
 
 .sidebar-nav {
   margin-bottom: 15px;
@@ -159,20 +161,23 @@
 //   transition: all .25s ease-in-out
 // }
 
-.currentbranch0 a , .currentbranch1 a, .currentbranch2 a, .currentbranch3 a, .currentbranch4 a {
-  color: #d11242 !important;
-  font-size: 1.2em;
-}
 
-.currentbranch0 a:after, .currentbranch1 a:after, .currentbranch2 a:after, .currentbranch3 a:after, .currentbranch4 a:after  {
-    content: "\f105";
+[class^="currentbranch"] a {
+  font-size: 1.2em;
+  color: black !important;
+  font-weight: 700 !important;
+  &:after {
+    content: "\f111";
+    color: $primaryRed;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
+    font-size: .6rem;
     text-decoration: inherit;
     float: right;
     padding-right: 15px;
   }
+}
 
 @media (max-width: $screen-sm-max) {
   #menu {
@@ -201,6 +206,7 @@
   .menu-link {
     position: fixed;
     display: block;
+    z-index: 99;
   }
   #layout.active .menu-link {
     left: 70%
@@ -218,7 +224,8 @@
     left: 0;
     padding: 0;
     margin: 0 auto;
-    width: 100%
+    width: 100%;
+    margin-top: 1rem;
   }
 
   #menu a {

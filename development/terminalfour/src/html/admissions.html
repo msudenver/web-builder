@@ -55,24 +55,20 @@
               var width_threshold = 900;
               var href = document.location.href;
               var position = $(window).scrollTop();
-              var width     =  $(window).width();
+              var width = $(window).width();
               $(".header-fluid").removeClass("header-fluid-change");
               $(".msudenver_logo").removeClass("msudenver_logo_change");
-
-
-               if( position <= 15 && width > width_threshold) {
-                  $("a.btn.btn-default.visit-give-mobile").css("top", "-109px");
-                  $("a.btn.btn-default.give-mobile").css("top", "-109px");
-                  $("a.btn.btn-default.apply-mobile").css("top", "-109px");
-               }
+              if( position <= 15 && width> width_threshold) {
+                $("a.btn.btn-default.visit-give-mobile").css("top", "-144px");
+                $("a.btn.btn-default.give-mobile").css("top", "-144px");
+                $("a.btn.btn-default.apply-mobile").css("top", "-144px");
+              }
               if( position > 15 && width > width_threshold) {
                 $(".header-fluid").toggleClass("header-fluid-change");
                 $(".msudenver_logo").toggleClass("msudenver_logo_change");
-                  $("a.btn.btn-default.visit-give-mobile").css("top", "-95px");
-                  $("a.btn.btn-default.give-mobile").css("top", "-95px");
-                  $("a.btn.btn-default.apply-mobile").css("top", "-95px");
+                $("a.btn.btn-default.visit-give-mobile").css("top", "-112px");
+                $("a.btn.btn-default.apply-mobile").css("top", "-112px");
               }
-
             });
 
             $('.carousel').carousel({

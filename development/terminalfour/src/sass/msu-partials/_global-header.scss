@@ -336,16 +336,13 @@ button.close b {
   border: none;
 }
 .search-button-text {
-  display: none;
+  .search-text {
+    display: none;
+  }
 }
-.nav > li > a:hover, .nav > li > a:focus {
-  background-color: #eeeeee;
-}
+
 .modal-dialog {
   width: 80%;
-}
-li#nav-search > a {
-  width: 3.5rem;
 }
 .form-group {
   background: white;
@@ -478,6 +475,7 @@ div#searchModal.modal.fade.in {
   .navbar-fixed-top {
       top: 0;
       border-width: 0 0 0px;
+      z-index: 999999;
   }
   .navbar-collapse.collapse {
       display: none!important;
@@ -530,6 +528,7 @@ div#searchModal.modal.fade.in {
     padding-left: 1.8em;
     padding-right: 1.8em;
     display: block;
+    color: white;
   }
 //end action button fixes
 
@@ -764,7 +763,9 @@ div#searchModal.modal.fade.in {
     display: none;
   }
   .search-button-text {
-    display: inline;
+    .search-text {
+      display: inline;
+    }
   }
 
   li.collapse.navbar-collapse {

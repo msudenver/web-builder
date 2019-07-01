@@ -165,7 +165,8 @@
                <li id="nav-search" type="button">
                  <a href="#" data-toggle="modal" data-target="#searchModal">
                    <label for="nav-search" class="sr-only">Search MSU Denver dot e d u</label>
-                   <span class="search-button-text"><span class="fa fa-search search-desktop"></span> SEARCH</span>
+                   <span class="search-button-text"><span class="fa fa-search search-desktop"></span> <span
+                       class="search-text">SEARCH</span></span>
                  </a>
                </li>
                <li></li>
@@ -235,7 +236,7 @@ $(window).scroll(function(){
           <h1><t4 type='navigation' id='101' /></h1>
     </div>
 <!-- ENDS BREADCRUMBS + SITEHEADER -->
- <t4 type="navigation" id="106" />
+ 
           <div class="row">
   <div class="col-xs-12 hero">
   <img class="img-responsive" src="http://msudenver.edu/media/content/departmentofjournalismamptechnicalcommunication/images/JTC-Hero-v2.jpg" alt="work study help desk" style="   " />
@@ -246,7 +247,7 @@ $(window).scroll(function(){
 
 
             <!-- BEGINS HERO IMAGE -->
-
+              <div class="row">
                 <div class="col-xs-12 col-md-9 col-md-push-3 col-lg-9 col-lg-push-3">
                    <div class="content row">
 
@@ -323,20 +324,21 @@ $(window).scroll(function(){
         </a>
         <div id="menu">
           <div class="pure-menu pure-menu-open">
-              <t4 type="navigation" id="784"/>
+              
 
                 <ul class="nav nav-list">
-                  <li><a href="#">Home</a></li>
+                  <!-- <li><a href="#">Home</a></li>
                   <li><span class="currentbranch0"><a href="/newsroom/news/">currentbranch0</a></span>
                         <ul class="multilevel-linkul-0">
                         <li><span class="currentbranch1"><a href="/#">currentbranch1</a></span>
                         <ul class="multilevel-linkul-1">
-                          <li><span class="currentbranch2"><a href="/newsroom/news/2016/may/">May</a></span></li>
+                          <li><span class="currentbranch2"><a href="/newsroom/news/2016/may/">May</a></span>
                             <ul class="multilevel-linkul-2">
                               <li><span class="currentbranch3"><a href="/newsroom/news/2016/may/">Third level</a></span></li>
                               <li><a href="/#">April</a></li>
                               <li><a href="#">March</a></li>
                             </ul>
+                          </li>
                           <li><a href="#">April</a></li>
                           <li><a href="#">March</a></li>
                         </ul>
@@ -345,7 +347,13 @@ $(window).scroll(function(){
                         </ul>
                   </li>
                   <li><a href="#">Topics</a></li>
-                  <li><a href="#">Press Releases</a></li>
+                  <li><a href="#">Press Releases</a></li> -->
+                  <li><span class="currentbranch0"><a href="#">Home</a></span></li>
+                  <li><a href="#">Degrees</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Faculty and Staff</a></li>
+                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -376,7 +384,7 @@ $(window).scroll(function(){
 </div>
 
 </div>
-
+</div>
 <!-- ENDS LEFT SIDE (LINK COLUMN/SIDEMENU) -->
 
 
@@ -583,6 +591,25 @@ lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=294
                     });
                 });
             })();
+            $(window).scroll(function(){
+            var width_threshold = 900;
+            var href = document.location.href;
+            var position = $(window).scrollTop();
+            var width = $(window).width();
+            $(".header-fluid").removeClass("header-fluid-change");
+            $(".msudenver_logo").removeClass("msudenver_logo_change");
+            if( position <= 15 && width> width_threshold) {
+              $("a.btn.btn-default.visit-give-mobile").css("top", "-144px");
+              $("a.btn.btn-default.give-mobile").css("top", "-144px");
+              $("a.btn.btn-default.apply-mobile").css("top", "-144px");
+              }
+              if( position > 15 && width > width_threshold) {
+              $(".header-fluid").toggleClass("header-fluid-change");
+              $(".msudenver_logo").toggleClass("msudenver_logo_change");
+              $("a.btn.btn-default.visit-give-mobile").css("top", "-112px");
+              $("a.btn.btn-default.apply-mobile").css("top", "-112px");
+              }
+              });
         </script>
 
     <script type="text/javascript">

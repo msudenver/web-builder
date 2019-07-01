@@ -34,11 +34,6 @@ footer {
 .footer-nav li {
     margin-bottom: 0;
     padding: 0;
-    &:last-of-type {
-        a {
-            border-bottom: none;
-        }
-    }
 }
 .footer-nav a {
     display: block;
@@ -146,18 +141,6 @@ footer {
     text-align: center;
 }
 
-/* Does the border after each link */
-.footer-nav li:after {
-    content: " ";
-    display: block;
-    height: 1px;
-    background: $white;
-    width: 100%;
-    position: relative;
-    opacity: 0.2;
-    bottom: -12px;
-    z-index: 10;
-}
 .footer-links-col {
     &:nth-child(2) li:last-child:after {
         display: none;
@@ -180,7 +163,8 @@ footer {
 }
 
 .footer-social {
-
+    display: flex;
+    justify-content: center;
     margin-top: torem(50);
     li {
         display: inline-block;
@@ -222,7 +206,13 @@ footer {
         margin-top: 18px;
         margin-top: torem(18);
     }
-
+    .footer-nav li {
+      &:last-of-type {
+        a {
+          border-bottom: none;
+        }
+      }
+    }
 
 }
 @media (min-width: $screen-md-min) {
