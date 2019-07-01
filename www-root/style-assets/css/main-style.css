@@ -9495,7 +9495,8 @@ footer {
 }
 .footer-social li {
   display: inline-block;
-  margin-right: 1.875rem;
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
 }
 .footer-social .fa {
   font-size: 1.875rem;
