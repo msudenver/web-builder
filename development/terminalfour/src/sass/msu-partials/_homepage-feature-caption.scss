@@ -2,7 +2,7 @@
 #homepage-feature-caption {
     padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(60, $small-unit);
     .carousel-indicators {
-        left: 10%;
+        left: 0;
         top: 1rem;
         position: relative;
         width: 100%;
@@ -59,14 +59,10 @@
     font-size: torem(20.8);
     text-transform: uppercase;
     color: #fff;
-    float: right;
 }
 .homepage-feature-caption-link:hover, .homepage-feature-caption-link:focus, .homepage-feature-caption-link:active {
     color: #fff;
 }
-// .carousel-control {
-//     display: none;
-// }
 
 .t4-slide .carousel-control {
     display: block;

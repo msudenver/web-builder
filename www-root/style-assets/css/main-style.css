@@ -7410,6 +7410,10 @@ td.visible-print {
   color: #002855;
 }
 
+.additional-links {
+  margin: 0;
+}
+
 .navbar {
   border: 0;
   margin-bottom: 0;
@@ -7520,7 +7524,7 @@ ul.nav.navbar-nav li .visit-give-mobile {
 }
 
 .msudenver_logo {
-  margin: 24px 0;
+  margin: 24px 15px;
   height: 50px;
   float: left;
 }
@@ -8239,7 +8243,7 @@ ul.nav.navbar-nav li a {
   }
 
   a.btn.btn-default.visit-give-mobile {
-    right: 19.7%;
+    right: 24.3%;
     width: 9% !important;
     top: -132px;
     padding: 12px 1.2em !important;
@@ -8248,11 +8252,11 @@ ul.nav.navbar-nav li a {
   }
 
   a.btn.btn-default.give-mobile {
-    right: 9.8%;
+    right: 14%;
   }
 
   a.btn.btn-default.apply-mobile {
-    right: 1.2%;
+    right: 5%;
     width: 9% !important;
     top: -132px;
     padding: 12px 1.2em !important;
@@ -8503,7 +8507,7 @@ a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
   padding: 3.5714285714rem 8.3333333333% 4.2857142857rem;
 }
 #homepage-feature-caption .carousel-indicators {
-  left: 10%;
+  left: 0;
   top: 1rem;
   position: relative;
   width: 100%;
@@ -8573,7 +8577,6 @@ a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
   font-size: 1.3rem;
   text-transform: uppercase;
   color: #fff;
-  float: right;
 }
 
 .homepage-feature-caption-link:hover, .homepage-feature-caption-link:focus, .homepage-feature-caption-link:active {

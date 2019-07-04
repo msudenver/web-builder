@@ -22,7 +22,7 @@
          <span class="fa fa-bars"></span>
          </button>
          <div class="row container-fluid">
-            <div class="col-xs-7 col-md-push-1">
+            <div class="col-xs-8">
                <a href="/"> <img class="msudenver_logo" src="style-assets/media/template-assets/msu-denver-logo.svg" alt="MSU Denver Homepage"> </a>
             </div>
          </div>
@@ -37,17 +37,18 @@
                <a href="/giving" type="button" class="btn btn-default visit-give-mobile give-mobile ">Give</a>
                <a href="/admissions" type="button" class="btn btn-default apply-mobile">Apply</a>
            </div>
-            <ul id="menu-nav" class="nav navbar-nav">
+           <ul class="additional-links nav navbar-nav">
               <li class="collapse navbar-collapse">
-
-                 <ul class="fac-staf-stu-mobile">
-                    <li><a href="/studenthub">Current Students</a></li>
-                    <li class="hide-pipe">|</li>
-                    <li><a href="/facstaff">Faculty &amp; Staff</a></li>
-                    <li class="hide-pipe">|</li>
-                    <li><a href="/employers">Employers</a></li>
-                 </ul>
+                <ul class="fac-staf-stu-mobile">
+                  <li><a href="/studenthub">Current Students</a></li>
+                  <li class="hide-pipe">|</li>
+                  <li><a href="/facstaff">Faculty &amp; Staff</a></li>
+                  <li class="hide-pipe">|</li>
+                  <li><a href="/employers">Employers</a></li>
+                </ul>
               </li>
+           </ul>
+            <ul id="menu-nav" class="nav navbar-nav">
                <li class="dropdown collapse navbar-collapse">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <i role="presentation" class="fa fa-angle-down fa-lg"></i></a>
                   <ul class="dropdown-menu">
@@ -119,7 +120,6 @@
                        class="search-text">SEARCH</span></span>
                  </a>
                </li>
-               <li></li>
             </ul>
          </div>
          <!-- /.navbar-collapse -->
@@ -178,12 +178,12 @@ $(window).scroll(function(){
 			<section class="homepage-feature carousel t4-slide slide" id="homepage-feature-caption">
     <div class="carousel-inner">
         <!-- Carousel sample one -->
-        <a href="#" class="homepage-feature-caption-item item active">
+        <a href="#" class="homepage-feature-caption-item  item active">
           <div class="col-xs-12 col-md-6 col-md-push-6">
             <img class="img-responsive" src="style-assets/media/placeholder-images/homepage-slide-img.png"
               alt="Great news story headline" />
           </div>
-          <div class="col-xs-12 col-md-5 col-md-pull-5">
+          <div class="col-xs-12 col-md-6 col-md-pull-6">
             <div class="side-container">
               <h2 class="feature-heading">MSU Denver earns Hispanic-Serving Institution Status.</h2>
               <div class="tagline">That's <span>possible</span> here.</div>
@@ -192,12 +192,12 @@ $(window).scroll(function(){
           </div>
         </a>
         <!-- Caurusel sample two -->
-        <a href="#" class="homepage-feature-caption-item item">
+        <a href="#" class="homepage-feature-caption-item  item">
           <div class="col-xs-12 col-md-6 col-md-push-6"> 
             <img class="img-responsive" src="style-assets/media/placeholder-images/homepage-slide-img2.png"
               alt="Great news story headline" />
           </div>
-            <div class="col-xs-12 col-md-5 col-md-pull-5">
+            <div class="col-xs-12 col-md-6 col-md-pull-6">
                 <div class="side-container">
                   <h2 class="feature-heading">Our Aerospace and Engineering Sciences Building is almost ready for take
                     off.</h2>
@@ -601,9 +601,6 @@ $(window).scroll(function(){
                 interval: 5000,
                 keyboard: true
             });
-            $('#homepage-feature-caption').on('slide.bs.carousel', function() {
-                console.log('slid');
-			});
 			$('.homepage-feature-caption-item > div').matchHeight();
 			$('.at-a-glance-item').matchHeight();
         });

@@ -29,8 +29,9 @@ $highlightPrimaryBlue: #7591bc;
  }
 }
 
-
-
+.additional-links {
+  margin: 0;
+}
 .navbar {
     border: 0;
     margin-bottom: 0;
@@ -149,7 +150,7 @@ ul.nav.navbar-nav li .visit-give-mobile {
 }
 
 .msudenver_logo {
-  margin: 24px 0;
+  margin: 24px 15px;
   height: 50px;
   float: left;
 }
@@ -806,7 +807,7 @@ div#searchModal.modal.fade.in {
   }
 
   a.btn.btn-default.visit-give-mobile {
-      right: 19.7%;
+      right: 24.3%;
       width: 9% !important;
       top: -132px;
       padding: 12px 1.2em !important;
@@ -814,10 +815,10 @@ div#searchModal.modal.fade.in {
       transition: top 200ms ease-in-out !important;
   }
   a.btn.btn-default.give-mobile {
-      right: 9.8%;
+      right: 14%;
   }
   a.btn.btn-default.apply-mobile {
-      right: 1.2%;
+      right: 5%;
       width: 9% !important;
       top: -132px;
       padding: 12px 1.2em !important;
