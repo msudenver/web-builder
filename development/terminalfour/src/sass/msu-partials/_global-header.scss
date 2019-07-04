@@ -150,7 +150,7 @@ ul.nav.navbar-nav li .visit-give-mobile {
 
 .msudenver_logo {
   margin: 24px 0;
-  height: 35px;
+  height: 50px;
   float: left;
 }
 
@@ -233,7 +233,7 @@ a[name="A"]:before, a[name="B"]:before, a[name="C"]:before, a[name="D"]:before, 
 }
 #nav-search a {
   color: #fff;
-  background: #005fae;
+  background: #7591bc;
 }
 
 .navbar {
@@ -546,7 +546,7 @@ div#searchModal.modal.fade.in {
       @include container-fixed();
   }
   .msudenver_logo {
-    height: 82px;
+    height: 70px;
   }
 
   .navbar .navbar-nav {
@@ -722,7 +722,7 @@ div#searchModal.modal.fade.in {
   ul.nav.navbar-nav li a {
     text-decoration: none;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 14px;
   }
   ul.nav.navbar-nav li a {
     color: $white;
@@ -742,6 +742,7 @@ div#searchModal.modal.fade.in {
     position: relative;
     top: inherit;
     right: inherit;
+    width: 9rem;
     > a {
       text-align: center;
       background: $highlightPrimaryBlue;
@@ -805,27 +806,26 @@ div#searchModal.modal.fade.in {
   }
 
   a.btn.btn-default.visit-give-mobile {
-      right: 28.97%;
+      right: 19.7%;
       width: 9% !important;
-      top: -144px;
+      top: -132px;
       padding: 12px 1.2em !important;
       margin-right: 20px;
       transition: top 200ms ease-in-out !important;
   }
   a.btn.btn-default.give-mobile {
-      right: 18.6%;
+      right: 9.8%;
   }
   a.btn.btn-default.apply-mobile {
-      right: 9.4%;
+      right: 1.2%;
       width: 9% !important;
-      top: -144px;
+      top: -132px;
       padding: 12px 1.2em !important;
       transition: top 200ms ease-in-out !important;
   }
 
   a.dropdown-toggle, ul.nav.navbar-nav li a {
     letter-spacing: 1px;
-    font-size: 14px;
   }
   .navbar-toggle {
     display: none;

@@ -3,8 +3,6 @@ $primaryRed: #d11242;
 #homepage-news {
     padding-top: 36px;
     padding-top: torem(36, $small-unit);
-    padding-bottom: 36px;
-    padding-bottom: torem(36, $small-unit);
     background: #f7f7f7;
     position: relative;
     &:before {
@@ -39,6 +37,13 @@ $primaryRed: #d11242;
     }
     .feature-heading-large {
         color: $white;
+        margin-bottom: 0;
+        img {
+            width: 200px;
+            display: inline-block;
+            margin-right: 1rem;
+            padding: 15px;
+        }
     }
 }
 
@@ -51,13 +56,11 @@ $primaryRed: #d11242;
 }
 .news-features {
     @include make-row(0);
-    margin-top: 36px;
-    margin-top: torem(36, $small-unit);
+    margin-top: 0;
     margin-bottom: 15px;
 }
 .news-feature {
     @include make-xs-column(12, 0);
-    padding-top: 15px;
     padding-top: torem(15);
     
 }
@@ -73,7 +76,7 @@ $primaryRed: #d11242;
 }
 .news-feature-text {
     padding-top: 0;
-    h3 {
+    h4 {
         font-weight: 400;
         line-height: 22px;
         font-size: 16px;
@@ -102,31 +105,23 @@ $primaryRed: #d11242;
 
 @media (min-width: $screen-sm-min) {
         .news-feature {
-            padding: 0;
-            @include make-xs-column(12);
-        }
-}
+          @include make-xs-column(4);
+          margin-left: 0;
+          margin-right: 0;
+          margin-bottom: 25px;
 
-@media (min-width: $screen-md-min) {
-        .news-feature {
-            @include make-xs-column(4);
+          &:last-child {
+            margin: 0;
+          }
         }
 }
 
 @media (min-width: $screen-lg-min) {
     #homepage-news {
-        padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(100, $small-unit);
+        padding: torem(15, $small-unit) percentage(1/$grid-columns) torem(60, $small-unit);
     }
 
-        .news-feature {
-          @include make-xs-column(4);
-            margin-left: 0;
-            margin-right: 0;
-            &:last-child {
-                margin: 0;
-            }
-            margin-bottom: 25px;
-        }
+        
 
     .news-item-heading {
         margin: 20px 0 20px;

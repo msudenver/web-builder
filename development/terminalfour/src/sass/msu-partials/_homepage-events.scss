@@ -64,7 +64,7 @@
 }
 @media (min-width: $screen-lg-min) {
     #homepage-events {
-        padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(50, $small-unit);
+        padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(60, $small-unit);
         .homepage-btn { padding-bottom: 0; }
     }
     .home-event{
