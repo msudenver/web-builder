@@ -178,7 +178,7 @@ $(window).scroll(function(){
 			<section class="homepage-feature carousel t4-slide slide" id="homepage-feature-caption">
     <div class="carousel-inner">
         <!-- Carousel sample one -->
-        <a href="#" class="homepage-feature-caption-item  item active">
+        <a href="#" class="homepage-feature-caption-item  item">
           <div class="col-xs-12 col-md-6 col-md-push-6">
             <img class="img-responsive" src="style-assets/media/placeholder-images/homepage-slide-img.png"
               alt="Great news story headline" />
@@ -207,15 +207,24 @@ $(window).scroll(function(){
           </a>
     </div>
     <ol class="carousel-indicators">
-      <li data-target="#homepage-feature-caption" data-slide-to="0" class="active"></li>
-      <li data-target="#homepage-feature-caption" data-slide-to="1"></li>
+      <li data-target="#homepage-feature-caption"  class="active"></li>
+      <li data-target="#homepage-feature-caption" ></li>
     </ol>
+    <script>
+      document.querySelector('.homepage-feature-caption-item').classList.add('active');
+      var controls = document.querySelectorAll('.carousel-indicators li');
+      for (i = 0 ; i < controls.length; i++ ) {
+        controls[i].setAttribute('data-slide-to', i);
+      }
+    </script>
 </section>
 
 			    <!-- ** Homepage news ** -->
 <section class="homepage-feature" id="homepage-news">
     <div class="home-news-features">
-        <h2 class="feature-heading-large"><img src="style-assets/media/template-assets/RED-logo.svg" alt="">RELEVANT. ESSENTIAL. DENVER.</h2>
+        <h2 class="feature-heading-large"><img src="style-assets/media/template-assets/RED-logo.svg" alt="">
+            RELEVANT. ESSENTIAL. DENVER.
+        </h2>
           <div class="news-features">
             <!-- regular featured news items -->
                      <div class="news-feature">

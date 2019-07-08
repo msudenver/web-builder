@@ -10139,16 +10139,20 @@ a:focus, a:hover {
   margin-left: -150px;
   width: 150px;
   position: fixed;
-  padding-top: 82px;
+  padding-top: 100px;
   top: 0;
   left: 150px;
   bottom: 0;
-  z-index: 9998;
   background: #fff;
   color: black;
   -webkit-overflow-scroll: touch;
 }
 
+@media (max-width: 991px) {
+  #menu {
+    z-index: 9998;
+  }
+}
 #menu a {
   border: none;
   color: #002855;
@@ -10185,7 +10189,7 @@ a:focus, a:hover {
 
 .menu-link {
   display: none;
-  top: 75px;
+  top: 96px;
   left: 10px;
   background: #002856;
   background: rgba(27, 85, 122, 0.5);
