@@ -7779,10 +7779,10 @@ a.btn.btn-default.apply-mobile {
   padding: 10px 15px;
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #002855;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
@@ -7825,7 +7825,8 @@ div#searchModal.modal.fade.in {
   }
 }
 @media (min-width: 768px) {
-  a.btn.btn-default.visit-give-mobile, a.btn.btn-default.apply-mobile {
+  a.btn.btn-default.visit-give-mobile,
+a.btn.btn-default.apply-mobile {
     padding-top: 14px;
     padding-bottom: 14px;
     padding-top: 14px;
@@ -7985,6 +7986,9 @@ a.btn.btn-default.apply-mobile {
     padding: 0px;
     border-bottom: none;
   }
+  li.dropdown > a {
+    transition: background-color 0.4s ease-in;
+  }
   li.dropdown.open > a,
 li.dropdown a:focus,
 li.dropdown a:hover {
@@ -8080,9 +8084,8 @@ li.dropdown a:hover {
   .apply-mobile {
     font-size: 1.2em;
     background: #d11242;
-    transition: background 0.25s ease !important;
+    transition: background-color 0.4s ease-in-out !important;
   }
-
   .apply-mobile:hover {
     background: #a60029;
     color: #fff;
@@ -8138,6 +8141,9 @@ li.dropdown a:hover {
     right: 15%;
     top: -50px;
   }
+  ul.fac-staf-stu-mobile a:hover {
+    text-decoration: underline;
+  }
 
   ul.fac-staf-stu-mobile li a,
 .fac-staf-stu-mobile li.hide-pipe {
@@ -8164,6 +8170,7 @@ ul.nav.navbar-nav li a {
   .dropdown-menu > li > a {
     font-size: 0.8em !important;
     color: #002855 !important;
+    transition: background-color 0.4s ease-in, color 0.4s ease-in;
   }
   .dropdown-menu > li > a:hover {
     color: white !important;
@@ -8189,6 +8196,7 @@ ul.nav.navbar-nav li a {
     padding: 20px 1em;
     width: 9rem;
     top: -1px;
+    transition: background-color 0.4s ease-in;
   }
   li#nav-search > a:hover {
     background: #6483b4;
@@ -8248,7 +8256,7 @@ ul.nav.navbar-nav li a {
     top: -132px;
     padding: 12px 1.2em !important;
     margin-right: 20px;
-    transition: top 200ms ease-in-out !important;
+    transition: all 200ms ease-in-out !important;
   }
 
   a.btn.btn-default.give-mobile {
@@ -8260,7 +8268,7 @@ ul.nav.navbar-nav li a {
     width: 9% !important;
     top: -132px;
     padding: 12px 1.2em !important;
-    transition: top 200ms ease-in-out !important;
+    transition: all 200ms ease-in-out !important;
   }
 
   a.dropdown-toggle, ul.nav.navbar-nav li a {
@@ -8409,7 +8417,7 @@ a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
   transform: translateX(-50%);
   clear: both;
   display: block;
-  transition: background-color 200ms ease-in-out;
+  transition: background-color 0.4s ease-in-out;
 }
 .main-button:before, .main-button:after {
   content: " ";
@@ -8889,6 +8897,9 @@ a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
   color: white;
   margin-bottom: 0;
 }
+#homepage-news .feature-heading-large .header-wrap {
+  display: inline;
+}
 #homepage-news .feature-heading-large img {
   width: 200px;
   display: inline-block;
@@ -8896,6 +8907,46 @@ a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
   padding: 15px;
 }
 
+@media (max-width: 1120px) {
+  #homepage-news .feature-heading-large:before, #homepage-news .feature-heading-large:after {
+    content: "";
+    display: table;
+  }
+  #homepage-news .feature-heading-large:after {
+    clear: both;
+  }
+  #homepage-news .feature-heading-large img {
+    width: 200px;
+    display: block;
+    float: left;
+  }
+  #homepage-news .feature-heading-large .header-wrap {
+    display: flex;
+    float: left;
+    width: calc(100% - 250px);
+    height: 200px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #homepage-news .feature-heading-large .header-wrap span {
+    display: block;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 620px) and (max-width: 1120px) {
+  #homepage-news .feature-heading-large img {
+    width: 250px;
+  }
+  #homepage-news .feature-heading-large .header-wrap {
+    width: calc(100% - 300px);
+    height: 250px;
+  }
+  #homepage-news .feature-heading-large .header-wrap span {
+    font-size: 3.125rem;
+  }
+}
 .home-news-features {
   position: relative;
   float: left;
@@ -9327,6 +9378,9 @@ footer {
 .footer-container:after {
   clear: both;
 }
+.footer-container a:hover {
+  text-decoration: underline;
+}
 .footer-container *:not(.btn) {
   color: #002855;
 }
@@ -9348,6 +9402,9 @@ footer {
   font-weight: 500;
   font-size: 0.875rem;
   border-bottom: 1px solid #e3e7ec;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
 }
 
 /* Footer promos */
@@ -9528,10 +9585,10 @@ footer {
 }
 .footer-social .fa {
   font-size: 1.875rem;
-  -webkit-transition: color 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in;
-  -o-transition: color 0.1s ease-in;
-  transition: color 0.1s ease-in;
+  -webkit-transition: color 0.4s ease-in;
+  -moz-transition: color 0.4s ease-in;
+  -o-transition: color 0.4s ease-in;
+  transition: color 0.4s ease-in;
   color: #d11242;
 }
 .footer-social .fa:hover {

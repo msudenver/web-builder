@@ -22,7 +22,9 @@ footer {
 .footer-container {
     @include container-fixed();
     padding-bottom: 48px;
-
+    a:hover {
+        text-decoration: underline;
+    }
     *:not(.btn) { color: $primaryBlue; }
 }
 /* Used inbetween html rows in the footer */
@@ -41,6 +43,9 @@ footer {
     font-weight: 500;
     font-size: torem(14);
     border-bottom: 1px solid #e3e7ec;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 /* Footer promos */
 .footer-promos-row, .footer-menu-row {
@@ -173,10 +178,10 @@ footer {
     }
     .fa {
         font-size: torem(30);
-        -webkit-transition:  color  0.1s     ease-in;
-        -moz-transition:     color  0.1s     ease-in;
-        -o-transition:       color  0.1s     ease-in;
-        transition:          color  0.1s     ease-in;
+        -webkit-transition:  color  0.4s     ease-in;
+        -moz-transition:     color  0.4s     ease-in;
+        -o-transition:       color  0.4s     ease-in;
+        transition:          color  0.4s     ease-in;
         color: $msu-red;
         &:hover {
             color: $primaryBlue;

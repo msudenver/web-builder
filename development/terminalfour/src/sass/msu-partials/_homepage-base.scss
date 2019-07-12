@@ -72,7 +72,7 @@
     transform: translateX(-50%);
     clear: both;
     display: block;
-    transition: background-color 200ms ease-in-out;
+    transition: background-color .4s ease-in-out;
     &:hover,
     &:active,
     &:focus {

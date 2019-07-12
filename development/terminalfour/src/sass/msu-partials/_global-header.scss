@@ -388,10 +388,10 @@ a.btn.btn-default.apply-mobile {
   padding: 10px 15px;
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: $primaryBlue;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition:    all 0.4s ease-in-out;
+  -o-transition:      all 0.4s ease-in-out;
+  transition:         all 0.4s ease-in-out;
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
@@ -432,7 +432,8 @@ div#searchModal.modal.fade.in {
 
 //action button fixes
 @media (min-width: 768px) {
-  a.btn.btn-default.visit-give-mobile, a.btn.btn-default.apply-mobile {
+  a.btn.btn-default.visit-give-mobile, 
+  a.btn.btn-default.apply-mobile {
     padding-top: 14px;
     padding-bottom: 14px;
     padding-top: 14px;
@@ -560,12 +561,12 @@ div#searchModal.modal.fade.in {
     text-align: center;
   }
 
-.dropdown-menu {
-    background-color: rgba(255, 255, 255, 0.95);
-    border: 0px;
-    border-bottom: 3px solid $primaryRed;
-    border-radius: 0;
-}
+  .dropdown-menu {
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 0px;
+      border-bottom: 3px solid $primaryRed;
+      border-radius: 0;
+  }
 
   li.dropdown {
     font-size: 0.74em;
@@ -573,6 +574,9 @@ div#searchModal.modal.fade.in {
     margin-bottom: 9px;
     padding: 0px;
     border-bottom: none;
+    > a {
+      transition: background-color .4s ease-in;
+    }
     &.open > a,
     a:focus,
     a:hover {
@@ -661,11 +665,11 @@ div#searchModal.modal.fade.in {
   .apply-mobile {
     font-size: 1.2em;
     background: $primaryRed;
-    transition: background .25s ease !important;
-  }
-  .apply-mobile:hover {
-    background: #a60029;
-    color: #fff;
+    transition: background-color .4s ease-in-out !important;
+    &:hover {
+      background: #a60029;
+      color: #fff;
+    }
   }
   .visit-give-mobile {
     background: $white;
@@ -708,6 +712,9 @@ div#searchModal.modal.fade.in {
   ul.fac-staf-stu-mobile {
     right: 15%;
     top: -50px;
+    a:hover {
+      text-decoration: underline;
+    }
   }
   ul.fac-staf-stu-mobile li a, 
   .fac-staf-stu-mobile li.hide-pipe {
@@ -731,6 +738,7 @@ div#searchModal.modal.fade.in {
   .dropdown-menu > li > a {
     font-size: 0.8em !important;
     color: $primaryBlue !important;
+    transition: background-color .4s ease-in, color .4s ease-in;
     &:hover {
       color: $white !important;
     }
@@ -753,6 +761,7 @@ div#searchModal.modal.fade.in {
       padding: 20px 1em;
       width: 9rem;
       top: -1px;
+      transition: background-color .4s ease-in;
       &:hover {
         background: darken($highlightPrimaryBlue, 5%);
       }
@@ -812,7 +821,7 @@ div#searchModal.modal.fade.in {
       top: -132px;
       padding: 12px 1.2em !important;
       margin-right: 20px;
-      transition: top 200ms ease-in-out !important;
+      transition: all 200ms ease-in-out !important;
   }
   a.btn.btn-default.give-mobile {
       right: 14%;
@@ -822,7 +831,7 @@ div#searchModal.modal.fade.in {
       width: 9% !important;
       top: -132px;
       padding: 12px 1.2em !important;
-      transition: top 200ms ease-in-out !important;
+      transition: all 200ms ease-in-out !important;
   }
 
   a.dropdown-toggle, ul.nav.navbar-nav li a {
