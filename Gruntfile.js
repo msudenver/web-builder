@@ -82,6 +82,7 @@ module.exports = function(grunt) {
           'www-root/style-assets/css/vendor-style.css': 'development/terminalfour/src/sass/vendor-style.scss',
           'www-root/style-assets/css/print.css': 'development/terminalfour/src/sass/print.scss',
           'www-root/style-assets/css/newsroom-style.css': 'development/terminalfour/src/sass/newsroomHomepage/newsroom-style.scss',
+          'www-root/style-assets/css/possible.css': 'development/terminalfour/src/sass/possible.scss',
         }//files
       }//dist
     },//sass
