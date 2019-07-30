@@ -67,6 +67,7 @@ section {
 .start_your_possible{
   background-color:#D11242;
   color: white;
+  height: 70vh;
   // padding-top:20%;
 
   h2{
@@ -79,6 +80,24 @@ section {
   }
 }
 
+.possible-call-to-action {
+  background: url(../media/admissions-redesign/virtual-tour.jpg) no-repeat center center fixed;
+    display: table;
+    height: 800px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+.well{
+background:#ffffffbf;
+padding:25px 30px;
+
+}
+
+}
 .well {
   color:#00366A;
   // background-color: white;
