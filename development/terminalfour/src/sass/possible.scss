@@ -1,5 +1,8 @@
 html {
   scroll-behavior: smooth;
+  animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
 }
 
 body {
@@ -26,14 +29,12 @@ body {
     to {
        opacity: 1; }
 .fade-in {
-          animation-delay: 10s;
-          -webkit-animation-delay: 10s;
-          -moz-animation-delay: 10s;
-         animation: fadeIn ease 5s;
-         -webkit-animation: fadeIn ease 5s;
-         -moz-animation: fadeIn ease 5s;
-         -o-animation: fadeIn ease 5s;
-         -ms-animation: fadeIn ease 5s;
+
+         animation: fadeIn ease 10s;
+         -webkit-animation: fadeIn ease 10s;
+         -moz-animation: fadeIn ease 10s;
+         -o-animation: fadeIn ease 10s;
+         -ms-animation: fadeIn ease 10s;
        }
 
 section {
@@ -49,6 +50,11 @@ section {
     color: #00447c;
     text-align: center;
     font-weight: 700;
+  }
+
+  .university-logo{
+    max-width: 400px;
+    margin-top: 20vh;
   }
 }
 
@@ -67,8 +73,9 @@ section {
 .start_your_possible{
   background-color:#D11242;
   color: white;
-  height: 70vh;
-  // padding-top:20%;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  height: auto;
 
   h2{
     margin: 15px 0px;
@@ -81,7 +88,7 @@ section {
 }
 
 .possible-call-to-action {
-  background: url(../media/admissions-redesign/virtual-tour.jpg) no-repeat center center fixed;
+  background: url(../media/possible/open-house-student.jpg) no-repeat center center fixed;
     display: table;
     height: 800px;
     position: relative;
