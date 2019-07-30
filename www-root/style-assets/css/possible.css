@@ -56,13 +56,14 @@ section {
 .possible-word {
   color: white;
   background: #D11242;
-  padding: 0px 20px 5px 20px;
+  padding: 0px 15px 5px 15px;
 }
 
 .possible-word-reversed {
   color: #D11242;
   background: #fff;
-  padding: 0px 20px 5px 20px;
+  margin: 0px 5px;
+  padding: 0px 5px;
 }
 
 .start_your_possible {
@@ -108,6 +109,7 @@ section {
 }
 .footer .possible-footer {
   font-size: 3rem;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=possible.css.map */
