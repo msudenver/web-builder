@@ -1,0 +1,89 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+
+ h1,h2,h3,p{
+    color:#00366A;
+    font-weight: 400;
+  }
+  h2{
+    font-size: 2.5rem;
+    margin: 10px 0px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@keyframes fadeIn
+    to {
+       opacity: 1; }
+.fade-in {
+         animation: fadeIn ease 12s;
+         -webkit-animation: fadeIn ease 12s;
+         -moz-animation: fadeIn ease 12s;
+         -o-animation: fadeIn ease 12s;
+         -ms-animation: fadeIn ease 12s;
+       }
+
+section {
+  height: 100vh;
+  padding-top:15%;
+}
+
+.introduction {
+  padding-top:10%;
+  padding:20px;
+}
+
+.introduction h1  {
+    font-size: 5rem;
+    color: #00447c;
+    text-align: center;
+    padding-top: 25%;
+    font-weight: 700;
+    line-height: 5px;
+  }
+
+.possible-word {
+        color: white;
+        background: #D11242;
+        padding: 0px 20px 5px 20px;
+    }
+
+.start_your_possible{
+  background-color:#D11242;
+  color: white;
+  // padding-top:20%;
+
+  h2{
+    margin: 15px 0px;
+    color:#fff;
+
+  }
+  p {
+    color: #fff;
+  }
+}
+
+.well {
+  color:#00366A;
+  // background-color: white;
+  // border: solid 2px #00366A;
+  padding: 15px;
+}
+.footer{
+  color: #00366A;
+  background-color:#fff;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom:20%;
+
+}
