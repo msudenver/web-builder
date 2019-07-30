@@ -56,6 +56,12 @@ section {
   padding: 0px 20px 5px 20px;
 }
 
+.possible-word-reversed {
+  color: #D11242;
+  background: #fff;
+  padding: 0px 20px 5px 20px;
+}
+
 .start_your_possible {
   background-color: #D11242;
   color: white;
@@ -70,7 +76,6 @@ section {
 
 .well {
   color: #00366A;
-  background-color: white;
   padding: 15px;
 }
 
