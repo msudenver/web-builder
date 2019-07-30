@@ -80,6 +80,10 @@ section {
   color: #fff;
 }
 
+.section-feels-like {
+  margin-bottom: 15vh;
+}
+
 .possible-call-to-action {
   background: url(../media/possible/open-house-student.jpg) no-repeat center center fixed;
   display: table;
@@ -94,11 +98,6 @@ section {
 .possible-call-to-action .well {
   background: #ffffffbf;
   padding: 25px 30px;
-}
-
-.well {
-  color: #00366A;
-  padding: 15px;
 }
 
 .footer {
