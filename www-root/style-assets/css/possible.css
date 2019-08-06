@@ -21,6 +21,9 @@ body h2 {
 body p {
   font-size: 1.5rem;
 }
+body p.copyright {
+  font-size: 16px;
+}
 
 @keyframes fadeIn
     to {
@@ -40,7 +43,7 @@ section {
 }
 
 .introduction {
-  padding-top: 40vh;
+  padding-top: 35vh;
 }
 .introduction h1 {
   font-size: 5rem;
@@ -51,6 +54,14 @@ section {
 .introduction .university-logo {
   max-width: 400px;
   margin-top: 20vh;
+  padding-right: 10vw;
+}
+.introduction .possible-indicator {
+  color: #00447c;
+  display: block;
+  width: 100px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .possible-word {

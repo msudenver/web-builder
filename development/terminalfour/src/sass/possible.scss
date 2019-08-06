@@ -22,6 +22,10 @@ body {
     font-size: 1.5rem;
   }
 
+  p.copyright {
+    font-size: 16px;
+}
+
 }
 
 
@@ -43,7 +47,7 @@ section {
 }
 
 .introduction {
-  padding-top:40vh;
+  padding-top:35vh;
 
   h1  {
     font-size: 5rem;
@@ -55,6 +59,18 @@ section {
   .university-logo{
     max-width: 400px;
     margin-top: 20vh;
+    padding-right: 10vw
+  }
+
+  .possible-indicator{
+    color: #00447c;
+    // box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175);
+    // text-align: center !important;
+    display:block;
+    width:100px;
+    height: 100%;
+    margin: 0 auto;
+
   }
 }
 
