@@ -1,0 +1,190 @@
+html {
+  scroll-behavior: smooth;
+  animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+}
+
+body {
+  height: 100%;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+}
+
+ h1,h2,h3,p{
+    color:#00366A;
+    font-weight: 400;
+  }
+  h2{
+    font-size: 1.75rem;
+    margin: 10px 0px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1rem;
+  }
+
+  p.copyright {
+    font-size: 16px;
+    text-align:right;
+  }
+
+.copyright>a{
+    color:#00366A;
+  }
+
+
+
+
+section {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  height: auto;
+
+}
+
+.introduction {
+  height: 100vh;
+  padding-top:35vh;
+
+  h1  {
+    font-size: 3rem;
+    color: #00447c;
+    text-align: center;
+    font-weight: 700;
+  }
+
+
+
+
+}
+
+.possible-indicator{
+  color: #00447c;
+  // display:block;
+  width:100px;
+  height: 100%;
+  // margin: 0 auto;
+  position: relative;
+    top: 10vh;
+}
+
+.university-logo{
+  width: 200px;
+  text-align:center;
+  margin-top: 10vh;
+  text-align: center!important;
+}
+
+
+
+
+.possible-word {
+        color: white;
+        background: #D11242;
+        padding: 0px 12px 5px 12px;
+        letter-spacing: 3.5px;
+    }
+
+.possible-word-reversed {
+            color: #D11242;
+            background: #fff;
+            margin-right: 5px;
+            padding: 0px 12px 5px 12px;
+        }
+
+.start_your_possible{
+  background-color:#D11242;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  height: auto;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+  h2{
+    margin: 15px 0px;
+    color:#fff;
+
+  }
+  p {
+    color: #fff;
+  }
+}
+
+.section-feels-like {
+ .container {
+   // height: auto;
+   // padding-bottom: 20vh;
+ }
+}
+.possible-call-to-action {
+  background: url(../media/possible/open-house-student.jpg) no-repeat center center fixed;
+    display: table;
+    height: auto;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+.well{
+background:#ffffffde;
+padding:25px 30px;
+margin-top:15vh;
+margin-bottom:15vh;
+
+}
+
+.btn {
+    border: solid 3px #00447c;
+    padding: 20px;
+    color:#00447c;
+    font-size: 1rem;
+    border-radius: 0px;
+    margin-top:15px;
+    margin-bottom:15px;
+
+}
+
+.btn:hover {
+    border: solid 3px #00447c;
+    padding: 20px;
+    color:#fff;
+    font-size: 1rem;
+    border-radius: 0px;
+    background:#00447c;
+}
+
+
+}
+
+.footer{
+  color: #00366A;
+  background-color:#fff;
+  margin-top: 5vh;
+  margin-bottom:5vh;
+
+
+  .possible-footer{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+
+  }
+
+  .university-logo-footer{
+    width: 260px;
+  }
+
+}
+
+
+@import "possible-partials/possible-viewport-overrides.scss";
+@import "possible-partials/possible-animations.scss";
