@@ -25,27 +25,20 @@ body {
 
   p.copyright {
     font-size: 16px;
+    text-align:right;
+  }
+
+.copyright>a{
+    color:#00366A;
   }
 
 
 
 
-@keyframes fadeIn
-    to {
-       opacity: 1; }
-.fade-in {
-
-         animation: fadeIn ease 10s;
-         -webkit-animation: fadeIn ease 10s;
-         -moz-animation: fadeIn ease 10s;
-         -o-animation: fadeIn ease 10s;
-         -ms-animation: fadeIn ease 10s;
-       }
-
 section {
-  // height: 100vh;
-  padding-bottom:20vh;
-  padding-top:20vh;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  height: auto;
 
 }
 
@@ -60,40 +53,58 @@ section {
     font-weight: 700;
   }
 
-  .university-logo{
-    max-width: 200px;
-    margin-top: 10vh;
-  }
 
-  .possible-indicator{
-    color: #00447c;
-    display:block;
-    width:100px;
-    height: 100%;
-    margin: 0 auto;
 
-  }
+
 }
+
+.possible-indicator{
+  color: #00447c;
+  // display:block;
+  width:100px;
+  height: 100%;
+  // margin: 0 auto;
+  position: relative;
+    top: 10vh;
+}
+
+.university-logo{
+  width: 200px;
+  text-align:center;
+  margin-top: 10vh;
+  text-align: center!important;
+}
+
+
+
 
 .possible-word {
         color: white;
         background: #D11242;
-        padding: 0px 15px 5px 15px;
+        padding: 0px 12px 5px 12px;
+        letter-spacing: 3.5px;
     }
 
 .possible-word-reversed {
             color: #D11242;
             background: #fff;
-            margin: 0px 5px;
-            padding: 0px 5px;
+            margin-right: 5px;
+            padding: 0px 12px 5px 12px;
         }
 
 .start_your_possible{
   background-color:#D11242;
-  color: white;
   padding-top: 15vh;
   padding-bottom: 15vh;
   height: auto;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 
   h2{
     margin: 15px 0px;
@@ -107,14 +118,14 @@ section {
 
 .section-feels-like {
  .container {
-   height: 100vh;
+   // height: auto;
    // padding-bottom: 20vh;
  }
 }
 .possible-call-to-action {
   background: url(../media/possible/open-house-student.jpg) no-repeat center center fixed;
     display: table;
-    height: 100vh;
+    height: auto;
     position: relative;
     width: 100%;
     -webkit-background-size: cover;
@@ -123,28 +134,32 @@ section {
     background-size: cover;
 
 .well{
-background:#ffffffbf;
+background:#ffffffde;
 padding:25px 30px;
+margin-top:15vh;
+margin-bottom:15vh;
 
 }
 
 .btn {
-    border: solid 1px #00447c;
+    border: solid 3px #00447c;
     padding: 20px;
     color:#00447c;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border-radius: 0px;
+    margin-top:15px;
+    margin-bottom:15px;
+
 }
 
 .btn:hover {
-    border: solid 1px #fff;
+    border: solid 3px #00447c;
     padding: 20px;
     color:#fff;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border-radius: 0px;
     background:#00447c;
 }
-
 
 
 }
@@ -152,35 +167,24 @@ padding:25px 30px;
 .footer{
   color: #00366A;
   background-color:#fff;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-bottom:5vh;
 
 
   .possible-footer{
     font-size: 3rem;
     font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+
+  }
+
+  .university-logo-footer{
+    width: 260px;
   }
 
 }
 
-@media only screen and (min-width: 992px){
-.introduction {
-    h1  {
-      font-size: 5rem;
-    }
-  }
-    // .university-logo{
-    //   max-width: 400px;
-    //   margin-top: 20vh;
-    //   padding-right: 10vw
-    // }
 
-    h2{
-      font-size: 2.5rem;
-    }
-
-    p {
-      font-size: 1.5rem;
-    }
-
-  }
+@import "possible-partials/possible-viewport-overrides.scss";
+@import "possible-partials/possible-animations.scss";
