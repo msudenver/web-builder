@@ -145,18 +145,20 @@ section {
   background-size: cover;
 }
 .possible-call-to-action .well {
-  background: #ffffffbf;
+  background: #ffffffde;
   padding: 25px 30px;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
 }
 .possible-call-to-action .btn {
-  border: solid 1px #00447c;
+  border: solid 3px #00447c;
   padding: 20px;
   color: #00447c;
   font-size: 1.5rem;
   border-radius: 0px;
 }
 .possible-call-to-action .btn:hover {
-  border: solid 1px #fff;
+  border: solid 3px #00447c;
   padding: 20px;
   color: #fff;
   font-size: 1.5rem;
