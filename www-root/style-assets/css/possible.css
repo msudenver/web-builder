@@ -179,6 +179,10 @@ section {
     font-size: 1.5rem;
   }
 
+  .possible-indicator {
+    top: 10vh;
+  }
+
   .possible-call-to-action .btn {
     border: solid 3px;
     font-size: 1.5rem;
