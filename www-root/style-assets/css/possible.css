@@ -27,6 +27,11 @@ p {
 
 p.copyright {
   font-size: 16px;
+  text-align: right;
+}
+
+.copyright > a {
+  color: #00366A;
 }
 
 section {
@@ -58,6 +63,7 @@ section {
   width: 200px;
   text-align: center;
   margin-top: 10vh;
+  text-align: center !important;
 }
 
 .possible-word {
@@ -173,12 +179,11 @@ section {
     font-size: 1.5rem;
   }
 
-  .btn {
+  .possible-call-to-action .btn {
     border: solid 3px;
     font-size: 1.5rem;
   }
-
-  .btn:hover {
+  .possible-call-to-action .btn:hover {
     font-size: 1.5rem;
   }
 }
