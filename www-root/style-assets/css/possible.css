@@ -155,6 +155,10 @@ section {
   .possible-word-reversed {
     margin-left: -2px;
   }
+
+  .possible-indicator {
+    top: 15vh;
+  }
 }
 @media only screen and (min-width: 992px) {
   .introduction h1 {
