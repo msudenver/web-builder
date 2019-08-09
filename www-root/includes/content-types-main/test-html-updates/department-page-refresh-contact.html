@@ -1,0 +1,68 @@
+<div class="col-xs-12 contact-form content-inner">
+  <h2>
+    Interested in Our Program?
+  </h2>
+  <h3>
+    Contact our Department Coordinator for More Information
+  </h3>
+  <form action="http://www.msudenver.edu/cgi-bin/public/formmail.cgi" method="post" name="ContactUsform" id="ContactUsForm" onsubmit="return validateForm()">
+    <input type="hidden" name="recipient" value='ind@msudenver.edu' />
+    <input type="hidden" name="subject" value='Website Inquiry' />
+    <input type="hidden" name="redirect" value="/tst/department-refresh/contact/contact-us.shtml" />
+    <input type="hidden" name="required" value="realname,email,message" />
+    <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,REMOTE_USER,HTTP_USER_AGENT" />
+    <input type="hidden" name="print_config" value="recipient,subject,realname,email" />
+    <input type="hidden" name="print_blank_fields" value="1" />
+    <input type="hidden" name="missing_fields_redirect" value="/missingfields/" />
+
+    <fieldset>
+      <legend>
+        <h4>Contact Information:</h4>
+      </legend>
+      <div class="form-group">
+        <label for="Full Name">Full name:
+          <span>*</span>
+        </label>
+        <input type="text" required name="realname" class="form-control" id="Full Name" maxlength="50" />
+      </div>
+      <div class="form-group">
+        <label for="Email Address">Email address:
+          <span>*</span>
+        </label>
+        <input type="text" required name="email" class="form-control" id="Email Address" maxlength="50" />
+      </div>
+      <div class="form-horizontal">
+        <div class="col-lg-4">
+          <label for="phone">Phone number:</label>
+          <input type="text" name="phone" class="form-control" maxlength="12" value="###-###-####" />
+        </div>
+        <div class="col-lg-4">
+          <label for="extension">Phone Extension:</label>
+          <input type="text" name="extension" class="form-control" maxlength="6" />
+        </div>
+      </div>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>
+        <h4>Questions/Comments:
+          <span>*</span>
+        </h4>
+      </legend>
+      <div class="form-group">
+        <textarea id="message" name="message" class="form-control" rows="10"></textarea>
+      </div>
+    </fieldset>
+
+    <div class="row">
+      <!-- <div class="col-lg-5 col-sm-12 g-recaptcha" data-sitekey="6LetcAETAAAAAJuFjSHElSYL_Apv6wQg0qZFGzDp"></div> -->
+      <br>
+      <div class="col-lg-3 col-lg-offset-5 col-md-6 col-sm-12">
+        <input class="btn btn-lg custom-black-btn" type="submit" value="Submit" name="submit" id="submit" value="Submit Form">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <input class="btn btn-lg custom-black-btn" type="reset" value="Reset Form" name="reset" id="reset" value="Reset Form">
+      </div>
+    </div>
+  </form>
+</div>

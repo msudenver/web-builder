@@ -5,13 +5,25 @@
   display: inline-block;
   margin-bottom: 20px;
   padding: 1.2575em;
+  background-color: #FAFAFA !important;
+  border: 1px solid #C3C3C3 !important;
+  border-radius: 0 !important;
 
   img.img-responsive {
     padding-left: 0px;
   }
 
   h5 {
-    color: #000;
+    color: #717073;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .promo_content {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    line-height: 24px;
   }
 
   .content a .promo-element {
@@ -20,12 +32,57 @@
   }
 
   h4 {
-    color: #007dc3;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
   }
 
   .promo-element .img-responsive {
     max-width: 200px;
   }
+
+  .promo_date {
+    font-weight: 400;
+    font-size: 20px;
+    color: #717073;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  .well_link {
+    float: right;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #007BC6;
+  }
+}
+
+.promo_area {
+  background-color: #ffffff !important;
+  border: 1px solid #EDEDED !important;
+
+  .promo-element {
+    font-weight: 400 !important;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000 !important;
+  }
+}
+
+.social_well {
+  border-color: #D6DEEA !important;
 }
 
 @media (min-width: 768px) {

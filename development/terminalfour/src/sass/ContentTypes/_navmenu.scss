@@ -32,10 +32,10 @@
 #menu a {
   border: none;
   color: $primaryBlue;
-  font-size:1.2rem;
+  font-size: 18px;
   font-weight:500;
   padding: 15px 15px;
-  line-height: 1em;
+  line-height: 18px;
   display: block;
   text-decoration: none;
   -webkit-transition: all .25 ease-in-out;
@@ -135,7 +135,7 @@
   // background: #002856;
     ul li {
       list-style-type: none;
-      border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+      border-bottom: 1px solid #F1F3F5;
       // border-width: 100%;
     }
 
@@ -167,16 +167,17 @@
 
 
 [class^="currentbranch"] a {
-  font-size: 1.2em;
-  color: black !important;
+  font-size: 18px !important;
+  color: #000 !important;
   font-weight: 700 !important;
+  line-height: 18px !important;
   &:after {
     content: "\f111";
     color: $primaryRed;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
-    font-size: .6rem;
+    font-size: 7px;
     text-decoration: inherit;
     float: right;
     padding-right: 15px;
@@ -234,7 +235,7 @@
 
   #menu a {
     padding: 15px 0px;
-    line-height: 1em;
+    line-height: 18px;
     -webkit-transition: all .25 ease-in-out;
     -moz-transition: all .25 ease-in-out;
     -o-transition: all .25 ease-in-out;
