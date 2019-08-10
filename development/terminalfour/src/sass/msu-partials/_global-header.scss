@@ -3,12 +3,12 @@
   text-align: center;
 }
 
-// .msudenver_logo, .msudenver_logo_change {
-//   -webkit-transition: all 0.5s ease-in-out;
-//   -moz-transition: all 0.5s ease-in-out;
-//   -o-transition: all 0.5s ease-in-out;
-//   transition: all 0.5s ease-in-out;
-// }
+.msudenver_logo, .msudenver_logo_change {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
 
 .fac-staf-stu-mobile {
  padding-left: 20px !important;
@@ -16,25 +16,14 @@
  line-height: 2.5em;
 }
 
-//#nav-faculty, #nav-academics, #nav-alumni {
-//  padding-left: 0px;
-//  padding-right: 0px;
-//}
-//.pushdown-alumni {
-//  padding-left: 1.2em !important;
-//}
+
 
 .navbar {
     border: 0;
     margin-bottom: 0;
     border-radius: 0px;
     background: #fff;
-//  button.navbar-toggle {
-//  color: #fff;
-//  font-size: 25px;
-//  background-color: #003a6e;
-//  border-radius: 0px;
-//  }
+
 
   ul li {
     font-family: $font-family-serif;
@@ -57,22 +46,7 @@
   padding-left: 0;
 }
 
-//.pushdown-menu {
-//  font-size: 0.8em;
-//  padding-top: 10px;
-//  padding-bottom: 0px;
-//  text-decoration: none;
-//  text-align: left;
-//  list-style-type: inherit;
-//  padding-left: 0.5em;
-//  text-indent:-0.6em;
-//  display: none;
-//  border-right: 1px solid black;
-//  border-spacing: 10px;
-//  margin-top: 1.8em;
-//  margin-bottom: 0.5em;
-//  line-height: 2em;
-//}
+
 
 .nav > a > li {
   display: inline;
@@ -81,177 +55,16 @@
   font-size: 1.0em;
   padding-bottom: 8px;
 }
-//begin expanding search css
-//#content-nav {
-//  background-color: #fff;
-//  max-height: none;
-//  transition: max-height 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
-//  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.175);
-//}
+
 #bs-example-navbar-collapse-1 {
  overflow-y: scroll;
 }
 
-//#content-nav #nav-search-close {
-//  position: relative;
-//  top: -78px;
-//  left: 50em;
-//  color: #007dc3;
-//  cursor: pointer;
-//  font-size: 1.3em;
-//}
-
-//#content-nav .search-input-desktop {
-//  display: none;
-//  position: absolute; // was relative
-//}
-
-//#content-nav #search-input div {
-//  padding-right: 0 !important;
-//  top: 3px !important;
-//}
-
-//#content-nav #search-input input[type=text] {
-//  display: inline-block;
-//  height: 50px;
-//  width: 32em;
-//  border: none;
-//  color: #6E6E6E;
-//  border: 2px solid #fff;
-//  border-radius: 5px 5px 5px 5px;
-//  background-color: #fff;
-//}
-
-//#content-nav #search-input .search-button {
-//  display: inline-block;
-//  padding-left: 10px;
-//  top: -3.3em;
-//  left: 24em;
-//  position: relative;
-//  height: 2.8em;
-//  width: 8.0em;
-//  background-color: #007dc3;
-//  border-radius: 2;
-//  letter-spacing: 5px;
-//  font-family: $font-family-sans-serif;
-//  font-style: normal;
-//  font-weight: 500;
-//}
-
-//#content-nav #search-input .search-button:hover {
-//  color: #fff;
-//  background-color: #00447c;
-//  ::-webkit-input-placeholder {
-//    color: #fff;
-//    background-color: #00447c;
-//  }
-//
-//  :-moz-placeholder {
-//    /* Firefox 18- */
-//    color: gray;
-//  }
-//
-//  ::-moz-placeholder {
-//    /* Firefox 19+ */
-//    color: gray;
-//  }
-//
-//  :-ms-input-placeholder {
-//    color: gray;
-//  }
-//}
-
-//.search-button {
-//  height: 35px;
-//  line-height: 35px;
-//  display: block;
-//  border-radius: 4px;
-//  text-transform: uppercase;
-//  text-align: center;
-//  font-family: $font-family-sans-serif;
-//  font-size: 12px;
-//  letter-spacing: 1.2px;
-//  color: #fff;
-//  border: 0;
-//}
-
-//.search-button:hover {
-//  text-decoration: none;
-//  color: #FFF;
-//  cursor: pointer;
-//  font-family: $font-family-sans-serif;
-//}
-
-//.search-button:focus {
-//  text-decoration: none;
-//  color: #FFF;
-//}
-//
-//.fa-search {
-//  color: #007dc3 !important;
-//  // padding-top: 1.3em;
-//  font-size: 1.2em;
-//  cursor: pointer;
-//}
-
-////#nav-search {
-////  a{
-////    background: #005fae;
-////  }
-////  .fa-search {
-////  color: $white !important;
-////
-////  // margin-top: 0.4em;
-////  // padding-left: 0.8em;
-////  // padding-right: 1.7em;
-////  // padding-top: 0.5em;
-////  // padding-bottom: 0.5em;
-////}
-//
-//}
-//.fa-search-opened {
-//  color: #717171 !important;
-//  padding-top: 10px;
-//  font-size: 1.2em;
-//  padding-right: 30px;
-//  padding-left: 20px;
-//  padding-bottom: 12px;
-//  top: 0.77em;
-//  border-radius: 5px 0 0 5px;
-//  cursor: unset;
-//}
-/* enable absolute positioning */
-//.inner-addon {
-//  position: relative;
-//}
-/* style glyph */
-//.inner-addon .fa-search {
-//  position: absolute;
-//  padding: 0.9em 1em 1em 3em;
-//  pointer-events: none;
-//}
-/* align glyph */
-//.left-addon .fa-search {
-//  left: 0.3em;
-//  top: -0.45em;
-//}
-
-/* add padding  */
-//.left-addon input {
-//  padding-left: 8em;
-//  width: 101%;
-//}
-
-/* add back pointer functionality for x-out button  */
-//.fa-close {
-//  pointer-events: all !important;
-//}
-//end expanding search css
 .apply-button {
   background: $msu-red;
   color: $white;
   font-size: 1.0em;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0px;
   text-align: center;
   padding: 0.3em 0.3em;
   width: 8%;
@@ -289,7 +102,6 @@ ul.nav.navbar-nav li .visit-give-mobile {
   background: $gray;
   color: $white;
   font-size: 1.0em;
-  border-radius: 5px 5px 5px 5px;
   margin: 0.75em 0.25em 0em 0em;
   text-align: center;
   width: 99%;
@@ -309,7 +121,6 @@ ul.nav.navbar-nav li .visit-give-mobile {
   background: #d11242;
   color: white;
   font-size: 1.0em;
-  border-radius: 5px 5px 5px 5px;
   margin: 0.75em 0.25em 0.4em 0em;
   text-align: center;
   width: 99%;
@@ -330,128 +141,6 @@ ul.nav.navbar-nav li .visit-give-mobile {
   height:35px;
   float: left;
 }
-
-//#search-input #search-text {
-//  height: 14px;
-//  border-style: none;
-//  border-color: inherit;
-//  border-width: 0;
-//  width: 207px;
-//  margin-top: 3px;
-//  font-family: 'Gotham A', 'Gotham B', sans-serif;
-//  font-style: normal;
-//  font-weight: 400;
-//  font-size: 1.0em;
-//  color: #bcbcbc;
-//  letter-spacing: 0px;
-//}
-
-//#search-input #autoSuggestResults {
-//  display: none;
-//  position: absolute;
-//  z-index: 2;
-//  width: 794px;
-//  margin-left: 15px;
-//  margin-top: 36px;
-//  background-color: white;
-//  border: 1px solid #999;
-//  box-shadow: 3px 3px 3px #AAA;
-//  padding-top: 3px;
-//  padding-bottom: 3px;
-//  font-family: Verdana;
-//  font-size: 8pt;
-//  color: #999;
-//  border-bottom-right-radius: 2px;
-//  border-bottom-left-radius: 2px;
-//}
-
-//.gobutton #searchGoLink.disableGoButton {
-//  visibility: hidden;
-//}
-
-//.fa-bars {
-//  // background-color: #003a6e;
-//  // padding: 24px;
-//  // margin: -17px -30px -16px -16px;
-//}
-
-//.fa-search-mobile {
-//  color: #fff !important;
-//  font-size: 20px !important;
-//  display: inline-block;
-//  float: right;
-//  padding-right: 20px;
-//  padding-left: 20px;
-//  padding-bottom: 24px;
-//  padding-top: 1.3em;
-//}
-
-// .search-desktop {
-//   display: none !important;
-// }
-
-//.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-//    max-height: none;
-//}
-
-//.nav > a > li:focus, .nav > a > li:hover {
-//    background-color: transparent;
-//}
-
-//.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
-//    background-color: transparent;
-//    border-color: transparent;
-//}
-
-//.search-input-mobile {
-//  display: none;
-//}
-
-//#content-nav {
-//  font-family: 'Gotham A', 'Gotham B', sans-serif;
-//  font-style: normal;
-//  letter-spacing: 0px;
-//  font-weight: 700;
-//  padding-left: 3px;
-//  color: #6E6E6E;
-//  border: none;
-//  width: 100%;
-//}
-
-//#content-nav-mobile {
-//  font-family: 'Gotham A', 'Gotham B', sans-serif;
-//  font-style: normal;
-//  letter-spacing: 0px;
-//  font-weight: 500;
-//  padding-left: 3px;
-//  color: #6E6E6E;
-//  border: none;
-//  width: 100%;
-//  display: none;
-//}
-
-//.fa-search-opened-mobile {
-//  color: #007dc3 !important;
-//  padding-top: 10px;
-//  font-size: 1.2em;
-//  padding-right: 30px;
-//  padding-left: 50px;
-//  padding-bottom: 12px;
-//  top: 0.0em;
-//  border-radius: 5px 0 0 5px;
-//  cursor: unset;
-//  z-index: 1;
-//}
-
-//.menu-last {
-//  margin-right: 0em;
-//  border-right: none !important;
-//}
-
-//.nav > a > li {
-//  padding-left: 0px;
-//  padding-top: 3px;
-//}
 
 
 
@@ -666,7 +355,7 @@ span.fa.fa-search.search-desktop {
   background: #555555;
   color: #fff;
   font-size: 1.0em;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 0px;
   margin: 0.75em 0.25em 0em 0em;
   text-align: center;
   width: 99%;
@@ -965,22 +654,6 @@ body{
   .pushdown-menu {
       height: 29em;
   }
-  // .fac-staf-stu-mobile {
-  //   display: none;
-  // }
-//  #content-nav {
-//    letter-spacing: 0px;
-//    font-weight: 500;
-//  }
-//  .mobile-header {
-//    margin-top: 5px;
-//  }
-
-//  .athletics-header {
-//    margin-top: 5px;
-//    padding-left: 0px;
-//    padding-right: 0px;
-//  }
 
   #content-nav #nav-search-close {
       top: -3.2em;
@@ -1024,17 +697,10 @@ body{
     color: #fff;
   }
   a.btn.btn-default.visit-give-mobile, a.btn.btn-default.give-mobile, a.btn.btn-default.apply-mobile {
-    // width: 9%;
-    // position: relative;
-    // top: -5.7em;
     text-align: center;
-    // border-radius: 0 0 10px 10px;
-    // padding: 0.3em 1.2em !important;
     text-transform: uppercase;
-
     width: 9% !important;
     top: -110px;
-    border-radius: 0 0 10px 10px !important;
     padding: 0.3em 1.2em !important;
   }
   .visit-give-mobile, .apply-mobile {
@@ -1066,7 +732,7 @@ body{
   ul.fac-staf-stu-mobile li a, .fac-staf-stu-mobile li.hide-pipe {
     font-family: 'Gotham A', 'Gotham B', sans-serif;
     font-style: normal !important;
-    font-weight: 400 !important;
+    font-weight: 200 !important;
     letter-spacing: 0px !important;
     color: #fff !important;
     font-size: 16px !important;
@@ -1077,7 +743,6 @@ body{
     text-decoration: none;
     font-weight: 600;
     font-size: 17px;
-    // letter-spacing: 1px;
   }
   .dropdown-menu > li > a {
     font-size: 0.8em !important;
@@ -1166,61 +831,26 @@ body{
   font-size: 1.2em;
 
   }
-  // #content-nav #search-input input[type=text] {
-  //   width: 89em;
-  // }
-  // #content-nav #nav-search-close {
-  //     top: -67px;
-  //     left: 10em;
-  // }
-  // #content-nav #search-input .search-button {
-  //     top: -3.3em;
-  //     left: 14em;
-  // }
-  // a .pushdown-menu {
-  //     font-weight: 500;
-  //     font-size: 0.8em;
-  // }
-  // #nav-faculty {
-  //   width: 11em;
-  // }
-  // #nav-admissions {
-  //   width: 15em;
-  // }
-  // #nav-academics {
-  //   width: 14em;
-  // }
-  // #nav-campus {
-  //   width: 11em;
-  // }
-  // #nav-alumni {
-  //   width: 12em;
-  // }
+
   a.btn.btn-default.visit-give-mobile {
       right: 27.77%;
       width: 9% !important;
       top: -110px;
-      border-radius: 0 0 10px 10px !important;
       padding: 0.3em 1.2em !important;
   }
   a.btn.btn-default.give-mobile {
       right: 18.6%;
       width: 9% !important;
       top: -110px;
-      border-radius: 0 0 10px 10px !important;
       padding: 0.3em 1.2em !important;
   }
   a.btn.btn-default.apply-mobile {
       right: 9.4%;
       width: 9% !important;
       top: -110px;
-      border-radius: 0 0 10px 10px !important;
       padding: 0.3em 1.2em !important;
   }
 
-//  .pushdown-menu {
-//      height: 29em;
-//  }
   a.dropdown-toggle, ul.nav.navbar-nav li a {
     letter-spacing: 1px;
     font-size: 18px;
@@ -1235,7 +865,6 @@ body{
 .msudenver_logo_change {
     height:50px;
   }
-
 
 .skip-content {
     position: absolute;

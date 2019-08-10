@@ -1,11 +1,20 @@
 .hero {
   position: relative;
-  margin-bottom: 15px;
-  background: rgba(0, 0, 0, .5);
   }
 
-.content .hero > .img-responsive {
+  .hero p {
+    padding: 0 2%;
+  }
+  .hero span > :first-child {
+    padding-top: 2% !important;
+  }
+  .hero span > :last-child {
+    padding-bottom: 2% !important;
+  }
+
+.hero > .img-responsive {
   margin-bottom: 0px;
+  width:100%
 }
 
 .hero-caption {
@@ -35,5 +44,15 @@
     right: 0;
     left: auto;
     bottom: 0 !important;
+    padding: 2%;
+  }
+  .hero p {
+    padding: inherit;
+  }
+  .hero span > :first-child {
+    padding-top: inherit;
+  }
+  .hero span > :last-child {
+    padding-bottom: inherit;
   }
 }
