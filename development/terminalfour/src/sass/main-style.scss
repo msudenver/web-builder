@@ -67,6 +67,11 @@ header {
 /** Responsive Overrides **/
 @import "admissionsHomepage/responsive-overrides.scss";
 
+
+/** Viewbook Styles **/
+@import "viewbook/background-panel.scss";
+
+
 /** Newsroom Homepage Styles **/
 
 /** Components **/
@@ -82,10 +87,10 @@ header {
 @import "print";
 
 // styles below this need to be removed once everything compiled into one stylesheet
-.content .img-responsive {
-    padding: 0 15px;
-}
+// .content .img-responsive {
+//     padding: 0 15px;
+// }
 
-.well img.img-responsive {
-    padding-left: 0px;
-}
+// .well img.img-responsive {
+//     padding-left: 0px;
+// }

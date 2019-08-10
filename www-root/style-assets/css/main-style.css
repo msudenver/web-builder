@@ -11823,6 +11823,7 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
     top: 10%;
   }
 }
+
 /** Newsroom Homepage Styles **/
 /** Components **/
 /** Responsive Overrides **/
@@ -12705,13 +12706,6 @@ hr.pres-inner-header {
   .carousel-inner {
     display: none;
   }
-}
-.content .img-responsive {
-  padding: 0 15px;
-}
-
-.well img.img-responsive {
-  padding-left: 0px;
 }
 
 /*# sourceMappingURL=main-style.css.map */
