@@ -250,7 +250,8 @@ $(window).scroll(function(){
                                    alt="Great news story headline" />
                              </div>
                              <div class="news-feature-text">
-                                 <h3 class="feature-heading news-feature-heading">Redefining working class</h3>
+                                 <h3 class="feature-heading news-feature-heading">Redefining working class redefining
+                                   working class</h3>
                                  <h4>Vic Vela is a recognizable voice on Colorado public radio - he's also a coice of hope for recovering addicts.</h4>
                              </div>
                              </a>
@@ -612,8 +613,22 @@ $(window).scroll(function(){
                 interval: 5000,
                 keyboard: true
             });
-			$('.homepage-feature-caption-item > div').matchHeight();
-			$('.at-a-glance-item').matchHeight();
+            $('.homepage-feature-caption-item > div').matchHeight();
+            $('.at-a-glance-item').matchHeight();
+
+            // Match feature news height
+            $('.feature-heading.news-feature-heading').matchHeight();
+
+            // Toggle transition effect
+            $('.footer-promo-bg').mouseenter(function () {
+              $(this).find('.footer-promo-heading').animate({opacity: 0}, 700);
+              $(this).find('.footer-promo-text').animate({opacity: 1}, 700);
+            });
+
+            $('.footer-promo-bg').mouseleave(function () {
+              $(this).find('.footer-promo-heading').animate({opacity: 1}, 700);
+              $(this).find('.footer-promo-text').animate({opacity: 0}, 700);
+            });
         });
         </script>
 

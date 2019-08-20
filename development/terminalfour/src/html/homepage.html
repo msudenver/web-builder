@@ -32,8 +32,22 @@
                 interval: 5000,
                 keyboard: true
             });
-			$('.homepage-feature-caption-item > div').matchHeight();
-			$('.at-a-glance-item').matchHeight();
+            $('.homepage-feature-caption-item > div').matchHeight();
+            $('.at-a-glance-item').matchHeight();
+
+            // Match feature news height
+            $('.feature-heading.news-feature-heading').matchHeight();
+
+            // Toggle transition effect
+            $('.footer-promo-bg').mouseenter(function () {
+              $(this).find('.footer-promo-heading').animate({opacity: 0}, 700);
+              $(this).find('.footer-promo-text').animate({opacity: 1}, 700);
+            });
+
+            $('.footer-promo-bg').mouseleave(function () {
+              $(this).find('.footer-promo-heading').animate({opacity: 1}, 700);
+              $(this).find('.footer-promo-text').animate({opacity: 0}, 700);
+            });
         });
         </script>
 

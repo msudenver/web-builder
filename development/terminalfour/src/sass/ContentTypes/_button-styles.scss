@@ -43,9 +43,10 @@ transition: opacity 250ms ease-in-out;
   padding: 32px 0;
 }
 .custom-red-btn:hover {
-  opacity: 0.7;
-  transition: opacity 250ms ease-in-out;
-  color: #D11242;
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #DE2554;
+  border-color: #D11242;
 }
 .custom-blue-btn {
   margin-bottom: 15px;
@@ -61,9 +62,10 @@ transition: opacity 250ms ease-in-out;
   padding: 32px 0;
 }
 .custom-blue-btn:hover {
-  opacity: 0.7;
-  transition: opacity 250ms ease-in-out;
-  color: #002855;
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #00418B;
+  border-color: #002855;
 }
 .custom-grey-btn {
   margin-bottom: 15px;
@@ -79,9 +81,10 @@ transition: opacity 250ms ease-in-out;
   padding: 32px 0;
 }
 .custom-grey-btn:hover {
-  opacity: 0.7;
-  transition: opacity 250ms ease-in-out;
-  color: #717073;
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #969696;
+  border-color: #717073;
 }
 .custom-black-btn {
   margin-bottom: 15px;
@@ -97,9 +100,10 @@ transition: opacity 250ms ease-in-out;
   padding: 32px 0;
 }
 .custom-black-btn:hover {
-  opacity: 0.7;
-  transition: opacity 250ms ease-in-out;
-  color: #000000;
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #393939;
+  border-color: #000000;
 }
 
 .contact-info button {

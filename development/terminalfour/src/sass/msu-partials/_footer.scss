@@ -73,6 +73,7 @@ footer {
 }
 .footer-promo-heading,
 .footer-promo-text {
+    //transition: opacity 1s ease-in-out;
     font-family: $font-family-sans-serif;
     font-weight: 500;
     font-size: torem(18);
@@ -97,16 +98,19 @@ footer {
 }
 .footer-promo-text {
     display: none;
+    opacity: 0;
     background-color: rgba($white, .8);
 }
 .footer-promo-bg:hover,
 .footer-promo-bg:focus,
 .footer-promo-bg:active {
     .footer-promo-heading {
-        display: none;
+      display: none;
+      //opacity: 0;
     }
     .footer-promo-text {
-        display: table;
+      display: table;
+      //opacity: 1;
     }
 
 }

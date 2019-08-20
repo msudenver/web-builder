@@ -9487,6 +9487,7 @@ footer {
 
 .footer-promo-text {
   display: none;
+  opacity: 0;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -9802,9 +9803,10 @@ footer {
 }
 
 .custom-red-btn:hover {
-  opacity: 0.7;
-  transition: opacity 250ms ease-in-out;
-  color: #D11242;
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #DE2554;
+  border-color: #D11242;
 }
 
 .custom-blue-btn {
@@ -9822,9 +9824,10 @@ footer {
 }
 
 .custom-blue-btn:hover {
-  opacity: 0.7;
-  transition: opacity 250ms ease-in-out;
-  color: #002855;
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #00418B;
+  border-color: #002855;
 }
 
 .custom-grey-btn {
@@ -9842,9 +9845,10 @@ footer {
 }
 
 .custom-grey-btn:hover {
-  opacity: 0.7;
-  transition: opacity 250ms ease-in-out;
-  color: #717073;
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #969696;
+  border-color: #717073;
 }
 
 .custom-black-btn {
@@ -9862,9 +9866,10 @@ footer {
 }
 
 .custom-black-btn:hover {
-  opacity: 0.7;
-  transition: opacity 250ms ease-in-out;
-  color: #000000;
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #393939;
+  border-color: #000000;
 }
 
 .contact-info button {
@@ -10927,6 +10932,10 @@ table.caption {
 .social_well {
   border-color: #D6DEEA !important;
 }
+.social_well img {
+  width: 32px;
+  height: 32px;
+}
 
 @media (min-width: 768px) {
   .promo-center {
@@ -11413,6 +11422,12 @@ hr.style-one {
 .panel-slide .panel-body .content-inner .content-words hr {
   border-top: 1px solid #879CBA;
 }
+.panel-slide .panel-body .content-inner .content-words p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+}
 
 .siteheader {
   color: #fff;
@@ -11745,7 +11760,7 @@ h4 {
 }
 
 .panel-collapse {
-  padding: 1rem;
+  padding: 0 1rem;
 }
 .panel-collapse p {
   font-weight: 400;
@@ -11817,7 +11832,7 @@ h4 {
 }
 
 .panel-collapse {
-  padding: 1rem;
+  padding: 0 1rem;
 }
 .panel-collapse p {
   font-weight: 400;
