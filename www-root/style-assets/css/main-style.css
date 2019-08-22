@@ -11387,46 +11387,61 @@ hr.style-one {
   font-size: 40px;
   margin-top: -0.5rem;
 }
-.panel-slide .panel-body {
+.panel-slide .panel-collapse {
   background-color: #EFEFEF;
+}
+.panel-slide .panel-collapse .panel-body {
+  text-align: left;
+  background-color: #EFEFEF !important;
+}
+
+.panel-profile-board {
+  border-color: #CBCBCB;
+}
+.panel-profile-board .panel-body {
+  background-color: #ffffff;
   text-align: left;
 }
-.panel-slide .panel-body .content-inner {
+.panel-profile-board .panel-body .content-inner {
   display: table;
 }
-.panel-slide .panel-body .content-inner .content-img {
+.panel-profile-board .panel-body .content-inner .content-img {
   width: 40%;
   float: left;
   padding: 1rem;
 }
-.panel-slide .panel-body .content-inner .content-img img {
+.panel-profile-board .panel-body .content-inner .content-img img {
   width: 100%;
   height: auto;
 }
-.panel-slide .panel-body .content-inner .content-words {
+.panel-profile-board .panel-body .content-inner .content-words {
   width: 60%;
   float: right;
   padding: 1rem;
 }
-.panel-slide .panel-body .content-inner .content-words h3 {
+.panel-profile-board .panel-body .content-inner .content-words h3 {
   font-weight: 700;
   font-size: 22px;
   color: #002855;
   margin-bottom: 0;
 }
-.panel-slide .panel-body .content-inner .content-words h4 {
+.panel-profile-board .panel-body .content-inner .content-words h4 {
   font-weight: 700;
   font-size: 16px;
   color: #717073;
 }
-.panel-slide .panel-body .content-inner .content-words hr {
+.panel-profile-board .panel-body .content-inner .content-words hr {
   border-top: 1px solid #879CBA;
 }
-.panel-slide .panel-body .content-inner .content-words p {
+.panel-profile-board .panel-body .content-inner .content-words p {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
   font-weight: 700;
+  padding: 0;
+}
+.panel-profile-board .panel-body p {
+  padding: 0 1rem;
 }
 
 .siteheader {
