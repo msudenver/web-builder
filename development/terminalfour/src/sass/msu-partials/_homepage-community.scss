@@ -1,13 +1,39 @@
 /* Homepage community compontent */
 #homepage-community {
     background-color: $msu-blue;
+    background-size: cover;
+    background-position: center center;
+    .feature-heading-large {
+      font-size: torem(50);
+      line-height: torem(50);
+      font-weight: 400;
+      color: white;
+      margin-bottom: torem(60);
+    }
+    .main-button {
+      border-color: $white;
+      color: $white;
+
+      a {
+        color: $white;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $white;
+
+        a {
+          color: $primaryBlue;
+        }
+      }
+    }
 }
 .hompage-community {
     @include make-xs-column(12);
 }
 @media (min-width: $screen-md-min) {
     #homepage-community {
-        padding: 50px percentage(1/$grid-columns) 30px;
-        padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(30);
+        padding: torem(100, $small-unit) percentage(1/$grid-columns) torem(60, $small-unit);
     }
 }

@@ -1,14 +1,28 @@
 /* User Profile */
   .contact-info > h4 {
-    line-height: 20pt !important;
-    font-size: 18pt !important;
-    font-weight: 400 !important;
-    color: #323e48 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: #002855 !important;
+
+    small {
+      font-weight: 400;
+      font-size: 14px;
+      color: #000000;
+    }
 	}
 
   .contact-info > p {
     line-height: 16pt !important;
     font-size:12pt !important;
+
+    span {
+      color: #d11242;
+    }
+
+    a {
+      font-weight: 400;
+      color: #000000;
+    }
   }
 
   .contact-card {
@@ -17,7 +31,7 @@
 
  .contact-card > * >img.img-responsive {
     width: 155px;
-    border-radius: 50%;
+    border-radius: 0;
     padding: 5px;
     display: inline;
  }
@@ -26,5 +40,38 @@
     margin-top: 10px;
     margin-bottom: 10px;
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #879CBA;
+  }
+
+  .contact-info .btn {
+    background-color: transparent;
+    padding: 0;
+    color: #007BC6;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 16px;
+
+    span.fa-chevron-down {
+      font-size: 20px;
+    }
+  }
+
+  .contact-info .btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .panel-collapse {
+    padding: 0 1rem;
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000;
+
+      strong {
+        font-weight: 700;
+      }
+    }
   }
