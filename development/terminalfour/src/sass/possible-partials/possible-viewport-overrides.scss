@@ -1,0 +1,48 @@
+@media only screen and (min-width: 544px) {
+  .possible-word {
+    letter-spacing: 1.5px;
+    margin-left: -5px;
+  }
+
+  .possible-word-reversed {
+    margin-left: -2px;
+  }
+
+  .possible-indicator {
+    top: 15vh;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .introduction {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+  // .university-logo{
+  //   max-width: 400px;
+  //   margin-top: 20vh;
+  //   padding-right: 10vw
+  // }
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .possible-indicator {
+    top: 10vh;
+  }
+
+  .possible-call-to-action{
+  .btn {
+    border: solid 3px;
+    font-size: 1.5rem;
+  }
+
+  .btn:hover {
+    font-size: 1.5rem;
+  }
+}
+}
