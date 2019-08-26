@@ -245,9 +245,12 @@ $(window).scroll(function(){
  -->
           <div class="row">
     <div class="col-xs-12 hero">
-        <video class="video-responsive" muted='true' loop='true' autoplay='true'>
-            <source src="https://www.msudenver.edu/media/marketingandcommunications/strategicplan2025/Drone_for_web_2.mp4" type='video/mp4'/>
+        <video id="hero-vid" class="video-responsive visible-md visible-lg" muted='true' loop='true' preload='metadata' autoplay='true'>
+            <source src="https://www.msudenver.edu//media/marketingandcommunications/strategicplan2025/Drone_for_web_cropped_1.mp4" type='video/mp4'/>
         </video>
+
+        <img class="img-responsive hidden-md hidden-lg" src="http://msudenver.edu//media/marketingandcommunications/strategicplan2025/images/20190409---strategic2025-compressor.jpg" alt="work study help desk" style="   " />
+        
         <div class="hero-caption"><h3>Body of Page Hero Image Content Type</h3>
             <p>Praesent mauris. Fusce nec tellus sed augue semper porta.</p></div>
         </div>
@@ -263,6 +266,22 @@ video {
   width:100%
 } */
 </style>
+
+<script>
+    const heroVid = document.getElementById("hero-vid")
+
+    window.innerWidth < 992 ? no_load() : yes_load()
+
+    const no_load = () => {
+        heroVid.pause()
+    }
+
+    const yes_load = () => {
+        heroVid.load()
+        heroVid.play()
+    }
+
+</script>
 
             <!-- BEGINS HERO IMAGE -->
               <div class="row">
