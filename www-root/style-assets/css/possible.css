@@ -106,6 +106,63 @@ section {
   color: #fff;
 }
 
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: none;
+}
+
+.card-possible {
+  color: white;
+  background-color: #D11242;
+  padding: 50px 15px;
+  margin: 15px 0px;
+}
+.card-possible p {
+  color: white;
+}
+
+#possible-card-1 > .modal-dialog {
+  background: url(../media/possible/Tivoli.jpg) no-repeat center center;
+  height: auto;
+}
+
+.modal-content {
+  background-color: #ffffffde;
+  background-clip: padding-box;
+  margin: 50px;
+  padding: 25px 30px;
+}
+.modal-content p {
+  font-size: 1.2rem;
+}
+.modal-content .btn {
+  padding: 10px;
+}
+.modal-content .btn:hover {
+  padding: 10px;
+}
+
+.btn {
+  border: solid 3px #00447c;
+  padding: 20px;
+  color: #00447c;
+  font-size: 1rem;
+  border-radius: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.btn:hover {
+  border: solid 3px #00447c;
+  padding: 20px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0px;
+  background: #00447c;
+}
+
 .possible-call-to-action {
   background: url(../media/possible/open-house-student.jpg) no-repeat center center fixed;
   display: table;
@@ -122,23 +179,6 @@ section {
   padding: 25px 30px;
   margin-top: 15vh;
   margin-bottom: 15vh;
-}
-.possible-call-to-action .btn {
-  border: solid 3px #00447c;
-  padding: 20px;
-  color: #00447c;
-  font-size: 1rem;
-  border-radius: 0px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.possible-call-to-action .btn:hover {
-  border: solid 3px #00447c;
-  padding: 20px;
-  color: #fff;
-  font-size: 1rem;
-  border-radius: 0px;
-  background: #00447c;
 }
 
 .footer {
@@ -158,6 +198,10 @@ section {
 }
 
 @media only screen and (min-width: 544px) {
+  .modal-dialog {
+    max-width: 80vw;
+  }
+
   .possible-word {
     letter-spacing: 1.5px;
     margin-left: -5px;

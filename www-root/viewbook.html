@@ -16,18 +16,19 @@
 <a href="#content" class="skip-content">Skip to main content</a>
 <header>
    <div class="navbar-fixed-top ">
-      <div class="" style="background-image:url(https://msudenver.edu/media/newsiteassets/images/header_asphalt.png); background-size: 100%;" alt="Asphalt Image">
+      <div class="main-site-header">
          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
          <span class="sr-only">Toggle quick links navigation</span>
          <span class="fa fa-bars"></span>
          </button>
          <div class="row container-fluid">
             <div class="col-xs-8">
-               <a href="/"> <img class="msudenver_logo" src="https://msudenver.edu/media/newsiteassets/images/msudenver_logo_header.svg" alt="MSU Denver Homepage"> </a>
+               <a href="/"> <img class="msudenver_logo" src="style-assets/media/template-assets/msu-denver-logo.svg" alt="MSU Denver Homepage"> </a>
             </div>
          </div>
       </div>
       <nav class="navbar nav-header">
+         <div class="row container-fluid">
          <!-- Brand and toggle get grouped for better mobile display -->
          <!-- Collect the nav links, forms, and other content for toggling -->
          <div class="" id="bs-example-navbar-collapse-1">
@@ -36,15 +37,18 @@
                <a href="/giving" type="button" class="btn btn-default visit-give-mobile give-mobile ">Give</a>
                <a href="/admissions" type="button" class="btn btn-default apply-mobile">Apply</a>
            </div>
-            <ul id="menu-nav" class="nav navbar-nav">
+           <ul class="additional-links nav navbar-nav">
               <li class="collapse navbar-collapse">
-
-                 <ul class="fac-staf-stu-mobile">
-                    <li><a href="/studenthub">Current Students</a></li>
-                    <li class="hide-pipe">|</li>
-                    <li><a href="/facstaff">Faculty &amp; Staff</a></li>
-                 </ul>
+                <ul class="fac-staf-stu-mobile">
+                  <li><a href="/studenthub">Current Students</a></li>
+                  <li class="hide-pipe">|</li>
+                  <li><a href="/facstaff">Faculty &amp; Staff</a></li>
+                  <li class="hide-pipe">|</li>
+                  <li><a href="/employers">Employers</a></li>
+                </ul>
               </li>
+           </ul>
+            <ul id="menu-nav" class="nav navbar-nav">
                <li class="dropdown collapse navbar-collapse">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <i role="presentation" class="fa fa-angle-down fa-lg"></i></a>
                   <ul class="dropdown-menu">
@@ -112,12 +116,14 @@
                <li id="nav-search" type="button">
                  <a href="#" data-toggle="modal" data-target="#searchModal">
                    <label for="nav-search" class="sr-only">Search MSU Denver dot e d u</label>
-                   <span class="search-button-text">SEARCH   </span><span class="fa fa-search search-desktop"></span>
+                   <span class="search-button-text"><span class="fa fa-search search-desktop"></span> <span
+                       class="search-text">SEARCH</span></span>
                  </a>
                </li>
             </ul>
          </div>
          <!-- /.navbar-collapse -->
+         </div>
       </nav>
    </div>
 </header>
@@ -128,7 +134,8 @@
    <div class="modal-dialog" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">close search  <b>&times;</b></span></button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">close 
+                 <b>&times;</b></span></button>
          </div>
          <div class="modal-body">
             <form action="https://www.msudenver.edu/search" aria-label="search">
@@ -138,16 +145,13 @@
                <button type="submit" class="fa fa-search submit-desktop" aria-label="submit search"></button>
             </form>
          </div>
-         <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-         </div> -->
       </div>
    </div>
 </div>
 
 <!-- allow mobile menu dropdown to scroll -->
 <script>
-$('#bs-example-navbar-collapse-1').css('max-height',$(window).height()-79);
+   // $('#bs-example-navbar-collapse-1').css('max-height',$(window).height()-79);
 </script>
 
 <script>
@@ -360,7 +364,124 @@ $(window).scroll(function(){
 </section>
 
 
+  <!-- ** Site wide footer ** -->
 
+    <footer>
+    <!-- footer-bg-mob -->
+    <div class="footer-bg-mob">
+              <section class="footer-container">
+                  <div class="footer-promos-row">
+                      <!-- Footer promo -->
+                      <div class="footer-promo" >
+                          <a href="#" class="footer-promo-bg"
+                            style="background-image:url(style-assets/media/template-assets/be-a-champion.png)">
+                              <h2 class="footer-promo-heading"><span>Be a champion</span></h2>
+                              <p class="footer-promo-text"><span>Create a strong collective voice for MSU Denver</span>
+                              </p>
+                          </a>
+                      </div>
+                      <!-- // Footer promo -->
+                      <!-- Footer promo -->
+                      <div class="footer-promo">
+                          <a href="#" class="footer-promo-bg"
+                            style="background-image:url(style-assets/media/template-assets/students-on-campus.png)">
+                              <h2 class="footer-promo-heading"><span>Make a gift</span></h2>
+                 
+                              <p class="footer-promo-text"><span>Create new possibilities for our students</span></p>
+                      </a>
+                        </div>
+                      <!-- // Footer promo --><!-- Footer promo -->
+                      <div class="footer-promo">
+                          <a href="#" class="footer-promo-bg"
+                            style="background-image:url(style-assets/media/template-assets/register-online.jpg)">
+                              <h2 class="footer-promo-heading"><span>MSU Denver's Next President</span></h2>
+                       
+                              <p class="footer-promo-text"><span>Your transformation begins at MSU denver</span></p>
+                 
+                      </a>
+
+                    </div>
+                      <!-- // Footer promo -->
+
+                  </div><!-- // .footer-promos-row (row) -->
+
+                  <div class="footer-menu-row">
+                     <div class="footer-campus-info visible-xs">
+
+                            <p><a href="javascript:void(0)">Metropolitan State University of Denver</a></p>
+                            <p><i role="presentation" class="fa fa-map-marker fa-lg"></i> <a href="javascript:void(0)">Denver, Colorado</a></p>
+                            <p><i role="presentation" class="fa fa-phone fa-lg"></i> <a href="javascript:void(0)">303-556-5740</a></p>
+                            <p><i role="presentation" class="fa fa-comments chat-icon fa-lg"></i> <a onclick="javascript:void(0)" href="javascript:void(0)">Chat with Us (8 a.m.&ndash;5 p.m. MT, Weekdays)</a></p>
+
+
+                      </div><!-- .campus-info  -->
+                      <div class="footer-links">
+                          <div class="footer-links-row">
+                              <div class="footer-links-col ">
+                                <ul class="footer-nav list-unstyled">
+                                    <li><a href="javascript:void(0)" id="Footer-About">About</a></li>
+                                    <li><a href="javascript:void(0)" id="Footer-DegreePrograms">Degree Programs</a></li>
+                                    <li><a href="javascript:void(0)" id="Footer-Cost">Cost</a></li>
+                                    <li><a href="javascript:void(0)" id="Footer-FinancialAid">Financial Aid</a></li>
+                                    <li><a href="javascript:void(0)" id="Footer-Bookstore" target="_blank">Bookstore</a></li>
+                                </ul>
+                              </div>
+                              <div class="footer-links-col">
+                                <ul class="footer-nav list-unstyled">
+                                    <li><a href="javascript:void(0)" id="Footer-Tours">Tours</a></li>
+                                    <li><a href="javascript:void(0)" id="Footer-Directions">Directions</a></li>
+                                    <li><a href="javascript:void(0)" id="Footer-Parking">Parking</a></li>
+                                    <li><a href="javascript:void(0)" id="Footer-Careers" target="_blank">Careers</a></li>
+                                    <li><a href="javascript:void(0)">Safety</a></li>
+                                </ul>
+                              </div>
+                              <div class="social-mobile footer-links visible-xs">
+                                  <ul class="list-unstyled footer-social">
+                                    <li><a href="javascript:void(0)" target="_blank"><i role="presentation" class="fa fa-facebook-square fa-2x"></i></a></li>
+                                    <li><a href="javascript:void(0)" target="_blank"><i role="presentation" class="fa fa-twitter-square fa-2x"></i></a></li>
+                                    <li><a href="javascript:void(0)" target="_blank"><i role="presentation" class="fa fa-linkedin-square fa-2x"></i></a></li>
+                                    <li><a href="javascript:void(0)" target="_blank"><i role="presentation" class="fa fa-instagram fa-2x"></i></a></li>
+                         
+                                    <li><a href="javascript:void(0)" target="_blank"><i role="presentation" class="fa fa-youtube-square fa-2x"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div><!-- // .footer-links-row -->
+
+                      </div><!-- // .footer-links (col) -->
+
+                      <div class="footer-logo">
+                          <p><a href="javascript:void(0)">
+                            <img src="style-assets/media/template-assets/msu-denver-logo-footer.svg"
+                              class="footer-logo-img" alt="MSU logo" />
+                          </a></p>
+                          <p class="privacy-statement"><a href="javascript:void(0)"><small>&copy; MSU Denver</small></a><br><a href="javascript:void(0)"><small>Privacy Statement</small></a></p>
+
+                      </div><!-- .footer-logo -->
+
+                      <div class="footer-campus-info hidden-xs">
+
+                            <p><a href="javascript:void(0)">Metropolitan State University of Denver</a></p>
+                            <p><i role="presentation" class="fa fa-map-marker fa-lg"></i> <a href="javascript:void(0)">Denver, Colorado</a></p>
+                            <p><i role="presentation" class="fa fa-phone fa-lg"></i> <a href="javascript:void(0)">303-556-5740</a></p>
+                            <p><i role="presentation" class="fa fa-comments chat-icon fa-lg"></i> <a onclick="javascript:void(0)" href="javascript:void(0)">Chat with Us (8 a.m.&ndash;5 p.m. MT, Weekdays)</a></p>
+                            <ul class="list-unstyled footer-social">
+                                    <li><a href="javascript:void(0)" target="_blank"><i role="presentation" class="fa fa-facebook-square fa-2x"></i></a></li>
+                                    <li><a href="javascript:void(0)" target="_blank"><i role="presentation" class="fa fa-twitter-square fa-2x"></i></a></li>
+                                    <li><a href="javascript:void(0)" target="_blank"><i role="presentation" class="fa fa-linkedin-square fa-2x"></i></a></li>
+                                    <li><a href="javascript:void(0)" target="_blank"><i role="presentation" class="fa fa-instagram fa-2x"></i></a></li>
+                
+                                    <li><a href="javascript:void(0)" target="_blank"><i role="presentation" class="fa fa-youtube-square fa-2x"></i></a></li>
+                            </ul>
+
+                      </div><!-- .campus-info  -->
+
+
+                  </div><!-- .row -->
+
+
+              </section><!-- footer .container -->
+    </div>
+    </footer>
 
   <script src="style-assets/lib/jquery/jquery.min.js"></script>
   <script src="style-assets/lib/jquery-match-height/jquery.matchHeight.js"></script>

@@ -1,4 +1,8 @@
 @media only screen and (min-width: 544px) {
+  .modal-dialog {
+      max-width: 80vw;
+  }
+
   .possible-word {
     letter-spacing: 1.5px;
     margin-left: -5px;
