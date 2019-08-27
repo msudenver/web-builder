@@ -12355,6 +12355,66 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
     top: 10%;
   }
 }
+/** Viewbook Styles **/
+.background-panel {
+  background-size: cover;
+  border: 10px solid white;
+  padding: 20px 5%;
+  height: 20vw;
+  display: table;
+  transition: transform .4s;
+}
+.background-panel .img-responsive {
+  display: inline;
+}
+.background-panel span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.background-panel h2, .background-panel h3, .background-panel h4, .background-panel h5, .background-panel p, .background-panel a {
+  color: white;
+}
+.background-panel h3 {
+  font-size: 1.5rem;
+}
+.background-panel p {
+  font-size: 1.25rem;
+}
+.background-panel a {
+  float: right;
+  font-size: 1.6rem;
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.background-panel a {
+  transition: transform .4s;
+}
+
+.background-panel a:hover {
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.background-panel-red {
+  background-color: #d11242 !important;
+}
+
+.background-panel-blue {
+  background-color: #003a6e !important;
+}
+
+.background-panel-gray {
+  background-color: #717073 !important;
+}
+
+.background-panel-inverse h2, .background-panel-inverse h3, .background-panel-inverse h4, .background-panel-inverse h5, .background-panel-inverse p, .background-panel-inverse a {
+  color: #003a6e !important;
+}
 
 /** Newsroom Homepage Styles **/
 /** Components **/
@@ -12748,9 +12808,9 @@ hr.pres-links {
 }
 
 .pres-button-interact {
-  display: ┬átable-cell;
-  vertical-align: ┬ámiddle;
-  text-align: ┬ácenter;
+  display:  table-cell;
+  vertical-align:  middle;
+  text-align:  center;
 }
 
 .president-page .form-group {
