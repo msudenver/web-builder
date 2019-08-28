@@ -204,25 +204,27 @@
    // $('#bs-example-navbar-collapse-1').css('max-height',$(window).height()-79);
 </script>
 
+
 <script>
-// scrollTop function
 $(window).scroll(function(){
-  var width_threshold = 900;
-  var href = document.location.href;
-  var position = $(window).scrollTop();
-  var width     =  $(window).width();
-  $(".header-fluid").removeClass("header-fluid-change");
-  $(".msudenver_logo").removeClass("msudenver_logo_change");
+   var width_threshold = 900
+   var href = document.location.href 
+   var position = $(window).scrollTop()
+   var width = $(window).width()
+   $(".header-fluid").removeClass("header-fluid-change")
+   $(".msudenver_logo").removeClass("msudenver_logo_change")
 
+   if(position > 15 && width > width_threshold) {
+      $(".header-fluid").toggleClass("header-flud-change")
+      $(".msudenver_logo").toggleClass("msudenver_logo_change")
+   }
 
-  if( position > 15 && width > width_threshold) {
-    $(".header-fluid").toggleClass("header-fluid-change");
-    $(".msudenver_logo").toggleClass("msudenver_logo_change");
-  }
-
-});
+   if($(this).scrollTop() >= 100) 
+      $('.return-to-top').fadeIn(200)
+   else 
+      $('.return-to-top').fadeOut(200)
+})
 </script>
-
   <a href="#content" class="sr-only">Skip to main content</a>
 
 
@@ -1442,7 +1444,41 @@ video {
     </div>
 
 
+  <a href="#top" id="push" class="return-to-top" style="display: none;">
+    <span class="fa-stack fa-2x">
+        <i class="fa fa-chevron-up fa-stack-1x"></i>
+    </span>
+</a>
 
+<style>
+a.return-to-top {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+}
+.fa-chevron-up {
+    background-color: #d11242;
+    border-radius: 50px;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.4);
+    color: white;
+    font-size: 40px;
+}
+</style>
+
+<!-- <script>
+
+
+$(window).scroll(function() {
+    if($(this).scrollTop() >= 100) {
+        $('.return-to-top').fadeIn(200)
+
+    } else {
+        $('.return-to-top').fadeOut(200)
+    }
+})
+
+$(window).addEventListener("hashchange", function(){scrollBy(0, -80)})
+</script> -->
   <!-- ** Site wide footer ** -->
 
     <footer>
