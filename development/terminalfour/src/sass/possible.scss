@@ -93,8 +93,8 @@ section {
 }
 
 .start_your_possible {
-  background-color: #00447c;
   padding-top: 15vh;
+  background-color: #00447c;
   padding-bottom: 15vh;
   height: auto;
   display: table;
@@ -135,16 +135,34 @@ button, [type="button"],// 1
   }
 }
 
-.card-possible:hover {
-  // color: #D11242;
-  background-color: #fff;
-  border: 1px #D11242 solid;
 
+.card-possible-reversed {
+  // color: white;
+  background-color: #fff;
+  padding: 50px 25px;
+  margin: 15px 0;
+  transition: transform 0.4s;
+  border: 1px #D11242 solid;
+  // height:20vh;
   p {
     color: #D11242;
-    // transform: scale(1.1);
+    transition: transform 0.4s;
+  }
+  .btn{
+    width:100%;
   }
 }
+
+// .card-possible:hover {
+//   // color: #D11242;
+//   background-color: #fff;
+//   border: 1px #D11242 solid;
+//
+//   p {
+//     color: #D11242;
+//     // transform: scale(1.1);
+//   }
+// }
 
 #possible-card-1 > .modal-dialog {
   // background: url(../media/possible/Tivoli.jpg) no-repeat center center;
