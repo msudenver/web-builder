@@ -89,7 +89,7 @@ section {
 }
 
 .start_your_possible {
-  background-color: #D11242;
+  background-color: #00447c;
   padding-top: 15vh;
   padding-bottom: 15vh;
   height: auto;
@@ -117,7 +117,7 @@ button, [type="button"],
 
 .card-possible {
   background-color: #D11242;
-  padding: 50px 15px;
+  padding: 50px 25px;
   margin: 15px 0;
   transition: transform 0.4s;
   border: 1px #D11242 solid;
@@ -136,9 +136,8 @@ button, [type="button"],
 }
 
 .modal-content {
-  background-color: #ffffffde;
+  background-color: #fffffff7;
   background-clip: padding-box;
-  margin: 50px;
   padding: 25px 30px;
   border-radius: 0;
 }
@@ -216,9 +215,14 @@ button, [type="button"],
   width: 260px;
 }
 
+@media only screen and (max-width: 543px) {
+  .modal-dialog {
+    max-width: 100vw;
+  }
+}
 @media only screen and (min-width: 544px) {
   .modal-dialog {
-    max-width: 80vw;
+    max-width: 90vw;
   }
 
   .possible-word {
