@@ -89,8 +89,8 @@ section {
 }
 
 .start_your_possible {
-  background-color: #00447c;
   padding-top: 15vh;
+  background-color: #00447c;
   padding-bottom: 15vh;
   height: auto;
   display: table;
@@ -127,12 +127,19 @@ button, [type="button"],
   transition: transform 0.4s;
 }
 
-.card-possible:hover {
+.card-possible-reversed {
   background-color: #fff;
+  padding: 50px 25px;
+  margin: 15px 0;
+  transition: transform 0.4s;
   border: 1px #D11242 solid;
 }
-.card-possible:hover p {
+.card-possible-reversed p {
   color: #D11242;
+  transition: transform 0.4s;
+}
+.card-possible-reversed .btn {
+  width: 100%;
 }
 
 .modal-content {
