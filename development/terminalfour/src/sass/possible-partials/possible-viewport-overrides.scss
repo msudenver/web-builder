@@ -1,6 +1,12 @@
+@media only screen and (max-width: 543px) {
+  .modal-dialog {
+      max-width: 100vw;
+  }
+}
+
 @media only screen and (min-width: 544px) {
   .modal-dialog {
-      max-width: 80vw;
+      max-width: 90vw;
   }
 
   .possible-word {
