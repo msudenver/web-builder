@@ -89,7 +89,7 @@ section {
 }
 
 .start_your_possible {
-  background-color: #D11242;
+  background-color: #00447c;
   padding-top: 15vh;
   padding-bottom: 15vh;
   height: auto;
@@ -117,7 +117,7 @@ button, [type="button"],
 
 .card-possible {
   background-color: #D11242;
-  padding: 50px 15px;
+  padding: 50px 25px;
   margin: 15px 0;
   transition: transform 0.4s;
   border: 1px #D11242 solid;
@@ -136,7 +136,7 @@ button, [type="button"],
 }
 
 .modal-content {
-  background-color: #ffffffde;
+  background-color: #fffffff7;
   background-clip: padding-box;
   padding: 25px 30px;
   border-radius: 0;
