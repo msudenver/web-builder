@@ -1,21 +1,102 @@
 /* Homepage news items */
+$primaryRed: #d11242;
 #homepage-news {
     padding-top: 36px;
     padding-top: torem(36, $small-unit);
-    padding-bottom: 36px;
-    padding-bottom: torem(36, $small-unit);
-    .feature-text {
-        margin-bottom: 0;
+    background: #f7f7f7;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        background: $primaryRed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 25rem;
     }
-    p { color: #fff; }
+    .main-button {
+        border-color: $primaryRed;
+        a {
+            color: $primaryRed;
+        }
+        &:hover,&:focus,&:active {
+            background-color: $primaryRed;
+            a {
+                color: $white;
+            }
+        }
+    }
     a {
         &:hover, &:active, &:focus {
             text-decoration: none;
         }
     }
 
+    .feature-text {
+      margin-bottom: 0;
+    }
+    .feature-heading-large {
+        color: $white;
+        margin-bottom: 0;
+        .header-wrap {
+            display: inline;
+        }
+        img {
+            width: 200px;
+            display: inline-block;
+            margin-right: 1rem;
+            padding: 15px;
+        }
+    }
 }
+@media (max-width: 1120px) {
+  #homepage-news .feature-heading-large {
+    &:before,
+    &:after {
+      content: '';
+      display: table;
+    }
 
+    &:after {
+      clear: both;
+    }
+
+    img {
+      width: 200px;
+      display: block;
+      float: left;
+    }
+
+    .header-wrap {
+      display: flex;
+      float: left;
+      width: calc(100% - 250px);
+      height: 200px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      flex-direction: column;
+      justify-content: space-between;
+      span {
+        display: block;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+@media (min-width: 620px) and (max-width: 1120px) {
+    #homepage-news .feature-heading-large {
+        img {
+            width: 250px;
+        }
+        .header-wrap {
+            width: calc(100% - 300px);
+            height: 250px;
+            span {
+                font-size: 3.125rem;
+            }
+        }
+    }
+}
 .home-news-features {
     @include make-xs-column(12);
     img {
@@ -25,14 +106,13 @@
 }
 .news-features {
     @include make-row(0);
-    margin-top: 36px;
-    margin-top: torem(36, $small-unit);
+    margin-top: 0;
     margin-bottom: 15px;
 }
-.news-feature{
+.news-feature {
     @include make-xs-column(12, 0);
-    padding-top: 15px;
     padding-top: torem(15);
+    
 }
 
 .news-feature-bg {
@@ -46,44 +126,52 @@
 }
 .news-feature-text {
     padding-top: 0;
+    h4 {
+        font-weight: 400;
+        line-height: 22px;
+        font-size: 16px;
+        color: black;
+    }
 }
 
 .news-feature-heading {
-    font-size: 26px;
-    font-size: torem(26);
-    margin: 12px 0;
-    margin: torem(12) 0;
+    line-height: torem(30);
+    font-size: torem(22);
+    font-weight: 500;
+    margin: torem(12) 0 torem(20);
+    padding-bottom: torem(20);
+    color: black;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 90%;
+        height: 2px;
+        background-color: $primaryRed;
+        left: 0;
+        bottom: 0;
+    }
 }
 
 @media (min-width: $screen-sm-min) {
         .news-feature {
-            padding: 0;
-            @include make-xs-column(12);
-        }
-}
+          @include make-xs-column(4);
+          margin-left: 0;
+          margin-right: 0;
+          margin-bottom: 25px;
 
-@media (min-width: $screen-md-min) {
-        .news-feature {
-            @include make-xs-column(4);
+          &:last-child {
+            margin: 0;
+          }
         }
 }
 
 @media (min-width: $screen-lg-min) {
     #homepage-news {
-        padding: 50px percentage(1/$grid-columns) 30px;
-        padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(30);
-
+        padding: torem(15, $small-unit) percentage(1/$grid-columns) torem(60, $small-unit);
     }
 
-        .news-feature {
-          @include make-xs-column(4);
-            margin-left: 0;
-            margin-right: 0;
-            &:last-child {
-                margin: 0;
-            }
-            margin-bottom: 25px;
-        }
+        
 
     .news-item-heading {
         margin: 20px 0 20px;

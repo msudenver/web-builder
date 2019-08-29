@@ -16,22 +16,26 @@
   margin-left: -150px;
   width: 150px;
   position: fixed;
-  padding-top: 82px;
+  padding-top: 100px;
   top: 0;
   left: 150px;
   bottom: 0;
-  // z-index: 9998;
   background: #fff;
   color:black;
   -webkit-overflow-scroll: touch
 }
+@media (max-width: 991px) {
+  #menu {
+    z-index: 9998;
+  }
+}
 #menu a {
   border: none;
-  color:black;
-  font-size:1.2rem;
-  font-weight:700;
+  color: $primaryBlue;
+  font-size: 18px;
+  font-weight:500;
   padding: 15px 15px;
-  line-height: 1em;
+  line-height: 18px;
   display: block;
   text-decoration: none;
   -webkit-transition: all .25 ease-in-out;
@@ -39,13 +43,15 @@
   -o-transition: all .25 ease-in-out;
   transition: all .25 ease-in-out
 }
-#menu a:hover, .pure-menu li a:focus, #menu .pure-menu li a:hover {
+#menu a:hover, 
+.pure-menu li a:focus, 
+#menu .pure-menu li a:hover {
   color: #d11242;
-  padding: 15px 5px;
+  background: transparent;
   -webkit-transition: all .25 ease-in-out;
   -moz-transition: all .25 ease-in-out;
   -o-transition: all .25 ease-in-out;
-  transition: all .25 ease-in-out
+  transition: all .25 ease-in-out;
 }
 
 
@@ -61,7 +67,7 @@
 
 .menu-link {
   display: none;
-  top: 75px;
+  top: 96px;
   left: 10px;
   background: #002856;
   background: rgba(27, 85, 122, .5);
@@ -112,24 +118,24 @@
   margin-top: .6em
 }
 
-.multilevel-linkul-0 {
-   margin-left: 15px;
-}
+// .multilevel-linkul-0 {
+//    margin-left: 15px;
+// }
 
-.multilevel-linkul-1 {
-    margin-left: -15px;
-}
+// .multilevel-linkul-1 {
+//     margin-left: -15px;
+// }
 
-.multilevel-linkul-2 {
-    margin-left: -15px;
-}
+// .multilevel-linkul-2 {
+//     margin-left: -15px;
+// }
 
 .sidebar-nav {
   margin-bottom: 15px;
   // background: #002856;
     ul li {
       list-style-type: none;
-      border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+      border-bottom: 1px solid #F1F3F5;
       // border-width: 100%;
     }
 
@@ -159,20 +165,24 @@
 //   transition: all .25s ease-in-out
 // }
 
-.currentbranch0 a , .currentbranch1 a, .currentbranch2 a, .currentbranch3 a, .currentbranch4 a {
-  color: #d11242 !important;
-  font-size: 1.2em;
-}
 
-.currentbranch0 a:after, .currentbranch1 a:after, .currentbranch2 a:after, .currentbranch3 a:after, .currentbranch4 a:after  {
-    content: "\f105";
+[class^="currentbranch"] a {
+  font-size: 18px !important;
+  color: #000 !important;
+  font-weight: 700 !important;
+  line-height: 18px !important;
+  &:after {
+    content: "\f111";
+    color: $primaryRed;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
+    font-size: 7px;
     text-decoration: inherit;
     float: right;
     padding-right: 15px;
   }
+}
 
 @media (max-width: $screen-sm-max) {
   #menu {
@@ -201,6 +211,7 @@
   .menu-link {
     position: fixed;
     display: block;
+    z-index: 99;
   }
   #layout.active .menu-link {
     left: 70%
@@ -218,12 +229,13 @@
     left: 0;
     padding: 0;
     margin: 0 auto;
-    width: 100%
+    width: 100%;
+    margin-top: 1rem;
   }
 
   #menu a {
     padding: 15px 0px;
-    line-height: 1em;
+    line-height: 18px;
     -webkit-transition: all .25 ease-in-out;
     -moz-transition: all .25 ease-in-out;
     -o-transition: all .25 ease-in-out;

@@ -28,7 +28,7 @@ section.filter-titles {
 
 .card-program {
     padding: 1em;
-    border: 1px solid #d4d4d4;
+    border: 5px solid #EFEFEF;
     margin-bottom: 15px;
     height: 125px;
     overflow:hidden;
@@ -39,21 +39,24 @@ section.filter-titles {
    -webkit-align-items: center;
    -webkit-box-align: center;
    align-items: center;
-   background: #f1f2f5;
+   background: #F7F7F7;
    box-shadow: none;
 }
 
 .degreeTitle {
-color: #1e1e1e;
-font-size: 1.6em;
+color: #000000;
+font-size: 22px;
 padding-bottom: 0px;
 margin-bottom: 15px;
-font-weight: 800;
+font-weight: 500;
+  line-height: 24px;
 }
 
 .degreeType {
-  font-size: 1.2em;
-  color: #3A3A3A;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000;
 }
 
 //.content {
@@ -62,32 +65,32 @@ font-weight: 800;
 
 
 
-.card-program.Master {
-    border-left: 10px solid #717073;
+.Master {
+    border-left: 25px solid #717073;
 }
 
-.card-program.Bachelor {
-    border-left: 10px solid #d11242;
+.Bachelor {
+    border-left: 25px solid #d11242;
 }
 
-.card-program.Minor {
-    border-left: 10px solid #00447c;
+.Minor {
+    border-left: 25px solid #00447c;
 }
 
-.card-program.Concentration {
-    border-left: 10px solid #5191cd;
+.Concentration {
+    border-left: 25px solid #5191cd;
 }
 
-.card-program.Certificate {
-    border-left: 10px solid #9cadcd;
+.Certificate {
+    border-left: 25px solid #9cadcd;
 }
 
-.card-program.Special.Academic.Program {
-    border-left: 10px solid #e68d89;
+.Special.Academic.Program {
+    border-left: 25px solid #e68d89;
 }
 
-.card-program.Teacher.Licensure {
-    border-left: 10px solid #000000;
+.Teacher.Licensure {
+    border-left: 25px solid #000000;
 }
 
 a:focus, a:hover {

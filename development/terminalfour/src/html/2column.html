@@ -68,18 +68,18 @@
 
     <div class="container-fluid" id="content">
         <div class="row">
-          @@include('site-header.html') <t4 type="navigation" id="106" />
+          @@include('site-header.html') 
           @@include('content-types-main/page-hero.html')
 
             <!-- BEGINS HERO IMAGE -->
-
+              <div class="row">
                 <div class="col-xs-12 col-md-9 col-md-push-3 col-lg-9 col-lg-push-3">
                    <div class="content row">
 
                         <!-- *********************************  -->
                         <!-- SITEMANAGER HEADER ENDS HERE -->
                         <!-- *********************************  -->
-                        <!-- @@include('content-types-main/page-content.html') -->
+                         @@include('content-types-main/page-content.html')
                         <!-- @@include('content-types-main/facebook-feed.html') -->
                         <!-- @@include('content-types-main/Slideshow-Gallery.html') -->
                         <!-- @@include('content.html') -->
@@ -105,20 +105,21 @@
         </a>
         <div id="menu">
           <div class="pure-menu pure-menu-open">
-              <t4 type="navigation" id="784"/>
+              
 
                 <ul class="nav nav-list">
-                  <li><a href="#">Home</a></li>
+                  <!-- <li><a href="#">Home</a></li>
                   <li><span class="currentbranch0"><a href="/newsroom/news/">currentbranch0</a></span>
                         <ul class="multilevel-linkul-0">
                         <li><span class="currentbranch1"><a href="/#">currentbranch1</a></span>
                         <ul class="multilevel-linkul-1">
-                          <li><span class="currentbranch2"><a href="/newsroom/news/2016/may/">May</a></span></li>
+                          <li><span class="currentbranch2"><a href="/newsroom/news/2016/may/">May</a></span>
                             <ul class="multilevel-linkul-2">
                               <li><span class="currentbranch3"><a href="/newsroom/news/2016/may/">Third level</a></span></li>
                               <li><a href="/#">April</a></li>
                               <li><a href="#">March</a></li>
                             </ul>
+                          </li>
                           <li><a href="#">April</a></li>
                           <li><a href="#">March</a></li>
                         </ul>
@@ -127,7 +128,13 @@
                         </ul>
                   </li>
                   <li><a href="#">Topics</a></li>
-                  <li><a href="#">Press Releases</a></li>
+                  <li><a href="#">Press Releases</a></li> -->
+                  <li><span class="currentbranch0"><a href="#">Home</a></span></li>
+                  <li><a href="#">Degrees</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Faculty and Staff</a></li>
+                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -135,30 +142,57 @@
 </div>
 <div class="linkcolumn">
    <t4 type='navigation' id='104' />
-   <a role="button" class="btn btn-lg custombtn rowdyred col-xs-12" href="/brandcentral/shareyourstory/"  >
-<span  style="float:left;" ><span></span>SHARE YOUR STORY
-</span>
-</a><!-- linkcol -->
-<a role="button" class="btn btn-lg custombtn rowdyblue col-xs-12" href="/events/"  >
-<span  style="float:left;" ><span></span>EVENTS CALENDAR
-</span>
-</a><div class="well col-xs-12">
-</div><div class="row">
-<div class="col-xs-12">
-<div class="panel panel-default clickable" data-href="">
-  <div class="panel-heading">Media Contact:</div>
-    <div class="panel-body" style="height:100%">
-      <p>Tim Carroll, APR<br />Assistant Director of Media Relations<br />303-556-5136<br /><a href="mailto:carrollt@msudenver.edu">carrollt@msudenver.edu</a></p>
-<p>Julie Lucas<br />Senior Director of Integrated Marketing and Communications<br />303-352-7390<br /><a href="mailto:jlucas13@msudenver.edu">jlucas13@msudenver.edu</a></p>
-<p>Cathy Lucas, APR<br />Associate to the President for Marketing and Communications,&nbsp;<br />Chief of Staff&nbsp;<br />303-556-5131<br /><a href="mailto:lucascat@msudenver.edu">lucascat@msudenver.edu</a></p>
+   <a role="button" class="btn btn-lg custom-red-btn col-xs-12" href="/brandcentral/shareyourstory/"  >
+     SHARE YOUR STORY
+  </a><!-- linkcol -->
+  <a role="button" class="btn btn-lg custom-blue-btn col-xs-12" href="/events/"  >
+    EVENTS CALENDAR
+  </a>
+  <div class="well col-xs-12">
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-default clickable" data-href="">
+        <div class="panel-heading">Media Contact:</div>
+        <div class="panel-body" style="height:100%">
+          <p>Tim Carroll, APR<br />Assistant Director of Media Relations<br />303-556-5136<br /><a href="mailto:carrollt@msudenver.edu">carrollt@msudenver.edu</a></p>
+          <p>Julie Lucas<br />Senior Director of Integrated Marketing and Communications<br />303-352-7390<br /><a href="mailto:jlucas13@msudenver.edu">jlucas13@msudenver.edu</a></p>
+          <p>Cathy Lucas, APR<br />Associate to the President for Marketing and Communications,&nbsp;<br />Chief of Staff&nbsp;<br />303-556-5131<br /><a href="mailto:lucascat@msudenver.edu">lucascat@msudenver.edu</a></p>
+        </div>
+      </div>
     </div>
   </div>
- </div>
 </div>
+
+<div class="linkcolumn">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-default clickable" data-href="">
+        <div class="panel-heading">Quick Links</div>
+        <div class="panel-body" style="height:100%">
+          <p><a title="PDF 180 KB" href="https://msudenver.edu/media/content/departmentofjournalismamptechnicalcommunication/advising/2016-17/jtc-adv_16-17.pdf" target="_blank" data-toggle="tooltip" data-placement="top">JTC Advising Booklet 2016-17</a></p>
+          <p><a title="PDF 337 KB" href="https://msudenver.edu/media/content/departmentofjournalismamptechnicalcommunication/advising/JTCCourseRotationSchedule2017-18.pdf" target="_blank" data-toggle="tooltip" data-placement="top">JTC Course Rotation 17-18</a></p>
+          <p><a href="http://www.msudenver.edu/academic/online/student/about/index.shtml">New to Online Courses?</a></p>
+          <p><a href="https://msudenver.edu/jtc/resources/scholarships/">Scholarships</a></p>
+          <p><a href="https://msudenver.edu/jtc/resources/workstudypositions/">Work Study Positions</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="well social_well col-xs-12" align="center">
+  <h4 style="text-align: center; margin-top: 0">Connect With Us&zwnj;</h4>
+
+  <a href='https://www.facebook.com/jtcdepartment'><img src='data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53%0D%0AMy5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA1MCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtm%0D%0AaWxsOiM4NzljYmE7fS5jbHMtMntmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5mYWNl%0D%0AYm9vazwvdGl0bGU+PGNpcmNsZSBjbGFzcz0iY2xzLTEiIGN4PSIyNSIgY3k9IjI1IiByPSIyNSIv%0D%0APjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTMxLjc5LDExLjMySDI4LjI3Yy00LDAtNi41MSwyLjYy%0D%0ALTYuNTEsNi42OHYzLjA4SDE4LjIyYS41NS41NSwwLDAsMC0uNTUuNTV2NC40NmEuNTUuNTUsMCww%0D%0ALDAsLjU1LjU1aDMuNTRWMzcuOTFhLjU1LjU1LDAsMCwwLC41NS41NWg0LjYyYS41NS41NSwwLDAs%0D%0AMCwuNTUtLjU1VjI2LjY1aDQuMTRhLjU1LjU1LDAsMCwwLC41NS0uNTVWMjEuNjNhLjU2LjU2LDAs%0D%0AMCwwLS4xNi0uMzkuNTUuNTUsMCwwLDAtLjM5LS4xNkgyNy40OFYxOC40N2MwLTEuMjUuMy0xLjg5%0D%0ALDEuOTMtMS44OWgyLjM3YS41NS41NSwwLDAsMCwuNTUtLjU1VjExLjg4YS41NS41NSwwLDAsMC0u%0D%0ANTUtLjU1Wm0wLDAiLz48L3N2Zz4=' alt='Facebook'/></a>
+
+  <a href='https://twitter.com/MSUDenverJTC'><img src='data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53%0D%0AMy5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA1MCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtm%0D%0AaWxsOiM4NzljYmE7fS5jbHMtMntmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT50d2l0%0D%0AdGVyPC90aXRsZT48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjI1IiBjeT0iMjUiIHI9IjI1Ii8+%0D%0APHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzYuOTQsMTguNmE5Ljc5LDkuNzksMCwwLDEtMi44MS43%0D%0ANyw0LjkzLDQuOTMsMCwwLDAsMi4xNi0yLjcxLDkuNzYsOS43NiwwLDAsMS0zLjEyLDEuMTlBNC45%0D%0ALDQuOSwwLDAsMCwyNC43LDIxLjJhNS4wOSw1LjA5LDAsMCwwLC4xMiwxLjEyLDEzLjksMTMuOSww%0D%0ALDAsMS0xMC4xLTUuMTIsNC45LDQuOSwwLDAsMCwxLjUxLDYuNTRBNC44Miw0LjgyLDAsMCwxLDE0%0D%0ALDIzLjEydi4wNkE0LjkxLDQuOTEsMCwwLDAsMTgsMjhhNS4wNSw1LjA1LDAsMCwxLTEuMjkuMTcs%0D%0ANSw1LDAsMCwxLS45My0uMDksNC45MSw0LjkxLDAsMCwwLDQuNTgsMy40LDkuODQsOS44NCwwLDAs%0D%0AMS02LjA4LDIuMDksMTAuNTEsMTAuNTEsMCwwLDEtMS4xNy0uMDdBMTMuOTMsMTMuOTMsMCwwLDAs%0D%0AMzQuNSwyMS43N3YtLjYzYTkuODcsOS44NywwLDAsMCwyLjQ1LTIuNTRabTAsMCIvPjwvc3ZnPg==' alt='Twitter'/></a>
+
+  <a href='http://www.youtube.com/channel/UCyUZh4eAhkDsFapi5SOM_LQ'><img src='data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53%0D%0AMy5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA1MCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtm%0D%0AaWxsOiM4NzljYmE7fS5jbHMtMntmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT55b3V0%0D%0AdWJlPC90aXRsZT48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjI1IiBjeT0iMjUiIHI9IjI1Ii8+%0D%0APHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzMuNDIsMzEuNzZoLTEuNnYtLjkzYS43Ni43NiwwLDAs%0D%0AMSwuNzUtLjc1aC4xYS43Ni43NiwwLDAsMSwuNzYuNzVabS02LTJhLjY5LjY5LDAsMCwwLS43NC42%0D%0AMVYzNC45YS43NS43NSwwLDAsMCwxLjQ4LDBWMzAuMzdhLjY5LjY5LDAsMCwwLS43NC0uNjFabTku%0D%0ANzYtMi41M3Y4LjYxYTMuODksMy44OSwwLDAsMS00LDMuNzZIMTYuODFhMy44OSwzLjg5LDAsMCwx%0D%0ALTQtMy43NlYyNy4yM2EzLjg5LDMuODksMCwwLDEsNC0zLjc2SDMzLjE5YTMuODksMy44OSwwLDAs%0D%0AMSw0LDMuNzZaTTE3LjksMzYuNzhWMjcuNzFoMlYyNi4zNkgxNC41MnYxLjMyaDEuNjl2OS4xWk0y%0D%0ANCwyOS4wNkgyMi4zdjQuODVhOC44NCw4Ljg0LDAsMCwxLDAsMS4xN2MtLjE0LjM4LS43Ni43Ny0x%0D%0ALDBhOS44Miw5LjgyLDAsMCwxLDAtMS4xOFYyOS4wNkgxOS42djQuOGMwLC43NCwwLDEuMjksMCwx%0D%0ALjU0LDAsLjQ0LDAsMSwuNDMsMS4yNWEyLDIsMCwwLDAsMi41OS0uODd2MUgyNFYyOS4wNlptNS40%0D%0AMSw1LjU1di00YzAtMS41NC0xLjE1LTIuNDYtMi43MS0xLjIxdi0zSDI1VjM2LjcybDEuMzksMCwu%0D%0AMTMtLjY1YzEuNzgsMS42MywyLjg5LjUxLDIuODktMS40NFptNS4zLS41NEgzMy40M3MwLC4xMSww%0D%0ALC4xN1YzNWEuNjkuNjksMCwwLDEtLjY5LjY5aC0uMjVhLjY5LjY5LDAsMCwxLS42OS0uNjlWMzMu%0D%0AMUgzNC43VjMyYTE3LjYsMTcuNiwwLDAsMC0uMDktMi4wNmMtLjIxLTEuNDUtMi4yNC0xLjY4LTMu%0D%0AMjYtLjkzYTEuOTEsMS45MSwwLDAsMC0uNzEsMSw1LjM4LDUuMzgsMCwwLDAtLjIyLDEuNzF2Mi40%0D%0AYzAsNCw0Ljg2LDMuNDMsNC4yOCwwWk0yOC4xOSwyMWExLjE1LDEuMTUsMCwwLDAsLjQxLjUxLDEu%0D%0AMTcsMS4xNywwLDAsMCwuNjkuMTksMS4wNywxLjA3LDAsMCwwLC42NS0uMiwxLjU2LDEuNTYsMCww%0D%0ALDAsLjQ3LS42MWwwLC42NmgxLjg5di04SDMwLjc4VjE5LjhhLjYyLjYyLDAsMCwxLTEuMjQsMFYx%0D%0AMy41NkgyOFYxOWMwLC42OSwwLDEuMTUsMCwxLjM4YTIuMzIsMi4zMiwwLDAsMCwuMTYuNjdabS01%0D%0ALjcyLTQuNTNhNi43Miw2LjcyLDAsMCwxLC4xOS0xLjgxLDEuOTMsMS45MywwLDAsMSwyLTEuNDQs%0D%0AMi4zNCwyLjM0LDAsMCwxLDEuMTIuMjUsMS44NSwxLjg1LDAsMCwxLC43Mi42NiwyLjYyLDIuNjIs%0D%0AMCwwLDEsLjM1Ljg0LDYuNzgsNi43OCwwLDAsMSwuMDksMS4zMXYyQTExLjEyLDExLjEyLDAsMCwx%0D%0ALDI2Ljg0LDIwYTIuNTgsMi41OCwwLDAsMS0uMzcsMSwxLjc1LDEuNzUsMCwwLDEtLjczLjY3LDIu%0D%0AMjksMi4yOSwwLDAsMS0xLC4yMiwyLjgxLDIuODEsMCwwLDEtMS4wOS0uMTgsMS40OCwxLjQ4LDAs%0D%0AMCwxLS43LS41NiwyLjQ4LDIuNDgsMCwwLDEtLjM1LS45LDguNjYsOC42NiwwLDAsMS0uMS0xLjU4%0D%0AWk0yNCwxOS42N2EuNzUuNzUsMCwxLDAsMS41LDBWMTUuNGEuNzUuNzUsMCwxLDAtMS41LDBabS01%0D%0ALjIyLDIuMTZoMS43OFYxNS42OGwyLjEtNS4yN0gyMC42N2wtMS4xMiwzLjkxTDE4LjQyLDEwLjRI%0D%0AMTYuNDlsMi4yNCw1LjI4Wm0wLDAiLz48L3N2Zz4=' alt='YouTube'/></a>
 </div>
 
 </div>
-
+</div>
 <!-- ENDS LEFT SIDE (LINK COLUMN/SIDEMENU) -->
 
 
@@ -247,6 +281,25 @@ lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=294
                     });
                 });
             })();
+            $(window).scroll(function(){
+            var width_threshold = 900;
+            var href = document.location.href;
+            var position = $(window).scrollTop();
+            var width = $(window).width();
+            $(".header-fluid").removeClass("header-fluid-change");
+            $(".msudenver_logo").removeClass("msudenver_logo_change");
+            if( position <= 15 && width> width_threshold) {
+              $("a.btn.btn-default.visit-give-mobile").css("top", "-132px");
+              $("a.btn.btn-default.give-mobile").css("top", "-132px");
+              $("a.btn.btn-default.apply-mobile").css("top", "-132px");
+              }
+              if( position > 15 && width > width_threshold) {
+              $(".header-fluid").toggleClass("header-fluid-change");
+              $(".msudenver_logo").toggleClass("msudenver_logo_change");
+              $("a.btn.btn-default.visit-give-mobile").css("top", "-112px");
+              $("a.btn.btn-default.apply-mobile").css("top", "-112px");
+              }
+              });
         </script>
 
     <script type="text/javascript">

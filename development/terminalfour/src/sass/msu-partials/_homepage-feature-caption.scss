@@ -1,9 +1,41 @@
 /* Homepage-feature-caption partial */
 #homepage-feature-caption {
-    padding: 0;
-
-    text-align: right;
-
+    padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(60, $small-unit);
+    .carousel-indicators {
+        left: 0;
+        top: 1rem;
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+        text-align: left;
+        li {
+            width: 12px;
+            height: 12px;
+            margin: 0 10px 0 0;
+        }
+    }
+    .side-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    .tagline {
+        font-size: torem(35);
+        line-height: torem(59);
+        font-weight: 700;
+        color: $primaryBlue;
+        span {
+            color: white;
+            display: inline-block;
+            background-color: $primaryRed;
+            padding-left: torem(12);
+            padding-right: torem(12);
+        }
+    }
+}
+.homepage-feature-caption-item {
+    display: block;
 }
 .homepage-feature-caption-img {
     @include img-responsive ;
@@ -27,14 +59,11 @@
     font-size: torem(20.8);
     text-transform: uppercase;
     color: #fff;
-    float: right;
 }
 .homepage-feature-caption-link:hover, .homepage-feature-caption-link:focus, .homepage-feature-caption-link:active {
     color: #fff;
 }
-// .carousel-control {
-//     display: none;
-// }
+
 .t4-slide .carousel-control {
     display: block;
     position: absolute;

@@ -3,6 +3,7 @@
     text-align: left;
     white-space: normal;
     border: 0px solid transparent;
+    border-radius: 0;
 }
 
 .btn:hover {
@@ -28,6 +29,83 @@ transition: opacity 250ms ease-in-out;
   font-size: 1.0rem;
 }
 
+.custom-red-btn {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #D11242 !important;
+  border: 2px solid #D11242 !important;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 32px 0;
+}
+.custom-red-btn:hover {
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #DE2554;
+  border-color: #D11242;
+}
+.custom-blue-btn {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #002855 !important;
+  border: 2px solid #002855 !important;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 32px 0;
+}
+.custom-blue-btn:hover {
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #00418B;
+  border-color: #002855;
+}
+.custom-grey-btn {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #717073 !important;
+  border: 2px solid #717073 !important;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 32px 0;
+}
+.custom-grey-btn:hover {
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #969696;
+  border-color: #717073;
+}
+.custom-black-btn {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000 !important;
+  border: 2px solid #000000 !important;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 32px 0;
+}
+.custom-black-btn:hover {
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #393939;
+  border-color: #000000;
+}
+
 .contact-info button {
 	float: left !important;
 }
@@ -35,9 +113,6 @@ transition: opacity 250ms ease-in-out;
 @media screen and (min-width: 768px) {
 	.contact-info-mobile {
 		display: none;
-	}
-	.contact-info button {
-		float: right !important;
 	}
 }
 
@@ -48,9 +123,5 @@ transition: opacity 250ms ease-in-out;
 @media screen and (min-width: 768px) {
   .contact-info-mobile {
     display: none;
-  }
-
-  .contact-info button {
-    float: right !important;
   }
 }
