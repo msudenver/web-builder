@@ -19,6 +19,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
   color: #00366A;
   font-weight: 400;
@@ -28,6 +29,11 @@ h2 {
   font-size: 1.75rem;
   margin: 10px 0;
   font-weight: 700;
+}
+
+h4{
+  color:#00447c;
+  margin-bottom:15px;
 }
 
 p {
@@ -181,10 +187,7 @@ button, [type="button"],// 1
     font-weight: 700;
   }
 
-  h4{
-    color:#00447c;
-    margin-bottom:15px;
-  }
+
 
   p {
     font-size: 1.2rem;
@@ -235,6 +238,25 @@ button, [type="button"],// 1
 
   .well {
     background: #ffffffde;
+    padding: 25px 30px;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+  }
+}
+
+.background-right-copy {
+  background: url("../media/possible/Tivoli.jpg") no-repeat center center fixed;
+  display: table;
+  height: auto;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .well {
+    background: #fff;
     padding: 25px 30px;
     margin-top: 15vh;
     margin-bottom: 15vh;
