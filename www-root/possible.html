@@ -82,29 +82,357 @@
 </head>
 
 <body>
+
   <section class="introduction">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <h1>Reimagine <span class="possible-word fade-in">possible</span></h1>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h1>Reimagine <span class="possible-word fade-in">possible</span></h1>
+      </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-2 offset-md-8 text-center">
-          <img class="img-responsive university-logo fade-in" src="style-assets/media/possible/MSUDenver_Formal_2CPos_BlueRed_WhBkgd_FormatA_RGB.svg">
-        </div>
+      <div class="col-xs-12 col-sm-6 col-md-2 offset-md-8 text-center">
+        <img class="img-responsive university-logo fade-in" src="style-assets/media/possible/MSUDenver_Formal_2CPos_BlueRed_WhBkgd_FormatA_RGB.svg">
+      </div>
 
-        <div class="col-xs-12 col-sm-4 offset-col-sm-4 col-md-12 text-center">
-          <a href="#start"> <span class="possible-indicator fas fa-chevron-down fa-5x fade-in"></span></a>
-        </div>
+      <div class="col-xs-12 col-sm-4 offset-col-sm-4 col-md-12 text-center">
+        <a href="#start"> <span class="possible-indicator fas fa-chevron-down fa-5x fade-in"></span></a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+  <nav id="navbar-possible" class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">Are you ready to find your </a>
+    <ul class="nav nav-pills">
+        <li class="nav-item dropdown">
+            <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">possible</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
+                <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
+                <a class="dropdown-item" href="#master-your-future">Master your future</a>
+                <a class="dropdown-item" href="#on-the-front-lines-of-cybersecurity">On the front lines of cybersecurity</a>
+                <a class="dropdown-item" href="#brewing-innovation-in-hospitality">Brewing innovation in hospitality</a>
+                <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
+                <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
+                <a class="dropdown-item" href="#operating-satelites-from-the-classroom">Operating satellites from the classroom</a>
+                <a class="dropdown-item" href="#multiply-your-roi">Multiply your ROI</a>
+                <div role="separator" class="dropdown-divider"></div>
+            </div>
+        </li>
+    </ul>
+</nav>
 
-  <section class="start_your_possible" id="start">
+<style>
+.navbar {
+    position: fixed;
+    top: 0px;
+}
+</style>
+
+<script>
+const possibleSwitcher = el => {
+	const scroll = window.scrollY || window.pageYOffset
+	const boundsTop = el.getBoundingClientRect().top + scroll
+	
+	const viewport = {
+		top: scroll,
+		bottom: scroll + window.innerHeight,
+	}
+	
+    const bounds = {
+		top: boundsTop,
+		bottom: boundsTop + el.clientHeight,
+	}
+	
+	return ( bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom ) 
+		|| ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const rhe = document.getElementById('reimagine-higher-education')
+    const lcl = document.getElementById('learners-connect-with-leaders')
+    const myf = document.getElementById('master-your-future')
+    const otfloc = document.getElementById('on-the-front-lines-of-cybersecurity')
+    const biih = document.getElementById('brewing-innovation-in-hospitality')
+    const ihic = document.getElementById('improving-health-in-colorado')
+    const ttt = document.getElementById('teaching-tomorrows-teachers')
+    const osftc = document.getElementById('operating-satelites-from-the-classroom')
+    const roi = document.getElementById('multiply-your-roi')
+    const label = document.getElementById('nav-showing')
+
+
+    const handler = () => raf( () => {
+        if(possibleSwitcher(rhe)){
+            label.innerHTML='Reimagine higher education'
+        }
+        else if(possibleSwitcher(lcl)){
+            label.innerHTML='Learners connect with leaders'
+        }
+        else if(possibleSwitcher(myf)){
+            label.innerHTML='Master your future'
+        }
+        else if(possibleSwitcher(otfloc)){
+            label.innerHTML='On the front lines of cybersecurity'
+        }
+        else if(possibleSwitcher(biih)){
+            label.innerHTML='Brewing innovation in hospitality'
+        }
+        else if(possibleSwitcher(ihic)){
+            label.innerHTML='Improving health in Colorado'
+        }
+        else if(possibleSwitcher(ttt)){
+            label.innerHTML="Teaching tomorrow's teachers"
+        }
+        else if(possibleSwitcher(osftc)){
+            label.innerHTML='Operating satellites from the classroom'
+        }
+        else if(possibleSwitcher(roi)){
+            label.innerHTML='Multiply your ROI'
+        }
+        else {
+            label.innerHTML='Possible'
+        }
+    })
+    handler() 
+    window.addEventListener('scroll', handler)
+})
+
+const raf = 
+    window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    function(callback) {
+        window.setTimeout(callback, 1000/60)
+    }
+
+</script>
+
+  <section class="blue-background" id="start">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-10 offset-md-1">
+        <h2>Are you ready to find your <span class="possible-word">possible</span> ?</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-md-10 offset-md-1">
+        <a href="#reimagine-higher-education">
+          <btn class="btn">Reimagine higher education</btn>
+        </a>
+        <a href="#learners-connect-with-leaders">
+          <btn class="btn">Learners connect with leaders</btn>
+        </a>
+        <a href="#master-your-future">
+          <btn class="btn">Master your future</btn>
+        </a>
+        <a href="#on-the-front-lines-of-cybersecurity">
+          <btn class="btn">On the front lines of cybersecurity</btn>
+        </a>
+        <a href="#brewing-innovation-in-hospitality">
+          <btn class="btn">Brewing innovation in hospitality</btn>
+        </a>
+        <a href="#improving-health-in-colorado">
+          <btn class="btn">Improving health in Colorado</btn>
+        </a>
+        <a href="#teaching-tomorrows-teachers">
+          <btn class="btn">Teaching tomorrow’s teachers</btn>
+        </a>
+        <a href="#operating-satelites-from-the-classroom">
+          <btn class="btn">Operating satellites from the classroom</btn>
+        </a>
+        <a href="#multiply-your-roi">
+          <btn class="btn">Multiply your ROI</btn>
+        </a>
+        <a href="#saving-endangered-languages">
+          <btn class="btn">Saving endangered languages</btn>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!--
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
+
+    </div>
+  </div>
+</div> -->
+  <section id="improving-health-in-colorado" class="health-in-colorado">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 offset-md-5 well">
+        <h2>A prescription for improving health in Colorado.</h2>
+        <h3>Our new Health Institute integrates 10 disciplines to improve lives, communities and careers.</h3>
+        <p>Help underserved populations navigate <a href="https://red.msudenver.edu/2018/navigating-the-future-of-patient-care.html">access to health care</a>. Lead the way in the <a
+            href="https://red.msudenver.edu/2019/healing-in-two-worlds.html">transformative field of lifestyle medicine</a>. <a href="https://red.msudenver.edu/2017/who-gets-to-be-a-doctor.html">Learn through experience</a> at some of the state’s top
+          health organizations. The road to health leadership and
+          personal wellness runs through MSU Denver.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!--  -->
+  <section class="white-background-right-photo" id="reimagine-higher-education">
+  <div class="container">
+    <h2>What’s <span class="possible-word">possible</span> when you reimagine higher education?</h2>
+    <h3>
+      A thriving urban university that fosters student success through classroom-to-career connections, relevant degrees and excellent faculty.
+    </h3>
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <p>
+          Build and operate satellites at an innovative aerospace company. Make beer at a legendary brewery. Produce an Emmy-winning newscast. All without leaving campus. Plus, our downtown location provides unparalleled access to internships and
+          networks that jump-start careers. Just ask this “SportsCenter” anchor.</p>
+        <p style="margin-bottom:20px"> <strong>The possibilities are endless.</strong></p>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <img class="img-thumbnail" src="style-assets/media/possible/pride.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="master-your-future">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Here, you can master your future.</h2>
+        <h3>Master’s degrees in business, health, teaching and technology designed to advance your career and community.</h3>
+        <img class="img-thumbnail" style="float:left;" src="style-assets/media/possible/MockTrial.jpg">
+        <p>Advance your community – and your career – with an advanced degree in a critical Colorado field.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- <section id="on-the-front-lines-of-cybersecurity">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>On the front lines of cybersecurity.</h2>
+        <h3>Our groundbreaking program taught by industry experts blends technology and human behavior to advance careers in this critical field.</h3>
+        <p>Figuring out the crime before the criminals?</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+  <!-- <section id="brewing-innovation-in-hospitality">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Brewing innovation at our School of Hospitality.</h2>
+        <h3>Hands-on experience at Colorado’s only on-campus hotel, brewery and wine-cellar management lab.</h3>
+        <p>Leading the next generation of hospitality?</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+  <section id="teaching-tomorrows-teachers" class="teaching-tomorrows-teachers-section">
+  <div class="container">
+    <div class="row">
+      <div class="well col-xs-12">
+        <h2>Teaching tomorrow’s teachers.</h2>
+        <h3>A leading provider of diverse, classroom-ready graduates with a passion to serve Colorado children.</h3>
+        <p>Called to <a href="https://red.msudenver.edu/2019/third-gen-teacher-speaks-kids-language.html">teach bilingual students</a>? Need a <a href="https://www.msudenver.edu/teachergrad/">master’s degree</a> to advance in your career? Want to
+          <a href="https://red.msudenver.edu/2019/making-dreams-possible.html">open your own school</a>? Whether you’re a <a href="https://red.msudenver.edu/2019/bound-to-educate.html">first-generation student interested in early childhood
+            education</a> or a <a href="https://red.msudenver.edu/2017/fit-for-duty-the-veterans-who-teach-pe.html"> veteran going back to school to teach physical education</a>, you’ll get to the head of the class at MSU Denver.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="" id="learners-connect-with-leaders">
+  <div class="container" style="border: 2px solid #D11242">
+    <h2 style="margin-bottom:30px;">MSU Denver is where learners connect with leaders.</h2>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <h3><i>
+            99% of our classes are taught by faculty, not teaching assistants. They are industry icons, national experts and have the highest degrees in their disciplines.
+          </i></h3>
+        <p>Learn to fight crime from the former director of the NCIS. Analyze graphic novels with the convention director of Denver’s Comic Con. Get bitten by the insect bug with a renowned mosquito biologist. Our professors are experts in their
+          fields, but even better at passing on their expertise to students.</p>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <img class="img-thumbnail" src="style-assets/media/possible/MockTrial.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- <section id="operating-satelites-from-the-classroom">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>We’re operating satellites from the classroom.</h2>
+        <h3>Innovative partnerships with leading aerospace companies and hands-on opportunities to launch space-related careers.</h3>
+        <p>The Final Frontier? Metropolitan State University of Denver’s Aerospace Science program is already there.
+
+            Our Aerospace Science students design batteries for small spacecraft, assist researchers protecting the planet from asteroid strikes and improve the efficiency with which major defense contractors build satellites.</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+  <!-- <section id="multiply-your-roi">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Best ROI in the business.</h2>
+        <h3>As the best-value business college in Colorado, we offer a startup spirit and the only sales center in the state – backed up by an international accreditation.
+        </h3>
+
+        <p>Buy your parents a house while putting yourself through college. Leave homelessness behind to open your own brewery. Buy a franchise with winnings from a national entrepreneur contest. Fulfill the American Dream.</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+  <!-- <section id="saving-endangered-languages">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>saving-endangered-languages</h2>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+  <!-- <section class="white-background-right-photo">
+  <div class="container">
+    <h2 style="margin-bottom:30px;">white-background-right-photo<span class="possible-word">possible</span></h2>
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <p>white-background-right-photo white-background-right-photo white-background-right-photo white-background-right-photo white-background-right-photo white-background-right-photo white-background-right-photo white-background-right-photo
+          white-background-right-photo white-background-right-photo white-background-right-photo </p>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <img class="img-thumbnail" src="style-assets/media/possible/pride.jpg">
+      </div>
+    </div>
+  </div>
+</section> -->
+  <!-- <section class="background-right-copy">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-md-7 offset-md-5 well">
+        <h2>What’s <span class="possible-word">possible</span> when you reimagine higher education?</h2>
+        <h4><i>
+            A thriving urban university that fosters student success through classroom-to-career connections, relevant degrees and excellent faculty.
+          </i></h4>
+        <p>
+          Build and operate satellites at an innovative aerospace company. Make beer at a legendary brewery. Produce an Emmy-winning newscast. All without leaving campus. Plus, our downtown location provides unparalleled access to internships and
+          networks that jump-start careers. Just ask this “SportsCenter” anchor. The possibilities are endless. </p>
+        <p style="margin-bottom:20px"> <strong>The possibilities are endless.</strong></p>
+
+      </div>
+    </div>
+  </div>
+</section> -->
+  <!-- <section class="blue-background" id="start">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-8 offset-md-4">
-        <h2>What would you do if anything were <span class="possible-word">possible</span> ?</h2>
+        <h2>Lorem Ipsum <span class="possible-word">possible</span> ?</h2>
       </div>
       <div class="col-xs-12 col-md-8 offset-md-4">
         <p>Imagine a place where barriers are removed, opportunities are plentiful, labels are nonexistent and an entire community of peers, mentors, educators and industry leaders is ready to support you, encourage you and connect with you.</p>
@@ -112,186 +440,31 @@
     </div>
   </div>
 
-</section>
-
-  <section class="statements">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-possible" type="button" data-toggle="modal" data-target="#possible-card-1">
-          <p>What’s <span class="possible-word-reversed">possible</span> when you reimagine higher education? </p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-possible" type="button" data-toggle="modal" data-target="#possible-card-2">
-          <p>MSU Denver is where learners connect with leaders.</p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-possible">
-          <p>4 What’s <span class="possible-word-reversed">possible</span> when you reimagine higher education? </p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-possible-reversed">
-          <p>A thriving urban university that fosters student success through classroom-to-career connections, relevant degrees and excellent faculty.</p>
-          <button class="btn" type="button" data-toggle="modal" data-target="#possible-card-1">Learn More </button>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-possible-reversed">
-          <p>99% of our classes are taught by faculty, not teaching assistants. They are industry icons, national experts and have the highest degrees in their disciplines.</p>
-          <button class="btn" type="button" data-toggle="modal" data-target="#possible-card-2">Learn More </button>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-possible">
-          <p>5 What’s <span class="possible-word-reversed">possible</span> when you reimagine higher education? </p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-possible">
-          <p>6 What’s <span class="possible-word-reversed">possible</span> when you reimagine higher education? </p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-possible">
-          <p>7 What’s <span class="possible-word-reversed">possible</span> when you reimagine higher education? </p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-possible">
-          <p>8 What’s <span class="possible-word-reversed">possible</span> when you reimagine higher education? </p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-possible">
-          <p>9 What’s <span class="possible-word-reversed">possible</span> when you reimagine higher education? </p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-possible">
-          <p>9 What’s <span class="possible-word-reversed">possible</span> when you reimagine higher education? </p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-possible">
-          <p>9 What’s <span class="possible-word-reversed">possible</span> when you reimagine higher education? </p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 offset-md-4">
-        <div class="card-possible">
-          <p>10 What’s <span class="possible-word-reversed">possible</span> when you reimagine higher education? </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Button trigger modal -->
-
-
-
-
-<!-- Modal 1-->
-<div class="modal fade" id="possible-card-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <h3 style="margin-bottom:30px;">What’s <span class=" possible-word"> possible</span> when you reimagine higher education? </h3>
-        <h4><i>
-            A thriving urban university that fosters student success through classroom-to-career connections, relevant degrees and excellent faculty.
-          </i></h4>
-        <img class="img-thumbnail float-right" style="max-width:500px;" src="style-assets/media/possible/BreweryStudents.jpg">
-        <p>
-          Build and operate satellites at an innovative aerospace company. Make beer at a legendary brewery. Produce an Emmy-winning newscast. Without leaving campus.
-          That’s possible at Metropolitan State University of Denver.</p>
-        <p>
-          Based in the heart of the Mile High City, MSU Denver provides unparalleled access to internships and professional networks that jump-start careers. Just ask this “SportsCenter” anchor.
-          Professors with experience in their industries? We’ve got those, too: the former director of the NCIS, the convention director of Denver’s Comic Con and a biologist who got bitten by the mosquito bug.
-        </p>
-        <h4>The possibilities are endless.</h4>
-
-      </div>
-      <button class="col-xs-12 col-md-4 btn" data-dismiss="modal">Close</button>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 2-->
-<div class="modal fade" id="possible-card-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <h3 style="margin-bottom:30px;">MSU Denver is where learners connect with leaders.</h3>
-        <h4><i>
-            99% of our classes are taught by faculty, not teaching assistants. They are industry icons, national experts and have the highest degrees in their disciplines.
-          </i></h4>
-        <img class="img-thumbnail float-right" style="max-width:500px;" src="style-assets/media/possible/MockTrial.jpg">
-        <p>
-          Learn to fight crime from the former director of the NCIS. Analyze graphic novels with the convention director of Denver’s Comic Con. Get bitten by the insect bug with a renowned mosquito biologist.</p>
-        <p>
-          That’s possible at Metropolitan State University of Denver.</p>
-        <p> Our professors are experts in their fields, but even better at passing on their expertise to students. </p>
-        <p>
-          How? Hands-on learning built into every academic program. Whether it’s tracking storms outside the city, painting murals for local nonprofits or 3-D printing parts for Colorado space companies. </p>
-        <p>
-          And learning from industry icons isn’t limited to the classroom. In the last year, we’ve had former presidents, media personalities and literary luminaries on campus to share their knowledge.
-        </p>
-
-
-      </div>
-      <button class="col-xs-12 col-md-4 btn" data-dismiss="modal">Close</button>
-    </div>
-  </div>
-</div>
-
-  <section class="section-feels-like">
-    <div class="container">
-      <h2 style="margin-bottom:30px;">At MSU Denver, that’s what it feels like to reimagine what’s <span class="possible-word">possible</span> in higher
-        education.</h2>
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <p>We offer a dynamic urban setting and an incredible network of organizations
-            who partner with us, offer internships and recruit
-            our graduates. We have degrees in sought-after
-            fields, and we’re leading the way across all areas
-            of study in excellence, innovation and opportunity.
-            You can even create your own degree based on
-            your unique passions.
-            In the months ahead, visit this page to read our
-            stories, be inspired and imagine what could be
-            possible for your future.</p>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <img class="img-thumbnail" src="style-assets/media/possible/pride.jpg">
-        </div>
-      </div>
-    </div>
-  </section>
-
+</section> -->
 
   <section class="possible-call-to-action">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 well">
-          <h2>Start your <span class="possible-word">possible</span></h2>
-          <p>
-            MSU Denver is where classes lead to careers
-            and learners connect with leaders. Our
-            campus is diverse and welcoming, filled with
-            learners in undergraduate and master's
-            programs who have taken a variety of paths to
-            arrive here and who are discovering their own
-            possible every day.</p>
-          <p style="margin-bottom:20px"> <strong>Ready to find your possible?</strong></p>
-          <a href="https://connect.msudenver.edu/register/requestinformation" target="_blank"><button class="col-xs-12 col-md-5 offset-md-1 btn">Request information</button></a>
-          <a href="/apply" target="_blank"><button class="col-xs-12 col-md-5 btn">Apply to MSU Denver</button></a>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 well">
+        <h2>Start your <span class="possible-word">possible</span></h2>
+        <p>
+          MSU Denver is where classes lead to careers
+          and learners connect with leaders. Our
+          campus is diverse and welcoming, filled with
+          learners in undergraduate and master's
+          programs who have taken a variety of paths to
+          arrive here and who are discovering their own
+          possible every day.</p>
+        <p style="margin-bottom:20px"> <strong>Ready to find your possible?</strong></p>
+        <a href="https://connect.msudenver.edu/register/requestinformation" target="_blank"><button class="col-xs-12 col-md-5 offset-md-1 btn">Request information</button></a>
+        <a href="/apply" target="_blank"><button class="col-xs-12 col-md-5 btn">Apply to MSU Denver</button></a>
       </div>
     </div>
-    </div>
-  </section>
+  </div>
+</section>
+
+
+
 
 
   <div class="footer">
