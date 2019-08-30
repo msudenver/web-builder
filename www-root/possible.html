@@ -100,6 +100,112 @@
     </div>
   </section>
 
+  <nav id="navbar-possible" class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">Are you ready to find your </a>
+    <ul class="nav nav-pills">
+        <li class="nav-item dropdown">
+            <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">possible</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
+                <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
+                <a class="dropdown-item" href="#master-your-future">Master your future</a>
+                <a class="dropdown-item" href="#on-the-front-lines-of-cybersecurity">On the front lines of cybersecurity</a>
+                <a class="dropdown-item" href="#brewing-innovation-in-hospitality">Brewing innovation in hospitality</a>
+                <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
+                <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
+                <a class="dropdown-item" href="#operating-satelites-from-the-classroom">Operating satellites from the classroom</a>
+                <a class="dropdown-item" href="#multiply-your-roi">Multiply your ROI</a>
+                <div role="separator" class="dropdown-divider"></div>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<style>
+.navbar {
+    position: fixed;
+    top: 0px;
+}
+</style>
+
+<script>
+const possibleSwitcher = el => {
+	const scroll = window.scrollY || window.pageYOffset
+	const boundsTop = el.getBoundingClientRect().top + scroll
+	
+	const viewport = {
+		top: scroll,
+		bottom: scroll + window.innerHeight,
+	}
+	
+    const bounds = {
+		top: boundsTop,
+		bottom: boundsTop + el.clientHeight,
+	}
+	
+	return ( bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom ) 
+		|| ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const rhe = document.getElementById('reimagine-higher-education')
+    const lcl = document.getElementById('learners-connect-with-leaders')
+    const myf = document.getElementById('master-your-future')
+    const otfloc = document.getElementById('on-the-front-lines-of-cybersecurity')
+    const biih = document.getElementById('brewing-innovation-in-hospitality')
+    const ihic = document.getElementById('improving-health-in-colorado')
+    const ttt = document.getElementById('teaching-tomorrows-teachers')
+    const osftc = document.getElementById('operating-satelites-from-the-classroom')
+    const roi = document.getElementById('multiply-your-roi')
+    const label = document.getElementById('nav-showing')
+
+
+    const handler = () => raf( () => {
+        if(possibleSwitcher(rhe)){
+            label.innerHTML='Reimagine higher education'
+        }
+        else if(possibleSwitcher(lcl)){
+            label.innerHTML='Learners connect with leaders'
+        }
+        else if(possibleSwitcher(myf)){
+            label.innerHTML='Master your future'
+        }
+        else if(possibleSwitcher(otfloc)){
+            label.innerHTML='On the front lines of cybersecurity'
+        }
+        else if(possibleSwitcher(biih)){
+            label.innerHTML='Brewing innovation in hospitality'
+        }
+        else if(possibleSwitcher(ihic)){
+            label.innerHTML='Improving health in Colorado'
+        }
+        else if(possibleSwitcher(ttt)){
+            label.innerHTML="Teaching tomorrow's teachers"
+        }
+        else if(possibleSwitcher(osftc)){
+            label.innerHTML='Operating satellites from the classroom'
+        }
+        else if(possibleSwitcher(roi)){
+            label.innerHTML='Multiply your ROI'
+        }
+        else {
+            label.innerHTML='Possible'
+        }
+    })
+    handler() 
+    window.addEventListener('scroll', handler)
+})
+
+const raf = 
+    window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    function(callback) {
+        window.setTimeout(callback, 1000/60)
+    }
+
+</script>
+
   <section class="start_your_possible" id="start">
   <div class="container">
     <div class="row">
