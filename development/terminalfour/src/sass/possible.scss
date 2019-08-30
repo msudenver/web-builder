@@ -53,6 +53,7 @@ section {
   padding-top: 15vh;
   padding-bottom: 15vh;
   height: auto;
+  // box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.);
 }
 
 .introduction {
@@ -98,7 +99,7 @@ section {
   padding: 0 12px 5px;
 }
 
-.start_your_possible {
+.blue-background {
   padding-top: 15vh;
   background-color: #00447c;
   padding-bottom: 15vh;
@@ -280,5 +281,6 @@ button, [type="button"],// 1
     width: 260px;
   }
 }
+@import "possible-partials/possible-navigation.scss";
 @import "possible-partials/possible-viewport-overrides.scss";
 @import "possible-partials/possible-animations.scss";
