@@ -65,6 +65,13 @@ section {
   font-weight: 700;
 }
 
+.well {
+  background: #fff;
+  padding: 25px 30px;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
 .possible-indicator {
   color: #00447c;
   width: 100px;
@@ -114,6 +121,22 @@ section {
 }
 .blue-background p {
   color: #fff;
+}
+.blue-background .btn {
+  border: solid 3px #fff;
+  padding: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 0;
+  margin: 15px 10px;
+}
+.blue-background .btn:hover {
+  border: solid 3px #00447c;
+  padding: 20px;
+  color: #00447c;
+  font-size: 1.5rem;
+  border-radius: 0;
+  background: #fff;
 }
 
 button, [type="button"],
@@ -209,8 +232,8 @@ button, [type="button"],
   margin-bottom: 15vh;
 }
 
-.background-right-copy {
-  background: url("../media/possible/Tivoli.jpg") no-repeat center center fixed;
+.teaching-tomorrows-teachers-section {
+  background: url("../media/possible/Teaching-tomorrow-teachers.jpg") no-repeat center center fixed;
   display: table;
   height: auto;
   position: relative;
@@ -220,11 +243,31 @@ button, [type="button"],
   -o-background-size: cover;
   background-size: cover;
 }
-.background-right-copy .well {
-  background: #fff;
-  padding: 25px 30px;
-  margin-top: 15vh;
-  margin-bottom: 15vh;
+.teaching-tomorrows-teachers-section .well {
+  background: #ffffffde;
+}
+
+.health-in-colorado {
+  background: url(" ../media/possible/Health-in-colorado.jpg") no-repeat center center fixed;
+  display: table;
+  height: auto;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.background-right-copy {
+  display: table;
+  height: auto;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .footer {
@@ -379,6 +422,27 @@ button, [type="button"],
   -webkit-animation-duration: 5s;
   -webkit-animation-delay: 15s;
   animation-delay: 15s;
+}
+
+.navbar {
+  padding-top: 15vh;
+  background-color: #00447c;
+  padding-bottom: 15vh;
+  height: auto;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.navbar h2 {
+  margin: 15px 0;
+  color: #fff;
+}
+.navbar p {
+  color: #fff;
 }
 
 /*# sourceMappingURL=possible.css.map */
