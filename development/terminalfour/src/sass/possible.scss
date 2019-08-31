@@ -68,6 +68,12 @@ section {
   }
 }
 
+.well {
+  background: #fff;
+  padding: 25px 30px;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
 .possible-indicator {
   color: #00447c;
   // display:block;
@@ -115,12 +121,31 @@ section {
   h2 {
     margin: 15px 0;
     color: #fff;
+    margin-bottom:30px;
   }
 
   p {
     color: #fff;
   }
-}
+  .btn {
+    border: solid 3px #fff;
+    padding: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 0;
+    margin: 15px 10px;
+  }
+
+  .btn:hover {
+    border: solid 3px #00447c;
+    padding: 20px;
+    color: #00447c;
+    font-size: 1.5rem;
+    border-radius: 0;
+    background: #fff;
+  }
+
+  }
 button, [type="button"],// 1
 
 [type="reset"],
@@ -245,8 +270,9 @@ button, [type="button"],// 1
   }
 }
 
-.background-right-copy {
-  background: url("../media/possible/Tivoli.jpg") no-repeat center center fixed;
+
+.teaching-tomorrows-teachers-section {
+  background: url("../media/possible/Teaching-tomorrow-teachers.jpg") no-repeat center center fixed;
   display: table;
   height: auto;
   position: relative;
@@ -256,12 +282,35 @@ button, [type="button"],// 1
   -o-background-size: cover;
   background-size: cover;
 
-  .well {
-    background: #fff;
-    padding: 25px 30px;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+  .well { 
+    background: #ffffffde;
   }
+}
+
+.health-in-colorado {
+  background: url(" ../media/possible/Health-in-colorado.jpg") no-repeat center center fixed;
+  display: table;
+  height: auto;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.background-right-copy {
+  // background: url("../media/possible/Tivoli.jpg") no-repeat center center fixed;
+  display: table;
+  height: auto;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
 }
 
 .footer {
