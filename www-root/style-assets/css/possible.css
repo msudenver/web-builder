@@ -425,15 +425,12 @@ button, [type="button"],
 }
 
 .navbar {
-  background-color: #00447c;
-  height: auto;
-  display: table;
-  position: relative;
+  position: fixed;
+  top: 0px;
+  display: block;
+  background-color: #00447c !important;
+  z-index: 999;
   width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 .navbar h2 {
   margin: 15px 0;

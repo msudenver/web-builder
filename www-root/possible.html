@@ -100,33 +100,51 @@
     </div>
   </div>
 </section>
-  <nav id="navbar-possible" class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">Are you ready to find your </a>
-    <ul class="nav nav-pills">
-        <li class="nav-item dropdown">
-            <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">possible</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
-                <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
-                <a class="dropdown-item" href="#master-your-future">Master your future</a>
-                <a class="dropdown-item" href="#on-the-front-lines-of-cybersecurity">On the front lines of cybersecurity</a>
-                <a class="dropdown-item" href="#brewing-innovation-in-hospitality">Brewing innovation in hospitality</a>
-                <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
-                <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
-                <a class="dropdown-item" href="#operating-satelites-from-the-classroom">Operating satellites from the classroom</a>
-                <a class="dropdown-item" href="#multiply-your-roi">Multiply your ROI</a>
-                <div role="separator" class="dropdown-divider"></div>
-            </div>
-        </li>
-    </ul>
-</nav>
+  <div class='navbar-wrapper' style="display: none;">
+    <nav id="navbar-possible" class="navbar">
+        <h2>Are you ready to find your <span class='possible-word'>possible</span> </h2>
+        <ul class="nav nav-pills">
+            <li class="nav-item dropdown">
+                <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
+                    <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
+                    <a class="dropdown-item" href="#master-your-future">Master your future</a>
+                    <a class="dropdown-item" href="#on-the-front-lines-of-cybersecurity">On the front lines of cybersecurity</a>
+                    <a class="dropdown-item" href="#brewing-innovation-in-hospitality">Brewing innovation in hospitality</a>
+                    <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
+                    <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
+                    <a class="dropdown-item" href="#operating-satelites-from-the-classroom">Operating satellites from the classroom</a>
+                    <a class="dropdown-item" href="#multiply-your-roi">Multiply your ROI</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+
 
 <style>
 .navbar {
     position: fixed;
     top: 0px;
+
+    background-color: #00447c !important;
+    z-index: 999;
+
+    width: 100%;
+}
+  
+.navbar > h2 {
+    margin: 15px 0;
+    color: #fff;
+}
+  
+.navbar > p {
+    color: #fff;
 }
 </style>
+
 
 <script>
 const possibleSwitcher = el => {
@@ -161,39 +179,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const handler = () => raf( () => {
-        if(possibleSwitcher(rhe)){
-            label.innerHTML='Reimagine higher education'
+        if(possibleSwitcher(ihic)){
+            label.innerHTML='Improving health in Colorado'
+            $('.navbar-wrapper').fadeIn()
         }
-        else if(possibleSwitcher(lcl)){
-            label.innerHTML='Learners connect with leaders'
+
+        else if(possibleSwitcher(rhe)){
+            label.innerHTML='Reimagine higher education'
+
+
         }
         else if(possibleSwitcher(myf)){
             label.innerHTML='Master your future'
         }
-        else if(possibleSwitcher(otfloc)){
-            label.innerHTML='On the front lines of cybersecurity'
-        }
-        else if(possibleSwitcher(biih)){
-            label.innerHTML='Brewing innovation in hospitality'
-        }
-        else if(possibleSwitcher(ihic)){
-            label.innerHTML='Improving health in Colorado'
-        }
         else if(possibleSwitcher(ttt)){
             label.innerHTML="Teaching tomorrow's teachers"
         }
-        else if(possibleSwitcher(osftc)){
-            label.innerHTML='Operating satellites from the classroom'
+
+        else if(possibleSwitcher(lcl)){
+            label.innerHTML='Learners connect with leaders'
+            $('.navbar-wrapper').fadeIn()
         }
-        else if(possibleSwitcher(roi)){
-            label.innerHTML='Multiply your ROI'
-        }
+
         else {
-            label.innerHTML='Possible'
+            $('.navbar-wrapper').fadeOut()
         }
     })
     handler() 
     window.addEventListener('scroll', handler)
+
 })
 
 const raf = 
@@ -204,9 +218,11 @@ const raf =
         window.setTimeout(callback, 1000/60)
     }
 
+
 </script>
 
-  <section class="blue-background" id="start">
+
+  <!-- <section class="blue-background" id="start">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-10 offset-md-1">
@@ -259,7 +275,7 @@ const raf =
 
     </div>
   </div>
-</div> -->
+</div> --> -->
   <section id="improving-health-in-colorado" class="health-in-colorado">
   <div class="container">
     <div class="row">
