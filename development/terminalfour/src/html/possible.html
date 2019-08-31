@@ -30,85 +30,30 @@
 <t4 type='media' id='117285' formatter='image/path'/> Logo
 
  -->
-
-  <!-- google analytics -->
-  <!-- GTM fireGtm variable -->
-  <script type="text/javascript">
-    var dataLayer = window.dataLayer = window.dataLayer || [];
-    dataLayer.push({
-      'fireGtm': true
-    });
-  </script>
-
-  <!-- Google Tag Manager -->
-  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M6TCTS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <script>
-    (function(w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-M6TCTS');
-  </script>
-  <!-- End Google Tag Manager -->
-  <!-- Start Alexa Certify Javascript -->
-  <script type="text/javascript">
-    _atrk_opts = {
-      atrk_acct: "8qmgp1IW1d10mh",
-      domain: "msudenver.edu",
-      dynamic: true
-    };
-    (function() {
-      var as = document.createElement('script');
-      as.type = 'text/javascript';
-      as.async = true;
-      as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js";
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(as, s);
-    })();
-  </script>
-
-
-
+  @@include('google-analytics.html')
 
 </head>
 
 <body>
 
   @@include('possible/introduction.html')
-  @@include('possible/dropdown-navbar.html')
-
   @@include('possible/start-your-possible.html')
   @@include('possible/improving-health-in-colorado.html')
   <!-- @@include('possible/side-navigation.html') -->
   @@include('possible/reimagine-higher-education.html')
-
   @@include('possible/master-your-future.html')
   <!-- @@include('possible/on-the-front-lines-of-cybersecurity.html') -->
   <!-- @@include('possible/brewing-innovation-in-hospitality.html') -->
-
   @@include('possible/teaching-tomorrows-teachers.html')
   @@include('possible/learners-connect-with-leaders.html')
   <!-- @@include('possible/operating-satelites-from-the-classroom.html') -->
   <!-- @@include('possible/multiply-your-roi.html') -->
   <!-- @@include('possible/saving-endangered-languages.html') -->
-
   <!-- @@include('possible/white-background-right-photo.html') -->
   <!-- @@include('possible/background-right-copy.html') -->
   <!-- @@include('possible/blue-background.html') -->
 
   @@include('possible/call-to-action.html')
-
-
-
 
 
   <div class="footer">
