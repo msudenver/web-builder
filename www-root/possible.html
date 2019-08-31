@@ -30,54 +30,50 @@
 <t4 type='media' id='117285' formatter='image/path'/> Logo
 
  -->
-
   <!-- google analytics -->
-  <!-- GTM fireGtm variable -->
-  <script type="text/javascript">
-    var dataLayer = window.dataLayer = window.dataLayer || [];
-    dataLayer.push({
-      'fireGtm': true
+<!-- GTM fireGtm variable -->
+<script type="text/javascript">
+  var dataLayer = window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'fireGtm': true
+  });
+</script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M6TCTS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>
+  (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
     });
-  </script>
-
-  <!-- Google Tag Manager -->
-  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M6TCTS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <script>
-    (function(w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-M6TCTS');
-  </script>
-  <!-- End Google Tag Manager -->
-  <!-- Start Alexa Certify Javascript -->
-  <script type="text/javascript">
-    _atrk_opts = {
-      atrk_acct: "8qmgp1IW1d10mh",
-      domain: "msudenver.edu",
-      dynamic: true
-    };
-    (function() {
-      var as = document.createElement('script');
-      as.type = 'text/javascript';
-      as.async = true;
-      as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js";
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(as, s);
-    })();
-  </script>
-
-
-
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+      '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-M6TCTS');
+</script>
+<!-- End Google Tag Manager -->
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+  _atrk_opts = {
+    atrk_acct: "8qmgp1IW1d10mh",
+    domain: "msudenver.edu",
+    dynamic: true
+  };
+  (function() {
+    var as = document.createElement('script');
+    as.type = 'text/javascript';
+    as.async = true;
+    as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js";
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(as, s);
+  })();
+</script>
 
 </head>
 
@@ -100,129 +96,7 @@
     </div>
   </div>
 </section>
-  <div class='navbar-wrapper' style="display: none;">
-    <nav id="navbar-possible" class="navbar">
-        <h2>Are you ready to find your <span class='possible-word'>possible</span> </h2>
-        <ul class="nav nav-pills">
-            <li class="nav-item dropdown">
-                <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
-                    <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
-                    <a class="dropdown-item" href="#master-your-future">Master your future</a>
-                    <a class="dropdown-item" href="#on-the-front-lines-of-cybersecurity">On the front lines of cybersecurity</a>
-                    <a class="dropdown-item" href="#brewing-innovation-in-hospitality">Brewing innovation in hospitality</a>
-                    <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
-                    <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
-                    <a class="dropdown-item" href="#operating-satelites-from-the-classroom">Operating satellites from the classroom</a>
-                    <a class="dropdown-item" href="#multiply-your-roi">Multiply your ROI</a>
-                    <div role="separator" class="dropdown-divider"></div>
-                </div>
-            </li>
-        </ul>
-    </nav>
-</div>
-
-
-<style>
-.navbar {
-    position: fixed;
-    top: 0px;
-
-    background-color: #00447c !important;
-    z-index: 999;
-
-    width: 100%;
-}
-  
-.navbar > h2 {
-    margin: 15px 0;
-    color: #fff;
-}
-  
-.navbar > p {
-    color: #fff;
-}
-</style>
-
-
-<script>
-const possibleSwitcher = el => {
-	const scroll = window.scrollY || window.pageYOffset
-	const boundsTop = el.getBoundingClientRect().top + scroll
-	
-	const viewport = {
-		top: scroll,
-		bottom: scroll + window.innerHeight,
-	}
-	
-    const bounds = {
-		top: boundsTop,
-		bottom: boundsTop + el.clientHeight,
-	}
-	
-	return ( bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom ) 
-		|| ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    const rhe = document.getElementById('reimagine-higher-education')
-    const lcl = document.getElementById('learners-connect-with-leaders')
-    const myf = document.getElementById('master-your-future')
-    const otfloc = document.getElementById('on-the-front-lines-of-cybersecurity')
-    const biih = document.getElementById('brewing-innovation-in-hospitality')
-    const ihic = document.getElementById('improving-health-in-colorado')
-    const ttt = document.getElementById('teaching-tomorrows-teachers')
-    const osftc = document.getElementById('operating-satelites-from-the-classroom')
-    const roi = document.getElementById('multiply-your-roi')
-    const label = document.getElementById('nav-showing')
-
-
-    const handler = () => raf( () => {
-        if(possibleSwitcher(ihic)){
-            label.innerHTML='Improving health in Colorado'
-            $('.navbar-wrapper').fadeIn()
-        }
-
-        else if(possibleSwitcher(rhe)){
-            label.innerHTML='Reimagine higher education'
-
-
-        }
-        else if(possibleSwitcher(myf)){
-            label.innerHTML='Master your future'
-        }
-        else if(possibleSwitcher(ttt)){
-            label.innerHTML="Teaching tomorrow's teachers"
-        }
-
-        else if(possibleSwitcher(lcl)){
-            label.innerHTML='Learners connect with leaders'
-            $('.navbar-wrapper').fadeIn()
-        }
-
-        else {
-            $('.navbar-wrapper').fadeOut()
-        }
-    })
-    handler() 
-    window.addEventListener('scroll', handler)
-
-})
-
-const raf = 
-    window.requestAnimationFrame ||
-    window.webkitRequestAnimationFrame ||
-    window.mozRequestAnimationFrame ||
-    function(callback) {
-        window.setTimeout(callback, 1000/60)
-    }
-
-
-</script>
-
-
-  <!-- <section class="blue-background" id="start">
+  <section class="blue-background" id="start" style="height:100vh;">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-10 offset-md-1">
@@ -233,49 +107,42 @@ const raf =
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-md-10 offset-md-1">
+        <a href="#improving-health-in-colorado">
+          <btn class="btn col-xs-12 col-md-5">Improving health in Colorado</btn>
+        </a>
+
         <a href="#reimagine-higher-education">
-          <btn class="btn">Reimagine higher education</btn>
+          <btn class="btn col-xs-12 col-md-5">Reimagine higher education</btn>
         </a>
         <a href="#learners-connect-with-leaders">
-          <btn class="btn">Learners connect with leaders</btn>
+          <btn class="btn col-xs-12 col-md-5">Learners connect with leaders</btn>
         </a>
         <a href="#master-your-future">
-          <btn class="btn">Master your future</btn>
+          <btn class="btn col-xs-12 col-md-5">Master your future</btn>
         </a>
-        <a href="#on-the-front-lines-of-cybersecurity">
+        <!-- <a href="#on-the-front-lines-of-cybersecurity">
           <btn class="btn">On the front lines of cybersecurity</btn>
-        </a>
-        <a href="#brewing-innovation-in-hospitality">
+        </a> -->
+        <!-- <a href="#brewing-innovation-in-hospitality">
           <btn class="btn">Brewing innovation in hospitality</btn>
-        </a>
-        <a href="#improving-health-in-colorado">
-          <btn class="btn">Improving health in Colorado</btn>
-        </a>
+        </a> -->
+
         <a href="#teaching-tomorrows-teachers">
-          <btn class="btn">Teaching tomorrow’s teachers</btn>
+          <btn class="btn col-xs-12 col-md-5">Teaching tomorrow’s teachers</btn>
         </a>
-        <a href="#operating-satelites-from-the-classroom">
+        <!-- <a href="#operating-satelites-from-the-classroom">
           <btn class="btn">Operating satellites from the classroom</btn>
-        </a>
-        <a href="#multiply-your-roi">
+        </a> -->
+        <!-- <a href="#multiply-your-roi">
           <btn class="btn">Multiply your ROI</btn>
-        </a>
-        <a href="#saving-endangered-languages">
+        </a> -->
+        <!-- <a href="#saving-endangered-languages">
           <btn class="btn">Saving endangered languages</btn>
-        </a>
+        </a> -->
       </div>
     </div>
   </div>
-
 </section>
-<!--
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-md-12">
-
-    </div>
-  </div>
-</div> --> -->
   <section id="improving-health-in-colorado" class="health-in-colorado">
   <div class="container">
     <div class="row">
@@ -299,10 +166,12 @@ const raf =
     </h3>
     <div class="row">
       <div class="col-xs-12 col-md-6">
+        <p></p>
+        <p></p>
         <p>
           Build and operate satellites at an innovative aerospace company. Make beer at a legendary brewery. Produce an Emmy-winning newscast. All without leaving campus. Plus, our downtown location provides unparalleled access to internships and
           networks that jump-start careers. Just ask this “SportsCenter” anchor.</p>
-        <p style="margin-bottom:20px"> <strong>The possibilities are endless.</strong></p>
+        <p style="margin-bottom:20px; font-size:2rem;"> <strong>The possibilities are endless.</strong></p>
       </div>
       <div class="col-xs-12 col-md-6">
         <img class="img-thumbnail" src="style-assets/media/possible/pride.jpg">
@@ -310,15 +179,29 @@ const raf =
     </div>
   </div>
 </section>
-
   <section id="master-your-future">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
         <h2>Here, you can master your future.</h2>
         <h3>Master’s degrees in business, health, teaching and technology designed to advance your career and community.</h3>
-        <img class="img-thumbnail" style="float:left;" src="style-assets/media/possible/MockTrial.jpg">
-        <p>Advance your community – and your career – with an advanced degree in a critical Colorado field.</p>
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="copy-swap">
+              <p>Advance your community – and your career – with an <a href="https://www.msudenver.edu/graduate-studies/" advanced degree</a> in a critical Colorado field: <a
+                  href="https://www.msudenver.edu/programs/master-of-business-administration-mba.shtml">business administration</a>, <a href="https://www.msudenver.edu/programs/master-of-professional-accountancy-mpacc.shtml">accounting</a>, <a
+                  href="https://www.msudenver.edu/programs/master-of-arts-in-teaching-mat.shtml">teaching</a>, <a href="https://www.msudenver.edu/programs/master-of-science-in-cybersecurity.shtml">cybersecurity</a>, <a
+                  href="https://www.msudenver.edu/programs/master-of-health-administration-mha.shtml">health administration</a>,
+                <a href="https://www.msudenver.edu/programs/master-of-science-in-human-nutrition-and-dietetics.shtml">human nutrition and dietetics</a>, <a href="https://www.msudenver.edu/programs/master-of-social-work-msw.shtml">social work</a> or
+                <a href="https://www.msudenver.edu/programs/ms-in-clinical-behavioral-health.shtml">clinical behavioral health</a>. Level up in your current job or change careers with a flexible and relevant <a
+                  href="https://red.msudenver.edu/2019/level-up.html">graduate degree designed with students in
+                  mind</a>.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <img class="img-thumbnail" src="style-assets/media/possible/MockTrial.jpg">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -345,7 +228,6 @@ const raf =
     </div>
   </div>
 </section> -->
-
   <section id="teaching-tomorrows-teachers" class="teaching-tomorrows-teachers-section">
   <div class="container">
     <div class="row">
@@ -360,20 +242,22 @@ const raf =
   </div>
 </section>
   <section class="" id="learners-connect-with-leaders">
-  <div class="container" style="border: 2px solid #D11242">
+  <div class="container">
     <h2 style="margin-bottom:30px;">MSU Denver is where learners connect with leaders.</h2>
-
+    <h3><i>
+        99% of our classes are taught by faculty, not teaching assistants. They are industry icons, national experts and have the highest degrees in their disciplines.
+      </i></h3>
     <div class="row">
       <div class="col-xs-12 col-md-6">
-        <h3><i>
-            99% of our classes are taught by faculty, not teaching assistants. They are industry icons, national experts and have the highest degrees in their disciplines.
-          </i></h3>
-        <p>Learn to fight crime from the former director of the NCIS. Analyze graphic novels with the convention director of Denver’s Comic Con. Get bitten by the insect bug with a renowned mosquito biologist. Our professors are experts in their
-          fields, but even better at passing on their expertise to students.</p>
+        <img class="img-thumbnail" src="style-assets/media/possible/artclass.jpg">
       </div>
       <div class="col-xs-12 col-md-6">
-        <img class="img-thumbnail" src="style-assets/media/possible/MockTrial.jpg">
+
+        <p style="margin-top:5vh;">Learn to fight crime from the former director of the NCIS. Analyze graphic novels with the convention director of Denver’s Comic Con. Get bitten by the insect bug with a renowned mosquito biologist. Our professors
+          are experts in their
+          fields, but even better at passing on their expertise to students.</p>
       </div>
+
     </div>
   </div>
 </section>
@@ -412,7 +296,6 @@ const raf =
     </div>
   </div>
 </section> -->
-
   <!-- <section class="white-background-right-photo">
   <div class="container">
     <h2 style="margin-bottom:30px;">white-background-right-photo<span class="possible-word">possible</span></h2>
@@ -455,7 +338,6 @@ const raf =
       </div>
     </div>
   </div>
-
 </section> -->
 
   <section class="possible-call-to-action">
@@ -478,9 +360,6 @@ const raf =
     </div>
   </div>
 </section>
-
-
-
 
 
   <div class="footer">

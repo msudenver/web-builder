@@ -30,6 +30,11 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  margin: 10px 0;
+  font-style: italic;
+}
+
 h4 {
   color: #00447c;
   margin-bottom: 15px;
@@ -42,6 +47,19 @@ p {
 p.copyright {
   font-size: 16px;
   text-align: right;
+}
+
+a {
+  color: #092f6b;
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #092f6b;
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 .copyright > a {
@@ -118,6 +136,7 @@ section {
   margin: 15px 0;
   color: #fff;
   margin-bottom: 30px;
+  text-align: center;
 }
 .blue-background p {
   color: #fff;
@@ -128,7 +147,7 @@ section {
   color: #fff;
   font-size: 1.5rem;
   border-radius: 0;
-  margin: 15px 10px;
+  margin: 15px;
 }
 .blue-background .btn:hover {
   border: solid 3px #00447c;
@@ -245,6 +264,35 @@ button, [type="button"],
 }
 .teaching-tomorrows-teachers-section .well {
   background: #ffffffde;
+}
+
+#master-your-future {
+  padding-bottom: 20vh;
+  background-color: #D11242;
+}
+#master-your-future h2, #master-your-future h3 {
+  color: white !important;
+  margin-bottom: 15px;
+}
+#master-your-future .copy-swap {
+  background: white;
+}
+#master-your-future .copy-swap p, #master-your-future .copy-swap a, #master-your-future .copy-swap a:hover {
+  color: #00447c;
+}
+@media only screen and (min-width: 543px) {
+  #master-your-future .copy-swap {
+    margin-top: 35px;
+    margin-right: -75px;
+    z-index: 1;
+    background-color: white;
+    position: absolute;
+    padding: 35px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.175);
+  }
+  #master-your-future .copy-swap p, #master-your-future .copy-swap a, #master-your-future .copy-swap a:hover {
+    color: #00447c !important;
+  }
 }
 
 .health-in-colorado {
