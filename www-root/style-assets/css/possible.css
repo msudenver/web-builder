@@ -424,4 +424,20 @@ button, [type="button"],
   animation-delay: 15s;
 }
 
+.navbar {
+  position: fixed;
+  top: 0px;
+  display: block;
+  background-color: #00447c !important;
+  z-index: 999;
+  width: 100%;
+}
+.navbar h2 {
+  margin: 15px 0;
+  color: #fff;
+}
+.navbar p {
+  color: #fff;
+}
+
 /*# sourceMappingURL=possible.css.map */
