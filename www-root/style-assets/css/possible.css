@@ -425,9 +425,7 @@ button, [type="button"],
 }
 
 .navbar {
-  padding-top: 15vh;
   background-color: #00447c;
-  padding-bottom: 15vh;
   height: auto;
   display: table;
   position: relative;
