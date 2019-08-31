@@ -77,37 +77,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const handler = () => raf( () => {
-        if(possibleSwitcher(rhe)){
-            label.innerHTML='Reimagine higher education'
-
+        if(possibleSwitcher(ihic)){
+            label.innerHTML='Improving health in Colorado'
             $('.navbar-wrapper').fadeIn()
         }
-        else if(possibleSwitcher(lcl)){
-            label.innerHTML='Learners connect with leaders'
+
+        else if(possibleSwitcher(rhe)){
+            label.innerHTML='Reimagine higher education'
+
 
         }
         else if(possibleSwitcher(myf)){
             label.innerHTML='Master your future'
         }
-        else if(possibleSwitcher(otfloc)){
-            label.innerHTML='On the front lines of cybersecurity'
-        }
-        else if(possibleSwitcher(biih)){
-            label.innerHTML='Brewing innovation in hospitality'
-        }
-        else if(possibleSwitcher(ihic)){
-            label.innerHTML='Improving health in Colorado'
-        }
         else if(possibleSwitcher(ttt)){
             label.innerHTML="Teaching tomorrow's teachers"
         }
-        else if(possibleSwitcher(osftc)){
-            label.innerHTML='Operating satellites from the classroom'
-        }
-        else if(possibleSwitcher(roi)){
-            label.innerHTML='Multiply your ROI'
+
+        else if(possibleSwitcher(lcl)){
+            label.innerHTML='Learners connect with leaders'
             $('.navbar-wrapper').fadeIn()
         }
+
         else {
             $('.navbar-wrapper').fadeOut()
         }

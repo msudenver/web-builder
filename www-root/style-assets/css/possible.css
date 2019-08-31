@@ -424,25 +424,4 @@ button, [type="button"],
   animation-delay: 15s;
 }
 
-.navbar {
-  padding-top: 15vh;
-  background-color: #00447c;
-  padding-bottom: 15vh;
-  height: auto;
-  display: table;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.navbar h2 {
-  margin: 15px 0;
-  color: #fff;
-}
-.navbar p {
-  color: #fff;
-}
-
 /*# sourceMappingURL=possible.css.map */
