@@ -1,0 +1,19 @@
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #ffffff !important;
+  background-color: #002855 !important;
+  border: 1px solid #002855 !important;
+  cursor: default;
+  border-radius: 0;
+  line-height: 24px;
+}
+
+.nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
+  border: 1px solid #CBCBCB;
+  border-radius: 0;
+  background-color: #EFEFEF;
+  color: #717073;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 700;
+}
+

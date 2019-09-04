@@ -1,0 +1,17 @@
+.navbar {
+    position: fixed;
+    top: 0px;
+    display: block;
+    
+    background-color: #00447c !important;
+    z-index: 999;
+    width: 100%;
+
+    h2 {
+      margin: 15px 0;
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }

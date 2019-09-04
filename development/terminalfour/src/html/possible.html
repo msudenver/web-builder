@@ -21,160 +21,71 @@
 
   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7291556/6990192/css/fonts.css" />
   <script src="https://kit.fontawesome.com/7d379a052d.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="style-assets/css/possible.css" />
 
-  <!-- google analytics -->
-  <!-- GTM fireGtm variable -->
-  <script type="text/javascript">
-    var dataLayer = window.dataLayer = window.dataLayer || [];
-    dataLayer.push({
-      'fireGtm': true
-    });
-  </script>
+  <!-- <t4 type='media' id='172853' formatter='image/path'/> background section
+<t4 type='media' id='172852' formatter='image/path'/> Pride photo
+<t4 type='media' id='117285' formatter='image/path'/> Logo
 
-  <!-- Google Tag Manager -->
-  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M6TCTS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <script>
-    (function(w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-M6TCTS');
-  </script>
-  <!-- End Google Tag Manager -->
-  <!-- Start Alexa Certify Javascript -->
-  <script type="text/javascript">
-    _atrk_opts = {
-      atrk_acct: "8qmgp1IW1d10mh",
-      domain: "msudenver.edu",
-      dynamic: true
-    };
-    (function() {
-      var as = document.createElement('script');
-      as.type = 'text/javascript';
-      as.async = true;
-      as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js";
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(as, s);
-    })();
-  </script>
-
-
-
+ -->
+  @@include('google-analytics.html')
 
 </head>
 
-<body>
-  <section class="introduction">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <h1>Reimagine <span class="possible-word fade-in">possible</span></h1>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-2 offset-md-8 text-center">
-          <img class="img-responsive university-logo fade-in" src="style-assets/media/possible/MSUDenver_Formal_2CPos_BlueRed_WhBkgd_FormatA_RGB.svg">
-        </div>
 
-        <div class="col-xs-12 col-sm-4 offset-col-sm-4 col-md-12 text-center">
-          <a href="#start"> <span class="possible-indicator fas fa-chevron-down fa-5x fade-in"></span></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="start_your_possible" id="start">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-8 offset-md-4">
-          <h2>What would you do if anything were <span class="possible-word-reversed">possible</span>?</h2>
-        </div>
-        <div class="col-xs-12 col-md-8 offset-md-4">
-          <p>Imagine a place where barriers are removed, opportunities are plentiful, labels are nonexistent and an entire community of peers, mentors, educators and industry leaders is ready to support you, encourage you and connect with you.</p>
-        </div>
-      </div>
-    </div>
+<body style{position: relative;} data-spy="scroll" data-target="#navbar-possible" data-offset="150">
+  @@include('possible/dropdown-navbar.html')
 
-  </section>
+  <div >
+    @@include('possible/introduction.html')
+    @@include('possible/start-your-possible.html')
+    @@include('possible/improving-health-in-colorado.html')
+  
+    <!-- @@include('possible/side-navigation.html') -->
+    @@include('possible/reimagine-higher-education.html')
+    @@include('possible/master-your-future.html')
+    <!-- @@include('possible/on-the-front-lines-of-cybersecurity.html') -->
+    <!-- @@include('possible/brewing-innovation-in-hospitality.html') -->
+    @@include('possible/teaching-tomorrows-teachers.html')
+    @@include('possible/learners-connect-with-leaders.html')
+    <!-- @@include('possible/operating-satelites-from-the-classroom.html') -->
+    <!-- @@include('possible/multiply-your-roi.html') -->
+    <!-- @@include('possible/saving-endangered-languages.html') -->
+    <!-- @@include('possible/white-background-right-photo.html') -->
+    <!-- @@include('possible/background-right-copy.html') -->
+    <!-- @@include('possible/blue-background.html') -->
 
-  <section class="section-feels-like">
-    <div class="container">
-      <h2 style="margin-bottom:30px;">At MSU Denver, that’s what it feels like to reimagine what’s <span class="possible-word">possible</span> in higher
-        education.</h2>
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <p>We offer a dynamic urban setting and an incredible network of organizations
-            who partner with us, offer internships and recruit
-            our graduates. We have degrees in sought-after
-            fields, and we’re leading the way across all areas
-            of study in excellence, innovation and opportunity.
-            You can even create your own degree based on
-            your unique passions.
-            In the months ahead, visit this page to read our
-            stories, be inspired and imagine what could be
-            possible for your future.</p>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <img class="img-thumbnail" src="style-assets/media/possible/pride.jpg">
-        </div>
-      </div>
-    </div>
-  </section>
+    @@include('possible/call-to-action.html')
 
 
-  <section class="possible-call-to-action">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 well">
-          <h2>Start your <span class="possible-word">possible</span></h2>
-          <p>
-            MSU Denver is where classes lead to careers
-            and learners connect with leaders. Our
-            campus is diverse and welcoming, filled with
-            learners in undergraduate and master's
-            programs who have taken a variety of paths to
-            arrive here and who are discovering their own
-            possible every day.</p>
-          <p style="margin-bottom:20px"> <strong>Ready to find your possible?</strong></p>
-          <a href=""><button class="col-xs-12 col-md-5 offset-md-1 btn">Request information</button></a>
-          <a href=""><button class="col-xs-12 col-md-5 btn">Apply to MSU Denver</button></a>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 text-center">
+            <a href="https://msudenver.edu"><img class="img-fluid university-logo-footer" src="style-assets/media/possible/MSUDenver_Formal_2CPos_BlueRed_WhBkgd_FormatA_RGB.svg"></a>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h2 class="possible-footer">Reimagine <span class="possible-word">possible</span></h2>
+          </div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-sm-12 col-md-8 offset-col-md-4">
+            <p class="copyright">&copy; 2019 <a href="https://msudenver.edu">Metropolitan State University of Denver</a>. All rights reserved.</p>
+          </div>
         </div>
       </div>
     </div>
     </div>
-  </section>
-
-
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 text-center">
-          <a href="https://msudenver.edu"><img class="img-fluid university-logo-footer" src="style-assets/media/possible/MSUDenver_Formal_2CPos_BlueRed_WhBkgd_FormatA_RGB.svg"></a>
-        </div>
-        <div class="col-sm-12 col-md-6">
-          <h2 class="possible-footer">Reimagine <span class="possible-word">possible</span></h2>
-        </div>
-      </div>
-      <div class="row justify-content-end">
-        <div class="col-sm-12 col-md-8 offset-col-md-4">
-          <p class="copyright">&copy; 2019 <a href="https://msudenver.edu">Metropolitan State University of Denver</a>. All rights reserved.</p>
-        </div>
-      </div>
-    </div>
+    <script src="style-assets/lib/jquery/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
   </div>
-  </div>
-  <script src="style-assets/lib/jquery/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
+
 </body>
 
 

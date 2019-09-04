@@ -103,12 +103,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 h1 {
-  color: #00447c;
-  font-size: 3rem;
+  color: #002855;
+  font-size: 26px;
+  line-height: 26px;
   margin: 20px 0;
+  padding: 40px 0;
 }
-
-
 .readmore {
   text-align: right;
   margin-top: 10px
@@ -182,7 +182,7 @@ h1 {
 }
 
 hr {
-    border-top: 1px solid #e6e1e1;
+    border-top: 1px solid #7591BC;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -210,12 +210,9 @@ a.t4Edit-page:hover {
     padding-bottom: 15px;
 }
 
-
 .well > .img-responsive {
   padding-left: 0px;
 }
-
-
 
 h2 {
     font-weight: 700;
@@ -228,9 +225,10 @@ h2 {
 }
 
 h3 {
-  color: #717073;
-  font-size: 1.3rem;
-  font-weight: 500;
+  color: #002855;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
   margin-bottom: 4px;
   margin-top: 2px;
 }
