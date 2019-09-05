@@ -99,38 +99,25 @@
       <li class="nav-item dropdown">
         <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
-          <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
-          <a class="dropdown-item" href="#master-your-future">Master your future</a>
           <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
+          <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
+          <a class="dropdown-item" href="#master-your-future">Master your future</a>
           <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
+          <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
+          
           <a class="dropdown-item" href="#introduction" hidden>Top</a>
         </div>
       </li>
     </ul>
+    <section class="blue-background">
+      <a href="https://connect.msudenver.edu/register/requestinformation" target="_blank"><button class="col-xs-12 col-md-5 offset-md-1 btn" style="font-size: 1rem; padding: 10px; border: solid 3px #fff;">Information</button></a>
+      <a href="/apply" target="_blank"><button class="col-xs-12 col-md-5 btn" style="font-size: 1rem; padding: 10px; border: solid 3px #fff;">Apply</button></a>
+    </section>
   </nav>
 </div>
 
-
-
 <style>
-  .navbar {
-    top: 0px;
 
-    background-color: #00447c;
-    z-index: 999;
-
-    width: 100%;
-  }
-
-  .navbar>h2 {
-    margin: 15px 0;
-    color: #fff;
-  }
-
-  .navbar>p {
-    color: #fff;
-  }
 </style>
 
 <script type="text/javascript">
@@ -142,9 +129,9 @@ $(window).on("activate.bs.scrollspy", function(){
   const x = document.querySelectorAll('a.dropdown-item.active')[0].innerText
   console.log(x)
   if(x == "Top")
-    $('.navbar-wrapper').fadeOut(150)
+    $('.navbar-wrapper').fadeOut(50)
   else {
-    $('.navbar-wrapper').fadeIn(150)
+    $('.navbar-wrapper').fadeIn(50)
     droptext.innerText = x
   }
     
