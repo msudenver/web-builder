@@ -22,6 +22,7 @@
   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7291556/6990192/css/fonts.css" />
   <script src="https://kit.fontawesome.com/7d379a052d.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -82,37 +83,38 @@
 
 
 <body style{position: relative;} data-spy="scroll" data-target="#navbar-possible" data-offset="150">
+  <div class="navbar-wrapper" style="display: none;">
   <nav id="navbar-possible" class="navbar navbar-fixed-top">
-  <h2>Are you ready to find your <span class='possible-word'>possible</span>?</h2>
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-        <a class="nav-link" href="#reimagine-higher-education">Reimagine higher education</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#learners-connect-with-leaders">Learners connect with leaders</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#master-your-future">Master your future</a>
-    </li>
-    <!-- <li class="nav-item dropdown">
-      <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
-        <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
-        <a class="dropdown-item" href="#master-your-future">Master your future</a>
+    <h2>Are you ready to find your <span class='possible-word'>possible</span>?</h2>
+    <ul class="nav nav-pills">
+      <!-- <li class="nav-item" hidden>
+          <a class="nav-link" href="#reimagine-higher-education">Reimagine higher education</a>
+      </li>
+      <li class="nav-item" hidden>
+          <a class="nav-link" href="#learners-connect-with-leaders">Learners connect with leaders</a>
+      </li>
+      <li class="nav-item" hidden>
+          <a class="nav-link" href="#master-your-future">Master your future</a>
+      </li> -->
+      <li class="nav-item dropdown">
+        <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
+          <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
+          <a class="dropdown-item" href="#master-your-future">Master your future</a>
+          <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
+          <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
+          <a class="dropdown-item" href="#introduction" hidden>Top</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</div>
 
-        <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
-        <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
-
-      </div>
-    </li> -->
-  </ul>
-</nav>
 
 
 <style>
   .navbar {
-
     top: 0px;
 
     background-color: #00447c;
@@ -132,17 +134,26 @@
 </style>
 
 <script type="text/javascript">
-$(document).ready(function() {
-  $(window).on("activate.bs.scrollspy", function(){
-    const current = $(".nav li.active").text()
-    console.log("this is " + current)
 
-  })
+const droptext = document.getElementById('nav-showing')
+
+$(window).on("activate.bs.scrollspy", function(){
+  // const x = document.querySelectorAll('.nav-item, .active')
+  const x = document.querySelectorAll('a.dropdown-item.active')[0].innerText
+  console.log(x)
+  if(x == "Top")
+    $('.navbar-wrapper').fadeOut(150)
+  else {
+    $('.navbar-wrapper').fadeIn(150)
+    droptext.innerText = x
+  }
+    
 })
+
 </script>
 
   <div >
-    <section class="introduction">
+    <section class="introduction" id="introduction">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12">
@@ -159,7 +170,7 @@ $(document).ready(function() {
     </div>
   </div>
 </section>
-    <section class="blue-background" id="start" style="height:100vh;">
+    <!-- <section class="blue-background" id="start" style="height:100vh;">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-10 offset-md-1">
@@ -205,7 +216,7 @@ $(document).ready(function() {
       </div>
     </div>
   </div>
-</section>
+</section> -->
     <section id="improving-health-in-colorado" class="health-in-colorado">
   <div class="container">
     <div class="row">
