@@ -1,3 +1,4 @@
+@import "msudenver-colors.scss";
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .well {
     background: #fff;
@@ -39,7 +40,7 @@ h3 {
 }
 
 h4{
-  color:#00447c;
+  color:$MSUDenver-Blue;
   margin-bottom:15px;
 }
 
@@ -69,7 +70,7 @@ font-weight: 700;
 }
 
 section {
-  padding-top: 15vh;
+  padding-top: 20vh;
   padding-bottom: 15vh;
   height: auto;
   // box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.);
@@ -381,6 +382,8 @@ button, [type="button"],// 1
     width: 260px;
   }
 }
+
+@import "possible-partials/boostrap-overrides.scss";
 @import "possible-partials/possible-navigation.scss";
 @import "possible-partials/possible-viewport-overrides.scss";
 @import "possible-partials/possible-animations.scss";

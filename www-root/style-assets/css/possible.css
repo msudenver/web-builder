@@ -36,7 +36,7 @@ h3 {
 }
 
 h4 {
-  color: #00447c;
+  color: #00447C;
   margin-bottom: 15px;
 }
 
@@ -67,7 +67,7 @@ a:hover {
 }
 
 section {
-  padding-top: 15vh;
+  padding-top: 20vh;
   padding-bottom: 15vh;
   height: auto;
 }
@@ -334,6 +334,22 @@ button, [type="button"],
   width: 260px;
 }
 
+.dropdown, .dropdown-menu {
+  width: 35rem;
+}
+.dropdown a, .dropdown-menu a {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #00447C;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #00447C;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -476,7 +492,7 @@ button, [type="button"],
   position: fixed;
   top: 0px;
   display: block;
-  background-color: #00447c !important;
+  background-color: #00447c;
   z-index: 999;
   width: 100%;
 }

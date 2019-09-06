@@ -21,6 +21,10 @@
 
   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7291556/6990192/css/fonts.css" />
   <script src="https://kit.fontawesome.com/7d379a052d.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="style-assets/css/possible.css" />
@@ -31,184 +35,206 @@
 
  -->
   <!-- google analytics -->
-<!-- GTM fireGtm variable -->
-<script type="text/javascript">
-  var dataLayer = window.dataLayer = window.dataLayer || [];
-  dataLayer.push({
-    'fireGtm': true
-  });
-</script>
-
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M6TCTS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>
-  (function(w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({
-      'gtm.start': new Date().getTime(),
-      event: 'gtm.js'
+  <!-- GTM fireGtm variable -->
+  <script type="text/javascript">
+    var dataLayer = window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      'fireGtm': true
     });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src =
-      '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, 'script', 'dataLayer', 'GTM-M6TCTS');
-</script>
-<!-- End Google Tag Manager -->
-<!-- Start Alexa Certify Javascript -->
-<script type="text/javascript">
-  _atrk_opts = {
-    atrk_acct: "8qmgp1IW1d10mh",
-    domain: "msudenver.edu",
-    dynamic: true
-  };
-  (function() {
-    var as = document.createElement('script');
-    as.type = 'text/javascript';
-    as.async = true;
-    as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js";
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(as, s);
-  })();
-</script>
+  </script>
+
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M6TCTS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M6TCTS');
+  </script>
+  <!-- End Google Tag Manager -->
+  <!-- Start Alexa Certify Javascript -->
+  <script type="text/javascript">
+    _atrk_opts = {
+      atrk_acct: "8qmgp1IW1d10mh",
+      domain: "msudenver.edu",
+      dynamic: true
+    };
+    (function() {
+      var as = document.createElement('script');
+      as.type = 'text/javascript';
+      as.async = true;
+      as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js";
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(as, s);
+    })();
+  </script>
 
 </head>
 
-<body>
 
-  <section class="introduction">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12">
-        <h1>Reimagine <span class="possible-word fade-in">possible</span></h1>
-      </div>
+<body style{position: relative;} data-spy="scroll" data-target="#navbar-possible" data-offset="200">
+  <div class="navbar-wrapper blue-background" style="display: none;">
+    <nav id="navbar-possible" class="navbar navbar-fixed-top">
+      <div class="row">
+        <div class="col-xs-12 col-md-8">
+          <span style="text-align:left; color: white; font-size:2.2rem; font-weight:700;">Are you ready to find your <span class='possible-word'>possible</span>?</span>
+          <ul class="nav nav-pills">
+            <!-- <li class="nav-item" hidden>
+              <a class="nav-link" href="#reimagine-higher-education">Reimagine higher education</a>
+          </li>
+          <li class="nav-item" hidden>
+              <a class="nav-link" href="#learners-connect-with-leaders">Learners connect with leaders</a>
+          </li>
+          <li class="nav-item" hidden>
+              <a class="nav-link" href="#master-your-future">Master your future</a>
+          </li> -->
+            <li class="nav-item dropdown">
+              <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
+                <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
+                <a class="dropdown-item" href="#master-your-future">Master your future</a>
+                <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
+                <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
 
-      <div class="col-xs-12 col-sm-6 col-md-2 offset-md-8 text-center">
-        <img class="img-responsive university-logo fade-in" src="style-assets/media/possible/MSUDenver_Formal_2CPos_BlueRed_WhBkgd_FormatA_RGB.svg">
-      </div>
+                <a class="dropdown-item" href="#introduction" hidden>Top</a>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-      <div class="col-xs-12 col-sm-4 offset-col-sm-4 col-md-12 text-center">
-        <a href="#start"> <span class="possible-indicator fas fa-chevron-down fa-5x fade-in"></span></a>
-      </div>
-    </div>
-  </div>
-</section>
-  <section class="blue-background" id="start" style="height:100vh;">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-10 offset-md-1">
-        <h2>Are you ready to find your <span class="possible-word">possible</span> ?</h2>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12 col-md-10 offset-md-1">
-        <a href="#improving-health-in-colorado">
-          <btn class="btn col-xs-12 col-md-5">Improving health in Colorado</btn>
-        </a>
 
-        <a href="#reimagine-higher-education">
-          <btn class="btn col-xs-12 col-md-5">Reimagine higher education</btn>
-        </a>
-        <a href="#learners-connect-with-leaders">
-          <btn class="btn col-xs-12 col-md-5">Learners connect with leaders</btn>
-        </a>
-        <a href="#master-your-future">
-          <btn class="btn col-xs-12 col-md-5">Master your future</btn>
-        </a>
-        <!-- <a href="#on-the-front-lines-of-cybersecurity">
-          <btn class="btn">On the front lines of cybersecurity</btn>
-        </a> -->
-        <!-- <a href="#brewing-innovation-in-hospitality">
-          <btn class="btn">Brewing innovation in hospitality</btn>
-        </a> -->
 
-        <a href="#teaching-tomorrows-teachers">
-          <btn class="btn col-xs-12 col-md-5">Teaching tomorrow’s teachers</btn>
-        </a>
-        <!-- <a href="#operating-satelites-from-the-classroom">
-          <btn class="btn">Operating satellites from the classroom</btn>
-        </a> -->
-        <!-- <a href="#multiply-your-roi">
-          <btn class="btn">Multiply your ROI</btn>
-        </a> -->
-        <!-- <a href="#saving-endangered-languages">
-          <btn class="btn">Saving endangered languages</btn>
-        </a> -->
-      </div>
-    </div>
-  </div>
-</section>
-  <section id="improving-health-in-colorado" class="health-in-colorado">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-8 offset-md-5 well">
-        <h2>A prescription for improving health in Colorado.</h2>
-        <h3>Our new Health Institute integrates 10 disciplines to improve lives, communities and careers.</h3>
-        <p>Help underserved populations navigate <a href="https://red.msudenver.edu/2018/navigating-the-future-of-patient-care.html">access to health care</a>. Lead the way in the <a
-            href="https://red.msudenver.edu/2019/healing-in-two-worlds.html">transformative field of lifestyle medicine</a>. <a href="https://red.msudenver.edu/2017/who-gets-to-be-a-doctor.html">Learn through experience</a> at some of the state’s top
-          health organizations. The road to health leadership and
-          personal wellness runs through MSU Denver.</p>
-      </div>
-    </div>
-  </div>
-</section>
-  <!--  -->
-  <section class="white-background-right-photo" id="reimagine-higher-education">
-  <div class="container">
-    <h2>What’s <span class="possible-word">possible</span> when you reimagine higher education?</h2>
-    <h3>
-      A thriving urban university that fosters student success through classroom-to-career connections, relevant degrees and excellent faculty.
-    </h3>
-    <div class="row">
-      <div class="col-xs-12 col-md-6">
-        <p></p>
-        <p></p>
-        <p>
-          Build and <a href="https://red.msudenver.edu/2018/students-contribute-to-next-generation-satellite-manufacturing-and-operation.html">operate satellites</a> at an innovative aerospace company. <a
-            href="https://red.msudenver.edu/2019/beer-here.html">Make beer</a> at a legendary brewery. Produce an
-          <a href="https://red.msudenver.edu/2018/this-just-in-students-tv-job-a-dream-come-true.html">Emmy-winning newscast</a>. All without leaving campus. Plus, our downtown location provides unparalleled access to internships and
-          networks that jump-start careers. Just ask this <a href="https://red.msudenver.edu/2019/so-you-want-to-host-sportscenter.html">“SportsCenter” anchor</a>.</p>
-        <p style="margin-bottom:20px; font-size:2rem;"> <strong>The possibilities are endless.</strong></p>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <img class="img-thumbnail" src="style-assets/media/possible/pride.jpg">
-      </div>
-    </div>
-  </div>
-</section>
-  <section id="master-your-future">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h2>Here, you can master your future.</h2>
-        <h3>Master’s degrees in business, health, teaching and technology designed to advance your career and community.</h3>
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <div class="copy-swap">
-              <p>Advance your community – and your career – with an <a href="https://www.msudenver.edu/graduate-studies/" advanced degree</a> in a critical Colorado field: <a
-                  href="https://www.msudenver.edu/programs/master-of-business-administration-mba.shtml">business administration</a>, <a href="https://www.msudenver.edu/programs/master-of-professional-accountancy-mpacc.shtml">accounting</a>, <a
-                  href="https://www.msudenver.edu/programs/master-of-arts-in-teaching-mat.shtml">teaching</a>, <a href="https://www.msudenver.edu/programs/master-of-science-in-cybersecurity.shtml">cybersecurity</a>, <a
-                  href="https://www.msudenver.edu/programs/master-of-health-administration-mha.shtml">health administration</a>,
-                <a href="https://www.msudenver.edu/programs/master-of-science-in-human-nutrition-and-dietetics.shtml">human nutrition and dietetics</a>, <a href="https://www.msudenver.edu/programs/master-of-social-work-msw.shtml">social work</a> or
-                <a href="https://www.msudenver.edu/programs/ms-in-clinical-behavioral-health.shtml">clinical behavioral health</a>. Level up in your current job or change careers with a flexible and relevant <a
-                  href="https://red.msudenver.edu/2019/level-up.html">graduate degree designed with students in
-                  mind</a>.</p>
-            </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="row" style="padding-right:15px;">
+            <a class="col-xs-12 col-md-6 " href="https://connect.msudenver.edu/register/requestinformation" target="_blank"><button class="btn" style="font-size: 1rem; padding: 10px; border: solid 3px #fff; width:100% ">Information</button></a>
+            <a class="col-xs-12 col-md-6" href="/apply" target="_blank"><button class="btn" style="font-size: 1rem; padding: 10px; border: solid 3px #fff; width:100%">Apply</button></a>
           </div>
-          <div class="col-xs-12 col-md-6">
-            <img class="img-thumbnail" src="style-assets/media/possible/MockTrial.jpg">
+        </div>
+
+      </div>
+
+    </nav>
+  </div>
+
+  <style>
+
+  </style>
+
+  <script type="text/javascript">
+    const droptext = document.getElementById('nav-showing')
+
+    $(window).on("activate.bs.scrollspy", function() {
+      // const x = document.querySelectorAll('.nav-item, .active')
+      const x = document.querySelectorAll('a.dropdown-item.active')[0].innerText
+      console.log(x)
+      if (x == "Top")
+        $('.navbar-wrapper').fadeOut(50)
+      else {
+        $('.navbar-wrapper').fadeIn(50)
+        droptext.innerText = x
+      }
+
+    })
+  </script>
+
+  <div id="possible-cards">
+    <section class="introduction" id="introduction">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <h1>Reimagine <span class="possible-word fade-in">possible</span></h1>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-2 offset-md-8 text-center">
+            <img class="img-responsive university-logo fade-in" src="style-assets/media/possible/MSUDenver_Formal_2CPos_BlueRed_WhBkgd_FormatA_RGB.svg">
+          </div>
+
+          <div class="col-xs-12 col-sm-4 offset-col-sm-4 col-md-12 text-center">
+            <a href="#improving-health-in-colorado"> <span class="possible-indicator fas fa-chevron-down fa-5x fade-in"></span></a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-  <!-- <section id="on-the-front-lines-of-cybersecurity">
+    </section>
+    <section id="improving-health-in-colorado" class="health-in-colorado">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-8 offset-md-5 well">
+            <h2>A prescription for improving health in Colorado.</h2>
+            <h3>Our new Health Institute integrates 10 disciplines to improve lives, communities and careers.</h3>
+            <p>Help underserved populations navigate <a href="https://red.msudenver.edu/2018/navigating-the-future-of-patient-care.html">access to health care</a>. Lead the way in the <a
+                href="https://red.msudenver.edu/2019/healing-in-two-worlds.html">transformative field of lifestyle medicine</a>. <a href="https://red.msudenver.edu/2017/who-gets-to-be-a-doctor.html">Learn through experience</a> at some of the state’s
+              top
+              health organizations. The road to health leadership and
+              personal wellness runs through MSU Denver.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="white-background-right-photo" id="reimagine-higher-education">
+      <div class="container">
+        <h2>What’s <span class="possible-word">possible</span> when you reimagine higher education?</h2>
+        <h3>
+          A thriving urban university that fosters student success through classroom-to-career connections, relevant degrees and excellent faculty.
+        </h3>
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <p></p>
+            <p></p>
+            <p>
+              Build and <a href="https://red.msudenver.edu/2018/students-contribute-to-next-generation-satellite-manufacturing-and-operation.html">operate satellites</a> at an innovative aerospace company. <a
+                href="https://red.msudenver.edu/2019/beer-here.html">Make beer</a> at a legendary brewery. Produce an
+              <a href="https://red.msudenver.edu/2018/this-just-in-students-tv-job-a-dream-come-true.html">Emmy-winning newscast</a>. All without leaving campus. Plus, our downtown location provides unparalleled access to internships and
+              networks that jump-start careers. Just ask this <a href="https://red.msudenver.edu/2019/so-you-want-to-host-sportscenter.html">“SportsCenter” anchor</a>.</p>
+            <p style="margin-bottom:20px; font-size:2rem;"> <strong>The possibilities are endless.</strong></p>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <img class="img-thumbnail" src="style-assets/media/possible/pride.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="master-your-future">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Here, you can master your future.</h2>
+            <h3>Master’s degrees in business, health, teaching and technology designed to advance your career and community.</h3>
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <div class="copy-swap">
+                  <p>Advance your community – and your career – with an <a href="https://www.msudenver.edu/graduate-studies/" advanced degree</a> in a critical Colorado field: <a
+                      href="https://www.msudenver.edu/programs/master-of-business-administration-mba.shtml">business administration</a>, <a href="https://www.msudenver.edu/programs/master-of-professional-accountancy-mpacc.shtml">accounting</a>, <a
+                      href="https://www.msudenver.edu/programs/master-of-arts-in-teaching-mat.shtml">teaching</a>, <a href="https://www.msudenver.edu/programs/master-of-science-in-cybersecurity.shtml">cybersecurity</a>, <a
+                      href="https://www.msudenver.edu/programs/master-of-health-administration-mha.shtml">health administration</a>,
+                    <a href="https://www.msudenver.edu/programs/master-of-science-in-human-nutrition-and-dietetics.shtml">human nutrition and dietetics</a>, <a href="https://www.msudenver.edu/programs/master-of-social-work-msw.shtml">social work</a>
+                    or
+                    <a href="https://www.msudenver.edu/programs/ms-in-clinical-behavioral-health.shtml">clinical behavioral health</a>. Level up in your current job or change careers with a flexible and relevant <a
+                      href="https://red.msudenver.edu/2019/level-up.html">graduate degree designed with students in
+                      mind</a>.</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <img class="img-thumbnail" src="style-assets/media/possible/MockTrial.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="on-the-front-lines-of-cybersecurity">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -219,7 +245,7 @@
     </div>
   </div>
 </section> -->
-  <!-- <section id="brewing-innovation-in-hospitality">
+    <!-- <section id="brewing-innovation-in-hospitality">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -230,42 +256,42 @@
     </div>
   </div>
 </section> -->
-  <section id="teaching-tomorrows-teachers" class="teaching-tomorrows-teachers-section">
-  <div class="container">
-    <div class="row">
-      <div class="well col-xs-12">
-        <h2>Teaching tomorrow’s teachers.</h2>
-        <h3>A leading provider of diverse, classroom-ready graduates with a passion to serve Colorado children.</h3>
-        <p>Called to <a href="https://red.msudenver.edu/2019/third-gen-teacher-speaks-kids-language.html">teach bilingual students</a>? Need a <a href="https://www.msudenver.edu/teachergrad/">master’s degree</a> to advance in your career? Want to
-          <a href="https://red.msudenver.edu/2019/making-dreams-possible.html">open your own school</a>? Whether you’re a <a href="https://red.msudenver.edu/2019/bound-to-educate.html">first-generation student interested in early childhood
-            education</a> or a <a href="https://red.msudenver.edu/2017/fit-for-duty-the-veterans-who-teach-pe.html"> veteran going back to school to teach physical education</a>, you’ll get to the head of the class at MSU Denver.</p>
+    <section id="teaching-tomorrows-teachers" class="teaching-tomorrows-teachers-section">
+      <div class="container">
+        <div class="row">
+          <div class="well col-xs-12">
+            <h2>Teaching tomorrow’s teachers.</h2>
+            <h3>A leading provider of diverse, classroom-ready graduates with a passion to serve Colorado children.</h3>
+            <p>Called to <a href="https://red.msudenver.edu/2019/third-gen-teacher-speaks-kids-language.html">teach bilingual students</a>? Need a <a href="https://www.msudenver.edu/teachergrad/">master’s degree</a> to advance in your career? Want to
+              <a href="https://red.msudenver.edu/2019/making-dreams-possible.html">open your own school</a>? Whether you’re a <a href="https://red.msudenver.edu/2019/bound-to-educate.html">first-generation student interested in early childhood
+                education</a> or a <a href="https://red.msudenver.edu/2017/fit-for-duty-the-veterans-who-teach-pe.html"> veteran going back to school to teach physical education</a>, you’ll get to the head of the class at MSU Denver.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-  <section class="" id="learners-connect-with-leaders">
-  <div class="container">
-    <h2 style="margin-bottom:30px;">MSU Denver is where learners connect with leaders.</h2>
-    <h3><i>
-        99% of our classes are taught by faculty, not teaching assistants. They are industry icons, national experts and have the highest degrees in their disciplines.
-      </i></h3>
-    <div class="row">
-      <div class="col-xs-12 col-md-6">
-        <img class="img-thumbnail" src="style-assets/media/possible/artclass.jpg">
-      </div>
-      <div class="col-xs-12 col-md-6">
+    </section>
+    <section class="" id="learners-connect-with-leaders">
+      <div class="container">
+        <h2 style="margin-bottom:30px;">MSU Denver is where learners connect with leaders.</h2>
+        <h3><i>
+            99% of our classes are taught by faculty, not teaching assistants. They are industry icons, national experts and have the highest degrees in their disciplines.
+          </i></h3>
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <img class="img-thumbnail" src="style-assets/media/possible/artclass.jpg">
+          </div>
+          <div class="col-xs-12 col-md-6">
 
-        <p style="margin-top:5vh;">Learn to fight crime from the former <a href="http://red.msudenver.edu/2019/fighting-crime-from-the-classroom.html">director of the NCIS</a>. Analyze graphic novels with the convention <a
-            href="https://red.msudenver.edu/2018/comic-consummate-pro.html">director of Denver’s Comic
-            Con</a>. Get bitten by the insect bug with a <a href="https://red.msudenver.edu/2019/summer-bites.html">renowned mosquito biologist</a>. Our professors
-          are experts in their
-          fields, but even better at passing on their expertise to students.</p>
-      </div>
+            <p style="margin-top:5vh;">Learn to fight crime from the former <a href="http://red.msudenver.edu/2019/fighting-crime-from-the-classroom.html">director of the NCIS</a>. Analyze graphic novels with the convention <a
+                href="https://red.msudenver.edu/2018/comic-consummate-pro.html">director of Denver’s Comic
+                Con</a>. Get bitten by the insect bug with a <a href="https://red.msudenver.edu/2019/summer-bites.html">renowned mosquito biologist</a>. Our professors
+              are experts in their
+              fields, but even better at passing on their expertise to students.</p>
+          </div>
 
-    </div>
-  </div>
-</section>
-  <!-- <section id="operating-satelites-from-the-classroom">
+        </div>
+      </div>
+    </section>
+    <!-- <section id="operating-satelites-from-the-classroom">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -278,7 +304,7 @@
     </div>
   </div>
 </section> -->
-  <!-- <section id="multiply-your-roi">
+    <!-- <section id="multiply-your-roi">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -291,7 +317,7 @@
     </div>
   </div>
 </section> -->
-  <!-- <section id="saving-endangered-languages">
+    <!-- <section id="saving-endangered-languages">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -300,7 +326,7 @@
     </div>
   </div>
 </section> -->
-  <!-- <section class="white-background-right-photo">
+    <!-- <section class="white-background-right-photo">
   <div class="container">
     <h2 style="margin-bottom:30px;">white-background-right-photo<span class="possible-word">possible</span></h2>
     <div class="row">
@@ -314,7 +340,7 @@
     </div>
   </div>
 </section> -->
-  <!-- <section class="background-right-copy">
+    <!-- <section class="background-right-copy">
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-md-7 offset-md-5 well">
@@ -331,7 +357,7 @@
     </div>
   </div>
 </section> -->
-  <!-- <section class="blue-background" id="start">
+    <!-- <section class="blue-background" id="start">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-8 offset-md-4">
@@ -344,26 +370,27 @@
   </div>
 </section> -->
 
-  <section class="possible-call-to-action">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 well">
-        <h2>Start your <span class="possible-word">possible</span></h2>
-        <p>
-          MSU Denver is where classes lead to careers
-          and learners connect with leaders. Our
-          campus is diverse and welcoming, filled with
-          learners in undergraduate and master's
-          programs who have taken a variety of paths to
-          arrive here and who are discovering their own
-          possible every day.</p>
-        <p style="margin-bottom:20px"> <strong>Ready to find your possible?</strong></p>
-        <a href="https://connect.msudenver.edu/register/requestinformation" target="_blank"><button class="col-xs-12 col-md-5 offset-md-1 btn">Request information</button></a>
-        <a href="/apply" target="_blank"><button class="col-xs-12 col-md-5 btn">Apply to MSU Denver</button></a>
+    <section class="possible-call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 well">
+            <h2>Start your <span class="possible-word">possible</span></h2>
+            <p>
+              MSU Denver is where classes lead to careers
+              and learners connect with leaders. Our
+              campus is diverse and welcoming, filled with
+              learners in undergraduate and master's
+              programs who have taken a variety of paths to
+              arrive here and who are discovering their own
+              possible every day.</p>
+            <p style="margin-bottom:20px"> <strong>Ready to find your possible?</strong></p>
+            <a href="https://connect.msudenver.edu/register/requestinformation" target="_blank"><button class="col-xs-12 col-md-5 offset-md-1 btn">Request information</button></a>
+            <a href="/apply" target="_blank"><button class="col-xs-12 col-md-5 btn">Apply to MSU Denver</button></a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   </div>
-</section>
 
 
   <div class="footer">
@@ -383,10 +410,10 @@
       </div>
     </div>
   </div>
-  </div>
-  <script src="style-assets/lib/jquery/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
+  <!-- <script src="style-assets/lib/jquery/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script> -->
+
 </body>
 
 

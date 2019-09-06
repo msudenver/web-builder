@@ -1,107 +1,64 @@
-<div class='navbar-wrapper' style="display: none;">
-  <nav id="navbar-possible" class="navbar">
-    <h2>Are you ready to find your <span class='possible-word'>possible</span>?</h2>
-    <ul class="nav nav-pills">
-      <li class="nav-item dropdown">
-        <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
-          <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
-          <a class="dropdown-item" href="#master-your-future">Master your future</a>
-          <!-- <a class="dropdown-item" href="#on-the-front-lines-of-cybersecurity">On the front lines of cybersecurity</a> -->
-          <!-- <a class="dropdown-item" href="#brewing-innovation-in-hospitality">Brewing innovation in hospitality</a> -->
-          <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
-          <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
-          <!-- <a class="dropdown-item" href="#operating-satelites-from-the-classroom">Operating satellites from the classroom</a> -->
-          <!-- <a class="dropdown-item" href="#multiply-your-roi">Multiply your ROI</a> -->
+<div class="navbar-wrapper blue-background" style="display: none;">
+  <nav id="navbar-possible" class="navbar navbar-fixed-top">
+    <div class="row">
+      <div class="col-xs-12 col-md-8">
+        <span style="text-align:left; color: white; font-size:2.2rem; font-weight:700;">Are you ready to find your <span class='possible-word'>possible</span>?</span>
+        <ul class="nav nav-pills">
+          <!-- <li class="nav-item" hidden>
+              <a class="nav-link" href="#reimagine-higher-education">Reimagine higher education</a>
+          </li>
+          <li class="nav-item" hidden>
+              <a class="nav-link" href="#learners-connect-with-leaders">Learners connect with leaders</a>
+          </li>
+          <li class="nav-item" hidden>
+              <a class="nav-link" href="#master-your-future">Master your future</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
+              <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
+              <a class="dropdown-item" href="#master-your-future">Master your future</a>
+              <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
+              <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
+
+              <a class="dropdown-item" href="#introduction" hidden>Top</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+
+      <div class="col-xs-12 col-md-4">
+        <div class="row" style="padding-right:15px;">
+          <a class="col-xs-12 col-md-6 " href="https://connect.msudenver.edu/register/requestinformation" target="_blank"><button class="btn" style="font-size: 1rem; padding: 10px; border: solid 3px #fff; width:100% ">Information</button></a>
+          <a class="col-xs-12 col-md-6" href="/apply" target="_blank"><button class="btn" style="font-size: 1rem; padding: 10px; border: solid 3px #fff; width:100%">Apply</button></a>
         </div>
-      </li>
-    </ul>
+      </div>
+
+    </div>
+
   </nav>
 </div>
 
-
 <style>
-  .navbar {
-    position: fixed;
-    top: 0px;
 
-    background-color: #00447c !important;
-    z-index: 999;
-
-    width: 100%;
-  }
-
-  .navbar>h2 {
-    margin: 15px 0;
-    color: #fff;
-  }
-
-  .navbar>p {
-    color: #fff;
-  }
 </style>
 
+<script type="text/javascript">
+  const droptext = document.getElementById('nav-showing')
 
-<script>
-  const possibleSwitcher = el => {
-    const scroll = window.scrollY || window.pageYOffset
-    const boundsTop = el.getBoundingClientRect().top + scroll
-
-    const viewport = {
-      top: scroll,
-      bottom: scroll + window.innerHeight,
+  $(window).on("activate.bs.scrollspy", function() {
+    // const x = document.querySelectorAll('.nav-item, .active')
+    const x = document.querySelectorAll('a.dropdown-item.active')[0].innerText
+    console.log(x)
+    if (x == "Top")
+      $('.navbar-wrapper').fadeOut(50)
+    else {
+      $('.navbar-wrapper').fadeIn(50)
+      droptext.innerText = x
     }
-
-    const bounds = {
-      top: boundsTop,
-      bottom: boundsTop + el.clientHeight,
-    }
-
-    return (bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom) ||
-      (bounds.top <= viewport.bottom && bounds.top >= viewport.top);
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const rhe = document.getElementById('reimagine-higher-education')
-    const lcl = document.getElementById('learners-connect-with-leaders')
-    const myf = document.getElementById('master-your-future')
-    const otfloc = document.getElementById('on-the-front-lines-of-cybersecurity')
-    const biih = document.getElementById('brewing-innovation-in-hospitality')
-    const ihic = document.getElementById('improving-health-in-colorado')
-    const ttt = document.getElementById('teaching-tomorrows-teachers')
-    const osftc = document.getElementById('operating-satelites-from-the-classroom')
-    const roi = document.getElementById('multiply-your-roi')
-    const label = document.getElementById('nav-showing')
-
-
-    const handler = () => raf(() => {
-      if (possibleSwitcher(ihic)) {
-        label.innerHTML = 'Improving health in Colorado'
-        $('.navbar-wrapper').fadeIn()
-      } else if (possibleSwitcher(rhe)) {
-        label.innerHTML = 'Reimagine higher education'
-      } else if (possibleSwitcher(myf)) {
-        label.innerHTML = 'Master your future'
-      } else if (possibleSwitcher(ttt)) {
-        label.innerHTML = "Teaching tomorrow's teachers"
-      } else if (possibleSwitcher(lcl)) {
-        label.innerHTML = 'Learners connect with leaders'
-        $('.navbar-wrapper').fadeIn()
-      } else {
-        $('.navbar-wrapper').fadeOut()
-      }
-    })
-    handler()
-    window.addEventListener('scroll', handler)
 
   })
-
-  const raf =
-    window.requestAnimationFrame ||
-    window.webkitRequestAnimationFrame ||
-    window.mozRequestAnimationFrame ||
-    function(callback) {
-      window.setTimeout(callback, 1000 / 60)
-    }
 </script>
