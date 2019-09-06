@@ -1,33 +1,44 @@
-<div class="navbar-wrapper" style="display: none;">
+<div class="navbar-wrapper blue-background" style="display: none;">
   <nav id="navbar-possible" class="navbar navbar-fixed-top">
-    <h2>Are you ready to find your <span class='possible-word'>possible</span>?</h2>
-    <ul class="nav nav-pills">
-      <!-- <li class="nav-item" hidden>
-          <a class="nav-link" href="#reimagine-higher-education">Reimagine higher education</a>
-      </li>
-      <li class="nav-item" hidden>
-          <a class="nav-link" href="#learners-connect-with-leaders">Learners connect with leaders</a>
-      </li>
-      <li class="nav-item" hidden>
-          <a class="nav-link" href="#master-your-future">Master your future</a>
-      </li> -->
-      <li class="nav-item dropdown">
-        <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
-          <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
-          <a class="dropdown-item" href="#master-your-future">Master your future</a>
-          <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
-          <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
-          
-          <a class="dropdown-item" href="#introduction" hidden>Top</a>
+    <div class="row">
+      <div class="col-xs-12 col-md-8">
+        <span style="text-align:left; color: white; font-size:2.2rem; font-weight:700;">Are you ready to find your <span class='possible-word'>possible</span>?</span>
+        <ul class="nav nav-pills">
+          <!-- <li class="nav-item" hidden>
+              <a class="nav-link" href="#reimagine-higher-education">Reimagine higher education</a>
+          </li>
+          <li class="nav-item" hidden>
+              <a class="nav-link" href="#learners-connect-with-leaders">Learners connect with leaders</a>
+          </li>
+          <li class="nav-item" hidden>
+              <a class="nav-link" href="#master-your-future">Master your future</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
+              <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
+              <a class="dropdown-item" href="#master-your-future">Master your future</a>
+              <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
+              <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
+
+              <a class="dropdown-item" href="#introduction" hidden>Top</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+
+      <div class="col-xs-12 col-md-4">
+        <div class="row" style="padding-right:15px;">
+          <a class="col-xs-12 col-md-6 " href="https://connect.msudenver.edu/register/requestinformation" target="_blank"><button class="btn" style="font-size: 1rem; padding: 10px; border: solid 3px #fff; width:100% ">Information</button></a>
+          <a class="col-xs-12 col-md-6" href="/apply" target="_blank"><button class="btn" style="font-size: 1rem; padding: 10px; border: solid 3px #fff; width:100%">Apply</button></a>
         </div>
-      </li>
-    </ul>
-    <section class="blue-background">
-      <a href="https://connect.msudenver.edu/register/requestinformation" target="_blank"><button class="col-xs-12 col-md-5 offset-md-1 btn" style="font-size: 1rem; padding: 10px; border: solid 3px #fff;">Information</button></a>
-      <a href="/apply" target="_blank"><button class="col-xs-12 col-md-5 btn" style="font-size: 1rem; padding: 10px; border: solid 3px #fff;">Apply</button></a>
-    </section>
+      </div>
+
+    </div>
+
   </nav>
 </div>
 
@@ -36,20 +47,18 @@
 </style>
 
 <script type="text/javascript">
+  const droptext = document.getElementById('nav-showing')
 
-const droptext = document.getElementById('nav-showing')
+  $(window).on("activate.bs.scrollspy", function() {
+    // const x = document.querySelectorAll('.nav-item, .active')
+    const x = document.querySelectorAll('a.dropdown-item.active')[0].innerText
+    console.log(x)
+    if (x == "Top")
+      $('.navbar-wrapper').fadeOut(50)
+    else {
+      $('.navbar-wrapper').fadeIn(50)
+      droptext.innerText = x
+    }
 
-$(window).on("activate.bs.scrollspy", function(){
-  // const x = document.querySelectorAll('.nav-item, .active')
-  const x = document.querySelectorAll('a.dropdown-item.active')[0].innerText
-  console.log(x)
-  if(x == "Top")
-    $('.navbar-wrapper').fadeOut(50)
-  else {
-    $('.navbar-wrapper').fadeIn(50)
-    droptext.innerText = x
-  }
-    
-})
-
+  })
 </script>
