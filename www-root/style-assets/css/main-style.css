@@ -11084,7 +11084,7 @@ hr.style-one {
 }
 
 .HighlightBox {
-  color: #fff;
+  color: #000000;
   padding: 1.5em;
   margin-bottom: 1.5em;
   background: #ffffff;
@@ -11111,12 +11111,8 @@ hr.style-one {
   margin: auto;
 }
 
-.HighlightBox .img-responsive {
-  margin: auto;
-}
-
 .ThreeColumnRight .HighlightBox, .ThreeColumnRight .HighlightBox .HighlightBox-content, .ThreeColumnRight .HighlightBox .HighlightBox-content a, .ThreeColumnRight .HighlightBox .HighlightBox-content a:hover, .ThreeColumnRight .HighlightBox a, .ThreeColumnRight .HighlightBox a:hover, .content .HighlightBox .HighlightBox-content, .content .HighlightBox .HighlightBox-content a, .content .HighlightBox .HighlightBox-content a:hover {
-  color: #fff;
+  color: #000000;
 }
 
 .HighlightBox hr {
