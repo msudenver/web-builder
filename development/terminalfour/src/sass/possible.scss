@@ -27,15 +27,15 @@ p {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin: 10px 0;
   font-weight: 700;
+  line-height: 1.9rem;
 }
 
 h3 {
-  // font-size: 1.75rem;
+  font-size: 1.25rem;
   margin: 10px 0;
-  // font-weight: 700;
   font-style: italic;
 }
 
@@ -70,8 +70,8 @@ font-weight: 700;
 }
 
 section {
-  padding-top: 20vh;
-  padding-bottom: 15vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   height: auto;
   // box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.);
 }
@@ -127,23 +127,24 @@ section {
 
 
 .blue-background {
-  padding-top: 15vh;
+  // padding-top: 15vh;
   background-color: #00447c;
-  padding-bottom: 15vh;
-  height: auto;
-  display: table;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  // padding-bottom: 15vh;
+  // height: auto;
+  // display: table;
+  // position: relative;
+  // width: 100%;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
 
   h2 {
     margin: 15px 0;
     color: #fff;
     margin-bottom:30px;
     text-align: center;
+
   }
 
   p {
@@ -273,10 +274,23 @@ button, [type="button"],// 1
   background: #00447c;
 }
 
-.possible-call-to-action {
-  background: url("../media/possible/open-house-student.jpg") no-repeat center center fixed;
-  display: table;
+
+
+.health-in-colorado {
+  background: url(" ../media/possible/Health-in-colorado.jpg") no-repeat center center;
   height: auto;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.teaching-tomorrows-teachers-section {
+  background: url("../media/possible/Teaching-tomorrow-teachers.jpg") no-repeat center center ;
+  display: table;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -285,18 +299,13 @@ button, [type="button"],// 1
   background-size: cover;
 
   .well {
-    background: #ffffffde;
-    padding: 25px 30px;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+    background: $MSUDenver-white-tranparency;
   }
 }
 
-
-.teaching-tomorrows-teachers-section {
-  background: url("../media/possible/Teaching-tomorrow-teachers.jpg") no-repeat center center fixed;
+.possible-call-to-action {
+  background: url("../media/possible/open-house-student.jpg") no-repeat center center ;
   display: table;
-  height: auto;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -305,7 +314,10 @@ button, [type="button"],// 1
   background-size: cover;
 
   .well {
-    background: #ffffffde;
+    background: $MSUDenver-white-tranparency;
+    padding: 25px 30px;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
   }
 }
 
@@ -318,41 +330,17 @@ button, [type="button"],// 1
   }
   .copy-swap{
     background: white;
+    padding:15px;
+    margin-bottom: 15px;
     p, a, a:hover{
       color:#00447c;
     }
   }
-@media only screen and (min-width: 543px) {
-   .copy-swap {
-    margin-top: 35px;
-    // left: -90px;
-    margin-right: -75px;
-    z-index: 1;
-    background-color: white;
-    position: absolute;
-    padding:35px;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.175);
-    p, a, a:hover{
-      color:#00447c !important;
-    }
-    }
-  }
+
 }
 
-.health-in-colorado {
-  background: url(" ../media/possible/Health-in-colorado.jpg") no-repeat center center fixed;
-  display: table;
-  height: auto;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 .background-right-copy {
-  // background: url("../media/possible/Tivoli.jpg") no-repeat center center fixed;
   display: table;
   height: auto;
   position: relative;
@@ -361,8 +349,6 @@ button, [type="button"],// 1
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-
 }
 
 .footer {
