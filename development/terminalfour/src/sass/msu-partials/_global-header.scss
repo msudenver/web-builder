@@ -1,5 +1,5 @@
 /* MainHeaderNavigation Styles */
-$bgColor: #ebf1fa;
+$bgColor: #ebf1faed;
 $white: white;
 $primaryBlue: #002855;
 $primaryRed: #d11242;
@@ -11,7 +11,7 @@ $highlightPrimaryBlue: #7591bc;
 
 .main-site-header {
   background-color: $bgColor;
-  
+
 }
 .msudenver_logo, .msudenver_logo_change {
   -webkit-transition: all 0.5s ease-in-out;
@@ -245,7 +245,7 @@ a.btn.btn-default.visit-give-mobile, a.btn.btn-default.give-mobile, a.btn.btn-de
   text-align: center;
 }
 
-div#bs-example-navbar-collapse-1.collapse.navbar-collapse, 
+div#bs-example-navbar-collapse-1.collapse.navbar-collapse,
 div#bs-example-navbar-collapse-1 {
   transition: max-height 500ms cubic-bezier(0.42, 0, 0.58, 1);
   background-color: $bgColor;
@@ -378,7 +378,7 @@ span.fa.fa-bars {
   transition: background .25s ease;
 }
 
-a.btn.btn-default.visit-give-mobile, 
+a.btn.btn-default.visit-give-mobile,
 a.btn.btn-default.apply-mobile {
   text-align: center;
   padding-top: 10px;
@@ -432,7 +432,7 @@ div#searchModal.modal.fade.in {
 
 //action button fixes
 @media (min-width: 768px) {
-  a.btn.btn-default.visit-give-mobile, 
+  a.btn.btn-default.visit-give-mobile,
   a.btn.btn-default.apply-mobile {
     padding-top: 14px;
     padding-bottom: 14px;
@@ -716,7 +716,7 @@ div#searchModal.modal.fade.in {
       text-decoration: underline;
     }
   }
-  ul.fac-staf-stu-mobile li a, 
+  ul.fac-staf-stu-mobile li a,
   .fac-staf-stu-mobile li.hide-pipe {
     font-family: 'Gotham A', 'Gotham B', sans-serif;
     font-style: normal !important;
@@ -726,7 +726,7 @@ div#searchModal.modal.fade.in {
     font-size: 14px !important;
     line-height: 1.5 !important;
   }
-  a.dropdown-toggle, 
+  a.dropdown-toggle,
   ul.nav.navbar-nav li a {
     text-decoration: none;
     font-weight: 600;
@@ -766,7 +766,7 @@ div#searchModal.modal.fade.in {
         background: darken($highlightPrimaryBlue, 5%);
       }
     }
-  }  
+  }
   .fa-search {
     color: #fff;
   }

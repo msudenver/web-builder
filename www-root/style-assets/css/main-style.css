@@ -7401,7 +7401,7 @@ button.close {
 }
 
 .main-site-header {
-  background-color: #ebf1fa;
+  background-color: #ebf1faed;
 }
 
 .msudenver_logo, .msudenver_logo_change {
@@ -7630,7 +7630,7 @@ a.btn.btn-default.visit-give-mobile, a.btn.btn-default.give-mobile, a.btn.btn-de
 div#bs-example-navbar-collapse-1.collapse.navbar-collapse,
 div#bs-example-navbar-collapse-1 {
   transition: max-height 500ms cubic-bezier(0.42, 0, 0.58, 1);
-  background-color: #ebf1fa;
+  background-color: #ebf1faed;
 }
 
 @media (min-width: 991px) {
@@ -9256,7 +9256,7 @@ a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
 }
 /* Homepage events */
 #homepage-events {
-  background-color: #ebf1fa;
+  background-color: #ebf1faed;
 }
 #homepage-events a:hover, #homepage-events a:active, #homepage-events a:focus {
   text-decoration: none;
@@ -11084,7 +11084,7 @@ hr.style-one {
 }
 
 .HighlightBox {
-  color: #fff;
+  color: #000000;
   padding: 1.5em;
   margin-bottom: 1.5em;
   background: #ffffff;
@@ -11111,12 +11111,8 @@ hr.style-one {
   margin: auto;
 }
 
-.HighlightBox .img-responsive {
-  margin: auto;
-}
-
 .ThreeColumnRight .HighlightBox, .ThreeColumnRight .HighlightBox .HighlightBox-content, .ThreeColumnRight .HighlightBox .HighlightBox-content a, .ThreeColumnRight .HighlightBox .HighlightBox-content a:hover, .ThreeColumnRight .HighlightBox a, .ThreeColumnRight .HighlightBox a:hover, .content .HighlightBox .HighlightBox-content, .content .HighlightBox .HighlightBox-content a, .content .HighlightBox .HighlightBox-content a:hover {
-  color: #fff;
+  color: #000000;
 }
 
 .HighlightBox hr {
@@ -11563,10 +11559,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   color: #002855;
-  font-size: 26px;
-  line-height: 26px;
-  margin: 20px 0;
-  padding: 40px 0;
+  font-size: 2.2rem;
+  margin: 40px 0;
 }
 
 .readmore {
