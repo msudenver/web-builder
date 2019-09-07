@@ -8256,10 +8256,6 @@ div#searchModal.modal.fade.in {
     font-size: 18px;
   }
 
-  .nav > li * {
-    padding: 0px;
-  }
-
   a.btn.btn-default.visit-give-mobile {
     right: 24.3%;
     width: 9% !important;
