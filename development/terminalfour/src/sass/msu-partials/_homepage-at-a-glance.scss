@@ -1,6 +1,6 @@
 /* Hompeage at a glance */
 #homepage-at-a-glance {
-    @include make-row(); 
+    @include make-row();
     background-color: $white;
     svg {
         width: 70%;
@@ -24,18 +24,17 @@
     margin-bottom: torem(40);
 }
 /* At a glance items */
-.at-a-glance-img, 
+.at-a-glance-img,
 .at-a-glance-text-wrap {
     padding: 0 torem(15);
     float: left;
- 
+
 }
 .at-a-glance-img {
     width: 40%;
-    img { 
-        @include img-responsive; 
+    img {
+        @include img-responsive;
         margin: 0 auto;
-        max-width: 75%;
     }
 }
 
@@ -45,8 +44,8 @@
 
 .at-a-glance-stat {
     font-size: torem(45);
-    font-weight: 400; 
-    color: $msu-red; 
+    font-weight: 400;
+    color: $msu-red;
     margin-bottom: 0;
 }
 .at-a-glance-text {
@@ -63,7 +62,7 @@
 @media (min-width: $screen-sm-min) {
     .at-a-glance-item {
         @include make-sm-column(6);
-        display: block; 
+        display: block;
         margin-bottom: 0;
     }
     .at-a-glance-img {
