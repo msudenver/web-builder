@@ -83,9 +83,46 @@
 
 
 <body style{position: relative;} data-spy="scroll" data-target="#navbar-possible" data-offset="100">
-  <!-- dropdown stutters on button because of blue-background class -->
-<div class="navbar-wrapper blue-background" style="display: none;">
-  <nav id="navbar-possible" class="navbar navbar-fixed-top navbar-expand-md" data-toggle="collapse" data-target="navbar-inner">
+
+
+  <div id="possible-cards">
+    
+    <section class="introduction" id="introduction">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <h1>Reimagine <span class="possible-word fade-in">possible</span></h1>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-2 offset-md-8 text-center">
+        <img class="img-responsive university-logo fade-in" src="style-assets/media/possible/MSUDenver_Formal_2CPos_BlueRed_WhBkgd_FormatA_RGB.svg">
+      </div>
+
+      <div class="col-xs-12 col-sm-4 offset-col-sm-4 col-md-12 text-center">
+        <a href="#improving-health-in-colorado"> <span class="possible-indicator fas fa-chevron-down fa-5x fade-in"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="possible-movie" class="possible-movie">
+    <div class="movie-section">
+        <iframe 
+            src="https://player.vimeo.com/video/348256640" 
+            frameborder='0'
+            webkitallowfullscreen 
+            mozallowfullscreen 
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+
+    
+<div class="navbar-wrapper blue-background">
+
+<!-- <div class="navbar-wrapper blue-background" style="display: none;"> -->
+  <!-- <nav id="navbar-possible" class="navbar navbar-fixed-top navbar-expand-md" data-toggle="collapse" data-target="navbar-inner"> -->
+  <nav id="navbar-possible" class="navbar navbar-expand-md" data-toggle="collapse" data-target="navbar-inner">
     <div class="row">
       <div class="col-xs-12 col-md-8">
         <span class="d-none d-lg-block" style="text-align:left; color: white; font-size:2.2rem; font-weight:700;">Are you ready to find your <span class='possible-word'>possible</span> ?</span>
@@ -94,6 +131,7 @@
             <li class="nav-item dropdown">
               <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
               <div class="dropdown-menu">
+                <a class="dropdown-item" href="#possible-movie" hidden>Video</a>
                 <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
                 <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
                 <a class="dropdown-item" href="#master-your-future">Master your future</a>
@@ -129,46 +167,18 @@
     // const x = document.querySelectorAll('.nav-item, .active')
     const x = document.querySelectorAll('a.dropdown-item.active')[0].innerText
     console.log(x)
-    if (x == "Top")
-      $('.navbar-wrapper').fadeOut(50)
+    if (x == "Video" || x == "Top")
+      // $('.navbar-wrapper').fadeOut(50)
+      $('.navbar-wrapper').removeClass('navbar-fixed-top')
     else {
-      $('.navbar-wrapper').fadeIn(50)
+      //$('.navbar-wrapper').fadeIn(50)
+      $('.navbar-wrapper').addClass('navbar-fixed-top')
       droptext.innerText = x
     }
 
   })
 </script>
-
-  <div id="possible-cards">
-    <section class="introduction" id="introduction">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12">
-        <h1>Reimagine <span class="possible-word fade-in">possible</span></h1>
-      </div>
-
-      <div class="col-xs-12 col-sm-6 col-md-2 offset-md-8 text-center">
-        <img class="img-responsive university-logo fade-in" src="style-assets/media/possible/MSUDenver_Formal_2CPos_BlueRed_WhBkgd_FormatA_RGB.svg">
-      </div>
-
-      <div class="col-xs-12 col-sm-4 offset-col-sm-4 col-md-12 text-center">
-        <a href="#improving-health-in-colorado"> <span class="possible-indicator fas fa-chevron-down fa-5x fade-in"></span></a>
-      </div>
-    </div>
-  </div>
-</section>
-    <section id="possible-movie" class="possible-movie">
-    <div class="movie-section">
-        <iframe 
-            src="https://player.vimeo.com/video/348256640" 
-            
-            webkitallowfullscreen 
-            mozallowfullscreen 
-            allowfullscreen>
-        </iframe>
-    </div>
-</section>
-
+    
     <section id="improving-health-in-colorado" class="health-in-colorado">
   <div class="container">
     <div class="row">

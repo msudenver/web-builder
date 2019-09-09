@@ -1,6 +1,9 @@
-<!-- dropdown stutters on button because of blue-background class -->
-<div class="navbar-wrapper blue-background" style="display: none;">
-  <nav id="navbar-possible" class="navbar navbar-fixed-top navbar-expand-md" data-toggle="collapse" data-target="navbar-inner">
+
+<div class="navbar-wrapper blue-background">
+
+<!-- <div class="navbar-wrapper blue-background" style="display: none;"> -->
+  <!-- <nav id="navbar-possible" class="navbar navbar-fixed-top navbar-expand-md" data-toggle="collapse" data-target="navbar-inner"> -->
+  <nav id="navbar-possible" class="navbar navbar-expand-md" data-toggle="collapse" data-target="navbar-inner">
     <div class="row">
       <div class="col-xs-12 col-md-8">
         <span class="d-none d-lg-block" style="text-align:left; color: white; font-size:2.2rem; font-weight:700;">Are you ready to find your <span class='possible-word'>possible</span> ?</span>
@@ -9,6 +12,7 @@
             <li class="nav-item dropdown">
               <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
               <div class="dropdown-menu">
+                <a class="dropdown-item" href="#possible-movie" hidden>Video</a>
                 <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
                 <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
                 <a class="dropdown-item" href="#master-your-future">Master your future</a>
@@ -44,10 +48,12 @@
     // const x = document.querySelectorAll('.nav-item, .active')
     const x = document.querySelectorAll('a.dropdown-item.active')[0].innerText
     console.log(x)
-    if (x == "Top")
-      $('.navbar-wrapper').fadeOut(50)
+    if (x == "Video" || x == "Top")
+      // $('.navbar-wrapper').fadeOut(50)
+      $('.navbar-wrapper').removeClass('navbar-fixed-top')
     else {
-      $('.navbar-wrapper').fadeIn(50)
+      //$('.navbar-wrapper').fadeIn(50)
+      $('.navbar-wrapper').addClass('navbar-fixed-top')
       droptext.innerText = x
     }
 

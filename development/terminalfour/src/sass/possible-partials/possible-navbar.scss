@@ -1,18 +1,36 @@
 .navbar {
-    position: fixed;
-    top: 0px;
-    display: block;
-    
-    background-color: #00447c;
-    z-index: 999;
-    width: 100%;
+
+  display: block;
+  
+  background-color: #00447c;
+  z-index: 999;
+  width: 100%;
 
 
-    h2 {
-      margin: 15px 0;
-      color: #fff;
-    }
-    p {
-      color: #fff;
-    }
+  h2 {
+    margin: 15px 0;
+    color: #fff;
   }
+  p {
+    color: #fff;
+  }
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  top: 0px;
+  display: block;
+  
+  background-color: #00447c;
+  z-index: 999;
+  width: 100%;
+
+
+  h2 {
+    margin: 15px 0;
+    color: #fff;
+  }
+  p {
+    color: #fff;
+  }
+}

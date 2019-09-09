@@ -339,6 +339,24 @@ button, [type="button"],// 1
 
 }
 
+#possible-movie {
+  padding-bottom: 20vh;
+  background-color: $MSUDenver-Blue;
+  .movie-section {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+  
+    iframe {
+      height: 100%;
+      left: 0;
+      position: absolute; 
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
 
 .background-right-copy {
   display: table;
@@ -369,19 +387,19 @@ button, [type="button"],// 1
   }
 }
 
-.movie-section {
-  overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
+// .movie-section {
+//   overflow: hidden;
+//   padding-top: 56.25%;
+//   position: relative;
 
-  iframe {
-    height: 100%;
-    left: 0;
-    position: absolute; 
-    top: 0;
-    width: 100%;
-  }
-}
+//   iframe {
+//     height: 100%;
+//     left: 0;
+//     position: absolute; 
+//     top: 0;
+//     width: 100%;
+//   }
+// }
 
 
 @import "possible-partials/boostrap-overrides.scss";

@@ -284,6 +284,23 @@ button, [type="button"],
   color: #00447c;
 }
 
+#possible-movie {
+  padding-bottom: 20vh;
+  background-color: #00447C;
+}
+#possible-movie .movie-section {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+#possible-movie .movie-section iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .background-right-copy {
   display: table;
   height: auto;
@@ -309,19 +326,6 @@ button, [type="button"],
 }
 .footer .university-logo-footer {
   width: 260px;
-}
-
-.movie-section {
-  overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
-}
-.movie-section iframe {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
 }
 
 .dropdown, .dropdown-menu {
@@ -529,8 +533,6 @@ button, [type="button"],
 }
 
 .navbar {
-  position: fixed;
-  top: 0px;
   display: block;
   background-color: #00447c;
   z-index: 999;
@@ -541,6 +543,22 @@ button, [type="button"],
   color: #fff;
 }
 .navbar p {
+  color: #fff;
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  top: 0px;
+  display: block;
+  background-color: #00447c;
+  z-index: 999;
+  width: 100%;
+}
+.navbar-fixed-top h2 {
+  margin: 15px 0;
+  color: #fff;
+}
+.navbar-fixed-top p {
   color: #fff;
 }
 
