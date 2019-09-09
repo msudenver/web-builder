@@ -409,17 +409,14 @@ button, [type="button"],
   }
 
   .health-in-colorado {
-    background: url(" ../media/possible/Health-in-colorado.jpg") no-repeat center center fixed;
     height: auto;
   }
 
   .teaching-tomorrows-teachers-section {
-    background: url("../media/possible/Teaching-tomorrow-teachers.jpg") no-repeat center center fixed;
     height: auto;
   }
 
   .possible-call-to-action {
-    background: url("../media/possible/open-house-student.jpg") no-repeat center center fixed;
     height: auto;
   }
 }
