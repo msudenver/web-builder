@@ -311,6 +311,19 @@ button, [type="button"],
   width: 260px;
 }
 
+.movie-section {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+.movie-section iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .dropdown, .dropdown-menu {
   width: 35rem;
 }
