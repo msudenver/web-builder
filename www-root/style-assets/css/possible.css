@@ -285,7 +285,8 @@ button, [type="button"],
 }
 
 #possible-movie {
-  padding-bottom: 20vh;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
   background-color: #00447C;
 }
 #possible-movie .movie-section {

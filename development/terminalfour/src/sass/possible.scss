@@ -340,7 +340,8 @@ button, [type="button"],// 1
 }
 
 #possible-movie {
-  padding-bottom: 20vh;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
   background-color: $MSUDenver-Blue;
   .movie-section {
     overflow: hidden;
