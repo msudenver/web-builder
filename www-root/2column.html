@@ -1600,6 +1600,17 @@ lhnWin=window.open('http://chat.msudenver.edu/lhn/livechatvisitor.aspx?lhnid=294
                         });
                     });
                 });
+
+              // Toggle transition effect
+              $('.footer-promo-bg').mouseenter(function () {
+                $(this).find('.footer-promo-heading').animate({opacity: 0}, 700);
+                $(this).find('.footer-promo-text').animate({opacity: 1}, 700);
+              });
+
+              $('.footer-promo-bg').mouseleave(function () {
+                $(this).find('.footer-promo-heading').animate({opacity: 1}, 700);
+                $(this).find('.footer-promo-text').animate({opacity: 0}, 700);
+              });
             })();
             $(window).scroll(function(){
             var width_threshold = 900;

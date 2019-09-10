@@ -25,18 +25,19 @@ p {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin: 10px 0;
   font-weight: 700;
 }
 
 h3 {
+  font-size: 1.25rem;
   margin: 10px 0;
   font-style: italic;
 }
 
 h4 {
-  color: #00447c;
+  color: #00447C;
   margin-bottom: 15px;
 }
 
@@ -67,14 +68,14 @@ a:hover {
 }
 
 section {
-  padding-top: 15vh;
-  padding-bottom: 15vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   height: auto;
 }
 
 .introduction {
   height: 100vh;
-  padding-top: 35vh;
+  padding-top: 20vh;
 }
 .introduction h1 {
   font-size: 3rem;
@@ -120,17 +121,7 @@ section {
 }
 
 .blue-background {
-  padding-top: 15vh;
   background-color: #00447c;
-  padding-bottom: 15vh;
-  height: auto;
-  display: table;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 .blue-background h2 {
   margin: 15px 0;
@@ -233,10 +224,35 @@ button, [type="button"],
   background: #00447c;
 }
 
-.possible-call-to-action {
-  background: url("../media/possible/open-house-student.jpg") no-repeat center center fixed;
-  display: table;
+.health-in-colorado {
+  background: url(" ../media/possible/Health-in-colorado.jpg") no-repeat center center;
   height: auto;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.teaching-tomorrows-teachers-section {
+  background: url("../media/possible/Teaching-tomorrow-teachers.jpg") no-repeat center center;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.teaching-tomorrows-teachers-section .well {
+  background: #ffffffde;
+}
+
+.possible-call-to-action {
+  background: url("../media/possible/open-house-student.jpg") no-repeat center center;
+  display: table;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -251,21 +267,6 @@ button, [type="button"],
   margin-bottom: 15vh;
 }
 
-.teaching-tomorrows-teachers-section {
-  background: url("../media/possible/Teaching-tomorrow-teachers.jpg") no-repeat center center fixed;
-  display: table;
-  height: auto;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.teaching-tomorrows-teachers-section .well {
-  background: #ffffffde;
-}
-
 #master-your-future {
   padding-bottom: 20vh;
   background-color: #D11242;
@@ -276,35 +277,28 @@ button, [type="button"],
 }
 #master-your-future .copy-swap {
   background: white;
+  padding: 15px;
+  margin-bottom: 15px;
 }
 #master-your-future .copy-swap p, #master-your-future .copy-swap a, #master-your-future .copy-swap a:hover {
   color: #00447c;
 }
-@media only screen and (min-width: 543px) {
-  #master-your-future .copy-swap {
-    margin-top: 35px;
-    margin-right: -75px;
-    z-index: 1;
-    background-color: white;
-    position: absolute;
-    padding: 35px;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.175);
-  }
-  #master-your-future .copy-swap p, #master-your-future .copy-swap a, #master-your-future .copy-swap a:hover {
-    color: #00447c !important;
-  }
-}
 
-.health-in-colorado {
-  background: url(" ../media/possible/Health-in-colorado.jpg") no-repeat center center fixed;
-  display: table;
-  height: auto;
+#possible-movie {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#possible-movie .movie-section {
+  overflow: hidden;
+  padding-top: 56.25%;
   position: relative;
+}
+#possible-movie .movie-section iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
   width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .background-right-copy {
@@ -332,6 +326,22 @@ button, [type="button"],
 }
 .footer .university-logo-footer {
   width: 260px;
+}
+
+.dropdown, .dropdown-menu {
+  width: 35rem;
+}
+.dropdown a, .dropdown-menu a {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #00447C;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #00447C;
 }
 
 .sidenav {
@@ -382,14 +392,24 @@ button, [type="button"],
     font-size: 18px;
   }
 }
-@media only screen and (max-width: 543px) {
-  .modal-dialog {
-    max-width: 100vw;
-  }
-}
 @media only screen and (min-width: 544px) {
-  .modal-dialog {
-    max-width: 90vw;
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .introduction {
+    height: 100vh;
+    padding-top: 35vh;
   }
 
   .possible-word {
@@ -404,18 +424,60 @@ button, [type="button"],
   .possible-indicator {
     top: 15vh;
   }
+
+  .health-in-colorado {
+    background: url(" ../media/possible/Health-in-colorado.jpg") no-repeat center center fixed;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .teaching-tomorrows-teachers-section {
+    background: url("../media/possible/Teaching-tomorrow-teachers.jpg") no-repeat center center fixed;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .possible-call-to-action {
+    background: url("../media/possible/open-house-student.jpg") no-repeat center center fixed;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 @media only screen and (min-width: 992px) {
+  section {
+    padding-top: 18vh;
+    padding-bottom: 15vh;
+    height: auto;
+  }
+
   .introduction h1 {
     font-size: 5rem;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    margin-top: 30px;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .possible-indicator {
@@ -428,6 +490,19 @@ button, [type="button"],
   }
   .possible-call-to-action .btn:hover {
     font-size: 1.5rem;
+  }
+
+  .copy-swap {
+    margin-top: 35px;
+    margin-right: -75px;
+    z-index: 1;
+    background-color: white;
+    position: absolute;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.175);
+    padding: 10%;
+  }
+  .copy-swap p, .copy-swap a, .copy-swap a:hover {
+    color: #00447c !important;
   }
 }
 @keyframes fade-in {
@@ -473,10 +548,8 @@ button, [type="button"],
 }
 
 .navbar {
-  position: fixed;
-  top: 0px;
   display: block;
-  background-color: #00447c !important;
+  background-color: #00447c;
   z-index: 999;
   width: 100%;
 }
@@ -485,6 +558,22 @@ button, [type="button"],
   color: #fff;
 }
 .navbar p {
+  color: #fff;
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  top: 0px;
+  display: block;
+  background-color: #00447c;
+  z-index: 999;
+  width: 100%;
+}
+.navbar-fixed-top h2 {
+  margin: 15px 0;
+  color: #fff;
+}
+.navbar-fixed-top p {
   color: #fff;
 }
 

@@ -7401,7 +7401,7 @@ button.close {
 }
 
 .main-site-header {
-  background-color: #ebf1fa;
+  background-color: rgba(235, 241, 250, 0.84);
 }
 
 .msudenver_logo, .msudenver_logo_change {
@@ -7630,7 +7630,7 @@ a.btn.btn-default.visit-give-mobile, a.btn.btn-default.give-mobile, a.btn.btn-de
 div#bs-example-navbar-collapse-1.collapse.navbar-collapse,
 div#bs-example-navbar-collapse-1 {
   transition: max-height 500ms cubic-bezier(0.42, 0, 0.58, 1);
-  background-color: #ebf1fa;
+  background-color: rgba(235, 241, 250, 0.84);
 }
 
 @media (min-width: 991px) {
@@ -8254,10 +8254,6 @@ div#searchModal.modal.fade.in {
   #content-nav {
     font-weight: 600;
     font-size: 18px;
-  }
-
-  .nav > li * {
-    padding: 0px;
   }
 
   a.btn.btn-default.visit-give-mobile {
@@ -9135,7 +9131,6 @@ a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  max-width: 75%;
 }
 
 .at-a-glance-text-wrap {
@@ -9256,7 +9251,7 @@ a.skip-content:active, a.skip-content:focus, a.skip-content:hover {
 }
 /* Homepage events */
 #homepage-events {
-  background-color: #ebf1fa;
+  background-color: rgba(235, 241, 250, 0.84);
 }
 #homepage-events a:hover, #homepage-events a:active, #homepage-events a:focus {
   text-decoration: none;
@@ -9922,30 +9917,6 @@ footer {
 
 .contentlink {
   background: #1b557a;
-}
-
-.rowdyblue {
-  background: #00447c;
-  color: #fff !important;
-}
-.rowdyblue:hover {
-  background: #003663;
-}
-
-.rowdyred {
-  background: #c50f3c;
-  color: #fff !important;
-}
-.rowdyred:hover {
-  background: #ad0d35;
-}
-
-.rowdygray {
-  background: #717073;
-  color: #fff !important;
-}
-.rowdygray:hover {
-  background: #646366;
 }
 
 .filter {
@@ -11084,7 +11055,7 @@ hr.style-one {
 }
 
 .HighlightBox {
-  color: #fff;
+  color: #000000;
   padding: 1.5em;
   margin-bottom: 1.5em;
   background: #ffffff;
@@ -11111,12 +11082,8 @@ hr.style-one {
   margin: auto;
 }
 
-.HighlightBox .img-responsive {
-  margin: auto;
-}
-
 .ThreeColumnRight .HighlightBox, .ThreeColumnRight .HighlightBox .HighlightBox-content, .ThreeColumnRight .HighlightBox .HighlightBox-content a, .ThreeColumnRight .HighlightBox .HighlightBox-content a:hover, .ThreeColumnRight .HighlightBox a, .ThreeColumnRight .HighlightBox a:hover, .content .HighlightBox .HighlightBox-content, .content .HighlightBox .HighlightBox-content a, .content .HighlightBox .HighlightBox-content a:hover {
-  color: #fff;
+  color: #000000;
 }
 
 .HighlightBox hr {
@@ -11326,7 +11293,11 @@ hr.style-one {
   font-size: 24px;
 }
 
-.panel-default > .panel-heading {
+.panel-default {
+  background-color: #EFEFEF;
+  border-color: #C3C3C3;
+}
+.panel-default .panel-heading {
   background: #717073;
   color: #fff;
   font-size: 18px;
@@ -11337,11 +11308,6 @@ hr.style-one {
   color: #fff;
   font-weight: 700;
   font-size: 24px;
-}
-
-.panel-body {
-  background-color: #EFEFEF;
-  border-color: #C3C3C3;
 }
 
 .panel-body a {
@@ -11563,10 +11529,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   color: #002855;
-  font-size: 26px;
-  line-height: 26px;
-  margin: 20px 0;
-  padding: 40px 0;
+  font-size: 2.2rem;
+  margin: 40px 0;
 }
 
 .readmore {
@@ -11939,6 +11903,7 @@ h4 {
 section.admissionsHomepageSlider {
   background-color: #00447C;
   color: #ffffff;
+  margin-top: -15px;
 }
 section.admissionsHomepageSlider h1, section.admissionsHomepageSlider h2, section.admissionsHomepageSlider h3, section.admissionsHomepageSlider p {
   color: #ffffff;

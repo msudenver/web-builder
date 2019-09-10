@@ -1,0 +1,18 @@
+.dropdown, .dropdown-menu {
+  width:35rem;
+  a{
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    // color: #fff;
+    background-color:$MSUDenver-Blue;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    // color: #fff;
+    // text-decoration: none;
+    background-color: $MSUDenver-Blue;
+}

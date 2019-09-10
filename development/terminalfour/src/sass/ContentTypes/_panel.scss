@@ -8,21 +8,25 @@
     font-weight: 700;
     font-size: 24px;
 }
-.panel-default > .panel-heading {
+.panel-default {
+    background-color: #EFEFEF;
+    border-color: #C3C3C3;
+ .panel-heading {
     background: #717073;
     color: #fff;
     font-size: 18px;
     font-weight: 700;
+}
 }
 .panel-title {
     color: #fff;
     font-weight: 700;
     font-size: 24px;
 }
-.panel-body {
-  background-color: #EFEFEF;
-  border-color: #C3C3C3;
-}
+// .panel-body {
+//   background-color: #EFEFEF;
+//   border-color: #C3C3C3;
+// }
 .panel-body a {
   font-weight: 400;
   font-size: 16px;
