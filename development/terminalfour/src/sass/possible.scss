@@ -340,18 +340,19 @@ button, [type="button"],// 1
 }
 
 #possible-movie {
-  padding-top: 0vh;
-  padding-bottom: 0vh;
-  background-color: $MSUDenver-Blue;
+  padding-top: 0;
+  padding-bottom: 0;
+  // background-color: $MSUDenver-Red;
+
   .movie-section {
     overflow: hidden;
     padding-top: 56.25%;
     position: relative;
-  
+
     iframe {
       height: 100%;
       left: 0;
-      position: absolute; 
+      position: absolute;
       top: 0;
       width: 100%;
     }
@@ -396,7 +397,7 @@ button, [type="button"],// 1
 //   iframe {
 //     height: 100%;
 //     left: 0;
-//     position: absolute; 
+//     position: absolute;
 //     top: 0;
 //     width: 100%;
 //   }

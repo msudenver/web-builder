@@ -11903,6 +11903,7 @@ h4 {
 section.admissionsHomepageSlider {
   background-color: #00447C;
   color: #ffffff;
+  margin-top: -15px;
 }
 section.admissionsHomepageSlider h1, section.admissionsHomepageSlider h2, section.admissionsHomepageSlider h3, section.admissionsHomepageSlider p {
   color: #ffffff;

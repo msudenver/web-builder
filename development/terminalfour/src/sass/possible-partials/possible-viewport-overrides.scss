@@ -39,18 +39,30 @@
   }
 
   .health-in-colorado {
-    //background: url(" ../media/possible/Health-in-colorado.jpg") no-repeat center center fixed;
+    background: url(" ../media/possible/Health-in-colorado.jpg") no-repeat center center fixed;
     height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   .teaching-tomorrows-teachers-section {
-    //background: url("../media/possible/Teaching-tomorrow-teachers.jpg") no-repeat center center fixed;
+    background: url("../media/possible/Teaching-tomorrow-teachers.jpg") no-repeat center center fixed;
     height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   .possible-call-to-action {
-    //background: url("../media/possible/open-house-student.jpg") no-repeat center center fixed;
+    background: url("../media/possible/open-house-student.jpg") no-repeat center center fixed;
     height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
 }
