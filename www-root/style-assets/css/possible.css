@@ -224,6 +224,34 @@ button, [type="button"],
   background: #00447c;
 }
 
+.brewing-innovation-in-hospitality {
+  background: url(" ../media/possible/abby-brewing-gb.jpg") no-repeat center center;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.brewing-innovation-in-hospitality .well {
+  background: #ffffffde;
+}
+
+.on-the-front-lines-of-cybersecurity {
+  background: url(" ../media/possible/AndrewTraver.jpg") no-repeat center center;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.on-the-front-lines-of-cybersecurity .well {
+  background: #ffffffde;
+}
+
 .health-in-colorado {
   background: url(" ../media/possible/Health-in-colorado.jpg") no-repeat center center;
   height: auto;
@@ -436,6 +464,24 @@ button, [type="button"],
 
   .teaching-tomorrows-teachers-section {
     background: url("../media/possible/Teaching-tomorrow-teachers.jpg") no-repeat center center fixed;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .brewing-innovation-in-hospitality {
+    background: url(" ../media/possible/abby-brewing-bg.jpg") no-repeat center center fixed;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .on-the-front-lines-of-cybersecurity {
+    background: url(" ../media/possible/AndrewTraver.jpg") no-repeat center center fixed;
     height: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;

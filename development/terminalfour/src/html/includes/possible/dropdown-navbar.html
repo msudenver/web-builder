@@ -6,15 +6,22 @@
         <div id="navbar-inner" class="">
           <ul class="nav nav-pills">
             <li class="nav-item dropdown">
-              <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Choose</a>
               <div class="dropdown-menu">
+                <a class="dropdown-item" href="#introduction" hidden>Top</a>
                 <a class="dropdown-item" href="#possible-movie" hidden>Video</a>
+
                 <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
                 <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
                 <a class="dropdown-item" href="#master-your-future">Master your future</a>
-                <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
+                <a class="dropdown-item" href="#brewing-innovation-in-hospitality">Brewing innovation in hospitality</a>
+                <a class="dropdown-item" href="#multiply-your-roi">Multiply Your Roi</a>
+                <a class="dropdown-item" href="#on-the-front-lines-of-cybersecurity">Cybersecurity</a>
                 <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
-                <a class="dropdown-item" href="#introduction" hidden>Top</a>
+                <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
+                <a class="dropdown-item" href="#operating-satelites-from-the-classroom">Operate satelites</a>
+
+
               </div>
             </li>
           </ul>
@@ -36,17 +43,13 @@
   const droptext = document.getElementById('nav-showing')
 
   $(window).on("activate.bs.scrollspy", function() {
-    // const x = document.querySelectorAll('.nav-item, .active')
     const x = document.querySelectorAll('a.dropdown-item.active')[0].innerText
     console.log(x)
     if (x == "Video" || x == "Top")
-      // $('.navbar-wrapper').fadeOut(50)
       $('.navbar-wrapper').removeClass('navbar-fixed-top')
     else {
-      //$('.navbar-wrapper').fadeIn(50)
       $('.navbar-wrapper').addClass('navbar-fixed-top')
       droptext.innerText = x
     }
-
   })
 </script>
