@@ -274,7 +274,30 @@ button, [type="button"],// 1
   background: #00447c;
 }
 
+.brewing-innovation-in-hospitality {
+  background: url(" ../media/possible/Abby_brewing.jpg") no-repeat center center;
+  height: auto;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
+.on-the-front-lines-of-cybersecurity {
+  background: url(" ../media/possible/AndrewTraver.jpg") no-repeat center center;
+  height: auto;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
 
 .health-in-colorado {
   background: url(" ../media/possible/Health-in-colorado.jpg") no-repeat center center;
@@ -388,20 +411,6 @@ button, [type="button"],// 1
     width: 260px;
   }
 }
-
-// .movie-section {
-//   overflow: hidden;
-//   padding-top: 56.25%;
-//   position: relative;
-
-//   iframe {
-//     height: 100%;
-//     left: 0;
-//     position: absolute;
-//     top: 0;
-//     width: 100%;
-//   }
-// }
 
 
 @import "possible-partials/boostrap-overrides.scss";

@@ -224,6 +224,30 @@ button, [type="button"],
   background: #00447c;
 }
 
+.brewing-innovation-in-hospitality {
+  background: url(" ../media/possible/Abby_brewing.jpg") no-repeat center center;
+  height: auto;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.on-the-front-lines-of-cybersecurity {
+  background: url(" ../media/possible/AndrewTraver.jpg") no-repeat center center;
+  height: auto;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .health-in-colorado {
   background: url(" ../media/possible/Health-in-colorado.jpg") no-repeat center center;
   height: auto;

@@ -110,14 +110,18 @@
         <div id="navbar-inner" class="">
           <ul class="nav nav-pills">
             <li class="nav-item dropdown">
-              <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <a id='nav-showing' class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Choose</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#possible-movie" hidden>Video</a>
                 <a class="dropdown-item" href="#improving-health-in-colorado">Improving health in Colorado</a>
                 <a class="dropdown-item" href="#reimagine-higher-education">Reimagine higher education</a>
                 <a class="dropdown-item" href="#master-your-future">Master your future</a>
+                <a class="dropdown-item" href="#on-the-front-lines-of-cybersecurity">Cybersecurity</a>
+                <a class="dropdown-item" href="#brewing-innovation-in-hospitality">Brewing innovation in hospitality</a>
                 <a class="dropdown-item" href="#teaching-tomorrows-teachers">Teaching tomorrow's teachers</a>
                 <a class="dropdown-item" href="#learners-connect-with-leaders">Learners connect with leaders</a>
+                <a class="dropdown-item" href="#operating-satelites-from-the-classroom">Operate satelites</a>
+                <a class="dropdown-item" href="#multiply-your-roi">Multiply Your Roi</a>
                 <a class="dropdown-item" href="#introduction" hidden>Top</a>
               </div>
             </li>
@@ -140,18 +144,14 @@
   const droptext = document.getElementById('nav-showing')
 
   $(window).on("activate.bs.scrollspy", function() {
-    // const x = document.querySelectorAll('.nav-item, .active')
     const x = document.querySelectorAll('a.dropdown-item.active')[0].innerText
     console.log(x)
     if (x == "Video" || x == "Top")
-      // $('.navbar-wrapper').fadeOut(50)
       $('.navbar-wrapper').removeClass('navbar-fixed-top')
     else {
-      //$('.navbar-wrapper').fadeIn(50)
       $('.navbar-wrapper').addClass('navbar-fixed-top')
       droptext.innerText = x
     }
-
   })
 </script>
     <section id="improving-health-in-colorado" class="health-in-colorado">
@@ -216,28 +216,31 @@
     </div>
   </div>
 </section>
-    <!-- <section id="on-the-front-lines-of-cybersecurity">
+    <section id="on-the-front-lines-of-cybersecurity" class="on-the-front-lines-of-cybersecurity">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-12 col-md-8 offset-md-5 well">
         <h2>On the front lines of cybersecurity.</h2>
         <h3>Our groundbreaking program taught by industry experts blends technology and human behavior to advance careers in this critical field.</h3>
         <p>Understanding technology isn’t all it takes to stay ahead of the bad guys. Our <a href="https://www.msudenver.edu/programs/cybersecurity-major-bs.shtml">bachelor’s</a> and <a href="https://www.msudenver.edu/programs/master-of-science-in-cybersecurity.shtml">master’s</a> degrees give students the tools they need to excel in the field and the skills to decode the human behavior behind cybercrimes. How? <a href="http://red.msudenver.edu/2019/fighting-crime-from-the-classroom.html">Professors with real-world expertise</a> and hands-on learning opportunities that lead to top careers.</p>
       </div>
     </div>
   </div>
-</section> -->
-    <!-- <section id="brewing-innovation-in-hospitality">
+</section>
+    <section id="brewing-innovation-in-hospitality" class="brewing-innovation-in-hospitality">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h2>Brewing innovation at our School of Hospitality.</h2>
-        <h3>Hands-on experience at Colorado’s only on-campus hotel, brewery and wine-cellar management lab.</h3>
-        <p>Whether it’s <a href="https://red.msudenver.edu/2017/homeless-to-homebrewing-peters-never-quits.html">founding a brewery</a> or being tapped for a <a href="https://red.msudenver.edu/2017/on-a-highway-to-ale.html">career with Coors</a>, students can <a href="https://www.msudenver.edu/beer/">craft their own futures</a> at MSU Denver. And Roadrunners don’t just excel in <a href="https://red.msudenver.edu/2019/beer-here.html">Colorado’s booming beer industry;</a> they work with industry leaders to <a href="https://red.msudenver.edu/2019/turning-up-the-heat.html">serve up delicious dishes</a>, ensure <a href="https://red.msudenver.edu/2019/ohana-in-action.html">five-star hotel stays</a> and even <a href="https://red.msudenver.edu/2017/props-for-an-out-of-this-world-event.html">launch events for the aerospace industry.</a></p>
-      </div>
+    <h2>Brewing innovation at our School of Hospitality.</h2>
+    <h3>Hands-on experience at Colorado’s only on-campus hotel, brewery and wine-cellar management lab.</h3>
+
+    <div class="col-xs-12 col-md-6">
+      <br><br><p>Whether it’s <a href="https://red.msudenver.edu/2017/homeless-to-homebrewing-peters-never-quits.html">founding a brewery</a> or being tapped for a <a href="https://red.msudenver.edu/2017/on-a-highway-to-ale.html">career with Coors</a>, students can <a href="https://www.msudenver.edu/beer/">craft their own futures</a> at MSU Denver. And Roadrunners don’t just excel in <a href="https://red.msudenver.edu/2019/beer-here.html">Colorado’s booming beer industry;</a> they work with industry leaders to <a href="https://red.msudenver.edu/2019/turning-up-the-heat.html">serve up delicious dishes</a>, ensure <a href="https://red.msudenver.edu/2019/ohana-in-action.html">five-star hotel stays</a> and even <a href="https://red.msudenver.edu/2017/props-for-an-out-of-this-world-event.html">launch events for the aerospace industry.</a></p>
     </div>
+    <div class="col-xs-12 col-md-6">
+      <img class="img-thumbnail" src="style-assets/media/possible/abby-brewing.jpg">
+    </div>
+
   </div>
-</section> -->
+</section>
     <section id="teaching-tomorrows-teachers" class="teaching-tomorrows-teachers-section">
   <div class="container">
     <div class="row">
@@ -271,34 +274,41 @@
     </div>
   </div>
 </section>
-    <!-- <section id="operating-satelites-from-the-classroom">
+    <section id="operating-satelites-from-the-classroom">
   <div class="container">
+    <h2>We’re operating satellites from the classroom.</h2>
+    <h3>Innovative partnerships with leading aerospace companies and hands-on opportunities to launch space-related careers.</h3>
     <div class="row">
-      <div class="col-xs-12">
-        <h2>We’re operating satellites from the classroom.</h2>
-        <h3>Innovative partnerships with leading aerospace companies and hands-on opportunities to launch space-related careers.</h3>
-        <p>Our <a href="https://www.msudenver.edu/aviation/">aerospace science</a> students <a href="https://red.msudenver.edu/2019/charged-up.html">design batteries</a> for spacecraft, assist researchers protecting the planet from asteroid strikes 
+      <div class="col-xs-12 col-md-6">
+        <img class="img-thumbnail" src="style-assets/media/possible/leading-aerospace.jpg">
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <br><br><p>Our <a href="https://www.msudenver.edu/aviation/">aerospace science</a> students <a href="https://red.msudenver.edu/2019/charged-up.html">design batteries</a> for spacecraft, assist researchers protecting the planet from asteroid strikes 
           and work on the <a href="https://red.msudenver.edu/2019/planetary-protectors.html">cutting edge of 3D printing.</a> Our partnerships with industry titans translate into excellent internship and job opportunities 
           in <a href="http://red.msudenver.edu/2019/ready-for-blastoff.html">Colorado’s $15.4 billion aerospace industry.</a> Put your career on the launchpad at MSU Denver.
-
         </p>
       </div>
     </div>
+
   </div>
-</section> -->
-    <!-- <section id="multiply-your-roi">
+</section>
+    <section id="multiply-your-roi">
   <div class="container">
+    <h2>Best ROI in the business.</h2>
+    <h3>Our internationally accredited business college offers the best value in Colorado, a startup spirit and the only sales center in the state.</h3>
+
     <div class="row">
-      <div class="col-xs-12">
-        <h2>Best ROI in the business.</h2>
-        <h3>Our internationally accredited business college offers the best value in Colorado, a startup spirit and the only sales center in the state.</h3>
-        <p>Just one year after graduation, alumni of our <a href="https://www.msudenver.edu/business/">College of Business</a> earn close to 40% more than they paid for four years of tuition. 
+      <div class="col-xs-12 col-md-6">
+        <br><br><p>Just one year after graduation, alumni of our <a href="https://www.msudenver.edu/business/">College of Business</a> earn close to 40% more than they paid for four years of tuition. 
           That’s the best ROI of any <a href="https://www.msudenver.edu/business/about/">AACSB-accredited</a> university in Colorado. 
           Add that to our first-rate faculty and you’ll be ready to <a href="https://red.msudenver.edu/2019/opportunities-in-store.html">open your dream franchise</a>, <a href="https://red.msudenver.edu/2019/watch-brewing-success.html">brewery</a> or hotel in no time.</p>
       </div>
+      <div class="col-xs-12 col-md-6">
+        <img class="img-thumbnail" src="style-assets/media/possible/MBA.jpg">
+      </div>
     </div>
   </div>
-</section> -->
+</section>
     <section class="possible-call-to-action">
   <div class="container">
     <div class="row">
