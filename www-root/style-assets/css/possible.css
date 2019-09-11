@@ -225,7 +225,7 @@ button, [type="button"],
 }
 
 .brewing-innovation-in-hospitality {
-  background: url(" ../media/possible/abby-brewing.jpg") no-repeat center center;
+  background: url(" ../media/possible/abby-brewing-gb.jpg") no-repeat center center;
   display: table;
   position: relative;
   width: 100%;
@@ -295,33 +295,33 @@ button, [type="button"],
   margin-bottom: 15vh;
 }
 
-#master-your-future {
+.master-your-future {
   padding-bottom: 20vh;
   background-color: #D11242;
 }
-#master-your-future h2, #master-your-future h3 {
+.master-your-future h2, .master-your-future h3 {
   color: white !important;
   margin-bottom: 15px;
 }
-#master-your-future .copy-swap {
+.master-your-future .copy-swap {
   background: white;
   padding: 15px;
   margin-bottom: 15px;
 }
-#master-your-future .copy-swap p, #master-your-future .copy-swap a, #master-your-future .copy-swap a:hover {
+.master-your-future .copy-swap p, .master-your-future .copy-swap a, .master-your-future .copy-swap a:hover {
   color: #00447c;
 }
 
-#possible-movie {
+.possible-movie {
   padding-top: 0;
   padding-bottom: 0;
 }
-#possible-movie .movie-section {
+.possible-movie .movie-section {
   overflow: hidden;
   padding-top: 56.25%;
   position: relative;
 }
-#possible-movie .movie-section iframe {
+.possible-movie .movie-section iframe {
   height: 100%;
   left: 0;
   position: absolute;
@@ -472,7 +472,7 @@ button, [type="button"],
   }
 
   .brewing-innovation-in-hospitality {
-    background: url(" ../media/possible/abby-brewing.jpg") no-repeat center center fixed;
+    background: url(" ../media/possible/abby-brewing-bg.jpg") no-repeat center center fixed;
     height: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
