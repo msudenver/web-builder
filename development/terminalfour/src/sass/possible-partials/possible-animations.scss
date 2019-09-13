@@ -1,39 +1,112 @@
 
-  @keyframes fade-in{
-      from { opacity:0;}
-      to {opacity:1;}
-      }
+@keyframes fade-in-logo {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
 
-@-webkit-keyframes fade-in{
-    from {opacity:0;}
-    to {opacity:1;}
-    }
+@keyframes fade-in-caret {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+// @-webkit-keyframes fade-in{
+//   from {opacity:0;}
+//   to {opacity:1;}
+// }
+
+// .fade-in {
+
+//          animation: fadeIn ease 10s;
+//          -webkit-animation: fadeIn ease 10s;
+//          -moz-animation: fadeIn ease 10s;
+//          -o-animation: fadeIn ease 10s;
+//          -ms-animation: fadeIn ease 10s;
+//        }
+
+//        .fade-in-logo {
+
+//                 animation: fadeIn ease 10s;
+//                 -webkit-animation: fadeIn ease 10s;
+//                 -moz-animation: fadeIn ease 10s;
+//                 -o-animation: fadeIn ease 10s;
+//                 -ms-animation: fadeIn ease 10s;
+//                 -webkit-animation-delay: 10s; /* Safari 4.0 - 8.0 */
+//                 animation-delay: 10s;
+//               }
+
+//         .fade-in-caret {
+
+//         -webkit-animation-name: fade-in;
+//         -webkit-animation-duration: 5s;
+//         -webkit-animation-delay: 15s;
+//         animation-delay: 15s;
+
+//  }
+
+
+
+ @-webkit-keyframes text-fade-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-fade-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
 
 .fade-in {
+	-webkit-animation: text-fade-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-fade-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+.fade-in-logo {
+  animation: fade-in-logo ease 3s;
+  -webkit-animation: fade-in-logo ease 3s;
+  -moz-animation: fade-in-logo ease 3s;
+  -o-animation: fade-in-logo ease 3s;
+  -ms-animation: fade-in-logo ease 3s;
+  -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+}
 
-         animation: fadeIn ease 10s;
-         -webkit-animation: fadeIn ease 10s;
-         -moz-animation: fadeIn ease 10s;
-         -o-animation: fadeIn ease 10s;
-         -ms-animation: fadeIn ease 10s;
-       }
-
-       .fade-in-logo {
-
-                animation: fadeIn ease 10s;
-                -webkit-animation: fadeIn ease 10s;
-                -moz-animation: fadeIn ease 10s;
-                -o-animation: fadeIn ease 10s;
-                -ms-animation: fadeIn ease 10s;
-                -webkit-animation-delay: 10s; /* Safari 4.0 - 8.0 */
-                animation-delay: 10s;
-              }
-
-        .fade-in-caret {
-
-        -webkit-animation-name: fade-in;
-        -webkit-animation-duration: 5s;
-        -webkit-animation-delay: 15s;
-        animation-delay: 15s;
-
- }
+.fade-in-caret {
+  animation: fade-in-caret ease 3s;
+  -webkit-animation: fade-in-caret ease 3s;
+  -moz-animation: fade-in-caret ease 3s;
+  -o-animation: fade-in-caret ease 3s;
+  -ms-animation: fade-in-caret ease 3s;
+  -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+}

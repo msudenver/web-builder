@@ -551,46 +551,80 @@ button, [type="button"],
     color: #00447c !important;
   }
 }
-@keyframes fade-in {
-  from {
+@keyframes fade-in-logo {
+  0% {
     opacity: 0;
   }
-  to {
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@keyframes fade-in-caret {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@-webkit-keyframes text-fade-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
-@-webkit-keyframes fade-in {
-  from {
+@keyframes text-fade-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
-  to {
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 .fade-in {
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 10s;
-  -moz-animation: fadeIn ease 10s;
-  -o-animation: fadeIn ease 10s;
-  -ms-animation: fadeIn ease 10s;
+  -webkit-animation: text-fade-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-fade-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .fade-in-logo {
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 10s;
-  -moz-animation: fadeIn ease 10s;
-  -o-animation: fadeIn ease 10s;
-  -ms-animation: fadeIn ease 10s;
-  -webkit-animation-delay: 10s;
+  animation: fade-in-logo ease 3s;
+  -webkit-animation: fade-in-logo ease 3s;
+  -moz-animation: fade-in-logo ease 3s;
+  -o-animation: fade-in-logo ease 3s;
+  -ms-animation: fade-in-logo ease 3s;
+  -webkit-animation-delay: 0s;
   /* Safari 4.0 - 8.0 */
-  animation-delay: 10s;
+  animation-delay: 0s;
 }
 
 .fade-in-caret {
-  -webkit-animation-name: fade-in;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-delay: 15s;
-  animation-delay: 15s;
+  animation: fade-in-caret ease 3s;
+  -webkit-animation: fade-in-caret ease 3s;
+  -moz-animation: fade-in-caret ease 3s;
+  -o-animation: fade-in-caret ease 3s;
+  -ms-animation: fade-in-caret ease 3s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
 }
 
 .navbar {
