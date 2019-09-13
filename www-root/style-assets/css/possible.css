@@ -623,4 +623,9 @@ button, [type="button"],
   color: #fff;
 }
 
+#nav-showing {
+  border-style: solid;
+  border-width: 3px;
+}
+
 /*# sourceMappingURL=possible.css.map */
