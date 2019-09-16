@@ -119,28 +119,30 @@
   }
 
   .possible-call-to-action{
-  .btn {
-    border: solid 3px;
-    font-size: 1.5rem;
+    .btn {
+      border: solid 3px;
+      font-size: 1.5rem;
+    }
+
+    .btn:hover {
+      font-size: 1.5rem;
+    }
   }
 
-  .btn:hover {
-    font-size: 1.5rem;
+  .copy-swap {
+    margin-top: 35px;
+    margin-right: -75px;
+    z-index: 1;
+    background-color: white;
+    position: absolute;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.175);
+    padding:10%;
+    p, a, a:hover{
+      color:#00447c !important;
+    }
   }
-}
 
-.copy-swap {
- margin-top: 35px;
- margin-right: -75px;
- z-index: 1;
- background-color: white;
- position: absolute;
- box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.175);
- padding:10%;
- p, a, a:hover{
-   color:#00447c !important;
- }
- }
-
-
+  #nav-showing {
+    border-left: none;
+  }
 }

@@ -414,6 +414,119 @@ button, [type="button"],
     font-size: 18px;
   }
 }
+@keyframes fade-in-logo {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@keyframes fade-in-caret {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@-webkit-keyframes text-fade-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-fade-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.fade-in {
+  -webkit-animation: text-fade-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-fade-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.fade-in-logo {
+  animation: fade-in-logo ease 3s;
+  -webkit-animation: fade-in-logo ease 3s;
+  -moz-animation: fade-in-logo ease 3s;
+  -o-animation: fade-in-logo ease 3s;
+  -ms-animation: fade-in-logo ease 3s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+}
+
+.fade-in-caret {
+  animation: fade-in-caret ease 3s;
+  -webkit-animation: fade-in-caret ease 3s;
+  -moz-animation: fade-in-caret ease 3s;
+  -o-animation: fade-in-caret ease 3s;
+  -ms-animation: fade-in-caret ease 3s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+}
+
+.navbar {
+  display: block;
+  background-color: #00447c;
+  z-index: 999;
+  width: 100%;
+}
+.navbar h2 {
+  margin: 15px 0;
+  color: #fff;
+}
+.navbar p {
+  color: #fff;
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  top: 0px;
+  display: block;
+  background-color: #00447c;
+  z-index: 999;
+  width: 100%;
+}
+.navbar-fixed-top h2 {
+  margin: 15px 0;
+  color: #fff;
+}
+.navbar-fixed-top p {
+  color: #fff;
+}
+
+#nav-showing {
+  border-left: 3px dotted #fff;
+}
+
 @media only screen and (min-width: 544px) {
   h2 {
     font-size: 1.25rem;
@@ -544,118 +657,10 @@ button, [type="button"],
   .copy-swap p, .copy-swap a, .copy-swap a:hover {
     color: #00447c !important;
   }
-}
-@keyframes fade-in-logo {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 100;
-  }
-  100% {
-    opacity: 100;
-  }
-}
-@keyframes fade-in-caret {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 100;
-  }
-  100% {
-    opacity: 100;
-  }
-}
-@-webkit-keyframes text-fade-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-@keyframes text-fade-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-.fade-in {
-  -webkit-animation: text-fade-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: text-fade-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
 
-.fade-in-logo {
-  animation: fade-in-logo ease 3s;
-  -webkit-animation: fade-in-logo ease 3s;
-  -moz-animation: fade-in-logo ease 3s;
-  -o-animation: fade-in-logo ease 3s;
-  -ms-animation: fade-in-logo ease 3s;
-  -webkit-animation-delay: 0s;
-  /* Safari 4.0 - 8.0 */
-  animation-delay: 0s;
-}
-
-.fade-in-caret {
-  animation: fade-in-caret ease 3s;
-  -webkit-animation: fade-in-caret ease 3s;
-  -moz-animation: fade-in-caret ease 3s;
-  -o-animation: fade-in-caret ease 3s;
-  -ms-animation: fade-in-caret ease 3s;
-  -webkit-animation-delay: 0s;
-  /* Safari 4.0 - 8.0 */
-  animation-delay: 0s;
-}
-
-.navbar {
-  display: block;
-  background-color: #00447c;
-  z-index: 999;
-  width: 100%;
-}
-.navbar h2 {
-  margin: 15px 0;
-  color: #fff;
-}
-.navbar p {
-  color: #fff;
-}
-
-.navbar-fixed-top {
-  position: fixed;
-  top: 0px;
-  display: block;
-  background-color: #00447c;
-  z-index: 999;
-  width: 100%;
-}
-.navbar-fixed-top h2 {
-  margin: 15px 0;
-  color: #fff;
-}
-.navbar-fixed-top p {
-  color: #fff;
-}
-
-#nav-showing {
-  border-left: 3px dotted #fff;
+  #nav-showing {
+    border-left: none;
+  }
 }
 
 /*# sourceMappingURL=possible.css.map */
