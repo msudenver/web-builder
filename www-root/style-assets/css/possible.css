@@ -558,6 +558,9 @@ button, [type="button"],
   20% {
     opacity: 0;
   }
+  70% {
+    opacity: 100;
+  }
   100% {
     opacity: 100;
   }
@@ -566,10 +569,10 @@ button, [type="button"],
   0% {
     opacity: 0;
   }
-  40% {
+  30% {
     opacity: 0;
   }
-  80% {
+  70% {
     opacity: 100;
   }
   100% {
