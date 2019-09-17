@@ -9431,6 +9431,8 @@ footer {
 .footer-promos-row {
   padding-bottom: 14px;
   padding-bottom: 0.875rem;
+  border-top: 5px #002855 solid;
+  margin-top: 15px;
 }
 
 .footer-promo {
@@ -11152,6 +11154,7 @@ hr.style-one {
 
 .hero {
   position: relative;
+  margin-bottom: 30px;
 }
 
 .hero p {
@@ -11167,7 +11170,6 @@ hr.style-one {
 }
 
 .hero > .img-responsive {
-  margin-bottom: 0px;
   width: 100%;
 }
 

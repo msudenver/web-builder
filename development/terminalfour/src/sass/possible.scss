@@ -274,7 +274,35 @@ button, [type="button"],// 1
   background: #00447c;
 }
 
+.brewing-innovation-in-hospitality {
+  background: url(" ../media/possible/abby-brewing-bg.jpg") no-repeat center center;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
+  .well {
+    background: $MSUDenver-white-tranparency;
+  }
+}
+
+.on-the-front-lines-of-cybersecurity {
+  background: url(" ../media/possible/AndrewTraver.jpg") no-repeat center center;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .well {
+    background: $MSUDenver-white-tranparency;
+  }
+}
 
 .health-in-colorado {
   background: url(" ../media/possible/Health-in-colorado.jpg") no-repeat center center;
@@ -345,14 +373,14 @@ button, [type="button"],// 1
   // background-color: $MSUDenver-Red;
 
   .movie-section {
-    overflow: hidden;
-    padding-top: 56.25%;
-    position: relative;
+    // overflow: hidden;
+    // padding-top: 56.25%;
+    // position: relative;
 
     iframe {
-      height: 100%;
+      height: 80vh;
       left: 0;
-      position: absolute;
+      // position: absolute;
       top: 0;
       width: 100%;
     }
@@ -389,23 +417,10 @@ button, [type="button"],// 1
   }
 }
 
-// .movie-section {
-//   overflow: hidden;
-//   padding-top: 56.25%;
-//   position: relative;
-
-//   iframe {
-//     height: 100%;
-//     left: 0;
-//     position: absolute;
-//     top: 0;
-//     width: 100%;
-//   }
-// }
-
 
 @import "possible-partials/boostrap-overrides.scss";
 @import "possible-partials/possible-navigation.scss";
-@import "possible-partials/possible-viewport-overrides.scss";
+
 @import "possible-partials/possible-animations.scss";
-@import "possible-partials/possible-navbar.scss"
+@import "possible-partials/possible-navbar.scss";
+@import "possible-partials/possible-viewport-overrides.scss";
