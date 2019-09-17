@@ -9431,6 +9431,7 @@ footer {
 .footer-promos-row {
   padding-bottom: 14px;
   padding-bottom: 0.875rem;
+  border-top: 5px #002855 solid;
 }
 
 .footer-promo {
