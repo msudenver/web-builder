@@ -15,8 +15,15 @@
 
 /** SVG fallback for IE 8 **/
 
-#denver-city-svg { background: blue; color: #fff; }
-#denver-city-svg svg { color: #fff;}
+#denver-city-svg {
+  background: blue;
+  color: #fff;
+}
+
+#denver-city-svg svg {
+  color: #fff;
+}
+
 /**  Homepage Feature Components michael.mason@terminalfour.com **/
 @import "msu-partials/global-header";
 @import "msu-partials/msu-utils";
@@ -53,6 +60,7 @@
 @import "ContentTypes/card";
 @import "ContentTypes/user-profile";
 @import "ContentTypes/user-profile";
+@import "ContentTypes/content-page"
 
 /** Admissions Homepage Styles **/
 /** Objects **/

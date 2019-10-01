@@ -1,465 +1,59 @@
-
-<!--  --><a href="/tst/wcmstestsite/blog-entry-content-type.shtml">
-<div class="panel">
-    <h4 class="promo_date pull-right badge">
-        May 18, 2016
-    </h4>
-    <h3>
-        Headline of the Blog Entry Content Type
-    </h3>
-    <p>
-        Intro text of the Blog Entry Content Type
-    </p>
-</div>
-</a><a href="/tst/wcmstestsite/blog-entry-content-type-1.shtml">
-<div class="panel">
-    <h4 class="promo_date pull-right badge">
-        May 18, 2016
-    </h4>
-    <h3>
-        Headline of the Blog Entry Content Type
-    </h3>
-    <p>
-        Intro text of the Blog Entry Content Type
-    </p>
-</div>
-</a><!-- Edited by MGW 05-16-14  -->
+<!--  -->
+@@include('content-types-main/content/content-1.html')
+<!-- Edited by MGW 05-16-14  -->
 <!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
-<script>
-  function validateForm() {
-    //USE A TRY/CATCH BLOCK!!!!!!
-
-    //---DEFINE VARIABLES
-    //var ContactUsForm=document.forms["ContactUsForm"]
-    //var ContactUsForm=document.getElementById("ContactUsForm");
-    var ContactUsForm = document.ContactUsForm;
-
-    //var realname=document.forms["ContactUsForm"]["#realname"].value;
-    //var realname=ContactUsForm.realname.value;
-    //var realname=ContactUsForm["realname"].value;
-    //var realname=ContactUsForm("realname").value;
-    var realname = ContactUsForm("#realname").value;
-
-    //var email=document.forms["ContactUsForm"]["#email"].value;
-    var email = ContactUsForm.email.value;
-
-    //var phone=document.forms["ContactUsForm"]["#phone"].value;
-    var phone = ContactUsForm.phone.value;
-
-    //var extension=document.forms["ContactUsForm"]["#extension"].value;
-    var extension = ContactUsForm.extension.value;
-
-    //var message=document.forms["ContactUsForm"]["#message"].value;
-    var message = ContactUsForm.message.value;
-
-    //--VALIDATE NAME
-    if (realname !== null || realname !== "") {
-      if (email !== null || email !== "") {
-        if (message !== null || message !== "") {
-          return true;
-        } else {
-          alert("The following fields cannot be blank:\n\n----------------------------------------\n-----Form Field---------You Entered-----\n----------------------------------------\nFull name..........." + realname + "\nEmail address......." + email + "\nQuestions/Comments.." + message + "\n----------------------------------------\n\nPlease make sure all required fields have been entered and submit the form again.");
-          return false;
-        }
-      }
-    }
-  }
-</script>
-
-
-
+<script type='text/javascript' src='js/FormValidator.js'></script>
 <!--/JAVASCRIPT VALIDATOR-->
-<div class="content-inner">
-<h2>
-  Title of Contact Us Form Content Type
-</h2>
-<h3>
-  Subtitle of Contact Us Form Content Type
-</h3>
-<form action="http://www.msudenver.edu/cgi-bin/public/formmail.cgi" method="post" name="ContactUsform" id="ContactUsForm" onsubmit="return validateForm()">
-  <input type="hidden" name="recipient" value='emailof@ContactUsFormContentType.com' />
-  <input type="hidden" name="subject" value='Email Subject Line of Contact Us Form Content Type' />
-  <input type="hidden" name="redirect" value="/tst/wcmstestsite/contact-us-form-content-type.shtml" />
-  <input type="hidden" name="required" value="realname,email,message" />
-  <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,REMOTE_USER,HTTP_USER_AGENT" />
-  <input type="hidden" name="print_config" value="recipient,subject,realname,email" />
-  <input type="hidden" name="print_blank_fields" value="1" />
-  <input type="hidden" name="missing_fields_redirect" value="/missingfields/" />
 
-  <fieldset>
-    <legend>
-      <h4>Contact Information:</h4>
-    </legend>
-    <div class="form-group">
-      <label for="Full Name">Full name:
-        <span>*</span>
-      </label>
-      <input type="text" required name="realname" class="form-control" id="Full Name" maxlength="50" />
-    </div>
-    <div class="form-group">
-      <label for="Email Address">Email address:
-        <span>*</span>
-      </label>
-      <input type="text" required name="email" class="form-control" id="Email Address" maxlength="50" />
-    </div>
-    <div class="form-horizontal">
-      <div class="col-lg-4">
-        <label for="phone">Phone number:</label>
-        <input type="text" name="phone" class="form-control" maxlength="12" value="###-###-####" />
-      </div>
-      <div class="col-lg-4">
-        <label for="extension">Phone Extension:</label>
-        <input type="text" name="extension" class="form-control" maxlength="6" />
-      </div>
-    </div>
-  </fieldset>
-  <br>
-  <fieldset>
-    <legend>
-      <h4>Questions/Comments:
-        <span>*</span>
-      </h4>
-    </legend>
-    <div class="form-group">
-      <textarea id="message" name="message" class="form-control" rows="10"></textarea>
-    </div>
-  </fieldset>
-
-<div class="row">
-   <!-- <div class="col-lg-5 col-sm-12 g-recaptcha" data-sitekey="6LetcAETAAAAAJuFjSHElSYL_Apv6wQg0qZFGzDp"></div> -->
-<br>
-  <div class="col-lg-3 col-lg-offset-5 col-md-6 col-sm-12">
-    <input class="btn btn-lg custombtn rowdyblue" type="submit" value="Submit" name="submit" id="submit" value="Submit Form">
-    </div>
-   <div class="col-lg-3 col-md-6 col-sm-12">
-    <input class="btn btn-lg custombtn rowdyred" type="reset" value="Reset Form" name="reset" id="reset" value="Reset Form">
-  </div>
-      </div>
-</form>
-    </div>
+@@include('content-types-main/content/content-2.html')
 <!--/CONTACT US FORM-->
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-  <a role="button" class="btn btn-lg custombtn rowdyblue" href="External Link of Custom Button Content Type" target="_self" >
-<span><span></span>Custom Button Content Type
-</span>
-</a></div>
+@@include('content-types-main/content/content-3.html')
 
-<div align="center">
-  <a href='https://www.facebook.com/msudenver'><img src='https://msudenver.edu/media/assets/webicons/facebook.png' alt='Facebook'/></a>
-    <a href='http://twitter.com/msudenver'><img src='https://msudenver.edu/media/assets/webicons/twitter.png' alt='Twitter'/></a>
-  <a href='http://www.youtube.com/user/msudenver'><img src='https://msudenver.edu/media/assets/webicons/youtube-2.png' alt='YouTube'/></a>
-  <a href='http://www.flickr.com/photos/msudenver/sets/'><img src='https://msudenver.edu/media/assets/webicons/flickr-2.png' alt='Flickr'/></a>
-  <a href='https://www.linkedin.com/edu/metropolitan-state-university-of-denver-20063'><img src='https://msudenver.edu/media/assets/webicons/linkedin.png' alt='Linkedin'/></a>
-
-</div>
+@@include('content-types-main/content/content-4.html')
 
 <!-- text/shtml MGW 072415-->
-<div class="col-xs-12">
-<div class="clickable card" data-href="/tst/wcmstestsite/expert-profile-content-type.shtml" style="margin-bottom:15px;">
-    <div class="row">
-        <div class="col-xs-7 col-md-9">
-            <h3>
-                First Name of Expert Profile Content Type
-                Last Name of Expert Profile Content Type
-            </h3>
-            <p><strong>Department:</strong> Accounting</p>
-            <p><strong>Title:</strong> Title of Expert Profile Content Type</p>
-            <p><strong>Expertise:</strong> Expertise of Expert Profile Content Type</p>
-        </div>
-        <div class="col-xs-5 col-md-3">
-          <section class='expert-photo'> <img class="img-responsive" src="https://msudenver.edu/media/content/newsroom/stories/irs1.jpg" alt="Metro State accounting students used walkie-talkies in an on-campus exercise presented by the Adrian Project to explain duties of an undercover team. Photo by Jason Braddock." style="   " /> </section>
-        </div>
-    </div>
-</div></div>
+@@include('content-types-main/content/content-5.html')
 
-<style>
-        #fb-root {
-                display: none;
-                }
-        .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
-                width: 100% !important;
-                height: 450px;
-                }
-</style>
 <!--Facebook Script-->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+<div id="fb-root"></div>
+<script type='test/javascript' src='js/Facebook'></script>
 
+@@include('content-types-main/content/content-6.html')
 
+<li><a href="http://www.externalurlforMenuLinkItemContentType.com">External Text of Menu Link Item Content Type</a></li>
 
-<div class="col-xs-12">
-<div class="HighlightBox">
-  <div class="HighlightBox-title">
-    Box Title of Highlight Box Content Type
-    <hr>
-  </div>
-  <div class="HighlightBox-content">
-    <p>Body of Highlight Box Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
-  </div>
-</div>
-</div><li><a href="http://www.externalurlforMenuLinkItemContentType.com">External Text of Menu Link Item Content Type</a></li><!--SM Modal Button-->
+@@include('content-types-main/content/modal.html')
 
-<div class="col-xs-12 col-lg-12">
-  <div class="ThreeCornerBox">
-    <a class="rowdyblue clickable" data-toggle="modal" href="#109876">
-      Modal Button [test] Content Type
-    </a>
-  </div>
-</div>
+@@include('content-types-main/content/content-7.html')
+<!-- Content Type - Page Content - MGW 04-04-16 -->
 
-<!--SM Modal Content-->
-
-<div id="109876" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">
-          Modal Button [test] Content Type
-        </h4>
-      </div>
-      <div class="modal-body">
-        <p>Body of Modal Button [test] Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Select another group</button>
-        <div class="btn btn-success">
-          <a href="/giving/">The Foundation - Giving to MSU Denver</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div><tr>
-        <td>
-          <strong>
-                      <a  href="/cis/">Offices &amp; Services Profile Content Type</a>
-                      <!--<a href="/cis/">Department of Computer Information Systems and Business Analytics</a>-->
-          </strong>
-        </td>
-        <td>
-          <p>
-            AD-
-            Student Success 440
-          </p>
-          <p>Box
-            000
-          </p>
-        </td>
-        <td>
-          <p>Phone:
-            303-556-3000
-          </p>
-          <p>Fax:
-            303-556-3001
-          </p>
-        </td>
-      </tr><!-- Content Type - Page Content - MGW 04-04-16 -->
 <a name="d.en.109881"></a>
-<div class="col-xs-12">
-<div class="content-inner">
-  <h2>Title of Page Content Content Type</h2>
-  <h3>Sub title of Page Content Content Type</h3>
-    <p>Body of Page Content Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
-    <br>
-</div>
-</div>
-<!--  --><div class="col-xs-12">
-  <div class="panel panel-danger clickable" data-href="/academics/">
-  <div class="panel-heading">Box Title of Panel Alert Content Type</div>
-    <div class="panel-body">
-      <p>Body of Panel Alert Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
-    </div>
-  </div>
-</div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  ">
-  <div class="panel panel-default clickable item" data-href="/alumni/">
-  <div class="panel-heading">Box Title of Panel Info Content Type</div>
-      <div class="panel-body">
-      <p>Body of Panel Info Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
-    </div>
-  </div>
-</div><a name="d.en.109885"></a>
-<div class="col-xs-12 col-md-12 col-lg-12">
-  <div class='panel panel-default item'>
-  <div class="panel-heading">
-    <div class="panel-title">
-      <h4 class="panel-title"><span></span>Panel Heading of Panel Responsive Content Type</h4>
+@@include('content-types-main/content/content-8.html')
+<!--  -->
+@@include('content-types-main/content/content-9.html')
+@@include('content-types-main/content/content-10.html')
+<a name="d.en.109885"></a>
+@@include('content-types-main/content/content-11.html')
+<a name="d.en.109888"></a>
+@@include('content-types-main/content/content-12.html')
+@@include('content-types-main/content/content-13.html')
 
-    </div>
-     </div>
-    <div class="panel-body">
-      <p>Body of Panel Responsive Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
-    </div>
-  </div>
-</div><a name="d.en.109888"></a>
-<div class="row contact-card">
-  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
-    <img class="img-circle" src=""/>
-        </div>
-  <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-    <div class="contact-info">
-      <h4>
-        People Profile Content Type
-              <br>
-        <!--<small><a href="/fys/">Home</a></small>-->
-              <small>Title of People Profile Content Type</small>
-      </h4>
-              <hr>
-                <p><i class="fa fa-phone"></i><a href="tel:111"> 111</a></p>
-            <button class="btn rowdyblue btn-sm pull-right" data-toggle="collapse" href="#109888">Full Profile&nbsp;<i class="fa fa-caret-down"></i></button>
-                <p><i class="fa fa-envelope"></i> <a href="mailto:emailof&#64;PeopleProfile&#46;com">emailof&#64;PeopleProfile&#46;com </a></p>
-    </div>
-
-
-  </div>
-</div>
-  <div id="109888" class="panel-collapse collapse">
-  <div class="row card">
-    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-      <p><strong>Position Role:</strong><br> Full-Time Staff</p>
-      <p><strong>Office Location:</strong><br> SSB</p>
-      <p><strong>Office Number:</strong><br> 000</p>
-            <p><strong>Office Hours:</strong><br> <p>Body of People Profile Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p></p>
-      <p><strong>Campus Box Number:</strong><br> 222</p>
-          <strong><a href="
-                           http://weba.msudenver.edu/searchchannel/jsp/directoryprofile/profile.jsp?uName=NetID of People Profile Content Type">Directory Profile</a></strong>
-
-    </div>
-    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-        <p><strong>Bio:</strong><br> <p>Bio of People Profile Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p></p>
-    </div>
-  </div>
-</div>
 <br><br>
 
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="presidentsmessage">
-            <div class="presidentsheader-orange">
-                    <div class="row">
-                        <div class="presidentstitle">Message from the President</div>
-                        <div class="messagedate">May 2016</div>
-                    </div>
-            </div>
+@@include('content-types-main/content/content-14.html')
 
-            <div class="messagearea">
-                <div class="col-lg-6" style="padding: 0px">
-                  <img src="https://msudenver.edu/media/content/newsroom/stories/commencement_jordan.jpg" class="presidentsimg">
-                </div>
-                <div class="col-lg-6" style="padding: 0px">
-                  <div class="whitearea">
-                    <div class="presidentsquote">Quote of President's Message Content Type. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. <hr class="style-one">
-                    </div>
-                    <div class="readmore">Read more on <a href="http://www.linkofPresidentsMessageContentType.com">Link Title of President's Message Content Type</a> &nbsp;<i class="fa fa-chevron-right"></i></div>
-                    </div>
-                </div>
-            </div>
-                </div></div>
-
-<hr>&nbsp;&nbsp;<!--text/shtml-->
-<div>
-  <div class="clickable" data-href="/tst/wcmstestsite/press-release-content-type.shtml">
-    <h3>
-      Title of Press Release Content Type
-    </h3>
-    <h4>
-      May 18, 2016
-    </h4>
-    <p>
-      Intro Text of Press Release Content Type
-    </p>
-  </div>
-  <hr align="center" size=".4" color="silver" width="100%">
-  <br>
-</div><!-- text/shtml MGW 041514-->
-<div class="panel panel-default">
-    <div class="panel-body">
-        <div style="float:left;">
-
-        </div>
-        <h3>
-            Profile-Board of Trustees Content Type
-        </h3>
-        <h4><strong>Board Position of Profile-Board of Trustees Content Type</strong></h4>
-        <p><strong>Term of Profile-Board of Trustees Content Type</strong><p>
-        <p><strong>Committee Assignment of Profile-Board of Trustees Content Type</strong><p>
-        <p><strong>Occupation of Profile-Board of Trustees Content Type</strong><p>
-        <p>Bio of Profile-Board of Trustees Content Type. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-    </div>
-</div><style>
-.board-profile-picture>img.img-responsive {
-    max-height: 250px;
-}
-</style>
+<hr>&nbsp;&nbsp;
+<!--text/shtml-->
+@@include('content-types-main/content/content-15.html')
 <!-- text/shtml MGW 041514-->
-<div class="col-xs-12">
-<div class="well">
+@@include('content-types-main/content/content-16.html')
 
-        <div class="board-profile-picture" style="float:left;">
+<!-- text/shtml MGW 041514-->
+@@include('content-types-main/content/content-17.html')
 
-        </div>
-        <h3>
-            Profile-FoundationBoard Content Type
-        </h3>
-        <h4><strong>Board Position Profile-FoundationBoard Content Type</strong></h4>
-        <p><strong>Term of Profile-FoundationBoard Content Type</strong><p>
-        <p><strong>Committee Assignment of Profile-FoundationBoard Content Type</strong><p>
-        <p><strong>Occupation of Profile-FoundationBoard Content Type</strong><p>
-     <hr>
-        <p>Bio of Profile-FoundationBoard Content Type. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-    </div>
+@@include('content-types-main/content/content-18.html')
+@@include('content-types-main/content/content-19.html')
+@@include('content-types-main/content/content-20.html')
+<!-- Edited by MGW 05-06-14  -->
 
-</div> <div class="col-xs-12 col-md-6 picture-item tile fig-tile" data-groups='["","all"]' >
-  <a href="/tst/wcmstestsite/program-description-fact-sheet-content-type.shtml" >
-  <div class="card-program Minor ">
-      <h3 class="degreeTitle">Program Degree Minor</h3>
-        <span class="degreeType" >Minor  </span>
-
-    </div>
-  </a>
-</div><div class="col-xs-12 col-md-6 picture-item" data-groups='["Bachelor","all"]'>
-  <a href="/etc/">
-  <div class="card-program  Bachelor">
-     <h3 class="degreeTitle">Music Bachelor Degree</h3>
-        <span class="degreeType" >Bachelor of Arts</span>
-   </div>
-  </a>
- </div>
-
-  
-  </div><div class="col-xs-12 story_preview clickable" data-href="/tst/wcmstestsite/story-content-type.shtml">
-    <h4 class="promo_date pull-right badge">
-        May 18, 2016
-    </h4>
-    <h3>
-        Headline of Story Content Type
-    </h3>
-    <p>
-        Intro text of Story Content Type.
-    </p>
-</div><!-- Edited by MGW 05-06-14  -->
-<style>
-    .full-video iframe {
-        width: 100%;
-        text-align: center;
-        display: block;
-    }
-
-</style>
-<div class="row">
-    <div class="full-video col-xm-12">
-        Embed code of YouTube Content Content Type.
-    </div>
-</div>
+@@include('content-types-main/content/video.html')
