@@ -1,92 +1,101 @@
 /* Hompeage at a glance */
 #homepage-at-a-glance {
-    @include make-row();
-    background-color: $white;
-    svg {
-        width: 70%;
-        height: 20px;
-        fill: #9A9A9A;
-    }
+  @include make-row();
+  background-color: $white;
+
+  svg {
+    width: 70%;
+    height: 20px;
+    fill: #9A9A9A;
+  }
 }
 
 /* At a glance grid */
 .at-a-glance {
-    @include make-xs-column(12);
+  @include make-xs-column(12);
 }
+
 .at-a-glance-items {
-    @include make-row();
+  @include make-row();
 }
+
 .at-a-glance-item {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    @include make-xs-column(12);
-    margin-bottom: torem(40);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  @include make-xs-column(12);
+  margin-bottom: torem(40);
 }
+
 /* At a glance items */
 .at-a-glance-img,
 .at-a-glance-text-wrap {
-    padding: 0 torem(15);
-    float: left;
+  padding: 0 torem(15);
+  float: left;
 
 }
+
 .at-a-glance-img {
-    width: 40%;
-    img {
-        @include img-responsive;
-        margin: 0 auto;
-    }
+  width: 40%;
+
+  img {
+    @include img-responsive;
+    margin: 0 auto;
+  }
 }
 
 .at-a-glance-text-wrap {
-    width: 60%;
+  width: 60%;
 }
 
 .at-a-glance-stat {
-    font-size: torem(45);
-    font-weight: 400;
-    color: $msu-red;
-    margin-bottom: 0;
+  font-size: torem(45);
+  font-weight: 400;
+  color: $msu-red;
+  margin-bottom: 0;
 }
+
 .at-a-glance-text {
-    font-size: torem(24);
-    line-height: torem(30);
-    padding-bottom: torem(24);
-    font-weight: 400;
-    color: $gray-base;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
+  font-size: torem(24);
+  line-height: torem(30);
+  padding-bottom: torem(24);
+  font-weight: 400;
+  color: $gray-base;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
 }
 
 @media (min-width: $screen-sm-min) {
-    .at-a-glance-item {
-        @include make-sm-column(6);
-        display: block;
-        margin-bottom: 0;
-    }
-    .at-a-glance-img {
-        display: flex;
-    }
-    .at-a-glance-img,
-    .at-a-glance-text-wrap {
-        float: none;
-        width: 100%;
-    }
-    .at-a-glance-text {
-        width: 60%;
-        padding-bottom: torem(70);
-    }
+  .at-a-glance-item {
+    @include make-sm-column(6);
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .at-a-glance-img {
+    display: flex;
+  }
+
+  .at-a-glance-img,
+  .at-a-glance-text-wrap {
+    float: none;
+    width: 100%;
+  }
+
+  .at-a-glance-text {
+    padding-bottom: torem(70);
+  }
 }
 
 @media (min-width: $screen-md-min) {
-    .at-a-glance-item {
-      @include make-sm-column(4);
-    }
+  .at-a-glance-item {
+    @include make-sm-column(4);
+  }
 }
 
 @media (min-width: $screen-lg-min) {
-    #homepage-at-a-glance {
-        padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(60, $small-unit);
-    }
+  #homepage-at-a-glance {
+    padding: torem(50, $small-unit) percentage(1/$grid-columns) torem(60, $small-unit);
+  }
 }
