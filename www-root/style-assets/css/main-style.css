@@ -11825,6 +11825,27 @@ h4 {
   font-weight: 700;
 }
 
+#fb-root {
+  display: none;
+}
+
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+  height: 450px;
+}
+
+.board-profile-picture > img.img-responsive {
+  max-height: 250px;
+}
+
+.full-video iframe {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
 /** Admissions Homepage Styles **/
 /** Objects **/
 .admissionsHomepage button {

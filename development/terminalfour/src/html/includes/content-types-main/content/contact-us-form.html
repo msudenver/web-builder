@@ -1,0 +1,196 @@
+<!-- Contact Us Form #49144 -->
+<div class="content-inner">
+  <h2>
+    Title of Contact Us Form Content Type
+  </h2>
+  <h3>
+    Subtitle of Contact Us Form Content Type
+  </h3>
+  <form action="http://www.msudenver.edu/cgi-bin/public/formmail.cgi" method="post" name="ContactUsform"
+    id="ContactUsForm" onsubmit="return validateForm()">
+    <input type="hidden" name="recipient" value='emailof@ContactUsFormContentType.com' />
+    <input type="hidden" name="subject" value='Email Subject Line of Contact Us Form Content Type' />
+    <input type="hidden" name="redirect" value="/tst/wcmstestsite/contact-us-form-content-type.shtml" />
+    <input type="hidden" name="required" value="realname,email,message" />
+    <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,REMOTE_USER,HTTP_USER_AGENT" />
+    <input type="hidden" name="print_config" value="recipient,subject,realname,email" />
+    <input type="hidden" name="print_blank_fields" value="1" />
+    <input type="hidden" name="missing_fields_redirect" value="/missingfields/" />
+
+    <fieldset>
+      <legend>
+        <h4>Contact Information:</h4>
+      </legend>
+      <div class="form-group">
+        <label for="Full Name">Full name:
+          <span>*</span>
+        </label>
+        <input type="text" required name="realname" class="form-control" id="Full Name" maxlength="50" />
+      </div>
+      <div class="form-group">
+        <label for="Email Address">Email address:
+          <span>*</span>
+        </label>
+        <input type="text" required name="email" class="form-control" id="Email Address" maxlength="50" />
+      </div>
+      <div class="form-horizontal">
+        <div class="col-lg-4">
+          <label for="phone">Phone number:</label>
+          <input type="text" name="phone" class="form-control" maxlength="12" value="###-###-####" />
+        </div>
+        <div class="col-lg-4">
+          <label for="extension">Phone Extension:</label>
+          <input type="text" name="extension" class="form-control" maxlength="6" />
+        </div>
+      </div>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>
+        <h4>Questions/Comments:
+          <span>*</span>
+        </h4>
+      </legend>
+      <div class="form-group">
+        <textarea id="message" name="message" class="form-control" rows="10"></textarea>
+      </div>
+    </fieldset>
+
+    <div class="row">
+      <!-- <div class="col-lg-5 col-sm-12 g-recaptcha" data-sitekey="6LetcAETAAAAAJuFjSHElSYL_Apv6wQg0qZFGzDp"></div> -->
+      <br>
+      <div class="col-lg-3 col-lg-offset-5 col-md-6 col-sm-12">
+        <input class="btn btn-lg custombtn rowdyblue" type="submit" value="Submit" name="submit" id="submit"
+          value="Submit Form">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <input class="btn btn-lg custombtn rowdyred" type="reset" value="Reset Form" name="reset" id="reset"
+          value="Reset Form">
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+<!-- Edited by MGW 05-16-14  -->
+<!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
+<!-- 
+<script>
+	function validateForm() {
+		//USE A TRY/CATCH BLOCK!!!!!!
+
+		//---DEFINE VARIABLES
+		//var ContactUsForm=document.forms["ContactUsForm"]
+		//var ContactUsForm=document.getElementById("ContactUsForm");
+		var ContactUsForm = document.ContactUsForm;
+
+		//var realname=document.forms["ContactUsForm"]["#realname"].value;
+		//var realname=ContactUsForm.realname.value;
+		//var realname=ContactUsForm["realname"].value;
+		//var realname=ContactUsForm("realname").value;
+		var realname = ContactUsForm("#realname").value;
+
+		//var email=document.forms["ContactUsForm"]["#email"].value;
+		var email = ContactUsForm.email.value;
+
+		//var phone=document.forms["ContactUsForm"]["#phone"].value;
+		var phone = ContactUsForm.phone.value;
+
+		//var extension=document.forms["ContactUsForm"]["#extension"].value;
+		var extension = ContactUsForm.extension.value;
+
+		//var message=document.forms["ContactUsForm"]["#message"].value;
+		var message = ContactUsForm.message.value;
+
+		//--VALIDATE NAME
+		if (realname !== null || realname !== "") {
+			if (email !== null || email !== "") {
+				if (message !== null || message !== "") {
+					return true;
+				} else {
+					alert("The following fields cannot be blank:\n\n----------------------------------------\n-----Form Field---------You Entered-----\n----------------------------------------\nFull name..........." + realname + "\nEmail address......." + email + "\nQuestions/Comments.." + message + "\n----------------------------------------\n\nPlease make sure all required fields have been entered and submit the form again.");
+					return false;
+				}
+			}
+		}
+	}
+</script>
+<style>
+.g-recaptcha {
+    padding-top: 5px;
+}
+  
+</style>
+  
+
+
+<div class="col-xs-12 content-inner">
+<h2>
+	<t4 type="content" name="Title" output="normal" modifiers="" />
+</h2>
+<h3>
+	<t4 type="content" name="Subtitle" output="normal" modifiers="" />
+</h3>
+<form action="http://www.msudenver.edu/cgi-bin/public/formmail.cgi" method="post" name="ContactUsform" id="ContactUsForm" onsubmit="return validateForm()">
+	<input type="hidden" name="recipient" value='<t4 type="content" name="Recipient email(s)" output="normal" modifiers="" />' />
+	<input type="hidden" name="subject" value='<t4 type="content" name="Email Subject Line" output="normal" modifiers="striptags" />' />
+	<input type="hidden" name="redirect" value="<t4 type='content' name='Name' output='fulltext' use-element='true' filename-element='Name'/>" />
+	<input type="hidden" name="required" value="realname,email,message" />
+	<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,REMOTE_USER,HTTP_USER_AGENT" />
+	<input type="hidden" name="print_config" value="recipient,subject,realname,email" />
+	<input type="hidden" name="print_blank_fields" value="1" />
+	<input type="hidden" name="missing_fields_redirect" value="/missingfields/" />
+	
+	<fieldset>
+		<legend>
+			<h4>Contact Information:</h4>
+		</legend>
+		<div class="form-group">
+			<label for="Full Name">Full name:
+				<span>*</span>
+			</label>
+			<input type="text" required name="realname" class="form-control" id="Full Name" maxlength="50" />
+		</div>
+		<div class="form-group">
+			<label for="Email Address">Email address:
+				<span>*</span>
+			</label>
+			<input type="text" required name="email" class="form-control" id="Email Address" maxlength="50" />
+		</div>
+		<div class="form-horizontal">
+			<div class="col-lg-4">
+				<label for="phone">Phone number:</label>
+				<input type="text" name="phone" class="form-control" maxlength="12" value="###-###-####" />
+			</div>
+			<div class="col-lg-4">
+				<label for="extension">Phone Extension:</label>
+				<input type="text" name="extension" class="form-control" maxlength="6" />
+			</div>
+		</div>
+	</fieldset>
+  <br>
+	<fieldset>
+		<legend>
+			<h4>Questions/Comments:
+				<span>*</span>
+			</h4>
+		</legend>
+		<div class="form-group">
+			<textarea id="message" name="message" class="form-control" rows="10"></textarea>
+		</div>
+	</fieldset>
+    
+<div class="row">
+   
+<br> 
+	<div class="col-lg-3 col-lg-offset-5 col-md-6 col-sm-12">   
+		<input class="btn btn-lg custombtn rowdyblue" type="submit" value="Submit" name="submit" id="submit" value="Submit Form">
+    </div>
+   <div class="col-lg-3 col-md-6 col-sm-12">         
+		<input class="btn btn-lg custombtn rowdyred" type="reset" value="Reset Form" name="reset" id="reset" value="Reset Form">     
+	</div>
+      </div>
+</form>
+    </div>       -->

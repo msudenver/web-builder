@@ -1,210 +1,391 @@
+<!--  -->
+<!-- blog entry #109207 -->
+<!-- differs -->
+<a href="/tst/wcmstestsite/blog-entry-content-type.shtml">
+  <div class="panel">
+    <h4 class="promo_date pull-right badge">
+      May 18, 2016
+    </h4>
+    <h3>
+      Headline of the Blog Entry Content Type
+    </h3>
+    <p>
+      Intro text of the Blog Entry Content Type
+    </p>
+  </div>
+</a>
 
-<!--  --><a href="/tst/wcmstestsite/blog-entry-content-type.shtml">
-<div class="panel">
-    <h4 class="promo_date pull-right badge">
-        May 18, 2016
-    </h4>
-    <h3>
-        Headline of the Blog Entry Content Type
-    </h3>
-    <p>
-        Intro text of the Blog Entry Content Type
-    </p>
-</div>
-</a><a href="/tst/wcmstestsite/blog-entry-content-type-1.shtml">
-<div class="panel">
-    <h4 class="promo_date pull-right badge">
-        May 18, 2016
-    </h4>
-    <h3>
-        Headline of the Blog Entry Content Type
-    </h3>
-    <p>
-        Intro text of the Blog Entry Content Type
-    </p>
-</div>
-</a><!-- Edited by MGW 05-16-14  -->
+<!-- <div class="col-xs-12 well">
+  <a href="<t4 type='content' name='Name' output='fulltext' modifiers='' use-element='true' filename-element='Name' />">
+    <div class="col-xs-4 col-md-2">
+      <t4 type="content" name="Image" modifiers="" output="selective-output"
+        format="<section class=' pull-left'> $value </section> " />
+    </div>
+    <div class="col-xs-8 col-md-10">
+      <h4 class="promo_date" style="float:right">
+        <t4 type="content" name="Publish Date" output="normal" modifiers="" date_format="MMMM d, yyyy" />
+      </h4>
+      <h3>
+        <t4 type="content" name="Headline" output="normal" modifiers="htmlentities" />
+      </h3>
+      <p class="promo_content">
+        <t4 type="content" name="Intro Text" output="normal" modifiers="htmlentities" />
+      </p>
+    </div>
+  </a>
+</div> -->
+
+<!-- Edited by MGW 05-16-14  -->
 <!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
-<script>
-  function validateForm() {
-    //USE A TRY/CATCH BLOCK!!!!!!
-
-    //---DEFINE VARIABLES
-    //var ContactUsForm=document.forms["ContactUsForm"]
-    //var ContactUsForm=document.getElementById("ContactUsForm");
-    var ContactUsForm = document.ContactUsForm;
-
-    //var realname=document.forms["ContactUsForm"]["#realname"].value;
-    //var realname=ContactUsForm.realname.value;
-    //var realname=ContactUsForm["realname"].value;
-    //var realname=ContactUsForm("realname").value;
-    var realname = ContactUsForm("#realname").value;
-
-    //var email=document.forms["ContactUsForm"]["#email"].value;
-    var email = ContactUsForm.email.value;
-
-    //var phone=document.forms["ContactUsForm"]["#phone"].value;
-    var phone = ContactUsForm.phone.value;
-
-    //var extension=document.forms["ContactUsForm"]["#extension"].value;
-    var extension = ContactUsForm.extension.value;
-
-    //var message=document.forms["ContactUsForm"]["#message"].value;
-    var message = ContactUsForm.message.value;
-
-    //--VALIDATE NAME
-    if (realname !== null || realname !== "") {
-      if (email !== null || email !== "") {
-        if (message !== null || message !== "") {
-          return true;
-        } else {
-          alert("The following fields cannot be blank:\n\n----------------------------------------\n-----Form Field---------You Entered-----\n----------------------------------------\nFull name..........." + realname + "\nEmail address......." + email + "\nQuestions/Comments.." + message + "\n----------------------------------------\n\nPlease make sure all required fields have been entered and submit the form again.");
-          return false;
-        }
-      }
-    }
-  }
-</script>
-
-
-
+<script type='text/javascript' src='js/FormValidator.js'></script>
 <!--/JAVASCRIPT VALIDATOR-->
+
+<!-- Contact Us Form #49144 -->
 <div class="content-inner">
+  <h2>
+    Title of Contact Us Form Content Type
+  </h2>
+  <h3>
+    Subtitle of Contact Us Form Content Type
+  </h3>
+  <form action="http://www.msudenver.edu/cgi-bin/public/formmail.cgi" method="post" name="ContactUsform"
+    id="ContactUsForm" onsubmit="return validateForm()">
+    <input type="hidden" name="recipient" value='emailof@ContactUsFormContentType.com' />
+    <input type="hidden" name="subject" value='Email Subject Line of Contact Us Form Content Type' />
+    <input type="hidden" name="redirect" value="/tst/wcmstestsite/contact-us-form-content-type.shtml" />
+    <input type="hidden" name="required" value="realname,email,message" />
+    <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,REMOTE_USER,HTTP_USER_AGENT" />
+    <input type="hidden" name="print_config" value="recipient,subject,realname,email" />
+    <input type="hidden" name="print_blank_fields" value="1" />
+    <input type="hidden" name="missing_fields_redirect" value="/missingfields/" />
+
+    <fieldset>
+      <legend>
+        <h4>Contact Information:</h4>
+      </legend>
+      <div class="form-group">
+        <label for="Full Name">Full name:
+          <span>*</span>
+        </label>
+        <input type="text" required name="realname" class="form-control" id="Full Name" maxlength="50" />
+      </div>
+      <div class="form-group">
+        <label for="Email Address">Email address:
+          <span>*</span>
+        </label>
+        <input type="text" required name="email" class="form-control" id="Email Address" maxlength="50" />
+      </div>
+      <div class="form-horizontal">
+        <div class="col-lg-4">
+          <label for="phone">Phone number:</label>
+          <input type="text" name="phone" class="form-control" maxlength="12" value="###-###-####" />
+        </div>
+        <div class="col-lg-4">
+          <label for="extension">Phone Extension:</label>
+          <input type="text" name="extension" class="form-control" maxlength="6" />
+        </div>
+      </div>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>
+        <h4>Questions/Comments:
+          <span>*</span>
+        </h4>
+      </legend>
+      <div class="form-group">
+        <textarea id="message" name="message" class="form-control" rows="10"></textarea>
+      </div>
+    </fieldset>
+
+    <div class="row">
+      <!-- <div class="col-lg-5 col-sm-12 g-recaptcha" data-sitekey="6LetcAETAAAAAJuFjSHElSYL_Apv6wQg0qZFGzDp"></div> -->
+      <br>
+      <div class="col-lg-3 col-lg-offset-5 col-md-6 col-sm-12">
+        <input class="btn btn-lg custombtn rowdyblue" type="submit" value="Submit" name="submit" id="submit"
+          value="Submit Form">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <input class="btn btn-lg custombtn rowdyred" type="reset" value="Reset Form" name="reset" id="reset"
+          value="Reset Form">
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+<!-- Edited by MGW 05-16-14  -->
+<!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
+<!-- 
+<script>
+	function validateForm() {
+		//USE A TRY/CATCH BLOCK!!!!!!
+
+		//---DEFINE VARIABLES
+		//var ContactUsForm=document.forms["ContactUsForm"]
+		//var ContactUsForm=document.getElementById("ContactUsForm");
+		var ContactUsForm = document.ContactUsForm;
+
+		//var realname=document.forms["ContactUsForm"]["#realname"].value;
+		//var realname=ContactUsForm.realname.value;
+		//var realname=ContactUsForm["realname"].value;
+		//var realname=ContactUsForm("realname").value;
+		var realname = ContactUsForm("#realname").value;
+
+		//var email=document.forms["ContactUsForm"]["#email"].value;
+		var email = ContactUsForm.email.value;
+
+		//var phone=document.forms["ContactUsForm"]["#phone"].value;
+		var phone = ContactUsForm.phone.value;
+
+		//var extension=document.forms["ContactUsForm"]["#extension"].value;
+		var extension = ContactUsForm.extension.value;
+
+		//var message=document.forms["ContactUsForm"]["#message"].value;
+		var message = ContactUsForm.message.value;
+
+		//--VALIDATE NAME
+		if (realname !== null || realname !== "") {
+			if (email !== null || email !== "") {
+				if (message !== null || message !== "") {
+					return true;
+				} else {
+					alert("The following fields cannot be blank:\n\n----------------------------------------\n-----Form Field---------You Entered-----\n----------------------------------------\nFull name..........." + realname + "\nEmail address......." + email + "\nQuestions/Comments.." + message + "\n----------------------------------------\n\nPlease make sure all required fields have been entered and submit the form again.");
+					return false;
+				}
+			}
+		}
+	}
+</script>
+<style>
+.g-recaptcha {
+    padding-top: 5px;
+}
+  
+</style>
+  
+
+
+<div class="col-xs-12 content-inner">
 <h2>
-  Title of Contact Us Form Content Type
+	<t4 type="content" name="Title" output="normal" modifiers="" />
 </h2>
 <h3>
-  Subtitle of Contact Us Form Content Type
+	<t4 type="content" name="Subtitle" output="normal" modifiers="" />
 </h3>
 <form action="http://www.msudenver.edu/cgi-bin/public/formmail.cgi" method="post" name="ContactUsform" id="ContactUsForm" onsubmit="return validateForm()">
-  <input type="hidden" name="recipient" value='emailof@ContactUsFormContentType.com' />
-  <input type="hidden" name="subject" value='Email Subject Line of Contact Us Form Content Type' />
-  <input type="hidden" name="redirect" value="/tst/wcmstestsite/contact-us-form-content-type.shtml" />
-  <input type="hidden" name="required" value="realname,email,message" />
-  <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,REMOTE_USER,HTTP_USER_AGENT" />
-  <input type="hidden" name="print_config" value="recipient,subject,realname,email" />
-  <input type="hidden" name="print_blank_fields" value="1" />
-  <input type="hidden" name="missing_fields_redirect" value="/missingfields/" />
-
-  <fieldset>
-    <legend>
-      <h4>Contact Information:</h4>
-    </legend>
-    <div class="form-group">
-      <label for="Full Name">Full name:
-        <span>*</span>
-      </label>
-      <input type="text" required name="realname" class="form-control" id="Full Name" maxlength="50" />
-    </div>
-    <div class="form-group">
-      <label for="Email Address">Email address:
-        <span>*</span>
-      </label>
-      <input type="text" required name="email" class="form-control" id="Email Address" maxlength="50" />
-    </div>
-    <div class="form-horizontal">
-      <div class="col-lg-4">
-        <label for="phone">Phone number:</label>
-        <input type="text" name="phone" class="form-control" maxlength="12" value="###-###-####" />
-      </div>
-      <div class="col-lg-4">
-        <label for="extension">Phone Extension:</label>
-        <input type="text" name="extension" class="form-control" maxlength="6" />
-      </div>
-    </div>
-  </fieldset>
+	<input type="hidden" name="recipient" value='<t4 type="content" name="Recipient email(s)" output="normal" modifiers="" />' />
+	<input type="hidden" name="subject" value='<t4 type="content" name="Email Subject Line" output="normal" modifiers="striptags" />' />
+	<input type="hidden" name="redirect" value="<t4 type='content' name='Name' output='fulltext' use-element='true' filename-element='Name'/>" />
+	<input type="hidden" name="required" value="realname,email,message" />
+	<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,REMOTE_USER,HTTP_USER_AGENT" />
+	<input type="hidden" name="print_config" value="recipient,subject,realname,email" />
+	<input type="hidden" name="print_blank_fields" value="1" />
+	<input type="hidden" name="missing_fields_redirect" value="/missingfields/" />
+	
+	<fieldset>
+		<legend>
+			<h4>Contact Information:</h4>
+		</legend>
+		<div class="form-group">
+			<label for="Full Name">Full name:
+				<span>*</span>
+			</label>
+			<input type="text" required name="realname" class="form-control" id="Full Name" maxlength="50" />
+		</div>
+		<div class="form-group">
+			<label for="Email Address">Email address:
+				<span>*</span>
+			</label>
+			<input type="text" required name="email" class="form-control" id="Email Address" maxlength="50" />
+		</div>
+		<div class="form-horizontal">
+			<div class="col-lg-4">
+				<label for="phone">Phone number:</label>
+				<input type="text" name="phone" class="form-control" maxlength="12" value="###-###-####" />
+			</div>
+			<div class="col-lg-4">
+				<label for="extension">Phone Extension:</label>
+				<input type="text" name="extension" class="form-control" maxlength="6" />
+			</div>
+		</div>
+	</fieldset>
   <br>
-  <fieldset>
-    <legend>
-      <h4>Questions/Comments:
-        <span>*</span>
-      </h4>
-    </legend>
-    <div class="form-group">
-      <textarea id="message" name="message" class="form-control" rows="10"></textarea>
-    </div>
-  </fieldset>
-
+	<fieldset>
+		<legend>
+			<h4>Questions/Comments:
+				<span>*</span>
+			</h4>
+		</legend>
+		<div class="form-group">
+			<textarea id="message" name="message" class="form-control" rows="10"></textarea>
+		</div>
+	</fieldset>
+    
 <div class="row">
-   <!-- <div class="col-lg-5 col-sm-12 g-recaptcha" data-sitekey="6LetcAETAAAAAJuFjSHElSYL_Apv6wQg0qZFGzDp"></div> -->
-<br>
-  <div class="col-lg-3 col-lg-offset-5 col-md-6 col-sm-12">
-    <input class="btn btn-lg custombtn rowdyblue" type="submit" value="Submit" name="submit" id="submit" value="Submit Form">
+   
+<br> 
+	<div class="col-lg-3 col-lg-offset-5 col-md-6 col-sm-12">   
+		<input class="btn btn-lg custombtn rowdyblue" type="submit" value="Submit" name="submit" id="submit" value="Submit Form">
     </div>
-   <div class="col-lg-3 col-md-6 col-sm-12">
-    <input class="btn btn-lg custombtn rowdyred" type="reset" value="Reset Form" name="reset" id="reset" value="Reset Form">
-  </div>
+   <div class="col-lg-3 col-md-6 col-sm-12">         
+		<input class="btn btn-lg custombtn rowdyred" type="reset" value="Reset Form" name="reset" id="reset" value="Reset Form">     
+	</div>
       </div>
 </form>
-    </div>
-<!--/CONTACT US FORM-->
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-  <a role="button" class="btn btn-lg custombtn rowdyblue" href="External Link of Custom Button Content Type" target="_self" >
-<span><span></span>Custom Button Content Type
-</span>
-</a></div>
+    </div>       -->
 
+<!--/CONTACT US FORM-->
+<!-- Custom Button #131 -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <a role="button" class="btn btn-lg custombtn custom-blue-btn" href="External Link of Custom Button Content Type"
+    target="_self">
+    <span>Custom Button Content Type
+    </span>
+  </a>
+</div>
+
+<!-- <div class="col-xs-12 col-sm-12 <t4 type='content' name='Tablet Width' output='normal' modifiers=''/> <t4 type='content' name='Desktop Width' output='normal' modifiers=''/> <t4 type="content" name="Float Button" output="normal" display_field="value" />" id='<t4 type="meta" meta="content_id" />'>
+  <a role="button" class="btn btn-lg custombtn <t4 type='content' name='Color' output='normal' modifiers=''/>" href="<t4 type='content' name='Internal Link' output='linkurl' modifiers=''/><t4 type='content' name='External Link' output='normal' modifiers=''/><t4 type='content' name='Media File' output="normal" formatter='path/*'/>" <t4 type="content" name="Link Target" output="normal" modifiers=""  /> >
+<span><t4 type="content" name="Glyphicon" output="selective-output" modifiers=""  format="$value" /><t4 type="content" name="Name" output="normal" modifiers="" />
+</span>
+</a></div> -->
+
+
+<!-- Department Social Links #51 -->
 <div align="center">
-  <a href='https://www.facebook.com/msudenver'><img src='https://msudenver.edu/media/assets/webicons/facebook.png' alt='Facebook'/></a>
-    <a href='http://twitter.com/msudenver'><img src='https://msudenver.edu/media/assets/webicons/twitter.png' alt='Twitter'/></a>
-  <a href='http://www.youtube.com/user/msudenver'><img src='https://msudenver.edu/media/assets/webicons/youtube-2.png' alt='YouTube'/></a>
-  <a href='http://www.flickr.com/photos/msudenver/sets/'><img src='https://msudenver.edu/media/assets/webicons/flickr-2.png' alt='Flickr'/></a>
-  <a href='https://www.linkedin.com/edu/metropolitan-state-university-of-denver-20063'><img src='https://msudenver.edu/media/assets/webicons/linkedin.png' alt='Linkedin'/></a>
+  <a href='https://www.facebook.com/msudenver'><img src='https://msudenver.edu/media/assets/webicons/facebook.png'
+      alt='Facebook' /></a>
+  <a href='http://twitter.com/msudenver'><img src='https://msudenver.edu/media/assets/webicons/twitter.png'
+      alt='Twitter' /></a>
+  <a href='http://www.youtube.com/user/msudenver'><img src='https://msudenver.edu/media/assets/webicons/youtube-2.png'
+      alt='YouTube' /></a>
+  <a href='http://www.flickr.com/photos/msudenver/sets/'><img
+      src='https://msudenver.edu/media/assets/webicons/flickr-2.png' alt='Flickr' /></a>
+  <a href='https://www.linkedin.com/edu/metropolitan-state-university-of-denver-20063'><img
+      src='https://msudenver.edu/media/assets/webicons/linkedin.png' alt='Linkedin' /></a>
 
 </div>
 
+<!-- <div align="center">
+	<t4 type="content" output="selective-output" process-format="true" modifiers="medialibrary" name="Facebook URL" format="<a href='$value'><img src='<t4 type='media' id='60295' formatter='image/path' />' alt='Facebook'/></a>" />
+    <t4 type="content" output="selective-output" process-format="true" modifiers="medialibrary" name="Twitter URL" format="<a href='$value'><img src='<t4 type='media' id='60367' formatter='image/path' />' alt='Twitter'/></a>" />
+	<t4 type="content" output="selective-output" process-format="true" modifiers="medialibrary" name="YouTube URL" format="<a href='$value'><img src='<t4 type='media' id='60379' formatter='image/path' />' alt='YouTube'/></a>" />
+	<t4 type="content" output="selective-output" process-format="true" modifiers="medialibrary" name="Flickr URL" format="<a href='$value'><img src='<t4 type='media' id='60298' formatter='image/path' />' alt='Flickr'/></a>" />
+	<t4 type="content" output="selective-output" process-format="true" modifiers="medialibrary" name="Linked in URL" format="<a href='$value'><img src='<t4 type='media' id='79018' formatter='image/path' />' alt='Linkedin'/></a>" />
+  	<t4 type="content" output="selective-output" process-format="true" modifiers="medialibrary" name="Tumblr URL" format="<a href='$value'><img src='<t4 type='media' id='80767' formatter='image/path' />' alt='Tumblr'/></a>" />
+  	<t4 type="content" output="selective-output" process-format="true" modifiers="medialibrary" name="Github URL" format="<a href='$value'><img src='<t4 type='media' id='80769' formatter='image/path' />' alt='Github'/></a>" />
+    <t4 type="content" output="selective-output" process-format="true" modifiers="medialibrary" name="SoundCloud URL" format="<a href='$value'><img src='<t4 type='media' id='107635' formatter='image/path' />' alt='SoundCloud'/></a>" /> 
+</div> -->
+
+
 <!-- text/shtml MGW 072415-->
+<!-- Expert Profile #38470 -->
+<!-- differs -->
 <div class="col-xs-12">
-<div class="clickable card" data-href="/tst/wcmstestsite/expert-profile-content-type.shtml" style="margin-bottom:15px;">
+  <div class="clickable card" data-href="/tst/wcmstestsite/expert-profile-content-type.shtml"
+    style="margin-bottom:15px;">
+    <div class="row">
+      <div class="col-xs-7 col-md-9">
+        <h3>
+          First Name of Expert Profile Content Type
+          Last Name of Expert Profile Content Type
+        </h3>
+        <p><strong>Department:</strong> Accounting</p>
+        <p><strong>Title:</strong> Title of Expert Profile Content Type</p>
+        <p><strong>Expertise:</strong> Expertise of Expert Profile Content Type</p>
+      </div>
+      <div class="col-xs-5 col-md-3">
+        <section class='expert-photo'> <img class="img-responsive"
+            src="https://msudenver.edu/media/content/newsroom/stories/irs1.jpg"
+            alt="Metro State accounting students used walkie-talkies in an on-campus exercise presented by the Adrian Project to explain duties of an undercover team. Photo by Jason Braddock."
+            style="   " /> </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <style>
+  .expert-photo{
+  float:right; 
+  }
+  
+  .expert-photo>img.img-responsive {
+    max-height: 175px;
+}
+  
+</style>
+  
+
+<div class="col-xs-12">
+<div class="clickable" data-href="<t4 type='content' name='Name' output='fulltext' use-element='true' filename-element='Name' />" style="margin-bottom:15px;">
     <div class="row">
         <div class="col-xs-7 col-md-9">
             <h3>
-                First Name of Expert Profile Content Type
-                Last Name of Expert Profile Content Type
+                <t4 type="content" name="First Name" output="normal" modifiers="htmlentities" />
+                <t4 type="content" name="Last Name" output="normal" modifiers="htmlentities" />
             </h3>
-            <p><strong>Department:</strong> Accounting</p>
-            <p><strong>Title:</strong> Title of Expert Profile Content Type</p>
-            <p><strong>Expertise:</strong> Expertise of Expert Profile Content Type</p>
+            <t4 type="content" output="selective-output" modifiers="htmlentities" name="Department" format="<p><strong>Department:</strong> $value</p>" />
+            <t4 type="content" output="selective-output" modifiers="htmlentities" name="Title" format="<p><strong>Title:</strong> $value</p>" />
+            <t4 type="content" output="selective-output" modifiers="htmlentities" name="Expertise" format="<p><strong>Expertise:</strong> $value</p>" />
         </div>
         <div class="col-xs-5 col-md-3">
-          <section class='expert-photo'> <img class="img-responsive" src="https://msudenver.edu/media/content/newsroom/stories/irs1.jpg" alt="Metro State accounting students used walkie-talkies in an on-campus exercise presented by the Adrian Project to explain duties of an undercover team. Photo by Jason Braddock." style="   " /> </section>
+          <t4 type="content" name="Profile Photo" modifiers="" output="selective-output" format="<section class='expert-photo'> $value </section> "/>
         </div>
     </div>
-</div></div>
+</div></div> -->
 
-<style>
-        #fb-root {
-                display: none;
-                }
-        .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
-                width: 100% !important;
-                height: 450px;
-                }
-</style>
+
 <!--Facebook Script-->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+<div id="fb-root"></div>
+<script type='test/javascript' src='js/Facebook'></script>
 
-
-
+<!-- highlight box #1607 -->
 <div class="col-xs-12">
+  <div class="HighlightBox">
+    <div class="HighlightBox-title">
+      Box Title of Highlight Box Content Type
+      <hr>
+    </div>
+    <div class="HighlightBox-content">
+      <p>Body of Highlight Box Content Type</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+        dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce
+        nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in
+        libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at
+        dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus
+        risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+    </div>
+  </div>
+</div>
+
+<!-- <style>
+  .HighlightBox-content {
+    display: inline-block;
+  }
+
+</style>
+
+<div class="col-xs-12 <t4 type=" content" name="Desktop Width" output="normal" display_field="value" />">
 <div class="HighlightBox">
   <div class="HighlightBox-title">
-    Box Title of Highlight Box Content Type
+    <t4 type="content" name="Box title" output="normal" modifiers="htmlentities" />
     <hr>
   </div>
   <div class="HighlightBox-content">
-    <p>Body of Highlight Box Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+    <t4 type="content" name="Box content" output="normal" modifiers="medialibrary, nav_sections" />
   </div>
 </div>
-</div><li><a href="http://www.externalurlforMenuLinkItemContentType.com">External Text of Menu Link Item Content Type</a></li><!--SM Modal Button-->
+</div> -->
+
+
+<li><a href="http://www.externalurlforMenuLinkItemContentType.com">External Text of Menu Link Item Content Type</a></li>
+
+<!--SM Modal Button-->
 
 <div class="col-xs-12 col-lg-12">
   <div class="ThreeCornerBox">
@@ -227,7 +408,13 @@
       </div>
       <div class="modal-body">
         <p>Body of Modal Button [test] Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+          dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
+          Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
+          sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula
+          in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at
+          dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus
+          risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Select another group</button>
@@ -237,138 +424,477 @@
       </div>
     </div>
   </div>
-</div><tr>
-        <td>
-          <strong>
-                      <a  href="/cis/">Offices &amp; Services Profile Content Type</a>
-                      <!--<a href="/cis/">Department of Computer Information Systems and Business Analytics</a>-->
-          </strong>
-        </td>
-        <td>
-          <p>
-            AD-
-            Student Success 440
-          </p>
-          <p>Box
-            000
-          </p>
-        </td>
-        <td>
-          <p>Phone:
-            303-556-3000
-          </p>
-          <p>Fax:
-            303-556-3001
-          </p>
-        </td>
-      </tr><!-- Content Type - Page Content - MGW 04-04-16 -->
+</div>
+
+
+
+<!-- Content Type - Page Content - MGW 04-04-16 -->
+
 <a name="d.en.109881"></a>
+<!-- Page Content #1610 -->
 <div class="col-xs-12">
-<div class="content-inner">
-  <h2>Title of Page Content Content Type</h2>
-  <h3>Sub title of Page Content Content Type</h3>
+  <div class="content-inner">
+    <h2>Title of Page Content Content Type</h2>
+    <h3>Sub title of Page Content Content Type</h3>
     <p>Body of Page Content Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+      dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce
+      nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu
+      ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in libero. Sed
+      dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas
+      mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel,
+      suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+    <br>
+  </div>
+</div>
+
+<!-- <t4 type="meta" meta="html_anchor" />
+<div class="col-xs-12 <t4 type="content" name="Tablet Width" output="normal" display_field="value" /> <t4 type="content" name="Desktop Width" output="normal" display_field="value" /> content">
+<div class="content-inner">
+	<t4 type="content" name="Title" output="selective-output" modifiers="htmlentities" format="<h2>$value</h2>" />
+	<t4 type="content" name="Sub title" output="selective-output" modifiers="htmlentities" format="<h3>$value</h3>" />
+	<t4 type="content" name="Content" output="normal" modifiers="medialibrary, nav_sections" />
     <br>
 </div>
 </div>
-<!--  --><div class="col-xs-12">
+
+<script>
+  Last modified: <t4 type="meta" meta="last_modified" format="yy/MM/dd hh:mm a"/>
+  Last user to modify: <t4 type="meta" meta="last_modified_by_username" name="Name" />
+</script> -->
+
+<!--  -->
+<!-- Panel Alert #147 -->
+<!-- Differs -->
+<div class="col-xs-12">
   <div class="panel panel-danger clickable" data-href="/academics/">
-  <div class="panel-heading">Box Title of Panel Alert Content Type</div>
+    <div class="panel-heading">Box Title of Panel Alert Content Type</div>
     <div class="panel-body">
       <p>Body of Panel Alert Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+        dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce
+        nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in
+        libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at
+        dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus
+        risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
     </div>
   </div>
-</div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  ">
+</div>
+
+<!-- <div class="col-xs-12 <t4 type='content' name='Tablet Width' output='normal' modifiers=''/> <t4 type='content' name='Desktop Width' output='normal' modifiers=''/>">
+  <div class="panel panel-default clickable" data-href="<t4 type='content' name='Link' output='linkurl' modifiers=''/>">
+    <div class="panel-heading">
+      <t4 type="content" name="Box Title" output="normal" modifiers="" />
+    </div>
+    <div style="height: 300px; overflow:hidden; " class="panel-body">
+      <t4 type="content" name="Box Content" output="normal" modifiers="medialibrary, nav_sections" />
+    </div>
+  </div>
+</div> -->
+
+<!-- Info Panel #70392 -->
+<!-- doesn't include the panel-button, t4 doesnt include clickable or item -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  ">
   <div class="panel panel-default clickable item" data-href="/alumni/">
-  <div class="panel-heading">Box Title of Panel Info Content Type</div>
-      <div class="panel-body">
+    <div class="panel-heading">Box Title of Panel Info Content Type</div>
+    <div class="panel-body">
       <p>Body of Panel Info Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+        dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce
+        nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in
+        libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at
+        dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus
+        risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
     </div>
   </div>
-</div><a name="d.en.109885"></a>
+</div>
+
+
+<!-- <style>
+  .panel-button>a {
+    background: #808080;
+    padding: 10px 30px;
+    float: right;
+    color: #fff !important;
+    text-decoration: none;
+    bottom: 0;
+  }
+
+  .panel-button>a:hover {
+    text-decoration: underline;
+  }
+
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+
+  .panel-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 35px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+</style>
+
+<div
+  class="col-xs-12 col-sm-12 <t4 type='content' name='Tablet Width' output='normal' modifiers=''/> <t4 type='content' name='Desktop Width' output='normal' modifiers=''/>  ">
+  <div class="panel panel-default <t4 type=" content" name="Match Height" output="normal" display_field="value" />" >
+  <div class="panel-heading">
+    <t4 type="content" name="Icon" output="normal" modifiers="" />
+    <t4 type="content" name="Box Title" output="normal" modifiers="" />
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <t4 type="content" name="Box Content" output="normal" modifiers="medialibrary, nav_sections" />
+    </div>
+    <div class="row">
+      <div class="panel-button">
+        <t4 type="content" name="Link" output="normal" modifiers="nav_sections" />
+      </div>
+    </div>
+  </div>
+</div>
+</div> -->
+
+<a name="d.en.109885"></a>
+<!-- Panel Responsive #148 -->
+<!-- Many diffs -->
 <div class="col-xs-12 col-md-12 col-lg-12">
   <div class='panel panel-default item'>
-  <div class="panel-heading">
-    <div class="panel-title">
-      <h4 class="panel-title"><span></span>Panel Heading of Panel Responsive Content Type</h4>
+    <div class="panel-heading">
+      <div class="panel-title">
+        <h4 class="panel-title"><span></span>Panel Heading of Panel Responsive Content Type</h4>
 
+      </div>
     </div>
-     </div>
     <div class="panel-body">
       <p>Body of Panel Responsive Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+        dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce
+        nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br /><br />Curabitur sodales ligula in
+        libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at
+        dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus
+        risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
     </div>
   </div>
-</div><a name="d.en.109888"></a>
+</div>
+
+<!-- <div class="panel panel-default clickable" data-href="<t4 type='content' name='Link' output='linkurl' modifiers=''/>">
+  <div class="panel-heading">
+    <t4 type="content" name="Box Title" output="normal" modifiers="" />
+  </div>
+  <div class="panel-body" style="height:100%">
+    <t4 type="content" name="Box Content" output="normal" modifiers="medialibrary, nav_sections" />
+  </div>
+</div> -->
+
+<a name="d.en.109888"></a>
+<!-- Profile User #133 -->
 <div class="row contact-card">
   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
-    <img class="img-circle" src=""/>
-        </div>
+    <img class="img-circle" src="" />
+  </div>
   <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
     <div class="contact-info">
       <h4>
         People Profile Content Type
-              <br>
+        <br>
         <!--<small><a href="/fys/">Home</a></small>-->
-              <small>Title of People Profile Content Type</small>
+        <small>Title of People Profile Content Type</small>
       </h4>
-              <hr>
-                <p><i class="fa fa-phone"></i><a href="tel:111"> 111</a></p>
-            <button class="btn rowdyblue btn-sm pull-right" data-toggle="collapse" href="#109888">Full Profile&nbsp;<i class="fa fa-caret-down"></i></button>
-                <p><i class="fa fa-envelope"></i> <a href="mailto:emailof&#64;PeopleProfile&#46;com">emailof&#64;PeopleProfile&#46;com </a></p>
+      <hr>
+      <p><i class="fa fa-phone"></i><a href="tel:111"> 111</a></p>
+      <button class="btn rowdyblue btn-sm pull-right" data-toggle="collapse" href="#109888">Full Profile&nbsp;<i
+          class="fa fa-caret-down"></i></button>
+      <p><i class="fa fa-envelope"></i> <a
+          href="mailto:emailof&#64;PeopleProfile&#46;com">emailof&#64;PeopleProfile&#46;com </a></p>
     </div>
 
 
   </div>
 </div>
-  <div id="109888" class="panel-collapse collapse">
+<div id="109888" class="panel-collapse collapse">
   <div class="row card">
     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
       <p><strong>Position Role:</strong><br> Full-Time Staff</p>
       <p><strong>Office Location:</strong><br> SSB</p>
       <p><strong>Office Number:</strong><br> 000</p>
-            <p><strong>Office Hours:</strong><br> <p>Body of People Profile Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p></p>
+      <p><strong>Office Hours:</strong><br>
+        <p>Body of People Profile Content Type</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+          dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
+          Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
+          sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+      </p>
       <p><strong>Campus Box Number:</strong><br> 222</p>
-          <strong><a href="
-                           http://weba.msudenver.edu/searchchannel/jsp/directoryprofile/profile.jsp?uName=NetID of People Profile Content Type">Directory Profile</a></strong>
+      <strong><a
+          href="
+                                http://weba.msudenver.edu/searchchannel/jsp/directoryprofile/profile.jsp?uName=NetID of People Profile Content Type">Directory
+          Profile</a></strong>
 
     </div>
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-        <p><strong>Bio:</strong><br> <p>Bio of People Profile Content Type</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p></p>
+      <p><strong>Bio:</strong><br>
+        <p>Bio of People Profile Content Type</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+          dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
+          Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
+          sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+      </p>
     </div>
   </div>
 </div>
+<!-- 
+<style>
+  .contact-info>h4 {
+    line-height: 20pt !important;
+    font-size: 18pt !important;
+    font-weight: 400 !important;
+    color: #323e48 !important;
+  }
+
+
+  .contact-info>p {
+    line-height: 16pt !important;
+    font-size: 12pt !important;
+  }
+
+  .contact-card>*>.img-circle {
+    max-height: 145px;
+
+  }
+
+  .contact-card>*>img.img-responsive {
+    //border-radius: 50%;
+    height: 170px;
+    width: 170px;
+    float: right;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .contact-info>hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eee;
+  }
+
+  .row.card {
+    margin: 15px !important;
+    margin-right: 15px !important;
+    margin-top: 15px;
+  }
+
+</style>
+
+<div class="row contact-card">
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+    <img class="img-circle" src="<t4 type='content' name='Photo' output='normal' formatter='image/path'/>" />
+  </div>
+  <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+    <div class="contact-info">
+      <h4>
+        <t4 type="content" name="First Name" output="normal" modifiers="htmlentities" />
+        <t4 type="content" name="Last Name" output="normal" modifiers="htmlentities" /> <br>
+        <small>
+          <t4 type="content" output="selective-output" modifiers="" name="Title" format="$value" /></small>
+      </h4>
+      <hr>
+      <p><i class="fa fa-phone"></i>
+        <t4 type="content" output="selective-output" modifiers="" name="Office Phone Number" format="$value" />
+      </p>
+      <button class="btn btn-default btn-sm pull-right" data-toggle="collapse"
+        href="#<t4 type='meta' meta='content_id'/>">Full Profile&nbsp;<i class="fa fa-caret-down"></i></button>
+      <p><i class="fa fa-envelope"></i>
+        <t4 type="content" output="selective-output" modifiers="" name="Email" format="$value" />
+      </p>
+
+    </div>
+
+
+  </div>
+</div>
+<div id="<t4 type='meta' meta='content_id' />" class="panel-collapse collapse">
+  <div class="row card">
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <t4 type="content" output="selective-output" modifiers="" name="Position Role"
+        format="<p><strong>Position Role:</strong><br> $value</p>" />
+      <t4 type="content" output="selective-output" modifiers="" name="Office Location"
+        format="<p><strong>Office Location:</strong><br> $value</p>" />
+      <t4 type="content" output="selective-output" modifiers="" name="Office Number"
+        format="<p><strong>Office Number:</strong><br> $value</p>" />
+      <t4 type="content" output="selective-output" modifiers="" name="Office Hours"
+        format="<p><strong>Office Hours:</strong><br> $value</p>" />
+      <t4 type="content" output="selective-output" modifiers="" name="Campus Box Number"
+        format="<p><strong>Campus Box Number:</strong><br> $value</p>" />
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+      <t4 type="content" output="selective-output" modifiers="" name="Bio"
+        format="<p><strong>Bio:</strong><br> $value</p>" />
+    </div>
+  </div>
+</div>
+<br><br> -->
+
+
 <br><br>
 
+<!-- Presidents Message #97721 -->
+<!-- Differs -->
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="presidentsmessage">
-            <div class="presidentsheader-orange">
-                    <div class="row">
-                        <div class="presidentstitle">Message from the President</div>
-                        <div class="messagedate">May 2016</div>
-                    </div>
-            </div>
+  <div class="presidentsmessage">
+    <div class="presidentsheader-orange">
+      <div class="row">
+        <div class="presidentstitle">Message from the President</div>
+        <div class="messagedate">May 2016</div>
+      </div>
+    </div>
 
-            <div class="messagearea">
-                <div class="col-lg-6" style="padding: 0px">
-                  <img src="https://msudenver.edu/media/content/newsroom/stories/commencement_jordan.jpg" class="presidentsimg">
-                </div>
-                <div class="col-lg-6" style="padding: 0px">
-                  <div class="whitearea">
-                    <div class="presidentsquote">Quote of President's Message Content Type. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. <hr class="style-one">
-                    </div>
-                    <div class="readmore">Read more on <a href="http://www.linkofPresidentsMessageContentType.com">Link Title of President's Message Content Type</a> &nbsp;<i class="fa fa-chevron-right"></i></div>
-                    </div>
-                </div>
-            </div>
-                </div></div>
+    <div class="messagearea">
+      <div class="col-lg-6" style="padding: 0px">
+        <img src="https://msudenver.edu/media/content/newsroom/stories/commencement_jordan.jpg" class="presidentsimg">
+      </div>
+      <div class="col-lg-6" style="padding: 0px">
+        <div class="whitearea">
+          <div class="presidentsquote">Quote of President's Message Content Type. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+            Nulla quis sem at nibh elementum imperdiet.
+            <hr class="style-one">
+          </div>
+          <div class="readmore">Read more on <a href="http://www.linkofPresidentsMessageContentType.com">Link Title of
+              President's Message Content Type</a> &nbsp;<i class="fa fa-chevron-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<hr>&nbsp;&nbsp;<!--text/shtml-->
+<!-- <style>
+  .presidentmessagecontainer {
+    padding-bottom: 15px;
+  }
+
+  .presidentsmessage {
+    padding: 15px;
+  }
+
+  .messagearea {
+    width: 100%;
+    height: 100%;
+  }
+
+  .presidentsheader {
+    background: #00447c;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 100%;
+  }
+
+  .presidentstitle {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    float: left;
+    padding-top: 5px;
+    font-weight: 400;
+  }
+
+  .messagedate {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    float: right;
+  }
+
+  img.presidentsimg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .whitearea {
+    background: #fff;
+    padding: 10px;
+    /*                    width: 50%;*/
+    /*                    float: right;*/
+  }
+
+  .presidentsquote {
+    color: #216c87;
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 5px;
+
+
+  }
+
+  hr.style-one {
+    height: 3px;
+    background: #358ac0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .readmore {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    float: right;
+    font-style: italic;
+    font-size: 12px;
+  }
+
+</style>
+
+
+<div class="col-xs-12">
+  <div class="presidentsmessage">
+    <div class="presidentsheader">
+      <div class="row">
+        <div class="presidentstitle">Message from the President</div>
+        <div class="messagedate">
+          <t4 type="content" name="Date" output="normal" modifiers="" date_format="MMMM yyyy" />
+        </div>
+      </div>
+    </div>
+
+    <div class="messagearea">
+      <div class="col-xs-12 col-lg-6" style="padding: 0px">
+        <img src="<t4 type='content' name='Image' output=" normal" modifiers="" formatter='image/path' />"
+        class="presidentsimg">
+      </div>
+      <div class="col-xs-12 col-lg-6" style="padding: 0px">
+        <div class="whitearea">
+          <div class="presidentsquote">
+            <t4 type="content" name="Quote" output="normal" modifiers="htmlentities" />
+            <hr class="style-one">
+          </div>
+          <div class="readmore">Read more on <a href="<t4 type=" content" name="Link" output="normal" modifiers="" />">
+            <t4 type="content" name="Link title" output="normal" modifiers="htmlentities" /></a> &nbsp;<i
+              class="fa fa-chevron-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>&nbsp;&nbsp; -->
+
+
+<hr>&nbsp;&nbsp;
+<!--text/shtml-->
+<!-- Press Release #41 -->
 <div>
   <div class="clickable" data-href="/tst/wcmstestsite/press-release-content-type.shtml">
     <h3>
@@ -383,83 +909,250 @@
   </div>
   <hr align="center" size=".4" color="silver" width="100%">
   <br>
-</div><!-- text/shtml MGW 041514-->
-<div class="panel panel-default">
-    <div class="panel-body">
-        <div style="float:left;">
+</div>
 
-        </div>
-        <h3>
-            Profile-Board of Trustees Content Type
-        </h3>
-        <h4><strong>Board Position of Profile-Board of Trustees Content Type</strong></h4>
-        <p><strong>Term of Profile-Board of Trustees Content Type</strong><p>
-        <p><strong>Committee Assignment of Profile-Board of Trustees Content Type</strong><p>
-        <p><strong>Occupation of Profile-Board of Trustees Content Type</strong><p>
-        <p>Bio of Profile-Board of Trustees Content Type. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-    </div>
-</div><style>
-.board-profile-picture>img.img-responsive {
-    max-height: 250px;
-}
-</style>
-<!-- text/shtml MGW 041514-->
-<div class="col-xs-12">
-<div class="well">
-
-        <div class="board-profile-picture" style="float:left;">
-
-        </div>
-        <h3>
-            Profile-FoundationBoard Content Type
-        </h3>
-        <h4><strong>Board Position Profile-FoundationBoard Content Type</strong></h4>
-        <p><strong>Term of Profile-FoundationBoard Content Type</strong><p>
-        <p><strong>Committee Assignment of Profile-FoundationBoard Content Type</strong><p>
-        <p><strong>Occupation of Profile-FoundationBoard Content Type</strong><p>
-     <hr>
-        <p>Bio of Profile-FoundationBoard Content Type. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-    </div>
-
-</div> <div class="col-xs-12 col-md-6 picture-item tile fig-tile" data-groups='["","all"]' >
-  <a href="/tst/wcmstestsite/program-description-fact-sheet-content-type.shtml" >
-  <div class="card-program Minor ">
-      <h3 class="degreeTitle">Program Degree Minor</h3>
-        <span class="degreeType" >Minor  </span>
-
-    </div>
-  </a>
-</div><div class="col-xs-12 col-md-6 picture-item" data-groups='["Bachelor","all"]'>
-  <a href="/etc/">
-  <div class="card-program  Bachelor">
-     <h3 class="degreeTitle">Music Bachelor Degree</h3>
-        <span class="degreeType" >Bachelor of Arts</span>
-   </div>
-  </a>
- </div>
-
-  
-  </div><div class="col-xs-12 story_preview clickable" data-href="/tst/wcmstestsite/story-content-type.shtml">
-    <h4 class="promo_date pull-right badge">
-        May 18, 2016
-    </h4>
+<!-- <div class="col-xs-12">
+  <div class="clickable"
+    data-href="<t4 type='content' name='Name' output='fulltext' use-element='true' filename-element='Name' />">
     <h3>
-        Headline of Story Content Type
+      <t4 type="content" name="Title" output="normal" modifiers="htmlentities" />
     </h3>
+    <h4>
+      <t4 date_format="MMMM d, yyyy" type="content" name="Release Date" output="normal" modifiers="" />
+    </h4>
     <p>
-        Intro text of Story Content Type.
+      <t4 type="content" name="Intro Text" output="normal" modifiers="htmlentities" />
     </p>
-</div><!-- Edited by MGW 05-06-14  -->
-<style>
-    .full-video iframe {
-        width: 100%;
-        text-align: center;
-        display: block;
-    }
+  </div>
+  <hr align="center" size=".4" color="silver" width="100%">
+  <br>
+</div> -->
+
+<!-- text/shtml MGW 041514-->
+<!-- Profile-Board of Trustees #138 -->
+<!-- Slight diff (col) -->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div style="float:left;">
+
+    </div>
+    <h3>
+      Profile-Board of Trustees Content Type
+    </h3>
+    <h4><strong>Board Position of Profile-Board of Trustees Content Type</strong></h4>
+    <p><strong>Term of Profile-Board of Trustees Content Type</strong>
+      <p>
+        <p><strong>Committee Assignment of Profile-Board of Trustees Content Type</strong>
+          <p>
+            <p><strong>Occupation of Profile-Board of Trustees Content Type</strong>
+              <p>
+                <p>Bio of Profile-Board of Trustees Content Type. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
+                  nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper
+                  porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora
+                  torquent per conubia nostra, per inceptos himenaeos.</p>
+  </div>
+</div>
+
+<!-- <t4 type="meta" meta="html_anchor" />
+<div class="col-xs-12">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div style="float:left;">
+        <t4 type="content" output="normal" name="Photo" />
+      </div>
+      <h3>
+        <t4 type="content" name="Name" output="normal" modifiers="htmlentities" />
+      </h3>
+      <t4 type="content" output="selective-output" modifiers="" name="Board Position"
+        format="<h4><strong>$value</strong></h4>" />
+      <t4 type="content" output="selective-output" modifiers="" name="Term" format="<p><strong>$value</strong><p>" />
+      <t4 type="content" output="selective-output" modifiers="" name="Committee Assignment"
+        format="<p><strong>$value</strong><p>" />
+      <t4 type="content" output="selective-output" modifiers="" name="Occupation"
+        format="<p><strong>$value</strong><p>" />
+      <t4 type="content" output="normal" modifiers="" name="Bio" format="" />
+    </div>
+  </div>
+</div> -->
+
+
+<!-- text/shtml MGW 041514-->
+<!-- Board Profile #78477 -->
+<!-- Differs -->
+<div class="col-xs-12">
+  <div class="well">
+
+    <div class="board-profile-picture" style="float:left;">
+
+    </div>
+    <h3>
+      Profile-FoundationBoard Content Type
+    </h3>
+    <h4><strong>Board Position Profile-FoundationBoard Content Type</strong></h4>
+    <p><strong>Term of Profile-FoundationBoard Content Type</strong>
+      <p>
+        <p><strong>Committee Assignment of Profile-FoundationBoard Content Type</strong>
+          <p>
+            <p><strong>Occupation of Profile-FoundationBoard Content Type</strong>
+              <p>
+                <hr>
+                <p>Bio of Profile-FoundationBoard Content Type. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh
+                  elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
+                  Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per
+                  conubia nostra, per inceptos himenaeos.</p>
+  </div>
+</div>
+
+<!-- <style>
+  .board-profile>hr {
+    margin-bottom: 20px;
+    border-bottom: #747978 2px solid;
+  }
+
+
+
+  .board-profile-picture>img.img-responsive {
+    max-height: 300px;
+    padding-top: 7px;
+  }
 
 </style>
-<div class="row">
-    <div class="full-video col-xm-12">
-        Embed code of YouTube Content Content Type.
+
+<div class="col-xs-12 board-profile">
+  <div   <h2>
+      <t4 type="content" name="Name" output="normal" modifiers="htmlentities" />
+    </h2>
+    <t4 type="content" output="selective-output" modifiers="" name="Board Position"
+      format="<h3><strong>$value</strong></h3>" />
+    <t4 type="content" output="selective-output" modifiers="" name="Term" format="<p><strong>$value</strong><p>" />
+    <t4 type="content" output="selective-output" modifiers="" name="Committee Assignment"
+      format="<p><strong>$value</strong><p>" />
+    <t4 type="content" output="selective-output" modifiers="" name="Occupation"
+      format="<p><strong>$value</strong><p>" />
+    <t4 type="content" output="normal" modifiers="" name="Bio" format="" />
+  </div>
+  <hr>
+</div>
+class="">
+
+    <d   <h2>
+      <t4 type="content" name="Name" output="normal" modifiers="htmlentities" />
+    </h2>
+    <t4 type="content" output="selective-output" modifiers="" name="Board Position"
+      format="<h3><strong>$value</strong></h3>" />
+    <t4 type="content" output="selective-output" modifiers="" name="Term" format="<p><strong>$value</strong><p>" />
+    <t4 type="content" output="selective-output" modifiers="" name="Committee Assignment"
+      format="<p><strong>$value</strong><p>" />
+    <t4 type="content" output="selective-output" modifiers="" name="Occupation"
+      format="<p><strong>$value</strong><p>" />
+    <t4 type="content" output="normal" modifiers="" name="Bio" format="" />
+  </div>
+  <hr>
+</div>
+v class="board-profile-picture" style="float:left;">
+      <t4 type="content" output="normal" name="Photo" />
+    </div>
+    <h2>
+      <t4 type="content" name="Name" output="normal" modifiers="htmlentities" />
+    </h2>
+    <t4 type="content" output="selective-output" modifiers="" name="Board Position"
+      format="<h3><strong>$value</strong></h3>" />
+    <t4 type="content" output="selective-output" modifiers="" name="Term" format="<p><strong>$value</strong><p>" />
+    <t4 type="content" output="selective-output" modifiers="" name="Committee Assignment"
+      format="<p><strong>$value</strong><p>" />
+    <t4 type="content" output="selective-output" modifiers="" name="Occupation"
+      format="<p><strong>$value</strong><p>" />
+    <t4 type="content" output="normal" modifiers="" name="Bio" format="" />
+  </div>
+  <hr>
+</div> -->
+
+<!-- Academic Program Description Short #146 -->
+<div class="col-xs-12 col-md-6 picture-item tile fig-tile" data-groups='["","all"]'>
+  <a href="/tst/wcmstestsite/program-description-fact-sheet-content-type.shtml">
+    <div class="card-program Minor ">
+      <h3 class="degreeTitle">Program Degree Minor</h3>
+      <span class="degreeType">Minor </span>
+
+    </div>
+  </a>
+</div>
+
+<!-- <div class="col-xs-12 col-md-6 picture-item"
+  data-groups='["<t4 type="content" name="Program Type" output="normal" modifiers=""  />","all"]'>
+  <a
+    href="<t4 type='content' name='Department Website' output='linkurl' modifiers=''/><t4 type='content' name='External Link' output='normal' modifiers=''/>">
+    <div class="<t4 type=" content" name="Program Type" output="normal" modifiers="" />">
+    <div class="card-program">
+      <h3 class="degreeTitle">
+        <t4 type="content" name="Display Name" output="normal" modifiers="" />
+      </h3>
+      <span class="degreeType">
+        <t4 type="content" name="Program Type" output="normal" modifiers="" display_field="name" />
+        <t4 type="content" output="selective-output" modifiers="" name="Program Subtype" format=" $value" />
+      </span>
     </div>
 </div>
+</a>
+</div> -->
+
+<!-- Academic Program Description Short #87780 -->
+<div class="col-xs-12 col-md-6 picture-item" data-groups='["Bachelor","all"]'>
+  <a href="/etc/">
+    <div class="card-program  Bachelor">
+      <h3 class="degreeTitle">Music Bachelor Degree</h3>
+      <span class="degreeType">Bachelor of Arts</span>
+    </div>
+  </a>
+</div>
+
+<!-- <div class="col-xs-12 col-md-6 picture-item" data-groups='["<t4 type="content" name="Program Type" output="normal" modifiers=""  />","all"]'>
+  <a href="<t4 type='content' name='Department Website' output='linkurl' modifiers=''/><t4 type='content' name='External Link' output='normal' modifiers=''/>">
+  <div class="<t4 type="content" name="Program Type" output="normal" modifiers=""  />">
+    <div class="card-program">
+     <h3 class="degreeTitle"><t4 type="content" name="Display Name" output="normal" modifiers=""  /></h3>      
+     <span class="degreeType" >
+       <t4 type="content" name="Program Type" output="normal" modifiers="" display_field="name"   />
+       <t4 type="content" output="selective-output" modifiers="" name="Program Subtype" format=" $value" />
+     </span>
+    </div> 
+  </div> 
+  </a> 
+ </div> -->
+
+<!-- Story #108 -->
+<div class="col-xs-12 story_preview clickable" data-href="/tst/wcmstestsite/story-content-type.shtml">
+  <h4 class="promo_date pull-right badge">
+    May 18, 2016
+  </h4>
+  <h3>
+    Headline of Story Content Type
+  </h3>
+  <p>
+    Intro text of Story Content Type.
+  </p>
+</div>
+
+
+<!-- <a href="<t4 type='content' name='Name' output='fulltext' modifiers='' use-element='true' filename-element='Name' />">
+	<div class="col-xs-12">
+       <div class="story-preview">
+		<h3><t4 type="content" name="Headline" output="normal" modifiers="htmlentities" /></h3>
+      	<h4 class="promo_date"><t4 type="content" name="Publish Date" output="normal" date_format="MMM d, 'yyyy" /></h4>
+    	<p><t4 type="content" name="Subhead" output="normal" modifiers="htmlentities" /></p>
+    </div>
+      </div>
+<a>
+  
+  </hr> -->
+
+<!-- Edited by MGW 05-06-14  -->
+
+<div class="row">
+  <div class="full-video col-xm-12">
+    Embed code of YouTube Content Content Type.
+  </div>
+</div>
+
