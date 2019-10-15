@@ -1,0 +1,17 @@
+.possible-parallax {
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .well {
+    background: $MSUDenver-white-tranparency;
+  }
+}
+
+// #id {
+//     background: url("insert-path") no-repeat center center;
+// }

@@ -149,7 +149,8 @@ section {
   background: #fff;
 }
 
-button, [type="button"],
+button,
+[type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: none;
@@ -297,9 +298,10 @@ button, [type="button"],
 
 #master-your-future {
   padding-bottom: 20vh;
-  background-color: #D11242;
+  background-color: #00447C;
 }
-#master-your-future h2, #master-your-future h3 {
+#master-your-future h2,
+#master-your-future h3 {
   color: white !important;
   margin-bottom: 15px;
 }
@@ -308,7 +310,9 @@ button, [type="button"],
   padding: 15px;
   margin-bottom: 15px;
 }
-#master-your-future .copy-swap p, #master-your-future .copy-swap a, #master-your-future .copy-swap a:hover {
+#master-your-future .copy-swap p,
+#master-your-future .copy-swap a,
+#master-your-future .copy-swap a:hover {
   color: #00447c;
 }
 
@@ -528,6 +532,88 @@ button, [type="button"],
   border-radius: 0;
 }
 
+.possible-parallax {
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.possible-parallax .well {
+  background: #ffffffde;
+}
+
+.possible-section {
+  padding-bottom: 20vh;
+}
+.possible-section h1,
+.possible-section h2,
+.possible-section h3,
+.possible-section h4,
+.possible-section p {
+  color: #00366A;
+  font-weight: 400;
+}
+.possible-section h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: 700;
+}
+.possible-section h3 {
+  font-size: 1.25rem;
+  margin: 10px 0;
+  font-style: italic;
+}
+.possible-section h4 {
+  color: #00447C;
+  margin-bottom: 15px;
+}
+.possible-section p {
+  font-size: 1rem;
+}
+
+.possible-section.red {
+  background-color: #d11242;
+}
+
+.possible-section.blue {
+  background-color: #00447C;
+}
+
+.possible-section.red h2,
+.possible-section.red h3,
+.possible-section.blue h2,
+.possible-section.blue h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+.possible-section.red p,
+.possible-section.red a,
+.possible-section.red a:hover,
+.possible-section.blue p,
+.possible-section.blue a,
+.possible-section.blue a:hover {
+  color: white;
+}
+
+.possible-section .section {
+  margin-top: 7vh;
+}
+
+.possible-section .copy-swap {
+  background: white;
+  color: #00366A;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.possible-section .copy-swap p,
+.possible-section .copy-swap a,
+.possible-section .copy-swap a:hover {
+  color: #00447c;
+}
+
 @media only screen and (min-width: 544px) {
   h2 {
     font-size: 1.25rem;
@@ -605,33 +691,52 @@ button, [type="button"],
     -o-background-size: cover;
     background-size: cover;
   }
+
+  .possible-parallax {
+    background: fixed;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 @media only screen and (min-width: 992px) {
-  section {
+  .possible-parallax h2 {
+    font-size: 2.25rem;
+  }
+  .possible-parallax h3 {
+    font-size: 1.5rem;
+  }
+  .possible-parallax h4 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+  .possible-parallax p {
+    font-size: 1.25rem;
+  }
+
+  .possible-section {
     padding-top: 18vh;
     padding-bottom: 15vh;
     height: auto;
   }
-
-  .introduction h1 {
-    font-size: 5rem;
-  }
-
-  h2 {
+  .possible-section h2 {
     font-size: 2.25rem;
   }
-
-  h3 {
+  .possible-section h3 {
     font-size: 1.5rem;
   }
-
-  h4 {
+  .possible-section h4 {
     font-size: 1.5rem;
     margin-top: 30px;
   }
-
-  p {
+  .possible-section p {
     font-size: 1.25rem;
+  }
+
+  .introduction h1 {
+    font-size: 5rem;
   }
 
   .possible-indicator {
@@ -647,7 +752,7 @@ button, [type="button"],
   }
 
   .copy-swap {
-    margin-top: 35px;
+    margin-top: 7vh;
     margin-right: -75px;
     z-index: 1;
     background-color: white;
@@ -655,7 +760,9 @@ button, [type="button"],
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.175);
     padding: 10%;
   }
-  .copy-swap p, .copy-swap a, .copy-swap a:hover {
+  .copy-swap p,
+  .copy-swap a,
+  .copy-swap a:hover {
     color: #00447c !important;
   }
 

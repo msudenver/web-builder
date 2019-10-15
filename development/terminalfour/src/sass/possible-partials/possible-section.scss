@@ -1,0 +1,75 @@
+.possible-section {
+  padding-bottom: 20vh;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    color: #00366A;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    font-style: italic;
+  }
+
+  h4 {
+    color: $MSUDenver-Blue;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+}
+
+.possible-section.red {
+  background-color: $MSUDenver-Red;
+}
+
+.possible-section.blue {
+  background-color: $MSUDenver-Blue;
+}
+
+.possible-section.red,
+.possible-section.blue {
+
+  h2,
+  h3 {
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  p,
+  a,
+  a:hover {
+    color: white;
+  }
+}
+
+.possible-section .section {
+  margin-top: 7vh;
+}
+
+.possible-section .copy-swap {
+  background: white;
+  color: #00366A;
+  padding: 15px;
+  margin-bottom: 15px;
+
+  p,
+  a,
+  a:hover {
+    color: #00447c;
+  }
+}

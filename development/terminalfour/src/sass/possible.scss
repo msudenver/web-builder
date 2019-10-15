@@ -1,5 +1,7 @@
 @import "msudenver-colors.scss";
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
   .well {
     background: #fff;
   }
@@ -39,9 +41,9 @@ h3 {
   font-style: italic;
 }
 
-h4{
-  color:$MSUDenver-Blue;
-  margin-bottom:15px;
+h4 {
+  color: $MSUDenver-Blue;
+  margin-bottom: 15px;
 }
 
 p {
@@ -52,20 +54,21 @@ p.copyright {
   font-size: 16px;
   text-align: right;
 }
-a{
-color: #092f6b;
-text-decoration: none;
-background-color: transparent;
-font-weight: 700;
+
+a {
+  color: #092f6b;
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: 700;
 }
 
-a:hover{
-color: #092f6b;
-text-decoration: underline;
-font-weight: 700;
+a:hover {
+  color: #092f6b;
+  text-decoration: underline;
+  font-weight: 700;
 }
 
-.copyright > a {
+.copyright>a {
   color: #00366A;
 }
 
@@ -94,6 +97,7 @@ section {
   margin-top: 15vh;
   margin-bottom: 15vh;
 }
+
 .possible-indicator {
   color: #00447c;
   // display:block;
@@ -108,7 +112,7 @@ section {
   width: 200px;
   text-align: center;
   margin-top: 10vh;
-  text-align: center!important;
+  text-align: center !important;
 }
 
 .possible-word {
@@ -142,7 +146,7 @@ section {
   h2 {
     margin: 15px 0;
     color: #fff;
-    margin-bottom:30px;
+    margin-bottom: 30px;
     text-align: center;
 
   }
@@ -150,6 +154,7 @@ section {
   p {
     color: #fff;
   }
+
   .btn {
     border: solid 3px #fff;
     padding: 20px;
@@ -168,8 +173,11 @@ section {
     background: #fff;
   }
 
-  }
-button, [type="button"],// 1
+}
+
+button,
+[type="button"],
+// 1
 
 [type="reset"],
 [type="submit"] {
@@ -183,6 +191,7 @@ button, [type="button"],// 1
   margin: 15px 0;
   transition: transform 0.4s;
   border: 1px #D11242 solid;
+
   // height:20vh;
   p {
     color: white;
@@ -198,13 +207,15 @@ button, [type="button"],// 1
   margin: 15px 0;
   transition: transform 0.4s;
   border: 1px #D11242 solid;
+
   // height:20vh;
   p {
     color: #D11242;
     transition: transform 0.4s;
   }
-  .btn{
-    width:100%;
+
+  .btn {
+    width: 100%;
   }
 }
 
@@ -219,7 +230,7 @@ button, [type="button"],// 1
 //   }
 // }
 
-#possible-card-1 > .modal-dialog {
+#possible-card-1>.modal-dialog {
   // background: url(../media/possible/Tivoli.jpg) no-repeat center center;
   // height: auto;
 }
@@ -317,7 +328,7 @@ button, [type="button"],// 1
 }
 
 .teaching-tomorrows-teachers-section {
-  background: url("../media/possible/Teaching-tomorrow-teachers.jpg") no-repeat center center ;
+  background: url("../media/possible/Teaching-tomorrow-teachers.jpg") no-repeat center center;
   display: table;
   position: relative;
   width: 100%;
@@ -332,7 +343,7 @@ button, [type="button"],// 1
 }
 
 .possible-call-to-action {
-  background: url("../media/possible/open-house-student.jpg") no-repeat center center ;
+  background: url("../media/possible/open-house-student.jpg") no-repeat center center;
   display: table;
   position: relative;
   width: 100%;
@@ -349,19 +360,25 @@ button, [type="button"],// 1
   }
 }
 
-#master-your-future{
+#master-your-future {
   padding-bottom: 20vh;
-  background-color: #D11242;
-  h2,h3{
-    color:white !important;
+  background-color: $MSUDenver-Blue;
+
+  h2,
+  h3 {
+    color: white !important;
     margin-bottom: 15px;
   }
-  .copy-swap{
+
+  .copy-swap {
     background: white;
-    padding:15px;
+    padding: 15px;
     margin-bottom: 15px;
-    p, a, a:hover{
-      color:#00447c;
+
+    p,
+    a,
+    a:hover {
+      color: #00447c;
     }
   }
 
@@ -418,9 +435,12 @@ button, [type="button"],// 1
 }
 
 
+
 @import "possible-partials/boostrap-overrides.scss";
 @import "possible-partials/possible-navigation.scss";
 
 @import "possible-partials/possible-animations.scss";
 @import "possible-partials/possible-navbar.scss";
+@import "possible-partials/possible-parallax.scss";
+@import "possible-partials/possible-section.scss";
 @import "possible-partials/possible-viewport-overrides.scss";

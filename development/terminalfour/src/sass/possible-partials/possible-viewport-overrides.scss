@@ -16,15 +16,17 @@
 
   }
 
-  h4{
+  h4 {
     font-size: 1.1rem;
     font-weight: 700;
     text-align: center;
   }
+
   .introduction {
     height: 100vh;
     padding-top: 35vh;
-}
+  }
+
   .possible-word {
     letter-spacing: 1.5px;
     margin-left: -5px;
@@ -55,7 +57,7 @@
     -o-background-size: cover;
     background-size: cover;
   }
-  
+
   .brewing-innovation-in-hospitality {
     background: url(" ../media/possible/abby-brewing-bg.jpg") no-repeat center center fixed;
     height: auto;
@@ -83,13 +85,60 @@
     background-size: cover;
   }
 
+  .possible-parallax {
+    background: fixed;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 }
+
 @media only screen and (min-width: 992px) {
 
-  section {
+  .possible-parallax {
+    h2 {
+      font-size: 2.25rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+
+  .possible-section {
     padding-top: 18vh;
     padding-bottom: 15vh;
     height: auto;
+
+    h2 {
+      font-size: 2.25rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+
     // box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.);
   }
 
@@ -99,26 +148,13 @@
     }
   }
 
-  h2 {
-    font-size: 2.25rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-  }
-  h4{
-    font-size: 1.5rem;
-    margin-top: 30px;
-  }
 
-  p {
-    font-size: 1.25rem;
-  }
 
   .possible-indicator {
     top: 10vh;
   }
 
-  .possible-call-to-action{
+  .possible-call-to-action {
     .btn {
       border: solid 3px;
       font-size: 1.5rem;
@@ -130,15 +166,18 @@
   }
 
   .copy-swap {
-    margin-top: 35px;
+    margin-top: 7vh;
     margin-right: -75px;
     z-index: 1;
     background-color: white;
     position: absolute;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.175);
-    padding:10%;
-    p, a, a:hover{
-      color:#00447c !important;
+    padding: 10%;
+
+    p,
+    a,
+    a:hover {
+      color: #00447c !important;
     }
   }
 
