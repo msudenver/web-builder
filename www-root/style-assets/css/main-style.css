@@ -10189,6 +10189,12 @@ blockquote {
   font-style: italic;
 }
 
+@media only screen and (max-width: 768px) {
+  .content-blockquote {
+    margin-left: 0 !important;
+    display: inline-block !important;
+  }
+}
 .content {
   line-height: 1.6em;
 }
