@@ -9784,18 +9784,40 @@ footer {
   font-size: 1.0rem;
 }
 
-.custom-red-btn {
-  margin-bottom: 15px;
-  width: 100%;
-  background-color: #ffffff;
-  color: #D11242 !important;
-  border: 2px solid #D11242 !important;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
+.custom-blue-btn {
+  border-color: #00447c;
+  border-width: 2px;
+  background: #fff;
+  color: #00447c !important;
+  float: right;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
   text-align: center;
-  padding: 32px 0;
+  height: 93px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.custom-red-btn {
+  border-color: #D11242;
+  border-width: 2px;
+  background: #fff;
+  color: #D11242 !important;
+  float: right;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  height: 93px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .custom-red-btn:hover {
@@ -9803,20 +9825,6 @@ footer {
   color: #ffffff !important;
   background-color: #DE2554;
   border-color: #D11242;
-}
-
-.custom-blue-btn {
-  margin-bottom: 15px;
-  width: 100%;
-  background-color: #ffffff;
-  color: #002855 !important;
-  border: 2px solid #002855 !important;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  padding: 32px 0;
 }
 
 .custom-blue-btn:hover {
@@ -12392,7 +12400,8 @@ section.admissionsHomepageResources .resources-container .resources-link:hover {
 /** Components **/
 /** Responsive Overrides **/
 /** President's page styles **/
-body .president-page, p .president-page {
+body .president-page,
+p .president-page {
   color: #434343;
   font-size: 1rem;
   font-weight: 400;
@@ -12456,7 +12465,8 @@ body .president-page, p .president-page {
   letter-spacing: 2px;
 }
 
-.pres-panel-heading:hover, .pres-panel-heading:active {
+.pres-panel-heading:hover,
+.pres-panel-heading:active {
   background: #6d6d6d;
 }
 
@@ -12519,14 +12529,18 @@ h3.president-page {
   letter-spacing: 2px;
 }
 
-h4.pres-videos, h4.pres-news, h4.pres-speeches {
+h4.pres-videos,
+h4.pres-news,
+h4.pres-speeches {
   color: #007dc3;
   font-size: 1.3em;
   font-weight: 500;
   letter-spacing: 2px;
 }
 
-h5.pres-videos, h5.pres-news, h5.pres-speeches {
+h5.pres-videos,
+h5.pres-news,
+h5.pres-speeches {
   color: #424142;
   font-size: 1rem;
   font-weight: 400;
@@ -12574,7 +12588,8 @@ hr.pres-links {
   text-align: center;
 }
 
-.pres-button:hover, .pres-allideas-btn:hover {
+.pres-button:hover,
+.pres-allideas-btn:hover {
   color: #fff;
   background: rgba(0, 68, 124, 0.75);
   border-color: #00447c;
@@ -12586,7 +12601,10 @@ hr.pres-links {
   border-radius: 0px;
 }
 
-.president-page .form-control::-webkit-input-placeholder, .president-page .form-control::-moz-placeholder, .president-page .form-control:-ms-input-placeholder, .president-page .form-control:-moz-placeholder {
+.president-page .form-control::-webkit-input-placeholder,
+.president-page .form-control::-moz-placeholder,
+.president-page .form-control:-ms-input-placeholder,
+.president-page .form-control:-moz-placeholder {
   color: #717073;
 }
 
@@ -12708,7 +12726,10 @@ hr.pres-links {
   text-align: center;
 }
 
-.pres-button-stack:hover, .pres-stack-left:hover, .pres-stack-right:hover, .pres-stack-center:hover {
+.pres-button-stack:hover,
+.pres-stack-left:hover,
+.pres-stack-right:hover,
+.pres-stack-center:hover {
   color: #fff;
   background: rgba(60, 60, 60, 0.75);
 }
@@ -12780,9 +12801,9 @@ hr.pres-links {
 }
 
 .pres-button-interact {
-  display:  table-cell;
-  vertical-align:  middle;
-  text-align:  center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .president-page .form-group {
@@ -12797,12 +12818,15 @@ hr.pres-links {
   background: #6d6d6d;
 }
 
-.pres-panel-heading-left, .pres-panel-heading-right, .pres-panel-heading-center {
+.pres-panel-heading-left,
+.pres-panel-heading-right,
+.pres-panel-heading-center {
   text-align: center;
   border-bottom: 1px solid #fff;
 }
 
-.president-page fieldset h3, .president-page fieldset h5 {
+.president-page fieldset h3,
+.president-page fieldset h5 {
   padding-left: 15px;
 }
 
@@ -13024,7 +13048,9 @@ hr.pres-inner-header {
     text-align: center;
   }
 
-  .pres-panel-heading-left, .pres-panel-heading-right, .pres-panel-heading-center {
+  .pres-panel-heading-left,
+  .pres-panel-heading-right,
+  .pres-panel-heading-center {
     border-bottom: 0px solid #fff;
   }
 
@@ -13075,7 +13101,11 @@ hr.pres-inner-header {
     margin-left: 5px;
   }
 
-  .pres-button-interact, .pres-stack-left, .pres-stack-right, .pres-stack-center, .pres-button-stack {
+  .pres-button-interact,
+  .pres-stack-left,
+  .pres-stack-right,
+  .pres-stack-center,
+  .pres-button-stack {
     height: 85px;
   }
 
@@ -13141,7 +13171,11 @@ hr.pres-inner-header {
   }
 }
 @media screen and (min-width: 1200px) {
-  .pres-button-interact, .pres-stack-left, .pres-stack-right, .pres-stack-center, .pres-button-stack {
+  .pres-button-interact,
+  .pres-stack-left,
+  .pres-stack-right,
+  .pres-stack-center,
+  .pres-button-stack {
     height: 86px;
   }
 
