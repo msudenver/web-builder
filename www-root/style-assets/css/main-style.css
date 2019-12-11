@@ -11162,18 +11162,40 @@ footer {
   font-size: 1.0rem;
 }
 
-.custom-red-btn {
-  margin-bottom: 15px;
-  width: 100%;
-  background-color: #ffffff;
-  color: #D11242 !important;
-  border: 2px solid #D11242 !important;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
+.customm-blue-btn {
+  border-color: #00447c;
+  border-width: 2px;
+  background: #fff;
+  color: #00447c !important;
+  float: right;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
   text-align: center;
-  padding: 32px 0;
+  height: 93px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.custom-red-btn {
+  border-color: #D11242;
+  border-width: 2px;
+  background: #fff;
+  color: #D11242 !important;
+  float: right;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  height: 93px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .custom-red-btn:hover {
@@ -11181,20 +11203,6 @@ footer {
   color: #ffffff !important;
   background-color: #DE2554;
   border-color: #D11242;
-}
-
-.custom-blue-btn {
-  margin-bottom: 15px;
-  width: 100%;
-  background-color: #ffffff;
-  color: #002855 !important;
-  border: 2px solid #002855 !important;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  padding: 32px 0;
 }
 
 .custom-blue-btn:hover {
@@ -11205,17 +11213,21 @@ footer {
 }
 
 .custom-grey-btn {
-  margin-bottom: 15px;
-  width: 100%;
-  background-color: #ffffff;
+  border-color: #ffffff;
+  border-width: 2px;
+  background: #fff;
   color: #717073 !important;
-  border: 2px solid #717073 !important;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
+  float: right;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
   text-align: center;
-  padding: 32px 0;
+  height: 93px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .custom-grey-btn:hover {
@@ -12749,7 +12761,6 @@ hr.style-one {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   bottom: auto !important;
-  padding: 2%;
 }
 
 .hero-caption h1,
@@ -12759,6 +12770,8 @@ hr.style-one {
 .hero-caption h5,
 .hero-caption h6 {
   color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding-left: 2%;
 }
 
 @media screen and (min-width: 992px) {
@@ -12783,6 +12796,18 @@ hr.style-one {
 
   .hero span> :last-child {
     padding-bottom: inherit;
+  }
+
+
+  .hero-caption h1,
+  .hero-caption h2,
+  .hero-caption h3,
+  .hero-caption h4,
+  .hero-caption h5,
+  .hero-caption h6 {
+    color: #fff;
+    background: none;
+    padding: none;
   }
 }
 
