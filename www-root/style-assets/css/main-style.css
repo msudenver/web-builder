@@ -12771,7 +12771,7 @@ hr.style-one {
 .hero-caption h6 {
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
-  padding-left: 2%;
+  padding-left: 5%;
 }
 
 @media screen and (min-width: 992px) {
