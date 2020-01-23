@@ -1,21 +1,23 @@
 .hero {
   position: relative;
   margin-bottom: 30px;
-  }
+}
 
-  .hero p {
-    padding: 0 2%;
-  }
-  .hero span > :first-child {
-    padding-top: 2% !important;
-  }
-  .hero span > :last-child {
-    padding-bottom: 2% !important;
-  }
+.hero p {
+  padding: 0 2%;
+}
+.hero span > :first-child {
+  padding-top: 2% !important;
+}
+.hero span > :last-child {
+  padding-bottom: 2% !important;
+}
 
 .hero > .img-responsive {
-
-  width:100%
+  width: 100%;
+}
+.hero > .hidden-md > .img-responsive {
+  margin-top: 20px;
 }
 
 .hero-caption {
@@ -31,7 +33,12 @@
   width: 100%;
   bottom: auto !important;
   padding: 2%;
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: #fff;
   }
 }
