@@ -230,32 +230,6 @@
 
   });
 
-  $('.navbar-toggle').click(function () {
-    if (document.querySelector('#bs-example-navbar-collapse-1').querySelector('.navbar-collapse')
-      .getAttribute("aria-expanded") != 'true') {
-      $('#bs-example-navbar-collapse-1').css('height', '80vh');
-    } else {
-      $('#bs-example-navbar-collapse-1').css('height', 'auto');
-    }
-  });
-
-
-  $(window).resize(function () {
-    console.log(window.innerWidth)
-    if (window.innerWidth > 991) {
-      document.querySelector('#bs-example-navbar-collapse-1').querySelector('.navbar-collapse')
-        .setAttribute("aria-expanded", false);
-      $('#bs-example-navbar-collapse-1').css('height', 'auto');
-    } else if (window.innerWidth <= 991 && document.querySelector('#bs-example-navbar-collapse-1').querySelector(
-        '.navbar-collapse').classList
-      .contains('in') && document.querySelector('#bs-example-navbar-collapse-1').querySelector('.navbar-collapse')
-      .getAttribute("aria-expanded") != 'true') {
-      document.querySelector('#bs-example-navbar-collapse-1').querySelector('.navbar-collapse')
-        .setAttribute("aria-expanded", true);
-      $('#bs-example-navbar-collapse-1').css('height', '80vh');
-    }
-  })
-
 </script>
 
   <a href="#content" class="sr-only">Skip to main content</a>
@@ -1538,6 +1512,8 @@
 
 
 
+
+<script src="style-assets/js/NavbarScroll.js"></script>
 
 <!-- Terminal4 Code: 
 <footer >
