@@ -231,15 +231,30 @@
   });
 
   $('.navbar-toggle').click(function () {
-    console.log("Hello")
-    if ($('#bs-example-navbar-collapse-1').height() < .7 * screen.height) {
-      console.log("Little")
+    if (document.querySelector('#bs-example-navbar-collapse-1').querySelector('.navbar-collapse')
+      .getAttribute("aria-expanded") != 'true') {
       $('#bs-example-navbar-collapse-1').css('height', '80vh');
     } else {
-      console.log("Big")
       $('#bs-example-navbar-collapse-1').css('height', 'auto');
     }
   });
+
+
+  $(window).resize(function () {
+    console.log(window.innerWidth)
+    if (window.innerWidth > 991) {
+      document.querySelector('#bs-example-navbar-collapse-1').querySelector('.navbar-collapse')
+        .setAttribute("aria-expanded", false);
+      $('#bs-example-navbar-collapse-1').css('height', 'auto');
+    } else if (window.innerWidth <= 991 && document.querySelector('#bs-example-navbar-collapse-1').querySelector(
+        '.navbar-collapse').classList
+      .contains('in') && document.querySelector('#bs-example-navbar-collapse-1').querySelector('.navbar-collapse')
+      .getAttribute("aria-expanded") != 'true') {
+      document.querySelector('#bs-example-navbar-collapse-1').querySelector('.navbar-collapse')
+        .setAttribute("aria-expanded", true);
+      $('#bs-example-navbar-collapse-1').css('height', '80vh');
+    }
+  })
 
 </script>
 
