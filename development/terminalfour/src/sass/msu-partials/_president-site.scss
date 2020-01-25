@@ -1,21 +1,22 @@
-body .president-page, p .president-page {
-	color: #434343;
-	font-size: 1rem;
-	font-weight: 400;
-	// letter-spacing: 2px;
+body .president-page,
+p .president-page {
+  color: #434343;
+  font-size: 1rem;
+  font-weight: 400;
+  // letter-spacing: 2px;
 }
 
 .homepage-main.president-page {
-	padding-left: 0px;
-	padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .president-page .panel-body {
-	padding: 0px;
+  padding: 0px;
 }
 
 .pres-feature-caption-text {
-	color: #fff;
+  color: #fff;
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 1rem;
@@ -26,79 +27,80 @@ body .president-page, p .president-page {
 }
 
 .pres-feature-caption-text.feature-heading {
-	margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .pres-feature-subcaption {
-	line-height: 2.5em;
+  line-height: 2.5em;
 }
 
 .pres-feature-heading {
-	margin-bottom: 0;
-	text-transform: uppercase;
+  margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .pres-feature-button {
   border-color: #fff;
-  background: rgba(0,0,0,0.15);
+  background: rgba(0, 0, 0, 0.15);
   color: #fff;
   border-radius: 0px;
   border-width: 5px;
-	float: inherit;
-	text-align: center;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	margin-bottom: 15px;
+  float: inherit;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .pres-feature-button p {
-	margin: 0px;
+  margin: 0px;
 }
 
 .pres-panel-heading {
-	color: #fff;
-	height: 60px;
-	background: #3c3c3c;
-	padding-top: 15px;
-	letter-spacing: 2px;
+  color: #fff;
+  height: 60px;
+  background: #3c3c3c;
+  padding-top: 15px;
+  letter-spacing: 2px;
 }
 
-.pres-panel-heading:hover, .pres-panel-heading:active {
-	background: #6d6d6d;
+.pres-panel-heading:hover,
+.pres-panel-heading:active {
+  background: #6d6d6d;
 }
 
 .pres-panel-menu {
-	padding-left: 0px;
-	padding-right: 0px;
-	border-top: 5px solid #fff;
-	z-index: 2;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-top: 5px solid #fff;
+  z-index: 2;
 
 }
 
 a .pres-menu-text {
-	color: #fff;
-	font-size: 1rem;
-	font-weight: 400;
-	letter-spacing: 2px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 h1 .president-page {
-	color: #fff;
-	font-size: 2.25rem;
-	font-weight: 800;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+  color: #fff;
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .president-page h2.row span {
-	color: #00447c;
-	font-size: 1.7rem;
-	font-weight: 800;
-	letter-spacing: 2px;
+  color: #00447c;
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
 .pres-interact .president-page h2.row span {
-	color: #fff;
+  color: #fff;
 }
 
 // .president-page h2.row {
@@ -107,13 +109,13 @@ h1 .president-page {
 // }
 
 .president-page .homepage-feature {
-	margin-left: 0px;
-	margin-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .president-page .row {
-	margin-left: 0px;
-	margin-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 // .pres-panel-menu > .row {
@@ -122,150 +124,161 @@ h1 .president-page {
 // }
 
 .pres-vision-block {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 h3.pres-vision {
-	margin-top: 15px;
-	margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 h3.president-page {
-	color: #434343;
-	font-size: 1.3rem;
-	font-weight: 500;
-	letter-spacing: 2px;
+  color: #434343;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
-h4.pres-videos, h4.pres-news, h4.pres-speeches {
-	color: #007dc3;
+h4.pres-videos,
+h4.pres-news,
+h4.pres-speeches {
+  color: #007dc3;
   font-size: 1.3em;
   font-weight: 500;
   letter-spacing: 2px;
 }
 
-h5.pres-videos, h5.pres-news, h5.pres-speeches {
-	color: #424142;
-	font-size: 1rem;
-	font-weight: 400;
-	letter-spacing: 2px;
+h5.pres-videos,
+h5.pres-news,
+h5.pres-speeches {
+  color: #424142;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 hr .president-menu {
-	border-top: 2px solid #00447c;
+  border-top: 2px solid #00447c;
 }
 
 .president-page hr {
-	border-top: 2px solid #808080;
+  border-top: 2px solid #808080;
 }
 
 .pres-links {
-	color: #000;
-	letter-spacing: 2px;
-	// padding-bottom: 30px;
+  color: #000;
+  letter-spacing: 2px;
+  // padding-bottom: 30px;
 }
 
 .pres-links hr {
-	border-top: 1px solid #d0d0d0;
+  border-top: 1px solid #d0d0d0;
 }
 
 hr.pres-links {
-	border-top: 1px solid #d0d0d0;
+  border-top: 1px solid #d0d0d0;
 }
+
 .pres-panel-heading i {
-	font-size: 2.5rem;
-	color: #00447c;
+  font-size: 2.5rem;
+  color: #00447c;
 }
 
 .pres-button {
-	border-color: #00447c;
-  border-width: 5px;
-  background: rgba(0, 68, 124, 0.05);
-  color: #00447c;
-	float: right;
-	border-radius: 0px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 1rem;
-	font-weight: 500;
-	// bottom: -65px;
-	position: relative;
-	text-align: center;
-}
-
-.pres-button:hover, .pres-allideas-btn:hover, {
-	color: #fff;
-	background: rgba(0, 68, 124, 0.75);
-	border-color: #00447c;
-}
-
-.president-page .form-control {
-	background-color: #fff;
-  border: 2px solid #bfbfbf;
-	border-radius: 0px;
-}
-
-.president-page .form-control::-webkit-input-placeholder, .president-page .form-control::-moz-placeholder, .president-page .form-control:-ms-input-placeholder, .president-page .form-control:-moz-placeholder {
-  color: #717073;
-}
-
-.pres-submit-btn {
-	width: 100%;
-	background: rgb(0, 68, 124);
-	color: #fff;
-	text-align: center;
-	letter-spacing: 2px;
-}
-.pres-allideas-btn {
-	// width: 35%;
   border-color: #00447c;
   border-width: 5px;
   background: rgba(0, 68, 124, 0.05);
   color: #00447c;
   float: right;
   border-radius: 0px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 1rem;
-	font-weight: 500;
-	text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  // bottom: -65px;
+  position: relative;
+  text-align: center;
+}
+
+.pres-button:hover,
+.pres-allideas-btn:hover {
+  color: #fff;
+  background: rgba(0, 68, 124, 0.75);
+  border-color: #00447c;
+}
+
+.president-page .form-control {
+  background-color: #fff;
+  border: 2px solid #bfbfbf;
+  border-radius: 0px;
+}
+
+.president-page .form-control::-webkit-input-placeholder,
+.president-page .form-control::-moz-placeholder,
+.president-page .form-control:-ms-input-placeholder,
+.president-page .form-control:-moz-placeholder {
+  color: #717073;
+}
+
+.pres-submit-btn {
+  width: 100%;
+  background: rgb(0, 68, 124);
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.pres-allideas-btn {
+  // width: 35%;
+  border-color: #00447c;
+  border-width: 5px;
+  background: rgba(0, 68, 124, 0.05);
+  color: #00447c;
+  float: right;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 .pres-videos {
-	margin-bottom: 20px;
-	border: 0px solid #e3e3e3;
-	// background-color: #fff;
-	color: #000;
+  margin-bottom: 20px;
+  border: 0px solid #e3e3e3;
+  // background-color: #fff;
+  color: #000;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 2px;
 }
 
 .pres-news {
-	margin-bottom: 20px;
-	border: 0px solid #e3e3e3;
-	background-color: #efefef;
-	color: #000;
+  margin-bottom: 20px;
+  border: 0px solid #e3e3e3;
+  background-color: #efefef;
+  color: #000;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 2px;
 }
 
 .pres-speeches {
-	margin-bottom: 20px;
-	border: 0px solid #e3e3e3;
-	// background-color: #fff;
-	color: #000;
+  margin-bottom: 20px;
+  border: 0px solid #e3e3e3;
+  // background-color: #fff;
+  color: #000;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 2px;
 }
 
 .well.pres-speeches {
-	border-bottom: 2px solid #d11242;
+  border-bottom: 2px solid #d11242;
 }
+
 .pres-bkgd-grey {
-	background: #efefef;
+  background: #efefef;
 }
 
 .pres-button-stack {
@@ -275,188 +288,198 @@ hr.pres-links {
   border-width: 5px;
   border-color: #3c3c3c;
   background: rgba(176, 176, 176, 0.1);
-	text-transform: uppercase;
+  text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1rem;
   font-weight: 500;
-	text-align: center;
+  text-align: center;
 }
 
 .pres-stack-left {
-	border-radius: 0px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	border-width: 5px;
-	border-color: #3c3c3c;
-	background: rgba(176, 176, 176, 0.1);
-	text-transform: uppercase;
+  border-radius: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-width: 5px;
+  border-color: #3c3c3c;
+  background: rgba(176, 176, 176, 0.1);
+  text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1rem;
   font-weight: 500;
-	text-align: center;
+  text-align: center;
 }
 
 .pres-stack-right {
-	border-radius: 0px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	border-width: 5px;
-	border-color: #3c3c3c;
-	background: rgba(176, 176, 176, 0.1);
+  border-radius: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-width: 5px;
+  border-color: #3c3c3c;
+  background: rgba(176, 176, 176, 0.1);
   // margin-left: 5px;
-	text-transform: uppercase;
+  text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1rem;
   font-weight: 500;
-	text-transform: uppercase;
+  text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1rem;
   font-weight: 500;
-	text-align: center;
+  text-align: center;
 }
 
 .pres-stack-center {
-	border-radius: 0px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	border-width: 5px;
-	border-color: #3c3c3c;
-	background: rgba(176, 176, 176, 0.1);
-	// margin-right: 5px;
-	// margin-left: 5px;
-	text-transform: uppercase;
+  border-radius: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-width: 5px;
+  border-color: #3c3c3c;
+  background: rgba(176, 176, 176, 0.1);
+  // margin-right: 5px;
+  // margin-left: 5px;
+  text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1rem;
   font-weight: 500;
-	text-align: center;
+  text-align: center;
 }
 
-.pres-button-stack:hover, .pres-stack-left:hover, .pres-stack-right:hover, .pres-stack-center:hover {
-	color: #fff;
-	background: rgba(60, 60, 60, 0.75);
+.pres-button-stack:hover,
+.pres-stack-left:hover,
+.pres-stack-right:hover,
+.pres-stack-center:hover {
+  color: #fff;
+  background: rgba(60, 60, 60, 0.75);
 }
 
 .pres-interact-left {
-	color: #fff;
-	border-radius: 0px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	border-width: 5px;
-	border-color: #fff;
-	background: rgba(255, 255, 255, 0.15);
-	// margin-right: 5px;
-	text-transform: uppercase;
+  color: #fff;
+  border-radius: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-width: 5px;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  // margin-right: 5px;
+  text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1rem;
   font-weight: 500;
-	// margin-left: 15px;
-	width: 100%;
-	text-align: center;
+  // margin-left: 15px;
+  width: 100%;
+  text-align: center;
 }
 
 .pres-interact-right {
-	color: #fff;
-	border-radius: 0px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	border-width: 5px;
-	border-color: #fff;
-	background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-width: 5px;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
   // margin-left: 5px;
-	text-transform: uppercase;
+  text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1rem;
   font-weight: 500;
-	text-transform: uppercase;
+  text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1rem;
   font-weight: 500;
-	width: 100%;
+  width: 100%;
   // margin-right: 15px;
-	text-align: center;
+  text-align: center;
 }
 
 .pres-interact-center {
-	color: #fff;
-	border-radius: 0px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	border-width: 5px;
-	border-color: #fff;
-	background: rgba(255, 255, 255, 0.15);
-	// margin-right: 5px;
-	// margin-left: 5px;
-	text-transform: uppercase;
+  color: #fff;
+  border-radius: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-width: 5px;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  // margin-right: 5px;
+  // margin-left: 5px;
+  text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1rem;
   font-weight: 500;
-	width: 100%;
-	text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .pres-interact {
-	color: #fff !important;
+  color: #fff !important;
   background: #00447c;
-	padding-bottom: 25px;
-	// height: 140px;
+  padding-bottom: 25px;
+  // height: 140px;
 }
 
 
 .pres-section-interact {
-	height: 4em;
+  height: 4em;
 }
 
 .pres-box-interact {
-	display: table;
+  display: table;
 }
 
 .pres-button-interact {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .president-page .form-group {
-	background: transparent;
+  background: transparent;
 }
 
 .president-page .well {
-	border-radius: 0;
+  border-radius: 0;
 }
 
 .pres-slidedown-middle {
-	background: #6d6d6d;
+  background: #6d6d6d;
 }
 
-.pres-panel-heading-left, .pres-panel-heading-right, .pres-panel-heading-center {
-	text-align: center;
-	border-bottom: 1px solid #fff;
+.pres-panel-heading-left,
+.pres-panel-heading-right,
+.pres-panel-heading-center {
+  text-align: center;
+  border-bottom: 1px solid #fff;
 }
 
-.president-page fieldset h3, .president-page fieldset h5 {
-	padding-left: 15px;
+.president-page fieldset h3,
+.president-page fieldset h5 {
+  padding-left: 15px;
 }
+
 .president-page .panel-body .row {
-	padding: 0px;
-	margin-left: -15px;
+  padding: 0px;
+  margin-left: -15px;
 }
+
 .president-page .panel-body .pres-bkgd-grey {
-	padding: 15px 30px;
+  padding: 15px 30px;
 }
+
 .pres-bkgd-blue {
-	background: #00447c;
+  background: #00447c;
 }
+
 .pres-social-btns {
-	letter-spacing: 2px;
+  letter-spacing: 2px;
   text-align: center;
 }
 
 .president-page figure.pres-promo-element {
-	padding: 0 15px 15px 0;
+  padding: 0 15px 15px 0;
 }
 
-.pres-promo-element > .img-responsive {
-	padding: 0px !important;
+.pres-promo-element>.img-responsive {
+  padding: 0px !important;
 }
 
 .president-page .t4-slide .carousel-control {
@@ -478,40 +501,44 @@ hr.pres-links {
   width: auto;
   text-align: center;
 }
+
 .pres-event-text {
-	color: #fff;
+  color: #fff;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 2px;
-	text-align: center;
+  text-align: center;
 }
+
 .pres-event-text h5 {
-	color: #fff;
+  color: #fff;
 }
+
 .pres-shared-gov {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .pres-inner-header {
-	background: #00447c;color: #fff;
+  background: #00447c;
+  color: #fff;
   letter-spacing: 2px;
-	text-align: center;
+  text-align: center;
 }
 
 hr.pres-inner-header {
-	border-top: 2px solid #fff;
-	width: 50%;
-	padding: 0 40px 0 40px;
-	margin-top: 0px;
+  border-top: 2px solid #fff;
+  width: 50%;
+  padding: 0 40px 0 40px;
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
 .pres-inner-header>h1 {
-	margin-top: 35px;
+  margin-top: 35px;
 }
 
 .pres-inner-header h1 {
-	width: 100%;
+  width: 100%;
   text-align: center;
   color: #fff;
   font-size: 2rem;
@@ -520,22 +547,23 @@ hr.pres-inner-header {
 }
 
 .president-page .modal-content {
-	background: #fff;
-	padding: 20px;
+  background: #fff;
+  padding: 20px;
 }
 
 .president-page .modal-header .close {
-	font-size: 2em;
-	color: #434343;
-	margin-top: 0;
+  font-size: 2em;
+  color: #434343;
+  margin-top: 0;
 }
 
 .president-page .modal-dialog {
-	width: 50%;
-	padding-top: 25%;
+  width: 50%;
+  padding-top: 25%;
 }
+
 .modal-content>hr.pres-links {
-	margin: 0 15px
+  margin: 0 15px
 }
 
 .president-page .well {
@@ -569,13 +597,15 @@ hr.pres-inner-header {
 }
 
 @media screen and (min-width: 768px) {
-	.president-page .promo-element {
+  .president-page .promo-element {
     display: block;
-	}
-	.president-page figure.pres-promo-element {
+  }
+
+  .president-page figure.pres-promo-element {
     padding: 0 15px 15px 0;
-	}
-	.president-page .promo-center {
+  }
+
+  .president-page .promo-center {
     display: flex;
     align-items: center;
   }
@@ -588,190 +618,227 @@ hr.pres-inner-header {
 
 @media screen and (min-width: 992px) {
 
-	.pres-feature-caption-text {
-		// color: #fff;
-		width: 50%;
-		float: right;
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		left: 25%;
-		bottom: auto;
-		background-color: rgba(0, 68, 124, 0.8);
-		// text-align: center;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
+  .pres-feature-caption-text {
+    // color: #fff;
+    width: 50%;
+    float: right;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
+    bottom: auto;
+    background-color: rgba(0, 68, 124, 0.8);
+    // text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-	.pres-button-stack {
-		width: 99.5%;
-	}
+  .pres-button-stack {
+    width: 99.5%;
+  }
 
-	.pres-stack-left {
-		border-radius: 0px;
-		margin-top: 5px;
-		margin-bottom: 5px;
-		border-width: 5px;
-		border-color: #3c3c3c;
-		background: rgba(176, 176, 176, 0.1);
-		margin-right: 5px;
-		width: 32%;
-	}
+  .pres-stack-left {
+    border-radius: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-width: 5px;
+    border-color: #3c3c3c;
+    background: rgba(176, 176, 176, 0.1);
+    margin-right: 5px;
+    width: 32%;
+  }
 
-	.pres-stack-right {
-	  margin-left: 5px;
-	}
+  .pres-stack-right {
+    margin-left: 5px;
+  }
 
-	.pres-stack-center {
-		margin-right: 5px;
-		margin-left: 5px;
-		width: 32%;
-	}
-	.pres-feature-caption-text{
-		padding: 1rem 1rem;
-	}
-	.pres-panel-heading-left {
-		text-align: right;
-		padding-right: 80px;
-		border-right: 1px solid #fff;
-	}
-	.pres-panel-heading-right {
-		text-align: left;
-		padding-left: 80px;
-		border-left: 1px solid #fff;
-	}
-	.pres-panel-heading-center {
-		text-align: center;
-	}
-	.pres-panel-heading-left, .pres-panel-heading-right, .pres-panel-heading-center {
-		border-bottom: 0px solid #fff;
-	}
-	.pres-allideas-btn {
-		width: 35%;
-	}
-	.pres-articles-btn {
-		width: 45%;
-	}
-	h3.pres-vision {
+  .pres-stack-center {
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 32%;
+  }
+
+  .pres-feature-caption-text {
+    padding: 1rem 1rem;
+  }
+
+  .pres-panel-heading-left {
+    text-align: right;
+    padding-right: 80px;
+    border-right: 1px solid #fff;
+  }
+
+  .pres-panel-heading-right {
+    text-align: left;
+    padding-left: 80px;
+    border-left: 1px solid #fff;
+  }
+
+  .pres-panel-heading-center {
+    text-align: center;
+  }
+
+  .pres-panel-heading-left,
+  .pres-panel-heading-right,
+  .pres-panel-heading-center {
+    border-bottom: 0px solid #fff;
+  }
+
+  .pres-allideas-btn {
+    width: 35%;
+  }
+
+  .pres-articles-btn {
+    width: 45%;
+  }
+
+  h3.pres-vision {
     margin-top: 0px;
-		margin-bottom: 15px;
-	}
-	.pres-vision-height{
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.pres-vision-height-box {
-		position: relative;
-	  min-height: 240px;
-	}
-	.pres-button {
-		position: absolute;
-		bottom: 0;
+    margin-bottom: 15px;
+  }
+
+  .pres-vision-height {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pres-vision-height-box {
+    position: relative;
+    min-height: 240px;
+  }
+
+  .pres-button {
+    position: absolute;
+    bottom: 0;
     right: 0;
-	}
-	article.featured-story-text.promo-element {
-		display: inline-block;
-	}
-	.pres-interact-left {
-		margin-right: 5px;
-	}
+  }
 
-	.pres-interact-right {
-	  margin-left: 5px;
-	  margin-right: 15px;
-	}
+  article.featured-story-text.promo-element {
+    display: inline-block;
+  }
 
-	.pres-interact-center {
-		margin-right: 5px;
-		margin-left: 5px;
-	}
-	.pres-button-interact, .pres-stack-left, .pres-stack-right, .pres-stack-center, .pres-button-stack {
-		height:	85px;
-	}
+  .pres-interact-left {
+    margin-right: 5px;
+  }
 
-	div.well.pres-ideas {
-		height: 320px;
-	}
-	div.well.pres-videos {
-		height: 590px;
-	}
-	div.well.pres-news {
-		height: 415px;
-	}
-	div.well.pres-speeches {
-		height: 205px;
-	}
-	.president-page .promo-element .img-responsive {
-		max-width: 100%;
-	}
+  .pres-interact-right {
+    margin-left: 5px;
+    margin-right: 15px;
+  }
 
-	.pres-idea-inner {
-		margin: 10px;
-	}
+  .pres-interact-center {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 
-	//ROLLOVER STYLES
-	// .pres-speeches-box {
-	// 		overflow: hidden;
-	// 		height: 190px;
-	// }
-	//
-	// .pres-speeches-hidbox {
-	// 	top: 100%;
-	// 	position: relative;
-	// 	transition: all .3s ease-out;
-	// 	background: #d11242;
-	// 	height: 100%;
-	// 	width: 105%;
-	// }
-	//
-	// .pres-speeches-box:hover > .pres-speeches-hidbox {
-	// 	top: 0;
-	// }
-	//
-	// .well.pres-speeches {
-	// 	position: absolute;
-	// }
-	figure.promo-element {
-		padding-top: 15px;
-	}
+  .pres-button-interact,
+  .pres-stack-left,
+  .pres-stack-right,
+  .pres-stack-center,
+  .pres-button-stack {
+    height: 85px;
+  }
 
-	.president-page figure.pres-promo-element {
-		padding: 0 0 15px 0;
-	}
+  div.well.pres-ideas {
+    height: 320px;
+  }
 
-	.pres-btn-mar {
-		margin-right: 15px;
-	}
-	.pres-hidden-desktop {
-		display: none;
-	}
-	.pres-links {
-		padding-top: 15px;
-	}
-	.president-page .t4-slide .carousel-control {
-	  width: 7rem;
-	}
-	.pres-feature-heading {
-	    font-size: 2.0rem !important;
-	}
-	.pres-rsvp-event {
-		text-align: center;
-		left: 25%;
-	}
-	.pres-stack-btm {
-		width: 49.15%;
-	}
+  div.well.pres-videos {
+    height: 590px;
+  }
+
+  div.well.pres-news {
+    height: 415px;
+  }
+
+  div.well.pres-speeches {
+    height: 205px;
+  }
+
+  .president-page .promo-element .img-responsive {
+    max-width: 100%;
+  }
+
+  .pres-idea-inner {
+    margin: 10px;
+  }
+
+  //ROLLOVER STYLES
+  // .pres-speeches-box {
+  // 		overflow: hidden;
+  // 		height: 190px;
+  // }
+  //
+  // .pres-speeches-hidbox {
+  // 	top: 100%;
+  // 	position: relative;
+  // 	transition: all .3s ease-out;
+  // 	background: #d11242;
+  // 	height: 100%;
+  // 	width: 105%;
+  // }
+  //
+  // .pres-speeches-box:hover > .pres-speeches-hidbox {
+  // 	top: 0;
+  // }
+  //
+  // .well.pres-speeches {
+  // 	position: absolute;
+  // }
+  figure.promo-element {
+    padding-top: 15px;
+  }
+
+  .president-page figure.pres-promo-element {
+    padding: 0 0 15px 0;
+  }
+
+  .pres-btn-mar {
+    margin-right: 15px;
+  }
+
+  .pres-hidden-desktop {
+    display: none;
+  }
+
+  .pres-links {
+    padding-top: 15px;
+  }
+
+  .president-page .t4-slide .carousel-control {
+    width: 7rem;
+  }
+
+  .pres-feature-heading {
+    font-size: 2.0rem !important;
+  }
+
+  .pres-rsvp-event {
+    text-align: center;
+    left: 25%;
+  }
+
+  .pres-stack-btm {
+    width: 49.15%;
+  }
 
 }
 
 @media screen and (min-width: 1200px) {
-	.pres-button-interact, .pres-stack-left, .pres-stack-right, .pres-stack-center, .pres-button-stack {
-		height: 86px;
-	}
-	.pres-button-stack {
+
+  .pres-button-interact,
+  .pres-stack-left,
+  .pres-stack-right,
+  .pres-stack-center,
+  .pres-button-stack {
+    height: 86px;
+  }
+
+  .pres-button-stack {
     width: 99.1%;
-	}
-	.pres-feature-heading {
-	    font-size: 2.5rem !important;
-	}
+  }
+
+  .pres-feature-heading {
+    font-size: 2.5rem !important;
+  }
 }

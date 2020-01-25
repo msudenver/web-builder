@@ -4,6 +4,7 @@
   font-weight: 700;
   line-height: 24px;
 }
+
 .quote p:nth-of-type(2) {
   color: #000000;
   font-size: 16px;
@@ -11,11 +12,13 @@
   font-style: italic;
   line-height: 24px;
 }
+
 .content-blockquote {
   margin-left: 13rem;
   padding: 1rem;
   background-color: #FAFAFA;
 }
+
 blockquote {
   padding: 11px 22px;
   margin: 0 0 22px;
@@ -25,4 +28,11 @@ blockquote {
   font-weight: 400;
   line-height: 24px;
   font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+  .content-blockquote {
+    margin-left: 0 !important;
+    display: inline-block !important;
+  }
 }
