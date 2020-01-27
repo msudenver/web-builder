@@ -12,7 +12,7 @@ html {
 
 body {
   height: 100%;
-  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-family: "Gotham A", "Gotham B", sans-serif;
 }
 
 h1,
@@ -149,9 +149,9 @@ section {
   background: #fff;
 }
 
-button, [type="button"],
-[type="reset"],
-[type="submit"] {
+button, [type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: none;
 }
 
@@ -401,7 +401,7 @@ button, [type="button"],
 }
 
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 16px;
 }
 
