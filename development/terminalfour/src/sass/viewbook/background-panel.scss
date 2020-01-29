@@ -42,7 +42,7 @@
 
 @media (max-width: 767px) {
   .background-panel {
-    max-height: fit-content !important;
+    max-height: none !important;
     min-height: fit-content !important;
     height: 67.535vw;
   }
