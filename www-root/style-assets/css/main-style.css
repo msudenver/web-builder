@@ -7446,8 +7446,9 @@ td.visible-print {
   padding-bottom: 8px;
 }
 
-#bs-example-navbar-collapse-1 {
-  overflow-y: scroll;
+#menu-nav {
+  max-height: 40vh !important;
+  overflow: scroll;
 }
 
 .apply-button {
@@ -9776,37 +9777,31 @@ footer {
 }
 
 .custom-blue-btn {
-  border-color: #00447c;
-  border-width: 2px;
-  background: #fff;
-  color: #00447c !important;
-  float: right;
-  border-radius: 0px;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 700;
-  position: relative;
-  text-align: center;
-  height: 93px;
-  width: 100%;
   margin-bottom: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #002855 !important;
+  border: 2px solid #002855 !important;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 32px 0;
 }
 
 .custom-red-btn {
-  border-color: #D11242;
-  border-width: 2px;
-  background: #fff;
-  color: #D11242 !important;
-  float: right;
-  border-radius: 0px;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 700;
-  position: relative;
-  text-align: center;
-  height: 93px;
-  width: 100%;
   margin-bottom: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #D11242 !important;
+  border: 2px solid #D11242 !important;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 32px 0;
 }
 
 .custom-red-btn:hover {
@@ -9824,20 +9819,17 @@ footer {
 }
 
 .custom-grey-btn {
-  border-color: #717073;
-  border-width: 2px;
-  background: #fff;
-  color: #717073 !important;
-  float: right;
-  border-radius: 0px;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 700;
-  position: relative;
-  text-align: center;
-  height: 93px;
-  width: 100%;
   margin-bottom: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #717073 !important;
+  border: 2px solid #717073 !important;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 32px 0;
 }
 
 .custom-grey-btn:hover {
@@ -9848,20 +9840,17 @@ footer {
 }
 
 .custom-black-btn {
-  border-color: #000000;
-  border-width: 2px;
-  background: #fff;
-  color: #000000 !important;
-  float: right;
-  border-radius: 0px;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 700;
-  position: relative;
-  text-align: center;
-  height: 93px;
-  width: 100%;
   margin-bottom: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000 !important;
+  border: 2px solid #000000 !important;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 32px 0;
 }
 
 .custom-black-btn:hover {

@@ -70,8 +70,13 @@ $highlightPrimaryBlue: #7591bc;
   padding-bottom: 8px;
 }
 
-#bs-example-navbar-collapse-1 {
- overflow-y: scroll;
+// #bs-example-navbar-collapse-1 {
+//  overflow-y: scroll;
+// }
+
+#menu-nav {
+  max-height: 40vh !important;
+  overflow: scroll;
 }
 
 .apply-button {
