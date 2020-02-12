@@ -74,9 +74,11 @@ $highlightPrimaryBlue: #7591bc;
 //  overflow-y: scroll;
 // }
 
-#menu-nav {
-  max-height: 40vh !important;
-  overflow: scroll;
+@media screen and (max-width: 991px) {
+  #menu-nav {
+    max-height: 40vh !important;
+    overflow: scroll;
+  }
 }
 
 .apply-button {

@@ -7446,11 +7446,12 @@ td.visible-print {
   padding-bottom: 8px;
 }
 
-#menu-nav {
-  max-height: 40vh !important;
-  overflow: scroll;
+@media screen and (max-width: 991px) {
+  #menu-nav {
+    max-height: 40vh !important;
+    overflow: scroll;
+  }
 }
-
 .apply-button {
   background: #d11242;
   color: white;
