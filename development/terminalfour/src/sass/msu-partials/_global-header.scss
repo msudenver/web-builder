@@ -82,10 +82,11 @@ $highlightPrimaryBlue: #7591bc;
     // To remove the appearance of the menu scroll bar
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
-    ::-webkit-scrollbar { 
-      display: none;  /* Safari and Chromium */
-    }
   }
+  #menu-nav::-webkit-scrollbar { 
+    display: none;  /* Safari and Chromium */
+  }
+
 }
 
 .apply-button {

@@ -7455,7 +7455,8 @@ td.visible-print {
     scrollbar-width: none;
     /* Firefox */
   }
-  #menu-nav ::-webkit-scrollbar {
+
+  #menu-nav::-webkit-scrollbar {
     display: none;
     /* Safari and Chromium */
   }
