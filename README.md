@@ -215,7 +215,7 @@ The first thing to realise is that all your development work should be carried o
 
 ### Express
 
-The Express grunt task is being used to create an on-the-fly web serevr for your project. This ensures that the site you are previewing should behave the same as it would on an actual server.
+The Express grunt task is being used to create an on-the-fly web server for your project. This ensures that the site you are previewing should behave the same as it would on an actual server.
 
 ### Copy
 The Copy task is simply used to move files around, in this case, taking all the bootstrap/foundation etc JavaScript files and placing them under the `style-assets` directory.
@@ -235,7 +235,7 @@ Any HTML files are validated against W3C standards. A report of the validation r
 
 ### Includes
 
-You can modularise your HTML into separate files if you like. For example you might have a consistent header section within your pages. Instead of having this code at the top of every page, you can separete this out into a seperate file and include it in your cutup files.
+You can modularise your HTML into separate files if you like. For example you might have a consistent header section within your pages. Instead of having this code at the top of every page, you can separate this out into a separate file and include it in your cutup files.
 
 All includes should be placed in the `_/components/terminalfour/html/includes/` directory and to reference them to be included use the @@ syntax. For example, let's say you had your header section saved in a file called `header.html` in your includes directory. You can reference this in other files using the following code:
 
