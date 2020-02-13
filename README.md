@@ -249,7 +249,7 @@ You can also use variables inside your include files which can be passed as part
 <title>University name - @@pageTitle</title>
 ```
 
-You can pass in a variable in your include statement like so (notice there is no need for a semi-colon at the end):
+You can pass in a variable in your include statement like so (notice there is no need for a semicolon at the end):
 
 ```html
 @@include('header.html', {"pageTitle": "Homepage"})
