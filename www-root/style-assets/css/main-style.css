@@ -7449,7 +7449,15 @@ td.visible-print {
 @media screen and (max-width: 991px) {
   #menu-nav {
     max-height: 40vh !important;
-    overflow: scroll;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  #menu-nav ::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chromium */
   }
 }
 .apply-button {
@@ -8222,10 +8230,6 @@ ul.nav.navbar-nav li a {
 
   li.dropdown.collapse.navbar-collapse {
     position: relative;
-  }
-
-  #bs-example-navbar-collapse-1 {
-    overflow: visible;
   }
 
   a.btn.btn-default.visit-give-mobile, a.btn.btn-default.apply-mobile {

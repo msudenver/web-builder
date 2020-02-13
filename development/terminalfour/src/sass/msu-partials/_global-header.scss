@@ -77,7 +77,14 @@ $highlightPrimaryBlue: #7591bc;
 @media screen and (max-width: 991px) {
   #menu-nav {
     max-height: 40vh !important;
-    overflow: scroll;
+    overflow-y: scroll;
+
+    // To remove the appearance of the menu scroll bar
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    ::-webkit-scrollbar { 
+      display: none;  /* Safari and Chromium */
+    }
   }
 }
 
@@ -792,9 +799,9 @@ div#searchModal.modal.fade.in {
   li.dropdown.collapse.navbar-collapse {
     position: relative;
   }
-  #bs-example-navbar-collapse-1 {
-   overflow: visible;
-  }
+  // #bs-example-navbar-collapse-1 {
+  //  overflow: visible;
+  // }
 
 
 //action button fixes
