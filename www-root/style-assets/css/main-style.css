@@ -10235,7 +10235,7 @@ blockquote {
   font-size: 22px;
   width: 100%;
   margin-bottom: 10px;
-  line-height: 22px;
+  line-height: 1em;
 }
 .content-inner h3 {
   color: #717073;
