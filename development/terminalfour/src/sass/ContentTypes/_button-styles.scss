@@ -31,37 +31,37 @@
 }
 
 // Original custom-blue-btn
-// .custom-blue-btn {
-//   margin-bottom: 15px;
-//   width: 100%;
-//   background-color: #ffffff;
-//   color: #002855 !important;
-//   border: 2px solid #002855 !important;
-//   font-family: 'Gotham A', 'Gotham B', sans-serif;
-//   font-weight: 700;
-//   font-size: 18px;
-//   line-height: 25px;
-//   text-align: center;
-//   padding: 32px 0;
-// }
+.custom-blue-btn {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #002855 !important;
+  border: 2px solid #002855 !important;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 32px 0;
+}
 
 // // Original custom-red-btn 
-// .custom-red-btn {
-//   margin-bottom: 15px;
-//   width: 100%;
-//   background-color: #ffffff;
-//   color: #D11242 !important;
-//   border: 2px solid #D11242 !important;
-//   font-family: 'Gotham A', 'Gotham B', sans-serif;
-//   font-weight: 700;
-//   font-size: 18px;
-//   line-height: 25px;
-//   text-align: center;
-//   padding: 32px 0;
-// }
+.custom-red-btn {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #D11242 !important;
+  border: 2px solid #D11242 !important;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 32px 0;
+}
 
 // Custom-btn v2 styles
-.custom-blue-btn {
+.custom-blue-btn2 {
   border-color: #00447c;
   border-width: 2px;
   background: #fff;
@@ -80,7 +80,7 @@
   margin-bottom: 15px;
 }
 
-.custom-red-btn {
+.custom-red-btn2 {
   border-color: #D11242;
   border-width: 2px;
   background: #fff;
@@ -116,22 +116,22 @@
 }
 
 // Original grey btn
-// .custom-grey-btn {
-//   margin-bottom: 15px;
-//   width: 100%;
-//   background-color: #ffffff;
-//   color: #717073 !important;
-//   border: 2px solid #717073 !important;
-//   font-family: 'Gotham A', 'Gotham B', sans-serif;
-//   font-weight: 700;
-//   font-size: 18px;
-//   line-height: 25px;
-//   text-align: center;
-//   padding: 32px 0;
-// }
+.custom-grey-btn {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #717073 !important;
+  border: 2px solid #717073 !important;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 32px 0;
+}
 
 // V2 grey btn
-.custom-grey-btn {
+.custom-grey-btn2 {
   border-color: #717073;
   border-width: 2px;
   background: #fff;
@@ -158,22 +158,22 @@
 }
 
 // Original black btn
-// .custom-black-btn {
-//   margin-bottom: 15px;
-//   width: 100%;
-//   background-color: #ffffff;
-//   color: #000000 !important;
-//   border: 2px solid #000000 !important;
-//   font-family: 'Gotham A', 'Gotham B', sans-serif;
-//   font-weight: 700;
-//   font-size: 18px;
-//   line-height: 25px;
-//   text-align: center;
-//   padding: 32px 0;
-// }
+.custom-black-btn {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000 !important;
+  border: 2px solid #000000 !important;
+  font-family: 'Gotham A', 'Gotham B', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 32px 0;
+}
 
 // V2 black btn
-.custom-black-btn {
+.custom-black-btn2 {
   border-color: #000000;
   border-width: 2px;
   background: #fff;
@@ -215,4 +215,32 @@
   .contact-info-mobile {
     display: none;
   }
+}
+.custom-red-btn2:hover {
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #DE2554;
+  border-color: #D11242;
+}
+
+
+.custom-blue-btn2:hover {
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #00418B;
+  border-color: #002855;
+}
+  
+.custom-grey-btn2:hover {
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #969696;
+  border-color: #717073;
+}
+  
+.custom-black-btn2:hover {
+  transition: background-color .4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #393939;
+  border-color: #000000;
 }

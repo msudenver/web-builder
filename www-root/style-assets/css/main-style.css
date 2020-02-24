@@ -9810,6 +9810,40 @@ footer {
   padding: 32px 0;
 }
 
+.custom-blue-btn2 {
+  border-color: #00447c;
+  border-width: 2px;
+  background: #fff;
+  color: #00447c !important;
+  float: right;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  height: 93px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.custom-red-btn2 {
+  border-color: #D11242;
+  border-width: 2px;
+  background: #fff;
+  color: #D11242 !important;
+  float: right;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  height: 93px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
 .custom-red-btn:hover {
   transition: background-color 0.4s ease-in-out;
   color: #ffffff !important;
@@ -9838,6 +9872,23 @@ footer {
   padding: 32px 0;
 }
 
+.custom-grey-btn2 {
+  border-color: #717073;
+  border-width: 2px;
+  background: #fff;
+  color: #717073 !important;
+  float: right;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  height: 93px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
 .custom-grey-btn:hover {
   transition: background-color 0.4s ease-in-out;
   color: #ffffff !important;
@@ -9857,6 +9908,23 @@ footer {
   line-height: 25px;
   text-align: center;
   padding: 32px 0;
+}
+
+.custom-black-btn2 {
+  border-color: #000000;
+  border-width: 2px;
+  background: #fff;
+  color: #000000 !important;
+  float: right;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  height: 93px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .custom-black-btn:hover {
@@ -9884,6 +9952,34 @@ footer {
     display: none;
   }
 }
+.custom-red-btn2:hover {
+  transition: background-color 0.4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #DE2554;
+  border-color: #D11242;
+}
+
+.custom-blue-btn2:hover {
+  transition: background-color 0.4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #00418B;
+  border-color: #002855;
+}
+
+.custom-grey-btn2:hover {
+  transition: background-color 0.4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #969696;
+  border-color: #717073;
+}
+
+.custom-black-btn2:hover {
+  transition: background-color 0.4s ease-in-out;
+  color: #ffffff !important;
+  background-color: #393939;
+  border-color: #000000;
+}
+
 .blue {
   background: #007DC3;
 }
