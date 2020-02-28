@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   var os = require('os'); os.tmpDir = os.tmpdir;
   // Load the various tasks required
   grunt.loadNpmTasks('grunt-bower-task');
@@ -42,11 +42,11 @@ module.exports = function(grunt) {
 
     bower: {
       install: {
-         options: {
-           targetDir: 'development/lib',
-           layout: 'byComponent',
-           cleanup: true
-         }//options
+        options: {
+          targetDir: 'development/lib',
+          layout: 'byComponent',
+          cleanup: true
+        }//options
       }//install
     },//bower
 
@@ -62,8 +62,8 @@ module.exports = function(grunt) {
     uglify: {
       options: {
         banner: '<%= pkg.warning %>/**\n * Client: <%= pkg.clientName %>\n * Project: <%= pkg.projectName %>\n * Version: <%= pkg.version %>\n * Description: <%= pkg.description %>\n * Copyright <%= grunt.template.today("yyyy") %>\n * Created by <%= pkg.developer %>\n * on behalf of TERMINALFOUR\n * www.terminalfour.com\n */\n',
-        preserveComments : 'some',
-        mangle : true
+        preserveComments: 'some',
+        mangle: true
       },//options
       build: {
         src: 'development/terminalfour/src/js/*.js',
@@ -84,6 +84,7 @@ module.exports = function(grunt) {
           'www-root/style-assets/css/print.css': 'development/terminalfour/src/sass/print.scss',
           'www-root/style-assets/css/newsroom-style.css': 'development/terminalfour/src/sass/newsroomHomepage/newsroom-style.scss',
           'www-root/style-assets/css/possible.css': 'development/terminalfour/src/sass/possible.scss',
+          'www-root/style-assets/css/studenthubhome.css': 'development/terminalfour/src/sass/studenthubhome.scss'
         }//files
       }//dist
     },//sass
@@ -133,7 +134,7 @@ module.exports = function(grunt) {
           includesDir: 'development/terminalfour/src/html/includes'
         },
         files: [
-          {src: '**/*.html', dest: 'www-root/', expand: true, cwd: 'development/terminalfour/src/html/'}
+          { src: '**/*.html', dest: 'www-root/', expand: true, cwd: 'development/terminalfour/src/html/' }
         ]
       }
     },//includereplace
@@ -151,19 +152,19 @@ module.exports = function(grunt) {
         }]
       },
       media: {
-          files: [{
-              expand: true, flatten: true, src: ['development/terminalfour/src/media/*'], dest: 'www-root/style-assets/media/', filter: 'isFile'
-          }]
+        files: [{
+          expand: true, flatten: true, src: ['development/terminalfour/src/media/*'], dest: 'www-root/style-assets/media/', filter: 'isFile'
+        }]
       },
       mediaAdmissions: {
-          files: [{
-              expand: true, flatten: true, src: ['development/terminalfour/src/media/admissions-redesign/*'], dest: 'www-root/style-assets/media/admissions-redesign/', filter: 'isFile'
-          }]
+        files: [{
+          expand: true, flatten: true, src: ['development/terminalfour/src/media/admissions-redesign/*'], dest: 'www-root/style-assets/media/admissions-redesign/', filter: 'isFile'
+        }]
       },
       mediaNewsroom: {
-          files: [{
-              expand: true, flatten: true, src: ['development/terminalfour/src/media/newsroom-redesign/*'], dest: 'www-root/style-assets/media/newsroom-redesign/', filter: 'isFile'
-          }]
+        files: [{
+          expand: true, flatten: true, src: ['development/terminalfour/src/media/newsroom-redesign/*'], dest: 'www-root/style-assets/media/newsroom-redesign/', filter: 'isFile'
+        }]
       }
     },//copy
 
@@ -195,8 +196,8 @@ module.exports = function(grunt) {
       },//htmlcompile
 
       copymedia: {
-          files: ['development/terminalfour/src/html/**/*.html', 'development/**/**/**/*.scss'],
-          tasks: ['copy:media']
+        files: ['development/terminalfour/src/html/**/*.html', 'development/**/**/**/*.scss'],
+        tasks: ['copy:media']
       }
 
       //Uncomment the region below to add HTML Validation into the project (Dont forget to add a comment on the line above after the HTML compile curly braces right before the comment)
@@ -213,17 +214,17 @@ module.exports = function(grunt) {
     */
     svg_sprite: {
 
-        svg_files: {
-            expand: true,
-            cwd: 'development/terminalfour/src/media',
-            src			: ['**/*.svg'],
-            dest		: 'www-root/style-assets/media/',
-            options: {
-                mode: {
-                    defs: true
-                }
-            }
+      svg_files: {
+        expand: true,
+        cwd: 'development/terminalfour/src/media',
+        src: ['**/*.svg'],
+        dest: 'www-root/style-assets/media/',
+        options: {
+          mode: {
+            defs: true
+          }
         }
+      }
     }
   });
 
