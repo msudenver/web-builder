@@ -77,6 +77,7 @@
     .panel-body {
       text-align: left;
       background-color: #EFEFEF !important;
+      word-break: break-all; //added
     }
   }
 }

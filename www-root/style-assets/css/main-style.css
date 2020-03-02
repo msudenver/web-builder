@@ -11469,6 +11469,7 @@ hr.style-one {
 .panel-slide .panel-collapse .panel-body {
   text-align: left;
   background-color: #EFEFEF !important;
+  word-break: break-all;
 }
 
 .panel-profile-board {
