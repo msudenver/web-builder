@@ -631,7 +631,7 @@ body.home .services .services-btn {
   border-radius: 0;
   display: inline-block;
   background: #1f4d69 url("../images/bgGrid.jpg");
-  margin: 0 -1px 1px 0;
+  margin: 5px -1px 5px 0;
   border: 1px solid rgba(255, 255, 255, 0.5);
   color: #ffffff;
   font-weight: 200;
@@ -640,7 +640,7 @@ body.home .services .services-btn {
   font-size: 18px;
   font-size: 1.8rem;
   height: 80px;
-  margin: 0 -13px;
+  margin: 3px 5px;
 }
 
 body.home .services .services-btn:hover {
