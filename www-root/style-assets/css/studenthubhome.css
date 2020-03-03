@@ -366,7 +366,7 @@ h4 {
 }
 
 .zebra {
-  background: #7777777a;
+  background: #F7F7F7;
 }
 
 .promospace {
@@ -489,7 +489,6 @@ h4 {
   padding: 5px;
   text-decoration: none;
   outline: none;
-  text-transform: uppercase;
 }
 
 .tab-container {
@@ -505,10 +504,6 @@ h4 {
 }
 
 body.home {
-  background: url("https://msudenver.edu/media/studenthub/images/Campus-Background-mobile.jpg") bottom;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   height: 100%;
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -522,7 +517,6 @@ body.home section {
 body.home h1 {
   font-size: 40px;
   font-size: 4rem;
-  text-transform: uppercase;
   font-weight: normal;
   line-height: 0.8;
   margin: 0 0 0 40px;
@@ -534,7 +528,6 @@ body.home h2 {
   font-weight: 700;
   font-size: 22px;
   font-size: 2.2rem;
-  text-transform: uppercase;
   color: #ffffff;
   margin: 30px 0 -10px;
   position: relative;
@@ -553,7 +546,6 @@ body.home h2:before {
 body.home h3 {
   font-weight: 900;
   font-size: 2em;
-  text-transform: uppercase;
   margin: 8px 0 0;
   color: #00447C;
 }
@@ -562,7 +554,6 @@ body.home h4 {
   font-weight: 500;
   font-size: 18px;
   font-size: 1.8rem;
-  text-transform: uppercase;
   margin-bottom: 0;
   display: block;
   width: 100%;
@@ -575,8 +566,13 @@ body.home header .title {
   vertical-align: bottom;
 }
 
+body.home header {
+  background-color: #00447C;
+}
+
 body.home header .mainLogo {
-  max-width: 35%;
+  width: 35%;
+  background: none;
 }
 
 body.home .navbar-default {
@@ -620,10 +616,10 @@ body.home .services {
 body.home .services .services-btn {
   border-radius: 0;
   display: inline-block;
-  background: #b7c4ce;
-  border: 3px solid #00447C;
+  background: rgba(255, 255, 255, 0.7);
+  border: 3px solid white;
   color: #00447C;
-  font-weight: 200;
+  font-weight: 600;
   text-align: center;
   display: block;
   font-size: 18px;
@@ -632,10 +628,17 @@ body.home .services .services-btn {
   margin-left: -15px;
   height: 5em;
 }
+body.home .services .services-btn a {
+  font-weight: 600;
+}
 
 body.home .services .services-btn:hover {
-  background: #1f4d69;
+  background: #00447c;
   text-decoration: none;
+}
+body.home .services .services-btn:hover a {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #00447c;
 }
 
 body.home .services a {
@@ -733,13 +736,8 @@ body.home .calendar .title .main {
   font-size: 2.4rem;
 }
 
-body.home .calendar .title .semester {
-  text-transform: uppercase;
-}
-
 body.home .calendar .title .year {
   font-family: "Lato", sans-serif;
-  text-transform: uppercase;
   margin-right: 10px;
 }
 
@@ -762,18 +760,24 @@ body.home .calendar .day {
   height: 145px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 10px;
-  background-color: rgba(30, 74, 101, 0.72);
+  color: #fff;
+  background-color: #d11042;
 }
 
 body.home .calendar .day:hover {
-  background: rgba(30, 74, 101, 0.9);
+  background-color: #fff;
+}
+body.home .calendar .day:hover .date {
+  color: #d11042;
+}
+body.home .calendar .day:hover .event {
+  color: #d11042;
 }
 
 body.home .calendar .day .date {
   color: #ffffff;
   font-size: 12px;
   font-size: 1.2rem;
-  text-transform: uppercase;
   font-weight: 400;
 }
 
@@ -783,7 +787,6 @@ body.home .calendar .day .event {
   font-weight: 300;
   font-size: 14px;
   font-size: 1.4rem;
-  text-transform: uppercase;
   line-height: 1.3;
   margin-top: 10px;
 }
@@ -810,18 +813,18 @@ body.home .red {
 }
 
 body.home .white {
-  background: whitesmoke;
+  color: #707070;
   padding: 10px;
-  border: 3px solid #00447C;
+  border: 3px solid rgba(122, 122, 122, 0.5);
   margin-left: 5px;
   margin-top: 10px;
   margin-right: 5px;
+  font-weight: 600;
 }
 
 .left-column {
   margin-bottom: 5px;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .middle-column [class*=col-] {
@@ -832,7 +835,6 @@ body.home .white {
   font-weight: 200;
   font-size: 18px;
   font-size: 1.8rem;
-  text-transform: uppercase;
   margin-bottom: 0;
   display: block;
   width: 100%;
@@ -984,7 +986,6 @@ body.home .module-small [class*=col-] {
     font-size: 12px;
     font-size: 1.2rem;
     color: #ffffff;
-    text-transform: uppercase;
     margin-right: 12px;
     letter-spacing: 1px;
   }
