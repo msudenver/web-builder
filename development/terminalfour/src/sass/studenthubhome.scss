@@ -26,7 +26,14 @@
   overflow: hidden;
 }
 
-.promospace .promotab1 h3,
+.promospace .promotab1 h3 {
+  color: #00447C;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
 .promospace .promotab2 h3,
 .promospace .promotab3 h3 {
   color: #ffffff;
@@ -43,7 +50,13 @@
 }
 
 .promospace .promotab1 a,
-.promospace .promotab1 p,
+.promospace .promotab1 p {
+  font-size: 14px;
+  color: #00447c;
+  font-weight: 200;
+  padding-bottom: 15px;
+  margin: 0 15px;
+}
 .promospace .promotab2 a,
 .promospace .promotab2 p,
 .promospace .promotab3 a,
@@ -69,15 +82,19 @@
 }
 
 .promotab1 {
-  background: #e67e22;
+  background: #FFF;
+  border-top: 3px solid #FFFFFF;
 }
 
 .promotab2 {
-  background: #16a085;
+  background: rgba(209, 18, 66, 100);
+  border-top: 3px solid #FFFFFF;
 }
 
 .promotab3 {
-  background: #8e44ad;
+  background: rgba(112, 122, 122, 100);
+  border-top: 3px solid #FFFFFF;
+  border-bottom: 3px solid #FFFFFF;
 }
 
 .fa-chevron-right {
@@ -112,30 +129,28 @@
     padding: 0;
   }
 
-  .promospace .promotab1 {
-    background: rgba(230, 126, 34, 0.75);
-    border-top: 3px solid #d35400;
-    border-bottom: 3px solid #d35400;
+  .promotab1 {
+    background: #fff;
+    border-top: 3px solid #FFFFFF;
   }
-
-  .promospace .promotab2 {
-    background: rgba(0, 118, 95, 0.75);
-    border-top: 3px solid #00765f;
-    border-bottom: 3px solid #00765f;
+  
+  .promotab2 {
+    background: rgba(209, 18, 66, 100);
+    border-top: 3px solid #FFFFFF;
   }
-
-  .promospace .promotab3 {
-    background: rgba(102, 0, 142, 0.75);
-    border-top: 3px solid #66008e;
-    border-bottom: 3px solid #66008e;
+  
+  .promotab3 {
+    background: rgba(112, 122, 122, 100);
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
   }
 }
 
 #tabs li a {
   height: 57px;
+  font-weight: 600;
   font-family: "Lato", sans-serif;
   font-size: 13px;
-  color: #fff;
   padding: 5px;
   text-decoration: none;
   outline: none;
@@ -248,12 +263,10 @@ body.home h2:before {
 }
 
 body.home h3 {
-  font-weight: 900;
+  font-weight: 600;
   font-size: 2em;
-  //
   margin: 8px 0 0;
   color: #00447C;
-  // text-shadow: 0 0 7px rgba(0, 0, 0, 0.45);
 }
 
 // body.home h3:before {
@@ -340,21 +353,20 @@ body.home .services {
 body.home .services .services-btn {
   border-radius: 0;
   display: inline-block;
-  // background: #1f4d69 url("../images/bgGrid.jpg");
-  // margin: 0 -1px 1px 0;
   background: rgba(255, 255, 255, 0.7);
   border: 3px solid rgba(255, 255, 255, 100);
   color: #00447C;
   font-weight: 600;
   text-align: center;
   display: block;
-  font-size: 18px;
   font-size: 1.8rem;
-  // height: 80px;
-  margin-top: 5px;
-  margin-left: -15px;
+  margin-top: 10px;
+  margin-left: -7px;
+  margin-right: -7px;
   height: 5em;
-  // margin: 0 -13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   a {
     font-weight: 600;
   }
@@ -364,7 +376,7 @@ body.home .services .services-btn:hover {
   background: #00447c;
   text-decoration: none;
   a {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 100);
     background-color: #00447c;
   }
 }
@@ -372,7 +384,7 @@ body.home .services .services-btn:hover {
 body.home .services a {
   color: #00447C;
   font-weight: 200;
-  padding: 20px 0;
+  // padding: 2em 0;
   text-align: center;
   display: block;
   font-size: 18px;
@@ -527,7 +539,6 @@ body.home .calendar .day .event {
   font-weight: 300;
   font-size: 14px;
   font-size: 1.4rem;
-
   line-height: 1.3;
   margin-top: 10px;
 }
@@ -599,7 +610,8 @@ body.home .white {
 }
 
 a .white:hover {
-  background: #d8d8d8;
+  background: #707070;
+  color: #fff;
 }
 
 body.home .module-small {
@@ -802,10 +814,6 @@ body.home .module-small [class*="col-"] {
 
   body.home .mainLogo {
     margin-top: -70px;
-  }
-
-  body.home .services {
-    // width: 90%;
   }
 
   body.home .calendar .title:before {
