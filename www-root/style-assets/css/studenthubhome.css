@@ -375,7 +375,7 @@ h4 {
 .promospace .promotab1 h3,
 .promospace .promotab2 h3,
 .promospace .promotab3 h3 {
-  color: #ffffff;
+  color: #00447c;
   margin-top: 25px;
   margin-bottom: 5px;
   font-size: 15px;
@@ -389,14 +389,28 @@ h4 {
 }
 
 .promospace .promotab1 a,
-.promospace .promotab1 p,
+.promospace .promotab1 p {
+  font-size: 14px;
+  color: #00447c;
+  font-weight: 300;
+  padding-bottom: 15px;
+  margin: 0 15px;
+}
+
 .promospace .promotab2 a,
-.promospace .promotab2 p,
+.promospace .promotab2 p {
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  padding-bottom: 15px;
+  margin: 0 15px;
+}
+
 .promospace .promotab3 a,
 .promospace .promotab3 p {
   font-size: 14px;
-  color: #ffffff;
-  font-weight: 200;
+  color: white;
+  font-weight: 300;
   padding-bottom: 15px;
   margin: 0 15px;
 }
@@ -415,15 +429,16 @@ h4 {
 }
 
 .promotab1 {
-  background: #e67e22;
+  background: #003765;
 }
 
 .promotab2 {
-  background: #16a085;
+  background: #d11242;
+  color: white;
 }
 
 .promotab3 {
-  background: #8e44ad;
+  background: #707a7a;
 }
 
 .fa-chevron-right {
@@ -460,37 +475,37 @@ h4 {
   }
 
   .promospace .promotab1 {
-    background: rgba(230, 126, 34, 0.75);
-    border-top: 3px solid #d35400;
-    border-bottom: 3px solid #d35400;
+    background: #ffffff;
+    border-top: 3px solid #FFFFFF;
+    color: #00447c;
   }
 
   .promospace .promotab2 {
-    background: rgba(0, 118, 95, 0.75);
-    border-top: 3px solid #00765f;
-    border-bottom: 3px solid #00765f;
+    background: #d11242;
+    border-top: 3px solid #FFFFFF;
   }
 
   .promospace .promotab3 {
-    background: rgba(102, 0, 142, 0.75);
-    border-top: 3px solid #66008e;
-    border-bottom: 3px solid #66008e;
+    background: #707a7a;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
   }
 }
 #tabs li a {
   height: 57px;
   font-family: "Lato", sans-serif;
-  font-size: 13px;
-  color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+  color: #003765;
   padding: 5px;
+  text-transform: inherit;
   text-decoration: none;
   outline: none;
-  text-transform: uppercase;
 }
 
 .tab-container {
   height: 189px;
-  color: #fff;
+  color: #738173;
   border-top: 3px solid;
   border-bottom: 2px solid;
 }
@@ -501,10 +516,6 @@ h4 {
 }
 
 body.home {
-  background: url("https://msudenver.edu/media/studenthub/images/Campus-Background-mobile.jpg") bottom;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   height: 100%;
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -517,7 +528,6 @@ body.home section {
 body.home h1 {
   font-size: 40px;
   font-size: 4rem;
-  text-transform: uppercase;
   font-weight: normal;
   line-height: 0.8;
   margin: 0 0 0 40px;
@@ -529,7 +539,6 @@ body.home h2 {
   font-weight: 700;
   font-size: 22px;
   font-size: 2.2rem;
-  text-transform: uppercase;
   color: #ffffff;
   margin: 30px 0 -10px;
   position: relative;
@@ -537,46 +546,27 @@ body.home h2 {
   z-index: 99;
 }
 
-body.home h2:before {
-  display: inline-block;
-  width: 57px;
-  height: 57px;
-  background: url("https://msudenver.edu/media/studenthub/images/sticker.png") no-repeat center bottom;
-  content: "";
-  vertical-align: middle;
-  margin-right: 15px;
-}
-
 body.home h3 {
   font-weight: 900;
   font-size: 18px;
   font-size: 1.8rem;
-  text-transform: uppercase;
   margin: 8px 0 0;
   color: #ffffff;
   text-shadow: 0 0 7px rgba(0, 0, 0, 0.45);
-}
-
-body.home h3:before {
-  display: inline-block;
-  width: 57px;
-  height: 57px;
-  background: url("https://msudenver.edu/media/studenthub/images/sticker.png") no-repeat center right;
-  content: "";
-  text-align: right;
-  margin: 0 8px 8px 0;
-  vertical-align: middle;
 }
 
 body.home h4 {
   font-weight: 500;
   font-size: 18px;
   font-size: 1.8rem;
-  text-transform: uppercase;
   margin-bottom: 0;
   display: block;
   width: 100%;
   color: #fff;
+}
+
+body.home header {
+  background-color: #00447c;
 }
 
 body.home header .title {
@@ -630,17 +620,16 @@ body.home .services {
 body.home .services .services-btn {
   border-radius: 0;
   display: inline-block;
-  background: #1f4d69 url("../images/bgGrid.jpg");
-  margin: 5px -1px 5px 0;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid white;
   color: #ffffff;
-  font-weight: 200;
+  font-weight: 600;
   text-align: center;
   display: block;
   font-size: 18px;
   font-size: 1.8rem;
   height: 80px;
-  margin: 3px 5px;
+  margin-bottom: 10px;
 }
 
 body.home .services .services-btn:hover {
@@ -649,13 +638,14 @@ body.home .services .services-btn:hover {
 }
 
 body.home .services a {
-  color: #ffffff;
-  font-weight: 200;
+  color: #00447c;
+  font-weight: 600;
   padding: 20px 0;
   text-align: center;
   display: block;
   font-size: 18px;
   font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 
 body.home .services a:hover {
@@ -743,13 +733,8 @@ body.home .calendar .title .main {
   font-size: 2.4rem;
 }
 
-body.home .calendar .title .semester {
-  text-transform: uppercase;
-}
-
 body.home .calendar .title .year {
   font-family: "Lato", sans-serif;
-  text-transform: uppercase;
   margin-right: 10px;
 }
 
@@ -772,7 +757,7 @@ body.home .calendar .day {
   height: 145px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 10px;
-  background-color: rgba(30, 74, 101, 0.72);
+  background-color: #d11042;
 }
 
 body.home .calendar .day:hover {
@@ -783,7 +768,6 @@ body.home .calendar .day .date {
   color: #ffffff;
   font-size: 12px;
   font-size: 1.2rem;
-  text-transform: uppercase;
   font-weight: 400;
 }
 
@@ -793,13 +777,12 @@ body.home .calendar .day .event {
   font-weight: 300;
   font-size: 14px;
   font-size: 1.4rem;
-  text-transform: uppercase;
   line-height: 1.3;
   margin-top: 10px;
 }
 
 body.home .black {
-  background: rgba(43, 43, 43, 0.8);
+  background-color: black;
   padding: 10px;
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
@@ -813,16 +796,17 @@ body.home .blue {
 }
 
 body.home .red {
-  background: rgba(226, 35, 26, 0.9);
+  background: white;
   padding: 10px;
-  color: #ffffff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  color: #707070;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border: 3px solid rgba(122, 122, 122, 0.5);
 }
 
 .left-column {
   margin-bottom: 5px;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .middle-column [class*=col-] {
@@ -833,7 +817,6 @@ body.home .red {
   font-weight: 200;
   font-size: 18px;
   font-size: 1.8rem;
-  text-transform: uppercase;
   margin-bottom: 0;
   display: block;
   width: 100%;
@@ -957,7 +940,7 @@ body.home .module-small [class*=col-] {
   }
 
   body.home {
-    background: url("https://msudenver.edu/media/studenthub/images/Campus-Background-comp.jpg") bottom;
+    background-color: #FFFFFF;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -981,7 +964,6 @@ body.home .module-small [class*=col-] {
     font-size: 12px;
     font-size: 1.2rem;
     color: #ffffff;
-    text-transform: uppercase;
     margin-right: 12px;
     letter-spacing: 1px;
   }
@@ -1015,7 +997,8 @@ body.home .module-small [class*=col-] {
   }
 
   body.home h2 {
-    margin-left: -8px;
+    margin-left: 10px;
+    margin-bottom: 10px;
   }
 
   body.home h3:before {

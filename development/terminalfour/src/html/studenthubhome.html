@@ -55,9 +55,10 @@
   <style>
     @media (min-width: 768px) {
       header {
-        background: url(/media/studenthub/images/20160823---Student-Hub.jpg) no-repeat;
+        background: url(style-assets/media/studenthub/images/student-hub-bg.png) no-repeat;
         background-size: cover;
         width: 100%;
+        background-color: #00447c;
       }
     }
   </style>
@@ -90,7 +91,7 @@
     <div class="container-fluid">
       <section class="row">
         <div class="col-sm-12 col-md-6 col-md-push-1">
-          <a href="/" id="home_link"><img src="/media/stuenthub/msudenver-studenthub2.png" class="mainLogo"
+          <a href="/" id="home_link"><img src="style-assets/media/studenthub/images/msudenver_student_hub_logo.svg" class="mainLogo"
               alt="MSU Denver Formal Logo"></a>
           <span class="title">
             <h1>Student Hub</h1>
@@ -193,12 +194,20 @@
                 </a>
               </div>
             </div>
+            <div class="col-xs-6 col-sm-4">
+              <div class="services-btn">
+                <a href="https://pbeis01.msudenver.edu/ssomanager/c/SSB?pkg=https://prod-banner.msudenver.edu/pls/prod_web/bwskfcls.p_sel_crse_search"
+                  target="_blank">
+                  Search for Classes
+                </a>
+              </div>
+            </div>
           </section>
           <!--Course Info-->
         </div><!-- .col-md-7 -->
         <div class="col-sm-12 col-md-4 col-md-push-1">
           <div id="tabs" class="promospace visible-lg-block">
-            <img src="/media/studenthub/images/NewInstaHubGraphic2.jpg" class="img-responsive ad-image" />
+            <img src="https://www.msudenver.edu/media/marketingandcommunications/studenthub/images/FirstGenAttheCapitol.jpg" class="img-responsive ad-image" />
             <div class="row">
               <div class="col-xm-12 col-sm-6">
                 <ul class="nav">
@@ -221,14 +230,14 @@
                     </p>
                   </a>
                 </div>
-                <div class="tab-container promotab2" id="tab2">
+                <div class="tab-container promotab2" style="display: none;" id="tab2">
                   <a href="http://www.msudenver.edu/studenthub/studenthubspotlight/experience/" target="_blank">
                     <p> There are many ways to get professional experience at MSU Denver. Check out this list of
                       resources.
                     </p>
                   </a>
                 </div>
-                <div class="tab-container promotab3" id="tab3">
+                <div class="tab-container promotab3" style="display: none;" id="tab3">
                   <a href="http://www.msudenver.edu/studenthub/studenthubspotlight/tutoring/" target="_blank">
                     <p>The MSU Denver Tutoring Center offers free group, one-on-one and online academic support in many
                       subjects.
@@ -270,7 +279,7 @@
             </div>
 
           </div>
-
+<!
           <section class="col-lg-12 social text-center">
             <a href="https://www.facebook.com/msudenver" target="_blank">
               <span class="fa-stack fa-2x"><i class="fa fa-facebook fa-stack-1x"></i></span>
