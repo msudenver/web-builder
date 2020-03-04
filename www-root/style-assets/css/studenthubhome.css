@@ -530,7 +530,7 @@ body.home h1 {
   font-size: 4rem;
   font-weight: normal;
   line-height: 0.8;
-  margin: 0 0 0 40px;
+  margin: 0 0 25px 40px;
   color: #ffffff;
   font-weight: 700;
 }
@@ -585,7 +585,7 @@ body.home .navbar-default {
 }
 
 body.home .navbar-default .navbar-header {
-  background: #1f4d69;
+  background: #00447c;
 }
 
 body.home .navbar-default .navbar-collapse,
@@ -634,7 +634,7 @@ body.home .services .services-btn {
 }
 
 body.home .services .services-btn:hover {
-  background: #1f4d69;
+  background: #00447c;
   text-decoration: none;
 }
 
