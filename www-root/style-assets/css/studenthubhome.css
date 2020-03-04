@@ -780,6 +780,7 @@ body.home .calendar .day {
   padding: 10px;
   color: #fff;
   background-color: #d11042;
+  overflow: hidden;
 }
 
 body.home .calendar .day:hover {
@@ -981,10 +982,7 @@ body.home .module-small [class*=col-] {
   }
 
   body.home {
-    background: url("https://msudenver.edu/media/studenthub/images/Campus-Background-comp.jpg") bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: none;
     width: 100%;
   }
 
