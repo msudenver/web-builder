@@ -678,7 +678,7 @@ body.home .content .text-center:hover {
 body.home .white:hover {
   background: #707070;
   color: white;
-  border: 10px solid #adadad;
+  border: 3px solid #adadad;
 }
 
 body.home .content .description {
