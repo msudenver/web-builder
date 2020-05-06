@@ -6,7 +6,6 @@
 @import "../../../lib/bootstrap-sass/assets/stylesheets/bootstrap";
 /** -------  End Bootstrap  v 3.3.7 -------- **/
 
-
 /**
     =================================================
         MSU Denver 2016 custom style declarations
@@ -14,9 +13,16 @@
 **/
 
 /** SVG fallback for IE 8 **/
-
-#denver-city-svg { background: blue; color: #fff; }
-#denver-city-svg svg { color: #fff;}
+.test1 {
+  background: test;
+}
+#denver-city-svg {
+  background: blue;
+  color: #fff;
+}
+#denver-city-svg svg {
+  color: #fff;
+}
 /**  Homepage Feature Components michael.mason@terminalfour.com **/
 @import "msu-partials/global-header";
 @import "msu-partials/msu-utils";
@@ -66,10 +72,8 @@
 /** Responsive Overrides **/
 @import "admissionsHomepage/responsive-overrides.scss";
 
-
 /** Viewbook Styles **/
 @import "viewbook/background-panel.scss";
-
 
 /** Newsroom Homepage Styles **/
 
@@ -77,7 +81,6 @@
 // @import "newsroomHomepage/newsroom-nav.scss";
 /** Responsive Overrides **/
 // @import "newsroomHomepage/responsive-overrides.scss";
-
 
 /** President's page styles **/
 @import "msu-partials/president-site";
