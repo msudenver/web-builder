@@ -11,12 +11,14 @@ Wednesday 06, April, 2016
 @import "ContentTypes/footer";
 // @import "ContentTypes/callstoaction.scss";
 
-
 h1.hidden {
-    display: none;
+  display: none;
 }
 
 .container-fluid {
-    padding-right: 0;
-    padding-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+.test {
+  display: none;
 }
